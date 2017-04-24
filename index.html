@@ -1,58 +1,240 @@
----
-layout: index-full
-description: 了解魔门云最新的活动、资讯以及技术分享。
----
-{% for post in paginator.posts %}
-    {% include article_index.html %}
-{% endfor %}
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script src="assets/js/typed.js"></script>
+		<script>
+			$(function(){
+				$("#typed").typed({
+					strings: ["", "Designer", "Developer", "Illustrator", "Guitar lovers", "Movie Lovers", "Designer", "Developer", "Illustrator", "Guitar lovers", "Movie Lovers","Designer", "Developer", "Illustrator", "Guitar lovers", "Movie Lovers", "Designer"],
+					typeSpeed: 90,
+					backDelay: 500,
+					callback: function(){
+						 shift();
+					 }
+				});
+			});
+ 	 </script>
+		<style>.typed-cursor{
+					opacity: 1;
+					-webkit-animation: blink 0.7s infinite;
+					-moz-animation: blink 0.7s infinite;
+					animation: blink 0.7s infinite;
+			}
+			@keyframes blink{
+					0% { opacity:1; }
+					50% { opacity:0; }
+					100% { opacity:1; }
+			}
+			@-webkit-keyframes blink{
+					0% { opacity:1; }
+					50% { opacity:0; }
+					100% { opacity:1; }
+			}
+			@-moz-keyframes blink{
+					0% { opacity:1; }
+					50% { opacity:0; }
+					100% { opacity:1; }
+			}
+		</style>
+	</head>
+	<body>
 
-{% if paginator.total_pages > 1 %}
-    <div class="pagination">
-        <!-- link to first page -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == 1 %}
-                <span class="btn disabled"><i class="fa fa-angle-double-left"></i></span>
-            {% else %}
-                <a class="btn" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-double-left"></i></a>
-            {% endif %}
-        {% endif %}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        <!-- previous link -->
-        {% if paginator.previous_page %}
-            <a class="btn prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-left"></i></a>
-        {% else %}
-            <span class="btn disabled"><i class="fa fa-angle-left"></i></span>
-        {% endif %}
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><img src="images/zuonx-logo-color.svg" alt="" style="width:96px; padding-top:16px;"></a>
+						<nav>
+							<a href="#menu"></a>
+						</nav>
+					</header>
 
-        <!-- number links -->
-        {% capture start %}
-            {{ paginator.page | minus: 3 }}
-        {% endcapture %}
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="elements.html">Blog</a></li>
+							<li><a href="landing.html">Works</a></li>
+							<li><a href="generic.html">About</a></li>
+						</ul>
+						<ul class="actions vertical">
+							<!-- <li><a href="#" class="button special fit">About</a></li> -->
+							<li><a href="#" class="button fit">Contact</a></li>
+						</ul>
+					</nav>
 
-        {% for i in (1..paginator.total_pages) limit: 5 offset: start %}
-            {% if i == paginator.page %}
-                <span class="btn disabled">{{ i }}</span>
-            {% elsif i == 1 %}
-                <a class="btn" href="{{ site.baseurl }}/">{{ i }}</a>
-            {% else %}
-                <a class="btn" href="/page/{{ i }}">{{ i }}</a>
-            {% endif %}
-        {% endfor %}
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1 class="ae-1 fromCenter huge cropBottom">I am a <span id="typed"></span><span class="typed"></span></h1>
+							</header>
+							<div class="content">
+								<p>Hi, I’m ZiJen. I’m a UI Design living in China Beijing.I like design, movies, and guitar.  <br />
+								And I love life. </p>
+								<!-- <ul class="actions">
+									<li><a href="#one" class="button next scrolly">More about me</a></li>
+								</ul> -->
+							</div>
+						</div>
+					</section>
 
-        <!-- next link -->
-        {% if paginator.next_page %}
-            <a class="btn next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-right"></i></a>
-        {% else %}
-            <span class="btn disabled"><i class="fa fa-angle-right"></i></span>
-        {% endif %}
+				<!-- Main -->
+					<div id="main">
 
-        <!-- last page link -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == paginator.total_pages %}
-                <span class="btn disabled"><i class="fa fa-angle-double-right"></i></span>
-            {% else %}
-                <a class="btn" href="{{ site.baseurl | replace: '//', '/' }}/page/{{paginator.total_pages}}"><i class="fa fa-angle-double-right"></i></a>
-            {% endif %}
-        {% endif %}
-    </div>
-{% endif %}
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="http://blog.zuonx.com" class="link">Blog</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Works</a></h3>
+										<p>feugiat amet tempus</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">About</a></h3>
+										<p>Lorem etiam nullam</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="contact.html" class="link">Contact</a></h3>
+										<p>Nisl sed aliquam</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">PSD 1.0</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">PSD 2.0</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+							</section>
+					</div>
+
+				<!-- Contact -->
+					<!-- <section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">hjsfzzz@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(+86) 152-0818-5679</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-home"></span>
+										<h3>Address</h3>
+										<span>changping<br />
+										China Beijing</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section> -->
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon alt fa-behance"><span class="label">Behance</span></a></li>
+								<li><a href="#" class="icon alt fa-question"><span class="label">zhihu</span></a></li>
+								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<!-- <ul class="copyright">
+								<li>&copy; Untitled</li><li>Design:HTML5 UP</a></li>
+							</ul> -->
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+
+
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
