@@ -320,7 +320,7 @@ body.royal_preloader {
 	transition : all 0.3s ease-out;
 }
 .cbp-af-header.cbp-af-header-shrink .logo{
-	width:88px;
+	width:90px;
 	height:26px;
 	top:28px;
 	background:url('../images/logo-light.svg') no-repeat center center;
@@ -368,7 +368,7 @@ body.royal_preloader {
 
 .logo{
 	position:absolute;
-	width:96px;
+	width:100px;
 	height:29px;
 	z-index:10000;
 	top:40px;
@@ -2176,10 +2176,12 @@ figure.vimeo a img, figure.youtube a img {
 	margin-bottom:15px;
 }
 .team-wrap h6{
-	text-align:left;
+	text-align: left;
+	color: #414141;
 }
 .team-wrap p{
 	text-align:left;
+	color: #414141;
 	margin-bottom:2px;
 }
 
