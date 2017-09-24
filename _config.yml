@@ -1,7 +1,6 @@
 # Site settings
 title: zuonx
 SEOTitle: zuonx | 左子祯的个人网站
-header-img: images/bg.jpg
 email: hjsfzzz@gmail.com
 description: "左子祯的个人网站 | Designer & Developer"
 keyword: "左子祯, zuozizhen, zuonx, hjsfzzz, 全栈设计师, 左子祯的博客, zuonx Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品"
@@ -27,8 +26,8 @@ RSS: ture
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
-paginate: 10
-paginate_path: "blog/page:num"
+paginate: 5
+paginate_path: "essays/page:num"
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
@@ -47,16 +46,6 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
-
-
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
 
 
 # Analytics settings
@@ -79,13 +68,6 @@ duoshuo_share: true                     # set to false if you want to use Commen
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
 
 
 # Friends

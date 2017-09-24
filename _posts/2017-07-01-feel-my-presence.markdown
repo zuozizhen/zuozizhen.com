@@ -1,11 +1,13 @@
 ---
-layout:     post
+layout:     "post"
 title:      "只有此刻才能感觉到自己的存在"
 subtitle:   "Only at this moment can I feel my presence"
-date:       2017-07-01 12:00:00
-author:     "Zizhen"
-header-img: "images/post/2017-07-01/bg.jpg"
-catalog:    true
+date:       "2017-07-01"
+cover:      "bg.jpg"
+readtime:   "02"
+tag:        "movie · feelings · thinking"
+tips:       "纪录片《浮生一日》观后有感"
+excerpt:    "爱和恐惧是生命中永恒存在的两个主题，无数艺术家围绕着这两个主题阐述着他们的理解，而这部纪录片则是导演给我们表达着他自己的理解。"
 ---
 
 > 这万千来自五大洋七大洲的创作，经过金像班底的鬼斧神工，如今终于跃上大银幕，让全人类乘着八万多个趣味盎然的镜头，见证这时间囊里的一日人生。

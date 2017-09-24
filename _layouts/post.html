@@ -1,88 +1,160 @@
 ---
 layout: default
-comments: true
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-<div class="section-block big-height">
-  <div class="parallax" style="background-image: url('{{ site.baseurl }}/{{ page.header-img }}')"></div>
-  <div class="dark-over-hero"></div>
-  <div class="home-text-freelance z-bigger">
-    <div class="container fade-elements">
-      <div class="post-header-title">
-        <h1>{{ page.title }}</h1>
-        <span>by {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}</span>
-      </div>
+<!-- <div id="load" class="active">
+  <div class="load_logo">o</div>
+  <div class="count">0</div>
+  <div class="offf"><span>sound on</span></div>
+</div> -->
+<div class="header_top">
+  <div class="header_logo">
+    <a href= {{ "/" | prepend: site.baseurl }} class="z"></a>
+    <span class="u"></span>
+    <span class="o"></span>
+    <span class="n"></span>
+    <a class="menu_ico x"></a>
+  </div>
+</div>
+<header class="header">
+
+  <div class="header_left">
+    <div class="header_left_line">
+      <i class="line"></i>
+    </div>
+    <div class="header_sound">
+      <i class="line"></i>
+      <i class="line"></i>
+      <i class="line"></i>
+      <i class="line"></i>
     </div>
   </div>
 
-  <div class="home-link fade-elements">
-    <div class="container">
-      <div class="twelve columns">
-        <a href="#top-scroll" data-gal="m_PageScroll2id" data-ps2id-offset="78"><div class="link-down center tipped" data-title="scroll down"  data-tipper-options='{"direction":"top","follow":"true","margin":25}'></div></a>
+  <div class="header_right">
+    <div class="header_text careers-text">
+      <span>READ<i></i>{{ page.readtime }}</span>
+      <span>Min<i></i>Time</span>
+    </div>
+
+    <div class="header_right_line">
+      <i class="line"></i>
+    </div>
+  </div>
+  <div class="menu_right">
+    <div class="line" id="line-progress"></div>
+    <div class="line-bg"></div>
+  </div>
+</header>
+<div class="lines-grid">
+    <i class="lines_i lines_i__1"></i>
+    <i class="lines_i lines_i__2"></i>
+    <i class="lines_i lines_i__3"></i>
+    <i class="lines_i lines_i__4 other"></i>
+    <i class="lines_i lines_i__5"></i>
+    <i class="lines_i lines_i__6"></i>
+</div>
+<div class="menu_open">
+  <div class="header_top header_logo">
+    <span class="z"></span>
+  </div>
+  <div class="header_tab">
+  <div class="menu_open_close"></div>
+  </div>
+  <div class="header_left">
+    <div class="header_sound">
+      <i class="line"></i>
+      <i class="line"></i>
+      <i class="line"></i>
+      <i class="line"></i>
+    </div>
+  </div>
+  <div class="menu_open_content">
+    <div class="lines">
+        <i class="lines_i lines_i__1"></i>
+        <i class="lines_i lines_i__2"></i>
+        <i class="lines_i lines_i__3"></i>
+        <i class="lines_i lines_i__4"></i>
+        <i class="lines_i lines_i__5"></i>
+    </div>
+    <div class="section_title">
+      <div class="section_title_text other-2">
+
+      </div>
+    </div>
+    <div class="wrapper">
+      <ul class="menu_in-page">
+        <li>
+          <a href="index.html#about">About</a>
+        </li>
+        <li>
+          <a href="index.html#services">Story</a>
+        </li>
+        <li>
+          <a href="index.html#cases">Cases</a>
+        </li>
+        <li>
+          <a href="index.html#careers">Essays</a>
+        </li>
+        <li>
+          <a href="index.html#contacts">Contact</a>
+        </li>
+      </ul>
+      <div class="menu_open_close"></div>
+      <div class="copyright">
+        <div class="copyright_left">© 2017 by zuonx. All rights reserved.</div>
       </div>
     </div>
   </div>
+</div>
+<a class="footer_left footer_post" href="javascript:history.go(-1)">
+  <i class="material-icons">keyboard_backspace</i>
+  <span> back</span>
+</a>
+<a class="footer_right footer_post" href="mailto:hjsfzzz@gmail.com" class="email_in">
+  <i class="material-icons">mail_outline</i>
+  <span>hjsfzzz@gmail.com</span>
+</a>
+<div class="footer">
 
 </div>
 
-<div class="section-block padding-top-small padding-bottom" id="top-scroll">
-  <div class="container">
-    <div>
-      <div class="post-wrapper">
-
-        {{ content }}
-
-        <ul class="pager">
-            {% if page.previous.url %}
-            <li class="previous">
-                <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-                Previous<br>
-                <span>{{page.previous.title}}</span>
-                </a>
-            </li>
-            {% endif %}
-            {% if page.next.url %}
-            <li class="next">
-                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-                Next<br>
-                <span>{{page.next.title}}</span>
-                </a>
-            </li>
-            {% endif %}
-        </ul>
-
-        <!-- disqus 评论框 start -->
-        <div class="comment">
-            <div id="disqus_thread" class="disqus-thread"></div>
+<section class="section careers white active" data-class="body_white" data-id="careers" id="careers">
+  <div class="section_title">
+    <div class="section_title_text other">
+      Essays
+    </div>
+  </div>
+  <div class="wrapper wrapper-fullwidth">
+    <div class="careers_wrap page_wrap">
+        <div class="careers_item post-header">
+          <span class="careers_date">{{ page.date | date: "%Y · %m · %d" }}</span>
+          <span class="careers_tag">{{ page.tag }}</span>
+          <span class="careers_title">{{ page.title }}</span>
+          <span class="careers_tips">{{ page.tips }}</span>
         </div>
-        <!-- disqus 评论框 end -->
 
+      <div class="careers_content post-wrapper">
+        {% if page.cover %}
+        <p>
+          <img class="careers_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
+        </p>
+        {% endif %}
+        {{ content }}
       </div>
+      <div class="post_pagination">
+        {% if page.previous.url %}
+          <a class="previous"href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+          上一篇<br><span>{{page.previous.title}}</span>
+          </a>
+        {% endif %}
+
+        {% if page.next.url %}
+          <a class="next"href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+          下一篇<br><span>{{page.next.title}}</span>
+          </a>
+        {% endif %}
+      </div>
+
     </div>
   </div>
-</div>
-
-
-<script src="{{ "/js/owlCarousel.js " | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/fitvids.js " | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/custom-post.js " | prepend: site.baseurl }}"></script>
-
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-// var disqus_config = function () {
-// this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-// this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-// };
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://zuonx.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
+</section>

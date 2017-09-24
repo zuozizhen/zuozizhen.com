@@ -1,11 +1,13 @@
 ---
-layout:     post
+layout:     "post"
 title:      "用这10个方法，你可以假装是一个伟大的设计师"
 subtitle:   "Be a great designer"
-date:       2017-07-06 12:00:00
-author:     "Zizhen"
-header-img: "images/post/2017-07-06/bg.gif"
-catalog:    true
+date:       "2017-07-06"
+cover:      "bg.gif"
+readtime:   "08"
+tips:       "10个成为伟大设计师的方法:)"
+tag:        "designer · fun"
+excerpt:    "不知道如何表达你在设计中使用丰富动画或者可爱插画的用意么？只需要将“愉悦感”正常用进去，谈谈你是如何理解用户心理并以此创建一个用户喜爱的心理体验的..."
 ---
 
 ## 建立愉悦感

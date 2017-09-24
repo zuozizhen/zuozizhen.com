@@ -5,45 +5,47 @@
     <description>左子祯的个人网站 | Designer &amp; Developer</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 11 Sep 2017 23:13:23 +0800</pubDate>
-    <lastBuildDate>Mon, 11 Sep 2017 23:13:23 +0800</lastBuildDate>
+    <pubDate>Sun, 24 Sep 2017 23:48:00 +0800</pubDate>
+    <lastBuildDate>Sun, 24 Sep 2017 23:48:00 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>Medium为什么又换了新Logo</title>
         <description>&lt;p&gt;最近Medium悄悄的换上了新的Logo，它长这样：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-08-24/1.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/1.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;可能对于关注设计师和Medium的用户们来说，对Medium印象最深的一次改版是下面这个：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-08-24/2.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/2.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这个在2015年为Medium创造的Logo无疑是成功的，那为什么在Medim使用了它将近2年后选择换掉这个Logo呢？让我们先来回顾下Medium上一次Logo改版的原因。&lt;/p&gt;
 
 &lt;p&gt;最初在Medium首次上线测试版的时候是一个这样的Logo，简单，优雅，强壮。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-08-24/3.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/3.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;但是Medium觉得在随着Medium逐渐成长起来后，这个Logo显得生硬而且不好接近，Medium需要改变，也需要大量新鲜的血液注入，所以一个新的品牌形象便成了当务之急。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-08-24/4.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/4.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;在经过不断的尝试和思考后，Medium最终完成了一个很成功的品牌形象的转变，为大众呈现了一个有趣，年轻化的Logo。同时效果也很显著，在这两年间Medium的成长是有目共睹的，越来越多的高质量的作者涌入Medium，更多的优秀文章被创造出来，反过来又吸引着更多的读者进入Medium，形成了一个良性的循环。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-08-24/5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;但是现在为什么更换了新的品牌形象呢，我认为这代表这着Medium对内容的性质要求从娱乐化到严肃化的转变。
  娱乐化的内容可以为网站带来用户，流量，但是产生的价值却是有限的，Medium或许也认识到了这一点，所以想要用品牌形象的转变告诉大家：“我们给大家提供的是高价值、高质量的内容”。同时我们可以发现，Medium网站本身的设计也是慢慢的以内容为主，保持简洁与可读性。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-08-24/6.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/6.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;所以我们在再来分析新的Logo，可以明显的看到新的Logo采用了尖锐的衬线，让人感到严肃的同时也不失现代感。紧凑的间距让Logo的结构显得更加的稳定与严谨，去掉了色彩使人更关注内容而不是形式。
  接下来就让我们看看新的品牌形象又会给Medium带来什么样的变化吧！&lt;/p&gt;
 </description>
-        <pubDate>Thu, 24 Aug 2017 18:00:00 +0800</pubDate>
+        <pubDate>Thu, 24 Aug 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/08/24/Medium-new-logo-2017/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/24/Medium-new-logo-2017/</guid>
+        
+        <category>redesign · logo · medium</category>
         
         
       </item>
@@ -132,58 +134,62 @@
   &lt;p&gt;转自：&lt;a href=&quot;http://www.uisdc.com/pretend-to-be-great-designers&quot;&gt;uisdc&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Thu, 06 Jul 2017 20:00:00 +0800</pubDate>
+        <pubDate>Thu, 06 Jul 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/07/06/Be-a-great-designer/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/06/Be-a-great-designer/</guid>
+        
+        <category>designer · fun</category>
         
         
       </item>
     
       <item>
         <title>创意十足的个人网站推荐</title>
-        <description>&lt;h4 id=&quot;1-将音乐与设计结合到一起的个人网站动效的设计可以称得上惊艳&quot;&gt;1. 将音乐与设计结合到一起的个人网站，动效的设计可以称得上惊艳。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/1.jpg&quot; alt=&quot;img&quot; /&gt;
+        <description>&lt;h2 id=&quot;1-将音乐与设计结合到一起的个人网站动效的设计可以称得上惊艳&quot;&gt;1. 将音乐与设计结合到一起的个人网站，动效的设计可以称得上惊艳。&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/1.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://kenjiendo.com/&quot;&gt;KENJI ENDO&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;2-精致的配色精致的排版&quot;&gt;2. 精致的配色，精致的排版&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/2.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;2-精致的配色精致的排版&quot;&gt;2. 精致的配色，精致的排版&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/2.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://www.paulineosmont.com/&quot;&gt;Pauline Osmont : Art director, Web Designer, Illustrator based in Lyon (France).&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;3-将个人网站的各个部分整合到一个横版游戏的不同场景中浏览时连贯而且有趣&quot;&gt;3. 将个人网站的各个部分整合到一个横版游戏的不同场景中，浏览时连贯而且有趣&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/3.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;3-将个人网站的各个部分整合到一个横版游戏的不同场景中浏览时连贯而且有趣&quot;&gt;3. 将个人网站的各个部分整合到一个横版游戏的不同场景中，浏览时连贯而且有趣&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/3.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://www.rleonardi.com/&quot;&gt;Robby Leonardi | hey@rleonardi.com&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;4-黑色主色调搭配着怪诞的插画个人风格非常强烈&quot;&gt;4. 黑色主色调搭配着怪诞的插画，个人风格非常强烈&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/4.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;4-黑色主色调搭配着怪诞的插画个人风格非常强烈&quot;&gt;4. 黑色主色调搭配着怪诞的插画，个人风格非常强烈&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/4.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://www.nerisson.fr/&quot;&gt;nerisson.fr&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;5-一个跨领域多学科设计师前spotify的首席设计师和艺术指导大胡子极具辨识度&quot;&gt;5. 一个跨领域多学科设计师，前Spotify的首席设计师和艺术指导，大胡子极具辨识度&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/5.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;5-一个跨领域多学科设计师前spotify的首席设计师和艺术指导大胡子极具辨识度&quot;&gt;5. 一个跨领域多学科设计师，前Spotify的首席设计师和艺术指导，大胡子极具辨识度&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/5.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://www.vanschneider.com/&quot;&gt;Tobias van Schneider&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;6-位于比利时的一个平面设计工作室体会下小而美的感觉&quot;&gt;6. 位于比利时的一个平面设计工作室，体会下小而美的感觉&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/6.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;6-位于比利时的一个平面设计工作室体会下小而美的感觉&quot;&gt;6. 位于比利时的一个平面设计工作室，体会下小而美的感觉&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/6.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://gravual.com/en/&quot;&gt;GRAVUAL™ - Graphic Design Studio in Antwerp&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;7-图片的投影会随着鼠标的位置发生变化很有趣&quot;&gt;7. 图片的投影会随着鼠标的位置发生变化，很有趣&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/7.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;7-图片的投影会随着鼠标的位置发生变化很有趣&quot;&gt;7. 图片的投影会随着鼠标的位置发生变化，很有趣&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/7.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://objetorocha.com/&quot;&gt;Objeto Rocha&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;8-由上面介绍过的tobias-van-schneider设计的网站虽然并不是个人网站但是第一次看会一定会被惊艳到&quot;&gt;8. 由上面介绍过的Tobias van Schneider设计的网站，虽然并不是个人网站，但是第一次看会一定会被惊艳到&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/8.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;8-由上面介绍过的tobias-van-schneider设计的网站虽然并不是个人网站但是第一次看会一定会被惊艳到&quot;&gt;8. 由上面介绍过的Tobias van Schneider设计的网站，虽然并不是个人网站，但是第一次看会一定会被惊艳到&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/8.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://aquatilis.tv/&quot;&gt;Aquatilis Expedition&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;9-体会如何通过字体颜色排版表现力度和冲击感&quot;&gt;9. 体会如何通过字体、颜色、排版表现力度和冲击感&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/9.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;9-体会如何通过字体颜色排版表现力度和冲击感&quot;&gt;9. 体会如何通过字体、颜色、排版表现力度和冲击感&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/9.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://www.vo2-group.com/&quot;&gt;VO2 Group&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;10-一个创意设计机构它的官网排版和细节做的非常赞&quot;&gt;10. 一个创意设计机构，它的官网排版和细节做的非常赞&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-05/10.jpg&quot; alt=&quot;img&quot; /&gt;
+&lt;h2 id=&quot;10-一个创意设计机构它的官网排版和细节做的非常赞&quot;&gt;10. 一个创意设计机构，它的官网排版和细节做的非常赞&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-05/10.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;a href=&quot;http://www.onlyorca.com/&quot;&gt;Orca Design&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 06 Jul 2017 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/07/06/personal-website-recommendation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/06/personal-website-recommendation/</guid>
+        <pubDate>Wed, 05 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/07/05/personal-website-recommendation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/07/05/personal-website-recommendation/</guid>
+        
+        <category>site · design · recommended</category>
         
         
       </item>
@@ -196,7 +202,7 @@
 
 &lt;p&gt;过去几个月来，设计创新领域的先行者们，将“极简设计”推向了一个新的高度。Facebook、Airbnb和Apple都遵循着近似的原则，简化它们的核心产品，这种“化繁为简”（Complexion Reduction）的新趋势就在它们的移动端设计中得到体现。&lt;/p&gt;
 
-&lt;h2 id=&quot;化繁为简究竟是什么&quot;&gt;“化繁为简”究竟是什么？&lt;/h2&gt;
+&lt;h2 id=&quot;化繁为简究竟是什么&quot;&gt;化繁为简究竟是什么？&lt;/h2&gt;
 &lt;p&gt;你是不是从没听说过“化繁为简”的趋势？那是肯定的，因为这只是我创造出来的术语。最近我留意到一种新的趋势，它超越了扁平化设计，也超越了极简设计，独立性在逐渐削弱。有些人会说，这只是极简设计运用到移动端领域时开启的新阶段，但我认为它截然不同。有一些明确的共性和特征可以定义这种新趋势。所以我决定给它起个名字。起个名没什么问题吧？
 这种横扫硅谷的热门新趋势，有以下这些决定性特征：&lt;/p&gt;
 &lt;ol&gt;
@@ -265,9 +271,11 @@
 作者信息：&lt;a href=&quot;https://medium.com/@michaelhorton?source=post_header_lockup&quot;&gt;Michael Horton&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Tue, 04 Jul 2017 20:00:00 +0800</pubDate>
+        <pubDate>Tue, 04 Jul 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/07/04/the-new-trend-of-flat-design/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/04/the-new-trend-of-flat-design/</guid>
+        
+        <category>design · user interface · trend</category>
         
         
       </item>
@@ -279,76 +287,77 @@
 &lt;p&gt;接下来一起看看2016年有那些 Logo 设计趋势，希望能给你带来新的启发，Enjoy!&lt;/p&gt;
 
 &lt;h3 id=&quot;渐变&quot;&gt;渐变&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/1.png&quot; alt=&quot;img&quot; /&gt;
-这些标记可以产生从一种颜色到下一种颜色梯度的印象，但通过创建一系列阶梯式递增，设计师正在欺骗系统。多年来设计一个要求四色过程的标志的恐惧感消失。挑战传统，设计师通过一次性的颜色转换达到渐变的效果。一个聪明的设计师可以通过不超过几点的颜色完成。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/1.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这些标记可以产生从一种颜色到下一种颜色梯度的印象，但通过创建一系列阶梯式递增，设计师正在欺骗系统。多年来设计一个要求四色过程的标志的恐惧感消失。挑战传统，设计师通过一次性的颜色转换达到渐变的效果。一个聪明的设计师可以通过不超过几点的颜色完成。&lt;/p&gt;
 
 &lt;p&gt;这些标志的色序突破通常有助于定义边缘或在一个微妙和谐的领地体现维度。从A点到B点的轻柔明显的路径它通过创造性的应用介绍了纹理和模式。&lt;/p&gt;
 
 &lt;h3 id=&quot;圆圈&quot;&gt;圆圈&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/2.png&quot; alt=&quot;img&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/2.png&quot; alt=&quot;img&quot; /&gt;
 那无处不在的，完美的，象征无限的图标已经成为当今肆虐的形状。设计师通过依附这一通用的视觉元素定义一个概念，使得挑战像馅饼一样简单。在过去的两年里，我们看过今日美国和艺术中心采用纯粹的圆来设计他们的Logo。这些并不是第一个或最后一个。这一趋势更为广泛，也包含着无限的简单循环，这是一圈一圈的循环。&lt;/p&gt;
 
 &lt;p&gt;强烈的不同的标识可能从一到几十个圆圈，但聪明的解决方案会将他们保持到最低。今年我们已经看到了一个简单明确的趋势。几何越简单越好。差异化的元素往往是表面效应，可以从平面转变到透明的层次，但很少到维度。&lt;/p&gt;
 
 &lt;h3 id=&quot;一半一半对称&quot;&gt;一半一半（对称）&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/3.png&quot; alt=&quot;img&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/3.png&quot; alt=&quot;img&quot; /&gt;
 没有人想被这人造的效果所蒙蔽，但它已经超越了更现实的维度的尝试，在过去的十年中已经成为了流行。如果有什么的话，这是向消费者坦白现实的眼睛糖果仅仅如此的一种更成熟的方式，但是我们仍然可以通过简单平淡的语调暗示质量。&lt;/p&gt;
 
 &lt;h3 id=&quot;连接&quot;&gt;连接&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/2.png&quot; alt=&quot;img&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/2.png&quot; alt=&quot;img&quot; /&gt;
 你如同最薄弱环节一样强壮。或者说，一个链中最薄弱的环节是最强的，因为它能打破链条。这两个伟大的观点取决于你属于哪个连接。连接的概念是挤满了明喻和隐喻，但他们一般通过与他人来扩大能力。它表明了对另一个事业的承诺和对动机的承诺，尽管打破束缚是一个完全不同的命题，这些标志是围绕团结的力量设计的。&lt;/p&gt;
 
 &lt;h3 id=&quot;刻板行为&quot;&gt;刻板行为&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/3.png&quot; alt=&quot;img&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/3.png&quot; alt=&quot;img&quot; /&gt;
 除了强迫性的性质，这些标记可以体现出旅行的流动或运动。半径越平滑颠簸的骑行越少。可以想象出传达一个过程的完美或一致性的价值。有节奏的重复有一个迷人的质量，瞬间建立起与用户的亲和力，这是毫秒曝光额外的价值。这些标志的变化已被使用多年但Airbnb标志有争议的成功可以为不断循环的标志而产生新的感兴趣负一些责任。&lt;/p&gt;
 
 &lt;h3 id=&quot;卷边&quot;&gt;卷边&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/4.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/4.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;那些卷边矩形实际上是六边形是两年前发生的一次迭代。它可能是一个运动的手工艺品，或它可能是形状带给人的印象是创建了一个适度的尺寸错觉的挤压盒，。也可能是设计者在一个朴实的盒子使自己找到另一解决方法，感到装饰和修剪最后作品的需求。谁愿意打赌出现在名片上的多数标志同样是通过切割角来进行搭配。&lt;/p&gt;
 
 &lt;h3 id=&quot;角&quot;&gt;角&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;无论是描述一个小邮票或部件的各个部分，他们各自都有四个角。它是定义任意的矩形空间的基本途径。这是我们的杰作框架。我们使用的符号奸邪注重内部。它的进一步信号，符号和概念的简单明了已经回归。无论是斜接的或切割像字母L的方形，聚集成四个或独自站立，去年角在名片设计中起到了核心作用。&lt;/p&gt;
 
 &lt;h3 id=&quot;虚线&quot;&gt;虚线&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/6.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/6.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;在设计上，所有的挑战都是平等的，所有的事情都是平等的。在不断变化的单行的标志，你最终会达到一个点—定义一个层次的路线是有价值的。这听起来可能具有挑战性，因为单线设计的前提表面上是一切都是单声道的或一个重量的。当然分化可能是由颜色，但在一个单一的颜色环境中，信号方差与虚线似乎是完美的配合，并引入一些缺失纹理作为一个额外的功能。&lt;/p&gt;
 
 &lt;h3 id=&quot;舍尾移位&quot;&gt;舍尾移位&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/7.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/7.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;笨拙地安排这些标志型元素可能以不合格的点或者显示不同的部分的方式出现，来显示团结一致。或它可能只是一个温和的转变，一个垂直线的二进制代码出现在它的信息标志或关闭共同的N来表现出共享经济英国的标志的点。有一个地方的巧妙使用这种技术，但并不是到处都是。考虑到问题中实体的个性，并询问这样的挑战是否符合其性质和满足最佳利益。&lt;/p&gt;
 
 &lt;h3 id=&quot;螺旋状&quot;&gt;螺旋状&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/8.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/8.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;一个字符串围绕着中心轴并且在一个很好的球体中显示。透明似乎是这个形状的一个相当普遍的方面，但它并不少见，就像维层次和亮点。弯曲的形式暗示了一对双臂拥抱或提出了天空。他们表现出灵活，但又有一种紧张。通常情况下，内部的形状是不同的。现在，这些大多提供了一个引人入胜的视觉形状，作为另一个不太刺激的替代。有时看起来就足以获得主演的角色。&lt;/p&gt;
 
 &lt;h3 id=&quot;盾牌&quot;&gt;盾牌&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/9.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/9.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;盾牌，他们表现出保护、权威，是官方能力的保证。他们能够使人回想起王国封地，自由和其他值得用战争的遗产。为此，丰富的口袋形的盾牌已经抓住了行业的想象。这几何的切割反映了过去，但允许外部形状从它的角落，或一个带状的，或任何附加属性模仿一个立方体。通过留下大部分的徽章和过去的廉价品，这些标志脱离了自己的历史，但仍体现了我们对盾牌所定义的戒律。&lt;/p&gt;
 
 &lt;h3 id=&quot;切片&quot;&gt;切片&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/10.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/10.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;就像猫扫描允许医生出示人体的横截面视图，交替地，熟练的设计人员正将同样的调查观点应用到标识上。没有依靠传统的方法，一个标志能够以一个令人难忘的方式传达体积和透明度。这些图像还可以召唤一个3D打印机的方法建立产品的薄层从而存放工艺的物质对象。这些例子可能会使他们自己比别人经历更少的挑战。这种不同群体的标志依赖于相同的前提去创造一个迷人的角度，一半是对象，一半的渲染技术，但百分之一百是概念。&lt;/p&gt;
 
 &lt;h3 id=&quot;印刷体字母&quot;&gt;印刷体字母&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/11.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/11.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;正方形和圆形在大多数设计师的心中有一个特别的地方。他们是相对有效的形状，允许我们有一个想法。该形状的限制是如果能够更好的适应在给定几何中，公众对轻微的捷联惯导系统设计的理解可以被原谅。所以谁能够责怪设计师试图去优化字母数字字符？这些字母标识有一些共性，包括正负空间之间的强平衡。字母组合肯定看到一个复苏的人气，能够使它更具有代表性，赋予它更大的重量和象征意义。这些仍然是字母但通过强度和物质来反映它们所代表的个体或实体。&lt;/p&gt;
 
 &lt;h3 id=&quot;曲线&quot;&gt;曲线&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/12.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/12.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这是新一代的飘渺浮动的符号，仍然充满潜力，但正如一个标志中的每一点概念。不指望消费者在行业本质的基础上看到标志。相反，期望公众去猜测个性，或者至少是如此的傲慢，他们会受激发从而进一步的进行研究。在公平性方面，任何一个标记都是由更大的背景来支持的，这有助于交流更完整的故事。全球媒体集团在全球范围内利用纵横交错的流体透明度更好地展示其活动的多样性。这些标志的概念支持通过客户端的调整以适应市场需求的能力。&lt;/p&gt;
 
 &lt;h3 id=&quot;条&quot;&gt;条&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-03/13.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-03/13.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;在设计的所有关键因素中，节奏可能是最容易被误解的部分之一。总有一个理由让我们感到舒服。它就是重复的声音或运动，无论是简单的或复杂的，都使我们预测未来。一首歌曲中重复的副歌或纺织的模式，只需要部分的消费去完成接下来的。&lt;/p&gt;
 
@@ -360,16 +369,20 @@
 转自：&lt;a href=&quot;http://www.shejidaren.com/app-onboarding-screens.html&quot;&gt;设计达人&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Mon, 03 Jul 2017 20:00:00 +0800</pubDate>
+        <pubDate>Mon, 03 Jul 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/07/03/2016-logo-trends/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/03/2016-logo-trends/</guid>
+        
+        <category>design · Logo · trend</category>
         
         
       </item>
     
       <item>
         <title>让耳朵放个假——在「落网」听听独立音乐</title>
-        <description>&lt;p&gt;初次来到落网记得是大二的某个下午，无聊之时随处乱逛，便从某个网站推荐上看到了《落网》，开始还以为是普通的歌单合集之类的，但随便点击了一个期刊进去之后才发现是打开了新世界的大门。&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;初次来到落网记得是大二的某个下午，无聊之时随处乱逛，便从某个网站推荐上看到了《落网》，开始还以为是普通的歌单合集之类的，但随便点击了一个期刊进去之后才发现是打开了新世界的大门。&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;落网上的歌不是普通的流行音乐，而是将小众的独立音乐做成了一个个期刊，每一个都是独具特色。&lt;/p&gt;
 
@@ -379,7 +392,7 @@
 &lt;h4 id=&quot;1押韵的艺术&quot;&gt;&lt;a href=&quot;http://www.luoo.net/music/621&quot;&gt;1.押韵的艺术&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;本期音乐为西岸说唱（West Coast Hip Hop）音乐专题&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-02/1.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-02/1.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;说唱音乐的本质是把自己内心深处的情感用简单、直接的话语通过押韵的艺术方式呈现出来。
@@ -389,7 +402,7 @@
 &lt;h4 id=&quot;2畅意之时&quot;&gt;&lt;a href=&quot;http://www.luoo.net/music/650&quot;&gt;2.畅意之时&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;本期为说唱音乐专题，主要以硬核说唱为主&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-02/2.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-02/2.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;听这些音乐的时候，总让人想起电影《猜火车》里的青年们。总有一天你会发现，就算你拒绝，你放弃，世界还是没心没肺的存在，而你却被抛弃，不会因为你不承认改变你的失败，如同瑞奇一样，你要再次背叛，背叛叛逆的生活，重归正路，要去接受虚妄，接受平凡，你不可以不选，因为你不可能永的青春，你不可能不长大，只有死去的，才永远十八岁。活着的，是要选择——选择生命，选择工作，选择职业，选择家庭，选择可恶的大彩电，选择洗衣机、汽车、雷射碟机，选择健康、低胆固醇和牙医保险，选择楼宇按揭，选择你的朋友，选择套装、便服和行李，选择分期付款和三件套西装，选择收看无聊的游戏节目，边看边吃零食…选择你的未来，选择你的生命…
@@ -400,7 +413,7 @@
 &lt;h4 id=&quot;3活着&quot;&gt;&lt;a href=&quot;http://www.luoo.net/music/798&amp;quot;&quot;&gt;3.活着&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;本期音乐为白人说唱音乐专题&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-02/3.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-02/3.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;由于说唱音乐源自美国黑人贫民社区，所以说唱音乐一直以来都是黑人的专利，直到上世纪80年代白人说唱组合Beastie Boys在说唱音乐上获得了一定的成功，以及后来的Eminem大红大紫，才逐渐淡去了肤色上的变相歧视，回归到音乐上的真实自我表达。
@@ -411,7 +424,7 @@
 &lt;h4 id=&quot;4永远年轻&quot;&gt;&lt;a href=&quot;http://www.luoo.net/music/643&quot;&gt;4.永远年轻&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;这一期音乐为独立音乐专题&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/post/2017-07-02/4.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-07-02/4.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;这一生，最悲哀的莫过于不曾年轻。
@@ -419,9 +432,11 @@
 永远年轻!&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Sun, 02 Jul 2017 20:00:00 +0800</pubDate>
+        <pubDate>Sun, 02 Jul 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/07/02/luowang/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/02/luowang/</guid>
+        
+        <category>music · recommended · song sheet</category>
         
         
       </item>
@@ -445,9 +460,11 @@
 
 &lt;p&gt;2010年7月24日，我们又在干什么呢？能感觉到存在的也只有现在。&lt;/p&gt;
 </description>
-        <pubDate>Sat, 01 Jul 2017 20:00:00 +0800</pubDate>
+        <pubDate>Sat, 01 Jul 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/07/01/feel-my-presence/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/01/feel-my-presence/</guid>
+        
+        <category>movie · feelings · thinking</category>
         
         
       </item>

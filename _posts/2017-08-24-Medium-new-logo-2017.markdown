@@ -1,39 +1,41 @@
 ---
-layout:     post
+layout:     "post"
 title:      "Medium为什么又换了新Logo"
 subtitle:   "medium new logo 2017"
-date:       2017-08-24 10:00:00
-author:     "Zizhen"
-header-img: "images/post/2017-08-24/bg.png"
-catalog:    true
+date:       "2017-08-24"
+cover:      "bg.png"
+readtime:   "08"
+tips:       ""
+tag:        "redesign · logo · medium"
+excerpt:    "这个在2015年为Medium创造的Logo无疑是成功的，那为什么在Medim使用了它将近2年后选择换掉这个Logo呢？让我们先来回顾下Medium上一次Logo改版的原因..."
 ---
 
  最近Medium悄悄的换上了新的Logo，它长这样：
 
- ![img](/images/post/2017-08-24/1.png)
+ ![img](/assets/images/post/2017-08-24/1.png)
 
  可能对于关注设计师和Medium的用户们来说，对Medium印象最深的一次改版是下面这个：
 
- ![img](/images/post/2017-08-24/2.png)
+ ![img](/assets/images/post/2017-08-24/2.png)
 
  这个在2015年为Medium创造的Logo无疑是成功的，那为什么在Medim使用了它将近2年后选择换掉这个Logo呢？让我们先来回顾下Medium上一次Logo改版的原因。
 
  最初在Medium首次上线测试版的时候是一个这样的Logo，简单，优雅，强壮。
- 
- ![img](/images/post/2017-08-24/3.png)
+
+ ![img](/assets/images/post/2017-08-24/3.png)
 
  但是Medium觉得在随着Medium逐渐成长起来后，这个Logo显得生硬而且不好接近，Medium需要改变，也需要大量新鲜的血液注入，所以一个新的品牌形象便成了当务之急。
 
- ![img](/images/post/2017-08-24/4.png)
+ ![img](/assets/images/post/2017-08-24/4.png)
 
  在经过不断的尝试和思考后，Medium最终完成了一个很成功的品牌形象的转变，为大众呈现了一个有趣，年轻化的Logo。同时效果也很显著，在这两年间Medium的成长是有目共睹的，越来越多的高质量的作者涌入Medium，更多的优秀文章被创造出来，反过来又吸引着更多的读者进入Medium，形成了一个良性的循环。
 
- ![img](/images/post/2017-08-24/5.png)
+ ![img](/assets/images/post/2017-08-24/5.png)
 
  但是现在为什么更换了新的品牌形象呢，我认为这代表这着Medium对内容的性质要求从娱乐化到严肃化的转变。
  娱乐化的内容可以为网站带来用户，流量，但是产生的价值却是有限的，Medium或许也认识到了这一点，所以想要用品牌形象的转变告诉大家：“我们给大家提供的是高价值、高质量的内容”。同时我们可以发现，Medium网站本身的设计也是慢慢的以内容为主，保持简洁与可读性。
 
-  ![img](/images/post/2017-08-24/6.png)
+  ![img](/assets/images/post/2017-08-24/6.png)
 
  所以我们在再来分析新的Logo，可以明显的看到新的Logo采用了尖锐的衬线，让人感到严肃的同时也不失现代感。紧凑的间距让Logo的结构显得更加的稳定与严谨，去掉了色彩使人更关注内容而不是形式。
  接下来就让我们看看新的品牌形象又会给Medium带来什么样的变化吧！

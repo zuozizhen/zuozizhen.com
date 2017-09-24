@@ -1,0 +1,99 @@
+---
+layout: default
+title: "Essays"
+description: "Do one thing for a lifetime"
+---
+<div class="header_top">
+  <div class="header_logo">
+    <a href= {{ "/" | prepend: site.baseurl }} class="z"></a>
+    <span class="u"></span>
+    <span class="o"></span>
+    <span class="n"></span>
+    <a href= {{ "/" | prepend: site.baseurl }} class="x"></a>
+  </div>
+</div>
+<header class="header">
+
+  <div class="header_left">
+    <div class="header_left_line">
+      <i class="line"></i>
+    </div>
+    <div class="header_sound">
+      <i class="line"></i>
+      <i class="line"></i>
+      <i class="line"></i>
+      <i class="line"></i>
+    </div>
+  </div>
+  <div class="footer_left">{{ paginator.page }} / {{ paginator.total_pages }}</div>
+  <div class="footer_right">
+    <a href="mailto:hjsfzzz@gmail.com" class="email_in">hjsfzzz@gmail.com</a>
+  </div>
+
+  <div class="header_right">
+    <div class="header_text careers-text">
+      <span>lasest<i></i>01</span>
+      <span>05<i></i>Essays</span>
+    </div>
+    <div class="header_right_line">
+    <i class="line"></i>
+    </div>
+  </div>
+  <div class="menu_right">
+    <div class="line" id="line-progress"></div>
+    <div class="line-bg"></div>
+  </div>
+</header>
+<div class="lines">
+    <i class="lines_i lines_i__1"></i>
+    <i class="lines_i lines_i__2"></i>
+    <i class="lines_i lines_i__3"></i>
+    <i class="lines_i lines_i__4"></i>
+    <i class="lines_i lines_i__5"></i>
+    <i class="lines_i lines_i__6"></i>
+</div>
+
+<section class="section careers white active" data-class="body_white" data-id="careers" id="careers">
+  <div class="section_title">
+    <div class="section_title_text other">
+      Essays
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="careers_wrap">
+      <div class="careers_position">Latest Essays</div>
+
+      {% for post in paginator.posts %}
+      <a href="{{ post.url }}" class="careers_item">
+          <span class="careers_date careers_date_home">{{ post.date | date: "%Y · %m · %d" }}</span>
+          <span class="careers_tag">INTERACTION DESIGN · UI/UX · UI DESIGN</span>
+          <span class="careers_title">{{ post.title }}</span>
+          <div class="careers_content">
+            <div class="careers_text">
+              {{post.excerpt}}
+            </div>
+          </div>
+        </a>
+       {% endfor %}
+
+
+       <div class="post_pagination page_pagination">
+         {% if paginator.total_pages > 1 %}
+           {% if paginator.previous_page %}
+           <a class="previous"href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+           上一页<br><span>Previous page</span>
+           </a>
+           {% endif %}
+
+           {% if paginator.next_page %}
+             <a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+             下一页<br><span>Next Page</span>
+             </a>
+           {% endif %}
+        {% endif %}
+
+
+       </div>
+    </div>
+  </div>
+</section>

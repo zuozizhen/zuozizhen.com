@@ -1,17 +1,20 @@
 ---
-layout:     post
+layout:     "post"
 title:      "扁平化设计的新趋势:化繁为简"
 subtitle:   "the new trend of flat design"
-date:       2017-07-04 12:00:00
-author:     "Zizhen"
-header-img: "images/post/2017-07-04/bg.png"
-catalog:    true
+date:       "2017-07-04"
+cover:      "bg.png"
+readtime:   "07"
+tips:       ""
+tag:        "design · user interface · trend"
+excerpt:    "过去几个月来，设计创新领域的先行者们，将“极简设计”推向了一个新的高度。Facebook、Airbnb和Apple都遵循着近似的原则，简化它们的核心产品。"
 ---
+
 >我们在这个“极简主义”的世界生活已经有些时日了，之后又将去向何方？
 
 过去几个月来，设计创新领域的先行者们，将“极简设计”推向了一个新的高度。Facebook、Airbnb和Apple都遵循着近似的原则，简化它们的核心产品，这种“化繁为简”（Complexion Reduction）的新趋势就在它们的移动端设计中得到体现。
 
-## “化繁为简”究竟是什么？
+## 化繁为简究竟是什么？
 你是不是从没听说过“化繁为简”的趋势？那是肯定的，因为这只是我创造出来的术语。最近我留意到一种新的趋势，它超越了扁平化设计，也超越了极简设计，独立性在逐渐削弱。有些人会说，这只是极简设计运用到移动端领域时开启的新阶段，但我认为它截然不同。有一些明确的共性和特征可以定义这种新趋势。所以我决定给它起个名字。起个名没什么问题吧？
 这种横扫硅谷的热门新趋势，有以下这些决定性特征：
 1. 加大加粗的标题
@@ -63,7 +66,6 @@ Apple是最近的一个例子，设计师们迷上了化繁为简的趋势。本
 + 留白区域变为原来的两倍……不对，要三倍。甚至可以到四倍。这一点绝不能出错。
 
 + 应用图标更鲜艳。如果你就是喜欢设计一些鲜艳闪耀的东西，可以用在应用图标上。这是体现个性和品牌的地方，要让它光彩夺目！
-
 
 > 翻译：[可乐橙](http://colachan.com/post/3511)
 原文：[swarmnyc](http://swarmnyc.com/whiteboard/complexion-reduction-a-new-trend-in-design-1)
