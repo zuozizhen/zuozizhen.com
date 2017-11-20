@@ -29,7 +29,7 @@ function cases_canvas() {
 
     $('.cases_image').each(function () {
         $('.cases_item').not('fade').show();
-        $('.cases_item:gt(2)').not('fade').hide();
+        $('.cases_item:gt(4)').not('fade').hide();
 
     });
 

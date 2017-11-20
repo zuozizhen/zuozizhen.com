@@ -1,13 +1,6 @@
 ---
 layout: default
 ---
-<!-- <div id="load" class="active">
-  <div class="load_logo">o</div>
-  <div class="count">0</div>
-  <div class="offf"><span>sound on</span></div>
-</div> -->
-<!-- <div class="header_top">
-</div> -->
 <div class="header_top">
   <div class="header_logo">
     <a href= {{ "/" | prepend: site.baseurl }} class="z"></a>
@@ -30,7 +23,6 @@ layout: default
       <span class="">Web UI/UX Design | Mobile UI/UX Design</span>
     </div>
   </div>
-
   <div class="header_right">
     <div class="header_text head-text">
       <span>ABOUT<i></i>01</span>
@@ -56,7 +48,6 @@ layout: default
       <span>CASE<i></i>04</span>
       <span>05<i></i>CASE1</span>
     </div>
-
     <div class="header_right_line">
       <i class="line"></i>
     </div>
@@ -74,20 +65,19 @@ layout: default
   <i class="lines_i lines_i__5"></i>
   <i class="lines_i lines_i__6"></i>
 </div>
-
-<div class="footer_left footer_post"><a href="{{ site.baseurl }}/essays">Essays</a></div>
+<div class="footer_left footer_post">
+  <a href="{{ site.baseurl }}/essays">Essays</a>
+</div>
 <a class="footer_right footer_post" href="mailto:hjsfzzz@gmail.com" class="email_in">
   <i class="material-icons">mail_outline</i>
   <span>hjsfzzz@gmail.com</span>
 </a>
-
 <section class="section head white" data-class="body_white" id="head" data-id="head">
   <div class="section_title">
-    <div class="section_title_text other" id="title">
-      About
-    </div>
+    <div class="section_title_text other" id="title">About</div>
   </div>
-  <div class="head_content">
+  <div class="wrapper">
+    <div class="head_content">
     <div class="head_title">
       <div class="head_title_sub">
         Zuo Zizhen.
@@ -101,16 +91,14 @@ layout: default
       <span>About</span>
     </div>
     <div class="head_paragraph">
-      <p>
-        I'm a product designer working in Beijing. I provide customers with design consulting work, to help customers overall, professional, digital design.
-      </p>
+      <p>I'm a product designer working in Beijing. I provide customers with design consulting work, to help customers overall, professional, digital design.</p>
     </div>
     <div class="head_tag">Web UI/UX Design | Mobile UI/UX Design</div> -->
   </div>
-
+  </div>
 
   <!-- <div class="head_pic">
-    <img src="assets/images/about-pic.png" alt="">
+    <img src="assets/images/about-pic.jpg" alt="">
   </div> -->
   <div class="head_scroll">
     <span>SCROLL TO EXPLORE</span>
@@ -119,22 +107,13 @@ layout: default
 <section class="section story black" data-class="body_black" data-id="about" id="about">
   <div class="section_title">
     <div class="section_title_text">
-      My Story
+      Story
     </div>
   </div>
   <div class="wrapper">
     <div class="center">
       <div class="clearfix">
-        <!-- <div class="story-show-1">
-          <div class="story-show-content">
-          <span>interest</span>
-          <span>in</span>
-          <span>design</span>
-          <span>at</span>
-          <span>college</span>
-          </div>
-        </div> -->
-        <div class="about_right">
+        <div class="about_left">
           <div class="content">
             <div class="part">
               <span>01</span>
@@ -148,6 +127,9 @@ layout: default
             </p>
           </div>
         </div>
+        <div class="story-show-1">
+          <div class="story-show-content"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -155,22 +137,16 @@ layout: default
 <section class="section story white" data-class="body_white" data-id="services" id="services">
   <div class="section_title">
     <div class="section_title_text other">
-      My Story
+      Story
     </div>
   </div>
   <div class="wrapper">
     <div class="center">
       <div class="clearfix">
-        <!-- <div class="story-show-2">
-          <div class="story-show-content">
-            <span>designer</span>
-            <span>to</span>
-            <span>developers</span>
-            <span>to</span>
-            <span>full-stack</span>
-          </div>
-        </div> -->
-        <div class="about_left">
+        <div class="story-show-2">
+          <div class="story-show-content"></div>
+        </div>
+        <div class="about_right">
           <div class="content">
             <div class="part">
               <span>02</span>
@@ -190,14 +166,15 @@ layout: default
   </div>
 </section>
 <section class="section cases black" data-class="body_black" data-id="cases" id="cases">
-  <div class="section_title section_title_cases">
+  <!-- <div class="section_title section_title_cases">
     <div class="section_title_text">
       Cases
     </div>
-  </div>
-  <div class="wrapper wrapper-fullwidth">
-    <div class="careers_position">
-      Some real Cases
+  </div> -->
+  <div class="wrapper">
+    <div class="title case-title">
+      <span>Life was like a box of chocolates.</span>
+      <span>You never know what you’re gonna get.</span>
     </div>
     <div class="cases_item">
       <div class="section_title">
@@ -235,7 +212,7 @@ layout: default
         </div>
       </div>
     </div>
-    <!-- <div class="cases_item">
+    <div class="cases_item">
       <div class="section_title">
         <div class="section_title_text">
           Presen
@@ -260,7 +237,7 @@ layout: default
             </span>
             <span class="cases_tag">
               <span class="tag_name">SERVICE</span>
-              <span class="tag_content">Web/Mobile Design</span>
+              <span class="tag_content">Web/Mobile</span>
             </span>
           </div>
         </div>
@@ -270,7 +247,79 @@ layout: default
           </a>
         </div>
       </div>
-    </div> -->
+    </div>
+    <div class="cases_item">
+      <div class="section_title">
+        <div class="section_title_text">
+          Petme
+        </div>
+      </div>
+      <div class="cases_content">
+        <div class="cases_synopsis">
+          <div class="cases_info">iOS APP</div>
+          <a href="officiel.html" class="cases_title"><span>Petme</span></a>
+          <div class="cases_text">
+            <span class="line"></span>
+            <p>
+              To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions
+            </p>
+            <span class="cases_tag">
+              <span class="tag_name">YEAR</span>
+              <span class="tag_content">2017</span>
+            </span>
+            <span class="cases_tag">
+              <span class="tag_name">ROLE</span>
+              <span class="tag_content">UI/UX Designer</span>
+            </span>
+            <span class="cases_tag">
+              <span class="tag_name">SERVICE</span>
+              <span class="tag_content">Logo Design</span>
+            </span>
+          </div>
+        </div>
+        <div class="cases_img">
+          <a href="officiel.html" class="cases_image">
+            <img src="assets/images/case-3.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="cases_item">
+      <div class="section_title">
+        <div class="section_title_text">
+          Eggman
+        </div>
+      </div>
+      <div class="cases_content">
+        <div class="cases_synopsis">
+          <div class="cases_info">Learn</div>
+          <a href="officiel.html" class="cases_title"><span>Eggman</span></a>
+          <div class="cases_text">
+            <span class="line"></span>
+            <p>
+              To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions
+            </p>
+            <span class="cases_tag">
+              <span class="tag_name">YEAR</span>
+              <span class="tag_content">2017</span>
+            </span>
+            <span class="cases_tag">
+              <span class="tag_name">ROLE</span>
+              <span class="tag_content">UI/UX Designer</span>
+            </span>
+            <span class="cases_tag">
+              <span class="tag_name">SERVICE</span>
+              <span class="tag_content">Logo Design</span>
+            </span>
+          </div>
+        </div>
+        <div class="cases_img">
+          <a href="officiel.html" class="cases_image">
+            <img src="assets/images/case-4.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="cases_link">
       <span class="cases_nolink">More in</span>
       <a href="https://dribbble.com/zuonx" class="cases_link_in first" target="_blank">
@@ -291,19 +340,21 @@ layout: default
   </div>
   <div class="wrapper">
     <div class="careers_wrap home_wrap">
-      <div class="careers_position">Latest Essays</div>
-
+      <div class="title">
+        <span>Life was like a box of chocolates.</span>
+        <span>You never know what you’re gonna get.</span>
+      </div>
       {% for post in site.posts limit:2 %}
       <a href="{{ post.url }}" class="careers_item">
-          <span class="careers_date">{{ post.date | date: "%Y · %m · %d" }}</span>
-          <span class="careers_tag">INTERACTION DESIGN · UI/UX · UI DESIGN</span>
-          <span class="careers_title">{{ post.title }}</span>
-          <div class="careers_content">
-            <div class="careers_text">
-              {{post.excerpt}}
-            </div>
+        <span class="careers_date">{{ post.date | date: "%Y · %m · %d" }}</span>
+        <span class="careers_tag">INTERACTION DESIGN · UI/UX · UI DESIGN</span>
+        <span class="careers_title">{{ post.title }}</span>
+        <div class="careers_content">
+          <div class="careers_text">
+            {{post.excerpt}}
           </div>
-        </a> {% endfor %}
+        </div>
+      </a> {% endfor %}
       <div class="careers_content">
         <a href="{{ site.baseurl }}/essays" class="careers_link">
           View More
@@ -323,7 +374,6 @@ layout: default
       <div class="title">
         <span>Life was like a box of chocolates.</span>
         <span>You never know what you’re gonna get.</span>
-
       </div>
       <div class="wrapper_in">
         <!-- <div class="contacts_item">
