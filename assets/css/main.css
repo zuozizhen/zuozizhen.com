@@ -952,7 +952,7 @@ html.hidden:not(.test), body.hidden:not(.test) {
 }
 @media only screen and (max-width: 750px) {
   .head_title_main {
-    font-size: 30px !important;
+    font-size: 40px !important;
     display: block;
   }
 }
@@ -1538,7 +1538,7 @@ html.hidden:not(.test), body.hidden:not(.test) {
     font-size: 14px;
     line-height: 30px;
   }
-  
+
   .cases_text p {
     top: -26px;
   }
@@ -1841,6 +1841,7 @@ html.hidden:not(.test), body.hidden:not(.test) {
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
 .careers .title {
+  color: var(--z-black);
   padding-top: 200px;
 }
 @media only screen and (max-width: 750px) {
@@ -2188,6 +2189,9 @@ html.hidden:not(.test), body.hidden:not(.test) {
   .contacts_item:last-child, .contacts_item:nth-child(2) {
     margin-left: 0 !important;
   }
+}
+.contacts .title {
+  color: var(--z-black);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1310px) {
   .contacts .title {
