@@ -1716,7 +1716,7 @@ html.hidden:not(.test), body.hidden:not(.test) {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #575b66;
+  background: var(--z-black);
   right: 0;
   top: 0;
   -webkit-transition: all 0.5s 0s;
@@ -2225,7 +2225,7 @@ html.hidden:not(.test), body.hidden:not(.test) {
 }
 .contacts_label {
   font-size: 18px;
-  color: #8e9199;
+  color: var(--z-gray);
   margin-bottom: 20px;
   margin-top: 130px;
   display: block;
