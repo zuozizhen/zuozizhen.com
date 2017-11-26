@@ -49,12 +49,14 @@
   <!-- Web fonts -->
 
   <!-- Stylesheets -->
+  <link title="light" rel="stylesheet" href=/assets/css/light.css>
+  <link title="dark" rel="stylesheet" href=/assets/css/dark.css disabled="disabled">
   <link rel="stylesheet" href=/assets/css/main.css>
   <link rel="stylesheet" href=/assets/css/syntax.css>
 </head>
 
 <!-- hack iOS CSS :active style -->
-<body class="body_black">
+<body class="body_white">
 
   <!-- <div id="load" class="active">
   <div class="load_logo">o</div>
@@ -230,7 +232,7 @@
   </div>
 </section>
 
-  <audio hidden id="music_sound" loop="true">
+  <audio hidden id="music_sound" loop="true" preload="preload" autoplay="autoplay">
   <source src="/assets/sound/music_sound.mp3" type="audio/mpeg">
 </audio>
 <audio hidden id="music_close">

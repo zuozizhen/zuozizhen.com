@@ -199,7 +199,7 @@ $(document).scroll(function () {
         _href = _hrefNext;
         if (_class != _classNext) {
             _class = _classNext;
-            $('body').removeClass().addClass(_class);
+            // $('body').removeClass().addClass(_class);
         }
         $('.header_text').removeClass('active');
         $('.section').removeClass('active');
@@ -345,3 +345,18 @@ $().ready(function(){
 
 	  });
 	});
+
+changeTheme()
+function changeTheme() {
+    var date = new Date();
+    var hr = date.getHours();
+    if (hr > 5 && hr < 19) {
+       $("html").removeClass("night");
+    }
+    if (hr >= 19) {
+       $("html").addClass("night");
+    }
+    if (hr >= 0 && hr <= 5) {
+       $("html").addClass("night");
+    }
+  }

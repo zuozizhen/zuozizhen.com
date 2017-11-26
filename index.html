@@ -1,6 +1,20 @@
 ---
 layout: default
 ---
+<!-- <div id="load" class="active">
+  <div class="lines-home">
+    <i class="lines_i lines_i__1"></i>
+    <i class="lines_i lines_i__2"></i>
+    <i class="lines_i lines_i__3"></i>
+    <i class="lines_i lines_i__4"></i>
+    <i class="lines_i lines_i__5"></i>
+    <i class="lines_i lines_i__6"></i>
+  </div>
+  <div class="count">
+      0
+  </div>
+</div> -->
+
 <div class="header_top">
   <div class="header_logo">
     <a href= {{ "/" | prepend: site.baseurl }} class="z"></a>
@@ -12,7 +26,7 @@ layout: default
 </div>
 <header class="header">
   <div class="header_left">
-    <div class="header_left_line">
+    <div id="styles" class="header_left_line">
       <i class="line"></i>
     </div>
     <div class="header_sound">
@@ -23,7 +37,7 @@ layout: default
     </div>
   </div>
   <div class="header_right">
-    <div class="header_text head-text">
+    <div class="header_text head-text active">
       <span>ABOUT<i></i>01</span>
       <span>02<i></i>ME</span>
     </div>
@@ -85,25 +99,26 @@ layout: default
       </div>
       <div class="head_title_main">Design effective digital </br>products.</div>
     </div>
-    <!-- <div class="head_subtitle">
-      <span class="line"></span>
-      <span>About</span>
-    </div>
-    <div class="head_paragraph">
-      <p>I'm a product designer working in Beijing. I provide customers with design consulting work, to help customers overall, professional, digital design.</p>
-    </div>
-    <div class="head_tag">Web UI/UX Design | Mobile UI/UX Design</div> -->
+    <!-- <div class="head_subcontent">
+      <div class="head_subtitle">
+        <span class="line"></span>
+        <span>About</span>
+      </div>
+      <div class="head_paragraph">
+        <p>I'm a product designer working in Beijing. I provide customers with design consulting work, to help customers overall, professional, digital design.</p>
+      </div>
+    </div> -->
   </div>
   </div>
 
   <!-- <div class="head_pic">
-    <img src="assets/images/about-pic.jpg" alt="">
+    <img src="assets/images/about-pic.png" alt="">
   </div> -->
   <div class="head_scroll">
     <span>SCROLL TO EXPLORE</span>
   </div>
 </section>
-<section class="section story black" data-class="body_black" data-id="about" id="about">
+<section class="section story white" data-id="about" id="about">
   <div class="section_title">
     <div class="section_title_text">
       Story
@@ -164,7 +179,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="section cases black" data-class="body_black" data-id="cases" id="cases">
+<section class="section cases white" data-id="cases" id="cases">
   <!-- <div class="section_title section_title_cases">
     <div class="section_title_text">
       Cases

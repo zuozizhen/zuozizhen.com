@@ -13,7 +13,7 @@ var homeresize = function () {
             $('.other-2').css('top', _e.offset().top - docScroll).text(_e.text());
         }
     });
-    $('body').removeClass().addClass(_classNext);
+    // $('body').removeClass().addClass(_classNext);
     $('.careers_text').css('column-gap', $('.wrapper').width() / 12);
     if (window.innerWidth > 1200) {
         requestAnimationFrame(cases_canvas);
