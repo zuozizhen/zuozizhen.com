@@ -16,8 +16,8 @@ RSS: ture
 # weibo_username:     zuonx
 # zhihu_username:     zuonx
 # github_username:    zuonx
-# twitter_username:  huxpro
-# facebook_username:  huxpro
+# twitter_username:  zuonx
+# facebook_username: zuonx
 # linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -61,7 +61,7 @@ kramdown:
 # Sidebar settings
 # sidebar: true                           # whether or not using Sidebar.
 # sidebar-about-description: ""
-# sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+# sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
