@@ -931,21 +931,12 @@ html.hidden:not(.test), body.hidden:not(.test) {
 .head_title_main {
   color: var(--z-gray-dark);
   font-family: SofiaPro-SemiBold;
-  font-size: 5.5vw;
+  font-size: 6vw;
   text-align: left;
   white-space: nowrap;
   line-height: 1.2em;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1310px) {
-  .head_title_main {
-    font-size: 80px;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .head_title_main {
-    font-size: 60px;
-  }
-}
+
 @media only screen and (max-width: 750px) {
   .head_title_main {
     font-size: 40px !important;
