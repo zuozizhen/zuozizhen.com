@@ -53,6 +53,28 @@
   <link title="dark" rel="stylesheet" href=/assets/css/dark.css disabled="disabled">
   <link rel="stylesheet" href=/assets/css/main.css>
   <link rel="stylesheet" href=/assets/css/syntax.css>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111351144-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111351144-1');
+  </script>
+
+  <script type="text/javascript">
+      var feed = new Instafeed({
+          get: 'tagged',
+          tagName: 'awesome',
+          clientId: '5836c0fd1b354995b2302d504b3e7dfd',
+          template: '<a href=""><img src="" /></a>'
+      });
+      feed.run();
+  </script>
+
+
 </head>
 
 <!-- hack iOS CSS :active style -->
@@ -75,57 +97,55 @@
 <div class="header_top">
   <div class="header_logo">
     <a href= / class="z"></a>
-    <span class="u"></span>
     <span class="o"></span>
-    <span class="n"></span>
     <a href= / class="x"></a>
   </div>
 </div>
 <header class="header">
   <div class="header_left">
     <div id="styles" class="header_left_line">
-      <i class="line"></i>
+      <i class="line_1"></i>
+      <i class="line_2"></i>
+      <i class="line_3"></i>
     </div>
-    <div class="header_sound">
-      <i class="line"></i>
-      <i class="line"></i>
-      <i class="line"></i>
-      <i class="line"></i>
+    <div class="header_left_bottom">
+      <span class="u"></span>
     </div>
   </div>
   <div class="header_right">
     <div class="header_text head-text active">
-      <span>ABOUT<i></i>01</span>
-      <span>02<i></i>ME</span>
+      <span>01</span>
+      <span>02</span>
     </div>
     <div class="header_text about-text">
-      <span>STORY<i></i>02</span>
-      <span>03<i></i>PART1</span>
+      <span>02</span>
+      <span>03</span>
     </div>
     <div class="header_text services-text">
-      <span>STORY<i></i>03</span>
-      <span>04<i></i>PART2</span>
+      <span>03</span>
+      <span>04</span>
     </div>
     <div class="header_text cases-text">
-      <span>CASE<i></i>04</span>
-      <span>05<i></i>CASE</span>
+      <span>04</span>
+      <span>05</span>
     </div>
     <div class="header_text careers-text">
-      <span>Last<i></i>05</span>
-      <span>06<i></i>Essays</span>
+      <span>05</span>
+      <span>06</span>
     </div>
     <div class="header_text contacts-text">
-      <span>Touch<i></i>04</span>
-      <span>05<i></i>Me</span>
+      <span>06</span>
+      <span>07</span>
     </div>
-    <div class="header_right_line">
-      <i class="line"></i>
+    <div class="menu_right">
+      <div class="line" id="line-progress"></div>
+      <div class="line-bg"></div>
+    </div>
+    <div class="header_right_bottom">
+      <span class="n"></span>
     </div>
   </div>
-  <div class="menu_right">
-    <div class="line" id="line-progress"></div>
-    <div class="line-bg"></div>
-  </div>
+
 </header>
 <div class="lines-home">
   <i class="lines_i lines_i__1"></i>
@@ -134,27 +154,26 @@
   <i class="lines_i lines_i__4"></i>
   <i class="lines_i lines_i__5"></i>
   <i class="lines_i lines_i__6"></i>
+  <i class="lines_i lines_i__7"></i>
 </div>
-<div class="footer_left footer_post">
-  <a href="/essays">Essays</a>
-</div>
-<a class="footer_right footer_post" href="mailto:hjsfzzz@gmail.com" class="email_in">
+<!-- <a class="footer_right footer_post" href="mailto:hjsfzzz@gmail.com" class="email_in">
   <i class="material-icons">mail_outline</i>
   <span>hjsfzzz@gmail.com</span>
-</a>
-<section class="section head white" data-class="body_white" id="head" data-id="head">
+</a> -->
+<section class="section head white" id="head" data-id="head">
   <div class="section_title">
     <div class="section_title_text other" id="title"></div>
   </div>
   <div class="wrapper">
-    <div class="head_content">
     <div class="head_title">
-      <div class="head_title_sub">
-        Zuo Zizhen.
-      </br>
-        Product Designer.
+      <div class="head_title_main">
+        Design<br>
+        Effective Digital</br>
+        Products.
       </div>
-      <div class="head_title_main">Design effective digital </br>products.</div>
+    </div>
+    <div class="head_title_sub">
+      <span>CREATORS OF WORLD-CLASS WEBSITES</span>
     </div>
     <!-- <div class="head_subcontent">
       <div class="head_subtitle">
@@ -166,11 +185,10 @@
       </div>
     </div> -->
   </div>
-  </div>
 
-  <!-- <div class="head_pic">
-    <img src="assets/images/about-pic.png" alt="">
-  </div> -->
+  <div class="head_pic">
+    <img src="assets/images/home-z.svg" alt="">
+  </div>
   <div class="head_scroll">
     <span>SCROLL TO EXPLORE</span>
   </div>
@@ -226,10 +244,10 @@
             <div class="title">
               <span>Better design</span>
             </div>
-            <p>
-              Luckily, I had the opportunity to practice at Accenture, which enabled me to maintain good working habits. After graduation, I joined a start-up company, so I have more opportunities to achieve bold design. My goal is to be an independent developer, I
-              am good at integrating my various skills together to play out more power, such as design, code and 3D animation, I like to create the process.
-            </p>
+            <div id="instafeed"></div>
+            <div id="instafeed"></div>
+            <div id="instafeed"></div>
+            <div id="instafeed"></div>
           </div>
         </div>
       </div>
@@ -511,6 +529,7 @@
 </audio>
 
 <script src="/assets/js/main.js "></script>
+<script src="/assets/js/instafeed.js "></script>
 <script src="/assets/js/separate-js/main.js "></script>
 <script src="/assets/js/separate-js/loader.js "></script>
 

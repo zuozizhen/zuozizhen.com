@@ -53,6 +53,28 @@
   <link title="dark" rel="stylesheet" href=/assets/css/dark.css disabled="disabled">
   <link rel="stylesheet" href=/assets/css/main.css>
   <link rel="stylesheet" href=/assets/css/syntax.css>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111351144-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111351144-1');
+  </script>
+
+  <script type="text/javascript">
+      var feed = new Instafeed({
+          get: 'tagged',
+          tagName: 'awesome',
+          clientId: '5836c0fd1b354995b2302d504b3e7dfd',
+          template: '<a href=""><img src="" /></a>'
+      });
+      feed.run();
+  </script>
+
+
 </head>
 
 <!-- hack iOS CSS :active style -->
@@ -177,6 +199,7 @@
 </audio>
 
 <script src="/assets/js/main.js "></script>
+<script src="/assets/js/instafeed.js "></script>
 <script src="/assets/js/separate-js/main.js "></script>
 <script src="/assets/js/separate-js/loader.js "></script>
 

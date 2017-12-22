@@ -345,18 +345,3 @@ $().ready(function(){
 
 	  });
 	});
-
-changeTheme()
-function changeTheme() {
-    var date = new Date();
-    var hr = date.getHours();
-    if (hr > 5 && hr < 19) {
-       $("html").removeClass("night");
-    }
-    if (hr >= 19) {
-       $("html").addClass("night");
-    }
-    if (hr >= 0 && hr <= 5) {
-       $("html").addClass("night");
-    }
-  }

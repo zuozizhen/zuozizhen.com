@@ -49,5 +49,16 @@
 
     gtag('config', 'UA-111351144-1');
   </script>
-  
+
+  <script type="text/javascript">
+      var feed = new Instafeed({
+          get: 'tagged',
+          tagName: 'awesome',
+          clientId: '5836c0fd1b354995b2302d504b3e7dfd',
+          template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+      });
+      feed.run();
+  </script>
+
+
 </head>
