@@ -4,9 +4,8 @@ title:      "2016年Logo设计趋势"
 subtitle:   "2016 logo trends"
 date:       "2017-07-03"
 cover:      "bg.jpg"
-readtime:   "09"
-tips:       ""
-tag:        "design · Logo · trend"
+tips:       "logolounge 发布的2016标志设计趋势"
+tag:        [design, logo, trend]
 excerpt:    "今天和大家分享近日来自 logolounge 发布的2016标志设计趋势，趋势的分析是基于 LogoLounge 丰富的数据源而得出的一些结论..."
 ---
 
@@ -93,4 +92,3 @@ excerpt:    "今天和大家分享近日来自 logolounge 发布的2016标志设
 
 > 翻译：[视觉ME](http://mp.weixin.qq.com/s?__biz=MjM5MzE0OTYwMA==&amp;mid=2649741346&amp;idx=1&amp;sn=491cf656872555cf6aeaf1009faf8710&amp;scene=23&amp;srcid=0523EvYpjao3vsWHJ6RQefQk#rd)
 原文：[logolounge](https://www.logolounge.com/articles/2016-logo-trends)
-转自：[设计达人](http://www.shejidaren.com/app-onboarding-screens.html)

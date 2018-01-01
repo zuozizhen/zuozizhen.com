@@ -4,9 +4,8 @@ title:      "扁平化设计的新趋势:化繁为简"
 subtitle:   "the new trend of flat design"
 date:       "2017-07-04"
 cover:      "bg.png"
-readtime:   "07"
 tips:       ""
-tag:        "design · user interface · trend"
+tag:        [design, user interface, trend]
 excerpt:    "过去几个月来，设计创新领域的先行者们，将“极简设计”推向了一个新的高度。Facebook、Airbnb和Apple都遵循着近似的原则，简化它们的核心产品。"
 ---
 

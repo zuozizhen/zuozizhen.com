@@ -2,63 +2,35 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
+  <title>{{ page.title }}</title>
 
-  <meta name="description" content="Product Designer.Design effective digital products.">
-  <meta name="author" content="zizhen">
+  <meta name="description" content="{{site.description}}">
+  <meta name="author" content="Zuo Zizhen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="keywords" content="左子祯, zuozizhen, zuonx, hjsfzzz, 全栈设计师, 左子祯的博客, zuonx Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品">
+  <meta name="keywords" content="{{site.keywords}}">
+  <meta name="huaban" content="nopin">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv=”Page-Enter” content=”revealTrans(Duration=2.0,Transition=0)” />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico">
-
-  <!-- Icons -->
-  <!-- <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-160x160.png" sizes="160x160">
-  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-192x192.png" sizes="192x192">
-
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png"> -->
-
-  <!-- Web fonts -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.png">
 
   <!-- Stylesheets -->
-  <link title="light" rel="stylesheet" href={{ "/assets/css/light.css" | prepend: site.baseurl }}>
-  <link title="dark" rel="stylesheet" href={{ "/assets/css/dark.css" | prepend: site.baseurl }} disabled="disabled">
-  <link rel="stylesheet" href={{ "/assets/css/main.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/assets/css/syntax.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/application.css">
+
+  <!-- javascripts -->
+  <script src="{{ site.baseurl }}/assets/javascripts/jQuery.min.js"></script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111351144-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_track_id}}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'UA-111351144-1');
+    gtag('config', '{{site.ga_track_id}}');
   </script>
-
-  <script type="text/javascript">
-      var feed = new Instafeed({
-          get: 'tagged',
-          tagName: 'awesome',
-          clientId: '5836c0fd1b354995b2302d504b3e7dfd',
-          template: '<a href="{{link}}"><img src="{{image}}" /></a>'
-      });
-      feed.run();
-  </script>
-
-
 </head>

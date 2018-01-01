@@ -2,102 +2,41 @@
 layout: default
 ---
 
-<!-- <div id="load" class="active">
-  <div class="load_logo">o</div>
-  <div class="count">0</div>
-  <div class="offf"><span>sound on</span></div>
-</div> -->
-<div class="header_top">
-  <div class="header_logo">
-    <a href= {{ "/" | prepend: site.baseurl }} class="z"></a>
-    <span class="u"></span>
-    <span class="o"></span>
-    <span class="n"></span>
-    <a class="menu_ico x"></a>
-  </div>
+<div class="lines-grid-post">
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
 </div>
-<header class="header">
 
-  <div class="header_left">
-    <div class="header_left_line">
-      <i class="line"></i>
-    </div>
-    <div class="header_sound">
-      <i class="line"></i>
-      <i class="line"></i>
-      <i class="line"></i>
-      <i class="line"></i>
-    </div>
+<a class="post_back" href="javascript:history.go(-1)">Back</a>
+
+<section class="section post">
+  <div class="blog_item">
+    <span class="blog_tag">{{ page.tag }}</span>
+    <span class="blog_title">{{ page.title }}</span>
+    <span class="blog_tips">{{ page.date | date: "%Y · %m · %d" }}&nbsp;&nbsp;&nbsp;{{ page.tips }}</span>
   </div>
-
-  <div class="header_right">
-    <div class="header_text careers-text">
-      <span>READ<i></i>{{ page.readtime }}</span>
-      <span>Min<i></i>Time</span>
-    </div>
-
-    <div class="header_right_line">
-      <i class="line"></i>
-    </div>
+  <div class="post-wrapper">
+    {% if page.cover %}
+    <p>
+      <img class="blog_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
+    </p>
+    {% endif %}
+    {{ content }}
   </div>
-  <div class="menu_right">
-    <div class="line" id="line-progress"></div>
-    <div class="line-bg"></div>
-  </div>
-</header>
-<div class="lines-grid">
-    <i class="lines_i lines_i__1"></i>
-    <i class="lines_i lines_i__2"></i>
-    <i class="lines_i lines_i__3"></i>
-    <i class="lines_i lines_i__4 other"></i>
-    <i class="lines_i lines_i__5"></i>
-    <i class="lines_i lines_i__6"></i>
-</div>
-<a class="footer_left footer_post" href="javascript:history.go(-1)">
-  <i class="material-icons">keyboard_backspace</i>
-  <span> back</span>
-</a>
-<a class="footer_right footer_post" href="mailto:hjsfzzz@gmail.com" class="email_in">
-  <i class="material-icons">mail_outline</i>
-  <span>hjsfzzz@gmail.com</span>
-</a>
-<section class="section careers white active" data-class="body_white" data-id="careers" id="careers">
-  <div class="section_title">
-    <div class="section_title_text other">
-      Essays
-    </div>
-  </div>
-  <div class="wrapper wrapper-fullwidth">
-    <div class="careers_wrap page_wrap">
-        <div class="careers_item post-header">
-          <span class="careers_date">{{ page.date | date: "%Y · %m · %d" }}</span>
-          <span class="careers_tag">{{ page.tag }}</span>
-          <span class="careers_title">{{ page.title }}</span>
-          <span class="careers_tips">{{ page.tips }}</span>
-        </div>
+  <div class="post_pagination">
+    {% if page.previous.url %}
+      <a class="previous"href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+      上一篇<br><span>{{page.previous.title}}</span>
+      </a>
+    {% endif %}
 
-      <div class="careers_content post-wrapper">
-        {% if page.cover %}
-        <p>
-          <img class="careers_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
-        </p>
-        {% endif %}
-        {{ content }}
-      </div>
-      <div class="post_pagination">
-        {% if page.previous.url %}
-          <a class="previous"href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-          上一篇<br><span>{{page.previous.title}}</span>
-          </a>
-        {% endif %}
-
-        {% if page.next.url %}
-          <a class="next"href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-          下一篇<br><span>{{page.next.title}}</span>
-          </a>
-        {% endif %}
-      </div>
-
-    </div>
+    {% if page.next.url %}
+      <a class="next"href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+      下一篇<br><span>{{page.next.title}}</span>
+      </a>
+    {% endif %}
   </div>
 </section>

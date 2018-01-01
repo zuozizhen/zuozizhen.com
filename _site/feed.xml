@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>左子祯的个人网站 | Designer &amp; Developer</title>
-    <description>左子祯的个人网站 | Designer &amp; Developer</description>
+    <title>zuonx - design effective digital products</title>
+    <description>Design effective digital products.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 22 Dec 2017 19:48:06 +0800</pubDate>
-    <lastBuildDate>Fri, 22 Dec 2017 19:48:06 +0800</lastBuildDate>
+    <pubDate>Mon, 01 Jan 2018 13:09:46 +0800</pubDate>
+    <lastBuildDate>Mon, 01 Jan 2018 13:09:46 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -19,7 +19,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/2.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;这个在2015年为Medium创造的Logo无疑是成功的，那为什么在Medim使用了它将近2年后选择换掉这个Logo呢？让我们先来回顾下Medium上一次Logo改版的原因。&lt;/p&gt;
+&lt;p&gt;这个在2015年为Medium创造的Logo无疑是成功的，当时Medium花了很大功夫去宣传这个有趣的Logo，那为什么在Medim使用了它将近2年后选择换掉这个Logo呢？先让我们先来回顾下Medium上一次Logo改版的原因。&lt;/p&gt;
 
 &lt;p&gt;最初在Medium首次上线测试版的时候是一个这样的Logo，简单，优雅，强壮。&lt;/p&gt;
 
@@ -33,112 +33,26 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;但是现在为什么更换了新的品牌形象呢，我认为这代表这着Medium对内容的性质要求从娱乐化到严肃化的转变。
- 娱乐化的内容可以为网站带来用户，流量，但是产生的价值却是有限的，Medium或许也认识到了这一点，所以想要用品牌形象的转变告诉大家：“我们给大家提供的是高价值、高质量的内容”。同时我们可以发现，Medium网站本身的设计也是慢慢的以内容为主，保持简洁与可读性。&lt;/p&gt;
+&lt;p&gt;不过现在为什么又更换了新的品牌形象呢，我认为这代表这着第一是Medium对内容和自身品牌的性质要求更加偏向严肃化，第二代表了Medium渡过了品牌宣传和增长期，从对用户数量的增长要求转变为对高质量用户和内容的要求。
+ 偏向娱乐化的内容可以为网站带来更多的用户和流量，有趣的品牌形象也能产生更多的娱乐化效应，但是产生的真正价值却是有限的。&lt;/p&gt;
+
+&lt;p&gt;对于Medium这样的协作型的媒体平台来说，最重要的就是能源源不断的产生高质量的内容，也就是信息本身，如果平台本身不加以限制或者主动将内容导向引向娱乐化，信息本身就失去了促使人独立思考的价值。所以Medium用品牌形象的转变告诉大家：“我们给大家提供的是高价值、高质量的内容”。Medium网站本身的设计也是以内容为主，保持简洁与可读性，强调信息本身。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/post/2017-08-24/6.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;所以我们在再来分析新的Logo，可以明显的看到新的Logo采用了尖锐的衬线，让人感到严肃的同时也不失现代感。紧凑的间距让Logo的结构显得更加的稳定与严谨，去掉了色彩使人更关注内容而不是形式。
- 接下来就让我们看看新的品牌形象又会给Medium带来什么样的变化吧！&lt;/p&gt;
+&lt;p&gt;所以我们在再来分析新的Logo，可以明显的看到它一方面采用了尖锐的衬线，让人感到严肃的同时也不失现代感，另一方面紧凑的间距也让Logo的结构显得更加的稳定与严谨，同时去掉了色彩代表着更关注内容而不是形式。&lt;/p&gt;
+
+&lt;p&gt;就让我们看看新的品牌形象又会给Medium带来什么样的变化吧！&lt;/p&gt;
 </description>
         <pubDate>Thu, 24 Aug 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/08/24/Medium-new-logo-2017/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/24/Medium-new-logo-2017/</guid>
         
-        <category>redesign · logo · medium</category>
+        <category>redesign</category>
         
+        <category>logo</category>
         
-      </item>
-    
-      <item>
-        <title>用这10个方法，你可以假装是一个伟大的设计师</title>
-        <description>&lt;h2 id=&quot;建立愉悦感&quot;&gt;建立愉悦感&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-201609225.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;不知道如何表达你在设计中使用丰富动画或者可爱插画的用意么？只需要将“愉悦感”正常用进去，谈谈你是如何理解用户心理并以此创建一个用户喜爱的心理体验的。没人在乎你的解决方案是不是功能性的或者高成本的，如果此时并没有足够的数据来支撑你的设计直觉，那么你可以提醒大家，你在建立一个与用户之间持久性的情感连接。&lt;/p&gt;
-
-&lt;p&gt;终极贴士：给所有人展示一个经典的马斯洛需求层次图标，然后向他们指出位于顶部的自我实现层那种温暖模糊的概念。&lt;/p&gt;
-
-&lt;h2 id=&quot;用行业术语来混淆他们&quot;&gt;用行业术语来混淆他们&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-201609226.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;不要介意你的一部分工作是为了让事情易于被理解，试用一些专业的行业术语来迷惑他们的大脑，并害怕去询问你这些词语的真正含义，你使用的奇怪的术语越多，你需要对实际设计思路的解释也就越少。&lt;/p&gt;
-
-&lt;p&gt;如果一个客户或者利益相关者询问你这么设计的理由，你只需要说一些类似于“它能引导我们的品牌价值啊，并建立用户与我们之间的情感联系”这样的回答，即使你只是设计了一个优惠代码输入框。&lt;/p&gt;
-
-&lt;h2 id=&quot;让美学优先于功能&quot;&gt;让美学优先于功能&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-201609228.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;忘记那些用实际工作流程来解决问题。很明显，你只需要复制那些华而不实，不切实际的设计稿。谁在意是否有研究证明你的图标是低效的，难以记忆的或者缺少价值的。苹果喜欢白色，喜欢左对齐。没人会关心他们是否影响使用体验。&lt;/p&gt;
-
-&lt;h2 id=&quot;从最好的学习复制&quot;&gt;从最好的学习（复制）&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-201609229.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;不知道如何解决一个问题？只要从Amazon、苹果或者facebook复制相关的解决方案用于你的项目中即可。当有人质疑你的时候，就说“这是亚马逊使用的解决方案”，他们就会觉得既然是亚马逊都这样做，那一定有充分的理由。&lt;/p&gt;
-
-&lt;h2 id=&quot;运用研究偏好&quot;&gt;运用研究偏好&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-2016092210.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;你有理由证明花费了数周都在做设计么？只要创建一个美丽的图标来呈现大量的采集数据，数据量越大，你给人留下的印象就越深刻。&lt;/p&gt;
-
-&lt;p&gt;如果有些人想试图询问你的方法、来源或者原始数据，你应该告诉他们这些问题私下聊，并且尽量避免与他们再次相见。&lt;/p&gt;
-
-&lt;p&gt;终极贴士：如果你有些例如制作炫酷幻灯片的技能，那就可以让更多的人点头称赞。&lt;/p&gt;
-
-&lt;h2 id=&quot;让人们认为你很忙&quot;&gt;让人们认为你很忙&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-2016092211.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;没有什么比拥有一堵布满别人作品的墙更令人印象深刻的事情了，打印其它产品的截图，并标注为“竞品分析”。把所有你在Pinterest中Pin过的成为“灵感”，要的是数量而不是质量，重要的是要让人们觉得你有一个创造性和忙碌的大脑。&lt;/p&gt;
-
-&lt;p&gt;终极贴士：盯着墙看它几个小时，你的同事会认为你在认真的思考，如果可能的话，你可以趁机在你的眼皮上画上眼睛，这样就可以偷偷睡觉了。&lt;/p&gt;
-
-&lt;h2 id=&quot;运用一些模糊的视觉效果&quot;&gt;运用一些模糊的视觉效果&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-2016092212.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;每个人都可以画维恩图。但他们能用完美的等边三角形画么？&lt;/p&gt;
-
-&lt;p&gt;利用两个△△或者三个△△△去绘制你的图形，他不仅会让每个人都点头迷失在你的概念里，而且通过简单图形阐释复杂想法会让他们觉得你有一个创造性的头脑。&lt;/p&gt;
-
-&lt;p&gt;终极贴士：总是在图形的重叠区域内放一些重要的“值”。&lt;/p&gt;
-
-&lt;h2 id=&quot;以人为中心的设计&quot;&gt;以人为中心的设计&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-2016092213.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如果你不使用以用户为中心的设计，那你并不能成为一个现代设计师，讲座上的每个人都明白他们需要去了解用户的需求，以及如何创建同理心才是创造有意义产品的关键。没有人在意那些过去设计过的产品现在有多么的成功，所以应该更好地给每个人留下你是有多么的关心用户的深刻印象。&lt;/p&gt;
-
-&lt;h2 id=&quot;持续专注于你的市场需求&quot;&gt;持续专注于你的市场需求&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://image.uisdc.com/wp-content/uploads/2016/09/uisdc-2016092214.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;哦，这不是废话么？他们真的相信你在以人为中心上所做的事情？并且想要一个易用性的设计？别担心，只要告诉他们建立一个易用性的网站需要很长的时间和大量的金钱。告诉他们你的目标市场都有着最先进的电脑和最快的网络，并且他们都是健康的千禧一代，健康到都不需要看医生。你是怎么知道的？因为你就说其中的一员啊！！你就是你的用户啊！！&lt;/p&gt;
-
-&lt;p&gt;并且，老实说，可用性设计可以让你远离所有添加在登陆页面的惊人的滚动动画。&lt;/p&gt;
-
-&lt;p&gt;文本标签？多丑啊！&lt;/p&gt;
-
-&lt;p&gt;高对比组合？太可怕了！&lt;/p&gt;
-
-&lt;p&gt;清晰的导航？真卑鄙！&lt;/p&gt;
-
-&lt;p&gt;不需要关注你是否真get到了普罗大众的点从而让你的设计真的好用，或者说它是不是真的提高了可用性让你的站点的SEO更加友好。你只需要这些视差动画和微妙对比度的调色板。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;转自：&lt;a href=&quot;http://www.uisdc.com/pretend-to-be-great-designers&quot;&gt;uisdc&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Thu, 06 Jul 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/07/06/Be-a-great-designer/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/06/Be-a-great-designer/</guid>
-        
-        <category>designer · fun</category>
+        <category>medium</category>
         
         
       </item>
@@ -189,7 +103,11 @@
         <link>http://localhost:4000/2017/07/05/personal-website-recommendation/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/05/personal-website-recommendation/</guid>
         
-        <category>site · design · recommended</category>
+        <category>site</category>
+        
+        <category>design</category>
+        
+        <category>recommended</category>
         
         
       </item>
@@ -275,7 +193,11 @@
         <link>http://localhost:4000/2017/07/04/the-new-trend-of-flat-design/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/04/the-new-trend-of-flat-design/</guid>
         
-        <category>design · user interface · trend</category>
+        <category>design</category>
+        
+        <category>user interface</category>
+        
+        <category>trend</category>
         
         
       </item>
@@ -365,29 +287,31 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;翻译：&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MzE0OTYwMA==&amp;amp;mid=2649741346&amp;amp;idx=1&amp;amp;sn=491cf656872555cf6aeaf1009faf8710&amp;amp;scene=23&amp;amp;srcid=0523EvYpjao3vsWHJ6RQefQk#rd&quot;&gt;视觉ME&lt;/a&gt;
-原文：&lt;a href=&quot;https://www.logolounge.com/articles/2016-logo-trends&quot;&gt;logolounge&lt;/a&gt;
-转自：&lt;a href=&quot;http://www.shejidaren.com/app-onboarding-screens.html&quot;&gt;设计达人&lt;/a&gt;&lt;/p&gt;
+原文：&lt;a href=&quot;https://www.logolounge.com/articles/2016-logo-trends&quot;&gt;logolounge&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 03 Jul 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/07/03/2016-logo-trends/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/03/2016-logo-trends/</guid>
         
-        <category>design · Logo · trend</category>
+        <category>design</category>
+        
+        <category>logo</category>
+        
+        <category>trend</category>
         
         
       </item>
     
       <item>
-        <title>让耳朵放个假——在「落网」听听独立音乐</title>
+        <title>让耳朵放个假 - 在「落网」听听独立音乐</title>
         <description>&lt;blockquote&gt;
-  &lt;p&gt;初次来到落网记得是大二的某个下午，无聊之时随处乱逛，便从某个网站推荐上看到了《落网》，开始还以为是普通的歌单合集之类的，但随便点击了一个期刊进去之后才发现是打开了新世界的大门。&lt;/p&gt;
+  &lt;p&gt;初次来到落网记得是某个下午，无聊之时从某个网站推荐上看到了《落网》，起初以为是普通的歌单合集之类的，但随便点击了一个期刊进去之后才发现是另有一番天地。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;落网上的歌不是普通的流行音乐，而是将小众的独立音乐做成了一个个期刊，每一个都是独具特色。&lt;/p&gt;
+&lt;p&gt;落网上的歌并不是普通的流行音乐，它将小众的独立音乐依据不同对风格和特色定期推出一个期刊，顺便一说，封面选的图片也都很棒。在听腻了流行音乐的旋律，厌倦了千篇一律的口水歌的时候，来这里吧，让你的耳朵放个假。&lt;/p&gt;
 
-&lt;p&gt;在听腻了流行音乐的旋律，厌倦了千篇一律的口水歌，来这里，让你的耳朵放个假。
-附上个人的推荐期刊：&lt;/p&gt;
+&lt;p&gt;附上个人的推荐期刊：&lt;/p&gt;
 
 &lt;h4 id=&quot;1押韵的艺术&quot;&gt;&lt;a href=&quot;http://www.luoo.net/music/621&quot;&gt;1.押韵的艺术&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;本期音乐为西岸说唱（West Coast Hip Hop）音乐专题&lt;/p&gt;
@@ -436,13 +360,17 @@
         <link>http://localhost:4000/2017/07/02/luowang/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/02/luowang/</guid>
         
-        <category>music · recommended · song sheet</category>
+        <category>music</category>
+        
+        <category>commend</category>
+        
+        <category>playlist</category>
         
         
       </item>
     
       <item>
-        <title>只有此刻才能感觉到自己的存在</title>
+        <title>只有此刻才能感觉到存在</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;这万千来自五大洋七大洲的创作，经过金像班底的鬼斧神工，如今终于跃上大银幕，让全人类乘着八万多个趣味盎然的镜头，见证这时间囊里的一日人生。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -452,11 +380,15 @@
 &lt;p&gt;两位奥斯卡金像级大导演－雷德利·斯科特(Ridley Scott)和凯文·麦克唐纳(Kevin Macdonald)－联同全球最大影片分享网站YouTube破天荒合作，并得全球网民掌镜，在2010年7月24日，以「爱」和「恐惧」为题，集体创作了愈80,000段，共4,500小时的影片。
 当中影片来自世界各地、人、事，并演绎了不同的人活在2010.7.24这一天，那许多满载悲喜，失落与幸褔的故事：从繁华的大城巿到素被世人遗忘的乡野、从驾名车的富豪到街边的擦鞋童、从寄人篱下的生活到色彩缤纷的狂欢世界，影像情感丰富，极具感染力。&lt;/p&gt;
 
-&lt;p&gt;爱和恐惧是生命中永恒存在的两个主题，无数艺术家围绕着这两个主题阐述着他们的理解，而这部纪录片则是导演给我们表达着他自己的理解。什么是爱呢？有了爱我们才能感受到其他人的爱，爱让我们聚集在一起。恐惧则影响着我们的行为标准，有的人害怕孤独，所以喜欢结交朋友，有人害怕一生碌碌无为，所以努力着想着有出人头地的一天，有的人害怕饿死，所以在垃圾桶里翻找着一天的食物。&lt;/p&gt;
+&lt;p&gt;爱和恐惧是生命中永恒存在的两个主题，无数艺术家围绕着这两个主题阐述着他们的理解，而这部纪录片则是导演给我们表达着他自己的理解。&lt;/p&gt;
 
-&lt;p&gt;人生百态，都在一部影片里呈现，短短的一天包含了无数人的一天，他们每个人却是更多的千万人的影子，我们总能在里面找到自己。里面并没有什么很惊心动魄的故事，也没有生死离别的爱情，只是平淡的生活中穿插着一些惊喜，我们的生活有何尝不是这样。&lt;/p&gt;
+&lt;p&gt;什么是爱呢？我们能表达自己的爱，也能感受到其他人的爱，爱让我们聚集在一起。无论是什么样的爱，都是我们作为人类最独特的的情感表达，爱让我们聚集在一起。&lt;/p&gt;
 
-&lt;p&gt;有的人不甘于平凡，但确意识不到自己的平凡，大多数人都是过着平凡的一生，只不过有些人的浪花大一点，有的人小一点罢了。过去已成既定，未来不可预测，我们也永远不知道明天还能不能醒过来，所以能把握的只有现在。&lt;/p&gt;
+&lt;p&gt;恐惧影响着我们的行为标准，有人害怕孤独，所以去结交朋友，有人害怕一生碌碌无为，所以努力想着有出人头地的一天，有的人害怕饿死，所以在垃圾桶里翻找着一天的食物。&lt;/p&gt;
+
+&lt;p&gt;人生百态，都在一部影片里呈现，短短的一天包含了无数人的一天，他们每个人却是更多的千万人的影子，我们总能在里面找到自己。里面并没有什么很惊心动魄的故事，也没有生死离别的爱情，只是平淡的生活中穿插着一些惊喜，我们的生活又何尝不是这样。&lt;/p&gt;
+
+&lt;p&gt;我们不甘于平凡，但意识不到自己的平凡，大多数人都是过着平凡的一生，无非有些人的浪花大一点，有些小一点罢了。过去已成既定，未来不可预测，我们也永远不知道明天还能不能醒过来，所以能把握的只有现在。&lt;/p&gt;
 
 &lt;p&gt;2010年7月24日，我们又在干什么呢？能感觉到存在的也只有现在。&lt;/p&gt;
 </description>

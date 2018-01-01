@@ -12,47 +12,32 @@
 
 <html class="no-js" lang="en">
 
-<head>
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>左子祯的个人网站 | Designer & Developer</title>
+  <title></title>
 
-  <meta name="description" content="Product Designer.Design effective digital products.">
-  <meta name="author" content="zizhen">
+  <meta name="description" content="Design effective digital products.">
+  <meta name="author" content="Zuo Zizhen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="keywords" content="左子祯, zuozizhen, zuonx, hjsfzzz, 全栈设计师, 左子祯的博客, zuonx Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品">
+  <meta name="keywords" content="zuonx, 左子祯, Zuo Zizhen, designer, studio, blog, personal site, freelancer">
+  <meta name="huaban" content="nopin">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv=”Page-Enter” content=”revealTrans(Duration=2.0,Transition=0)” />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="http://localhost:4000/404/">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/images/favicon.ico">
-
-  <!-- Icons -->
-  <!-- <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-160x160.png" sizes="160x160">
-  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-192x192.png" sizes="192x192">
-
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png"> -->
-
-  <!-- Web fonts -->
+  <link rel="shortcut icon" href="/assets/images/favicon.png">
 
   <!-- Stylesheets -->
-  <link title="light" rel="stylesheet" href=/assets/css/light.css>
-  <link title="dark" rel="stylesheet" href=/assets/css/dark.css disabled="disabled">
-  <link rel="stylesheet" href=/assets/css/main.css>
-  <link rel="stylesheet" href=/assets/css/syntax.css>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+
+  <!-- javascripts -->
+  <script src="/assets/javascripts/jQuery.min.js"></script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111351144-1"></script>
@@ -60,27 +45,51 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-111351144-1');
   </script>
-
-  <script type="text/javascript">
-      var feed = new Instafeed({
-          get: 'tagged',
-          tagName: 'awesome',
-          clientId: '5836c0fd1b354995b2302d504b3e7dfd',
-          template: '<a href=""><img src="" /></a>'
-      });
-      feed.run();
-  </script>
-
-
 </head>
 
-<!-- hack iOS CSS :active style -->
-<body class="body_white">
 
-  <style type="text/css">
+  <body class="body_black">
+    <a href= / class="logo_z"><i></i></a>
+    <a href= / class="logo_x"><i></i></a>
+    <a href= / class="logo_u"><i></i></a>
+    <a href= "" class="logo_n" id="goToTop"><i></i></a>
+    <div class="btn_menu">
+       <div class="line"></div>
+       <div class="line"></div>
+       <div class="line"></div>
+    </div>
+    <div class="menu">
+      <div class="menu_wrapper">
+        <div class="wrapper_title">Menu</div>
+        <div class="lines-grid">
+          <i class="lines_i"></i>
+          <i class="lines_i"></i>
+          <i class="lines_i"></i>
+          <i class="lines_i"></i>
+          <i class="lines_i"></i>
+        </div>
+        <div class="menu_content">
+          <a href= />
+            <span>Main Page</span>
+          </a>
+          <a href= /portfolio>
+            <span>Portfolio</span>
+          </a>
+          <a href= /blog>
+            <span>Blog</span>
+          </a>
+          <a href= /contact>
+            <span>Contact</span>
+          </a>
+        </div>
+        <a class="footer_right" href="mailto:hjsfzzz@gmail.com">
+          hjsfzzz@gmail.com</a>
+      </div>
+    </div>
+
+    <style type="text/css">
     .menu-back {
 			background-color: rgba(0,0,0,.93) !important;
 		}
@@ -111,36 +120,10 @@
 	document.body.classList.add('page-fullscreen');
 </script>
 
-  <audio hidden id="music_sound" loop="true" preload="preload" autoplay="autoplay">
-  <source src="/assets/sound/music_sound.mp3" type="audio/mpeg">
-</audio>
-<audio hidden id="music_close">
-  <source src="/assets/sound/close.mp3" type="audio/mpeg">
-</audio>
-<audio hidden id="music_hover">
-  <source src="/assets/sound/hover.mp3" type="audio/mpeg">
-</audio>
-<audio hidden id="music_open">
-  <source src="/assets/sound/open.mp3" type="audio/mpeg">
-</audio>
-<audio hidden id="music_click">
-  <source src="/assets/sound/click.mp3" type="audio/mpeg">
-</audio>
 
-<script src="/assets/js/main.js "></script>
-<script src="/assets/js/instafeed.js "></script>
-<script src="/assets/js/separate-js/main.js "></script>
-<script src="/assets/js/separate-js/loader.js "></script>
-
-<!--script home page-->
-<script src="/assets/js/separate-js/home.js "></script>
-
-<!--end script home page-->
+    <script src="/assets/javascripts/main.js"></script>
 
 
-<!-- Image to hack wechat -->
-<!-- Migrate from head to bottom, no longer block render and still work -->
-
-</body>
+  </body>
 
 </html>
