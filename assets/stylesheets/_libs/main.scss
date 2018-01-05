@@ -154,6 +154,9 @@ html.hidden:not(.test), body.hidden:not(.test) {
     max-width: 800px;
     .blog_item {
       margin-top: 180px;
+      .blog_title {
+        color: $gray-dark;
+      }
     }
   }
 }
@@ -659,6 +662,16 @@ html.hidden:not(.test), body.hidden:not(.test) {
   display: grid;
   grid-template-columns: 100px 1fr 850px 1fr 100px;
   pointer-events: none;
+  .lines_i {
+    background-color: #fff;
+  }
+  .lines_i:before {
+    background-color: #fff;
+  }
+  .lines_i:first-child,
+  .lines_i:last-child {
+    background-color: $gray-dark;
+  }
 }
 
 @media only screen and (max-width: 750px) {
