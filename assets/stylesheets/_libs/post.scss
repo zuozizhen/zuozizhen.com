@@ -3,8 +3,8 @@
   margin-right: auto;
   margin-top: 25px;
   font-size: 16px;
-  color: $gray-dark;
-  line-height: 40px;
+  color: $gray-lighter;
+  line-height: 34px;
   overflow-x: hidden;
   font-family: $family-post;
 }
@@ -15,7 +15,7 @@
   font-size: 16px;
   color: $gray-light;
   line-height: 30px;
-  letter-spacing: 0.1em;
+  letter-spacing: .5px;
   display: block;
   margin-top: 14px;
 }
@@ -96,7 +96,7 @@
 }
 
 .post-wrapper a {
-  color: $gray-dark;
+  color: $gray-lightest;
   text-decoration: underline;
   transition: 0.3s color;
 }
@@ -142,7 +142,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  color: $gray-dark;
+  color: $gray-lightest;
 }
 
 .post-wrapper h5+p {
@@ -195,7 +195,7 @@ h6 {
 .post-wrapper hr {
   height: 0;
   border: none;
-  border-top: 1px solid $gray-dark;
+  border-top: 1px solid $gray-lighter;
 }
 @media screen and (max-width: 768px) {
   .post-wrapper ol,
@@ -237,9 +237,9 @@ h6 {
 
 .post_pagination {
   line-height: 40px;
-  height: 115px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 120px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -247,6 +247,7 @@ h6 {
   .post_pagination {
     padding-left: 30px !important;
     padding-right: 30px !important;
+    margin-bottom: 60px !important;
   }
 
   .essays_wrap .post_pagination {
@@ -269,7 +270,7 @@ h6 {
 }
 
 .post_pagination span {
-  color: $gray-dark;
+  color: $gray-lightest;
   font-weight: 500;
   text-decoration: none;
   transition: 0.3s color;
@@ -308,10 +309,10 @@ h6 {
 /*	Blockquotes  */
 blockquote,
 blockquote p {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 40px;
-  color: $gray;
+  font-size: 16px;
+  font-weight: 500 !important;
+  line-height: 38px;
+  color: $gray-light;
   padding-left: 30px !important;
 }
 @media only screen and (max-width: 1000px) {

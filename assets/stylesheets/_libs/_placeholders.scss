@@ -17,6 +17,16 @@ $family-post: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "Pin
 $family-main: 'Montserrat', "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 
 @font-face {
+    font-family: 'SofiaProLight';
+    src: url('/assets/fonts/SofiaProLight.eot');
+    src: url('/assets/fonts/SofiaProLight.eot') format('embedded-opentype'),
+         url('/assets/fonts/SofiaProLight.woff2') format('woff2'),
+         url('/assets/fonts/SofiaProLight.woff') format('woff'),
+         url('/assets/fonts/SofiaProLight.ttf') format('truetype'),
+         url('/assets/fonts/SofiaProLight.svg#SofiaProLight') format('svg');
+}
+
+@font-face {
     font-family: 'SofiaProRegular';
     src: url('/assets/fonts/SofiaProRegular.eot');
     src: url('/assets/fonts/SofiaProRegular.eot') format('embedded-opentype'),
@@ -27,6 +37,16 @@ $family-main: 'Montserrat', "Helvetica Neue", "Arial", "PingFang SC", "Hiragino 
 }
 
 @font-face {
+    font-family: 'SofiaProMedium';
+    src: url('/assets/fonts/SofiaProMedium.eot');
+    src: url('/assets/fonts/SofiaProMedium.eot') format('embedded-opentype'),
+         url('/assets/fonts/SofiaProMedium.woff2') format('woff2'),
+         url('/assets/fonts/SofiaProMedium.woff') format('woff'),
+         url('/assets/fonts/SofiaProMedium.ttf') format('truetype'),
+         url('/assets/fonts/SofiaProMedium.svg#SofiaProMedium') format('svg');
+}
+
+@font-face {
     font-family: 'SofiaProSemiBold';
     src: url('/assets/fonts/SofiaProSemiBold.eot');
     src: url('/assets/fonts/SofiaProSemiBold.eot') format('embedded-opentype'),
@@ -34,6 +54,16 @@ $family-main: 'Montserrat', "Helvetica Neue", "Arial", "PingFang SC", "Hiragino 
          url('/assets/fonts/SofiaProSemiBold.woff') format('woff'),
          url('/assets/fonts/SofiaProSemiBold.ttf') format('truetype'),
          url('/assets/fonts/SofiaProSemiBold.svg#SofiaProSemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'SofiaProBold';
+    src: url('/assets/fonts/SofiaProBold.eot');
+    src: url('/assets/fonts/SofiaProBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/SofiaProBold.woff2') format('woff2'),
+         url('/assets/fonts/SofiaProBold.woff') format('woff'),
+         url('/assets/fonts/SofiaProBold.ttf') format('truetype'),
+         url('/assets/fonts/SofiaProBold.svg#SofiaProBold') format('svg');
 }
 
 @font-face {
