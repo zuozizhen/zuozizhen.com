@@ -4,7 +4,6 @@ title:      "Medium为什么又换了新Logo"
 subtitle:   "medium new logo 2017"
 date:       "2017-08-24"
 cover:      "bg.png"
-tips:       "Medium的改变总是从Logo先开始的"
 tag:        [redesign, logo, medium]
 excerpt:    "这个在2015年为Medium创造的Logo无疑是成功的，那为什么在Medim使用了它将近2年后选择换掉这个Logo呢？让我们先来回顾下Medium上一次Logo改版的原因..."
 ---

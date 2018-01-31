@@ -5,7 +5,6 @@ subtitle:   "CacheMoment starts use new brand"
 date:       "2017-03-01"
 cover:      "bg.png"
 tag:        "movie · feelings · thinking"
-tips:       "魔门云新品牌形象的设计过程"
 excerpt:    "随着魔门云日益壮大以及产品日趋成熟，我们希望通过建立一套完整的品牌设计使公司和产品的形象更能体现我们的商业愿景。"
 ---
 

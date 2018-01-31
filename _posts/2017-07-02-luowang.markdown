@@ -4,7 +4,6 @@ title:      "让耳朵放个假 - 在「落网」听听独立音乐"
 subtitle:   "luowang"
 date:       "2017-07-02"
 cover:      "bg.jpg"
-tips:       "独立音乐网站及歌单推荐"
 tag:        [music, commend, playlist]
 excerpt:    "落网上的歌不是普通的流行音乐，而是将小众的独立音乐做成了一个个期刊，每一个都是独具特色。"
 ---

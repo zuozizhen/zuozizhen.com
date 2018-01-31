@@ -4,7 +4,6 @@ title:      "2016年Logo设计趋势"
 subtitle:   "2016 logo trends"
 date:       "2017-07-03"
 cover:      "bg.jpg"
-tips:       "logolounge 发布的2016标志设计趋势"
 tag:        [design, logo, trend]
 excerpt:    "今天和大家分享近日来自 logolounge 发布的2016标志设计趋势，趋势的分析是基于 LogoLounge 丰富的数据源而得出的一些结论..."
 ---
