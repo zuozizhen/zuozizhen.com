@@ -75,3 +75,12 @@ $family-main: 'Montserrat', "Helvetica Neue", "Arial", "PingFang SC", "Hiragino 
          url('/assets/fonts/SofiaProBlack.ttf') format('truetype'),
          url('/assets/fonts/SofiaProBlack.svg#SofiaProBlack') format('svg');
 }
+@font-face {
+    font-family: 'TimesNewRomanMTStdItalic';
+    src: url('/assets/fonts/TimesNewRomanMTStdItalic.eot');
+    src: url('/assets/fonts/TimesNewRomanMTStdItalic.eot') format('embedded-opentype'),
+         url('/assets/fonts/TimesNewRomanMTStdItalic.woff2') format('woff2'),
+         url('/assets/fonts/TimesNewRomanMTStdItalic.woff') format('woff'),
+         url('/assets/fonts/TimesNewRomanMTStdItalic.ttf') format('truetype'),
+         url('/assets/fonts/TimesNewRomanMTStdItalic.svg#TimesNewRomanMTStdItalic') format('svg');
+}

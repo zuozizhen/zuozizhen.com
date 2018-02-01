@@ -31,7 +31,7 @@
                     <mask id="mask-2" fill="white">
                         <use xlink:href="#path-1"></use>
                     </mask>
-                    <use id="Mask" fill="#FFC500" xlink:href="#path-1"></use>
+                    <use id="Mask" fill="#E94567" xlink:href="#path-1"></use>
                     <g id="Group-14" mask="url(#mask-2)" stroke="#FFFFFF" stroke-linecap="square" stroke-width="5.47952811">
                         <g transform="translate(86.337818, 70.021444) rotate(-315.000000) translate(-86.337818, -70.021444) translate(-26.162182, -24.978556)">
                             <path d="M-3.55271368e-14,47.0326162 L210.900536,47.0326162" id="Line-5"></path>
