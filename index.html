@@ -42,10 +42,6 @@ description: Do one thing for a lifetime
         Hello!<br>
         I'm Zuo Zizhen.
       </div>
-      <div class="about_swich">
-        <span class="about_swich_en">EN</span>
-        <span class="about_swich_cn">CN</span>
-      </div>
       <div class="about_en active">
         <p class="about_desc one">
           I am a product designer in Beijing focusing on designing effective digital products. I have 1+ years of experience in UI/UX design and have online products such as website, application, dashboard.  My advantage is good at integrating different skills. I can independently complete the website, iOS application design and development, there are some complete online product case.
@@ -71,6 +67,10 @@ description: Do one thing for a lifetime
           <span>Digital Branding</span>
         </div>
       </div>
+    </div>
+    <div class="about_swich">
+      <span class="about_swich_en">EN</span>
+      <span class="about_swich_cn">CN</span>
     </div>
   </section>
   <section class="section case case_first">
@@ -224,9 +224,9 @@ description: Do one thing for a lifetime
         <span>Reading and thinking.</span>
         <span>About everything I know about the world.</span>
       </div>
-      {% for post in site.posts limit:2 %}
+      {% for post in site.posts limit:3 %}
       <a href="{{ post.url }}" class="blog_item">
-        <span class="blog_date">{{ post.date | date: "%Y · %m · %d" }}</span>
+        <span class="blog_date">{{ post.date | date: '%B %d, %Y' }}</span>
         <span class="blog_tag">
           {% for tag in post.tags limit:3 %}<span>{{tag}}</span>{% endfor %}
         </span>
@@ -234,17 +234,23 @@ description: Do one thing for a lifetime
         <div class="blog_excerpt">{{ post.excerpt }}</div>
       </a>
       {% endfor %}
-      <a href="{{ site.baseurl }}/blog" class="blog_more">View More</a>
+
     </div>
+    <a href="{{ site.baseurl }}/blog" class="blog_more">More</a>
   </section>
   <section class="section story">
     <div class="content">
       <div class="section_title">Story</div>
-      <div class="title">
+      <!-- <div class="title">
         All endings are beginnings.<br>
         We just don't know it at the time.
-      </div>
+      </div> -->
       <div id="instagram"></div>
+    </div>
+    <div class="desc">
+      The distinction between past, present, and future is only an illusion, however persistent.<br>
+      <span>-Albert.Einstein</span>
+
     </div>
   </section>
   <section class="section contact">

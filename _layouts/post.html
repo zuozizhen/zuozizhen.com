@@ -12,15 +12,13 @@ layout: default_light
 
 <section class="section post">
   <div class="blog_item">
-    <span class="blog_tag">{{ page.tag }}</span>
+    <span class="blog_tag">  {% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
     <span class="blog_title">{{ page.title }}</span>
-    <span class="blog_tips">Zuo Zizhen on {{ page.date | date: '%B %d, %Y' }}</span>
+    <span class="blog_tips">{{ page.date | date: '%B %d, %Y' }} by Zuo Zizhen</span>
   </div>
   <div class="post-wrapper">
     {% if page.cover %}
-    <p>
       <img class="blog_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
-    </p>
     {% endif %}
     {{ content }}
   </div>

@@ -50,12 +50,15 @@
 }
 
 .post-wrapper img {
-  width: calc(100% + 120px);
-  margin-left: -60px;
   opacity: 0.98;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 120%;
+  min-width: 88%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .post-wrapper iframe {
@@ -74,14 +77,14 @@
 .post-wrapper h3,
 .post-wrapper h4,
 .post-wrapper p {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .post-wrapper hr,
 .post-wrapper pre {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 @media only screen and (max-width: 1000px) {
   .post-wrapper blockquote,
@@ -156,8 +159,11 @@ h6 {
 .post-wrapper ol,
 .post-wrapper ul {
   margin-bottom: 30px;
-  padding-left: 78px;
-  padding-right: 60px;
+  padding-left: 100px;
+  padding-right: 80px;
+  p {
+    padding: 0;
+  }
 }
 
 .post-wrapper ol li:not(:last-child),
@@ -240,8 +246,8 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 @media only screen and (max-width: 750px) {
   .post_pagination {
@@ -304,16 +310,17 @@ h6 {
 
 .blog_header_img {
   width: 100%;
+  margin-bottom: 30px !important;
   object-fit: cover;
 }
 /*	Blockquotes  */
-blockquote,
 blockquote p {
   font-size: 16px;
   font-weight: 500 !important;
   line-height: 38px;
   color: $gray-light;
-  padding-left: 30px !important;
+  padding-right: 0 !important;
+  padding-left: 40px !important;
 }
 @media only screen and (max-width: 1000px) {
   blockquote,
@@ -336,7 +343,7 @@ blockquote:before {
   position: absolute;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  left: 0;
+  left: 82px;
   top: 50%;
   height: 96%;
   width: 6px;
