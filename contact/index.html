@@ -4,54 +4,39 @@ title: Contact - design effective digital products
 description: Do one thing for a lifetime
 ---
 
-<div class="lines-grid">
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-</div>
-<div class="logo_o"><i></i></div>
+<nav>
+  <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link">Work</a>
+  <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
+  <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
+  <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
+</nav>
 
-<section class="section contact active">
-  <div class="content">
-    <div class="section_title">Contact</div>
-    <div class="title">
-      Keep curiosity.<br>
-      Let's create great products together!
+<section class="section contact">
+  <div class="item_title">Contact</div>
+  <div class="contact_content">
+    <div class="contact_item">
+      <div class="item_title">Say hi</div>
+      <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
     </div>
-    <div class="contact_content">
-      <div class="contact_item">
-        <div class="item_title">SAY HI</div>
-        <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
-      </div>
-      <div class="contact_item">
-        <div class="item_title">FOLLOW</div>
-        <a class="item_desc" href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a>
-        <a class="item_desc" href="https://www.behance.net/{{ site.behance_username }}" target="_blank">Behance</a>
-        <a class="item_desc" href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
-        <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
-        <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
-      </div>
-      <div class="contact_item">
-        <div class="item_title">China</div>
-        <span class="item_desc">
-          Beijing&nbsp;&nbsp;<span class="js--time" data-timezone="Asia/Choibalsan"></span>
-        </span>
-        </span>
-      </div>
-      <div class="contact_item">
-        <div class="item_title">Serive</div>
-        <span class="item_desc">Web Interfaces</span>
-        <span class="item_desc">Frontend Development</span>
-        <span class="item_desc">App Interface</span>
-        <span class="item_desc">Digital Branding</span>
-      </div>
+    <div class="contact_item">
+      <div class="item_title">Be a friend</div>
+      <a class="item_desc" href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a>
+      <a class="item_desc" href="https://www.behance.net/{{ site.behance_username }}" target="_blank">Behance</a>
+      <a class="item_desc" href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
+      <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+      <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
     </div>
+    <div class="contact_item">
+      <div class="item_title">Thank you for Reading!</div>
+      <span class="item_desc">@ 2018 Designed & Built by Zuo Zizhen</span>
+    </div>
+    <!-- <div class="contact_item">
+      <div class="item_title">China</div>
+      <span class="item_desc">Beijing&nbsp;&nbsp;<span class="js--time" data-timezone="Asia/Choibalsan"></span>
+      </span>
+      </span>
+    </div> -->
   </div>
 </section>
 

@@ -1,27 +1,29 @@
 ---
-layout: default_light
+layout: default
 ---
 
-<div class="lines-grid-post">
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-</div>
-
-<a class="post_back" href="javascript:history.go(-1)">Back</a>
+<nav>
+  <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link">Work</a>
+  <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
+  <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
+  <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
+</nav>
 
 <section class="section post">
-  <div class="blog_item">
-    <span class="blog_tag">  {% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
-    <span class="blog_title">{{ page.title }}</span>
-    <span class="blog_tips">{{ page.date | date: '%B %d, %Y' }} by Zuo Zizhen</span>
-  </div>
-  <div class="post-wrapper">
-    {% if page.cover %}
-      <img class="blog_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
-    {% endif %}
-    {{ content }}
-  </div>
+  <div class="post_top">
+    <div class="blog_item">
+      <span class="blog_tag">  {% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
+      <span class="blog_title">{{ page.title }}</span>
+      <span class="blog_tips">{{ page.date | date: '%B %d, %Y' }} by Zuo Zizhen</span>
+    </div>
+    <div class="post-wrapper">
+      {% if page.cover %}
+        <img class="blog_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
+      {% endif %}
+      {{ content }}
+    </div>
+  </div>  
   <div class="post_pagination">
     {% if page.previous.url %}
       <a class="previous"href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
