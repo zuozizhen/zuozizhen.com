@@ -1,20 +1,34 @@
 ---
-layout: default_light
+layout: default
 ---
+<<<<<<< HEAD
 
 
 <a class="post_back" href="javascript:history.go(-1)">Back</a>
+=======
+<nav class="section top_nav">
+  <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link">Work</a>
+  <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link active">Blog</a>
+  <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
+  <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
+</nav>
+>>>>>>> 3.0
 
 <section class="section post">
-  <div class="blog_item">
-    <span class="blog_tag">  {% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
-    <span class="blog_title">{{ page.title }}</span>
-    <span class="blog_tips">{{ page.date | date: '%B %d, %Y' }} by Zuo Zizhen</span>
-  </div>
-  <div class="post-wrapper">
+  <div class="post_top">
+    <div class="blog_item">
+      <div class="post_top_content">
+        <span class="blog_tag">  {% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
+        <span class="blog_title">{{ page.title }}</span>
+        <span class="blog_tips">{{ page.date | date: '%B %d, %Y' }} by Zuo Zizhen</span>
+      </div>
+    </div>
     {% if page.cover %}
       <img class="blog_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
     {% endif %}
+  </div>
+  <div class="post-wrapper">
     {{ content }}
   </div>
   <div class="post_pagination">
@@ -30,9 +44,12 @@ layout: default_light
       </a>
     {% endif %}
   </div>
+</section>
+
+<div class="comment">
   <div id="disqus_thread"></div>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
+</div>
 
 <script>
   (function() { // DON'T EDIT BELOW THIS LINE

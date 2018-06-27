@@ -1,21 +1,57 @@
+.post {
+  .post_top {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-column-gap: 80px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .post {
+    .post_top {
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+    }
+  }
+}
+.post_top_content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  .blog_title {
+    font-size: 3.5vw;
+  }
+  .blog_tag {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .post_top_content {
+    position: static;
+    transform: translateY(0);
+    .blog_title {
+      font-size: 30px;
+    }
+  }
+}
 .post-wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
-  font-size: 16px;
-  color: $gray-lighter;
+  margin-top: 100px;
+  font-size: 17px;
+  color: $gray-dark;
   line-height: 34px;
   overflow-x: hidden;
   font-family: $family-post;
+  max-width: 900px;
 }
 
 .blog_tips {
   font-family: $family-post;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   color: $gray-light;
   line-height: 30px;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
   display: block;
   margin-top: 14px;
 }
@@ -28,15 +64,11 @@
 }
 @media only screen and (max-width: 750px) {
   .post-wrapper {
-    width: 100%;
+    font-size: 16px;
+    line-height: 32px;
     padding-bottom: 30px;
+    margin-top: 30px;
   }
-
-  .post-wrapper {
-    font-size: 12px;
-    line-height: 25px;
-  }
-
   .post-wrapper p {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -50,15 +82,15 @@
 }
 
 .post-wrapper img {
-  opacity: 0.98;
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
   max-width: 120%;
-  min-width: 88%;
+  min-width: 100%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  // border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .post-wrapper iframe {
@@ -86,27 +118,25 @@
   margin-left: 80px;
   margin-right: 80px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 750px) {
   .post-wrapper blockquote,
-  .post-wrapper h1,
-  .post-wrapper h2,
-  .post-wrapper h3,
-  .post-wrapper h4,
   .post-wrapper p {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .post-wrapper h1,
+  .post-wrapper h2,
+  .post-wrapper h3,
+  .post-wrapper h4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .post-wrapper a {
-  color: $gray-lightest;
+  color: $gray-dark;
   text-decoration: underline;
   transition: 0.3s color;
-}
-
-.post-wrapper a:focus,
-.post-wrapper a:hover {
-  color: $sunglow;
 }
 
 .post-wrapper h1 {
@@ -145,7 +175,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  color: $gray-lightest;
+  color: $gray-dark;
 }
 
 .post-wrapper h5+p {
@@ -203,10 +233,11 @@ h6 {
   border: none;
   border-top: 1px solid $gray-lighter;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .post-wrapper ol,
   .post-wrapper ul {
     padding-left: 30px;
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 500px) {
@@ -243,55 +274,44 @@ h6 {
 
 .post_pagination {
   line-height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 120px;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin: 60px auto;
+  max-width: 740px;
+  overflow: auto;
 }
-@media only screen and (max-width: 750px) {
-  .post_pagination {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-    margin-bottom: 60px !important;
-  }
-
-  .essays_wrap .post_pagination {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-  }
-
-  .post_pagination .next,
-  .post_pagination .previous {
-    margin-bottom: 30px;
-    float: none !important;
-    display: block;
-  }
-}
-
-.post_pagination a {
-  color: $gray-light;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.post_pagination span {
-  color: $gray-lightest;
-  font-weight: 500;
-  text-decoration: none;
-  transition: 0.3s color;
-}
-
-.post_pagination span:hover {
-  color: $sunglow;
-}
-
 .post_pagination .next {
   float: right;
 }
 
 .post_pagination .previous {
   float: left;
+}
+
+.post_pagination a {
+  color: $gray-dark;
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.post_pagination span {
+  color: $gray;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+
+@media only screen and (max-width: 750px) {
+  .post_pagination {
+    margin: 60px auto 0 auto;
+  }
+  .post_pagination span {
+    font-size: 16px;
+    display: block;
+    max-width: 200px;
+    padding-top: 10px;
+  }
 }
 
 .post-wrapper .pager li > a {
@@ -310,24 +330,18 @@ h6 {
 
 .blog_header_img {
   width: 100%;
-  margin-bottom: 30px !important;
   object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, .05);
 }
 /*	Blockquotes  */
 blockquote p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500 !important;
   line-height: 38px;
-  color: $gray-light;
+  color: $gray;
   padding-right: 0 !important;
-  padding-left: 40px !important;
-}
-@media only screen and (max-width: 1000px) {
-  blockquote,
-  blockquote p {
-    font-size: 16px;
-    padding-left: 20px !important;
-  }
+  padding-left: 0 !important;
 }
 
 blockquote {
@@ -343,14 +357,23 @@ blockquote:before {
   position: absolute;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  left: 82px;
+  left: 56px;
   top: 50%;
-  height: 96%;
+  height: calc(100% - 10px);
   width: 6px;
   /* or 100px */
-  border-left: 6px solid $sunglow;
+  border-left: 3px solid $gray-dark;
 }
-
+@media only screen and (max-width: 750px) {
+  blockquote,
+  blockquote p {
+    font-size: 16px;
+    padding-left: 20px !important;
+  }
+  blockquote:before {
+    left: 0px;
+  }
+}
 blockquote cite {
   display: block;
   font-size: 12px;

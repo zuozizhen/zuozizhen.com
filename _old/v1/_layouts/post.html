@@ -1,0 +1,49 @@
+---
+layout: default_light
+---
+
+<div class="lines-grid-post">
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+</div>
+
+<a class="post_back" href="javascript:history.go(-1)">Back</a>
+
+<section class="section post">
+  <div class="blog_item">
+    <span class="blog_tag">  {% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
+    <span class="blog_title">{{ page.title }}</span>
+    <span class="blog_tips">{{ page.date | date: '%B %d, %Y' }} by Zuo Zizhen</span>
+  </div>
+  <div class="post-wrapper">
+    {% if page.cover %}
+      <img class="blog_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
+    {% endif %}
+    {{ content }}
+  </div>
+  <div class="post_pagination">
+    {% if page.previous.url %}
+      <a class="previous"href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+      上一篇<br><span>{{page.previous.title}}</span>
+      </a>
+    {% endif %}
+
+    {% if page.next.url %}
+      <a class="next"href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+      下一篇<br><span>{{page.next.title}}</span>
+      </a>
+    {% endif %}
+  </div>
+  <div id="disqus_thread"></div>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+<script>
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://zuonx.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>

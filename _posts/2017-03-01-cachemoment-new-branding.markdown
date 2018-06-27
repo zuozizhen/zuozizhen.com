@@ -3,7 +3,7 @@ layout:     "post"
 title:      "魔门云启用全新品牌形象"
 subtitle:   "CacheMoment starts use new brand"
 date:       "2017-03-01"
-cover:      "bg.png"
+cover:      "bg.jpg"
 tag:        "movie · feelings · thinking"
 excerpt:    "随着魔门云日益壮大以及产品日趋成熟，我们希望通过建立一套完整的品牌设计使公司和产品的形象更能体现我们的商业愿景。"
 ---
@@ -25,23 +25,23 @@ excerpt:    "随着魔门云日益壮大以及产品日趋成熟，我们希望�
 
 随着理解和讨论的逐渐的深入，我们基于魔门云产品特性，定义了产品的三个关键词：
 
-![img](/assets/images/post/2017-03-01/2.png)
+![img](/assets/images/post/2017-03-01/2.jpg)
 
 ## 图
 
 设计师通过对关键词进行发散性的想象，来探索设计具象化的方向：
 
-![img](/assets/images/post/2017-03-01/3.png)
+![img](/assets/images/post/2017-03-01/3.jpg)
 
 在不断的努力和头脑风暴下，我们设计出了很多的版本（虐心的过程，手动流汗）：
 
-![img](/assets/images/post/2017-03-01/4.png)
+![img](/assets/images/post/2017-03-01/4.jpg)
 
 同时在不断的设计和迭代中我们逐渐找到了更精准的定位，从而提炼出了我们想要在标识中体现的最重要的三点：
 
-![img](/assets/images/post/2017-03-01/5-1.png)
+![img](/assets/images/post/2017-03-01/5-1.jpg)
 
-* M：来自于公司英文名中的“Moment” 和中文音译名“魔”的首字母，和公司建立强联系感。
+* M：来自于公司英文名中的“Moment”和中文音译名“魔”的首字母，和公司建立强联系感。
 * 某种秩序：体现魔门云专业性和稳定性，也能让人感觉如外星人般的科技感，传递出了公司独特的气质。
 * 门：在进一步加强了与公司的联系感的同时，也代表了魔门云产品最大的特点，即无限的可能与变化。
 
@@ -49,7 +49,7 @@ excerpt:    "随着魔门云日益壮大以及产品日趋成熟，我们希望�
 
 确定了方向之后，我们得出了一个初步的方案：
 
-![img](/assets/images/post/2017-03-01/6.png)
+![img](/assets/images/post/2017-03-01/6.jpg)
 
 这是一个由很简单图形组成的简洁的标识。
 
@@ -59,54 +59,54 @@ excerpt:    "随着魔门云日益壮大以及产品日趋成熟，我们希望�
 
 门之间的缝隙意味着开放和流动。
 
-组成的M让人可以联想到Moment和魔门云，和公司和产品建立联系感。
+组成的M让人可以联想到 Moment 和魔门云，和公司和产品建立联系感。
 
 整个图形也可以看作是正在有序整合和排列的矩阵，体现了稳定和变化
 
 如果把它想象成是立体图形，我们以一种俯视的角度去看，它就变成了平面上立起来的五扇门，以一种独特而规律的方式排列着，就像复活节岛上的摩艾石像一样，神秘而又未知，像是在等待着什么…
 
-![img](/assets/images/post/2017-03-01/7.png)
+![img](/assets/images/post/2017-03-01/7.jpg)
 
 ## 色
 
 在色彩上我们的方向定位到了紫色，一方面能和同类型公司区分开，另一方面可以更好的体现我们的特点：变化，也加强了神秘感。
 
-![img](/assets/images/post/2017-03-01/8.png)
+![img](/assets/images/post/2017-03-01/8.jpg)
 
 在对比了不同的色彩，甚至在不同色域显示终端上的显示效果后，我们选用了一个最合适品牌色。
 
-![img](/assets/images/post/2017-03-01/9.png)
+![img](/assets/images/post/2017-03-01/9.jpg)
 
 ## 字
 
 为了匹配标识的风格和特点，我们首先确定了字体的笔画要棱角分明。
 因为“魔”字笔画较多，设计师便巧妙的将“魔”字下面的结构进行重设计，在保证识别度的情况下，精简笔画，改善视觉效果。
 
-门字的设计上我们使用了LOGO的特征元素来替换原有的点，使它更加灵动和具有趣味性。
+门字的设计上我们使用了 Logo 的特征元素来替换原有的点，使它更加灵动和具有趣味性。
 云字的笔画也要保证与其余文字以及标识的统一性。
 
-![img](/assets/images/post/2017-03-01/10.png)
+![img](/assets/images/post/2017-03-01/10.jpg)
 
-英文字体同样要保证设计的统一性
+英文字体同样要保证设计的统一性。
 
-![img](/assets/images/post/2017-03-01/11.png)
+![img](/assets/images/post/2017-03-01/11.jpg)
 
 ## 打磨
 
 将笔画的角度和间距进一步的完善，经过不断的调整，在美学上保持整体的一致与协调，按照黄金分割进行视觉调整，从而达到一种完美融洽与平衡的效果。
 
-![img](/assets/images/post/2017-03-01/12.png)
-![img](/assets/images/post/2017-03-01/13.png)
+![img](/assets/images/post/2017-03-01/12.jpg)
+![img](/assets/images/post/2017-03-01/13.jpg)
 
-最后，我们很高兴的推出了新的品牌LOGO。
+最后，我们很高兴的推出了新的品牌 Logo。
 
-![img](/assets/images/post/2017-03-01/14.png)
+![img](/assets/images/post/2017-03-01/14.jpg)
 
 ## 品牌应用系统
 
-![img](/assets/images/post/2017-03-01/15.png)
-![img](/assets/images/post/2017-03-01/16.png)
-![img](/assets/images/post/2017-03-01/17.png)
-![img](/assets/images/post/2017-03-01/18.png)
+![img](/assets/images/post/2017-03-01/15.jpg)
+![img](/assets/images/post/2017-03-01/16.jpg)
+![img](/assets/images/post/2017-03-01/17.jpg)
+![img](/assets/images/post/2017-03-01/18.jpg)
 
 **这就是魔门云新品牌设计的诞生过程。**

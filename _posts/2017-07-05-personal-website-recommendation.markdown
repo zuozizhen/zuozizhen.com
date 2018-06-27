@@ -24,7 +24,7 @@ excerpt:    "一些设计、排版以及创意非常棒的个人网站..."
 ![img](/assets/images/post/2017-07-05/4.jpg)
 [nerisson.fr](http://www.nerisson.fr/)
 
-### 5. 一个跨领域多学科设计师，前Spotify的首席设计师和艺术指导，大胡子极具辨识度
+### 5. 一个跨领域多学科设计师，前 Spotify 的首席设计师和艺术指导，大胡子极具辨识度
 ![img](/assets/images/post/2017-07-05/5.jpg)
 [Tobias van Schneider](http://www.vanschneider.com/)
 
@@ -36,7 +36,7 @@ excerpt:    "一些设计、排版以及创意非常棒的个人网站..."
 ![img](/assets/images/post/2017-07-05/7.jpg)
 [Objeto Rocha](http://objetorocha.com/)
 
-### 8. 由上面介绍过的Tobias van Schneider设计的网站，虽然并不是个人网站，但是第一次看会一定会被惊艳到
+### 8. 由上面介绍过的 Tobias van Schneider 设计的网站，虽然并不是个人网站，但是第一次看会一定会被惊艳到
 ![img](/assets/images/post/2017-07-05/8.jpg)
 [Aquatilis Expedition](http://aquatilis.tv/)
 

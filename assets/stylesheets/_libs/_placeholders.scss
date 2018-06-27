@@ -12,9 +12,9 @@ $sunglow-dark:                #FDC000 !default;
 $line-height: 40px;
 $line-height-abs: -40px;
 
-$family-post: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+$family-post: "PingFang SC", "Helvetica Neue", "Arial", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 
-$family-main: 'Montserrat', "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+$family-main: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 
 @font-face {
     font-family: 'SofiaProLight';
@@ -83,4 +83,26 @@ $family-main: 'Montserrat', "Helvetica Neue", "Arial", "PingFang SC", "Hiragino 
          url('/assets/fonts/TimesNewRomanMTStdItalic.woff') format('woff'),
          url('/assets/fonts/TimesNewRomanMTStdItalic.ttf') format('truetype'),
          url('/assets/fonts/TimesNewRomanMTStdItalic.svg#TimesNewRomanMTStdItalic') format('svg');
+}
+
+// Placeholders
+
+%grid-1-830 {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  grid-column-gap: 100px;
+}
+
+%grid-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+%no_select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
