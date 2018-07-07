@@ -52,3 +52,5 @@ $().ready(function($) {
     $(".about_cn").addClass('active');
   });
 });
+
+mediumZoom(document.images)
