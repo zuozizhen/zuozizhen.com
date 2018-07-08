@@ -22,13 +22,14 @@
     font-size: 3.5vw;
   }
   .blog_tag {
-    font-size: 16px;
+    font-family: ProductSansBold;
+    font-size: 14px;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1400px) {
   .post_top_content {
     .blog_title {
-      font-size: 52.5px;
+      font-size: 49px;
     }
   }
 }
@@ -93,7 +94,7 @@
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 120%;
+  max-width: 100%;
   min-width: 100%;
   position: relative;
   left: 50%;
@@ -197,7 +198,7 @@ h6 {
 .post-wrapper ol,
 .post-wrapper ul {
   margin-bottom: 30px;
-  padding-left: 100px;
+  padding-left: 105px;
   padding-right: 80px;
   p {
     padding: 0;
@@ -283,8 +284,9 @@ h6 {
 .post_pagination {
   line-height: 40px;
   margin: 60px auto;
-  max-width: 740px;
   overflow: auto;
+  width: 900px;
+  padding: 0 80px;
 }
 .post_pagination .next {
   float: right;

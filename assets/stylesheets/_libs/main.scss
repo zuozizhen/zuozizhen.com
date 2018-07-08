@@ -20,10 +20,10 @@ html {
   padding-right: 150px;
 
   .nav_link {
-    font-size: 17px;
+    font-size: 19px;
     color: $gray;
     margin-right: 40px;
-    font-family: GothamBold;
+    font-family: BitterRegular;
     letter-spacing: -0.5px;
     position: relative;
     transition: color 0.3s;
@@ -52,7 +52,7 @@ html {
       transform: scale3d(1,1,1);
     }
     &.active {
-      font-family: GothamBold;
+      font-family: BitterBold;
     }
   }
   .logo_z {
@@ -97,17 +97,17 @@ html {
 .section {
   max-width: 1440px;
   padding: 0 150px;
-  margin: 100px auto;
+  margin: 90px auto;
 
   .section_title {
     color: $gray-dark;
-    font-size: 56px;
-    font-family: GothamBlack;
+    font-size: 54px;
+    font-family: ProductSansBold;
     width: fit-content;
   }
 
   .item_title {
-    font-family: GothamBold;
+    font-family: ProductSansBold;
     font-size: 28px;
     letter-spacing: -0.5px;
   }
@@ -161,7 +161,7 @@ html {
 
   &.contact {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.7fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 100px;
   }
@@ -247,11 +247,12 @@ html {
 // Main
 
 .main_title {
-  font-family: GothamBlack;
-  font-size: 90px;
+  font-family: ProductSansBold;
+  font-size: 80px;
   text-align: left;
   white-space: nowrap;
   line-height: 1em;
+  margin-top: -10px;
   .point {
     margin-left: -10px;
     color: $gray-light;
@@ -263,9 +264,9 @@ html {
 }
 .main_desc {
   font-family: BitterRegular;
-  font-size: 22px;
+  font-size: 19px;
   color: $gray;
-  line-height: 48px;
+  line-height: 44px;
   position: relative;
   margin-top: 40px;
 }
@@ -487,7 +488,7 @@ html {
     }
   }
   .co {
-    font-family: GothamBold;
+    font-family: ProductSansBold;
     font-size: 28px;
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -495,14 +496,14 @@ html {
   .time {
     float: right;
     opacity: 0.4;
-    font-family: GothamMedium;
+    font-family: ProductSansBold;
     font-size: 18px;
     color: #FFFFFF;
     text-align: right;
-    margin-top: -38px;
+    margin-top: -50px;
   }
   .position {
-    font-family: GothamMedium;
+    font-family: ProductSansBold;
     font-size: 20px;
     color: #FFFFFF;
     margin-bottom: 12px;
@@ -535,15 +536,16 @@ html {
   .case_duty {
     opacity: 0.6;
     font-family: $family-main;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
     color: #FFFFFF;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
   .case_full_title {
-    font-family: GothamBold;
-    font-size: 56px;
+    font-family: ProductSansBold;
+    font-size: 54px;
     margin-left: -2px;
     color: #fff;
   }
@@ -553,11 +555,12 @@ html {
     height: 2px;
     width: 50px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   p {
-    font-family: BitterRegular;
-    font-size: 16px;
+    font-family: $family-main;
+    font-size: 17px;
+    letter-spacing: .5px;
     color: $gray-lightest;
     opacity: 0.6;
     line-height: 2em;
@@ -565,7 +568,7 @@ html {
   }
   .case_link {
     color: #fff;
-    font-family: GothamBold;
+    font-family: ProductSansBold;
     position: relative;
     font-size: 20px;
     margin-top: 24px;
@@ -640,7 +643,7 @@ html {
     transition: all 0.3s;
   }
   .case_item_desc {
-    margin-top: 36px;
+    margin-top: 30px;
     text-align: center;
   }
   &.cachemoment img{
@@ -707,16 +710,17 @@ html {
 
 .case_title {
   color: $gray-dark;
-  font-size: 28px;
-  font-family: GothamBold;
-  letter-spacing: -0.5px;
+  font-size: 24px;
+  font-family: ProductSansBold;
   z-index: 2;
   margin-bottom: 12px;
 }
 
 .case_tag {
-  font-family: $family-main;
+  font-family: BitterRegular;
+  font-size: 15px;
   font-weight: 500;
+  letter-spacing: .3px;
   color: $gray-dark;
   opacity: .4;
   span {
@@ -729,7 +733,7 @@ html {
   margin-top: 40px;
   color: $gray-dark;
   font-size: 30px;
-  font-family: GothamBold;
+  font-family: ProductSansBold;
   position: relative;
 
   &:before {
@@ -820,7 +824,7 @@ html {
   margin-top: 10px;
   p {
     font-family: BitterRegular;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 36px;
     color: $gray-light;
     margin-top: 10px;
@@ -837,7 +841,7 @@ html {
     font-weight: 600;
     text-decoration: none;
     font-size: 32px;
-    font-family: GothamBold;
+    font-family: ProductSansBold;
   }
 
   span {
