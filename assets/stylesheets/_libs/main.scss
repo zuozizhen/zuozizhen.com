@@ -20,10 +20,11 @@ html {
   padding-right: 150px;
 
   .nav_link {
-    font-size: 18px;
+    font-size: 17px;
     color: $gray;
     margin-right: 40px;
-    font-family: SofiaProBold;
+    font-family: GothamBold;
+    letter-spacing: -0.5px;
     position: relative;
     transition: color 0.3s;
     z-index: 2;
@@ -51,7 +52,7 @@ html {
       transform: scale3d(1,1,1);
     }
     &.active {
-      font-family: SofiaProBold;
+      font-family: GothamBold;
     }
   }
   .logo_z {
@@ -100,15 +101,15 @@ html {
 
   .section_title {
     color: $gray-dark;
-    font-size: 60px;
-    font-family: SofiaProBlack;
+    font-size: 56px;
+    font-family: GothamBlack;
     width: fit-content;
   }
 
   .item_title {
-    font-family: SofiaProBlack;
-    font-size: 32px;
-    letter-spacing: .5px;
+    font-family: GothamBold;
+    font-size: 28px;
+    letter-spacing: -0.5px;
   }
 
   .item_content:not(:last-child) {
@@ -154,14 +155,14 @@ html {
 
   &.work {
     @extend %grid-1-1;
-    grid-gap: 40px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
   }
 
   &.contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 60px;
     margin-top: 100px;
   }
 
@@ -195,6 +196,9 @@ html {
 @media only screen and (max-width: 750px) {
   .section {
     width: calc(100% - 80px);
+    .section_title {
+      font-size: 11vw;
+    }
     &.post {
       .blog_item {
         margin-left: 0 !important;
@@ -243,7 +247,7 @@ html {
 // Main
 
 .main_title {
-  font-family: SofiaProBlack;
+  font-family: GothamBlack;
   font-size: 90px;
   text-align: left;
   white-space: nowrap;
@@ -258,9 +262,9 @@ html {
   }
 }
 .main_desc {
-  font-family: $family-main;
+  font-family: BitterRegular;
   font-size: 22px;
-  color: $gray-dark;
+  color: $gray;
   line-height: 48px;
   position: relative;
   margin-top: 40px;
@@ -286,7 +290,6 @@ html {
 
 .blog_tag {
   display: block;
-  font-family: SofiaProSemiBold;
   font-size: 14px;
   color: $gray-light;
   line-height: 30px;
@@ -295,7 +298,9 @@ html {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   margin-top: 16px;
-
+  span {
+    font-weight: 500;
+  }
   span:after {
     content: " · ";
     display: inline;
@@ -357,7 +362,7 @@ html {
 .blog_excerpt {
   margin-top: 10px;
   font-family: $family-post;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   color: $gray;
   line-height: 2em;
@@ -412,6 +417,7 @@ html {
 @media only screen and (max-width: 750px) {
   .blog_list_grid .blog_title,
   .blog_item_grid .blog_title {
+    width: 100vw;
     max-width: 80vw;
   }
 }
@@ -431,7 +437,6 @@ html {
   margin-bottom: 30px;
   .blog_cover {
     width: 100%;
-    border-radius: 10px;
   }
   .blog_tag,
   .blog_title,
@@ -443,7 +448,6 @@ html {
 .blog_item_grid .blog_cover,
 .blog_list_grid .blog_cover {
   width: 100%;
-  border-radius: 10px;
   border: 1px solid #eee;
   transition: all .3s;
   &:hover {
@@ -459,13 +463,13 @@ html {
   img {
     display: block;
     max-height: 100%;
-
   }
 }
 
 .case_full {
   position: relative;
-  height: 800px;
+  height: 50vw;
+  max-height: 2000px;
   width: 100%;
   background-color: #1D243F;
 }
@@ -483,29 +487,28 @@ html {
     }
   }
   .co {
-    font-family: SofiaProBold;
-    font-size: 30px;
+    font-family: GothamBold;
+    font-size: 28px;
     color: #FFFFFF;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
   .time {
     float: right;
     opacity: 0.4;
-    font-family: SofiaProBold;
-    font-size: 20px;
+    font-family: GothamMedium;
+    font-size: 18px;
     color: #FFFFFF;
     text-align: right;
-    margin-top: -46px;
+    margin-top: -38px;
   }
   .position {
-    font-family: SofiaProBold;
+    font-family: GothamMedium;
     font-size: 20px;
     color: #FFFFFF;
     margin-bottom: 12px;
   }
   p {
     opacity: 0.6;
-    font-family: SofiaProRegular;
     font-size: 20px;
     color: #FFFFFF;
     line-height: 36px;
@@ -531,7 +534,7 @@ html {
   transform: translate(-50%, -50%);
   .case_duty {
     opacity: 0.6;
-    font-family: SofiaProMedium;
+    font-family: $family-main;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 2px;
@@ -539,8 +542,9 @@ html {
     margin-bottom: 20px;
   }
   .case_full_title {
-    font-family: SofiaProBold;
-    font-size: 60px;
+    font-family: GothamBold;
+    font-size: 56px;
+    margin-left: -2px;
     color: #fff;
   }
   .line {
@@ -552,7 +556,7 @@ html {
     margin-bottom: 30px;
   }
   p {
-    font-family: SofiaProMedium;
+    font-family: BitterRegular;
     font-size: 16px;
     color: $gray-lightest;
     opacity: 0.6;
@@ -561,12 +565,13 @@ html {
   }
   .case_link {
     color: #fff;
-    font-family: SofiaProBold;
+    font-family: GothamBold;
     position: relative;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 24px;
     letter-spacing: .5px;
     display: inline-block;
+    padding-bottom: 4px;
     cursor: pointer;
     &:before {
     	content: '';
@@ -598,6 +603,9 @@ html {
   overflow: hidden;
   img {
     max-height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -621,59 +629,45 @@ html {
 .case_item {
   overflow: hidden;
   position: relative;
-  border-radius: 10px;
   background-position: center;
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 90.9%;
-  }
+
   .color_cover {
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     opacity: 0;
-    border-radius: 10px;
     transition: all 0.3s;
   }
   .case_item_desc {
-    position: absolute;
-    left: 60px;
-    bottom: 60px;
-    opacity: 0;
-    transition: all 0.3s;
+    margin-top: 36px;
+    text-align: center;
   }
-  &.cachemoment {
-    background-image: url("../images/portfolio/cachemoment.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  &.cachemoment img{
+    height: auto;
+    width: 100%;
   }
-  &.presen {
-    background-image: url("../images/portfolio/presen.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  &.presen img{
+    height: auto;
+    width: 100%;
   }
   &.petme {
-    background-image: url("../images/portfolio/petme.png");
+    background-image: url("../images/portfolio/petme.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
   &.dns {
-    background-image: url("../images/portfolio/dns.png");
+    background-image: url("../images/portfolio/dns.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    .case_title {
-      font-size: 50px;
-    }
   }
   &.elife {
-    background-image: url("../images/portfolio/elife.png");
+    background-image: url("../images/portfolio/elife.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
   &.elife-x {
-    background-image: url("../images/portfolio/elife-x.png");
+    background-image: url("../images/portfolio/elife-x.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
@@ -710,41 +704,20 @@ html {
     }
   }
 }
-@media only screen and (max-width: 1140px) {
-  .case_item{
-    .case_item_desc {
-      text-align: center;
-      transform: translate(-50%, 50%);
-      left: 50%;
-      bottom: 50%;
-    }
-  }
-}
+
 .case_title {
-  color: $gray-lightest;
-  font-size: 60px;
-  font-family: SofiaProBold;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  color: $gray-dark;
+  font-size: 28px;
+  font-family: GothamBold;
+  letter-spacing: -0.5px;
   z-index: 2;
-  margin-left: -4px;
+  margin-bottom: 12px;
 }
-@media only screen and (max-width: 1360px) {
-  .case_item.dns .case_title {
-    font-size: 3vw;
-  }
-}
-@media only screen and (max-width: 1140px) {
-  .case_title {
-    font-size: 9vw;
-  }
-  .case_item.dns .case_title {
-    font-size: 7vw;
-  }
-}
+
 .case_tag {
-  font-family: SofiaProRegular;
-  color: $gray-lightest;
+  font-family: $family-main;
+  font-weight: 500;
+  color: $gray-dark;
   opacity: .4;
   span {
     margin-right: 20px;
@@ -755,15 +728,14 @@ html {
   display: inline-block;
   margin-top: 40px;
   color: $gray-dark;
-  font-size: 32px;
-  letter-spacing: .5px;
-  font-family: SofiaProBold;
+  font-size: 30px;
+  font-family: GothamBold;
   position: relative;
 
   &:before {
   	content: '';
   	position: absolute;
-  	top: 0.55em;
+  	top: 0.4em;
   	left: 0;
   	width: 0.6em;
   	height: 0.15em;
@@ -803,7 +775,7 @@ html {
       height: 3px;
       background-color: #dfdfdf;
       position: absolute;
-      top: 38px;
+      top: 44px;
       transition: all 0.3s;
     }
 
@@ -819,13 +791,13 @@ html {
     }
   }
   .item_desc {
+    font-family: BitterRegular;
     color: $gray-dark;
     display: inline-block;
-    font-family: SofiaProRegular;
     font-size: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 16px;
     position: relative;
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
@@ -845,9 +817,9 @@ html {
 }
 
 .section_item {
-  margin-top: 16px;
+  margin-top: 10px;
   p {
-    font-family: SofiaProRegular;
+    font-family: BitterRegular;
     font-size: 20px;
     line-height: 36px;
     color: $gray-light;
@@ -865,12 +837,11 @@ html {
     font-weight: 600;
     text-decoration: none;
     font-size: 32px;
-    font-family: SofiaProBold;
+    font-family: GothamBold;
   }
 
   span {
     color: $gray-light;
-    font-family: SofiaProRegular;
     font-size: 24px;
     font-weight: 400;
     text-decoration: none;
@@ -907,7 +878,6 @@ html {
   }
 
   img {
-    border-radius: 10px;
     width: 100%;
   }
 }

@@ -75,6 +75,7 @@ $family-main: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STH
          url('/assets/fonts/SofiaProBlack.ttf') format('truetype'),
          url('/assets/fonts/SofiaProBlack.svg#SofiaProBlack') format('svg');
 }
+
 @font-face {
     font-family: 'TimesNewRomanMTStdItalic';
     src: url('/assets/fonts/TimesNewRomanMTStdItalic.eot');
@@ -83,6 +84,56 @@ $family-main: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STH
          url('/assets/fonts/TimesNewRomanMTStdItalic.woff') format('woff'),
          url('/assets/fonts/TimesNewRomanMTStdItalic.ttf') format('truetype'),
          url('/assets/fonts/TimesNewRomanMTStdItalic.svg#TimesNewRomanMTStdItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('/assets/fonts/GothamMedium.eot');
+    src: url('/assets/fonts/GothamMedium.eot') format('embedded-opentype'),
+         url('/assets/fonts/GothamMedium.woff2') format('woff2'),
+         url('/assets/fonts/GothamMedium.woff') format('woff'),
+         url('/assets/fonts/GothamMedium.ttf') format('truetype'),
+         url('/assets/fonts/GothamMedium.svg#GothamMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('/assets/fonts/GothamBold.eot');
+    src: url('/assets/fonts/GothamBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/GothamBold.woff2') format('woff2'),
+         url('/assets/fonts/GothamBold.woff') format('woff'),
+         url('/assets/fonts/GothamBold.ttf') format('truetype'),
+         url('/assets/fonts/GothamBold.svg#GothamBold') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamBlack';
+    src: url('/assets/fonts/GothamBlack.eot');
+    src: url('/assets/fonts/GothamBlack.eot') format('embedded-opentype'),
+         url('/assets/fonts/GothamBlack.woff2') format('woff2'),
+         url('/assets/fonts/GothamBlack.woff') format('woff'),
+         url('/assets/fonts/GothamBlack.ttf') format('truetype'),
+         url('/assets/fonts/GothamBlack.svg#GothamBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'BitterRegular';
+    src: url('/assets/fonts/BitterRegular.eot');
+    src: url('/assets/fonts/BitterRegular.eot') format('embedded-opentype'),
+         url('/assets/fonts/BitterRegular.woff2') format('woff2'),
+         url('/assets/fonts/BitterRegular.woff') format('woff'),
+         url('/assets/fonts/BitterRegular.ttf') format('truetype'),
+         url('/assets/fonts/BitterRegular.svg#BitterRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'BitterBold';
+    src: url('/assets/fonts/BitterBold.eot');
+    src: url('/assets/fonts/BitterBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/BitterBold.woff2') format('woff2'),
+         url('/assets/fonts/BitterBold.woff') format('woff'),
+         url('/assets/fonts/BitterBold.ttf') format('truetype'),
+         url('/assets/fonts/BitterBold.svg#BitterBold') format('svg');
 }
 
 // Placeholders

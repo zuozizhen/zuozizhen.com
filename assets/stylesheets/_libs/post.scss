@@ -18,10 +18,18 @@
   top: 50%;
   transform: translateY(-50%);
   .blog_title {
+    margin-left: -2px;
     font-size: 3.5vw;
   }
   .blog_tag {
     font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .post_top_content {
+    .blog_title {
+      font-size: 52.5px;
+    }
   }
 }
 @media only screen and (max-width: 750px) {
@@ -46,7 +54,7 @@
 }
 
 .blog_tips {
-  font-family: $family-post;
+  font-family: BitterRegular;
   font-weight: 500;
   font-size: 16px;
   color: $gray-light;
@@ -331,7 +339,6 @@ h6 {
 .blog_header_img {
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, .05);
 }
 /*	Blockquotes  */
