@@ -28,6 +28,10 @@ html {
     position: relative;
     transition: color 0.3s;
     z-index: 2;
+    &.link_right {
+      position: absolute;
+      right: 175px;
+    }
     &:after {
     	content: '';
       background: $gray-light;
@@ -56,12 +60,11 @@ html {
     }
   }
   .logo_z {
-    position: relative;
-    float: right;
+    position: absolute;
+    right: 150px;
     width: 22px;
     height: 22px;
-    margin-top: -2px;
-    right: 0;
+    margin-top: 0px;
     transition: all 0.3s;
 
     i {

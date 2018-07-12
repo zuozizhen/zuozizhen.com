@@ -6,6 +6,7 @@ keywords: "zuonx, 左子祯, Zuo Zizhen, designer, studio, blog, personal site, 
 author:   "Zuo Zizhen"
 url: "https://zuonx.com"
 baseurl: ""
+name: zuonx
 
 # SCSS settings
 sass:
