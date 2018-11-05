@@ -16,7 +16,7 @@ layout: default
       <div class="post_top_content">
         <span class="blog_tag">  {% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
         <span class="blog_title">{{ page.title }}</span>
-        <span class="blog_tips">{{ page.date | date: '%B %d, %Y' }} by Zuo Zizhen</span>
+        <span class="blog_tips">ARTICLE POSTED ON {{ page.date | date: '%B %d, %Y' }}</span>
       </div>
     </div>
     {% if page.cover %}

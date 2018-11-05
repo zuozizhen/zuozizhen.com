@@ -22,8 +22,11 @@
     font-size: 3.5vw;
   }
   .blog_tag {
-    font-family: ProductSansBold;
-    font-size: 14px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    span {
+      font-weight: 400;
+    }
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -55,14 +58,14 @@
 }
 
 .blog_tips {
-  font-family: BitterRegular;
-  font-weight: 500;
-  font-size: 16px;
-  color: $gray-light;
+  font-weight: 400;
+  font-size: 13px;
+  color: #7E7E7E;
   line-height: 30px;
   letter-spacing: 1px;
   display: block;
   margin-top: 14px;
+  text-transform: uppercase;
 }
 
 .post-wrapper a,
@@ -344,6 +347,7 @@ h6 {
   width: 100%;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: 4px;
 }
 /*	Blockquotes  */
 blockquote p {

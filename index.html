@@ -12,7 +12,10 @@ description: Do one thing for a lifetime
   <a href="{{ site.url }}/feed.xml" class="nav_link link_right">RSS</a>
   <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
 </nav>
-
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+</script>
 <section class="section main">
   <div class="main_title">
     Hello <span class="point">. </span><br>
@@ -96,7 +99,21 @@ description: Do one thing for a lifetime
 </section>
 
 <section class="section blog_home">
-  <div class="section_title">Blog</div>
+  <div class="section_title">
+    <div class="demo">
+      <div id="trigger1" class="blog_trigger"></div>
+      <div id="pin1" class="box2">Blog</div>
+      <script>
+        $(function () { // wait for document ready
+          // build scene
+          var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1400, offset: 500})
+                  .setPin("#pin1")
+                  .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                  .addTo(controller);
+        });
+      </script>
+    </div>
+  </div>
   <div class="">
     <div class="blog_item_grid">
       {% for post in site.posts limit:5 %}
@@ -105,11 +122,13 @@ description: Do one thing for a lifetime
           <img src="assets/images/post/{{ post.date | date: '%Y-%m-%d' }}/bg.jpg" alt="" class="blog_cover">
         </a>
           <!-- <span class="blog_date">{{ post.date | date: '%B %d, %Y' }}</span> -->
+        <div class="blog_info">
           <span class="blog_tag">{% for tag in post.tags limit:3 %}<span>{{tag}}</span>{% endfor %}</span>
         <a href="{{ post.url }}">
           <span class="blog_title">{{ post.title }}</span>
         </a>
           <div class="blog_excerpt">{{ post.excerpt }}</div>
+        </div>
       </div>
       {% endfor %}
     </div>

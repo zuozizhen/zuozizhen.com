@@ -420,3 +420,20 @@
     width: calc(100% - 80px);
   }
 }
+
+.box1, .box2, .box3 {
+	display: inline-block;
+	position: relative;
+	border-radius: 8px;
+	border: 0px solid white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+
+
+.horizontal .box2 {
+	top: 0;
+	max-height: 50px;
+	margin: -25px 25px auto 25px;
+}
