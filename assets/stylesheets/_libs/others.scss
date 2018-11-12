@@ -342,63 +342,6 @@
   transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
 
-// light_theme
-.body_white {
-  background-color: #fff;
-  .lines-grid-post .lines_i:before {
-    background: $gray-lighter;
-    opacity: .2;
-  }
-
-  .logo_n,
-  .logo_u,
-  .logo_x,
-  .logo_z {
-    i {
-      background-color: $gray-dark;
-    }
-  }
-
-  .btn_menu .line {
-    background-color: $gray-dark;
-  }
-  .post_back {
-    color: $gray-dark;
-  }
-  .post_back:before {
-    background-color: $gray-dark;
-  }
-  .post-wrapper {
-    color: $gray-dark;
-    a {
-      color: $gray-dark;
-    }
-    p {
-      olor: $gray-dark;
-    }
-  }
-  .post_pagination span {
-    color: $gray-dark;
-  }
-  .blog_title,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $gray-dark;
-  }
-  .menu:before {
-    background-color: #eee;
-  }
-  .wrapper_title {
-    color: #ddd;
-  }
-  .menu .lines-grid .lines_i:before {
-    background-color: #ddd;
-  }
-}
 
 // Disqus
 .comment {
@@ -496,3 +439,88 @@
     display: none;
   }
 }
+
+//logo
+// 
+// .logo_n,
+// .logo_u,
+// .logo_x,
+// .logo_z {
+//   position: fixed;
+//   width: 100px;
+//   height: 22px;
+//   z-index: 10;
+//
+//   i {
+//     position: absolute;
+//     -webkit-transform: translate(-50%, 0);
+//     transform: translate(-50%, 0);
+//     left: 50%;
+//     display: block;
+//     background-color: $gray-lightest;
+//     background-image: none;
+//     width: 22px;
+//     height: 22px;
+//     background-size: 20px 20px;
+//   }
+// }
+//
+// .logo_z {
+//   top: 40px;
+//   left: 0;
+//
+//   i {
+//     -webkit-mask-image: url("../images/logo/z.svg");
+//     mask-image: url("../images/logo/z.svg");
+//   }
+// }
+//
+// .logo_x {
+//   right: 0;
+//   top: 40px;
+//
+//   i {
+//     -webkit-mask-image: url("../images/logo/x.svg");
+//     mask-image: url("../images/logo/x.svg");
+//   }
+// }
+//
+// .logo_n {
+//   right: 0;
+//   bottom: 40px;
+//
+//   i {
+//     -webkit-mask-image: url("../images/logo/n.svg");
+//     mask-image: url("../images/logo/n.svg");
+//   }
+// }
+//
+// .logo_u {
+//   left: 0;
+//   bottom: 40px;
+//
+//   i {
+//     -webkit-mask-image: url("../images/logo/u.svg");
+//     mask-image: url("../images/logo/u.svg");
+//   }
+// }
+//
+// .logo_o {
+//   position: absolute;
+//   -webkit-transform: translate(-50%, 0);
+//   transform: translate(-50%, 0);
+//   left: 50%;
+//   top: 40px;
+//   z-index: 10;
+// }
+//
+// .logo_o i {
+//   display: block;
+//   background-color: $gray-lightest;
+//   background-image: none;
+//   width: 22px;
+//   height: 22px;
+//   background-size: 20px 20px;
+//   -webkit-mask-image: url("../images/logo/o.svg");
+//   mask-image: url("../images/logo/o.svg");
+// }

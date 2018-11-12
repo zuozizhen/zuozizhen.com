@@ -13,11 +13,15 @@ html {
 // Nav
 
 .top_nav {
-  position: relative;
+  position: fixed;
   max-width: 1440px;
+  width: 100%;
   margin: 100px auto;
   padding-left: 150px;
   padding-right: 150px;
+  z-index: 10;
+  transform: translateX(-50%);
+  left: 50%;
 
   .nav_link {
     font-size: 19px;
@@ -66,6 +70,7 @@ html {
     height: 22px;
     margin-top: 0px;
     transition: all 0.3s;
+    z-index: 10;
 
     i {
       position: absolute;
@@ -73,7 +78,7 @@ html {
       transform: translate(-50%, 0);
       left: 50%;
       display: block;
-      background-color: $gray-dark;
+      background-color: #444;
       background-image: none;
       width: 22px;
       height: 22px;
@@ -1112,91 +1117,6 @@ html {
 
 .lines_i:first-child:before {
   width: 0;
-}
-
-//logo
-
-.logo_n,
-.logo_u,
-.logo_x,
-.logo_z {
-  position: fixed;
-  width: 100px;
-  height: 22px;
-  z-index: 10;
-
-  i {
-    position: absolute;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    left: 50%;
-    display: block;
-    background-color: $gray-lightest;
-    background-image: none;
-    width: 22px;
-    height: 22px;
-    background-size: 20px 20px;
-  }
-}
-
-.logo_z {
-  top: 40px;
-  left: 0;
-
-  i {
-    -webkit-mask-image: url("../images/logo/z.svg");
-    mask-image: url("../images/logo/z.svg");
-  }
-}
-
-.logo_x {
-  right: 0;
-  top: 40px;
-
-  i {
-    -webkit-mask-image: url("../images/logo/x.svg");
-    mask-image: url("../images/logo/x.svg");
-  }
-}
-
-.logo_n {
-  right: 0;
-  bottom: 40px;
-
-  i {
-    -webkit-mask-image: url("../images/logo/n.svg");
-    mask-image: url("../images/logo/n.svg");
-  }
-}
-
-.logo_u {
-  left: 0;
-  bottom: 40px;
-
-  i {
-    -webkit-mask-image: url("../images/logo/u.svg");
-    mask-image: url("../images/logo/u.svg");
-  }
-}
-
-.logo_o {
-  position: absolute;
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  left: 50%;
-  top: 40px;
-  z-index: 10;
-}
-
-.logo_o i {
-  display: block;
-  background-color: $gray-lightest;
-  background-image: none;
-  width: 22px;
-  height: 22px;
-  background-size: 20px 20px;
-  -webkit-mask-image: url("../images/logo/o.svg");
-  mask-image: url("../images/logo/o.svg");
 }
 
 // home img
