@@ -1,25 +1,25 @@
-// // Menu
-//
-// $().ready(function($) {
-//   $(".btn_menu").on('click', function(e) {
-//     $(".menu").toggleClass('menu_open');
-//     e.preventDefault();
-//     $(this).toggleClass('btn_menu--toggled');
-//   });
-//   $('.toggle_all').on('click', function(e) {
-//     e.preventDefault();
-//     $('.btn_menu').toggleClass('btn_menu--toggled');
-//   });
-// });
-//
-// // Back Top
-// $(document).ready(function() {
-//   $('#goToTop').click(function() {
-//     $('html,body').animate({
-//       scrollTop: 0
-//     }, 'slow');
-//   });
-// });
+// Menu
+
+$().ready(function($) {
+  $(".btn_menu").on('click', function(e) {
+    $(".menu").toggleClass('menu_open');
+    e.preventDefault();
+    $(this).toggleClass('btn_menu--toggled');
+  });
+  $('.toggle_all').on('click', function(e) {
+    e.preventDefault();
+    $('.btn_menu').toggleClass('btn_menu--toggled');
+  });
+});
+
+// Back Top
+$(document).ready(function() {
+  $('#goToTop').click(function() {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 'slow');
+  });
+});
 
 // China Time
 $.each($('.js--time'), function() {

@@ -28,8 +28,8 @@
     top: 50%;
     right: calc(20% - 8px);
     font-size: 280px;
+    font-weight: 600;
     letter-spacing: -10px;
-    font-family: SofiaProBlack;
     color: #FDC000;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -64,7 +64,6 @@
 }
 
 .menu_content a {
-  font-family: SofiaProBlack;
   font-size: 40px;
   color: $gray-dark;
   display: block;
@@ -85,6 +84,7 @@
 }
 
 .menu_content a span {
+  font-weight: 600;
   display: block;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -436,4 +436,63 @@
 	top: 0;
 	max-height: 50px;
 	margin: -25px 25px auto 25px;
+}
+
+// menu footer right
+.footer_right {
+  position: absolute;
+  bottom: 46px;
+  width: auto;
+  color: $gray-dark;
+  -webkit-transition: all 0.2s 0.2s;
+  transition: all 0.2s 0.2s;
+  line-height: 12px;
+  font-family: SofiaProSemiBold;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.footer_right {
+  font-size: 14px;
+  transform: translateX(50%);
+  right: 10%;
+}
+
+.footer_right:before {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: $gray-dark;
+  content: '';
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.footer_right:hover:before {
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media only screen and (max-width: 900px) {
+  .footer_right {
+    left: 20%;
+    transform: translateX(0);
+  }
+
+  .footer_right:before {
+    display: none;
+  }
 }
