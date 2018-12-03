@@ -4,7 +4,7 @@ title: zuonx - design effective digital products
 description: Do one thing for a lifetime
 ---
 
-<nav class="section top_nav">
+<nav class="top_nav white">
   <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link">Work</a>
   <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
   <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
@@ -16,7 +16,7 @@ description: Do one thing for a lifetime
   // init controller
   var controller = new ScrollMagic.Controller();
 </script>
-<section class="main">
+<section class="home_top">
   <div class="lines-grid">
     <i class="lines_i"></i>
     <i class="lines_i"></i>
@@ -28,29 +28,29 @@ description: Do one thing for a lifetime
     <i class="lines_i"></i>
     <i class="lines_i"></i>
   </div>
-  <div class="logo_o">
-    <i></i>
-  </div>
   <div class="content">
-    <div class="main_title">
-      Hey,<br>
-      This is Zizhen Zuo<br>
-      a freelance developer<br>
-      & Product designer<br>
-      form China.
+    <div class="home_top_title">
+      <div class="home_top_title_swich">
+        <span class="swich_1"></span>
+        <span class="swich_2"></span>
+      </div>
+      <div class="">
+        I’M<br>
+        DESIGNER
+      </div>
     </div>
-    <div class="main_pic">
+    <div class="home_top_pic">
       <img src="assets/images/main/home_img.png" alt="" draggable="false" class="main_pic_z">
     </div>
   </div>
-  <div class="main_scroll">
+  <!-- <div class="main_scroll">
     <div class="c-scrolldown">
       <div class="c-line"></div>
     </div>
     <span>SCROLL TO EXPLORE</span>
-  </div>
+  </div> -->
 </section>
-<section class="about">
+<section class="home_about">
   <div class="lines-grid">
     <i class="lines_i"></i>
     <i class="lines_i"></i>
@@ -63,55 +63,36 @@ description: Do one thing for a lifetime
     <i class="lines_i"></i>
   </div>
   <div class="content">
-    <div class="about_title">About</div>
-    <div class="title">
-      Hello!<br>
-      I'm Zuo Zizhen.
-    </div>
-    <div class="about_en active">
-      <p class="about_desc one">
-        I am a product designer in Beijing and have been focusing on designing effective digital products to enhance the corporate brand value. I have 1+ years of experience in UI/UX design with proven online products such as web, applications, corporate back office systems.. My advantage is good at integrating different skills. I can independently complete the website design and development, there are some complete online product case.</p>
-      <p class="about_desc two">
-        I think a great product is the best in every part. In this process, we need the coordination and coordination of all aspects. In the process, I can fully consider the feasibility of development, while controlling the quality of the design from the product and interaction.</p>
-    </div>
-    <div class="about_cn">
-      <p class="about_desc one">
-        我是一名在北京的产品设计师，一直专注于设计有效的数字化产品以提升企业品牌价值。我拥有1+年视觉/交互设计的经验，有Web、APP、企业后台系统等成熟的线上产品。我的优势是涉猎领域广泛，善于多元化思考和跨领域技能整合，可以独立完成静态网站的设计及开发，有完整的线上产品。</p>
-      <p class="about_desc two">
-        我认为一个好的产品需要在各个方面都要做到最好，在这个过程中，需要各个环节的协作和协调。在这个过程中，我可以利用自己的优势充分的从开发的可行性、产品和交互方面来控制设计质量。</p>
-    </div>
-    <div class="service_item">
-      <div class="item_title">SERVICE</div>
-      <div class="item_desc">
-        <span>Web Interfaces</span>
-        <span>Frontend Development</span>
-        <span>App Interface</span>
-        <span>Digital Branding</span>
+    <div class="about_info">
+      <div class="contact_item">
+        <div class="item_title">Say hi</div>
+        <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
+      </div>
+      <div class="contact_item">
+        <div class="item_title">Be a friend</div>
+        <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+        <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
       </div>
     </div>
-  </div>
-  <div class="about_swich">
-    <span class="about_swich_en">EN</span>
-    <span class="about_swich_cn">CN</span>
+    <div class="about_desc">
+      <p>
+        I'm Zizhen Zuo, A <span>Product designer</span> & <span>Developer</span> & <span>Freelancer</span> form China.</p>
+      <p>
+        I had the opportunity to practice at <span>Accenture</span>, which enabled me to maintain good working habits.</p>
+      <p>
+        After graduation, I joined a start-up company and was responsible for product design and brand design in the early stage of the company</p>
+      <p>
+        My goal is to be an independent developer, I am good at integrating my various skills together to play out more power, such as design, code and 3D animation.</p>
+    </div>
   </div>
 </section>
-<!-- <section class="section main">
-  <div class="main_title">
-    Hello <span class="point">. </span><br>
-    I'm Zuo Zizhen
-  </div>
-  <div class="main_desc">
-    <p> I'm Zuo Zizhen, a designer form China.</p>
-    <p> I had the opportunity to practice at Accenture, which enabled me to maintain good working habits. After graduation, I joined a start-up company, so I have more opportunities to achieve bold design. My goal is to be an independent developer, I am good at integrating my various skills together to play out more power, such as design, code and 3D animation.</p>
-  </div>
-</section> -->
 
 <section class="section case">
-  <div class="section_title">Service</div>
+  <div class="section_title">Some real<br>cases for<br>custom</div>
   <div class="section_item">
   <a href="https://www.behance.net/gallery/58498171/Moment" class="case_item cachemoment" target="_blank">
     <div class="color_cover purple"></div>
-    <img src="assets/images/portfolio/cachemoment.jpg" alt="" class="color_cover_img">
+    <img src="assets/images/portfolio/cachemoment@2x.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
       <div class="case_title">Cachemoment</div>
       <div class="case_tag">Web Interfaces · Development · Digital Branding</div>
@@ -119,9 +100,17 @@ description: Do one thing for a lifetime
   </a>
   <a href="https://www.behance.net/gallery/61684929/Presen" class="case_item presen" target="_blank">
     <div class="color_cover red"></div>
-    <img src="assets/images/portfolio/presen.jpg" alt="" class="color_cover_img">
+    <img src="assets/images/portfolio/presen@2x.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
       <div class="case_title">Presen</div>
+      <div class="case_tag">Web Interfaces · App Interfaces</div>
+    </div>
+  </a>
+  <a href="https://www.behance.net/gallery/61684929/Presen" class="case_item presen" target="_blank">
+    <div class="color_cover red"></div>
+    <img src="assets/images/portfolio/petme@2x.jpg" alt="" class="color_cover_img">
+    <div class="case_item_desc">
+      <div class="case_title">Petme</div>
       <div class="case_tag">Web Interfaces · App Interfaces</div>
     </div>
   </a>
@@ -137,12 +126,12 @@ description: Do one thing for a lifetime
     <a class="case_link">Link</a>
   </div>
   <a href="https://www.behance.net/gallery/58498171/Moment" class="case_full_cover" target="_blank">
-    <img src="assets/images/portfolio/elife.jpg" alt="">
+    <img src="assets/images/portfolio/elife@2x.jpg" alt="">
   </a>
 </section>
 
 <section class="section service">
-  <div class="section_title">Service</div>
+  <div class="section_title">Services<br>and skills</div>
   <div class="section_item">
     <div class="item_content">
       <div class="item_title">Web Interfaces</div>
@@ -166,29 +155,20 @@ description: Do one thing for a lifetime
 <section class="section brand">
   <img src="assets/images/main/brand.png" alt="">
 </section>
-
-<section class="case_full">
-  <div class="case_full_desc">
-    <div class="case_duty">Developer & Interaction Designer</div>
-    <div class="case_full_title">DesignerAndStudio</div>
-    <div class="line"></div>
-    <p> To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,To provide users with large data driven large data driven</p>
-    <div class="case_link">Link</div>
-  </div>
-  <a href="https://www.behance.net/gallery/58498171/Moment" class="case_full_cover" target="_blank">
-    <img src="assets/images/portfolio/dns.jpg" alt="">
-  </a>
+<section class="post_full">
+  <img src="assets/images/main/full-post-bg-workspace.jpg" alt="">
 </section>
+
 
 <section class="section blog_home">
   <div class="section_title">
     <div class="demo">
       <div id="trigger1" class="blog_trigger"></div>
-      <div id="pin1" class="box2">Blog</div>
+      <div id="pin1" class="section_title_fixd">Keep<br>thinking</div>
       <script>
         $(function () { // wait for document ready
           // build scene
-          var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1400, offset: 500})
+          var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1400, offset: 450})
                   .setPin("#pin1")
                   .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                   .addTo(controller);
@@ -218,12 +198,21 @@ description: Do one thing for a lifetime
   </div>
 </section>
 
-<section class="post_full">
-  <img src="assets/images/main/full-post-bg.jpg" alt="">
+<section class="case_full">
+  <div class="case_full_desc">
+    <div class="case_duty">Developer & Interaction Designer</div>
+    <div class="case_full_title">DesignerAndStudio</div>
+    <div class="line"></div>
+    <p> To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,To provide users with large data driven large data driven</p>
+    <div class="case_link">Link</div>
+  </div>
+  <a href="https://www.behance.net/gallery/58498171/Moment" class="case_full_cover" target="_blank">
+    <img src="assets/images/portfolio/dns.jpg" alt="">
+  </a>
 </section>
 
 <section class="section story">
-  <div class="section_title">Shots</div>
+  <div class="section_title">Keep<br>learning</div>
   <div class="">
     <div id="dribbble-shots"></div>
     <a href="https://dribbble.com/zuonx" class="view_more" target="_blank"><span>View more in Dribbble</span></a>
@@ -233,14 +222,11 @@ description: Do one thing for a lifetime
   <img src="assets/images/main/full-post-bg.jpg" alt="">
 </section>
 <section class="section story">
-  <div class="section_title">Story</div>
+  <div class="section_title">Life is a little<br>less volatile<br>dream</div>
   <div id="instagram"></div>
 </section>
-<section class="post_full">
-  <img src="assets/images/main/full-post-bg.jpg" alt="">
-</section>
 <section class="section more">
-  <div class="section_title">More</div>
+  <div class="section_title">Let's talk</div>
   <div class="section_item">
     <div class="contact_item">
       <div class="item_title">Say hi</div>

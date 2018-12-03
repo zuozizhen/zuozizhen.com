@@ -5,7 +5,7 @@ subtitle:   "Personal website recommendation"
 date:       "2017-07-05"
 cover:      "bg.jpg"
 tag:        [site, design, recommended]
-excerpt:    "一些设计、排版以及创意非常棒的个人网站..."
+excerpt:    "一些设计、排版以及创意非常棒的个人网站,为正在制作自己个人网站的你提供灵感..."
 ---
 
 ### 1. 将音乐与设计结合到一起的个人网站，动效的设计可以称得上惊艳。
