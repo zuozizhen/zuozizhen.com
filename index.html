@@ -88,7 +88,19 @@ description: Do one thing for a lifetime
 </section>
 
 <section class="section case">
-  <div class="section_title">Some real<br>cases for<br>custom</div>
+  <div class="section_title">
+    <div id="trigger_case"></div>
+    <div id="pin_case" class="section_title_fixd">Some real<br>cases for<br>custom</div>
+    <script>
+      $(function () { // wait for document ready
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger_case", duration: 1702, offset: 450})
+                .setPin("#pin_case")
+                .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      });
+    </script>
+  </div>
   <div class="section_item">
   <a href="https://www.behance.net/gallery/58498171/Moment" class="case_item cachemoment" target="_blank">
     <div class="color_cover purple"></div>
@@ -114,6 +126,7 @@ description: Do one thing for a lifetime
       <div class="case_tag">Web Interfaces · App Interfaces</div>
     </div>
   </a>
+  <a href="{{ site.baseurl }}/works" class="view_more"><span>View More</span></a>
 </div>
 </section>
 
@@ -162,19 +175,17 @@ description: Do one thing for a lifetime
 
 <section class="section blog_home">
   <div class="section_title">
-    <div class="demo">
-      <div id="trigger1" class="blog_trigger"></div>
-      <div id="pin1" class="section_title_fixd">Keep<br>thinking</div>
-      <script>
-        $(function () { // wait for document ready
-          // build scene
-          var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1400, offset: 450})
-                  .setPin("#pin1")
-                  .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-                  .addTo(controller);
-        });
-      </script>
-    </div>
+    <div id="trigger_blog"></div>
+    <div id="pin_blog" class="section_title_fixd">Keep<br>thinking</div>
+    <script>
+      $(function () { // wait for document ready
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger_blog", duration: 1400, offset: 450})
+                .setPin("#pin_blog")
+                .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      });
+    </script>
   </div>
   <div class="">
     <div class="blog_item_grid">
@@ -211,40 +222,69 @@ description: Do one thing for a lifetime
   </a>
 </section>
 
-<section class="section story">
-  <div class="section_title">Keep<br>learning</div>
+<section class="section shots">
+
+  <div class="section_title">
+    <div id="trigger_shots"></div>
+    <div id="pin_shots" class="section_title_fixd">Keep<br>learning</div>
+    <script>
+      $(function () { // wait for document ready
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger_shots", duration: 600, offset: 450})
+                .setPin("#pin_shots")
+                .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      });
+    </script>
+  </div>
   <div class="">
     <div id="dribbble-shots"></div>
     <a href="https://dribbble.com/zuonx" class="view_more" target="_blank"><span>View more in Dribbble</span></a>
   </div>
 </section>
-<section class="post_full">
-  <img src="assets/images/main/full-post-bg.jpg" alt="">
+<section class="appraise_full">
+  <div class="appraise_content">
+    <div class="appraise_desc">
+      “ Working with ustwo is unlike a typical studio relationship. It’s closer to hiring a team of commandos that become a part of your organization. ”
+    </div>
+    <div class="appraise_name">
+      Liu Jiang
+    </div>
+    <div class="appraise_title">
+      CACHEMOMENT CEO
+    </div>
+  </div>
 </section>
 <section class="section story">
   <div class="section_title">Life is a little<br>less volatile<br>dream</div>
-  <div id="instagram"></div>
+  <div class="">
+    <div id="instagram"></div>
+    <a href="https://www.instagram.com/zuozizhen" class="view_more" target="_blank"><span>View more in Instagram</span></a>
+  </div>
 </section>
-<section class="section more">
-  <div class="section_title">Let's talk</div>
-  <div class="section_item">
-    <div class="contact_item">
-      <div class="item_title">Say hi</div>
-      <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
-    </div>
-    <div class="contact_item">
-      <div class="item_title">Be a friend</div>
-      <a class="item_desc" href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a>
-      <a class="item_desc" href="https://www.behance.net/{{ site.behance_username }}" target="_blank">Behance</a>
-      <a class="item_desc" href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
-      <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
-      <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
-    </div>
-    <div class="contact_item">
-      <div class="item_title">Thank you for Reading!</div>
-      <span class="item_desc">@ 2018 Designed & Built by Zuo Zizhen</span>
+<section class="home_more">
+  <div class="section more">
+    <div class="section_title">Let's talk</div>
+    <div class="section_item">
+      <div class="contact_item">
+        <div class="item_title">Say hi</div>
+        <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
+      </div>
+      <div class="contact_item">
+        <div class="item_title">Be a friend</div>
+        <a class="item_desc" href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a>
+        <a class="item_desc" href="https://www.behance.net/{{ site.behance_username }}" target="_blank">Behance</a>
+        <a class="item_desc" href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
+        <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+        <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
+      </div>
+      <div class="contact_item">
+        <div class="item_title">Thank you for Reading!</div>
+        <span class="item_desc">@ 2018 Designed & Built by Zuo Zizhen</span>
+      </div>
     </div>
   </div>
+
 </section>
 
 <script src="{{ site.baseurl }}/assets/javascripts/instagram.min.js"></script>
@@ -258,6 +298,7 @@ jribbble.shots({token: "935c9bc6c35616b09c4214afb1e6ef80f22aa8175e1766881e00c228
   }, "");
 });
 </script>
+
 <script type="text/javascript">
   var feed = new Instafeed({
     get: 'user',

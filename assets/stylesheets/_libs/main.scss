@@ -159,6 +159,9 @@ html {
   &.story {
     @extend %grid-1-830;
   }
+  &.shots {
+    @extend %grid-1-830;
+  }
 
   &.case {
     @extend %grid-1-830;
@@ -270,7 +273,28 @@ html {
     }
   }
 }
-
+.home_more {
+  background-color: #151515;
+  padding: 50px 0;
+  .section_title {
+    color: #fff;
+  }
+  .item_title {
+    color: #fff;
+  }
+  .contact_item .item_desc {
+    color: #a1a1a1;
+  }
+  .contact_item a:before {
+    background-color: #3b3b3b;
+  }
+  .contact_item a:after {
+    background-color: #fff;
+  }
+  .contact_item:last-child {
+    margin-bottom: 0;
+  }
+}
 // Main
 .title {
   max-width: 1440px;
@@ -286,6 +310,9 @@ html {
     line-height: 1.3em;
     margin-top: -10px;
   }
+}
+.main_desc_about {
+  padding-bottom: 100px;
 }
 .home_top,
 .home_about {
@@ -662,7 +689,40 @@ html {
     height: 100%;
   }
 }
-
+.appraise_full {
+  position: relative;
+  height: 800px;
+  background-color: $gray-dark;
+  .appraise_content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    .appraise_desc {
+      font-weight: 800;
+      font-size: 40px;
+      color: #FFFFFF;
+      text-align: center;
+      line-height: 60px;
+      width: 80vw;
+      margin-bottom: 30px;
+    }
+    .appraise_name {
+      font-weight: 500;
+      font-size: 24px;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .appraise_title {
+      opacity: 0.5;
+      font-weight: 400;
+      font-size: 16px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}
 .case_full {
   position: relative;
   height: 50vw;
@@ -684,19 +744,22 @@ html {
     }
   }
   .co {
+    font-weight: 800;
     font-size: 28px;
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   .time {
+    font-weight: 500;
     float: right;
     opacity: 0.4;
     font-size: 18px;
     color: #FFFFFF;
     text-align: right;
-    margin-top: -50px;
+    margin-top: -44px;
   }
   .position {
+    font-weight: 500;
     font-size: 20px;
     color: #FFFFFF;
     margin-bottom: 12px;
@@ -1298,7 +1361,7 @@ html {
     color: #e8e8e8;
     line-height: 50px;
     margin-bottom: 20px;
-    text-align: justify;
+    // text-align: justify;
   }
   span {
     font-weight: 800;
