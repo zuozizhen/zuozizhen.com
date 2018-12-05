@@ -193,7 +193,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1.7fr;
     grid-template-rows: 1fr 1fr;
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   &.site {
@@ -303,7 +303,7 @@ html {
   .main_title {
     font-family: GilroyExtraBold;
     font-weight: 800;
-    font-size: 90px;
+    font-size: 80px;
     color: $gray-dark;
     text-align: left;
     white-space: nowrap;
@@ -986,6 +986,7 @@ html {
   float: right;
   color: $gray-dark;
   opacity: .4;
+  margin-top: 4px;
   span {
     margin-right: 20px;
   }
