@@ -5,6 +5,7 @@ subtitle:   "medium new logo 2017"
 date:       "2017-08-24"
 cover:      "bg.jpg"
 tag:        [redesign, logo, medium]
+category:   design
 excerpt:    "这个在 2015 年为 Medium 创造的 Logo 无疑是成功的，那为什么 Medium 将近2年后选择换掉它呢？让我们先来回顾下 Medium 上一次 Logo 改版的原因..."
 ---
 

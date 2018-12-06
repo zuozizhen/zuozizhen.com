@@ -30,17 +30,31 @@ description: Do one thing for a lifetime
   </div>
   <div class="content">
     <div class="home_top_title">
-      <div class="home_top_title_swich">
-        <span class="swich_1"></span>
-        <span class="swich_2"></span>
+      <div class="home_top_title_swich" id="home_top_tabs">
+        <a href="javascript:void(0)" class="swich"></a>
+        <a href="javascript:void(0)" class="swich"></a>
+        <a href="javascript:void(0)" class="swich current"></a>
       </div>
-      <div class="">
-        I’M<br>
-        DESIGNER
+      <div class="" id="home_top_title">
+        <span class="top_title current">
+          I’M<br>
+          DESIGNER
+        </span>
+        <span class="top_title">
+          I’M<br>
+          DEVELOPER
+        </span>
+        <span class="top_title">
+          I’M<br>
+          FREELANCER
+        </span>
+
       </div>
     </div>
-    <div class="home_top_pic">
-      <img src="assets/images/main/home_img.png" alt="" draggable="false" class="main_pic_z">
+    <div class="home_top_pic" id="home_top_pic">
+      <img src="assets/images/main/img-design.png" alt="" draggable="false" class="main_pic_z current">
+      <img src="assets/images/main/img-develop.png" alt="" draggable="false" class="main_pic_z">
+      <img src="assets/images/main/img-design.png" alt="" draggable="false" class="main_pic_z">
     </div>
   </div>
   <!-- <div class="main_scroll">
@@ -126,7 +140,7 @@ description: Do one thing for a lifetime
       <div class="case_tag">Web Interfaces · App Interfaces</div>
     </div>
   </a>
-  <a href="{{ site.baseurl }}/works" class="view_more"><span>View More</span></a>
+  <a href="{{ site.baseurl }}/works" class="view_more"><span>Link</span></a>
 </div>
 </section>
 
@@ -136,7 +150,7 @@ description: Do one thing for a lifetime
     <div class="case_full_title">Elife</div>
     <div class="line"></div>
     <p> To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,To provide users with large data driven large data driven</p>
-    <a class="case_link">Link</a>
+    <a href="{{ site.baseurl }}/works" class="view_more link"><span>Link</span></a>
   </div>
   <a href="https://www.behance.net/gallery/58498171/Moment" class="case_full_cover" target="_blank">
     <img src="assets/images/portfolio/elife@2x.jpg" alt="">

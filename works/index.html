@@ -75,8 +75,18 @@ description: Do one thing for a lifetime
   </a>
 </section>
 
-<section class="post_full">
-  <img src="/assets/images/main/full-post-bg.jpg" alt="">
+<section class="appraise_full">
+  <div class="appraise_content">
+    <div class="appraise_desc">
+      “ Working with ustwo is unlike a typical studio relationship. It’s closer to hiring a team of commandos that become a part of your organization. ”
+    </div>
+    <div class="appraise_name">
+      Liu Jiang
+    </div>
+    <div class="appraise_title">
+      CACHEMOMENT CEO
+    </div>
+  </div>
 </section>
 
 <section class="section story">
@@ -84,6 +94,19 @@ description: Do one thing for a lifetime
   <div class="">
     <div id="dribbble-shots"></div>
     <a href="https://dribbble.com/zuonx" class="view_more" target="_blank"><span>View more in Dribbble</span></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="page_footer_nav">
+    <a class="left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+    About
+    <span>Learn more about me</span>
+    </a>
+    <a class="right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+    Contact
+    <span>Let's talk somethings</span>
+    </a>
   </div>
 </section>
 

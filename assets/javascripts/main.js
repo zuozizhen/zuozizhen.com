@@ -30,6 +30,22 @@ $.each($('.js--time'), function() {
     }, 1000);
 });
 
+$(function(){
+    tabs($("#home_top_tabs a"), $('#home_top_pic .main_pic_z'), $('#home_top_title .top_title'));
+})
+
+var tabs = function(tab, main_pic_z, top_title){
+    tab.click(function(){
+        var indx = tab.index(this);
+        tab.removeClass('current');
+        $(this).addClass('current');
+        main_pic_z.removeClass('current');
+        main_pic_z.eq(indx).addClass('current');
+        top_title.removeClass('current');
+        top_title.eq(indx).addClass('current');
+    })
+}
+
 // // About Swich
 // $().ready(function($) {
 //   $(".about_swich_en").on('click', function() {

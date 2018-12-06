@@ -81,6 +81,20 @@ description: Do one thing for a lifetime
     </div>
   </div>
 </section>
+
+<section class="section">
+  <div class="page_footer_nav">
+    <a class="left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+    About
+    <span>Learn more about me</span>
+    </a>
+    <a class="right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+    Contact
+    <span>Let's talk somethings</span>
+    </a>
+  </div>
+</section>
+
 <script src="{{ site.baseurl }}/assets/javascripts/instagram.min.js"></script>
 <script src="{{ site.baseurl }}/assets/javascripts/moment.min.js"></script>
 <script src="{{ site.baseurl }}/assets/javascripts/moment-timezone.min.js"></script>
