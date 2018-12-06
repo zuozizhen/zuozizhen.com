@@ -80,9 +80,9 @@ html {
   .logo_z {
     position: absolute;
     right: 150px;
-    width: 22px;
-    height: 22px;
-    margin-top: 0px;
+    width: 24px;
+    height: 24px;
+    margin-top: -2px;
     transition: all 0.3s;
     z-index: 10;
 
@@ -94,11 +94,14 @@ html {
       display: block;
       background-color: $gray-light;
       background-image: none;
-      width: 22px;
-      height: 22px;
-      background-size: 20px 20px;
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
+      background-repeat: no-repeat;
       -webkit-mask-image: url("../images/logo/z.svg");
       mask-image: url("../images/logo/z.svg");
+      -webkit-mask-size: 26px 26px;
+      mask-size: 26px 26px;
       transition: all 0.3s;
     }
     &:hover i {
@@ -209,6 +212,9 @@ html {
 
   &.site {
     @extend %grid-1-830;
+  }
+  &.footer_nav {
+    padding: 0 150px 120px 150px;
   }
 }
 
@@ -356,6 +362,7 @@ html {
   position: relative;
 }
 .home_about {
+  height: 800px;
   .content {
     display: grid;
     @extend %grid-1-830;
@@ -531,8 +538,6 @@ html {
   white-space: nowrap;
 }
 
-
-
 .blog_list_grid .blog_title,
 .blog_item_grid .blog_title {
   &:after {
@@ -637,6 +642,7 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 30px;
+  margin-bottom: 60px;
   .blog_item:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -1205,12 +1211,10 @@ html {
     margin-top: 10px;
   }
 }
-
 .page_footer_nav {
   position: relative;
   line-height: 40px;
   height: 50px;
-  margin-top: 60px;
 
   a {
     color: $gray-dark;
@@ -1317,7 +1321,7 @@ html {
 // new homepage styles
 .lines-grid {
   width: 100%;
-  height: 850px;
+  height: 800px;
   position: absolute;
   left: 0;
   top: 0;
@@ -1403,55 +1407,6 @@ html {
     left: 50%;
     height: auto;
     width: calc(100vw - 60px);
-  }
-}
-
-/* Scrolldown */
-.main_scroll {
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  left: 50%;
-  bottom: 30px;
-  letter-spacing: 2px;
-  font-size: 10px;
-}
-
-.main_scroll span {
-  color: $gray;
-}
-
-.c-scrolldown {
-  width: 1px;
-  height: $line-height;
-  position: absolute;
-  bottom: 24px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.c-line {
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: linear-gradient(to bottom, rgba(252, 205, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
-  background-position: 0 $line-height-abs;
-  background-size: 100% 200%;
-  animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
-}
-@keyframes scrolldown {
-  0% {
-    background-position: 0 $line-height-abs;
-  }
-
-  75% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 0 $line-height;
   }
 }
 
