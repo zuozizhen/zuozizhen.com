@@ -17,7 +17,7 @@ description: Do one thing for a lifetime
   var controller = new ScrollMagic.Controller();
 </script>
 <section class="home_top">
-  <div class="lines-grid">
+  <!-- <div class="lines-grid">
     <i class="lines_i"></i>
     <i class="lines_i"></i>
     <i class="lines_i"></i>
@@ -27,7 +27,7 @@ description: Do one thing for a lifetime
     <i class="lines_i"></i>
     <i class="lines_i"></i>
     <i class="lines_i"></i>
-  </div>
+  </div> -->
   <div class="content">
     <div class="home_top_title">
       <div class="home_top_title_swich" id="home_top_tabs">
@@ -36,25 +36,25 @@ description: Do one thing for a lifetime
         <a href="javascript:void(0)" class="swich current"></a>
       </div>
       <div class="" id="home_top_title">
-        <span class="top_title current">
-          I’M<br>
-          DESIGNER
-        </span>
         <span class="top_title">
           I’M<br>
           DEVELOPER
         </span>
         <span class="top_title">
           I’M<br>
-          FREELANCER
+          DESIGNER
+        </span>
+        <span class="top_title current">
+          I’M<br>
+          ZIZHEN ZUO
         </span>
 
       </div>
     </div>
     <div class="home_top_pic" id="home_top_pic">
-      <img src="assets/images/main/img-design.png" alt="" draggable="false" class="main_pic_z current">
       <img src="assets/images/main/img-develop.png" alt="" draggable="false" class="main_pic_z">
       <img src="assets/images/main/img-design.png" alt="" draggable="false" class="main_pic_z">
+      <img src="assets/images/main/img-z.png" alt="" draggable="false" class="main_pic_z current">
     </div>
   </div>
   <!-- <div class="main_scroll">
@@ -65,7 +65,7 @@ description: Do one thing for a lifetime
   </div> -->
 </section>
 <section class="home_about">
-  <div class="lines-grid">
+  <!-- <div class="lines-grid">
     <i class="lines_i"></i>
     <i class="lines_i"></i>
     <i class="lines_i"></i>
@@ -75,7 +75,7 @@ description: Do one thing for a lifetime
     <i class="lines_i"></i>
     <i class="lines_i"></i>
     <i class="lines_i"></i>
-  </div>
+  </div> -->
   <div class="content">
     <div class="about_info">
       <div class="contact_item">
@@ -102,19 +102,20 @@ description: Do one thing for a lifetime
 </section>
 
 <section class="section case">
-  <div class="section_title">
+  <div class="section_title title_fixed">
     <div id="trigger_case"></div>
     <div id="pin_case" class="section_title_fixd">Some real<br>cases for<br>custom</div>
     <script>
       $(function () { // wait for document ready
         // build scene
-        var scene = new ScrollMagic.Scene({triggerElement: "#trigger_case", duration: 1702, offset: 450})
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger_case", duration: 1700, offset: 460})
                 .setPin("#pin_case")
                 .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                 .addTo(controller);
       });
     </script>
   </div>
+  <div class="section_title title_normal">Some real<br>cases for<br>custom</div>
   <div class="section_item">
   <a href="https://www.behance.net/gallery/58498171/Moment" class="case_item cachemoment" target="_blank">
     <div class="color_cover purple"></div>
@@ -132,7 +133,7 @@ description: Do one thing for a lifetime
       <div class="case_tag">Web Interfaces · App Interfaces</div>
     </div>
   </a>
-  <a href="https://www.behance.net/gallery/61684929/Presen" class="case_item presen" target="_blank">
+  <a href="https://www.behance.net/gallery/61684929/Presen" class="case_item presen bottom_0" target="_blank">
     <div class="color_cover red"></div>
     <img src="assets/images/portfolio/petme@2x.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
@@ -188,7 +189,7 @@ description: Do one thing for a lifetime
 
 
 <section class="section blog_home">
-  <div class="section_title">
+  <div class="section_title title_fixed">
     <div id="trigger_blog"></div>
     <div id="pin_blog" class="section_title_fixd">Keep<br>thinking</div>
     <script>
@@ -201,6 +202,7 @@ description: Do one thing for a lifetime
       });
     </script>
   </div>
+  <div class="section_title title_normal">Keep<br>thinking</div>
   <div class="">
     <div class="blog_item_grid">
       {% for post in site.posts limit:5 %}
@@ -238,7 +240,7 @@ description: Do one thing for a lifetime
 
 <section class="section shots">
 
-  <div class="section_title">
+  <div class="section_title title_fixed">
     <div id="trigger_shots"></div>
     <div id="pin_shots" class="section_title_fixd">Keep<br>learning</div>
     <script>
@@ -251,6 +253,7 @@ description: Do one thing for a lifetime
       });
     </script>
   </div>
+  <div class="section_title title_normal">Keep<br>learning</div>
   <div class="">
     <div id="dribbble-shots"></div>
     <a href="https://dribbble.com/zuonx" class="view_more" target="_blank"><span>View more in Dribbble</span></a>
