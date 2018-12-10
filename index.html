@@ -9,6 +9,8 @@ description: Do one thing for a lifetime
   <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
   <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
   <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <!-- <a href="javascript:tran.setLang('default');" class="nav_link_language en">English</a>
+  <a href="javascript:tran.setLang('cn');" class="nav_link_language cn">中文</a> -->
   <a href="{{ site.url }}/feed.xml" class="nav_link link_right">RSS</a>
   <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
 </nav>
@@ -90,7 +92,8 @@ description: Do one thing for a lifetime
     </div>
     <div class="about_desc">
       <p>
-        I'm Zizhen Zuo, A <span>Product designer</span> & <span>Developer</span> & <span>Freelancer</span> form China.</p>
+        I'm Zizhen Zuo, A <span>Product designer</span> & <span>Developer</span> & <span>Freelancer</span> form China.
+      </p>
       <p>
         I had the opportunity to practice at <span>Accenture</span>, which enabled me to maintain good working habits.</p>
       <p>
@@ -307,6 +310,15 @@ description: Do one thing for a lifetime
 <script src="{{ site.baseurl }}/assets/javascripts/instagram.min.js"></script>
 
 <script src="{{ site.baseurl }}/assets/javascripts/jribbble.min.js"></script>
+
+<script type="text/javascript">
+  tran = new Translater();
+     if (tran.getLang() === "default") tran.setLang('cn');
+     var tran = new Translater({
+         lang:"cn"
+     });
+  localStorage.setItem("language","cn");
+</script>
 
 <script>
 jribbble.shots({token: "935c9bc6c35616b09c4214afb1e6ef80f22aa8175e1766881e00c2289ee2911e",page: 1, per_page: 6,}, function(shotsArray) {
