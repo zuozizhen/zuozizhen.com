@@ -4,7 +4,7 @@ title:      "未知是无法想象的"
 subtitle:   "unknown is unimaginable"
 date:       "2018-07-14"
 cover:      "bg.jpg"
-tag:        [think, review, series]
+tag:        [thinking, read]
 excerpt:    "我们处在这个多维世界当中，没有任何事物是独立存在的，当我们解决问题时，如果我们能调用其所涉及到的各学科知识综合起来分析问题..."
 ---
 

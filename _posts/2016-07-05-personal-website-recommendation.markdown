@@ -4,7 +4,7 @@ title:      "创意十足的个人网站推荐"
 subtitle:   "Personal website recommendation"
 date:       "2017-07-05"
 cover:      "bg.jpg"
-tag:        [site, design, recommended]
+tag:        [design, site]
 category:   design
 excerpt:    "一些设计、排版以及创意非常棒的个人网站,为正在制作自己个人网站的你提供灵感..."
 ---

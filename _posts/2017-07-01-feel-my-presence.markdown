@@ -4,7 +4,7 @@ title:      "只有此刻才能感觉到存在"
 subtitle:   "Only at this moment can feel presence"
 date:       "2017-07-01"
 cover:      "bg.jpg"
-tag:        "movie · feelings · thinking"
+tag:        [movie, playlist]
 excerpt:    "爱和恐惧是生命中永恒存在的两个主题，无数艺术家围绕着这两个主题阐述着他们的理解，而这部纪录片则是导演给我们表达着他自己的理解。"
 ---
 

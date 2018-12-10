@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     grid-column-gap: 80px;
-    padding-top: 100px;
+    padding-top: 180px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -20,15 +20,15 @@
   top: 50%;
   transform: translateY(-50%);
   .blog_title {
+    margin-top: 14px;
     margin-left: -2px;
     font-size: 3.5vw;
   }
-  .blog_tag {
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    span {
-      font-weight: 400;
-    }
+  .blog_tag span{
+    letter-spacing: 2px;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 500;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -61,12 +61,12 @@
 
 .blog_tips {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: #7E7E7E;
   line-height: 30px;
   letter-spacing: 1px;
   display: block;
-  margin-top: 14px;
+  margin-top: 12px;
   text-transform: uppercase;
 }
 
@@ -289,7 +289,7 @@ h6 {
 
 .post_pagination {
   line-height: 40px;
-  margin: 30px auto 60px auto;
+  margin: 60px auto 30px auto;
   overflow: auto;
   width: 900px;
   padding: 0 80px;
@@ -354,16 +354,17 @@ h6 {
   width: 100%;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, .05);
-  border-radius: 4px;
+  border-radius: 10px;
+  z-index: 10000;
 }
 /*	Blockquotes  */
 blockquote p {
   font-size: 17px;
   font-weight: 500 !important;
   line-height: 38px;
-  color: $gray;
+  color: #808080;
   padding-right: 0 !important;
-  padding-left: 0 !important;
+  padding-left: 30px !important;
 }
 
 blockquote {
@@ -379,12 +380,12 @@ blockquote:before {
   position: absolute;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  left: 56px;
+  left: 81px;
   top: 50%;
   height: calc(100% - 10px);
   width: 6px;
   /* or 100px */
-  border-left: 3px solid $gray-dark;
+  border-left: 3px solid $gray;
 }
 @media only screen and (max-width: 750px) {
   blockquote,

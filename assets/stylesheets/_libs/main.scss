@@ -14,11 +14,9 @@ html {
 
 .top_nav {
   position: absolute;
-  max-width: 1440px;
-  width: 100%;
+  max-width: 1140px;
+  width: calc(100% - 300px);
   margin: 80px auto;
-  padding-left: 150px;
-  padding-right: 150px;
   z-index: 10;
   transform: translateX(-50%);
   left: 50%;
@@ -53,7 +51,7 @@ html {
     z-index: 2;
     &.link_right {
       position: absolute;
-      right: 175px;
+      right: 30px;
     }
     &:after {
     	content: '';
@@ -79,7 +77,7 @@ html {
   }
   .logo_z {
     position: absolute;
-    right: 150px;
+    right: 0;
     width: 22px;
     height: 22px;
     margin-top: 0px;
@@ -240,12 +238,14 @@ html {
     &.contact {
       grid-template-rows: 1fr;
       grid-gap: 60px;
-      margin-bottom: 60px;
       margin-top: 0;
     }
     .section_item {
       .item_content:not(:last-child) {
         margin-bottom: 40px;
+      }
+      p {
+        font-size: 16px;
       }
     }
   }
@@ -317,7 +317,7 @@ html {
 .title_normal {
   display: none;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1024px) {
   .title_fixed {
     display: none;
   }
@@ -402,6 +402,17 @@ html {
     height: 700px;
   }
 }
+
+@media only screen and (max-width: 1140px) {
+  .home_top,
+  .home_about {
+    .content {
+      width: calc(100% - 140px);
+      padding: 0;
+    }
+  }
+}
+
 .home_about {
   margin-bottom: 90px;
   .content {
@@ -750,7 +761,6 @@ html {
 }
 @media only screen and (max-width: 750px) {
   .blog_list_grid {
-    margin-top: 40px;
     grid-template-columns: 1fr;
     grid-gap: 50px;
     .blog_item:nth-child(1) {
@@ -797,10 +807,13 @@ html {
   span {
     display: block;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1.5px;
     color: #858585;
     margin-bottom: 30px;
+  }
+  .current span {
+    color: $gray;
   }
 }
 .post_full {
@@ -922,11 +935,11 @@ html {
 @media only screen and (max-width: 750px) {
   .record {
     .co {
-      font-size: 26px;
+      font-size: 24px;
     }
     .time {
-      margin-top: -38px;
-      font-size: 16px;
+      margin-top: -34px;
+      font-size: 14px;
     }
     .position {
       font-size: 18px;
@@ -1177,6 +1190,7 @@ html {
   color: $gray-dark;
   &.link {
     margin-top: 10px;
+    margin-bottom: 0;
     transform: translateX(0);
     left: 0;
     span {
@@ -1294,8 +1308,7 @@ html {
 .page_footer_nav {
   position: relative;
   line-height: 40px;
-  height: 50px;
-  margin-top: 60px;
+  height: 80px;
 
   a {
     color: $gray-dark;
@@ -1327,7 +1340,6 @@ html {
 }
 @media only screen and (max-width: 750px) {
   .page_footer_nav {
-    margin-bottom: 60px;
     a {
       font-size: 24px;
     }
@@ -1478,6 +1490,11 @@ html {
   transition: all 0.25s ease-in-out;
   &.current {
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .main_pic_z {
+    right: 0;
   }
 }
 @media only screen and (max-width: 750px) {
