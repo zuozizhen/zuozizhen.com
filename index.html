@@ -211,7 +211,7 @@ description: Do one thing for a lifetime
       {% for post in site.posts limit:5 %}
       <div class="blog_item">
         <a href="{{ post.url }}">
-          <img src="assets/images/post/{{ post.date | date: '%Y-%m-%d' }}/bg.jpg" alt="" class="blog_cover">
+          <img src="{{ post.cover }}" alt="" class="blog_cover">
         </a>
           <!-- <span class="blog_date">{{ post.date | date: '%B %d, %Y' }}</span> -->
         <div class="blog_info">
