@@ -514,6 +514,7 @@ html {
   .home_top {
     height: 100vh;
     .content {
+      width: auto;
       height: 100vh;
       padding: 30px 30px;
     }
@@ -1497,8 +1498,20 @@ html {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1400px) {
+  .home_top_title {
+    font-size: 6.5vw;
+  }
   .main_pic_z {
+    width: 35vw;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .home_top_title {
+    font-size: 7.5vw;
+  }
+  .main_pic_z {
+    width: 38vw;
     right: 0;
   }
 }
