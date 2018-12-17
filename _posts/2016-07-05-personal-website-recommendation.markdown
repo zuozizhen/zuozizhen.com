@@ -11,7 +11,7 @@ excerpt:    "一些设计、排版以及创意非常棒的个人网站,为正在
 
 ### 1. 将音乐与设计结合到一起的个人网站，动效的设计可以称得上惊艳。
 ![img](https://i.loli.net/2018/07/10/5b441b18d4151.jpg)
-[KENJI ENDO](http://kenjiendo.com/)
+###### [KENJI ENDO](http://kenjiendo.com/)
 
 ### 2. 精致的配色，精致的排版
 ![img](https://i.loli.net/2018/07/10/5b441b22157cc.jpg)
