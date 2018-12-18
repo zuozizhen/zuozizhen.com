@@ -4,7 +4,9 @@ title: zuonx - design effective digital products
 description: Do one thing for a lifetime
 ---
 
-<nav class="section top_nav">
+{% include language_swich.html %}
+
+<nav class="top_nav white">
   <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link">Work</a>
   <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
   <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
@@ -12,18 +14,91 @@ description: Do one thing for a lifetime
   <a href="{{ site.url }}/feed.xml" class="nav_link link_right">RSS</a>
   <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
 </nav>
-<script>
-  // init controller
-  var controller = new ScrollMagic.Controller();
-</script>
-<section class="section main">
-  <div class="main_title">
-    Hello <span class="point">. </span><br>
-    I'm Zuo Zizhen
+
+<section class="home_top">
+  <!-- <div class="lines-grid">
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+  </div> -->
+  <div class="content">
+    <div class="home_top_title">
+      <div class="home_top_title_swich" id="home_top_tabs">
+        <a href="javascript:void(0)" class="swich"></a>
+        <a href="javascript:void(0)" class="swich"></a>
+        <a href="javascript:void(0)" class="swich current"></a>
+      </div>
+      <div class="" id="home_top_title">
+        <span class="top_title">
+          I’M<br>
+          DEVELOPER
+        </span>
+        <span class="top_title">
+          I’M<br>
+          DESIGNER
+        </span>
+        <span class="top_title current">
+          I’M<br>
+          ZIZHEN ZUO
+        </span>
+
+      </div>
+    </div>
+    <div class="home_top_pic" id="home_top_pic">
+      <img src="assets/images/main/img-develop.png" alt="" draggable="false" class="main_pic_z">
+      <img src="assets/images/main/img-design.png" alt="" draggable="false" class="main_pic_z">
+      <img src="assets/images/main/img-z.png" alt="" draggable="false" class="main_pic_z current">
+    </div>
   </div>
-  <div class="main_desc">
-    <p> I'm Zuo Zizhen, a designer form China.</p>
-    <p> I had the opportunity to practice at Accenture, which enabled me to maintain good working habits. After graduation, I joined a start-up company, so I have more opportunities to achieve bold design. My goal is to be an independent developer, I am good at integrating my various skills together to play out more power, such as design, code and 3D animation.</p>
+</section>
+<section class="home_about">
+  <!-- <div class="lines-grid">
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+    <i class="lines_i"></i>
+  </div> -->
+  <div class="content">
+    <div class="about_info">
+      <div class="contact_item">
+        <div class="item_title">Say hi</div>
+        <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
+      </div>
+      <div class="contact_item">
+        <div class="item_title">Be a friend</div>
+        <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+        <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
+      </div>
+    </div>
+    <div class="about_desc">
+      <p>
+        I'm Zizhen Zuo, A Product designer & Developer & Freelancer form China.
+        <!--{cn}我是左子祯，一名中国的产品设计师兼开发者和自由撰稿人。  -->
+      </p>
+      <p>
+        I had the opportunity to practice at Accenture, which enabled me to maintain good working habits.
+        <!--{cn}我有机会在埃森哲练习，这使我能够保持良好的工作习惯。  -->
+      </p>
+      <p>
+        After graduation, I joined a start-up company and was responsible for product design and brand design in the early stage of the company.
+        <!--{cn}毕业后，我加入了一家初创公司，负责公司早期的产品设计和品牌设计。  -->
+      </p>
+      <p>
+        My goal is to be an independent developer, I am good at integrating my various skills together to play out more power, such as design, code and 3D animation.
+        <!--{cn}我的目标是成为一名独立的开发人员，我善于将各种技能整合在一起，以发挥更多的力量，如设计，代码和3D动画。  -->
+      </p>
+    </div>
   </div>
 </section>
 
@@ -51,8 +126,11 @@ description: Do one thing for a lifetime
     <div class="case_duty">Developer & Interaction Designer</div>
     <div class="case_full_title">Elife</div>
     <div class="line"></div>
-    <p> To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,To provide users with large data driven large data driven</p>
-    <a class="case_link">Link</a>
+    <p>
+      To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,To provide users with large data driven large data driven
+      <!--{cn}为用户提供大数据驱动的大数据驱动智能云加速，全球CDN解决方案，为用户提供大数据驱动的大数据驱动  -->
+    </p>
+    <a href="{{ site.baseurl }}/works" class="view_more link"><span>Link</span></a>
   </div>
   <a href="https://www.behance.net/gallery/58498171/Moment" class="case_full_cover" target="_blank">
     <img src="assets/images/portfolio/elife.jpg" alt="">
@@ -63,20 +141,44 @@ description: Do one thing for a lifetime
   <div class="section_title">Service</div>
   <div class="section_item">
     <div class="item_content">
-      <div class="item_title">Web Interfaces</div>
-      <p>I am good at corporate website, landing page, dashboard design, and successfully complete the goal for customers.</p>
+      <div class="item_title">
+        Web Interfaces
+        <!--{cn} 网站界面  -->
+      </div>
+      <p>
+        I am good at corporate website, landing page, dashboard design, and successfully complete the goal for customers.
+        <!--{cn}我擅长企业网站，登陆页面，仪表板设计，并成功完成了客户的目标。  -->
+      </p>
     </div>
     <div class="item_content">
-      <div class="item_title">Frontend Development</div>
-      <p>I can independently complete the front-end development of static pages, and can provide customers with high-fidelity front-end design drafts.</p>
+      <div class="item_title">
+        Frontend Development
+        <!--{cn}静态页面开发  -->
+      </div>
+      <p>
+        I can independently complete the front-end development of static pages, and can provide customers with high-fidelity front-end design drafts.
+        <!--{cn}我可以独立完成静态页面的前端开发，并可以为客户提供高保真的前端设计草图。  -->
+      </p>
     </div>
     <div class="item_content">
-      <div class="item_title">App Interface</div>
-      <p>I can complete the iOS & Android interface design, and I am familiar with the Swift language, which can better connect and communicate with engineers.</p>
+      <div class="item_title">
+        App Interface
+        <!--{cn}移动应用界面  -->
+      </div>
+      <p>
+        I can complete the iOS & Android interface design, and I am familiar with the Swift language, which can better connect and communicate with engineers.
+        <!--{cn}我可以完成iOS和Android界面设计，熟悉Swift语言，可以更好地连接工程师并与之沟通。  -->
+      </p>
     </div>
     <div class="item_content">
-      <div class="item_title">Digital Branding</div>
-      <p>Creating interesting, successful brands for our customers is my goal, I have created interesting digital brands for many customers.</p>
+      <div class="item_title">
+        Digital Branding
+        <!--{cn}数字化品牌  -->
+      </div>
+      <p>
+        Creating interesting, successful brands for our customers is my goal, I have created interesting digital brands for many customers.
+        <!--{cn}为我们的客户创造有趣，成功的品牌是我的目标，我为许多客户创造了有趣的数字品牌。  -->
+      </p>
     </div>
   </div>
 </section>
@@ -136,10 +238,59 @@ description: Do one thing for a lifetime
   </div>
 </section>
 
-<section class="post_full">
-  <img src="assets/images/main/full-post-bg.jpg" alt="">
+<section class="case_full">
+  <div class="case_full_desc">
+    <div class="case_duty">Developer & Interaction Designer</div>
+    <div class="case_full_title">DesignerAndStudio</div>
+    <div class="line"></div>
+    <p>
+      To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,To provide users with large data driven large data driven
+      <!--{cn}为用户提供大数据驱动的大数据驱动智能云加速，全球CDN解决方案，为用户提供大数据驱动的大数据驱动  -->
+    </p>
+    <div class="case_link">Link</div>
+  </div>
+  <a href="https://www.behance.net/gallery/58498171/Moment" class="case_full_cover" target="_blank">
+    <img src="assets/images/portfolio/dns.jpg" alt="">
+  </a>
 </section>
 
+<section class="section shots">
+
+  <div class="section_title title_fixed">
+    <div id="trigger_shots"></div>
+    <div id="pin_shots" class="section_title_fixd">Keep<br>learning</div>
+    <script>
+      $(function () { // wait for document ready
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger_shots", duration: 600, offset: 450})
+                .setPin("#pin_shots")
+                .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      });
+    </script>
+  </div>
+  <div class="section_title title_normal">Keep<br>learning</div>
+  <div class="">
+    <div id="dribbble-shots"></div>
+    <a href="https://dribbble.com/zuonx" class="view_more" target="_blank"><span>View more in Dribbble</span></a>
+  </div>
+</section>
+<section class="appraise_full">
+  <div class="appraise_content">
+    <div class="appraise_desc">
+      “ Working with ustwo is unlike a typical studio relationship. It’s closer to hiring a team of commandos that become a part of your organization. ”
+      <!--{cn}“与ustwo合作不同于典型的工作室关系。它更接近雇佣一支成为贵组织一员的突击队员。”  -->
+    </div>
+    <div class="appraise_name">
+      Liu Jiang
+      <!--{cn}刘江  -->
+    </div>
+    <div class="appraise_title">
+      CACHEMOMENT CEO
+      <!--{cn}魔门云 CEO -->
+    </div>
+  </div>
+</section>
 <section class="section story">
   <div class="section_title">Story</div>
   <div id="instagram"></div>
@@ -169,7 +320,20 @@ description: Do one thing for a lifetime
 
 <script src="{{ site.baseurl }}/assets/javascripts/instagram.min.js"></script>
 
-<script src="{{ site.baseurl }}/assets/javascripts/jribbble.min.js" async></script>
+<script src="{{ site.baseurl }}/assets/javascripts/jribbble.min.js"></script>
+
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+</script>
+
+<script>
+jribbble.shots({token: "935c9bc6c35616b09c4214afb1e6ef80f22aa8175e1766881e00c2289ee2911e",page: 1, per_page: 6,}, function(shotsArray) {
+  document.getElementById("dribbble-shots").innerHTML = shotsArray.reduce(function(html, shot) {
+    return html + '<a href="'+  shot.html_url + '" target="_blank"><img src="' + shot.images.hidpi + '"></a>';
+  }, "");
+});
+</script>
 
 <script type="text/javascript">
   var feed = new Instafeed({

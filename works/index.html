@@ -4,7 +4,9 @@ title: portfolio - design effective digital products
 description: Do one thing for a lifetime
 ---
 
-<nav class="section top_nav">
+{% include language_swich.html %}
+
+<nav class="top_nav black">
   <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link active">Work</a>
   <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
   <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
@@ -19,6 +21,7 @@ description: Do one thing for a lifetime
   <div class="main_desc">
     <p>
       My advantage is good at integrating different skills. I can independently complete the website design and development, there are some complete online product case.
+      <!--{cn}我的优势是善于整合不同的技能。我可以独立完成网站的设计和开发，有一些完整的在线产品案例。  -->
     </p>
   </div>
 </section>
@@ -74,8 +77,21 @@ description: Do one thing for a lifetime
   </a>
 </section>
 
-<section class="post_full">
-  <img src="/assets/images/main/full-post-bg.jpg" alt="">
+<section class="appraise_full">
+  <div class="appraise_content">
+    <div class="appraise_desc">
+      “ Working with ustwo is unlike a typical studio relationship. It’s closer to hiring a team of commandos that become a part of your organization. ”
+      <!--{cn}“与ustwo合作不同于典型的工作室关系。它更接近雇佣一支成为贵组织一员的突击队员。”  -->
+    </div>
+    <div class="appraise_name">
+      Liu Jiang
+      <!--{cn}刘江  -->
+    </div>
+    <div class="appraise_title">
+      CACHEMOMENT CEO
+      <!--{cn}魔门云 CEO -->
+    </div>
+  </div>
 </section>
 
 <section class="section story">

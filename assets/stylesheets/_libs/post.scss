@@ -372,12 +372,12 @@ blockquote:before {
   position: absolute;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  left: 56px;
+  left: 45px;
   top: 50%;
   height: calc(100% - 10px);
   width: 6px;
   /* or 100px */
-  border-left: 3px solid $gray-dark;
+  border-left: 10px solid #eeeeee;
 }
 @media only screen and (max-width: 750px) {
   blockquote,
