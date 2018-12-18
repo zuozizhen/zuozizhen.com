@@ -1,25 +1,25 @@
-// // Menu
-//
-// $().ready(function($) {
-//   $(".btn_menu").on('click', function(e) {
-//     $(".menu").toggleClass('menu_open');
-//     e.preventDefault();
-//     $(this).toggleClass('btn_menu--toggled');
-//   });
-//   $('.toggle_all').on('click', function(e) {
-//     e.preventDefault();
-//     $('.btn_menu').toggleClass('btn_menu--toggled');
-//   });
-// });
-//
-// // Back Top
-// $(document).ready(function() {
-//   $('#goToTop').click(function() {
-//     $('html,body').animate({
-//       scrollTop: 0
-//     }, 'slow');
-//   });
-// });
+// Menu
+
+$().ready(function($) {
+  $(".btn_menu").on('click', function(e) {
+    $(".menu").toggleClass('menu_open');
+    e.preventDefault();
+    $(this).toggleClass('btn_menu--toggled');
+  });
+  $('.toggle_all').on('click', function(e) {
+    e.preventDefault();
+    $('.btn_menu').toggleClass('btn_menu--toggled');
+  });
+});
+
+// Back Top
+$(document).ready(function() {
+  $('#goToTop').click(function() {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 'slow');
+  });
+});
 
 // China Time
 $.each($('.js--time'), function() {
@@ -46,6 +46,7 @@ var tabs = function(tab, main_pic_z, top_title){
     })
 }
 
+<<<<<<< HEAD
 //
 
 tran = new Translater();
@@ -55,6 +56,8 @@ tran = new Translater();
    });
 localStorage.setItem("language","default");
 
+=======
+>>>>>>> f743ce6688650bc7117e591b1395624644614f14
 // // About Swich
 // $().ready(function($) {
 //   $(".about_swich_en").on('click', function() {

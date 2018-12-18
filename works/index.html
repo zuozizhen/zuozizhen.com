@@ -1,6 +1,6 @@
 ---
 layout: default
-title: portfolio - design effective digital products
+title: Work - Real cases
 description: Do one thing for a lifetime
 ---
 
@@ -11,12 +11,13 @@ description: Do one thing for a lifetime
   <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
   <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
   <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <a href="{{ site.url }}/feed.xml" class="nav_link link_right">RSS</a>
   <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
 </nav>
 
-<section class="section main">
+<section class="title">
   <div class="main_title">
-    Real cases <span class="point">. </span>
+    Real cases
   </div>
   <div class="main_desc">
     <p>
@@ -32,7 +33,7 @@ description: Do one thing for a lifetime
     <img src="/assets/images/portfolio/cachemoment.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
       <div class="case_title">Cachemoment</div>
-      <div class="case_tag">Web Interfaces · Development · Digital Branding</div>
+      <div class="case_tag">Web Interfaces · Development</div>
     </div>
   </a>
   <a href="https://www.behance.net/gallery/61684929/Presen" class="case_item presen" target="_blank">
@@ -56,7 +57,7 @@ description: Do one thing for a lifetime
     <img src="/assets/images/portfolio/dns.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
       <div class="case_title">DesignerAndStudio</div>
-      <div class="case_tag">Web Interfaces · Development · Personal Product</div>
+      <div class="case_tag">Personal Project</div>
     </div>
   </a>
   <a href="http://elife.zuonx.com" class="case_item cachemoment" target="_blank">
@@ -64,7 +65,7 @@ description: Do one thing for a lifetime
     <img src="/assets/images/portfolio/elife.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
       <div class="case_title">Elife</div>
-      <div class="case_tag">Web Interfaces · Development · Personal Product</div>
+      <div class="case_tag">Personal Project</div>
     </div>
   </a>
   <a href="#" class="case_item presen" target="_blank">
@@ -72,7 +73,7 @@ description: Do one thing for a lifetime
     <img src="/assets/images/portfolio/elife-x.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
       <div class="case_title">Elife-X（Coming）</div>
-      <div class="case_tag">Web Interfaces · Development · Personal Product</div>
+      <div class="case_tag">Personal Project</div>
     </div>
   </a>
 </section>
@@ -94,11 +95,24 @@ description: Do one thing for a lifetime
   </div>
 </section>
 
-<section class="section story">
+<section class="section shots">
   <div class="section_title">Shots</div>
   <div class="">
     <div id="dribbble-shots"></div>
     <a href="https://dribbble.com/zuonx" class="view_more" target="_blank"><span>View more in Dribbble</span></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="page_footer_nav">
+    <a class="left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+    About
+    <span>Learn more about me</span>
+    </a>
+    <a class="right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+    Contact
+    <span>Let's talk somethings</span>
+    </a>
   </div>
 </section>
 

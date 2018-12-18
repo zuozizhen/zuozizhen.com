@@ -1,1 +1,1 @@
-# zuonx - design effective digital products
+# zuonx - Zizhen's personal site

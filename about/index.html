@@ -1,6 +1,6 @@
 ---
 layout: default
-title: zuonx - design effective digital products
+title: About - Keep curiosity
 description: Do one thing for a lifetime
 ---
 
@@ -11,11 +11,12 @@ description: Do one thing for a lifetime
   <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
   <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link active">About</a>
   <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <a href="{{ site.url }}/feed.xml" class="nav_link link_right">RSS</a>
   <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
 </nav>
-<section class="section main">
+<section class="title">
   <div class="main_title">
-    Keep curiosity <span class="point">. </span>
+    Keep curiosity
   </div>
   <div class="main_desc">
     <p>
@@ -29,14 +30,14 @@ description: Do one thing for a lifetime
   </div>
 </section>
 <section class="section_full_other">
-  <div class="section record">
+  <div class="section record bottom_0">
     <div class="section_title">Record</div>
     <div class="section_item">
       <div class="record_item">
         <div class="co">
           Smartisan
         </div>
-        <div class="time">2018.3 - Now</div>
+        <div class="time">2018.3 - Present</div>
         <div class="position">
           UI Designer
         </div>
@@ -54,27 +55,21 @@ description: Do one thing for a lifetime
         <p>
           I was responsible for the company's brand design in the early days, and then led the responsible website and product design to complete some front-end development.</p>
       </div>
-      <div class="record_item">
-        <div class="co">
-          Accenture
-        </div>
-        <div class="time">2015.10 - 2016.1</div>
-        <div class="position">
-          Design intern
-        </div>
-        <p>
-          My team provides design consulting for China Telecom, which is responsible for the design of the special page of online business hall activities in various regions and the iterative optimization of existing pages.</p>
-      </div>
     </div>
   </div>
 </section>
 <section class="section site">
-  <div class="section_title">Site</div>
+  <div class="section_title">My Site</div>
   <div class="section_item">
     <div class="item_title">My Personal Site</div>
     <p>This website is my personal website, I am responsible for design and front-end development, I will publish works and blogs on this.</p>
   </div>
 </section>
+
+<section class="section brand">
+  <img src="../assets/images/main/brand.png" alt="">
+</section>
+
 <section class="section service">
   <div class="section_title">Services<br>and skills</div>
   <div class="section_item">
@@ -120,6 +115,20 @@ description: Do one thing for a lifetime
     </div>
   </div>
 </section>
+
+<section class="section footer_nav">
+  <div class="page_footer_nav">
+    <a class="left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+    About
+    <span>Learn more about me</span>
+    </a>
+    <a class="right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+    Contact
+    <span>Let's talk somethings</span>
+    </a>
+  </div>
+</section>
+
 <script src="{{ site.baseurl }}/assets/javascripts/instagram.min.js"></script>
 <script src="{{ site.baseurl }}/assets/javascripts/moment.min.js"></script>
 <script src="{{ site.baseurl }}/assets/javascripts/moment-timezone.min.js"></script>

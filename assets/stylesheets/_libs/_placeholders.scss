@@ -23,34 +23,15 @@ $family-main: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STH
 $family-title: "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 
 @font-face {
-    font-family: 'GothamMedium';
-    src: url('/assets/fonts/GothamMedium.eot');
-    src: url('/assets/fonts/GothamMedium.eot') format('embedded-opentype'),
-         url('/assets/fonts/GothamMedium.woff2') format('woff2'),
-         url('/assets/fonts/GothamMedium.woff') format('woff'),
-         url('/assets/fonts/GothamMedium.ttf') format('truetype'),
-         url('/assets/fonts/GothamMedium.svg#GothamMedium') format('svg');
+    font-family: 'GilroyExtraBold';
+    src: url('/assets/fonts/GilroyExtraBold.eot');
+    src: url('/assets/fonts/GilroyExtraBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/GilroyExtraBold.woff2') format('woff2'),
+         url('/assets/fonts/GilroyExtraBold.woff') format('woff'),
+         url('/assets/fonts/GilroyExtraBold.ttf') format('truetype'),
+         url('/assets/fonts/GilroyExtraBold.svg#GilroyExtraBold') format('svg');
 }
 
-@font-face {
-    font-family: 'GothamBold';
-    src: url('/assets/fonts/GothamBold.eot');
-    src: url('/assets/fonts/GothamBold.eot') format('embedded-opentype'),
-         url('/assets/fonts/GothamBold.woff2') format('woff2'),
-         url('/assets/fonts/GothamBold.woff') format('woff'),
-         url('/assets/fonts/GothamBold.ttf') format('truetype'),
-         url('/assets/fonts/GothamBold.svg#GothamBold') format('svg');
-}
-
-@font-face {
-    font-family: 'GothamBlack';
-    src: url('/assets/fonts/GothamBlack.eot');
-    src: url('/assets/fonts/GothamBlack.eot') format('embedded-opentype'),
-         url('/assets/fonts/GothamBlack.woff2') format('woff2'),
-         url('/assets/fonts/GothamBlack.woff') format('woff'),
-         url('/assets/fonts/GothamBlack.ttf') format('truetype'),
-         url('/assets/fonts/GothamBlack.svg#GothamBlack') format('svg');
-}
 
 @font-face {
     font-family: 'BitterRegular';
@@ -72,38 +53,29 @@ $family-title: "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", 
          url('/assets/fonts/BitterBold.svg#BitterBold') format('svg');
 }
 
-@font-face {
-    font-family: 'ProductSansRegular';
-    src: url('/assets/fonts/ProductSansRegular.eot');
-    src: url('/assets/fonts/ProductSansRegular.eot') format('embedded-opentype'),
-         url('/assets/fonts/ProductSansRegular.woff2') format('woff2'),
-         url('/assets/fonts/ProductSansRegular.woff') format('woff'),
-         url('/assets/fonts/ProductSansRegular.ttf') format('truetype'),
-         url('/assets/fonts/ProductSansRegular.svg#ProductSansRegular') format('svg');
-}
-
-@font-face {
-    font-family: 'ProductSansBold';
-    src: url('/assets/fonts/ProductSansBold.eot');
-    src: url('/assets/fonts/ProductSansBold.eot') format('embedded-opentype'),
-         url('/assets/fonts/ProductSansBold.woff2') format('woff2'),
-         url('/assets/fonts/ProductSansBold.woff') format('woff'),
-         url('/assets/fonts/ProductSansBold.ttf') format('truetype'),
-         url('/assets/fonts/ProductSansBold.svg#ProductSansBold') format('svg');
-}
 // Placeholders
 
 %grid-1-830 {
   display: grid;
-  grid-template-columns: 1fr 3.5fr;
-  grid-column-gap: 100px;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 70px;
 }
-
+%grid-830-1 {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-column-gap: 60px;
+}
 %grid-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
 }
-
+%grid-contact {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  grid-template-rows: 1fr 1fr;
+}
 %no_select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;

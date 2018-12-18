@@ -11,10 +11,15 @@ description: Do one thing for a lifetime
   <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
   <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
   <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <!-- <a href="javascript:tran.setLang('default');" class="nav_link_language en">English</a>
+  <a href="javascript:tran.setLang('cn');" class="nav_link_language cn">中文</a> -->
   <a href="{{ site.url }}/feed.xml" class="nav_link link_right">RSS</a>
   <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
 </nav>
-
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+</script>
 <section class="home_top">
   <!-- <div class="lines-grid">
     <i class="lines_i"></i>
@@ -103,9 +108,24 @@ description: Do one thing for a lifetime
 </section>
 
 <section class="section case">
+  <div class="section_title title_fixed">
+    <div id="trigger_case"></div>
+    <div id="pin_case" class="section_title_fixd">Some real<br>cases for<br>custom</div>
+    <script>
+      $(function () { // wait for document ready
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger_case", duration: 1700, offset: 460})
+                .setPin("#pin_case")
+                .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      });
+    </script>
+  </div>
+  <div class="section_title title_normal">Some real<br>cases for<br>custom</div>
+  <div class="section_item">
   <a href="https://www.behance.net/gallery/58498171/Moment" class="case_item cachemoment" target="_blank">
     <div class="color_cover purple"></div>
-    <img src="assets/images/portfolio/cachemoment.jpg" alt="" class="color_cover_img">
+    <img src="https://i.loli.net/2018/12/12/5c108945875e0.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
       <div class="case_title">Cachemoment</div>
       <div class="case_tag">Web Interfaces · Development · Digital Branding</div>
@@ -113,12 +133,22 @@ description: Do one thing for a lifetime
   </a>
   <a href="https://www.behance.net/gallery/61684929/Presen" class="case_item presen" target="_blank">
     <div class="color_cover red"></div>
-    <img src="assets/images/portfolio/presen.jpg" alt="" class="color_cover_img">
+    <img src="https://i.loli.net/2018/12/12/5c1089c07a433.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
       <div class="case_title">Presen</div>
       <div class="case_tag">Web Interfaces · App Interfaces</div>
     </div>
   </a>
+  <a href="https://www.behance.net/gallery/61684929/Presen" class="case_item presen bottom_0" target="_blank">
+    <div class="color_cover red"></div>
+    <img src="https://i.loli.net/2018/12/12/5c1089b055b66.jpg" alt="" class="color_cover_img">
+    <div class="case_item_desc">
+      <div class="case_title">Petme</div>
+      <div class="case_tag">Web Interfaces · App Interfaces</div>
+    </div>
+  </a>
+  <a href="{{ site.baseurl }}/works" class="view_more"><span>View More</span></a>
+</div>
 </section>
 
 <section class="case_full">
@@ -132,13 +162,13 @@ description: Do one thing for a lifetime
     </p>
     <a href="{{ site.baseurl }}/works" class="view_more link"><span>Link</span></a>
   </div>
-  <a href="https://www.behance.net/gallery/58498171/Moment" class="case_full_cover" target="_blank">
-    <img src="assets/images/portfolio/elife.jpg" alt="">
+  <a href="http://elife.zuonx.com" class="case_full_cover" target="_blank">
+    <img src="https://i.loli.net/2018/12/12/5c10898b5ef8d.jpg" alt="">
   </a>
 </section>
 
 <section class="section service">
-  <div class="section_title">Service</div>
+  <div class="section_title">Services<br>and skills</div>
   <div class="section_item">
     <div class="item_content">
       <div class="item_title">
@@ -186,42 +216,32 @@ description: Do one thing for a lifetime
 <section class="section brand">
   <img src="assets/images/main/brand.png" alt="">
 </section>
-
-<section class="case_full">
-  <div class="case_full_desc">
-    <div class="case_duty">Developer & Interaction Designer</div>
-    <div class="case_full_title">DesignerAndStudio</div>
-    <div class="line"></div>
-    <p> To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,To provide users with large data driven large data driven</p>
-    <div class="case_link">Link</div>
-  </div>
-  <a href="https://www.behance.net/gallery/58498171/Moment" class="case_full_cover" target="_blank">
-    <img src="assets/images/portfolio/dns.jpg" alt="">
-  </a>
+<section class="post_full">
+  <img src="https://i.loli.net/2018/12/12/5c0fee529db16.jpg" alt="">
 </section>
 
+
 <section class="section blog_home">
-  <div class="section_title">
-    <div class="demo">
-      <div id="trigger1" class="blog_trigger"></div>
-      <div id="pin1" class="box2">Blog</div>
-      <script>
-        $(function () { // wait for document ready
-          // build scene
-          var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1400, offset: 500})
-                  .setPin("#pin1")
-                  .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-                  .addTo(controller);
-        });
-      </script>
-    </div>
+  <div class="section_title title_fixed">
+    <div id="trigger_blog"></div>
+    <div id="pin_blog" class="section_title_fixd">Keep<br>thinking</div>
+    <script>
+      $(function () { // wait for document ready
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger_blog", duration: 1400, offset: 450})
+                .setPin("#pin_blog")
+                .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      });
+    </script>
   </div>
+  <div class="section_title title_normal">Keep<br>thinking</div>
   <div class="">
     <div class="blog_item_grid">
       {% for post in site.posts limit:5 %}
       <div class="blog_item">
         <a href="{{ post.url }}">
-          <img src="assets/images/post/{{ post.date | date: '%Y-%m-%d' }}/bg.jpg" alt="" class="blog_cover">
+          <img src="{{ post.cover }}" alt="" class="blog_cover">
         </a>
           <!-- <span class="blog_date">{{ post.date | date: '%B %d, %Y' }}</span> -->
         <div class="blog_info">
@@ -292,39 +312,48 @@ description: Do one thing for a lifetime
   </div>
 </section>
 <section class="section story">
-  <div class="section_title">Story</div>
-  <div id="instagram"></div>
+  <div class="section_title">Life is a little<br>less volatile<br>dream</div>
+  <div class="">
+    <div id="instagram"></div>
+    <a href="https://www.instagram.com/zuozizhen" class="view_more" target="_blank"><span>View more in Instagram</span></a>
+  </div>
 </section>
-
-<section class="section more">
-  <div class="section_title">More</div>
-  <div class="section_item">
-    <div class="contact_item">
-      <div class="item_title">Say hi</div>
-      <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
-    </div>
-    <div class="contact_item">
-      <div class="item_title">Be a friend</div>
-      <a class="item_desc" href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a>
-      <a class="item_desc" href="https://www.behance.net/{{ site.behance_username }}" target="_blank">Behance</a>
-      <a class="item_desc" href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
-      <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
-      <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
-    </div>
-    <div class="contact_item">
-      <div class="item_title">Thank you for Reading!</div>
-      <span class="item_desc">@ 2018 Designed & Built by Zuo Zizhen</span>
+<section class="home_more">
+  <div class="section more">
+    <div class="section_title">Let's talk</div>
+    <div class="section_item">
+      <div class="contact_item">
+        <div class="item_title">Say hi</div>
+        <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
+      </div>
+      <div class="contact_item">
+        <div class="item_title">Be a friend</div>
+        <a class="item_desc" href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a>
+        <a class="item_desc" href="https://www.behance.net/{{ site.behance_username }}" target="_blank">Behance</a>
+        <a class="item_desc" href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
+        <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+        <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
+      </div>
+      <div class="contact_item">
+        <div class="item_title">Thank you for Reading!</div>
+        <span class="item_desc">@ 2018 Designed & Built by Zuo Zizhen</span>
+      </div>
     </div>
   </div>
+
 </section>
 
 <script src="{{ site.baseurl }}/assets/javascripts/instagram.min.js"></script>
 
 <script src="{{ site.baseurl }}/assets/javascripts/jribbble.min.js"></script>
 
-<script>
-  // init controller
-  var controller = new ScrollMagic.Controller();
+<script type="text/javascript">
+  tran = new Translater();
+     if (tran.getLang() === "default") tran.setLang('cn');
+     var tran = new Translater({
+         lang:"cn"
+     });
+  localStorage.setItem("language","cn");
 </script>
 
 <script>

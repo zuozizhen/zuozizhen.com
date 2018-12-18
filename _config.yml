@@ -1,9 +1,9 @@
 # Site settings
-title:     zuonx - design effective digital products
+title:     zuonx - Zizhen's personal site
 email:     hjsfzzz@gmail.com
 description: "Design effective digital products."
-keywords: "zuonx, 左子祯, Zuo Zizhen, designer, studio, blog, personal site, freelancer"
-author:   "Zuo Zizhen"
+keywords: "zuonx, 左子祯, Zizhen Zuo, designer, studio, blog, personal site, freelancer"
+author:   "Zizhen Zuo"
 url: "https://zuonx.com"
 baseurl: ""
 name: zuonx
@@ -25,7 +25,7 @@ zhihu_username:     ZiJen
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
-paginate: 12
+paginate: 7
 paginate_path: "blog/page:num"
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true

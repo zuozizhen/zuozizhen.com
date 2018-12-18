@@ -3,14 +3,15 @@ layout:     "post"
 title:      "创意十足的个人网站推荐"
 subtitle:   "Personal website recommendation"
 date:       "2017-07-05"
-cover:      "bg.jpg"
-tag:        [site, design, recommended]
-excerpt:    "一些设计、排版以及创意非常棒的个人网站..."
+cover:      "https://i.loli.net/2018/12/12/5c0ff1ce879ee.jpg"
+tag:        [design, site]
+category:   design
+excerpt:    "一些设计、排版以及创意非常棒的个人网站,为正在制作自己个人网站的你提供灵感..."
 ---
 
 ### 1. 将音乐与设计结合到一起的个人网站，动效的设计可以称得上惊艳。
 ![img](https://i.loli.net/2018/07/10/5b441b18d4151.jpg)
-[KENJI ENDO](http://kenjiendo.com/)
+###### [KENJI ENDO](http://kenjiendo.com/)
 
 ### 2. 精致的配色，精致的排版
 ![img](https://i.loli.net/2018/07/10/5b441b22157cc.jpg)
