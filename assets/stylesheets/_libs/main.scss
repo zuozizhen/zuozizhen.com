@@ -14,7 +14,7 @@ html {
 
 .top_nav {
   position: absolute;
-  max-width: 1140px;
+  max-width: $max-width - 300;
   width: calc(100% - 300px);
   margin: 80px auto;
   z-index: 10;
@@ -42,7 +42,7 @@ html {
     }
   }
   .nav_link {
-    font-size: 19px;
+    font-size: $h4;
     margin-right: 40px;
     font-family: BitterRegular;
     letter-spacing: -0.5px;
@@ -133,12 +133,11 @@ html {
 // Module
 
 .section {
-  max-width: 1440px;
+  max-width: $max-width;
   padding: 0 150px 90px 150px;
   margin: 0 auto;
 
-  .section_title,
-  .section_title_fixd {
+  .section_title {
     color: $gray-dark;
     font-size: 46px;
     font-weight: 800;
@@ -151,7 +150,7 @@ html {
     }
     p {
       font-family: BitterRegular;
-      font-size: 19px;
+      font-size: $h4;
       line-height: 36px;
       color: $gray-light;
       margin-top: 10px;
@@ -314,17 +313,7 @@ html {
     padding: 40px 0 80px 0;
   }
 }
-.title_normal {
-  display: none;
-}
-@media only screen and (max-width: 1024px) {
-  .title_fixed {
-    display: none;
-  }
-  .title_normal {
-    display: block;
-  }
-}
+
 .home_more {
   background-color: #151515;
   padding: 50px 0;
@@ -425,6 +414,7 @@ html {
     margin-bottom: 40px;
   }
   .home_about .content {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
@@ -450,7 +440,7 @@ html {
   .contact_item {
     .item_desc {
       color: #a1a1a1;
-      font-size: 18px;
+      font-size: $h4;
     }
     a:before {
       background-color: #3b3b3b;
@@ -476,6 +466,7 @@ html {
   position: absolute;
   transform: translateY(-50%);
   top: 47%;
+  z-index: 100;
   .home_top_title_swich {
     margin-bottom: 20px;
     a {
@@ -529,7 +520,7 @@ html {
 }
 .main_desc {
   font-family: BitterRegular;
-  font-size: 19px;
+  font-size: 20px;
   color: $gray;
   line-height: 44px;
   position: relative;
@@ -920,7 +911,7 @@ html {
     font-weight: 500;
     float: right;
     opacity: 0.4;
-    font-size: 18px;
+    font-size: $h4;
     color: #FFFFFF;
     text-align: right;
     margin-top: -44px;
@@ -948,7 +939,7 @@ html {
       font-size: 14px;
     }
     .position {
-      font-size: 18px;
+      font-size: $h4;
     }
     .section_item p {
       font-size: 16px;
@@ -1021,6 +1012,45 @@ html {
     &.active:before {
       transform: scale3d(1,1,1);
     }
+  }
+}
+
+.language_swich {
+  width: 80px;
+  height: 30px;
+  background: rgba(141,141,141,0.14);
+  border-radius: 100px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  .language_swich_content {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  a {
+    color: rgba(115,115,115,.6);
+    letter-spacing: 1px;
+    font-size: 11px;
+    line-height: 30px;
+  }
+  .cn {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+  .en {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.92px;
+  }
+  .en:after {
+    content: '';
+    display: inline-block;
+    background-color: rgba(115,115,115,.6);
+    height: 8px;
+    width: 1px;
+    margin: 0 2px 0 5px;
   }
 }
 
@@ -1176,7 +1206,7 @@ html {
 }
 @media only screen and (max-width: 750px) {
   .case_title {
-    font-size: 18px;
+    font-size: $h4;
   }
   .case_tag {
     font-size: 13px;
@@ -1293,15 +1323,10 @@ html {
     transition: color 0.5s;
   }
 }
-@media only screen and (max-width: 1140px) {
-  .contact .contact_item {
-    margin-bottom: 0;
-  }
-}
 @media only screen and (max-width: 750px) {
   .contact_item {
     .item_desc {
-      font-size: 18px;
+      font-size: $h4;
       margin-bottom: 0;
     }
   }
@@ -1330,7 +1355,8 @@ html {
   span {
     display: block;
     color: $gray-light;
-    font-size: 21px;
+    font-size: 20px;
+    font-family: BitterRegular;
     font-weight: 400;
     text-decoration: none;
     transition: 0.3s color;
@@ -1406,6 +1432,7 @@ html {
       box-shadow: 0 1px 4px 0 #EEEEEE;
       max-width: 400px;
       max-height: 300px;
+      width: 100%;
     }
   }
 }

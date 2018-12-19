@@ -46,6 +46,15 @@ var tabs = function(tab, main_pic_z, top_title){
     })
 }
 
+//
+
+tran = new Translater();
+   if (tran.getLang() === "cn") tran.setLang('default');
+   var tran = new Translater({
+       lang:"default"
+   });
+localStorage.setItem("language","default");
+
 // // About Swich
 // $().ready(function($) {
 //   $(".about_swich_en").on('click', function() {

@@ -21,7 +21,7 @@ description: Do one thing for a lifetime
         {% for post in paginator.posts %}
         <div class="blog_item">
           <a href="{{ post.url }}" class="blog_cover_link">
-            <img src="/assets/images/post/{{ post.date | date: '%Y-%m-%d' }}/bg.jpg" alt="" class="blog_cover">
+            <img src="{{ post.cover }}" alt="" class="blog_cover">
           </a>
           <div class="blog_info">
             <span class="blog_tag">{% for tag in post.tags limit:3 %}<span>{{tag}}</span>{% endfor %}</span>

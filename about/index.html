@@ -3,6 +3,9 @@ layout: default
 title: About - Keep curiosity
 description: Do one thing for a lifetime
 ---
+
+{% include language_swich.html %}
+
 <nav class="top_nav black">
   <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link">Work</a>
   <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
@@ -18,9 +21,11 @@ description: Do one thing for a lifetime
   <div class="main_desc">
     <p>
       I am a product designer in Beijing.
+      <!--{cn}我是北京的产品设计师。  -->
     </p>
     <p>
       I have been focusing on designing effective digital products to enhance the corporate brand value. I have 1+ years of experience in UI/UX design with proven online products such as web, applications, corporate back office systems.. My advantage is good at integrating different skills. I can independently complete the website design and development, there are some complete online product case.
+      <!--{cn}我一直专注于设计有效的数字产品，以提升企业的品牌价值。我在UI / UX设计方面拥有1年以上的经验，拥有经过验证的在线产品，如网络，应用程序，企业后台系统......我的优势是善于整合不同的技能。我可以独立完成网站的设计和开发，有一些完整的在线产品案例。  -->
     </p>
   </div>
 </section>
@@ -66,23 +71,47 @@ description: Do one thing for a lifetime
 </section>
 
 <section class="section service">
-  <div class="section_title">Service</div>
+  <div class="section_title">Services<br>and skills</div>
   <div class="section_item">
     <div class="item_content">
-      <div class="item_title">Web Interfaces</div>
-      <p>I am good at corporate website, landing page, dashboard design, and successfully complete the goal for customers.</p>
+      <div class="item_title">
+        Web Interfaces
+        <!--{cn} 网站界面  -->
+      </div>
+      <p>
+        I am good at corporate website, landing page, dashboard design, and successfully complete the goal for customers.
+        <!--{cn}我擅长企业网站，登陆页面，仪表板设计，并成功完成了客户的目标。  -->
+      </p>
     </div>
     <div class="item_content">
-      <div class="item_title">Frontend Development</div>
-      <p>I can independently complete the front-end development of static pages, and can provide customers with high-fidelity front-end design drafts.</p>
+      <div class="item_title">
+        Frontend Development
+        <!--{cn}静态页面开发  -->
+      </div>
+      <p>
+        I can independently complete the front-end development of static pages, and can provide customers with high-fidelity front-end design drafts.
+        <!--{cn}我可以独立完成静态页面的前端开发，并可以为客户提供高保真的前端设计草图。  -->
+      </p>
     </div>
     <div class="item_content">
-      <div class="item_title">App Interface</div>
-      <p>I can complete the iOS & Android interface design, and I am familiar with the Swift language, which can better connect and communicate with engineers.</p>
+      <div class="item_title">
+        App Interface
+        <!--{cn}移动应用界面  -->
+      </div>
+      <p>
+        I can complete the iOS & Android interface design, and I am familiar with the Swift language, which can better connect and communicate with engineers.
+        <!--{cn}我可以完成iOS和Android界面设计，熟悉Swift语言，可以更好地连接工程师并与之沟通。  -->
+      </p>
     </div>
     <div class="item_content">
-      <div class="item_title">Digital Branding</div>
-      <p>Creating interesting, successful brands for our customers is my goal, I have created interesting digital brands for many customers.</p>
+      <div class="item_title">
+        Digital Branding
+        <!--{cn}数字化品牌  -->
+      </div>
+      <p>
+        Creating interesting, successful brands for our customers is my goal, I have created interesting digital brands for many customers.
+        <!--{cn}为我们的客户创造有趣，成功的品牌是我的目标，我为许多客户创造了有趣的数字品牌。  -->
+      </p>
     </div>
   </div>
 </section>
