@@ -1294,10 +1294,6 @@ html {
       transform: scale3d(1,1,1);
     }
   }
-  &.dark {
-    transform: translateX(-50%);
-    left: 50%;
-  }
   &:before,
   &:after {
     content: "";
@@ -1321,7 +1317,19 @@ html {
     transform: scale3d(1,1,1);
   }
 }
-
+.link_content {
+  position: relative;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.dark {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  .link {
+    margin: 0 20px;
+  }
+}
 // Contact
 
 .contact_item {
