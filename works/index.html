@@ -7,12 +7,13 @@ description: Do one thing for a lifetime
 {% include language_swich.html %}
 
 <nav class="top_nav black">
-  <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link active">Work</a>
-  <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
-  <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
-  <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <a href={{ "/works" | prepend: site.baseurl }} class="nav_link active">Work</a>
+  <a href={{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
+  <a href={{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
+  <a href={{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
   <a href="http://elife.zuonx.com" class="nav_link link_right" target="_blank">Elife</a>
-  <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
+  <a href={{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
+
 </nav>
 
 <section class="title">
@@ -21,14 +22,15 @@ description: Do one thing for a lifetime
   </div>
   <div class="main_desc">
     <p>
-      My advantage is good at integrating different skills. I can independently complete the website design and development, there are some complete online product case.
+      My advantage is good at integrating different skills. I can independently complete the website design and
+      development, there are some complete online product case.
       <!--{cn}我的优势是善于整合不同的技能。我可以独立完成网站的设计和开发，有一些完整的在线产品案例。  -->
     </p>
   </div>
 </section>
 
 <section class="section work">
-  <a href= {{ "/works/moment" | prepend: site.baseurl }} class="case_item cachemoment" target="_blank">
+  <a href={{ "/works/moment" | prepend: site.baseurl }} class="case_item cachemoment" target="_blank">
     <div class="color_cover purple"></div>
     <img src="/assets/images/portfolio/cachemoment.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
@@ -36,7 +38,7 @@ description: Do one thing for a lifetime
       <div class="case_tag">Web Interfaces · Development</div>
     </div>
   </a>
-  <a href= {{ "/works/presen" | prepend: site.baseurl }} class="case_item presen" target="_blank">
+  <a href={{ "/works/presen" | prepend: site.baseurl }} class="case_item presen" target="_blank">
     <div class="color_cover red"></div>
     <img src="/assets/images/portfolio/presen.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
@@ -44,7 +46,7 @@ description: Do one thing for a lifetime
       <div class="case_tag">Web Interfaces · App Interfaces</div>
     </div>
   </a>
-  <a href= {{ "/works/petme" | prepend: site.baseurl }} class="case_item cachemoment" target="_blank">
+  <a href={{ "/works/petme" | prepend: site.baseurl }} class="case_item cachemoment" target="_blank">
     <div class="color_cover purple"></div>
     <img src="/assets/images/portfolio/petme.jpg" alt="" class="color_cover_img">
     <div class="case_item_desc">
@@ -81,7 +83,8 @@ description: Do one thing for a lifetime
 <section class="appraise_full">
   <div class="appraise_content">
     <div class="appraise_desc">
-      “ Working with ustwo is unlike a typical studio relationship. It’s closer to hiring a team of commandos that become a part of your organization. ”
+      “ Working with ustwo is unlike a typical studio relationship. It’s closer to hiring a team of commandos that
+      become a part of your organization. ”
       <!--{cn}“与ustwo合作不同于典型的工作室关系。它更接近雇佣一支成为贵组织一员的突击队员。”  -->
     </div>
     <div class="appraise_name">
@@ -105,13 +108,15 @@ description: Do one thing for a lifetime
 
 <section class="section">
   <div class="page_footer_nav">
-    <a class="left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-    About
-    <span>Learn more about me</span>
+    <a class="left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+      data-placement="top" title="{{page.previous.title}}">
+      About
+      <span>Learn more about me</span>
     </a>
-    <a class="right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-    Contact
-    <span>Let's talk somethings</span>
+    <a class="right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+      data-placement="top" title="{{page.next.title}}">
+      Contact
+      <span>Let's talk somethings</span>
     </a>
   </div>
 </section>
@@ -120,9 +125,13 @@ description: Do one thing for a lifetime
 <script src="{{ site.baseurl }}/assets/javascripts/jribbble.min.js"></script>
 
 <script>
-jribbble.shots({token: "935c9bc6c35616b09c4214afb1e6ef80f22aa8175e1766881e00c2289ee2911e",page: 1, per_page: 6,}, function(shotsArray) {
-  document.getElementById("dribbble-shots").innerHTML = shotsArray.reduce(function(html, shot) {
-    return html + '<a href="'+  shot.html_url + '" target="_blank"><img src="' + shot.images.hidpi + '"></a>';
-  }, "");
-});
+  jribbble.shots({
+    token: "935c9bc6c35616b09c4214afb1e6ef80f22aa8175e1766881e00c2289ee2911e",
+    page: 1,
+    per_page: 6,
+  }, function (shotsArray) {
+    document.getElementById("dribbble-shots").innerHTML = shotsArray.reduce(function (html, shot) {
+      return html + '<a href="' + shot.html_url + '" target="_blank"><img src="' + shot.images.hidpi + '"></a>';
+    }, "");
+  });
 </script>
