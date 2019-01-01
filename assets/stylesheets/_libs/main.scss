@@ -1156,6 +1156,8 @@ html {
   }
 
   img {
+    height: auto;
+    width: 100%;
     border-radius: 10px;
   }
   &.cachemoment img{
@@ -1165,26 +1167,6 @@ html {
   &.presen img{
     height: auto;
     width: 100%;
-  }
-  &.petme {
-    background-image: url("../images/portfolio/petme.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-  &.dns {
-    background-image: url("../images/portfolio/dns.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-  &.elife {
-    background-image: url("../images/portfolio/elife.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-  &.elife-x {
-    background-image: url("../images/portfolio/elife-x.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
   }
 
   .purple {
