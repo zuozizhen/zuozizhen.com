@@ -1,44 +1,81 @@
-# Site settings
-title:     zuonx - Zizhen's personal site
-email:     hjsfzzz@gmail.com
-description: "Design effective digital products."
-keywords: "zuonx, 左子祯, Zizhen Zuo, designer, studio, blog, personal site, freelancer"
-author:   "Zizhen Zuo"
-url: "https://zuonx.com"
-baseurl: ""
-name: zuonx
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-# SCSS settings
-sass:
-  sass_dir: assets/stylesheets/_libs
+# Site
+title: zuonx
+subtitle:
+description:
+keywords:
+author: John Doe
+language:
+timezone:
 
-# SNS settings
-RSS: ture
-dribbble_username:  zuonx
-behance_username:   zuonx
-pinterest_username: zuozizhen
-github_username:    zuonx
-instagram_username: zuozizhen
-zhihu_username:     ZiJen
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+permalink: :category/:title/
+permalink_defaults:
 
-# Paginate settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 7
-paginate_path: "blog/page:num"
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
-# plugins
-plugins: [jekyll-paginate]
+# Writing
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
 
-# Markdown settings
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
 
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
 
-# Analytics settings
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
 
-ga_track_id: 'UA-111351144-1'
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: zuonx-v4
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
