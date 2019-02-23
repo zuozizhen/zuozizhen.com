@@ -15,7 +15,7 @@ layout: default
 </section>
 <section class="section blog_list_tags">
   <div class="blog_list_grid_full">
-    {% for post in site.tags[page.tag] %}
+    {% for post in site.categories[page.category] %}
     <div class="blog_item">
       <a href="{{ post.url }}" class="blog_cover_link">
         <img src="{{ post.cover }}" alt="" class="blog_cover">

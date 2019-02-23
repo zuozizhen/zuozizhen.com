@@ -13,6 +13,7 @@ $line-height: 40px;
 $line-height-abs: -40px;
 
 $h4: 18px;
+$h5: 15px;
 
 $max-width: 1440px;
 
@@ -24,33 +25,38 @@ $family-title: "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", 
 
 @font-face {
     font-family: 'GilroyExtraBold';
-    src: url('/assets/fonts/GilroyExtraBold.eot');
-    src: url('/assets/fonts/GilroyExtraBold.eot') format('embedded-opentype'),
-         url('/assets/fonts/GilroyExtraBold.woff2') format('woff2'),
-         url('/assets/fonts/GilroyExtraBold.woff') format('woff'),
-         url('/assets/fonts/GilroyExtraBold.ttf') format('truetype'),
-         url('/assets/fonts/GilroyExtraBold.svg#GilroyExtraBold') format('svg');
-}
-
-
-@font-face {
-    font-family: 'BitterRegular';
-    src: url('/assets/fonts/BitterRegular.eot');
-    src: url('/assets/fonts/BitterRegular.eot') format('embedded-opentype'),
-         url('/assets/fonts/BitterRegular.woff2') format('woff2'),
-         url('/assets/fonts/BitterRegular.woff') format('woff'),
-         url('/assets/fonts/BitterRegular.ttf') format('truetype'),
-         url('/assets/fonts/BitterRegular.svg#BitterRegular') format('svg');
+    src: url('/assets/fonts/GilroyExtraBold.woff2') format('woff2'),
+         url('/assets/fonts/GilroyExtraBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'BitterBold';
-    src: url('/assets/fonts/BitterBold.eot');
-    src: url('/assets/fonts/BitterBold.eot') format('embedded-opentype'),
-         url('/assets/fonts/BitterBold.woff2') format('woff2'),
-         url('/assets/fonts/BitterBold.woff') format('woff'),
-         url('/assets/fonts/BitterBold.ttf') format('truetype'),
-         url('/assets/fonts/BitterBold.svg#BitterBold') format('svg');
+  font-family: 'NHRegular';
+  src: url('/assets/fonts/NHaasGroteskTXPro55Rg.woff2') format('woff2'),
+       url('/assets/fonts/NHaasGroteskTXPro55Rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NHBold';
+  src: url('/assets/fonts/NHaasGroteskTXPro75Bd.woff2') format('woff2'),
+       url('/assets/fonts/NHaasGroteskTXPro75Bd.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoMonoRegular';
+  src: url('/assets/fonts/RobotoMonoRegular.woff2') format('woff2'),
+       url('/assets/fonts/RobotoMonoRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoMonoMedium';
+  src: url('/assets/fonts/RobotoMonoMedium.woff2') format('woff2'),
+       url('/assets/fonts/RobotoMonoMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoMonoBold';
+  src: url('/assets/fonts/RobotoMonoBold.woff2') format('woff2'),
+       url('/assets/fonts/RobotoMonoBold.woff') format('woff');
 }
 
 // Placeholders
