@@ -3,7 +3,7 @@ layout:     "post"
 title:      "2019年 UI & UX 设计趋势 [译]"
 subtitle:   "2019 trend"
 date:       "2018-12-24"
-cover:      "https://i.loli.net/2018/12/16/5c164964d4cd2.jpg"
+cover:      "https://i.loli.net/2019/02/24/5c726607a0b59.jpg"
 tag:        [design]
 category:   design
 excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色的色彩表现，甚至必须通过新的..."

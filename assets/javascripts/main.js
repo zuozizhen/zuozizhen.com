@@ -46,14 +46,16 @@ var tabs = function(tab, main_pic_z, top_title){
     })
 }
 
-//
+// var $grid = $('#instagram').masonry({
+//   itemSelector: '#instagram a',
+//   columnWidth: '#instagram a',
+//   percentPosition: true
+// });
 
-tran = new Translater();
-   if (tran.getLang() === "cn") tran.setLang('default');
-   var tran = new Translater({
-       lang:"default"
-   });
-localStorage.setItem("language","default");
+// layout Masonry after each image loads
+// $grid.imagesLoaded().progress( function() {
+//   $grid.masonry('layout');
+// });
 
 // // About Swich
 // $().ready(function($) {
@@ -66,3 +68,58 @@ localStorage.setItem("language","default");
 //     $(".about_cn").addClass('active');
 //   });
 // });
+
+// $('#instagram').masonry({
+//   // options
+//   itemSelector: 'a',
+//   columnWidth: 200
+// });
+
+// external js: masonry.pkgd.js
+
+var galleryFeed = new Instafeed({
+  get: "user",
+  userId: 3253094037,
+  accessToken: "3253094037.1677ed0.8b08678d71d14703994ed3e7a9c2497a",
+  resolution: "standard_resolution",
+  useHttp: "true",
+  limit: 20,
+  template: '<div class="grid-item"><a href="#"><div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><i class="icon ion-heart"></i> {{likes}}</span><span class="comments"><i class="icon ion-chatbubble"></i> {{comments}}</span></div><img src="{{image}}" class="img-responsive"></div></a></div>',
+  target: "instafeed-gallery-feed",
+  after: function() {
+    // disable button if no more results to load
+    if (!this.hasNext()) {
+      $btnInstafeedLoad.attr('disabled', 'disabled');
+    }
+
+    initMasonry();
+  },
+});
+
+galleryFeed.run();
+
+var $btnInstafeedLoad = $('#btn-instafeed-load');
+$btnInstafeedLoad.on('click', function() {
+  galleryFeed.next();
+  // initMasonry();
+});
+
+
+function initMasonry() {
+  var $grid = $('.grid');
+
+  $grid.masonry({
+    // use outer width of grid-sizer for columnWidth
+    columnWidth: '.grid-sizer',
+    itemSelector: '.grid-item',
+    percentPosition: true
+  });
+
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+}
+
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
