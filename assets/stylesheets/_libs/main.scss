@@ -283,7 +283,9 @@ html {
       height: 180px;
       border-top: 2px solid #1F1F1F;
       padding: 50px;
-      position: relative;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
       .desc {
         position: absolute;
         transform: translateY(-50%);

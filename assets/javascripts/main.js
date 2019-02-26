@@ -84,7 +84,7 @@ var galleryFeed = new Instafeed({
   resolution: "standard_resolution",
   useHttp: "true",
   limit: 20,
-  template: '<div class="grid-item"><a href="#"><div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><i class="icon ion-heart"></i> {{likes}}</span><span class="comments"><i class="icon ion-chatbubble"></i> {{comments}}</span></div><img src="{{image}}" class="img-responsive"></div></a></div>',
+  template: '<div class="grid-item"><a href="{{link}}"><img src="{{image}}" class="img-responsive"></div></a></div>',
   target: "instafeed-gallery-feed",
   after: function() {
     // disable button if no more results to load
