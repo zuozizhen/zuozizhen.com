@@ -1,4 +1,4 @@
-<img src="https://i.loli.net/2019/03/03/5c7ac2cd8ec75.jpg">
+<img width="80" src="https://i.loli.net/2019/03/03/5c7ac2cd8ec75.jpg">
 
 # zuonx
 
