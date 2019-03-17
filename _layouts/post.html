@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<nav class="top_nav black">
+  <a href= {{ "/works" | prepend: site.baseurl }} class="nav_link">Work</a>
+  <a href= {{ "/blog" | prepend: site.baseurl }} class="nav_link active">Blog</a>
+  <a href= {{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
+  <a href= {{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <a href="http://elife.zuonx.com" class="nav_link link_right" target="_blank">Elife</a>
+  <a href= {{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
+</nav>
+
+<section class="section post">
+  <div class="post_top">
+    <div class="blog_item">
+      <div class="post_top_content">
+        <span class="blog_tag">  {% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
+        <span class="blog_title">{{ page.title }}</span>
+        <span class="blog_tips">ARTICLE POSTED ON {{ page.date | date: '%B %d, %Y' }}</span>
+      </div>
+    </div>
+    {% if page.cover %}
+      <img class="blog_header_img" src="{{ page.cover }}">
+    {% endif %}
+  </div>
+  <div class="post-wrapper">
+    {{ content }}
+  </div>
+  <div class="post_pagination">
+    {% if page.previous.url %}
+      <a class="previous"href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+      上一篇<br><span>{{page.previous.title}}</span>
+      </a>
+    {% endif %}
+
+    {% if page.next.url %}
+      <a class="next"href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+      下一篇<br><span>{{page.next.title}}</span>
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+<div class="comment">
+  <div id="disqus_thread"></div>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+<script>
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://zuonx.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<script src="{{ site.baseurl }}/assets/javascripts/medium-zoom.js"></script>
+
+<script>
+  mediumZoom(document.images)
+</script>

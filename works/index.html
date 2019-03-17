@@ -1,0 +1,145 @@
+---
+layout: default
+title: Work - Real cases
+description: Do one thing for a lifetime
+---
+
+{% include language_swich.html %}
+
+<nav class="top_nav black">
+  <a href={{ "/works" | prepend: site.baseurl }} class="nav_link active">Work</a>
+  <a href={{ "/blog" | prepend: site.baseurl }} class="nav_link">Blog</a>
+  <a href={{ "/about" | prepend: site.baseurl }} class="nav_link">About</a>
+  <a href={{ "/contact" | prepend: site.baseurl }} class="nav_link">Contact</a>
+  <a href="http://elife.zuonx.com" class="nav_link link_right" target="_blank">Elife</a>
+  <a href={{ "/" | prepend: site.baseurl }} class="logo_z"><i></i></a>
+
+</nav>
+
+<section class="title">
+  <div class="main_title">
+    Real cases
+  </div>
+  <div class="main_desc">
+    <p>
+      My advantage is good at integrating different skills. I can independently complete the website design and
+      development, there are some complete online product case.
+      <!--{cn}我的优势是善于整合不同的技能。我可以独立完成网站的设计和开发，有一些完整的在线产品案例。  -->
+    </p>
+  </div>
+</section>
+
+<section class="section work">
+    <a href= {{ "/works/t-web" | prepend: site.baseurl }} class="case_item smartisan" target="_blank">
+      <div class="color_cover purple"></div>
+      <img src="https://i.loli.net/2019/01/03/5c2e21f89e0ba.jpg" alt="" class="color_cover_img">
+      <div class="case_item_desc">
+        <div class="case_title">Smartisan Web Library</div>
+        <div class="case_tag">Gulid</div>
+      </div>
+    </a>
+  <a href={{ "/works/moment" | prepend: site.baseurl }} class="case_item cachemoment" target="_blank">
+    <div class="color_cover purple"></div>
+    <img src="/assets/images/portfolio/cachemoment.jpg" alt="" class="color_cover_img">
+    <div class="case_item_desc">
+      <div class="case_title">Cachemoment</div>
+      <div class="case_tag">Web Interfaces · Development</div>
+    </div>
+  </a>
+  <a href={{ "/works/presen" | prepend: site.baseurl }} class="case_item presen" target="_blank">
+    <div class="color_cover red"></div>
+    <img src="/assets/images/portfolio/presen.jpg" alt="" class="color_cover_img">
+    <div class="case_item_desc">
+      <div class="case_title">Presen</div>
+      <div class="case_tag">Web Interfaces · App Interfaces</div>
+    </div>
+  </a>
+  <a href={{ "/works/petme" | prepend: site.baseurl }} class="case_item cachemoment" target="_blank">
+    <div class="color_cover purple"></div>
+    <img src="/assets/images/portfolio/petme.jpg" alt="" class="color_cover_img">
+    <div class="case_item_desc">
+      <div class="case_title">Petme</div>
+      <div class="case_tag">Digital Branding</div>
+    </div>
+  </a>
+  <a href="https://designerandstudio.com" class="case_item presen" target="_blank">
+    <div class="color_cover red"></div>
+    <img src="/assets/images/portfolio/dns.jpg" alt="" class="color_cover_img">
+    <div class="case_item_desc">
+      <div class="case_title">DesignerAndStudio</div>
+      <div class="case_tag">Personal Project</div>
+    </div>
+  </a>
+  <a href="http://elife.zuonx.com" class="case_item cachemoment" target="_blank">
+    <div class="color_cover purple"></div>
+    <img src="/assets/images/portfolio/elife.jpg" alt="" class="color_cover_img">
+    <div class="case_item_desc">
+      <div class="case_title">Elife</div>
+      <div class="case_tag">Personal Project</div>
+    </div>
+  </a>
+  <a href="#" class="case_item presen" target="_blank">
+    <div class="color_cover red"></div>
+    <img src="/assets/images/portfolio/elife-x.jpg" alt="" class="color_cover_img">
+    <div class="case_item_desc">
+      <div class="case_title">Elife-X（Coming）</div>
+      <div class="case_tag">Personal Project</div>
+    </div>
+  </a>
+</section>
+
+<section class="appraise_full">
+  <div class="appraise_content">
+    <div class="appraise_desc">
+      “ Working with ustwo is unlike a typical studio relationship. It’s closer to hiring a team of commandos that
+      become a part of your organization. ”
+      <!--{cn}“与ustwo合作不同于典型的工作室关系。它更接近雇佣一支成为贵组织一员的突击队员。”  -->
+    </div>
+    <div class="appraise_name">
+      Liu Jiang
+      <!--{cn}刘江  -->
+    </div>
+    <div class="appraise_title">
+      CACHEMOMENT CEO
+      <!--{cn}魔门云 CEO -->
+    </div>
+  </div>
+</section>
+
+<section class="section shots">
+  <div class="section_title">Shots</div>
+  <div class="">
+    <div id="dribbble-shots"></div>
+    <a href="https://dribbble.com/zuonx" class="view_more" target="_blank"><span>View more in Dribbble</span></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="page_footer_nav">
+    <a class="left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+      data-placement="top" title="{{page.previous.title}}">
+      About
+      <span>Learn more about me</span>
+    </a>
+    <a class="right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+      data-placement="top" title="{{page.next.title}}">
+      Contact
+      <span>Let's talk somethings</span>
+    </a>
+  </div>
+</section>
+
+<!-- javascripts -->
+<script src="{{ site.baseurl }}/assets/javascripts/jribbble.min.js"></script>
+
+<script>
+  jribbble.shots({
+    token: "935c9bc6c35616b09c4214afb1e6ef80f22aa8175e1766881e00c2289ee2911e",
+    page: 1,
+    per_page: 6,
+  }, function (shotsArray) {
+    document.getElementById("dribbble-shots").innerHTML = shotsArray.reduce(function (html, shot) {
+      return html + '<a href="' + shot.html_url + '" target="_blank"><img src="' + shot.images.hidpi + '"></a>';
+    }, "");
+  });
+</script>
