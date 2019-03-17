@@ -46,18 +46,20 @@
     src = 'https://i.loli.net/2019/03/17/5c8d2a2ed4d81.jpg'
     )
   WrapProject.presen(
-    title = 'Presen',
-    info = 'ART DIRECTOR · Developer · 2017',
+    title = 'SmartHome web and App Design',
+    logo = './static/img/presen.svg',
+    button = 'Learn more',
     describe = 'Currently working in smartisan, I’m responsible for maintaining the daily iteration of.',
     url = 'https://presen.com',
-    src = 'https://i.loli.net/2019/02/24/5c72a73b62b94.jpg'
+    src = 'https://i.loli.net/2019/03/17/5c8e108b28585.png'
     )
   WrapProject.petme(
-    title = 'Petme',
-    info = 'ART DIRECTOR · Developer · 2017',
+    title = 'Everything about your pet is here',
+    info = 'Brand',
+    button = 'Learn more',
     describe = 'Currently working in smartisan, I’m responsible for maintaining the daily iteration of.',
     url = 'https://presen.com',
-    src = 'https://i.loli.net/2019/02/24/5c72a7606e115.jpg'
+    src = 'https://i.loli.net/2019/03/17/5c8e1184c38ca.png'
     )
   WrapDribbble
   WrapInstagram

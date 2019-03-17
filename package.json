@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "midnight.js": "^1.1.1",
     "vue": "^2.5.2",
     "vue-meta": "^1.5.8",
     "vue-router": "^3.0.1"

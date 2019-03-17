@@ -20,13 +20,18 @@ html
 // Nav
 .top_nav
   position: fixed
-  width: calc(100% - 120px)
-  margin: 48px auto
+  width: 100%
+  padding: 48px 60px
   z-index: 10
   transform: translateX(-50%)
   left: 50%
   display: flex
   align-items: center
+  transition: top 0.2s ease-out;
+  top: 0
+  &.nav-up {
+    top: -120px;
+  }
   .nav_link
     font-size: $h4
     color: $gray-light
@@ -65,7 +70,7 @@ html
     z-index: 10
     &.right
       position: absolute
-      right: 0
+      right: 60px
     i
       position: absolute
       -webkit-transform: translate(-50%, -50%)
@@ -961,8 +966,11 @@ html
     .case_about,
     .case_info
       color: rgba(255, 255, 255, 0.9)
+    .case_button
+      background-color: rgba(255, 255, 255, .1)
+      color: rgba(255, 255, 255, .5)
   &.presen
-    background-color: #FBFCFE
+    background: linear-gradient(149.21deg, #F76192 26.14%, #EF3760 95.86%);
     .case_title,
     .case_link
       color: #111
@@ -1832,3 +1840,18 @@ a
 //   -webkit-mask-image: url("../images/logo/o.svg");
 //   mask-image: url("../images/logo/o.svg");
 // }
+
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
