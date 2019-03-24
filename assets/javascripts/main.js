@@ -89,7 +89,7 @@ var galleryFeed = new Instafeed({
   accessToken: "3253094037.1677ed0.8b08678d71d14703994ed3e7a9c2497a",
   resolution: "standard_resolution",
   useHttp: "true",
-  limit: 20,
+  limit: 6,
   template: '<div class="grid-item"><a href="{{link}}"><img src="{{image}}" class="img-responsive"></div></a></div>',
   target: "instafeed-gallery-feed",
   after: function() {

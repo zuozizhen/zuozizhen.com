@@ -419,6 +419,7 @@ html
       width: calc(100% - 140px)
       padding: 0
 .home_about
+.ins
   .content
     @extend $grid-1-1_5
 @media only screen and (max-width: 750px)
@@ -514,26 +515,26 @@ html
   color: $gray-lightest
   display: block
   position: relative
+  &:not(:first-child)
+    padding-top: 40px
+  &:not(:last-child)
+    padding-bottom: 40px
+    border-bottom: 1px solid #E4E4E4
 .blog_tag
   display: block
-  font-family: BitterR
+  font-family: AcuminR
+  font-size: 17px
   margin-left: 1px
-  color: #8e8e8e
-  letter-spacing: 1px
-  text-transform: uppercase
+  color: #999999
+  letter-spacing: .5px
   -webkit-transition: all 0.5s
   transition: all 0.5s
   span
-    font-size: 11px
-    font-weight: 500
-  span:after
-    content: " · "
-    display: inline
-  span:last-child:after
-    content: ""
-    display: inline
+    &:not(:last-child):after
+      content: ","
+      display: inline
 .blog_title
-  font-size: 26px
+  font-size: 30px
   font-weight: 600
   font-family: $family-title
   display: inline-block
@@ -543,6 +544,7 @@ html
   color: $gray-dark
   line-height: 1.5em
   position: relative
+  margin-bottom: 16px
   z-index: 2
 .blog_item_grid .blog_title
   text-overflow: ellipsis
@@ -1148,8 +1150,8 @@ html
   margin: 0 auto
   .grid-sizer,
   .grid-item
-    width: 30%
-    margin: 8px
+    width: 40%
+    margin: 20px
   &:after
     content: ''
     display: block
@@ -1170,7 +1172,7 @@ html
   display: grid
   grid-template-columns: 1fr 1fr 1fr
   grid-template-rows: auto
-  grid-gap: 16px
+  grid-gap: 40px
   a
     max-height: 300px
     border-radius: 2px

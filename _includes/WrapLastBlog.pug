@@ -1,0 +1,19 @@
+section.section_full.develop
+  .content
+    .section_title
+      | Keep
+      br
+      | thinking
+    .blog_list_n
+      | {% for post in site.posts limit:3 %}
+      .blog_item
+        .blog_info
+          a(href='{{ post.url }}')
+            .blog_title {{ post.title }}
+            .blog_tag
+              | {% for tag in post.tags limit:3 %}
+              span {{tag}}
+              | {% endfor %}
+              | -
+              | {{ post.date | date: '%B %d, %Y' }}
+      | {% endfor %}
