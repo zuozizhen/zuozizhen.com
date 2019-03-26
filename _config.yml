@@ -46,3 +46,12 @@ kramdown:
 # Analytics settings
 
 ga_track_id: 'UA-111351144-1'
+
+destination: _site
+jekyll-bliss:
+  build-folder: _build
+  delete-build-folder: true
+  source: .
+  debug: false
+  livereload: false
+  watch: false

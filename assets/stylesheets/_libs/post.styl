@@ -1,0 +1,302 @@
+.post
+  .post_top
+    display: grid
+    grid-template-columns: 1fr 1.2fr
+    grid-column-gap: 80px
+    padding-top: 180px
+@media only screen and (max-width: 750px)
+  .post
+    .post_top
+      grid-template-columns: 1fr
+      grid-gap: 50px
+      padding-top: 140px
+.post_top_content
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  .blog_title
+    margin-top: 14px
+    margin-left: -2px
+    font-size: 3.5vw
+  .blog_tag span
+    letter-spacing: 2px
+    color: #8e8e8e
+    font-size: 13px
+    font-weight: 500
+@media only screen and (min-width: 1400px)
+  .post_top_content
+    .blog_title
+      font-size: 49px
+@media only screen and (max-width: 750px)
+  .post_top_content
+    position: static
+    transform: translateY(0)
+    .blog_title
+      font-size: 30px
+.post-wrapper
+  margin-left: auto
+  margin-right: auto
+  margin-top: 100px
+  font-size: 17px
+  color: $gray-dark
+  line-height: 34px
+  overflow-x: hidden
+  font-family: $family-post
+  max-width: 900px
+.blog_tips
+  font-weight: 400
+  font-size: 14px
+  color: #7E7E7E
+  line-height: 30px
+  letter-spacing: 1px
+  display: block
+  margin-top: 12px
+  text-transform: uppercase
+.post-wrapper a,
+.post-wrapper ol li,
+.post-wrapper p,
+.post-wrapper ul li
+  font-weight: 400
+@media only screen and (max-width: 750px)
+  .post-wrapper
+    font-size: 16px
+    line-height: 32px
+    padding-bottom: 30px
+    margin-top: 30px
+  .post-wrapper p
+    padding-left: 0 !important
+    padding-right: 0 !important
+    margin-bottom: 10px !important
+  .post-wrapper img
+    width: 100% !important
+    margin-left: 0 !important
+.post-wrapper img
+  display: block
+  margin-top: 20px
+  margin-bottom: 20px
+  max-width: calc(100% + 50px)
+  min-width: 100%
+  position: relative
+  left: 50%
+  transform: translateX(-50%)
+  // border: 1px solid rgba(0, 0, 0, .1);
+.post-wrapper iframe
+  display: block
+  margin: 0 auto
+  width: calc(100% - 110px)
+.post-wrapper hr,
+.post-wrapper iframe
+  margin-bottom: 30px
+.post-wrapper blockquote,
+.post-wrapper h1,
+.post-wrapper h2,
+.post-wrapper h3,
+.post-wrapper h4,
+.post-wrapper p
+  padding-left: 80px
+  padding-right: 80px
+.post-wrapper hr,
+.post-wrapper pre
+  margin-left: 80px
+  margin-right: 80px
+@media only screen and (max-width: 750px)
+  .post-wrapper blockquote,
+  .post-wrapper p
+    padding-left: 30px
+    padding-right: 30px
+  .post-wrapper h1,
+  .post-wrapper h2,
+  .post-wrapper h3,
+  .post-wrapper h4
+    padding-left: 0
+    padding-right: 0
+.post-wrapper a
+  color: $gray-dark
+  text-decoration: underline
+  transition: 0.3s color
+.post-wrapper h1
+  font-size: 30px
+  margin: 60px 0 30px
+.post-wrapper h2
+  font-size: 24px
+  margin: 45px 0 20px
+.post-wrapper h3
+  font-size: 20px
+  margin: 40px 0 20px
+.post-wrapper h4
+  font-size: 18px
+  margin: 30px 0 15px
+.post-wrapper h5
+  font-size: 16px
+  margin: 30px 0 15px
+.post-wrapper h6
+  text-align: center
+  font-size: 14px
+  font-weight: 400
+  margin-top: -20px
+  color: $gray-light
+  a
+    color: #707070
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a
+  font-weight: inherit !important
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight: 600
+  color: $gray-dark
+.post-wrapper h5+p
+  margin-top: 5px
+.post-wrapper h6+p
+  margin-top: 5px
+.post-wrapper ol,
+.post-wrapper ul
+  margin-bottom: 30px
+  padding-left: 105px
+  padding-right: 80px
+  p
+    padding: 0
+.post-wrapper ol li:not(:last-child),
+.post-wrapper ul li:not(:last-child)
+  padding-bottom: 10px
+.post-wrapper ol li,
+.post-wrapper ul li
+  padding-left: 4px
+.post-wrapper ol li *,
+.post-wrapper ul li *
+  padding-left: 0 !important
+.post-wrapper ol li,
+.post-wrapper ul li
+  line-height: 34px
+.post-wrapper p *
+  padding-left: 0 !important
+.post-wrapper ul
+  list-style: disc
+.post-wrapper ol
+  list-style: decimal
+.post-wrapper hr
+  height: 0
+  border: none
+  border-top: 1px solid $gray-lighter
+@media screen and (max-width: 750px)
+  .post-wrapper ol,
+  .post-wrapper ul
+    padding-left: 30px
+    padding-right: 0
+@media screen and (max-width: 500px)
+  .post-wrapper ol,
+  .post-wrapper ul
+    padding-left: 20px
+.post-wrapper ol ol,
+.post-wrapper ol ul,
+.post-wrapper ul ol,
+.post-wrapper ul ul
+  margin-bottom: 5px
+.post-wrapper li p
+  margin: 0 0 5px
+.post-wrapper li h1,
+.post-wrapper li h2,
+.post-wrapper li h3,
+.post-wrapper li h4,
+.post-wrapper li h5,
+.post-wrapper li h6
+  line-height: 2
+  margin-top: 20px
+.post-wrapper .pager li
+  width: 48%
+.post_pagination
+  line-height: 40px
+  margin: 60px auto 30px auto
+  overflow: auto
+  width: 900px
+  padding: 0 80px
+.post_pagination .next
+  float: right
+.post_pagination .previous
+  float: left
+.post_pagination a
+  color: $gray-dark
+  font-size: 28px
+  font-weight: 500
+  text-decoration: none
+.post_pagination span
+  color: $gray
+  font-size: 18px
+  font-weight: 500
+  line-height: 30px
+  text-decoration: none
+  transition: 0.3s color
+@media only screen and (max-width: 750px)
+  .post_pagination
+    width: auto
+    padding: 0
+    margin: 0 auto 40px auto
+  .post_pagination a
+    font-size: 24px
+  .post_pagination span
+    font-size: 12px
+    display: block
+    max-width: 200px
+    padding-top: 2px
+.post-wrapper .pager li > a
+  width: 100%
+.post-wrapper .pager li > a > span
+  color: $gray
+  font-weight: normal
+  letter-spacing: 0.5px
+.post-wrapper p
+  margin-bottom: 30px
+.blog_header_img
+  width: 100%
+  object-fit: cover
+  border: 1px solid rgba(0, 0, 0, 0.05)
+  border-radius: 10px
+  z-index: 10000
+/*	Blockquotes  */
+blockquote p
+  font-size: 17px
+  font-weight: 500 !important
+  line-height: 38px
+  color: #808080
+  padding-right: 0 !important
+  padding-left: 30px !important
+blockquote
+  position: relative
+blockquote p a
+  margin-right: 20px
+blockquote:before
+  content: ""
+  position: absolute
+  -webkit-transform: translate(0, -50%)
+  transform: translate(0, -50%)
+  left: 81px
+  top: 50%
+  height: calc(100% - 10px)
+  width: 6px
+  /* or 100px */
+  border-left: 3px solid $gray
+@media only screen and (max-width: 750px)
+  blockquote,
+  blockquote p
+    font-size: 16px
+    padding-left: 20px !important
+    padding-right: 10px !important
+  blockquote:before
+    left: 0px
+blockquote cite
+  display: block
+  font-size: 12px
+  color: $gray
+blockquote cite:before
+  content: " "
+blockquote cite a,
+blockquote cite a:visited,
+blockquote cite a:visited
+  color: $gray
