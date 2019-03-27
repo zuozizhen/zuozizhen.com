@@ -77,8 +77,8 @@ html
       width: 22px
       height: 26px
       background-size: 20px 20px
-      -webkit-mask-image: url("../assets/images/logo/z.svg")
-      mask-image: url("../assets/images/logo/z.svg")
+      -webkit-mask-image: url("../images/logo/z.svg")
+      mask-image: url("../images/logo/z.svg")
       transition: all 0.3s
     &:hover i
       opacity: .8
@@ -176,7 +176,7 @@ html
     font-family: AcuminBd
     font-size: 60px
     color: $gray-dark
-    margin-bottom: 120px
+    margin-bottom: 150px
   .content
     max-width: 1540px
     padding: 140px 150px
@@ -189,26 +189,32 @@ html
       padding: 140px 120px
   &.ins
     background-color: #fff
+    .content
+      padding: 140px 120px;
   &.blogs
     background-color: #fff
   &.more
     background-color: #FBFBFB
-    height: 100vh
+    position relative
+    .content
+      padding: 200px 150px
+    .copyright
+      font-family: AcuminR
+      font-size: 14px
+      color: #BDBDBD
+      position: absolute
+      transform: translateX(-50%)
+      left 50%
+      bottom: 30px
+      width: fit-content
     .footer
       .desc
-        font-family: RobotoMonoRegular
+        font-family: RobotoMonoR
         font-size: 14px
-        color: $gray-dark
-        line-height: 24px
+        color: #6f6f6f
+        line-height: 26px
+        width: 70%
         // text-align: justify;
-      .copyright
-        font-family: AcuminR
-        font-size: 14px
-        line-height: 30px
-        color: $gray-dark
-        position: absolute
-        right: 50px
-        bottom: 50px
     .item_title
       font-family: AcuminR
       font-size: 24px
@@ -225,12 +231,7 @@ html
       margin-bottom: 0
     .section_item
       @extend $grid-1-830
-    p
-      font-family: BitterRegular
-      font-size: $h4
-      line-height: 36px
-      color: $gray-light
-      margin-top: 10px
+      margin-bottom: 100px
   &.cases
     .case
       @extend $grid-1-1
@@ -400,10 +401,18 @@ html
     .content
       width: calc(100% - 140px)
       padding: 0
-.home_about
 .ins
   .content
-    @extend $grid-1-1_5
+      display: grid
+      grid-template-columns: 1fr 2.2fr
+      grid-column-gap: 40px
+      grid-row-gap: 40px
+.home_about
+  .content
+      display: grid
+      grid-template-columns: 1fr 2.3fr
+      grid-column-gap: 40px
+      grid-row-gap: 40px
 @media only screen and (max-width: 750px)
   .home_about
     margin-bottom: 40px
@@ -498,9 +507,9 @@ html
   display: block
   position: relative
   &:not(:first-child)
-    padding-top: 40px
+    padding-top: 50px
   &:not(:last-child)
-    padding-bottom: 40px
+    padding-bottom: 50px
     border-bottom: 1px solid #E4E4E4
 .blog_tag
   display: block
@@ -626,7 +635,9 @@ html
     margin-bottom: 6px
 .develop
   .content
-    @extend $grid-1-830
+    display: grid
+    grid-template-columns: 1fr 2.2fr
+    grid-column-gap: 70px
 .readinglists
   .blog_list_book
     display: grid
@@ -991,7 +1002,7 @@ html
   position: relative
   display: inline-block
   margin-top: 40px
-  font-family: BitterRegular
+  font-family: AcuminBd
   font-size: 20px
   margin-bottom: 20px
   left: 50%
@@ -1011,12 +1022,12 @@ html
       display: block
       width: 100%
       height: 3px
-      background-color: rgba(255, 255, 255, 0.4)
+      background-color: #e7e7e7
       position: absolute
       top: 60px
       transition: all 0.3s
     &:after
-      background: #fff
+      background: #b6b6b6
       transform: scale3d(0, 1, 1)
       transform-origin: 0% 50%
       transition: transform 0.3s
@@ -1039,6 +1050,11 @@ html
     transition: transform 0.3s
   &:hover:after
     transform: scale3d(1, 1, 1)
+.develop
+  .view_more
+    left: 0
+    margin-top: 60px
+    transform: translateX(0);
 .link_content
   position: relative
   padding-bottom: 40px
@@ -1051,7 +1067,6 @@ html
     margin: 0 20px
 // Contact
 .contact_item
-  margin-bottom: 60px
   a
     padding-bottom: 2px
     position: relative
@@ -1132,8 +1147,8 @@ html
   margin: 0 auto
   .grid-sizer,
   .grid-item
-    width: 40%
-    margin: 20px
+    width: 50%
+    padding: 30px
   &:after
     content: ''
     display: block
@@ -1154,7 +1169,7 @@ html
   display: grid
   grid-template-columns: 1fr 1fr 1fr
   grid-template-rows: auto
-  grid-gap: 40px
+  grid-gap: 60px
   a
     max-height: 300px
     border-radius: 2px
@@ -1362,17 +1377,18 @@ html
   display: block
   border: none
 // media queries
-@media screen and (min-width: 500px)
-  .grid-sizer,
-  .grid-item
-    width: 33.333%
-@media screen and (min-width: 992px)
-  .grid-sizer,
-  .grid-item
-    width: 20%
-  // .img-featured-container .description-container .caption {
-  //   // display: block;
-  // }
+
+@media screen and (max-width: 1120px)
+  #instafeed-gallery-feed .grid-sizer,
+  #instafeed-gallery-feed .grid-item
+    width: 50%
+@media screen and (max-width: 750px)
+  #instafeed-gallery-feed .grid-sizer,
+  #instafeed-gallery-feed .grid-item
+    width: 100%
+.img-featured-container .description-container .caption {
+  // display: block;
+}
 //404
 /* Styles of the 404 page of my website. */
 .page_error
