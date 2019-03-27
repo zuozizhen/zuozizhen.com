@@ -109,16 +109,6 @@ html
     font-size: 46px
     font-weight: 800
     max-width: 240px
-  .section_item
-    margin-top: 10px
-    .item_content:not(:last-child)
-      margin-bottom: 60px
-    p
-      font-family: BitterRegular
-      font-size: $h4
-      line-height: 36px
-      color: $gray-light
-      margin-top: 10px
   .item_title
     font-size: 28px
     font-weight: 800
@@ -186,8 +176,7 @@ html
     font-family: AcuminBd
     font-size: 60px
     color: $gray-dark
-    letter-spacing: -2px
-    margin-bottom: 60px
+    margin-bottom: 120px
   .content
     max-width: 1540px
     padding: 140px 150px
@@ -203,52 +192,45 @@ html
   &.blogs
     background-color: #fff
   &.more
+    background-color: #FBFBFB
     height: 100vh
     .footer
-      height: 180px
-      border-top: 2px solid #1F1F1F
-      padding: 50px
-      position: absolute
-      bottom: 0
-      width: 100%
       .desc
-        position: absolute
-        transform: translateY(-50%)
-        top: 50%
-        width: 800px
-      .desc_title
-        font-family: RobotoMonoBold
-        color: #fff
-        margin-bottom: 6px
-        font-size: 14px
-        display: inline-block
-      p
         font-family: RobotoMonoRegular
         font-size: 14px
-        color: #A0A0A0
+        color: $gray-dark
         line-height: 24px
         // text-align: justify;
       .copyright
-        font-family: RobotoMonoRegular
+        font-family: AcuminR
         font-size: 14px
         line-height: 30px
-        color: #A0A0A0
+        color: $gray-dark
         position: absolute
         right: 50px
         bottom: 50px
-    .section_title
-      color: #fff
     .item_title
-      color: #fff
+      font-family: AcuminR
+      font-size: 24px
+      color: #6f6f6f
     .contact_item .item_desc
-      font-family: RobotoMonoRegular
-      color: #a1a1a1
+      font-family: AcuminBd
+      font-size: 30px
+      color: $gray-dark
     .contact_item a:before
-      background-color: #3b3b3b
+      background-color: #e7e7e7
     .contact_item a:after
-      background-color: #fff
+      background-color: #b6b6b6
     .contact_item:last-child
       margin-bottom: 0
+    .section_item
+      @extend $grid-1-830
+    p
+      font-family: BitterRegular
+      font-size: $h4
+      line-height: 36px
+      color: $gray-light
+      margin-top: 10px
   &.cases
     .case
       @extend $grid-1-1
@@ -1081,7 +1063,7 @@ html
       height: 3px
       background-color: #dfdfdf
       position: absolute
-      top: 55px
+      top: 64px
       transition: all 0.3s
     &:after
       background: $gray
