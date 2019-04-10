@@ -4,11 +4,5 @@ nav_list:
 - title: Home
   url: /
 
-- title: Work
-  url: /work
-
 - title: blog
   url: /blog
-
-- title: About
-  url: /about
