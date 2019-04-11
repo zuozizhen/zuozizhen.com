@@ -186,18 +186,30 @@ html
     font-size: 28px
   &.home_about
     .content
-      padding: 140px 120px
+      padding: 140px 120px 0 120px
+  &.dribbble
+    background-color: #FBFBFB
+    .content
+      padding: 200px 120px;
   &.ins
     background-color: #fff
     .content
-      padding: 140px 120px;
+      padding: 200px 120px;
+    .section_title
+      margin-top: 10px
   &.blogs
     background-color: #fff
   &.more
     background-color: #FBFBFB
     position relative
+    height 100vh
     .content
+      position absolute
+      top 50%
+      left 50%
+      transform: translate(-50%, -50%)
       padding: 200px 150px
+      width fit-content
     .copyright
       font-family: AcuminR
       font-size: 14px
@@ -348,7 +360,7 @@ html
     margin: 0 auto
     position: relative
     .section_title
-      margin-top: 340px
+      margin-top: 430px
 .home_top
   position: relative
   height: 100vh
@@ -638,6 +650,7 @@ html
     display: grid
     grid-template-columns: 1fr 2.2fr
     grid-column-gap: 70px
+    padding: 200px 120px;
 .readinglists
   .blog_list_book
     display: grid
@@ -1274,7 +1287,7 @@ html
   position: relative
   background-color: #FBFBFB
   .desc
-    padding: 80px
+    padding: 100px 80px
 
   .desc_title
     font-family: AcuminBd
@@ -1290,6 +1303,8 @@ html
     line-height: 38px
     margin-bottom: 40px
     // text-align: justify;
+  p.last
+    margin-bottom: 0
   .social_link
     color: #A0A0A0
     font-family: BitterR
