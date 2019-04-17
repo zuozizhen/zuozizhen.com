@@ -2,22 +2,23 @@
 layout: default
 ---
 
-section.section.post
-  .post_top
-    .blog_item
-      .post_top_content
-        span.blog_tag
-          | {% for tag in page.tags %}
-          span {{tag}}
-          | {% endfor %}
-        span.blog_title {{ page.title }}
-        span.blog_tips ARTICLE POSTED ON {{ page.date | date: '%B %d, %Y' }}
-    | {% if page.cover %}
-    img.blog_header_img(src='{{ page.cover }}')
-    | {% endif %}
-  .post-wrapper
-    | {{ content }}
-  .post_pagination
+section.section_full.post
+  .content
+    .post_top
+      .blog_item
+        .post_top_content
+          span.blog_tag
+            //- | {% for tag in page.tags %}
+            //- span {{tag}}
+            //- | {% endfor %}
+          span.blog_title {{ page.title }}
+          span.blog_tips ARTICLE POSTED ON {{ page.date | date: '%B %d, %Y' }}
+      | {% if page.cover %}
+      img.blog_header_img(src='{{ page.cover }}')
+      | {% endif %}
+    .post-wrapper
+      | {{ content }}
+    .post_pagination
     | {% if page.previous.url %}
     a.previous(href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}", data-toggle='tooltip', data-placement='top', title='{{page.previous.title}}')
       | 上一篇

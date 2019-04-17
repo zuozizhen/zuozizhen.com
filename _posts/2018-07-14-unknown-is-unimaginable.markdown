@@ -3,8 +3,9 @@ layout:     "post"
 title:      "未知是无法想象的"
 subtitle:   "unknown is unimaginable"
 date:       "2018-07-14"
-cover:      "https://i.loli.net/2018/12/12/5c0ff14792a2b.jpg"
-tag:        [thinking, read]
+cover:      "https://i.loli.net/2019/04/12/5cb077055b1e9.jpg"
+tag:        [Thinking, Read]
+category:   thinking
 excerpt:    "我们处在这个多维世界当中，没有任何事物是独立存在的，当我们解决问题时，如果我们能调用其所涉及到的各学科知识综合起来分析问题..."
 ---
 

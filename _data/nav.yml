@@ -4,5 +4,5 @@ nav_list:
 - title: Home
   url: /
 
-- title: blog
-  url: /blog
+- title: Blog
+  url: /blog/

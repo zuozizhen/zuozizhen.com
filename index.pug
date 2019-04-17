@@ -9,14 +9,40 @@ section.home_top
     .home_top_title
       #home_top_title
         .sub_title
-        .main_title.first
+        .main_title.first(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
           | Hello! I’m Zizhen, a UI designer
-        .main_title.second
+        .main_title.second(data-aos="fade-up", data-aos-delay="200", data-aos-duration="500", data-aos-easing="ease-out-cubic")
           | and Indie Developer in China.
   include ModifyScroll
 include WrapAbout
+
+section.section_full.cases.figmachina
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .case_left
+      .case_about
+        //- .case_logo
+        //-   img(src='assets/images/logo/cachemoment.svg')
+        .case_info Personal Product
+        .case_title FigmaChina.com
+        a.case_button(href='https://figmachina.com') Learn more
+    .case_right
+      .case_cover
+        img.lozad(src='assets/images/home/figmachina.jpg', alt='')
+
+section.section_full.cases.smartisan
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .case_left
+      .case_about
+        .case_logo
+          img(src='assets/images/logo/smartisan.svg')
+        //- .case_info Personal Product
+        .case_title Smartisan OS 7.0 Design System
+        a.case_button(href='https://www.smartisan.com') Learn more
+    .case_right
+      .case_cover
+        img.lozad(src='assets/images/home/smartisan-web.jpg', alt='')
 section.section_full.cases.elife
-  .case
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .case_left
       .case_about
         //- .case_logo
@@ -27,21 +53,9 @@ section.section_full.cases.elife
         a.case_button(href='https://startelife.com') Learn more
     .case_right
       .case_cover
-        img.lozad(src='https://i.loli.net/2019/03/16/5c8d124cb1a68.jpg', alt='')
-section.section_full.cases.smartisan
-  .case
-    .case_left
-      .case_about
-        .case_logo
-          img(src='assets/images/logo/smartisan.svg')
-        //- .case_info Personal Product
-        .case_title Smartisan OS 7.0 Design System
-        a.case_button(href='https://www.smartisan.com') Learn more
-    .case_right
-      .case_cover
-        img.lozad(src='https://i.loli.net/2019/02/24/5c729f7f044db.jpg', alt='')
+        img.lozad(src='assets/images/home/elife.jpg', alt='')
 section.section_full.cases.designer_and_studio
-  .case
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .case_left
       .case_about
         //- .case_logo
@@ -51,9 +65,9 @@ section.section_full.cases.designer_and_studio
         a.case_button(href='https://designerandstudio.com') Learn more
     .case_right
       .case_cover
-        img.lozad(src='https://i.loli.net/2019/02/24/5c729f28a7dc4.jpg', alt='')
+        img.lozad(src='assets/images/home/designerandstudio.jpg', alt='')
 section.section_full.cases.cachemoment
-  .case
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .case_left
       .case_about
         .case_logo
@@ -63,9 +77,9 @@ section.section_full.cases.cachemoment
         a.case_button(href='https://www.cachemoment.com') Learn more
     .case_right
       .case_cover
-        img.lozad(src='https://i.loli.net/2019/03/17/5c8d2a2ed4d81.jpg', alt='')
+        img.lozad(src='assets/images/home/cachemoment.jpg', alt='')
 section.section_full.cases.presen
-  .case
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .case_left
       .case_about
         .case_logo
@@ -75,19 +89,19 @@ section.section_full.cases.presen
         a.case_button(href='https://presen.com') Learn more
     .case_right
       .case_cover
-        img.lozad(src='https://i.loli.net/2019/03/17/5c8e108b28585.png', alt='')
-section.section_full.cases.petme
-  .case
-    .case_left
-      .case_about
-        //- .case_logo
-        //-   img(src='assets/images/logo/presen.svg')
-        .case_info Brand
-        .case_title Everything about your pet is here
-        a.case_button(href='https://presen.com') Learn more
-    .case_right
-      .case_cover
-        img.lozad(src='https://i.loli.net/2019/03/17/5c8e1184c38ca.png', alt='')
+        img.lozad(src='assets/images/home/presen.png', alt='')
+//- section.section_full.cases.petme
+//-   .case
+//-     .case_left
+//-       .case_about
+//-         //- .case_logo
+//-         //-   img(src='assets/images/logo/presen.svg')
+//-         .case_info Brand
+//-         .case_title Everything about your pet is here
+//-         a.case_button(href='https://presen.com') Learn more
+//-     .case_right
+//-       .case_cover
+//-         img.lozad(src='https://i.loli.net/2019/03/17/5c8e1184c38ca.png', alt='')
 include WrapLastBlog
 include WrapDribbble
 include WrapInstagram

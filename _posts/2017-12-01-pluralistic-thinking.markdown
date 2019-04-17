@@ -3,8 +3,9 @@ layout:     "post"
 title:      "为什么我们需要多元化思维"
 subtitle:   "pluralistic thinking"
 date:       "2017-12-01"
-cover:      "https://i.loli.net/2018/12/12/5c0ff165bc4a3.jpg"
-tag:        [thinking, design, beyond design]
+cover:      "https://i.loli.net/2019/04/12/5cb077182a147.jpg"
+tag:        [Thinking, Read]
+category:   thinking
 excerpt:    "我们处在这个多维世界当中，没有任何事物是独立存在的，当解决问题时，如果我们能调用其所涉及到的各学科知识综合起来分析问题..."
 ---
 

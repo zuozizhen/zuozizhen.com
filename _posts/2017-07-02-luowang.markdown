@@ -3,8 +3,9 @@ layout:     "post"
 title:      "让耳朵放个假 - 「落网」"
 subtitle:   "luowang"
 date:       "2017-07-02"
-cover:      "https://i.loli.net/2018/12/12/5c0ff1bb222f3.jpg"
-tag:        [music, playlist]
+cover:      "https://i.loli.net/2019/04/12/5cb0770dcc3ce.jpg"
+tag:        [Music, Playlist]
+category:   thinking
 excerpt:    "落网上的歌不是普通的流行音乐，而是将小众的独立音乐做成了一个个期刊，每一个都是独具特色。"
 ---
 
