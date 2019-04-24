@@ -713,18 +713,13 @@ $line-height-abs = - $line-height
     display: none
 .blog_list_grid
   display: grid
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto
   grid-gap: 60px
 @media only screen and (max-width: 750px)
   .blog_list_grid
-    grid-template-columns: 1fr
-    grid-gap: 50px
-    .blog_item:nth-child(1)
-      grid-column-start: 1
-      grid-column-end: 2
-      .blog_info
-        text-align: left
+    .blog_info
+      text-align: left
 @media only screen and (max-width: 1024px)
   .tags_list
     display: none
@@ -998,11 +993,26 @@ $line-height-abs = - $line-height
       .footer .desc
         width 100%
 
-
     &.develop
       .content
         grid-template-columns 1fr
         padding: 90px 60px
+    &.dribbble
+      .content
+        padding: 90px 60px
+    &.ins
+      .content
+        padding: 90px 30px
+    &.more
+      height auto
+      .section_title
+        font-size 40px
+      .contact_item
+        margin-bottom 60px
+        .item_title
+          font-size: 20px
+        .item_desc
+          font-size: 24px
 .work_info
   padding-top: 120px
   margin: 0 auto
@@ -1067,6 +1077,7 @@ $line-height-abs = - $line-height
     .case_button
       background-color: rgba(255, 255, 255, .1)
       color: rgba(255, 255, 255, .5)
+      margin-right: 20px
       &:hover
         color: rgba(255, 255, 255, .9)
   &.presen
@@ -1291,11 +1302,10 @@ $line-height-abs = - $line-height
     grid-template-columns: 1fr
 #dribbble-shots
   display: grid
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto
   grid-gap: 60px
   a
-    max-height: 300px
     border-radius: 2px
     &:hover img
       opacity: .9
@@ -1303,8 +1313,6 @@ $line-height-abs = - $line-height
       opacity: 1
       transition: all .3s
       border-radius: 2px
-      max-width: 400px
-      max-height: 300px
       width: 100%
 @media only screen and (max-width: 750px)
   #dribbble-shots
