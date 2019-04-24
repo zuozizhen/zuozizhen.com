@@ -1,6 +1,6 @@
 <img width="100" src="https://i.loli.net/2019/03/03/5c7ac003904f0.jpg">
 
-# zuonx
+# ZizhenZuo.com
 
 > This is my personal website
 
