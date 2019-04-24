@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+section.home_top
+  .content
+    .home_top_title
+      #home_top_title
+        .sub_title
+        .main_title.first(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+          | Hello! I’m Zizhen, a UI designer
+        .main_title.second(data-aos="fade-up", data-aos-delay="200", data-aos-duration="500", data-aos-easing="ease-out-cubic")
+          | and Indie Developer in China.
+  include ModifyScroll
+include WrapAbout
+
+section.section_full.cases.figmachina
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .case_left
+      .case_about
+        //- .case_logo
+        //-   img(src='assets/images/logo/cachemoment.svg')
+        .case_info Personal Product
+        .case_title FigmaChina.com
+        a.case_button(href='https://figmachina.com', target="_blank") Open Site
+    .case_right
+      .case_cover
+        img.lozad(src='assets/images/home/figmachina.jpg', alt='')
+
+section.section_full.cases.elife
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .case_left
+      .case_about
+        //- .case_logo
+        //-   img(src= {{ include.src }})
+        //- A collection of commonly used design tools and other interesting gadgets
+        .case_info Personal Product
+        .case_title Start your Elife
+        a.case_button(href='https://startelife.com', target="_blank") Open Site
+    .case_right
+      .case_cover
+        img.lozad(src='assets/images/home/elife.jpg', alt='')
+
+section.section_full.cases.smartisan
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .case_left
+      .case_about
+        .case_logo
+          img(src='assets/images/logo/smartisan.svg')
+        //- .case_info Personal Product
+        .case_title Smartisan Website Library
+        a.case_button(href='https://www.smartisan.com', target="_blank") Open Site
+    .case_right
+      .case_cover
+        img.lozad(src='assets/images/home/smartisan-web.jpg', alt='')
+
+section.section_full.cases.designer_and_studio
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .case_left
+      .case_about
+        //- .case_logo
+        //-   img(src='assets/images/logo/smartisan.svg')
+        .case_info Personal Product
+        .case_title Best designer and studio website
+        a.case_button(href='https://designerandstudio.com', target="_blank") Open Site
+    .case_right
+      .case_cover
+        img.lozad(src='assets/images/home/designerandstudio.jpg', alt='')
+
+section.section_full.cases.cachemoment
+  .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .case_left
+      .case_about
+        .case_logo
+          img(src='assets/images/logo/cachemoment.svg')
+        //- .case_info Personal Product
+        .case_title CacheMoment
+        a.case_button(href='https://www.cachemoment.com', target="_blank") Open Site
+        a.case_button(href='https://www.cachemoment.com', target="_blank") Learn more
+    .case_right
+      .case_cover
+        img.lozad(src='assets/images/home/cachemoment.jpg', alt='')
+
+
+//- section.section_full.cases.presen
+//-   .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+//-     .case_left
+//-       .case_about
+//-         .case_logo
+//-           img(src='assets/images/logo/presen.svg')
+//-         //- .case_info Personal Product
+//-         .case_title SmartHome web and App Design
+//-         a.case_button(href='https://presen.com') Learn more
+//-     .case_right
+//-       .case_cover
+//-         img.lozad(src='assets/images/home/presen.png', alt='')
+//- section.section_full.cases.petme
+//-   .case
+//-     .case_left
+//-       .case_about
+//-         //- .case_logo
+//-         //-   img(src='assets/images/logo/presen.svg')
+//-         .case_info Brand
+//-         .case_title Everything about your pet is here
+//-         a.case_button(href='https://presen.com') Learn more
+//-     .case_right
+//-       .case_cover
+//-         img.lozad(src='https://i.loli.net/2019/03/17/5c8e1184c38ca.png', alt='')
+include WrapLastBlog
+include WrapDribbble
+include WrapInstagram
+include WrapContact

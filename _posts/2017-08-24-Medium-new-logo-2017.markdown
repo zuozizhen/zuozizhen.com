@@ -1,10 +1,11 @@
 ---
 layout:     "post"
-title:      "Medium 为什么又换了新 Logo"
+title:      "Medium 为什么又换了 Logo"
 subtitle:   "medium new logo 2017"
 date:       "2017-08-24"
-cover:      "https://i.loli.net/2018/12/12/5c0ff1951e9cf.jpg"
-tag:        [design, logo, medium]
+cover:      "https://i.loli.net/2019/04/12/5cb076ffc2063.jpg"
+tag:        [Logo, Medium]
+category:   design
 excerpt:    "这个在 2015 年为 Medium 创造的 Logo 无疑是成功的，那为什么 Medium 将近2年后选择换掉它呢？让我们先来回顾下 Medium 上一次 Logo 改版的原因..."
 ---
 

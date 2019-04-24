@@ -3,8 +3,9 @@ layout:     "post"
 title:      "只有此刻才能感觉到存在"
 subtitle:   "Only at this moment can feel presence"
 date:       "2017-07-01"
-cover:      "https://ws3.sinaimg.cn/large/006tNbRwly1fycg5fzq5pj31a40rw76b.jpg"
-tag:        [movie, playlist]
+cover:      "https://i.loli.net/2019/04/24/5cc070624b2a0.jpg"
+tag:        [Movie, Playlist]
+category:   thinking
 excerpt:    "爱和恐惧是生命中永恒存在的两个主题，无数艺术家围绕着这两个主题阐述着他们的理解，而这部纪录片则是导演给我们表达着他自己的理解。"
 ---
 

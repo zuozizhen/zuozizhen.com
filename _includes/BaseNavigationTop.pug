@@ -1,0 +1,6 @@
+nav.top_nav
+  | {% for item in site.data.nav.nav_list %}
+  |   <a class="nav_link {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+  | {% endfor %}
+  .logo_z.right(href='/')
+    i

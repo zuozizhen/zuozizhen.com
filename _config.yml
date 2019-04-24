@@ -1,16 +1,16 @@
 # Site settings
-title:     zuonx - Zizhen's personal site
+title:     Zizhen Zuo - Creative Designer & Developer
 email:     hjsfzzz@gmail.com
-description: "Design effective digital products."
-keywords: "zuonx, 左子祯, Zizhen Zuo, designer, studio, blog, personal site, freelancer"
+description: "I'm Zizhen Zuo (左子祯), a creative designer and developer form China."
+keywords: "左子祯, zizhen, zizhen zuo, zizhenzuo, china designer"
 author:   "Zizhen Zuo"
-url: "https://zuonx.com"
+url: "https://zizhenzuo.com"
 baseurl: ""
-name: zuonx
+name: zizhen
 
-# SCSS settings
-sass:
-  sass_dir: assets/stylesheets/_libs
+# # SCSS settings
+# sass:
+#   sass_dir: assets/stylesheets/_libs
 
 # SNS settings
 RSS: ture
@@ -32,6 +32,10 @@ anchorjs: true
 
 # plugins
 plugins: [jekyll-paginate]
+
+stylus:
+  compress: true
+  path: assets/stylesheets
 
 # Markdown settings
 markdown: kramdown

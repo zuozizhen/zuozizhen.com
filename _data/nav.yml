@@ -1,0 +1,8 @@
+nav_list_title: nav_list
+nav_list:
+
+- title: Home
+  url: /
+
+- title: Blog
+  url: /blog/
