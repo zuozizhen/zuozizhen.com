@@ -1,3 +1,3 @@
 netlify:
-  npm install jekyll-bliss -g
-  bliss build
+	npm install jekyll-bliss -g
+	bliss build
