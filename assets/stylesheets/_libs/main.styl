@@ -14,8 +14,8 @@ html
 // Nav
 .top_nav
   position: fixed
-  width: 100%
-  padding: 48px 64px
+  width: calc(100% - 128px)
+  padding: 48px 0
   z-index: 10
   transform: translateX(-50%)
   left: 50%
@@ -64,7 +64,7 @@ html
     z-index: 10
     &.right
       position: absolute
-      right: 60px
+      right: 0
     i
       position: absolute
       -webkit-transform: translate(-50%, -50%)
@@ -84,21 +84,12 @@ html
       opacity: .8
 @media only screen and (max-width: 1140px)
   .top_nav
-    width: calc(100% - 140px)
-    padding: 0
+    width: calc(100% - 100px)
+    padding: 48px 0
 @media only screen and (max-width: 750px)
   .top_nav
-    padding-left: 30px !important
-    padding-right: 30px !important
-    width: 100%
-    margin: 60px auto 40px auto
-    .logo_z
-      right: 30px
-    .nav_link
-      margin-right: 20px
-      font-size: 16px
-      &.right
-        display: none
+    width: calc(100% - 60px)
+
 // Module
 .section
   max-width: $max-width
@@ -176,7 +167,7 @@ html
     font-family: AcuminBd
     font-size: 54px
     color: $gray-dark
-    margin-bottom: 120px
+    margin-bottom: 60px
   .content
     max-width: 1540px
     padding: 200px 120px
@@ -271,15 +262,19 @@ html
           font-size: 18px
           display: inline-block
           border-radius: 4px
+          transition: all 0.3s ease
       .case_logo
         height: 52px
         margin-bottom: 20px
       .case_desc
         line-height: 30px
         margin-bottom: 10px
-      .case_left
       .case_right
         position: relative
+      .case_left
+        position: relative
+        max-width 660px
+        z-index 10
       .case_link
         font-family: RobotoMonoBold
         position: absolute
@@ -295,6 +290,14 @@ html
   .section
     padding: 0 150px
     margin: 100px auto
+
+@media only screen and (max-width: 750px)
+  .case_right
+    display: none
+  .case_left
+    position: relative
+    z-index 10
+
 .section_full_other
   position: relative
   background-color: $gray-dark
@@ -359,6 +362,11 @@ html
     position: relative
     .section_title
       margin-top: 430px
+@media only screen and (max-width: 750px)
+  .home_about
+    .content
+      .section_title
+        margin-top: 0
 .home_top
   position: relative
   height: 100vh
@@ -405,12 +413,6 @@ html
       right: 0
       margin-top: -108px
       color: #4D4D4D
-@media only screen and (max-width: 1140px)
-  .home_top,
-  .home_about
-    .content
-      width: calc(100% - 140px)
-      padding: 0
 .ins
   .content
       // display: grid
@@ -424,8 +426,6 @@ html
       grid-column-gap: 40px
       grid-row-gap: 40px
 @media only screen and (max-width: 750px)
-  .home_about
-    margin-bottom: 40px
   .home_about .content
     width: 100%
     display: grid
@@ -433,12 +433,14 @@ html
     grid-gap: 30px
     padding: 30px 30px
     margin: 0 auto
-    .about_desc p
-      font-size: 20px
-      font-weight: 400
-      color: #e8e8e8
-      line-height: 36px
-      margin-bottom: 16px
+    .about_desc
+      .desc
+        padding: 80px 60px
+      p
+        font-size: 20px
+        font-weight: 400
+        line-height: 36px
+        margin-bottom: 16px
 .about_info
   position: relative
   img
@@ -481,21 +483,62 @@ html
   .title_other
     display: block
     padding-top: 10px
+$line-height = 80px
+$line-height-abs = - $line-height
+
+.main_scroll
+  position: absolute
+  left: 180px
+  bottom: 21px
+  span
+    display block
+    position absolute
+    left 20px
+    bottom 20px
+    font-size 11px
+    color: #8a8a8a
+    width 140px
+.c-scrolldown
+  width: 1px
+  height: $line-height
+  position: absolute
+  background-color #333
+  bottom: 24px
+  left: 0
+  right: 0
+  margin: 0 auto
+  overflow: hidden
+.c-line
+  width: 100%
+  height: 100%
+  display: block
+  background: linear-gradient(to bottom, #DFDFDF 50%, rgba(255, 255, 255, 0) 50%)
+  background-position: 0 $line-height-abs
+  background-size: 100% 200%
+  animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite
+
+@keyframes scrolldown
+  0%
+    background-position: 0 $line-height-abs
+  75%
+    background-position: 0 0
+  100%
+    background-position: 0 $line-height
+@media only screen and (max-width: 1220px)
+  .home_top_title
+    left 100px
+    .main_title
+      font-size: 5.2vw
+  .main_scroll
+    left 100px
 @media only screen and (max-width: 750px)
   .about_info
     display: none
 @media only screen and (max-width: 750px)
-  .home_top
-    height: 100vh
-    .content
-      width: auto
-      height: 100vh
-      padding: 30px 30px
-    .home_top_title
-      font-size: 15vw
-      top: 25%
-    .home_top_title .home_top_title_swich a
-      width: 24px
+  .home_top_title
+    left 60px
+  .main_scroll
+    left 60px
 .main_desc
   font-family: BitterRegular
   font-size: 20px
@@ -733,7 +776,7 @@ html
   img
     display: block
     height: 100%
-.post 
+.post
  .content
    padding-top: 0
   .post_top_item
@@ -930,6 +973,36 @@ html
     position: relative
     padding: 90px 150px
     margin: 0 auto
+
+@media only screen and (max-width: 1140px)
+  .section_full
+    &.home_about
+      .content
+        padding: 90px 60px
+@media only screen and (max-width: 750px)
+  .section_full
+    .content
+      padding: 90px 60px
+    &.cases
+      .case
+        grid-template-columns 1fr
+        padding: 90px 60px
+        .case_about
+          .case_title
+            font-size 9vw
+    &.more
+      .content
+        padding: 90px 60px
+      .section_item
+        grid-template-columns 1fr
+      .footer .desc
+        width 100%
+
+
+    &.develop
+      .content
+        grid-template-columns 1fr
+        padding: 90px 60px
 .work_info
   padding-top: 120px
   margin: 0 auto
@@ -960,7 +1033,9 @@ html
       color: #fff
     .case_button
       background-color: #25262A
-      color: rgba(255, 255, 255, .8)
+      color: rgba(255, 255, 255, .6)
+      &:hover
+        color: rgba(255, 255, 255, .9)
   &.designer_and_studio
   &.smartisan
     .case_title,
@@ -971,6 +1046,8 @@ html
     .case_button
       background-color: #F2F2F2
       color: rgba(0, 0, 0, .3)
+      &:hover
+        color: rgba(0, 0, 0, .7)
   &.petme
     background-color: #FFC700
     .case_title,
@@ -990,6 +1067,8 @@ html
     .case_button
       background-color: rgba(255, 255, 255, .1)
       color: rgba(255, 255, 255, .5)
+      &:hover
+        color: rgba(255, 255, 255, .9)
   &.presen
     background: #fbfbfb
     .case_title,
@@ -1009,6 +1088,8 @@ html
     .case_button
       background-color: rgba(255, 255, 255, .1)
       color: rgba(255, 255, 255, .5)
+      &:hover
+        color: rgba(255, 255, 255, .9)
   &.ds
     background-image: linear-gradient(225deg, #e84efb 0%, #7b42ff 100%)
   .red
@@ -1318,7 +1399,6 @@ html
   background-color: #FBFBFB
   .desc
     padding: 100px 80px
-
   .desc_title
     font-family: AcuminBd
     font-size: 24px
@@ -1333,6 +1413,9 @@ html
     line-height: 38px
     margin-bottom: 40px
     // text-align: justify;
+    i
+      font-family BitterBd
+      color rgba(0,0,0,.6)
   p.last
     margin-bottom: 0
   .social_link
@@ -1895,44 +1978,3 @@ a
     transform: translateY(-100%);
 }
 
-$line-height = 80px
-  $line-height-abs = - $line-height
-
-  .main_scroll
-    position: absolute
-    left: 180px
-    bottom: 21px
-    span
-      display block
-      position absolute
-      left 20px
-      bottom 20px
-      font-size 11px
-      color: #8a8a8a
-      width 140px
-  .c-scrolldown
-    width: 1px
-    height: $line-height
-    position: absolute
-    background-color #333
-    bottom: 24px
-    left: 0
-    right: 0
-    margin: 0 auto
-    overflow: hidden
-  .c-line
-    width: 100%
-    height: 100%
-    display: block
-    background: linear-gradient(to bottom, #DFDFDF 50%, rgba(255, 255, 255, 0) 50%)
-    background-position: 0 $line-height-abs
-    background-size: 100% 200%
-    animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite
-
-  @keyframes scrolldown
-    0%
-      background-position: 0 $line-height-abs
-    75%
-      background-position: 0 0
-    100%
-      background-position: 0 $line-height
