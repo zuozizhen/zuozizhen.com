@@ -441,7 +441,7 @@
 }
 
 //logo
-// 
+//
 // .logo_n,
 // .logo_u,
 // .logo_x,
@@ -524,3 +524,44 @@
 //   -webkit-mask-image: url("../images/logo/o.svg");
 //   mask-image: url("../images/logo/o.svg");
 // }
+
+// new homepage styles
+.lines-grid
+  width: 100%
+  height: 850px
+  position: absolute
+  left: 0
+  top: 0
+  font-size: 0
+  pointer-events: none
+  display: grid
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.lines-grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+.lines-grid-post
+  grid-template-columns: 100px 1fr 100px
+@media only screen and (max-width: 750px)
+  .lines-grid,
+  .lines-grid-post
+    display: none !important
+  .post_back
+    display: none
+.lines_i
+  height: 100%
+  display: inline-block
+  position: relative
+.lines_i:before
+  content: ''
+  display: block
+  height: 100%
+  width: 1px
+  background: $gray-darkest
+  -webkit-transition: background 0.2s 0.2s
+  transition: background 0.2s 0.2s
+.lines_i:first-child:before
+  width: 0
+
