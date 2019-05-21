@@ -269,7 +269,7 @@ html
     margin: 0 auto
     .about_desc
       .desc
-        padding: 80px 60px
+        padding: 60px 10px
       p
         font-size: 20px
         font-weight: 400
@@ -281,6 +281,7 @@ html
     margin-top: -265px
     width: 100%
     right: 0
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
   .item_title
     font-weight: 800
     font-size: 24px
@@ -304,13 +305,19 @@ html
   z-index: 100
   left: 180px
   .main_title
-    font-family: AcuminBd
+    // font-family: AcuminBd
+    font-weight: 700
     font-size: 60px
     color: $gray-dark
     text-align: left
     white-space: nowrap
-    line-height: 1.2em
-    letter-spacing: -0.5px
+    line-height: 1.4em
+  .sub_title
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 24px
   .point
     margin-left: -10px
     color: $gray-light
@@ -984,26 +991,24 @@ $line-height-abs = - $line-height
 // new about
 .about_desc
   position: relative
-  background-color: #FBFBFB
   .desc
-    padding: 100px 80px
+    padding: 60px 30px
   .desc_title
-    font-family: AcuminBd
-    font-size: 24px
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 70px;
     color: $gray-dark
-    margin-bottom: 12px
+    margin-bottom: 24px
     display: inline-block
   p
-    font-family: BitterR
-    font-size: 19px
-    font-weight: 400
-    color: #A0A0A0
-    line-height: 38px
-    margin-bottom: 40px
-    // text-align: justify;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, .5);
+    margin-bottom: 14px
     i
-      font-family BitterBd
-      color rgba(0,0,0,.6)
+      font-weight: 700;
+      color rgba(0,0,0,.7)
   p.last
     margin-bottom: 0
   .social_link
