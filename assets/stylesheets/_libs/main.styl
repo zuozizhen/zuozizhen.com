@@ -99,10 +99,12 @@ html
   background-color: #fff
   position: relative
   .section_title
-    font-family: AcuminBd
-    font-size: 54px
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 70px;
     color: $gray-dark
-    margin-bottom: 60px
+    margin-bottom: 24px
+    display: inline-block
   .content
     max-width: 1540px
     padding: 200px 120px
@@ -110,6 +112,43 @@ html
   .item_title
     font-family: AcuminBd
     font-size: 28px
+  &.about2
+    background-color: #FBFBFB
+    .content
+      display: grid
+      grid-template-columns: 0.17fr 1fr
+      grid-column-gap: 150px
+      padding: 200px 120px;
+      .section_pic
+        img
+          position: absolute;
+          transform: translateY(-50%);
+          top: 50%;
+          left: -200px;
+  &.about3
+    background-color: #FFFFFF
+    .content
+      padding: 200px 120px;
+      .desc
+        padding-bottom: 60px
+  &.about4
+    background-color: #FBFBFB
+    .content
+      display: grid
+      grid-template-columns: 0.4fr 1fr
+      grid-column-gap: 150px
+      padding: 200px 120px;
+      p
+        line-height: 60px
+      .title_item
+        position: relative
+        .desc_title
+          position absolute
+          transform: translateY(-50%);
+          top: 50%;
+  &.title_split
+    .content
+      padding: 300px 120px;
   &.home_about
     .content
       padding: 140px 120px 0 120px
@@ -117,6 +156,8 @@ html
       grid-template-columns: 1fr 2.3fr
       grid-column-gap: 40px
       grid-row-gap: 40px
+      .desc
+        padding: 60px 30px
   &.dribbble
     background-color: #FBFBFB
     .content
@@ -515,6 +556,10 @@ $line-height-abs = - $line-height
 .blog_cover
   width: 100%
   border-radius: 6px
+.blog_cover_link
+  display: block
+  margin-bottom: 10px
+
 .blog_section_title
   font-family: AcuminBd
   line-height: 30px
@@ -529,15 +574,17 @@ $line-height-abs = - $line-height
 .develop
   .content
     display: grid
-    grid-template-columns: 1fr 2.2fr
-    grid-column-gap: 70px
+    grid-template-columns: 0.75fr 1fr
+    grid-column-gap: 150px
     padding: 200px 120px;
 .readinglists
   .blog_list_book
     display: grid
     grid-template-columns: repeat(5, 1fr)
     grid-template-rows: auto
-    grid-gap: 45px
+    grid-gap: 60px
+    .blog_title
+      font-size 20px
 
 .blog_list_grid
   display: grid
@@ -955,15 +1002,14 @@ $line-height-abs = - $line-height
     content: ''
     display: block
     clear: both
-  a
-    margin-bottom: 20px
-    -webkit-transition: opacity 0.2s ease-in-out
-    transition: opacity 0.2s ease-in-out
-    &:hover
-      opacity: .9
   img
+    -webkit-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
     width: 100%
     height: auto
+    &:hover
+      opacity: .9
+      box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
 @media only screen and (max-width: 750px)
   #instagram
     grid-template-columns: 1fr
@@ -977,6 +1023,7 @@ $line-height-abs = - $line-height
     border-radius: 2px
     &:hover img
       opacity: .9
+      box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
     img
       opacity: 1
       transition: all .3s
@@ -991,8 +1038,6 @@ $line-height-abs = - $line-height
 // new about
 .about_desc
   position: relative
-  .desc
-    padding: 60px 30px
   .desc_title
     font-size: 45px;
     font-weight: 700;
