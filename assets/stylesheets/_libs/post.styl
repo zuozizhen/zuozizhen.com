@@ -1,9 +1,12 @@
 .post
+  .content
+    padding 200px 120px 60px 120px
   .post_top
-    display: grid
-    grid-template-columns: 1fr 1.6fr
-    grid-column-gap: 80px
-    padding-top: 180px
+    // font-family: $family-post
+    max-width: 790px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 60px
 @media only screen and (max-width: 750px)
   .post
     .post_top
@@ -11,22 +14,18 @@
       grid-gap: 50px
       padding-top: 30px
 .post_top_content
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
+  padding-left: 25px
+  padding-right: 25px
   .blog_title
     margin-top: 14px
     margin-left: -2px
-    font-size: 3.5vw
+    margin-bottom: 10px
+    font-size: 40px
   .blog_tag span
     letter-spacing: 2px
     color: #8e8e8e
     font-size: 13px
     font-weight: 500
-@media only screen and (min-width: 1400px)
-  .post_top_content
-    .blog_title
-      font-size: 48px
 @media only screen and (max-width: 750px)
   .post_top_content
     position: static
@@ -36,12 +35,11 @@
 .post-wrapper
   margin-left: auto
   margin-right: auto
-  margin-top: 100px
-  font-size: 17px
+  font-size: 18px
   color: $gray-dark
-  line-height: 34px
+  line-height: 36px
   overflow-x: hidden
-  font-family: $family-post
+  // font-family: $family-post
   max-width: 900px
 .blog_tips
   font-weight: 400
@@ -257,7 +255,8 @@ h6
   width: 100%
   object-fit: cover
   border: 1px solid rgba(0, 0, 0, 0.05)
-  border-radius: 4px
+  margin-top: 60px
+  border-radius: 2px
   z-index: 10000
 /*	Blockquotes  */
 blockquote p

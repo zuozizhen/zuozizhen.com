@@ -19,18 +19,18 @@ section.section_full.post
     .post-wrapper
       | {{ content }}
     .post_pagination
-    | {% if page.previous.url %}
-    a.previous(href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}", data-toggle='tooltip', data-placement='top', title='{{page.previous.title}}')
-      | 上一篇
-      br
-      span {{page.previous.title}}
-    | {% endif %}
-    | {% if page.next.url %}
-    a.next(href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}", data-toggle='tooltip', data-placement='top', title='{{page.next.title}}')
-      | 下一篇
-      br
-      span {{page.next.title}}
-    | {% endif %}
+      | {% if page.previous.url %}
+      a.previous(href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}", data-toggle='tooltip', data-placement='top', title='{{page.previous.title}}')
+        | 上一篇
+        br
+        span {{page.previous.title}}
+      | {% endif %}
+      | {% if page.next.url %}
+      a.next(href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}", data-toggle='tooltip', data-placement='top', title='{{page.next.title}}')
+        | 下一篇
+        br
+        span {{page.next.title}}
+      | {% endif %}
 .comment
   #disqus_thread
   noscript

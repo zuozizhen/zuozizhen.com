@@ -106,12 +106,13 @@ html
     margin-bottom: 24px
     display: inline-block
   .content
-    max-width: 1540px
+    max-width: 1480px
     padding: 200px 120px
     margin: 0 auto
   .item_title
     font-family: AcuminBd
     font-size: 28px
+    margin-bottom: -10px
   &.about2
     background-color: #FBFBFB
     .content
@@ -172,11 +173,26 @@ html
     background-color: #FBFBFB
     position relative
     height 100vh
-    .section_title
-      font-size 60px
     .content
       padding: 200px 120px
-      width fit-content
+      height 100vh
+      .section_item
+        position: absolute
+        transform: translate(-50%, -50%)
+        left 50%
+        top 50%
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 300px
+        .img_qr
+          width: 140px
+          box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.1), 0px 5px 20px rgba(0, 0, 0, 0.1);
+          margin-bottom: 60px
+        .item
+          position absolute
+          transform: translateY(-50%)
+          top 50%
+
     .copyright
       font-family: AcuminR
       font-size: 14px
@@ -186,20 +202,13 @@ html
       left 50%
       bottom: 30px
       width: fit-content
-    .footer
-      .desc
-        font-family: RobotoMonoR
-        font-size: 14px
-        color: #6f6f6f
-        line-height: 26px
-        width: 70%
     .item_title
-      font-family: AcuminR
-      font-size: 24px
+      font-weight: 400
+      font-size: 20px
       color: #6f6f6f
     .contact_item .item_desc
       font-family: AcuminBd
-      font-size: 30px
+      font-size: 24px
       color: $gray-dark
     .contact_item a:before
       background-color: #e7e7e7
@@ -207,9 +216,6 @@ html
       background-color: #b6b6b6
     .contact_item:last-child
       margin-bottom: 0
-    .section_item
-      @extend $grid-1-830
-      margin-bottom: 100px
   &.cases
     .case
       @extend $grid-1-1
@@ -440,6 +446,8 @@ $line-height-abs = - $line-height
 // Home-blog
 .blog_item
   position: relative
+
+.lastblog
 .develop
   .blog_item
     color: $gray-lightest
@@ -449,7 +457,17 @@ $line-height-abs = - $line-height
       padding-top: 50px
     &:not(:last-child)
       padding-bottom: 50px
+      // border-bottom: 1px solid #E4E4E4
+.lastblog
+  .blog_item
+    &:not(:last-child)
+      padding-bottom: 50px
       border-bottom: 1px solid #E4E4E4
+  .view_more
+    transform: translateX(0)
+    left 0
+    margin-top: 60px
+
 .blog_tag
   display: block
   font-family: AcuminR
@@ -503,9 +521,10 @@ $line-height-abs = - $line-height
   &:hover
     color $gray
 .blog_excerpt
-  margin-top: 8px
+  margin-top: 2px
+  margin-bottom: 24px
   font-family: $family-post
-  font-size: 15px
+  font-size: 18px
   font-weight: 400
   color: #6b6b6b
   line-height: 2em
@@ -555,7 +574,7 @@ $line-height-abs = - $line-height
       color: #fff
 .blog_cover
   width: 100%
-  border-radius: 6px
+  border-radius: 4px
 .blog_cover_link
   display: block
   margin-bottom: 10px
@@ -573,18 +592,21 @@ $line-height-abs = - $line-height
     padding-top 0
 .develop
   .content
+    padding: 200px 300px;
+.lastblog
+  .content
     display: grid
     grid-template-columns: 0.75fr 1fr
     grid-column-gap: 150px
-    padding: 200px 120px;
 .readinglists
   .blog_list_book
     display: grid
-    grid-template-columns: repeat(5, 1fr)
+    grid-template-columns: repeat(4, 1fr)
     grid-template-rows: auto
-    grid-gap: 60px
+    grid-gap: 80px
     .blog_title
       font-size 20px
+      padding: 0 6px
 
 .blog_list_grid
   display: grid
@@ -598,11 +620,6 @@ $line-height-abs = - $line-height
 @media only screen and (max-width: 1024px)
   .tags_list
     display: none
-.blog_list_item
-  .blog_info
-    padding 16px 8px
-  .blog_title
-    font-size 26px
 
 .blog_list_grid_full .blog_cover,
 .blog_item_grid .blog_cover,
@@ -610,7 +627,6 @@ $line-height-abs = - $line-height
   width: 100%
   border: 1px solid #eee
   transition: all .3s
-  border-radius: 6px
   object-fit: cover
   &:hover
     opacity: .9
@@ -630,11 +646,6 @@ $line-height-abs = - $line-height
 //     color: $gray
 //     font-weight: 600
 
-.post
- .content
-   padding-top: 0
-  .post_top_item
-    position relative
 .appraise_full
   position: relative
   height: 800px
@@ -918,34 +929,38 @@ $line-height-abs = - $line-height
   a
     padding-bottom: 2px
     position: relative
-    &:before,
-    &:after
-      content: ""
-      display: block
-      width: 100%
-      height: 3px
-      background-color: #dfdfdf
-      position: absolute
-      top: 64px
-      transition: all 0.3s
-    &:after
-      background: $gray
-      transform: scale3d(0, 1, 1)
-      transform-origin: 0% 50%
-      transition: transform 0.3s
-    &:hover:after
-      transform: scale3d(1, 1, 1)
+    // &:before,
+    // &:after
+    //   content: ""
+    //   display: block
+    //   width: 100%
+    //   height: 3px
+    //   background-color: #dfdfdf
+    //   position: absolute
+    //   top: 64px
+    //   transition: all 0.3s
+    // &:after
+    //   background: $gray
+    //   transform: scale3d(0, 1, 1)
+    //   transform-origin: 0% 50%
+    //   transition: transform 0.3s
+    // &:hover:after
+    //   transform: scale3d(1, 1, 1)
   .item_desc
-    font-family: BitterRegular
     color: $gray-dark
-    display: inline-block
+    display: block
+    width: fit-content
     font-size: 20px
-    margin-right: 20px
-    margin-bottom: 20px
+    line-height: 36px
+    margin-bottom: 10px
     padding-top: 24px
     position: relative
     -webkit-transition: color 0.5s
     transition: color 0.5s
+  .item_icon
+    width: 30px
+    position: absolute
+    left -45px
 @media only screen and (max-width: 750px)
   .contact_item
     .item_desc
