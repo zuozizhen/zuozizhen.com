@@ -42,14 +42,18 @@
   // font-family: $family-post
   max-width: 900px
 .blog_tips
-  font-weight: 400
-  font-size: 14px
-  color: #7E7E7E
-  line-height: 30px
-  letter-spacing: 1px
   display: block
+  font-family: AcuminR
+  font-size: 17px
+  color: #999999
+  letter-spacing: .5px
+  -webkit-transition: all 0.5s
+  transition: all 0.5s
   margin-top: 12px
-  text-transform: uppercase
+  span
+    &:not(:last-child):after
+      content: ", "
+      display: inline
 .post-wrapper a,
 .post-wrapper ol li,
 .post-wrapper p,

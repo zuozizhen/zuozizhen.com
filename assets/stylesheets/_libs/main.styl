@@ -218,12 +218,13 @@ html
       margin-bottom: 0
   &.cases
     .content
-      @extend $grid-1-1
+      display: grid
+      grid-column-gap: 150px
       overflow hidden
       height: 105vh;
       padding: 140px 150px
       margin: 0 auto
-      font-size: 16px
+      font-size: 18px
       color: #A0A0A0
       position relative
       .case_about
@@ -232,26 +233,29 @@ html
         top: 50%
         .case_title
           font-family: AcuminBd
-          font-size: 60px
+          font-size: 45px
           z-index: 2
-          margin-bottom: 30px
+          margin-bottom: 20px
         .case_info
           font-family: AcuminR
           font-size: 20px
           margin-bottom: 24px
         .case_button
-          padding: 16px 26px
-          font-family: BitterR
+          padding: 14px 36px
+          font-weight: 600
           font-size: 18px
-          display: inline-block
+          display: block
+          width: fit-content
           border-radius: 4px
           transition: all 0.3s ease
+          &:not(:last-child)
+            margin-bottom: 24px
       .case_logo
-        height: 52px
-        margin-bottom: 20px
+        height: 48px
+        margin-bottom: 24px
       .case_desc
-        line-height: 30px
-        margin-bottom: 10px
+        line-height: 36px
+        margin-bottom: 50px
       .case_right
         position: relative
       .case_left
@@ -268,7 +272,7 @@ html
         top 50%
         left 0
         img
-          border-radius: 4px
+          border-radius: 2px
           width: 100%
   .section
     padding: 0 150px
@@ -484,7 +488,7 @@ $line-height-abs = - $line-height
 .blog_title
   font-size: 30px
   font-weight: 600
-  font-family: $family-title
+  // font-family: $family-title
   display: inline-block
   vertical-align: super
   -webkit-transition: all 0.5s
@@ -775,6 +779,8 @@ $line-height-abs = - $line-height
 .cases
   &.elife
     background-color: #191A1F
+    .content
+      grid-template-columns: 0.75fr 1fr
     .case_title
     .case_link
       color: #fff
@@ -783,8 +789,11 @@ $line-height-abs = - $line-height
       color: rgba(255, 255, 255, .6)
       &:hover
         color: rgba(255, 255, 255, .9)
-  &.designer_and_studio
+
   &.smartisan
+    background: #fbfbfb
+    .content
+      grid-template-columns: 0.75fr 1fr
     .case_title,
     .case_link
       color: $gray-dark
@@ -804,7 +813,9 @@ $line-height-abs = - $line-height
     .case_info
       color: rgba(0, 0, 0, 0.8)
   &.cachemoment
-    background: linear-gradient(52.93deg, #51509C 28.82%, #7748BF 84.54%, #724AB7 99.7%);
+    background: linear-gradient(37.38deg, #5150AD 1.16%, #7347BE 98.34%);
+    .content
+      grid-template-columns: 1fr 0.75fr
     .case_title,
     .case_link
       color: #fff
@@ -814,7 +825,6 @@ $line-height-abs = - $line-height
     .case_button
       background-color: rgba(255, 255, 255, .1)
       color: rgba(255, 255, 255, .5)
-      margin-right: 20px
       &:hover
         color: rgba(255, 255, 255, .9)
   &.presen
@@ -825,19 +835,23 @@ $line-height-abs = - $line-height
     .case_about,
     .case_info
       color: #6F6F70
+
+  &.designer_and_studio
   &.figmachina
-    background: linear-gradient(89.98deg, #0063D7 0.01%, #0094FF 99.99%);
+    background: #fbfbfb
+    .content
+      grid-template-columns: 1fr 0.75fr
     .case_title,
     .case_link
-      color: #fff
+      color: #111
     .case_about,
     .case_info
-      color: rgba(255, 255, 255, 0.9)
+      color: #6F6F70
     .case_button
-      background-color: rgba(255, 255, 255, .1)
-      color: rgba(255, 255, 255, .5)
+      background-color: #F2F2F2
+      color: rgba(0, 0, 0, .5)
       &:hover
-        color: rgba(255, 255, 255, .9)
+        color: rgba(0, 0, 0, .7)
 
 .case_tag
   font-family: BitterRegular
@@ -860,7 +874,7 @@ $line-height-abs = - $line-height
   padding-bottom: 2px
   position: relative
   display: inline-block
-  margin-top: 40px
+  margin-top: 60px
   font-family: AcuminBd
   font-size: 20px
   margin-bottom: 20px

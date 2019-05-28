@@ -18,34 +18,63 @@ include WrapAbout
 include WrapAbout2
 include WrapAbout3
 include WrapAbout4
-include WrapTitleSplit
+
+section.section_full.title_split
+  .content.about_desc(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .desc_title
+      | 我不断尝试把自己的<br>
+      | 所想所爱结合在一起，创造些有意思的东西
 
 section.section_full.cases.figmachina
   .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .case_left
-      .case_about
-        //- .case_logo
-        //-   img(src='assets/images/logo/cachemoment.svg')
-        .case_info Personal Product
-        .case_title FigmaChina.com
-        a.case_button(href='https://figmachina.com', target="_blank") Open Site
-    .case_right
       .case_cover
         img.lozad(src='assets/images/home/figmachina.jpg', alt='')
+    .case_right
+      .case_about
+        .case_logo
+          img(src='assets/images/logo/smartisan.svg')
+        .case_title FigmaChina.com
+        .case_desc
+          | 毕业后，我加入了一家负责网站和产品设计的公司。我还负责前端开发（Rails）。现在我主要负责为Smartisan构建和维护设计系统（Figma）
+        a.case_button(href='https://figmachina.com', target="_blank") 访问网站
+        a.case_button(href='https://figmachina.com', target="_blank") 阅读：为 Smartisan OS 搭建设计系统
 
 section.section_full.cases.elife
   .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .case_left
       .case_about
-        //- .case_logo
-        //-   img(src= {{ include.src }})
-        //- A collection of commonly used design tools and other interesting gadgets
-        .case_info Personal Product
-        .case_title Start your Elife
-        a.case_button(href='https://startelife.com', target="_blank") Open Site
+        .case_logo
+          img(src='assets/images/logo/smartisan.svg')
+        .case_title ELIFE
+        .case_desc
+          | 毕业后，我加入了一家负责网站和产品设计的公司。我还负责前端开发（Rails）。现在我主要负责为Smartisan构建和维护设计系统（Figma）
+        a.case_button(href='https://startelife.com', target="_blank") 访问网站
+        a.case_button(href='https://figmachina.com', target="_blank") 阅读：为 Smartisan OS 搭建设计系统
     .case_right
       .case_cover
         img.lozad(src='assets/images/home/elife.jpg', alt='')
+
+section.section_full.cases.designer_and_studio
+  .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .case_left
+      .case_cover
+        img.lozad(src='assets/images/home/designerandstudio.jpg', alt='')
+    .case_right
+      .case_about
+        .case_logo
+          img(src='assets/images/logo/smartisan.svg')
+        .case_title DesignerAndStudio
+        .case_desc
+          | 毕业后，我加入了一家负责网站和产品设计的公司。我还负责前端开发（Rails）。现在我主要负责为Smartisan构建和维护设计系统（Figma）
+        a.case_button(href='https://designerandstudio.com', target="_blank") 访问网站
+        a.case_button(href='https://figmachina.com', target="_blank") 阅读：为 Smartisan OS 搭建设计系统
+
+section.section_full.title_split
+  .content.about_desc(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
+    .desc_title
+      | 工作上，<br>
+      | 我做了许多有用的事
 
 section.section_full.cases.smartisan
   .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
@@ -53,64 +82,29 @@ section.section_full.cases.smartisan
       .case_about
         .case_logo
           img(src='assets/images/logo/smartisan.svg')
-        //- .case_info Personal Product
-        .case_title Smartisan Website Library
-        a.case_button(href='https://www.smartisan.com', target="_blank") Open Site
+        .case_title Smartisan OS 7.0 <br> Design System
+        .case_desc
+          | 毕业后，我加入了一家负责网站和产品设计的公司。我还负责前端开发（Rails）。现在我主要负责为Smartisan构建和维护设计系统（Figma）
+        a.case_button(href='https://www.smartisan.com', target="_blank") 访问网站
     .case_right
       .case_cover
-        img.lozad(src='assets/images/home/smartisan-web.jpg', alt='')
+        img.lozad(src='assets/images/home/smartisan.jpg', alt='')
 
 section.section_full.cases.cachemoment
   .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .case_left
+      .case_cover
+        img.lozad(src='assets/images/home/cachemoment.jpg', alt='')
+    .case_right
       .case_about
         .case_logo
           img(src='assets/images/logo/cachemoment.svg')
-        //- .case_info Personal Product
         .case_title CacheMoment
-        a.case_button(href='https://www.cachemoment.com', target="_blank") Open Site
+        .case_desc
+          | 毕业后，我加入了一家负责网站和产品设计的公司。我还负责前端开发（Rails）。现在我主要负责为Smartisan构建和维护设计系统（Figma）
+        a.case_button(href='https://www.cachemoment.com', target="_blank") 访问网站
         a.case_button(href='https://www.behance.net/gallery/58498171/Moment', target="_blank") View Behance
-    .case_right
-      .case_cover
-        img.lozad(src='assets/images/home/cachemoment.jpg', alt='')
 
-section.section_full.cases.designer_and_studio
-  .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
-    .case_left
-      .case_about
-        //- .case_logo
-        //-   img(src='assets/images/logo/smartisan.svg')
-        .case_info Personal Product
-        .case_title Best designer and studio website
-        a.case_button(href='https://designerandstudio.com', target="_blank") Open Site
-    .case_right
-      .case_cover
-        img.lozad(src='assets/images/home/designerandstudio.jpg', alt='')
-
-//- section.section_full.cases.presen
-//-   .case(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
-//-     .case_left
-//-       .case_about
-//-         .case_logo
-//-           img(src='assets/images/logo/presen.svg')
-//-         //- .case_info Personal Product
-//-         .case_title SmartHome web and App Design
-//-         a.case_button(href='https://presen.com') Learn more
-//-     .case_right
-//-       .case_cover
-//-         img.lozad(src='assets/images/home/presen.png', alt='')
-//- section.section_full.cases.petme
-//-   .case
-//-     .case_left
-//-       .case_about
-//-         //- .case_logo
-//-         //-   img(src='assets/images/logo/presen.svg')
-//-         .case_info Brand
-//-         .case_title Everything about your pet is here
-//-         a.case_button(href='https://presen.com') Learn more
-//-     .case_right
-//-       .case_cover
-//-         img.lozad(src='https://i.loli.net/2019/03/17/5c8e1184c38ca.png', alt='')
 include WrapLastBlog
 include WrapDribbble
 include WrapInstagram

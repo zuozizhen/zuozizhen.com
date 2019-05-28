@@ -7,12 +7,13 @@ section.section_full.post
     .post_top
       .blog_item
         .post_top_content
-          span.blog_tag
-            //- | {% for tag in page.tags %}
-            //- span {{tag}}
-            //- | {% endfor %}
           span.blog_title {{ page.title }}
-          span.blog_tips ARTICLE POSTED ON {{ page.date | date: '%B %d, %Y' }}
+          span.blog_tips
+            | {% for tag in page.tags limit:3 %}
+            span {{tag}}
+            | {% endfor %}
+            | -
+            | {{ page.date | date: '%B %d, %Y' }}
       | {% if page.cover %}
       img.blog_header_img(src='{{ page.cover }}')
       | {% endif %}
