@@ -9,69 +9,44 @@ html
 
 // Nav
 .top_nav
+  @extend $X-Center
   position: fixed
   width: calc(100% - 128px)
   padding: 48px 0
   z-index: 10
-  transform: translateX(-50%)
-  left: 50%
+  top: 0
   display: flex
   align-items: center
-  transition: top 0.2s ease-out;
-  top: 0
-
   &.nav-up
     top: -120px;
 
   .nav_link
     font-size: $h4
     color: $gray-light
-    font-family: BitterR
+    font-family: AcuminR
     line-height: 30px
-    transition: color 0.3s
     z-index: 2
     margin-right: 36px
     position relative
-    // &:after
-    //   content: ''
-    //   position: absolute
-    //   background-color: $gray
-    //   z-index: -1
-    //   bottom: 0
-    //   left: -7.5%
-    //   width: 115%
-    //   height: 50%
-    //   opacity: 0.3
-    //   transform: scale3d(0, 1, 1)
-    //   transform-origin: 0% 50%
-    //   transition: transform 0.5s
-    //   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
-    // &:hover:after,
-    // &.active:after
-    //   transform: scale3d(1, 1, 1)
-
+    @extend $Transition-Normal
+    &:hover
+      color: $gray
     &.active
       color: $gray
+      font-family: AcuminBd
 
   .logo_z
     display: inline-block
-    position: relative
+    position: absolute
+    right: 0
     width: 40px
     height: 40px
-    border-radius: 100%
-    transition: all 0.3s
+    @extend $Transition-Normal
     z-index: 10
-
-    &.right
-      position: absolute
-      right: 0
-
+    cursor pointer
     i
+      @extend $XY-Center
       position: absolute
-      -webkit-transform: translate(-50%, -50%)
-      transform: translate(-50%, -50%)
-      top: 50%
-      left: 50%
       display: block
       background-color: $gray-dark
       background-image: none
@@ -80,20 +55,18 @@ html
       background-size: 20px 20px
       -webkit-mask-image: url("../images/logo/z.svg")
       mask-image: url("../images/logo/z.svg")
-      transition: all 0.3s
+      @extend $Transition-Normal
+      &:hover
+        opacity: .8
 
-    &:hover i
-      opacity: .8
-
+// Mobie
 @media only screen and (max-width: 1140px)
   .top_nav
     width: calc(100% - 100px)
     padding: 48px 0
-
 @media only screen and (max-width: 750px)
   .top_nav
     width: calc(100% - 60px)
-
 
 .section_full
   background-color: #fff
@@ -119,17 +92,14 @@ html
       display: grid
       grid-template-columns: 0.17fr 1fr
       grid-column-gap: 150px
-      padding: 200px 120px;
       .section_pic
         img
+          @extend $Y-Center
           position: absolute;
-          transform: translateY(-50%);
-          top: 50%;
           left: -200px;
   &.about3
     background-color: #FFFFFF
     .content
-      padding: 200px 120px;
       .desc
         padding-bottom: 60px
   &.about4
@@ -138,7 +108,6 @@ html
       display: grid
       grid-template-columns: 0.4fr 1fr
       grid-column-gap: 150px
-      padding: 200px 120px;
       p
         line-height: 60px
       .title_item
@@ -161,26 +130,20 @@ html
         padding: 60px 30px
   &.dribbble
     background-color: #FBFBFB
-    .content
-      padding: 200px 120px;
   &.ins
     background-color: #fff
     .content
-      padding: 200px 90px;
+      padding: 200px 110px;
     .section_title
       margin-top: 10px
   &.more
     background-color: #FBFBFB
     position relative
-    height 100vh
     .content
-      padding: 200px 120px
       height 100vh
       .section_item
+        @extend $XY-Center
         position: absolute
-        transform: translate(-50%, -50%)
-        left 50%
-        top 50%
         display: grid
         grid-template-columns: 1fr 1fr
         grid-column-gap: 300px
@@ -189,17 +152,15 @@ html
           box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.1), 0px 5px 20px rgba(0, 0, 0, 0.1);
           margin-bottom: 60px
         .item
+          @extend $Y-Center
           position absolute
-          transform: translateY(-50%)
-          top 50%
 
     .copyright
+      @extend $X-Center
       font-family: AcuminR
       font-size: 14px
       color: #BDBDBD
       position: absolute
-      transform: translateX(-50%)
-      left 50%
       bottom: 30px
       width: fit-content
     .item_title
@@ -221,16 +182,14 @@ html
       display: grid
       grid-column-gap: 150px
       overflow hidden
-      height: 105vh;
-      padding: 140px 150px
+      height: 100vh;
       margin: 0 auto
       font-size: 18px
       color: #A0A0A0
       position relative
       .case_about
         position: absolute
-        transform: translateY(-50%)
-        top: 50%
+        @extend $Y-Center
         .case_title
           font-family: AcuminBd
           font-size: 45px
@@ -262,10 +221,6 @@ html
         position: relative
         max-width 660px
         z-index 10
-      .case_link
-        font-family: RobotoMonoBold
-        position: absolute
-        bottom: 0
       .case_cover
         position: absolute
         transform: translateY(-50%)
@@ -274,43 +229,14 @@ html
         img
           border-radius: 2px
           width: 100%
-  .section
-    padding: 0 150px
-    margin: 100px auto
 
+//Mobie
 @media only screen and (max-width: 750px)
   .case_right
     display: none
   .case_left
     position: relative
     z-index 10
-
-// Main
-
-.home_about
-  .content
-    position: relative
-    padding: 90px 150px
-    margin: 0 auto
-    position: relative
-    .section_title
-      margin-top: 430px
-@media only screen and (max-width: 750px)
-  .home_about
-    .content
-      .section_title
-        margin-top: 0
-
-.home_top
-  position: relative
-  height: 100vh
-  .content
-    position: relative
-    height: 100vh
-    margin: 0 auto
-    padding: 90px 110px
-
-@media only screen and (max-width: 750px)
   .home_about .content
     width: 100%
     display: grid
@@ -326,6 +252,16 @@ html
         font-weight: 400
         line-height: 36px
         margin-bottom: 16px
+
+.home_top
+  position: relative
+  height: 100vh
+  .content
+    position: relative
+    height: 100vh
+    margin: 0 auto
+    padding: 90px 110px
+
 .about_info
   position: relative
   img
@@ -333,30 +269,13 @@ html
     width: 100%
     right: 0
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
-  .item_title
-    font-weight: 800
-    font-size: 24px
-    color: #fff
-  .contact_item
-    .item_desc
-      color: #a1a1a1
-      font-size: $h4
-    a:before
-      background-color: #3b3b3b
-    a:after
-      background-color: #fff
-.about_title
-  color: #fff
-  font-size: 34px
-  line-height: 1.4em
+
 .home_top_title
+  @extend $Y-Center
   position: absolute
-  transform: translateY(-50%)
-  top: 50%
   z-index: 100
   left: 180px
   .main_title
-    // font-family: AcuminBd
     font-weight: 700
     font-size: 60px
     color: $gray-dark
@@ -369,85 +288,25 @@ html
     line-height: 35px;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 24px
-  .point
-    margin-left: -10px
-    color: $gray-light
-  .title_other
-    display: block
-    padding-top: 10px
 
-$line-height = 80px
-$line-height-abs = - $line-height
-
-.main_scroll
-  position: absolute
-  left: 180px
-  bottom: 21px
-  span
-    display block
-    position absolute
-    left 20px
-    bottom 20px
-    font-size 11px
-    color: #8a8a8a
-    width 140px
-.c-scrolldown
-  width: 1px
-  height: $line-height
-  position: absolute
-  background-color #333
-  bottom: 24px
-  left: 0
-  right: 0
-  margin: 0 auto
-  overflow: hidden
-.c-line
-  width: 100%
-  height: 100%
-  display: block
-  background: linear-gradient(to bottom, #DFDFDF 50%, rgba(255, 255, 255, 0) 50%)
-  background-position: 0 $line-height-abs
-  background-size: 100% 200%
-  animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite
-
-@keyframes scrolldown
-  0%
-    background-position: 0 $line-height-abs
-  75%
-    background-position: 0 0
-  100%
-    background-position: 0 $line-height
+//Mobie
 @media only screen and (max-width: 1220px)
   .home_top_title
     left 100px
     .main_title
       font-size: 5.2vw
-  .main_scroll
-    left 100px
 @media only screen and (max-width: 750px)
   .about_info
     display: none
 @media only screen and (max-width: 750px)
   .home_top_title
     left 60px
-  .main_scroll
-    left 60px
-.main_desc
-  font-family: BitterRegular
-  font-size: 20px
-  color: $gray
-  line-height: 44px
-  position: relative
-  margin-top: 40px
 @media only screen and (max-width: 750px)
   .main_title
     width: fit-content
     font-size: 11vw
-  .main_desc
-    font-size: 16px
-    line-height: 38px
-    margin-top: 20px
-// Home-blog
+
+
 .blog_item
   position: relative
 
@@ -462,6 +321,7 @@ $line-height-abs = - $line-height
     &:not(:last-child)
       padding-bottom: 50px
       // border-bottom: 1px solid #E4E4E4
+
 .lastblog
   .blog_item
     &:not(:last-child)
@@ -479,51 +339,24 @@ $line-height-abs = - $line-height
   margin-left: 1px
   color: #999999
   letter-spacing: .5px
-  -webkit-transition: all 0.5s
-  transition: all 0.5s
   span
     &:not(:last-child):after
       content: ", "
       display: inline
+
 .blog_title
+  @extend $Transition-Normal
   font-size: 30px
   font-weight: 600
   // font-family: $family-title
   display: inline-block
   vertical-align: super
-  -webkit-transition: all 0.5s
-  transition: all 0.5s
   color: $gray-dark
   line-height: 1.5em
   position: relative
   margin-bottom: 16px
   z-index: 2
-.blog_item_grid .blog_title
-  text-overflow: ellipsis
-  max-width: 24vw
-  overflow: hidden
-  white-space: nowrap
-.blog_list_grid .blog_title,
-.blog_item_grid .blog_title
-  // &:after
-  //   content: ''
-  //   background: $gray-light
-  //   position: absolute
-  //   z-index: -1
-  //   bottom: 0
-  //   left: -1%
-  //   width: 102%
-  //   height: 50%
-  //   opacity: 0.3
-  //   transform: scale3d(0, 1, 1)
-  //   transform-origin: 0% 50%
-  //   transition: transform 0.5s
-  //   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
-  // &:hover:after,
-  // &.active:after
-  //   transform: scale3d(1, 1, 1)
-  &:hover
-    color $gray
+
 .blog_excerpt
   margin-top: 2px
   margin-bottom: 24px
@@ -532,76 +365,25 @@ $line-height-abs = - $line-height
   font-weight: 400
   color: #6b6b6b
   line-height: 2em
-.blog_item_grid
-  display: grid
-  grid-template-columns: 1fr 1fr
-  grid-gap: 40px
-  grid-template-rows: auto
-@media only screen and (max-width: 750px)
-  .blog_item_grid div:nth-child(1)
-    grid-column: auto
-    text-align: left
-  .blog_item_grid
-    grid-template-columns: 1fr
-    grid-gap: 50px
-@media only screen and (max-width: 1140px)
-  .blog_item_grid .blog_title
-    max-width: 40vw
-  .blog_item_grid div:nth-child(1) .blog_title
-    max-width: 80vw
-@media only screen and (max-width: 1000px)
-  .blog_list_grid .blog_title
-    text-overflow: ellipsis
-    width: 40vw
-    overflow: hidden
-    white-space: nowrap
-@media only screen and (max-width: 750px)
-  .blog_list_grid .blog_title,
-  .blog_item_grid .blog_title
-    width: 100vw
-    max-width: 80vw
-.blog_list_tags
-  @extend $grid-830-1
-.blog_list_grid_full
-  display: grid
-  grid-template-columns: 1fr 1fr
-  grid-column-gap: 30px
-.blog_large
-  .blog_info
-    position: absolute
-    left: 60px
-    bottom: 60px
-    .blog_title
-      color: #fff
-      font-size: 24px
-    .blog_excerpt
-      color: #fff
+
 .blog_cover
   width: 100%
   border-radius: 4px
+
 .blog_cover_link
   display: block
   margin-bottom: 10px
 
-.blog_section_title
-  font-family: AcuminBd
-  line-height: 30px
-  font-size: 36px
-  color: $gray-dark
-  margin-bottom: 45px
-  padding-left 8px
-.Design
-.Thinking
-  .content
-    padding-top 0
 .develop
   .content
     padding: 200px 300px;
+
 .lastblog
   .content
     display: grid
     grid-template-columns: 0.75fr 1fr
     grid-column-gap: 150px
+
 .readinglists
   .blog_list_book
     display: grid
@@ -612,104 +394,7 @@ $line-height-abs = - $line-height
       font-size 20px
       padding: 0 6px
 
-.blog_list_grid
-  display: grid
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: auto
-  grid-gap: 60px
-@media only screen and (max-width: 750px)
-  .blog_list_grid
-    .blog_info
-      text-align: left
-@media only screen and (max-width: 1024px)
-  .tags_list
-    display: none
-
-.blog_list_grid_full .blog_cover,
-.blog_item_grid .blog_cover,
-.blog_list_grid .blog_cover
-  width: 100%
-  border: 1px solid #eee
-  transition: all .3s
-  object-fit: cover
-  &:hover
-    opacity: .9
-// .tags_list
-//   position: relative
-//   .tags_list_content
-//     position: absolute
-//     right: 0
-//   span
-//     display: block
-//     font-size: 14px
-//     font-weight: 500
-//     letter-spacing: 1.5px
-//     color: #858585
-//     margin-bottom: 30px
-//   .current span
-//     color: $gray
-//     font-weight: 600
-
-.appraise_full
-  position: relative
-  height: 800px
-  background-color: $gray-dark
-  margin-bottom: 90px
-  .appraise_content
-    position: absolute
-    transform: translate(-50%, -50%)
-    top: 50%
-    left: 50%
-    .appraise_desc
-      font-weight: 800
-      font-size: 40px
-      color: #FFFFFF
-      text-align: center
-      line-height: 60px
-      width: 80vw
-      margin-bottom: 30px
-    .appraise_name
-      font-weight: 500
-      font-size: 24px
-      color: #FFFFFF
-      text-align: center
-      margin-bottom: 10px
-    .appraise_title
-      opacity: 0.5
-      font-weight: 400
-      font-size: 16px
-      color: #FFFFFF
-      text-align: center
-
-@media only screen and (max-width: 1140px)
-  .appraise_full
-    height: 600px
-    .appraise_content
-      .appraise_desc
-        font-size: 28px
-        line-height: 40px
-      .appraise_name
-        font-size: 20px
-      .appraise_title
-        font-size: 14px
-  .case_full
-    height: 600px
-@media only screen and (max-width: 750px)
-  .case_full,
-  .post_full,
-  .appraise_full
-    margin-bottom: 40px
-
-.work_content
-  background-color: #151515
-  position: relative
-  height: 100%
-  .content
-    max-width: 1440px
-    position: relative
-    padding: 90px 150px
-    margin: 0 auto
-
+//Mobie
 @media only screen and (max-width: 1140px)
   .section_full
     &.home_about
@@ -754,28 +439,7 @@ $line-height-abs = - $line-height
           font-size: 20px
         .item_desc
           font-size: 24px
-.work_info
-  padding-top: 120px
-  margin: 0 auto
-  .work_title
-    color: #fff
-    font-size: 90px
-    font-weight: 900
-    text-align: center
-    padding-bottom: 30px
-    line-height: 90px
-  .work_desc
-    color: $gray-light
-    font-size: 20px
-    font-weight: 300
-    line-height: 34px
-    text-align: center
-    width: 80%
-    margin: 0 auto
-.work_pic img
-  margin-top: 100px
-  width: 100%
-  border-radius: 10px
+
 .cases
   &.elife
     background-color: #191A1F
@@ -789,7 +453,6 @@ $line-height-abs = - $line-height
       color: rgba(255, 255, 255, .6)
       &:hover
         color: rgba(255, 255, 255, .9)
-
   &.smartisan
     background: #fbfbfb
     .content
@@ -835,7 +498,6 @@ $line-height-abs = - $line-height
     .case_about,
     .case_info
       color: #6F6F70
-
   &.designer_and_studio
   &.figmachina
     background: #fbfbfb
@@ -853,23 +515,13 @@ $line-height-abs = - $line-height
       &:hover
         color: rgba(0, 0, 0, .7)
 
-.case_tag
-  font-family: BitterRegular
-  font-size: 15px
-  font-weight: 500
-  letter-spacing: .3px
-  float: right
-  color: $gray-dark
-  opacity: .4
-  margin-top: 4px
-  span
-    margin-right: 20px
+//Mobie
 @media only screen and (max-width: 750px)
   .case_title
     font-size: $h4
-  .case_tag
-    font-size: 13px
+
 .view_more
+  @extend $X-Center
   padding-top: 16px
   padding-bottom: 2px
   position: relative
@@ -878,8 +530,6 @@ $line-height-abs = - $line-height
   font-family: AcuminBd
   font-size: 20px
   margin-bottom: 20px
-  left: 50%
-  transform: translateX(-50%)
   color: $gray-dark
   &.link
     margin-top: 10px
@@ -923,43 +573,18 @@ $line-height-abs = - $line-height
     transition: transform 0.3s
   &:hover:after
     transform: scale3d(1, 1, 1)
+
 .develop
   .view_more
     left: 0
     margin-top: 60px
     transform: translateX(0);
-.link_content
-  position: relative
-  padding-bottom: 40px
-  padding-top: 20px
-.dark
-  position: absolute
-  transform: translateX(-50%)
-  left: 50%
-  .link
-    margin: 0 20px
+
 // Contact
 .contact_item
   a
     padding-bottom: 2px
     position: relative
-    // &:before,
-    // &:after
-    //   content: ""
-    //   display: block
-    //   width: 100%
-    //   height: 3px
-    //   background-color: #dfdfdf
-    //   position: absolute
-    //   top: 64px
-    //   transition: all 0.3s
-    // &:after
-    //   background: $gray
-    //   transform: scale3d(0, 1, 1)
-    //   transform-origin: 0% 50%
-    //   transition: transform 0.3s
-    // &:hover:after
-    //   transform: scale3d(1, 1, 1)
   .item_desc
     color: $gray-dark
     display: block
@@ -969,58 +594,20 @@ $line-height-abs = - $line-height
     margin-bottom: 10px
     padding-top: 24px
     position: relative
-    -webkit-transition: color 0.5s
-    transition: color 0.5s
+    @extend $Transition-Normal
   .item_icon
     width: 30px
     position: absolute
     left -45px
+
+//Mobie
 @media only screen and (max-width: 750px)
   .contact_item
     .item_desc
       font-size: $h4
       margin-bottom: 0
-.item_img img
-  margin-top: 30px
-  width: 210px
-.brand img
-  width: 100%
-.page_footer_nav
-  position: relative
-  line-height: 40px
-  height: 80px
-  a
-    color: $gray-dark
-    font-weight: 600
-    text-decoration: none
-    font-size: 36px
-    transition: 0.3s color
-    &:hover
-      color: $sunglow
-  span
-    display: block
-    color: $gray-light
-    font-size: 20px
-    font-family: BitterRegular
-    font-weight: 400
-    text-decoration: none
-    transition: 0.3s color
-  .left
-    float: left
-  .right
-    float: right
-@media only screen and (max-width: 750px)
-  .page_footer_nav
-    a
-      font-size: 24px
-    span
-      line-height: 20px
-      font-size: 14px
-.dark .page_footer_nav
-  a
-    color: #fff
 
-/* Instagram Image */
+/* Instagram */
 #instafeed-gallery-feed
   margin: 0 auto
   .grid-sizer,
@@ -1032,17 +619,24 @@ $line-height-abs = - $line-height
     display: block
     clear: both
   img
-    -webkit-transition: all 0.2s ease-in-out
-    transition: all 0.2s ease-in-out
+    @extend $Transition-Normal
     width: 100%
     height: auto
     &:hover
       opacity: .9
       box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
-@media only screen and (max-width: 750px)
-  #instagram
-    grid-template-columns: 1fr
 
+@media screen and (max-width: 1120px)
+  #instafeed-gallery-feed .grid-sizer,
+  #instafeed-gallery-feed .grid-item
+    width: 50%
+@media screen and (max-width: 750px)
+  #instafeed-gallery-feed .grid-sizer,
+  #instafeed-gallery-feed .grid-item
+    width: 100%
+
+
+/* Dribbble */
 #dribbble-shots
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1058,6 +652,7 @@ $line-height-abs = - $line-height
       transition: all .3s
       border-radius: 2px
       width: 100%
+
 @media only screen and (max-width: 750px)
   #dribbble-shots
     grid-template-columns: 1fr
@@ -1085,207 +680,16 @@ $line-height-abs = - $line-height
       color rgba(0,0,0,.7)
   p.last
     margin-bottom: 0
-  .social_link
-    color: #A0A0A0
-    font-family: BitterR
-    span
-      color: #FFCD00
-      text-decoration: underline
+
+//Mobie
 @media only screen and (max-width: 750px)
   .about_desc
     font-size: 12px
     line-height: 30px
-  .service_item
-    display: none
 @media only screen and (max-width: 1120px)
-  .about_desc.one:before
-    display: none
-  .section .title,
-  .section .title span
-    font-size: 28px
   .about_desc
     font-size: 14px
   .blog_title
     font-size: 24px
   .blog_excerpt
     font-size: 15px
-.about_cn,
-.about_en
-  display: none
-  &.active
-    display: block
-// image container
-.img-featured-container
-  overflow: hidden
-  position: relative
-  img
-    width: 100%
-    display: block
-  .img-backdrop
-    background: linear-gradient(135deg, rgba(38, 163, 255, 0.85), rgba(83, 201, 179, 0.85))
-    margin: 0
-    padding: 0
-    width: 100%
-    height: 100%
-    position: absolute
-    z-index: 1
-    opacity: 0
-    transition: all 0.3s ease
-  .description-container
-    color: #fff
-    font-size: 16px
-    line-height: 1.2
-    padding: 0 30px
-    text-align: center
-    line-height: 20px
-    width: 100%
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    transform-style: preserve-3d
-    z-index: 2
-    opacity: 0
-    transition: all .2s ease
-    p
-      font-weight: 300
-      margin-bottom: 0
-    .caption
-      display: none
-      margin-bottom: 10px
-    .likes,
-    .comments
-      margin: 0 5px
-  &:hover img
-    // transform: scale(1.2);
-    filter: grayscale(0)
-  &:hover .img-backdrop,
-  &:hover .description-container
-    opacity: 1
-// load more button
-#btn-instafeed-load
-  color: #fff
-  background: #26a3ff
-  font-size: 16px
-  margin: 20px auto
-  padding: 8px 40px
-  display: block
-  border: none
-// media queries
-
-@media screen and (max-width: 1120px)
-  #instafeed-gallery-feed .grid-sizer,
-  #instafeed-gallery-feed .grid-item
-    width: 50%
-@media screen and (max-width: 750px)
-  #instafeed-gallery-feed .grid-sizer,
-  #instafeed-gallery-feed .grid-item
-    width: 100%
-.img-featured-container .description-container .caption {
-  // display: block;
-}
-//404
-/* Styles of the 404 page of my website. */
-.page_error
-  color: #d3d7de
-  font-family: RobotoMonoRegular
-  font-size: 18px
-  line-height: 1.5em
-  cursor: default
-  height: 100vh
-a
-  color: #fff
-.code-area
-  position: absolute
-  width: 320px
-  min-width: 320px
-  top: 50%
-  left: 50%
-  -webkit-transform: translate(-50%, -50%)
-  transform: translate(-50%, -50%)
-.code-area
-  & > span
-    display: block
-@media screen and (max-width: 320px)
-  .code-area
-    font-size: 5vw
-    min-width: auto
-    width: 95%
-    margin: auto
-    padding: 5px
-    padding-left: 10px
-    line-height: 6.5vw
-
-
-// Disqus
-.comment
-  padding-left: 10px
-  padding-right: 10px
-  padding-top: 60px
-  margin: 0 auto
-  padding-bottom: 60px
-  background-color: #f8f8f8
-#disqus_thread
-  max-width: 740px
-  margin: 0 auto
-@media only screen and (max-width: 750px)
-  #disqus_thread
-    width: calc(100% - 80px)
-.box1, .box2, .box3
-  display: inline-block
-  position: relative
-  border-radius: 8px
-  border: 0px solid white
-  text-align: center
-  vertical-align: middle
-  padding: 0 5px
-.horizontal .box2
-  top: 0
-  max-height: 50px
-  margin: -25px 25px auto 25px
-// menu footer right
-.footer_right
-  position: absolute
-  bottom: 46px
-  width: auto
-  color: $gray-dark
-  -webkit-transition: all 0.2s 0.2s
-  transition: all 0.2s 0.2s
-  line-height: 12px
-  font-family: SofiaProSemiBold
-  -webkit-user-select: none
-  -khtml-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-.footer_right
-  font-size: 14px
-  transform: translateX(50%)
-  right: 10%
-.footer_right:before
-  position: absolute
-  bottom: -10px
-  left: 0
-  height: 1px
-  width: 100%
-  background-color: $gray-dark
-  content: ''
-  -webkit-transform-origin: right top
-  transform-origin: right top
-  -webkit-transform: scaleX(0)
-  transform: scaleX(0)
-  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
-  transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
-  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
-  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
-.footer_right:hover:before
-  -webkit-transform-origin: left top
-  transform-origin: left top
-  -webkit-transform: scaleX(1)
-  transform: scaleX(1)
-@media only screen and (max-width: 900px)
-  .footer_right
-    left: 20%
-    transform: translateX(0)
-  .footer_right:before
-    display: none

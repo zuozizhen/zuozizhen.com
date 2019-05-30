@@ -565,3 +565,168 @@
 .lines_i:first-child:before
   width: 0
 
+.appraise_full
+  position: relative
+  height: 800px
+  background-color: $gray-dark
+  margin-bottom: 90px
+  .appraise_content
+    position: absolute
+    transform: translate(-50%, -50%)
+    top: 50%
+    left: 50%
+    .appraise_desc
+      font-weight: 800
+      font-size: 40px
+      color: #FFFFFF
+      text-align: center
+      line-height: 60px
+      width: 80vw
+      margin-bottom: 30px
+    .appraise_name
+      font-weight: 500
+      font-size: 24px
+      color: #FFFFFF
+      text-align: center
+      margin-bottom: 10px
+    .appraise_title
+      opacity: 0.5
+      font-weight: 400
+      font-size: 16px
+      color: #FFFFFF
+      text-align: center
+
+
+
+.page_footer_nav
+  position: relative
+  line-height: 40px
+  height: 80px
+  a
+    color: $gray-dark
+    font-weight: 600
+    text-decoration: none
+    font-size: 36px
+    transition: 0.3s color
+    &:hover
+      color: $sunglow
+  span
+    display: block
+    color: $gray-light
+    font-size: 20px
+    font-family: BitterRegular
+    font-weight: 400
+    text-decoration: none
+    transition: 0.3s color
+  .left
+    float: left
+  .right
+    float: right
+@media only screen and (max-width: 750px)
+  .page_footer_nav
+    a
+      font-size: 24px
+    span
+      line-height: 20px
+      font-size: 14px
+.dark .page_footer_nav
+  a
+    color: #fff
+
+
+// image container
+.img-featured-container
+  overflow: hidden
+  position: relative
+  img
+    width: 100%
+    display: block
+  .img-backdrop
+    background: linear-gradient(135deg, rgba(38, 163, 255, 0.85), rgba(83, 201, 179, 0.85))
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 1
+    opacity: 0
+    transition: all 0.3s ease
+  .description-container
+    color: #fff
+    font-size: 16px
+    line-height: 1.2
+    padding: 0 30px
+    text-align: center
+    line-height: 20px
+    width: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    transform-style: preserve-3d
+    z-index: 2
+    opacity: 0
+    transition: all .2s ease
+    p
+      font-weight: 300
+      margin-bottom: 0
+    .caption
+      display: none
+      margin-bottom: 10px
+    .likes,
+    .comments
+      margin: 0 5px
+  &:hover img
+    // transform: scale(1.2);
+    filter: grayscale(0)
+  &:hover .img-backdrop,
+  &:hover .description-container
+    opacity: 1
+
+
+  // menu footer right
+.footer_right
+  position: absolute
+  bottom: 46px
+  width: auto
+  color: $gray-dark
+  -webkit-transition: all 0.2s 0.2s
+  transition: all 0.2s 0.2s
+  line-height: 12px
+  font-family: SofiaProSemiBold
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.footer_right
+  font-size: 14px
+  transform: translateX(50%)
+  right: 10%
+.footer_right:before
+  position: absolute
+  bottom: -10px
+  left: 0
+  height: 1px
+  width: 100%
+  background-color: $gray-dark
+  content: ''
+  -webkit-transform-origin: right top
+  transform-origin: right top
+  -webkit-transform: scaleX(0)
+  transform: scaleX(0)
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
+  transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
+.footer_right:hover:before
+  -webkit-transform-origin: left top
+  transform-origin: left top
+  -webkit-transform: scaleX(1)
+  transform: scaleX(1)
+@media only screen and (max-width: 900px)
+  .footer_right
+    left: 20%
+    transform: translateX(0)
+  .footer_right:before
+    display: none
