@@ -5,7 +5,6 @@ subtitle:   "Personal website recommendation"
 date:       "2017-07-05"
 cover:      "https://i.loli.net/2019/04/12/5cb0770193366.jpg"
 tag:        [Design, Site]
-category:   design
 excerpt:    "一些设计、排版以及创意非常棒的个人网站,为正在制作自己个人网站的你提供灵感..."
 ---
 

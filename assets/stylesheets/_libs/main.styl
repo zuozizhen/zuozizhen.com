@@ -149,7 +149,7 @@ html
         grid-column-gap: 300px
         .img_qr
           width: 140px
-          box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.1), 0px 5px 20px rgba(0, 0, 0, 0.1);
+          @extend $LargeShadow
           margin-bottom: 60px
         .item
           @extend $Y-Center
@@ -215,6 +215,7 @@ html
       .case_desc
         line-height: 36px
         margin-bottom: 50px
+        font-weight: 500
       .case_right
         position: relative
       .case_left
@@ -229,6 +230,12 @@ html
         img
           border-radius: 2px
           width: 100%
+          cursor pointer
+          @extend $Transition-Normal
+          &:hover
+            opacity .9
+            @extend $LargeShadow
+
 
 //Mobie
 @media only screen and (max-width: 750px)
@@ -268,7 +275,7 @@ html
     margin-top: -265px
     width: 100%
     right: 0
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+    @extend $LargeShadow
 
 .home_top_title
   @extend $Y-Center
@@ -366,17 +373,18 @@ html
   color: #6b6b6b
   line-height: 2em
 
-.blog_cover
-  width: 100%
-  border-radius: 4px
-
 .blog_cover_link
-  display: block
+  display: inline-block
   margin-bottom: 10px
+
 
 .develop
   .content
-    padding: 200px 300px;
+    padding: 200px 120px;
+    .blog_list_item
+      max-width: 1100px
+      margin-left: auto
+      margin-right: auto
 
 .lastblog
   .content
@@ -393,6 +401,8 @@ html
     .blog_title
       font-size 20px
       padding: 0 6px
+    .blog_cover
+      width: 100%
 
 //Mobie
 @media only screen and (max-width: 1140px)
@@ -575,6 +585,17 @@ html
     transform: scale3d(1, 1, 1)
 
 .develop
+  .blog_info
+    display: flex
+  .blog_cover
+    width: 290px
+    border-radius: 2px
+    margin-right: 40px
+    @extend $Transition-Normal
+    &:hover
+      opacity: .9
+      @extend $LargeShadow
+
   .view_more
     left: 0
     margin-top: 60px
@@ -624,7 +645,7 @@ html
     height: auto
     &:hover
       opacity: .9
-      box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+      @extend $LargeShadow
 
 @media screen and (max-width: 1120px)
   #instafeed-gallery-feed .grid-sizer,
@@ -646,7 +667,7 @@ html
     border-radius: 2px
     &:hover img
       opacity: .9
-      box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+      @extend $LargeShadow
     img
       opacity: 1
       transition: all .3s

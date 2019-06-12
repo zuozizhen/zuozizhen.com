@@ -109,6 +109,10 @@ section.section_full.develop
       | {% for post in paginator.posts limit:20 %}
       .blog_item
         .blog_info
+          | {% if post.cover %}
+          a.blog_cover_link(href='{{ post.url }}')
+            img.blog_cover(src='{{ post.cover }}', alt='')
+          | {% endif %}
           a(href='{{ post.url }}')
             span.blog_title {{ post.title }}
             .blog_excerpt {{ post.excerpt }}
