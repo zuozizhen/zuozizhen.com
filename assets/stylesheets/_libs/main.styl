@@ -236,30 +236,6 @@ html
             opacity .9
             @extend $LargeShadow
 
-
-//Mobie
-@media only screen and (max-width: 750px)
-  .case_right
-    display: none
-  .case_left
-    position: relative
-    z-index 10
-  .home_about .content
-    width: 100%
-    display: grid
-    grid-template-columns: 1fr
-    grid-gap: 30px
-    padding: 30px 30px
-    margin: 0 auto
-    .about_desc
-      .desc
-        padding: 60px 10px
-      p
-        font-size: 20px
-        font-weight: 400
-        line-height: 36px
-        margin-bottom: 16px
-
 .home_top
   position: relative
   height: 100vh
@@ -287,7 +263,6 @@ html
     font-size: 60px
     color: $gray-dark
     text-align: left
-    white-space: nowrap
     line-height: 1.4em
   .sub_title
     font-weight: 500;
@@ -301,18 +276,18 @@ html
   .home_top_title
     left 100px
     .main_title
-      font-size: 5.2vw
+      font-size: 45px
+    .sub_title
+      font-size: 20px;
+      line-height: 36px;
+      margin-bottom: 16px;
 @media only screen and (max-width: 750px)
   .about_info
     display: none
 @media only screen and (max-width: 750px)
   .home_top_title
-    left 60px
-@media only screen and (max-width: 750px)
-  .main_title
-    width: fit-content
-    font-size: 11vw
-
+    left 30px
+    width: 90%
 
 .blog_item
   position: relative
@@ -410,13 +385,49 @@ html
     &.home_about
       .content
         padding: 90px 60px
+
+@media only screen and (max-width: 750px)
+  .case_right
+    display: none
+  .case_left
+    position: relative
+    z-index 10
+  .section_full.title_split
+    .content
+      padding: 120px 60px
+  .section_full.about4
+    .content .title_item .desc_title
+      position relative
+  .section_full.home_about
+  .section_full.about2
+  .section_full.about3
+  .section_full.about4
+  .section_full.lastblog
+    .content
+      width: 100%
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 30px
+      padding: 60px 30px
+      margin: 0 auto
+      .section_pic
+        display: none
+      .about_desc
+        .desc
+          padding: 60px 10px
+        p
+          font-size: 20px
+          line-height: 36px
+          margin-bottom: 16px
+
+
 @media only screen and (max-width: 750px)
   .section_full
     .content
       padding: 90px 60px
     &.cases
-      .case
-        grid-template-columns 1fr
+      .content
+        grid-template-columns 1fr !important
         padding: 90px 60px
         .case_about
           .case_title
@@ -432,7 +443,7 @@ html
     &.develop
       .content
         grid-template-columns 1fr
-        padding: 90px 60px
+        padding: 120px 60px
     &.dribbble
       .content
         padding: 90px 60px
@@ -600,6 +611,14 @@ html
     left: 0
     margin-top: 60px
     transform: translateX(0);
+
+//Mobie
+@media only screen and (max-width: 750px)
+  .develop
+    .blog_info
+      display: block
+    .blog_cover
+      width: 100%
 
 // Contact
 .contact_item
