@@ -180,7 +180,7 @@ html
   &.cases
     .content
       display: grid
-      grid-column-gap: 150px
+      grid-column-gap: 100px
       overflow hidden
       height: 100vh;
       margin: 0 auto
@@ -197,7 +197,7 @@ html
           margin-bottom: 20px
         .case_info
           font-family: AcuminR
-          font-size: 20px
+          font-size: 18px
           margin-bottom: 24px
         .case_button
           padding: 14px 36px
@@ -228,13 +228,13 @@ html
         top 50%
         left 0
         img
-          border-radius: 2px
+          border-radius: 4px
           width: 100%
           cursor pointer
           @extend $Transition-Normal
           &:hover
             opacity .9
-            @extend $LargeShadow
+            // @extend $LargeShadow
 
 .home_top
   position: relative
@@ -465,7 +465,7 @@ html
   &.elife
     background-color: #191A1F
     .content
-      grid-template-columns: 0.75fr 1fr
+      grid-template-columns: 1fr .6fr
     .case_title
     .case_link
       color: #fff
@@ -477,7 +477,7 @@ html
   &.smartisan
     background: #fbfbfb
     .content
-      grid-template-columns: 0.75fr 1fr
+      grid-template-columns: 1fr .6fr
     .case_title,
     .case_link
       color: $gray-dark
@@ -499,7 +499,7 @@ html
   &.cachemoment
     background: linear-gradient(37.38deg, #5150AD 1.16%, #7347BE 98.34%);
     .content
-      grid-template-columns: 1fr 0.75fr
+      grid-template-columns: .6fr 1fr
     .case_title,
     .case_link
       color: #fff
@@ -520,10 +520,9 @@ html
     .case_info
       color: #6F6F70
   &.designer_and_studio
-  &.figmachina
     background: #fbfbfb
     .content
-      grid-template-columns: 1fr 0.75fr
+      grid-template-columns: 0.6fr 1fr
     .case_title,
     .case_link
       color: #111
@@ -535,7 +534,23 @@ html
       color: rgba(0, 0, 0, .5)
       &:hover
         color: rgba(0, 0, 0, .7)
-
+  &.figmachina
+    background: linear-gradient(59.2deg, #0063D7 -5.46%, #0066D9 1.44%, #0094FF 104.94%);
+    .content
+      grid-template-columns: 0.6fr 1fr
+    .case_title,
+    .case_link
+      color: #fff
+    .case_about,
+    .case_info
+      color: rgba(255, 255, 255, 0.5)
+    .case_button
+      background-color: rgba(255, 255, 255, .1)
+      color: rgba(255, 255, 255, .5)
+      &:hover
+        color: rgba(255, 255, 255, .9)
+    .case_cover img
+      height 100%
 //Mobie
 @media only screen and (max-width: 750px)
   .case_title
