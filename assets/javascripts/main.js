@@ -86,7 +86,7 @@ jribbble.shots({token: "935c9bc6c35616b09c4214afb1e6ef80f22aa8175e1766881e00c228
 var galleryFeed = new Instafeed({
   get: "user",
   userId: 3253094037,
-  accessToken: "3253094037.1677ed0.8b08678d71d14703994ed3e7a9c2497a",
+  accessToken: "3253094037.1677ed0.1e5cdf00020e4e49b4a78efe66f9941c",
   resolution: "standard_resolution",
   useHttp: "true",
   limit: 9,
