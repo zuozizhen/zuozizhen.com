@@ -38,7 +38,7 @@
   margin-left: auto
   margin-right: auto
   font-size: 18px
-  color: $gray-dark
+  color: rgba(255,255,255,.6)
   line-height: 36px
   overflow-x: hidden
   // font-family: $family-post
@@ -56,11 +56,14 @@
     &:not(:last-child):after
       content: ", "
       display: inline
-.post-wrapper a,
-.post-wrapper ol li,
-.post-wrapper p,
-.post-wrapper ul li
-  font-weight: 400
+.post-wrapper {
+  a,
+  ol li,
+  p,
+  ul li {
+    font-weight: 400
+  }
+}
 @media only screen and (max-width: 750px)
   .post-wrapper
     font-size: 16px
@@ -91,14 +94,18 @@
 .post-wrapper hr,
 .post-wrapper iframe
   margin-bottom: 30px
-.post-wrapper blockquote,
-.post-wrapper h1,
-.post-wrapper h2,
-.post-wrapper h3,
-.post-wrapper h4,
-.post-wrapper p
-  padding-left: 80px
-  padding-right: 80px
+.post-wrapper {
+  blockquote,
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    padding-left: 80px
+    padding-right: 80px
+  }
+}
+
 .post-wrapper hr,
 .post-wrapper pre
   margin-left: 80px
@@ -114,33 +121,36 @@
   .post-wrapper h4
     padding-left: 0
     padding-right: 0
-.post-wrapper a
-  color: $gray-dark
-  text-decoration: underline
-  transition: 0.3s color
-.post-wrapper h1
-  font-size: 30px
-  margin: 60px 0 30px
-.post-wrapper h2
-  font-size: 24px
-  margin: 45px 0 20px
-.post-wrapper h3
-  font-size: 20px
-  margin: 40px 0 20px
-.post-wrapper h4
-  font-size: 18px
-  margin: 30px 0 15px
-.post-wrapper h5
-  font-size: 16px
-  margin: 30px 0 15px
-.post-wrapper h6
-  text-align: center
-  font-size: 14px
-  font-weight: 400
-  margin-top: -20px
-  color: $gray-light
-  a
-    color: #707070
+.post-wrapper
+    a
+      color: #FFCD00
+      transition: 0.3s all
+      &:hover {
+        color: #fff
+        }
+    h1
+      font-size: 30px
+      margin: 60px 0 30px
+    h2
+      font-size: 24px
+      margin: 45px 0 20px
+    h3
+      font-size: 20px
+      margin: 40px 0 20px
+    h4
+      font-size: 18px
+      margin: 30px 0 15px
+    h5
+      font-size: 16px
+      margin: 30px 0 15px
+    h6
+      text-align: center
+      font-size: 14px
+      font-weight: 400
+      margin-top: -20px
+      color: $gray-light
+      a
+        color: #707070
 h1 a,
 h2 a,
 h3 a,
@@ -155,7 +165,7 @@ h4,
 h5,
 h6
   font-weight: 600
-  color: $gray-dark
+  color: rgba(255,255,255,.9)
 .post-wrapper h5+p
   margin-top: 5px
 .post-wrapper h6+p
@@ -205,14 +215,13 @@ h6
   margin-bottom: 5px
 .post-wrapper li p
   margin: 0 0 5px
-.post-wrapper li h1,
-.post-wrapper li h2,
-.post-wrapper li h3,
-.post-wrapper li h4,
-.post-wrapper li h5,
-.post-wrapper li h6
-  line-height: 2
-  margin-top: 20px
+.post-wrapper li {
+  h1,h2,h3,h4,h5,h6 {
+    line-height: 2
+    margin-top: 20px
+  }
+}
+
 .post-wrapper .pager li
   width: 48%
 .post_pagination
@@ -226,12 +235,16 @@ h6
 .post_pagination .previous
   float: left
 .post_pagination a
-  color: $gray-dark
+  color: $gray
   font-size: 28px
   font-weight: 500
   text-decoration: none
+  transition: 0.3s all
+  &:hover {
+    color: #fff
+    }
 .post_pagination span
-  color: $gray
+  color: $gray-lightest
   font-size: 18px
   font-weight: 500
   line-height: 30px
@@ -266,10 +279,10 @@ h6
   z-index: 10000
 /*	Blockquotes  */
 blockquote p
-  font-size: 17px
+  font-size: 20px
   font-weight: 500 !important
   line-height: 38px
-  color: #808080
+  color: rgba(255, 255, 255, 0.3)
   padding-right: 0 !important
   padding-left: 30px !important
 blockquote

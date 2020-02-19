@@ -32,18 +32,18 @@ section.section_full.post
         br
         span {{page.next.title}}
       | {% endif %}
-.comment
-  #disqus_thread
-  noscript
-    | Please enable JavaScript to view the
-    a(href='https://disqus.com/?ref_noscript') comments powered by Disqus.
-script.
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://zuonx.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
+//- .comment
+//-   #disqus_thread
+//-   noscript
+//-     | Please enable JavaScript to view the
+//-     a(href='https://disqus.com/?ref_noscript') comments powered by Disqus.
+//- script.
+//-   (function() { // DON'T EDIT BELOW THIS LINE
+//-   var d = document, s = d.createElement('script');
+//-   s.src = 'https://zuonx.disqus.com/embed.js';
+//-   s.setAttribute('data-timestamp', +new Date());
+//-   (d.head || d.body).appendChild(s);
+//-   })();
 script(src='{{ site.baseurl }}/assets/javascripts/medium-zoom.js')
 script.
   mediumZoom(document.images)

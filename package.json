@@ -26,6 +26,7 @@
         "cafe": "git co gitcafe-pages; git merge master; git push gitcafe gitcafe-pages:gitcafe-pages --tag; git co master;"
     },
     "dependencies": {
-        "bricks.js": "^1.8.0"
+        "bricks.js": "^1.8.0",
+        "jekyll-bliss": "^2.0.0"
     }
 }

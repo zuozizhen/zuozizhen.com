@@ -15,100 +15,80 @@ section.home_top
   include ModifyScroll
 
 include WrapAbout
+include WrapLastBlog
 include WrapAbout2
 include WrapAbout3
-include WrapAbout4
+//- include WrapAbout4
 
-section.section_full.title_split
+section.section_full.works1
   .content.about_desc(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .desc_title
       | 我综合自己的所长，<br>
       | 尝试着创造些有意思的东西
-
-section.section_full.cases.figmachina
-  .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
-    .case_left
-      .case_about
-        .case_info
-          | Personal Project
-        //- .case_logo
-        //-   img(src='assets/images/logo/figmachina-logo.svg')
-        .case_title FigmaChina.com
+    .cases
+      .case
+        .case_about
+          .case_title
+           | FigmaChina
+          .case_logo
+            img(src='assets/images/logo/figmachina-logo.svg')
+        .case_info 2019 · 独立设计开发
         .case_desc
-          | FigmaChina 是一个以中文内容介绍 Figma 的网站，这里有最新的 Figma 中文用户手册、原创教程、使用技巧和在线社区。
-        a.case_button(href='https://figmachina.com', target="_blank") 访问网站
-        //- a.case_button(href='https://figmachina.com', target="_blank") 阅读：
-    .case_right
-      a.case_cover(href='https://figmachina.com', target="_blank")
-        img.lozad(src='assets/images/home/figmachina.jpg', alt='')
-
-section.section_full.cases.elife
-  .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
-    .case_left
-      a.case_cover(href='https://startelife.com', target="_blank")
-        img.lozad(src='assets/images/home/elife.png', alt='')
-    .case_right
-      .case_about
-        .case_logo
-          img(src='assets/images/logo/elife-logo.svg')
-        .case_title ELIFE
+          | FigmaChina 是一个以中文介绍 Figma 的网站，这里有最新的 Figma 中文用户手册、原创教程、使用技巧和在线社区。
+        a.view_more.link(href='https://figmachina.com', target='_blank')
+          span Read More
+        img.cover.lozad(src='assets/images/home/figmachina.jpg', alt='')
+      .case
+        .case_about
+          .case_title
+           | ELIFE
+          .case_logo
+            img(src='assets/images/logo/elife-logo.svg')
+        .case_info 2018 · 独立设计开发
         .case_desc
-          | ELIFE 是我自己整理的在线工具集合，还有一个生命倒计时器，提醒自己生命短暂
-        a.case_button(href='https://startelife.com', target="_blank") 访问网站
-        //- a.case_button(href='https://figmachina.com', target="_blank") 阅读：为 Smartisan OS 搭建设计系统
-
-section.section_full.cases.designer_and_studio
-  .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
-    .case_left
-      .case_about
-        //- .case_logo
-        //-   img(src='assets/images/logo/smartisan.svg')
-        .case_title DesignerAndStudio
+          | ELIFE 是我整理的在线工具集，首页的生命倒计时器提醒自己生命短暂
+        a.view_more.link(href='https://startelife.com', target='_blank')
+          span Read More
+        img.cover.lozad(src='assets/images/home/elife.png', alt='')
+      .case
+        .case_about
+          .case_title
+           | DesignerAndStudio
+        .case_info 2017 · 独立设计开发
         .case_desc
-          | 这里是我自己收集的设计师和工作室个人网站的集合，希望可以给大家建立自己网站带来一些灵感
-        a.case_button(href='https://designerandstudio.com', target="_blank") 访问网站
-        //- a.case_button(href='https://figmachina.com', target="_blank") 阅读：为 Smartisan OS 搭建设计系统
-    .case_right
-      a.case_cover(href='https://designerandstudio.com', target="_blank")
-        img.lozad(src='assets/images/home/designerandstudio.png', alt='')
+          | 这里是我自己收集的设计师和工作室个人网站的集合，可以给需要的设计师带来灵感
+        a.view_more.link(href='https://designerandstudio.com', target='_blank')
+          span Read More
+        img.cover.lozad(src='assets/images/home/designerandstudio.jpg', alt='')
 
-section.section_full.title_split
+section.section_full.works2
   .content.about_desc(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
     .desc_title
       | 工作上，<br>
-      | 我做了许多有用的事
+      | 我做了许多有价值的事
+    .cases
+      .case.smartisan_ds
+        .case_about
+          .case_title
+           | Smartisan OS 7.0 <br>
+           | Design System
+          .case_info 2019 · UI Designer
+          .case_desc
+            | 在 OS 7.0 改版时为团队搭建基于 Figma 的大型设计系统，提高设计效率和可维护性
+          a.view_more.link(href='https://www.smartisan.com/jianguopro3/os', target='_blank')
+            span Read More
+        img.cover.lozad(src='assets/images/home/smartisan.png', alt='')
+      .case.cachemoment
+        .case_about
+          .case_title
+           | CacheMoment
+          .case_info 2019 · UI Designer
+          .case_desc
+            | 负责 CacheMoment 的所有产品设计和部分 Rails 开发
+          a.view_more.link(href='https://www.cachemoment.com', target='_blank')
+            span Read More
+        img.cover.lozad(src='assets/images/home/cachemoment.png', alt='')
 
-section.section_full.cases.smartisan
-  .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
-    .case_left
-      a.case_cover(href='https://www.smartisan.com/os/#/6-x', target="_blank")
-        img.lozad(src='assets/images/home/smartisan.png', alt='')
-    .case_right
-      .case_about
-        .case_logo
-          img(src='assets/images/logo/smartisan.svg')
-        .case_title Smartisan OS <br> Design System
-        .case_desc
-          | 为团队搭建基于 Figma 的大型设计系统，提高效率和可维护性
-        a.case_button(href='https://www.smartisan.com/os/#/6-x', target="_blank") 暂未公开
-
-
-section.section_full.cases.cachemoment
-  .content(data-aos="fade-up", data-aos-easing="ease-out-cubic", data-aos-duration="700")
-    .case_left
-      .case_about
-        .case_logo
-          img(src='assets/images/logo/cachemoment.svg')
-        .case_title CacheMoment
-        .case_desc
-          | 我负责 CacheMoment 的所有产品设计和品牌设计，和部分前端开发（Rails/React）。
-        a.case_button(href='https://www.cachemoment.com', target="_blank") 访问网站
-        a.case_button(href='https://www.behance.net/gallery/58498171/Moment', target="_blank") View Behance
-    .case_right
-      a.case_cover(href='https://www.cachemoment.com', target="_blank")
-        img.lozad(src='assets/images/home/cachemoment.png', alt='')
-
-include WrapLastBlog
 include WrapDribbble
-include WrapInstagram
+//- include WrapInstagram
 include WrapContact

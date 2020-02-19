@@ -1,6 +1,6 @@
 body,
 html
-  background: #fff
+  background: #161616
   color: $gray-dark
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
@@ -22,7 +22,7 @@ html
 
   .nav_link
     font-size: $h4
-    color: $gray-light
+    color: $gray
     font-family: AcuminR
     line-height: 30px
     z-index: 2
@@ -30,9 +30,9 @@ html
     position relative
     @extend $Transition-Normal
     &:hover
-      color: $gray
+      color: $gray-lightest
     &.active
-      color: $gray
+      color: $gray-lightest
       font-family: AcuminBd
 
   .logo_z
@@ -48,7 +48,7 @@ html
       @extend $XY-Center
       position: absolute
       display: block
-      background-color: $gray-dark
+      background-color: $gray-lightest
       background-image: none
       width: 22px
       height: 26px
@@ -69,13 +69,13 @@ html
     width: calc(100% - 60px)
 
 .section_full
-  background-color: #fff
+  background-color: #161616
   position: relative
   .section_title
     font-size: 45px;
     font-weight: 700;
     line-height: 70px;
-    color: $gray-dark
+    color: $gray-lightest
     margin-bottom: 24px
     display: inline-block
   .content
@@ -86,8 +86,98 @@ html
     font-family: AcuminBd
     font-size: 28px
     margin-bottom: -10px
+  &.works1,
+  &.works2
+    border-top: 1px solid rgba(255, 255, 255, .06)
+    .desc_title
+      margin-bottom: 120px
+    .cases
+      display: grid
+      .case
+        border-radius: 16px
+        padding: 54px
+        .case_title
+          font-family: AcuminBd
+          font-size: 36px
+        .case_logo img
+          height 42px
+          margin-top: -3px
+        .case_info
+          font-family: AcuminBd
+          font-size: 18px
+          color: $gray-dark
+          margin-top: 6px
+        .case_desc
+          font-size: 18px;
+          line-height: 34px;
+          color: $gray
+          margin-top: 30px;
+        .cover
+          width: 100%
+          border-radius: 12px
+  &.works1
+    .cases
+      @extend $grid-1-1
+      .case
+        background-color: #1F1F1F
+        border: 1px solid rgba(255, 255, 255, .06)
+        color: $gray-lightest
+        .case_about
+          display: flex
+          justify-content: space-between
+  &.works2
+    .cases
+      grid-template-columns: 1fr
+      grid-column-gap: 40px
+      grid-row-gap: 40px
+      .case
+        display flex
+        justify-content: space-between
+        align-items: center
+        height 600px
+        padding: 54px 54px 54px 120px
+        &.smartisan_ds
+          background-color: #F5F5F5
+          color: $gray-darkest
+          .case_info
+            margin-top: 12px
+            color: $gray-lighter
+          .case_desc
+            padding-right: 120px
+            color: rgba(10, 10, 20, 0.6)
+          .view_more
+            margin-bottom 0
+          .view_more.link span
+            color $gray-darkest
+          .view_more.link:before
+            background-color rgba(10, 10, 20, .2)
+          .view_more.link:after
+            background-color $gray-darkest
+          img
+            height 100%
+            width: auto
+        &.cachemoment
+          background: linear-gradient(34.1deg, #4F4DBA 1.16%, #865AD3 98.34%);
+          color: $gray-lightest
+          .case_info
+            margin-top: 12px
+            color: $gray-dark
+          .case_desc
+            padding-right: 120px
+            color: $gray
+          .view_more
+            margin-bottom 0
+          .view_more.link span
+            color #FFF
+          .view_more.link:before
+            background-color rgba(255, 255, 255, .2)
+          .view_more.link:after
+            background-color rgba(255, 255, 255, .7)
+          img
+            height 100%
+            width: auto
   &.about2
-    background-color: #FBFBFB
+    border-top: 1px solid rgba(255, 255, 255, .06)
     .content
       display: grid
       grid-template-columns: 0.17fr 1fr
@@ -98,12 +188,14 @@ html
           position: absolute;
           left: -200px;
   &.about3
-    background-color: #FFFFFF
+    border-top: 1px solid rgba(255, 255, 255, .06)
     .content
       .desc
         padding-bottom: 60px
+      img
+        width: 100%;
   &.about4
-    background-color: #FBFBFB
+    border-top: 1px solid rgba(255, 255, 255, .06)
     .content
       display: grid
       grid-template-columns: 0.4fr 1fr
@@ -129,15 +221,18 @@ html
       .desc
         padding: 60px 30px
   &.dribbble
-    background-color: #FBFBFB
+    border-top: 1px solid rgba(255, 255, 255, .06)
+    .view_more
+      position absolute
+      @extend $X-Center
   &.ins
-    background-color: #fff
+    border-top: 1px solid rgba(255, 255, 255, .06)
     .content
       padding: 200px 110px;
     .section_title
       margin-top: 10px
   &.more
-    background-color: #FBFBFB
+    border-top: 1px solid rgba(255, 255, 255, .06)
     position relative
     .content
       height 100vh
@@ -157,9 +252,9 @@ html
 
     .copyright
       @extend $X-Center
-      font-family: AcuminR
-      font-size: 14px
-      color: #BDBDBD
+      font-family: AcuminBd
+      font-size: 16px
+      color: rgba(255, 255, 255, .2)
       position: absolute
       bottom: 30px
       width: fit-content
@@ -170,7 +265,7 @@ html
     .contact_item .item_desc
       font-family: AcuminBd
       font-size: 24px
-      color: $gray-dark
+      color: $gray-lightest
     .contact_item a:before
       background-color: #e7e7e7
     .contact_item a:after
@@ -251,6 +346,7 @@ html
     margin-top: -265px
     width: 100%
     right: 0
+    border-radius: 2px;
     @extend $LargeShadow
 
 .home_top_title
@@ -261,14 +357,14 @@ html
   .main_title
     font-weight: 700
     font-size: 60px
-    color: $gray-dark
+    color: $gray-lightest
     text-align: left
-    line-height: 1.4em
+    line-height: 1.5em
   .sub_title
     font-weight: 500;
     font-size: 24px;
     line-height: 35px;
-    color: rgba(0, 0, 0, 0.5);
+    color: $gray
     margin-top: 24px
 
 //Mobie
@@ -294,6 +390,7 @@ html
 
 .lastblog
 .develop
+  border-top: 1px solid rgba(255, 255, 255, .06)
   .blog_item
     color: $gray-lightest
     display: block
@@ -308,11 +405,11 @@ html
   .blog_item
     &:not(:last-child)
       padding-bottom: 50px
-      border-bottom: 1px solid #E4E4E4
+      border-bottom: 1px solid rgba(255, 255, 255, .06)
   .view_more
     transform: translateX(0)
     left 0
-    margin-top: 60px
+    margin-top: 0px !important
 
 .blog_tag
   display: block
@@ -333,7 +430,7 @@ html
   // font-family: $family-title
   display: inline-block
   vertical-align: super
-  color: $gray-dark
+  color: $gray-lightest
   line-height: 1.5em
   position: relative
   margin-bottom: 16px
@@ -557,21 +654,17 @@ html
     font-size: $h4
 
 .view_more
-  @extend $X-Center
-  padding-top: 16px
+  padding-top: 30px
   padding-bottom: 2px
   position: relative
   display: inline-block
   margin-top: 60px
   font-family: AcuminBd
   font-size: 20px
-  margin-bottom: 20px
-  color: $gray-dark
+  margin-bottom: 60px
+  color: $gray-lightest
   &.link
     margin-top: 10px
-    margin-bottom: 0
-    transform: translateX(0)
-    left: 0
     span
       font-size: 22px
       color: #fff
@@ -580,13 +673,13 @@ html
       content: ""
       display: block
       width: 100%
-      height: 3px
-      background-color: #e7e7e7
+      height: 2px
+      background-color: #3C3C3C
       position: absolute
       top: 60px
       transition: all 0.3s
     &:after
-      background: #b6b6b6
+      background: #9E9E9E
       transform: scale3d(0, 1, 1)
       transform-origin: 0% 50%
       transition: transform 0.3s
@@ -597,8 +690,8 @@ html
     content: ""
     display: block
     width: 100%
-    height: 3px
-    background-color: #dfdfdf
+    height: 2px
+    background-color: #3C3C3C
     position: absolute
     top: 44px
     transition: all 0.3s
@@ -641,7 +734,7 @@ html
     padding-bottom: 2px
     position: relative
   .item_desc
-    color: $gray-dark
+    color: $gray-lightest
     display: block
     width: fit-content
     font-size: 20px
@@ -696,7 +789,7 @@ html
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto
-  grid-gap: 60px
+  grid-gap: 40px
   a
     border-radius: 2px
     &:hover img
@@ -721,20 +814,22 @@ html
     font-size: 45px;
     font-weight: 700;
     line-height: 70px;
-    color: $gray-dark
+    color: $gray-lightest
     margin-bottom: 24px
     display: inline-block
   p
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
-    color: rgba(0, 0, 0, .5);
+    color: $gray
     margin-bottom: 14px
     i
       font-weight: 700;
       color rgba(0,0,0,.7)
   p.last
     margin-bottom: 0
+  .skill
+    line-height: 50px;
 
 //Mobie
 @media only screen and (max-width: 750px)
