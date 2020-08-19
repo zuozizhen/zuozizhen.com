@@ -103,7 +103,7 @@ html
           height 42px
           margin-top: -3px
         .case_info
-          font-family: AcuminBd
+          font-weight: 600;
           font-size: 18px
           color: $gray-dark
           margin-top: 6px
@@ -136,6 +136,26 @@ html
         align-items: center
         height 600px
         padding: 54px 54px 54px 120px
+        &.master
+          background: #1F1F1F;
+          color: $gray-lightest
+          .case_info
+            margin-top: 12px
+            color: $gray-dark
+          .case_desc
+            padding-right: 120px
+            color: $gray
+          .view_more
+            margin-bottom 0
+          .view_more.link span
+            color #FFF
+          .view_more.link:before
+            background-color rgba(255, 255, 255, .2)
+          .view_more.link:after
+            background-color rgba(255, 255, 255, .7)
+          img
+            height 100%
+            width: auto
         &.smartisan_ds
           background-color: #F5F5F5
           color: $gray-darkest
