@@ -1,0 +1,68 @@
+.wonderful-tab
+  ul#title.title
+    li.highligh
+      a(href='javascript:void(0)') 我读过的 · 好书
+    li
+      a(href='javascript:void(0)') 我看过的 · 好文
+    li
+      a(href='javascript:void(0)') 我正在用的 · 产品
+  #wrap.wrap
+    .wonderful_content.active
+      .wonderful_book_list_item
+        | {% for item in site.data.wonderful-book.book_list %}
+        .item
+          .cover_wrap
+            img(src="{{ item.cover }}", alt="")
+          .info_wrap
+            .title_wrap
+              a.title.title_link_book(href="{{ item.url }}") {{ item.title }}
+            .desc_wrap
+              .desc {{ item.desc }}
+            .score_wrap
+              .score 豆瓣 · {{ item.score }}
+        | {% endfor %}
+    .wonderful_content
+      .wonderful_article_list_item
+        | {% for item in site.data.wonderful-article.article_list %}
+        .item
+          .title_wrap
+            a.title.title_link_h1(href="{{ item.url }}") {{ item.title }}
+          .desc_wrap
+            .desc {{ item.desc }}
+          .site_wrap
+            .site {{ item.site }} · {{ item.time }} 分钟读完
+        | {% endfor %}
+    .wonderful_content
+      .wonderful_product_list_item
+        
+        .h2 🎨 设计
+        .item_wrap
+          | {% for item in site.data.wonderful-product.product_list_design %}
+          .item
+            .title_wrap
+              a.title.title_link_product(href="{{ item.url }}") {{ item.title }}
+            .desc_wrap
+              .desc {{ item.desc }}
+          | {% endfor %}
+        
+        .h2 💻 开发
+        .item_wrap
+          | {% for item in site.data.wonderful-product.product_list_code %}
+          .item
+            .info_wrap
+              .title_wrap
+                a.title.title_link_product(href="{{ item.url }}") {{ item.title }}
+              .desc_wrap
+                .desc {{ item.desc }}
+          | {% endfor %}
+
+        .h2 💻 开发
+        .item_wrap
+          | {% for item in site.data.wonderful-product.product_list_code %}
+          .item
+            .info_wrap
+              .title_wrap
+                a.title.title_link(href="{{ item.url }}") {{ item.title }}
+              .desc_wrap
+                .desc {{ item.desc }}
+          | {% endfor %}

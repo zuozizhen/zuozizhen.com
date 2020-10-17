@@ -1,63 +1,282 @@
 body,
 html
   background: #161616
-  color: $gray-dark
+  color: #FFFFFF
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: antialiased
   font-family: $family-main
 
-// Nav
-.top_nav
-  @extend $X-Center
-  position: fixed
-  width: calc(100% - 128px)
-  padding: 48px 0
-  z-index: 10
-  top: 0
+ul, li
+  list-style-type: none
+a
+  font-weight: 600
+  color: #ffffff
+  display: inline-block
+a.link
+  padding: 0 10px
+  margin: 0 3px
+  position relative
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    transform: translateY(-50%)
+    right 0
+    top: 50%
+    width: 100%
+    height calc(100% - 4px)
+    border-radius: 6px
+    @extend $Transition-Normal
+  &:after
+    content: ''
+    position: absolute
+    right 0
+    top: 2px
+    width: 5px
+    height 5px
+    border 1px solid $sunglow
+    border-radius: 50%
+  &:hover
+    &:before
+      background: rgba($sunglow,0.12)
+    color: $sunglow
+a.title_link_book
+  position relative
+  &:before
+      content: ''
+      position: absolute
+      display: block
+      transform: translate(-50%,-50%)
+      left 50%
+      top: 50%
+      width: 100%
+      height 100%
+      border-radius: 8px
+      @extend $Transition-Normal
+  &:after
+    content: ''
+    position: absolute
+    right 0
+    top: 0
+    width: 5px
+    height 5px
+    border 1px solid $green
+    border-radius: 50%
+  &:hover
+    &:before
+      background: rgba($green,0.12)
+    color: $green
+a.title_link_product
+  position relative
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    transform: translate(-50%,-50%)
+    left 50%
+    top: 50%
+    width: calc(100% + 20px)
+    height 100%
+    border-radius: 6px
+    @extend $Transition-Normal
+  &:after
+    content: ''
+    position: absolute
+    right -10px
+    top: 0
+    width: 5px
+    height 5px
+    border 1px solid $sunglow
+    border-radius: 50%
+  &:hover
+    &:before
+      background: rgba($sunglow,0.12)
+    color: $sunglow
+a.title_link_h1
+  position relative
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    transform: translate(-50%,-50%)
+    left 50%
+    top: 50%
+    width: calc(100% + 22px)
+    height 100%
+    border-radius: 8px
+    @extend $Transition-Normal
+  &:after
+    content: ''
+    position: absolute
+    right -11px
+    top: 0
+    width: 5px
+    height 5px
+    border 1px solid $blue
+    border-radius: 50%
+  &:hover
+    &:before
+      background: rgba($blue,0.12)
+    color: $blue
+a.link, a.title_link_h1, a.title_link_book
+  font-weight: 500
+  position relative
+  color: inherit
+
+.main_layout
+  max-width: 1260px
+  margin: 0 auto
+  position relative
+  display: grid
+  grid-template-columns: 420px 1fr
+
+.left_wrap
+  position: sticky
+  width: 100%
+  z-index: 10000
+  left 0
+  top 0
+  height 100vh
+  padding: 90px 60px
+  &:after 
+    content: ''
+    position: absolute
+    top: 90px
+    right 0
+    height 520px
+    width: 1px
+    border-right: 1px dashed rgba(255, 255, 255, 0.12);
+  .info
+    .avatar
+      margin-bottom: 42px
+      img
+        display: block
+        width: 120px
+        height: 120px
+        border-radius: 18px
+    .title
+      font-size: 26px
+      font-weight: 600
+      margin-bottom: 24px
+    .desc
+      font-size: 17px
+      font-weight: 400
+      line-height: 1.8
+      color: rgba(255, 255, 255, 0.5)
+      margin-bottom: 120px
+  .contact
+    display: grid
+    grid-template-columns: 24px 24px 24px 24px
+    gap: 30px
+    .wechat
+      .img_qr
+        position: absolute
+        opacity 0
+        width: 120px
+        height 120px
+        bottom: 42px
+        left 0
+      &:hover
+        .img_qr
+          opacity 1
+    .item_desc
+      position relative
+      @extend $Transition-Normal
+      &:hover
+        transform: scale(1.05)
+    img
+      width: 24px
+      height 24px
+  .copyright
+    position: absolute
+    bottom: 90px
+    left 60px
+    font-size: 14px
+    color: rgba(255, 255, 255, 0.3)
+
+
+.right_wrap
+  padding: 90px 60px
+
+.post_nav
+  max-width: 790px
   display: flex
   align-items: center
-  &.nav-up
-    top: -120px;
-
-  .nav_link
-    font-size: $h4
+  justify-content: space-between
+  margin: 90px auto 0 auto
+  position relative
+  .back_link
+    font-size: 17px
+    font-weight: 600
     color: $gray
-    font-family: AcuminR
     line-height: 30px
     z-index: 2
-    margin-right: 36px
+    position relative
+    display: flex
+    align-items: center
+    @extend $Transition-Normal
+    svg
+      width: 21px
+      height: 21px
+      margin-right: 6px
+      margin-top: -0.5px
+      opacity .5
+    &:not(:last-child) 
+      margin-right: 48px
+    &:hover
+      color: $gray-lightest
+      svg
+        opacity 1
+    &.active
+      color: $gray-lightest
+      
+
+// Nav
+.top_nav
+  width: 100%
+  display: flex
+  align-items: center
+  margin-bottom: 60px
+  position relative
+  .nav_link
+    font-size: 17px
+    font-weight: 600
+    color: $gray
+    line-height: 30px
+    z-index: 2
     position relative
     @extend $Transition-Normal
+    &:not(:last-child) 
+      margin-right: 48px
     &:hover
       color: $gray-lightest
     &.active
       color: $gray-lightest
-      font-family: AcuminBd
 
-  .logo_z
-    display: inline-block
+.logo_z
+  display: inline-block
+  position: absolute
+  right: 0
+  width: 40px
+  height: 40px
+  @extend $Transition-Normal
+  z-index: 10
+  cursor pointer
+  i
+    @extend $XY-Center
     position: absolute
-    right: 0
-    width: 40px
-    height: 40px
+    display: block
+    background-color: $gray-lightest
+    background-image: none
+    width: 22px
+    height: 26px
+    background-size: 20px 20px
+    -webkit-mask-image: url("../images/logo/z.svg")
+    mask-image: url("../images/logo/z.svg")
     @extend $Transition-Normal
-    z-index: 10
-    cursor pointer
-    i
-      @extend $XY-Center
-      position: absolute
-      display: block
-      background-color: $gray-lightest
-      background-image: none
-      width: 22px
-      height: 26px
-      background-size: 20px 20px
-      -webkit-mask-image: url("../images/logo/z.svg")
-      mask-image: url("../images/logo/z.svg")
-      @extend $Transition-Normal
-      &:hover
-        opacity: .8
+    &:hover
+      opacity: .8
 
 // Mobie
 @media only screen and (max-width: 1140px)
@@ -68,288 +287,178 @@ html
   .top_nav
     width: calc(100% - 60px)
 
-.section_full
-  background-color: #161616
-  position: relative
-  .section_title
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 70px;
-    color: $gray-lightest
-    margin-bottom: 24px
-    display: inline-block
-  .content
-    max-width: 1480px
-    padding: 200px 120px
-    margin: 0 auto
-  .item_title
-    font-family: AcuminBd
-    font-size: 28px
-    margin-bottom: -10px
-  &.works1,
-  &.works2
-    border-top: 1px solid rgba(255, 255, 255, .06)
-    .desc_title
-      margin-bottom: 120px
-    .cases
-      display: grid
-      .case
-        border-radius: 16px
-        padding: 54px
-        .case_title
-          font-family: AcuminBd
-          font-size: 36px
-        .case_logo img
-          height 42px
-          margin-top: -3px
-        .case_info
-          font-weight: 600;
-          font-size: 18px
-          color: $gray-dark
-          margin-top: 6px
-        .case_desc
-          font-size: 18px;
-          line-height: 34px;
-          color: $gray
-          margin-top: 30px;
-        .cover
-          width: 100%
-          border-radius: 12px
-  &.works1
-    .cases
-      @extend $grid-1-1
-      .case
-        background-color: #1F1F1F
-        border: 1px solid rgba(255, 255, 255, .06)
-        color: $gray-lightest
-        .case_about
-          display: flex
-          justify-content: space-between
-  &.works2
-    .cases
-      grid-template-columns: 1fr
-      grid-column-gap: 40px
-      grid-row-gap: 40px
-      .case
-        display flex
-        justify-content: space-between
-        align-items: center
-        height 600px
-        padding: 54px 54px 54px 120px
-        &.master
-          background: #1F1F1F;
-          color: $gray-lightest
-          .case_info
-            margin-top: 12px
-            color: $gray-dark
-          .case_desc
-            padding-right: 120px
-            color: $gray
-          .view_more
-            margin-bottom 0
-          .view_more.link span
-            color #FFF
-          .view_more.link:before
-            background-color rgba(255, 255, 255, .2)
-          .view_more.link:after
-            background-color rgba(255, 255, 255, .7)
-          img
-            height 100%
-            width: auto
-        &.smartisan_ds
-          background-color: #F5F5F5
-          color: $gray-darkest
-          .case_info
-            margin-top: 12px
-            color: $gray-lighter
-          .case_desc
-            padding-right: 120px
-            color: rgba(10, 10, 20, 0.6)
-          .view_more
-            margin-bottom 0
-          .view_more.link span
-            color $gray-darkest
-          .view_more.link:before
-            background-color rgba(10, 10, 20, .2)
-          .view_more.link:after
-            background-color $gray-darkest
-          img
-            height 100%
-            width: auto
-        &.cachemoment
-          background: linear-gradient(34.1deg, #4F4DBA 1.16%, #865AD3 98.34%);
-          color: $gray-lightest
-          .case_info
-            margin-top: 12px
-            color: $gray-dark
-          .case_desc
-            padding-right: 120px
-            color: $gray
-          .view_more
-            margin-bottom 0
-          .view_more.link span
-            color #FFF
-          .view_more.link:before
-            background-color rgba(255, 255, 255, .2)
-          .view_more.link:after
-            background-color rgba(255, 255, 255, .7)
-          img
-            height 100%
-            width: auto
-  &.about2
-    border-top: 1px solid rgba(255, 255, 255, .06)
-    .content
-      display: grid
-      grid-template-columns: 0.17fr 1fr
-      grid-column-gap: 150px
-      .section_pic
-        img
-          @extend $Y-Center
-          position: absolute;
-          left: -200px;
-  &.about3
-    border-top: 1px solid rgba(255, 255, 255, .06)
-    .content
+.project_best_list_item
+  display: grid
+  gap: 72px
+  .item
+    display: grid
+    gap: 30px
+    .info_wrap
+      display: flex
+      justify-content: space-between
+      padding: 0 18px
+      .title
+        font-size: 26px
+        font-weight: 700
+        margin-bottom: 6px
+      .info
+        font-size: 17px
+        font-weight: 400
+        color: rgba(#ffffff,.3)
       .desc
-        padding-bottom: 60px
+        font-size: 17px
+        font-weight: 400
+        width: 300px
+        line-height: 30px
+        color: rgba(#ffffff,.5)
+    .cover_wrap
       img
-        width: 100%;
-  &.about4
-    border-top: 1px solid rgba(255, 255, 255, .06)
-    .content
-      display: grid
-      grid-template-columns: 0.4fr 1fr
-      grid-column-gap: 150px
-      p
-        line-height: 60px
-      .title_item
-        position: relative
-        .desc_title
-          position absolute
-          transform: translateY(-50%);
-          top: 50%;
-  &.title_split
-    .content
-      padding: 300px 120px;
-  &.home_about
-    .content
-      padding: 140px 120px 0 120px
-      display: grid
-      grid-template-columns: 1fr 2.3fr
-      grid-column-gap: 40px
-      grid-row-gap: 40px
-      .desc
-        padding: 60px 30px
-  &.dribbble
-    border-top: 1px solid rgba(255, 255, 255, .06)
-    .view_more
-      position absolute
-      @extend $X-Center
-  &.ins
-    border-top: 1px solid rgba(255, 255, 255, .06)
-    .content
-      padding: 200px 110px;
-    .section_title
-      margin-top: 10px
-  &.more
-    border-top: 1px solid rgba(255, 255, 255, .06)
-    position relative
-    .content
-      height 100vh
-      .section_item
-        @extend $XY-Center
-        position: absolute
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-column-gap: 300px
-        .img_qr
-          width: 140px
-          @extend $LargeShadow
-          margin-bottom: 60px
-        .item
-          @extend $Y-Center
-          position absolute
+        width: 100%
+        height 500px
+        border-radius: 12px
 
-    .copyright
-      @extend $X-Center
-      font-family: AcuminBd
-      font-size: 16px
-      color: rgba(255, 255, 255, .2)
-      position: absolute
-      bottom: 30px
-      width: fit-content
-    .item_title
-      font-weight: 400
-      font-size: 20px
-      color: #6f6f6f
-    .contact_item .item_desc
-      font-family: AcuminBd
-      font-size: 24px
-      color: $gray-lightest
-    .contact_item a:before
-      background-color: #e7e7e7
-    .contact_item a:after
-      background-color: #b6b6b6
-    .contact_item:last-child
-      margin-bottom: 0
-  &.cases
-    .content
-      display: grid
-      grid-column-gap: 100px
-      overflow hidden
-      height: 100vh;
-      margin: 0 auto
-      font-size: 18px
-      color: #A0A0A0
-      position relative
-      .case_about
-        position: absolute
-        @extend $Y-Center
-        .case_title
-          font-family: AcuminBd
-          font-size: 45px
-          z-index: 2
-          margin-bottom: 20px
-        .case_info
-          font-family: AcuminR
-          font-size: 18px
-          margin-bottom: 24px
-        .case_button
-          padding: 14px 36px
-          font-weight: 600
-          font-size: 18px
-          display: block
-          width: fit-content
-          border-radius: 4px
-          transition: all 0.3s ease
-          &:not(:last-child)
-            margin-bottom: 24px
-      .case_logo
-        height: 48px
-        margin-bottom: 24px
-      .case_desc
-        line-height: 36px
-        margin-bottom: 50px
-        font-weight: 500
-      .case_right
-        position: relative
-      .case_left
-        position: relative
-        max-width 660px
-        z-index 10
-      .case_cover
-        position: absolute
-        transform: translateY(-50%)
-        top 50%
-        left 0
-        img
-          border-radius: 4px
-          width: 100%
-          cursor pointer
-          @extend $Transition-Normal
-          &:hover
-            opacity .9
-            // @extend $LargeShadow
+.projectlist
+  .h2
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff
+    margin-bottom: 36px
+    margin-top: 60px
+    margin-left: 18px
+.project_other_list_item
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 36px
+  .item
+    background: rgba(#ffffff,.06)
+    border-radius: 12px
+    padding: 42px
+    height 380px
+    position relative
+    .info_wrap
+      .title
+        font-size: 26px
+        font-weight: 700
+        margin-bottom: 6px
+      .info
+        font-size: 15px
+        font-weight: 400
+        color: rgba(#ffffff,.3)
+        margin-bottom: 18px
+      .desc
+        font-size: 17px
+        font-weight: 400
+        line-height: 30px
+        color: rgba(#ffffff,.5)
+    .link_wrap
+      height: fit-content
+      position absolute
+      left 42px
+      bottom: 42px
+      a
+        font-weight: 600
+        color: $blue
+
+.wonderful-tab
+  ul
+    display: flex
+    li
+      margin-right: 48px
+      a
+        font-size: 17px
+        color: $sunglow
+        opacity .5
+      &.highligh
+        a
+          opacity 1
+
+.wonderful-tab > .title
+  margin-bottom: 60px
+
+.wonderful_content
+  display: none
+
+.wonderful_content.active
+  display: block
+
+
+
+.wonderful_article_list_item
+  display: grid
+  gap: 72px
+  .item
+    .title_wrap
+      .title
+        font-size: 26px
+        line-height: 40px
+        margin-bottom: 18px
+        display: inline-block
+    .desc_wrap
+      .desc
+        font-size: 16px
+        margin-bottom: 18px
+        line-height: 30px
+        color: rgba(#ffffff,.5)
+    .site_wrap
+      .site
+        font-size: 16px
+        font-weight: 600
+        color: $blue
+
+.wonderful_book_list_item
+  display: grid
+  gap: 72px
+  .item
+    display: flex
+    align-items: center
+    .cover_wrap
+      margin-right: 30px
+      img
+        display block
+        width: 160px
+        border-radius: 12px
+    .title_wrap
+      .title
+        font-size: 26px
+        line-height: 40px
+        margin-bottom: 18px
+        display: inline-block
+    .desc_wrap
+      .desc
+        font-size: 16px
+        margin-bottom: 18px
+        line-height: 30px
+        color: rgba(#ffffff,.5)
+    .score_wrap
+      .score
+        font-size: 16px
+        font-weight: 600
+        color: $green
+
+.wonderful_product_list_item
+  .h2
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff
+    margin-bottom: 36px
+    margin-top: 60px
+  .item_wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 60px
+    .title_wrap
+      .title
+        font-size: 18px
+        line-height: 30px
+        margin-bottom: 18px
+        display: inline-block
+    .desc_wrap
+      .desc
+        font-size: 16px
+        margin-bottom: 18px
+        line-height: 30px
+        color: rgba(#ffffff,.5)
+
 
 .home_top
   position: relative
@@ -360,14 +469,6 @@ html
     margin: 0 auto
     padding: 90px 110px
 
-.about_info
-  position: relative
-  img
-    margin-top: -265px
-    width: 100%
-    right: 0
-    border-radius: 2px;
-    @extend $LargeShadow
 
 .home_top_title
   @extend $Y-Center
@@ -405,27 +506,33 @@ html
     left 30px
     width: 90%
 
-.blog_item
-  position: relative
-
-.lastblog
-.develop
-  border-top: 1px solid rgba(255, 255, 255, .06)
+.bloglist
   .blog_item
     color: $gray-lightest
     display: block
     position: relative
+    @extend $Transition-Normal
+    border-radius: 18px
+    a
+      display: block
     &:not(:first-child)
-      padding-top: 50px
+      margin-top: 50px
     &:not(:last-child)
-      padding-bottom: 50px
-      // border-bottom: 1px solid #E4E4E4
-
-.lastblog
-  .blog_item
-    &:not(:last-child)
-      padding-bottom: 50px
-      border-bottom: 1px solid rgba(255, 255, 255, .06)
+      margin-bottom: 50px
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      transform: translate(-50%, -50%)
+      left 50%
+      top 50%
+      width: calc(100% + 54px)
+      height calc(100% + 42px)
+      border-radius: 12px
+      @extend $Transition-Normal
+    &:hover
+      &:after
+        background: rgba(255, 255, 255, .06)
   .view_more
     transform: translateX(0)
     left 0
@@ -433,37 +540,38 @@ html
 
 .blog_tag
   display: block
-  font-family: AcuminR
   font-size: 17px
   margin-left: 1px
-  color: #999999
+  color: rgba(255, 255, 255, .3)
   letter-spacing: .5px
+  position relative
+  z-index 2
   span
     &:not(:last-child):after
       content: ", "
       display: inline
 
 .blog_title
-  @extend $Transition-Normal
-  font-size: 30px
+  font-size: 26px
   font-weight: 600
-  // font-family: $family-title
   display: inline-block
   vertical-align: super
   color: $gray-lightest
   line-height: 1.5em
   position: relative
-  margin-bottom: 16px
+  margin-bottom: 14px
   z-index: 2
 
 .blog_excerpt
   margin-top: 2px
-  margin-bottom: 24px
+  margin-bottom: 14px
   font-family: $family-post
-  font-size: 18px
+  font-size: 17px
   font-weight: 400
-  color: #6b6b6b
-  line-height: 2em
+  color: rgba(#FFFFFF, 0.5)
+  line-height: 32px
+  position relative
+  z-index 2
 
 .blog_cover_link
   display: inline-block
@@ -477,12 +585,6 @@ html
       max-width: 1100px
       margin-left: auto
       margin-right: auto
-
-.lastblog
-  .content
-    display: grid
-    grid-template-columns: 0.75fr 1fr
-    grid-column-gap: 150px
 
 .readinglists
   .blog_list_book
@@ -519,7 +621,7 @@ html
   .section_full.about2
   .section_full.about3
   .section_full.about4
-  .section_full.lastblog
+  .section_full.bloglist
     .content
       width: 100%
       display: grid
@@ -538,136 +640,7 @@ html
           margin-bottom: 16px
 
 
-@media only screen and (max-width: 750px)
-  .section_full
-    .content
-      padding: 90px 60px
-    &.cases
-      .content
-        grid-template-columns 1fr !important
-        padding: 90px 60px
-        .case_about
-          .case_title
-            font-size 9vw
-    &.more
-      .content
-        padding: 90px 60px
-      .section_item
-        grid-template-columns 1fr
-      .footer .desc
-        width 100%
 
-    &.develop
-      .content
-        grid-template-columns 1fr
-        padding: 120px 60px
-    &.dribbble
-      .content
-        padding: 90px 60px
-    &.ins
-      .content
-        padding: 90px 30px
-    &.more
-      height auto
-      .section_title
-        font-size 40px
-      .contact_item
-        margin-bottom 60px
-        .item_title
-          font-size: 20px
-        .item_desc
-          font-size: 24px
-
-.cases
-  &.elife
-    background-color: #191A1F
-    .content
-      grid-template-columns: 1fr .6fr
-    .case_title
-    .case_link
-      color: #fff
-    .case_button
-      background-color: #25262A
-      color: rgba(255, 255, 255, .6)
-      &:hover
-        color: rgba(255, 255, 255, .9)
-  &.smartisan
-    background: #fbfbfb
-    .content
-      grid-template-columns: 1fr .6fr
-    .case_title,
-    .case_link
-      color: $gray-dark
-    .case_info
-      color: $gray-light
-    .case_button
-      background-color: #F2F2F2
-      color: rgba(0, 0, 0, .3)
-      &:hover
-        color: rgba(0, 0, 0, .7)
-  &.petme
-    background-color: #FFC700
-    .case_title,
-    .case_link
-      color: #111
-    .case_about,
-    .case_info
-      color: rgba(0, 0, 0, 0.8)
-  &.cachemoment
-    background: linear-gradient(37.38deg, #5150AD 1.16%, #7347BE 98.34%);
-    .content
-      grid-template-columns: .6fr 1fr
-    .case_title,
-    .case_link
-      color: #fff
-    .case_about,
-    .case_info
-      color: rgba(255, 255, 255, 0.9)
-    .case_button
-      background-color: rgba(255, 255, 255, .1)
-      color: rgba(255, 255, 255, .5)
-      &:hover
-        color: rgba(255, 255, 255, .9)
-  &.presen
-    background: #fbfbfb
-    .case_title,
-    .case_link
-      color: #111
-    .case_about,
-    .case_info
-      color: #6F6F70
-  &.designer_and_studio
-    background: #fbfbfb
-    .content
-      grid-template-columns: 0.6fr 1fr
-    .case_title,
-    .case_link
-      color: #111
-    .case_about,
-    .case_info
-      color: #6F6F70
-    .case_button
-      background-color: #F2F2F2
-      color: rgba(0, 0, 0, .5)
-      &:hover
-        color: rgba(0, 0, 0, .7)
-  &.figmachina
-    background: linear-gradient(59.2deg, #0063D7 -5.46%, #0066D9 1.44%, #0094FF 104.94%);
-    .content
-      grid-template-columns: 0.6fr 1fr
-    .case_title,
-    .case_link
-      color: #fff
-    .case_about,
-    .case_info
-      color: rgba(255, 255, 255, 0.5)
-    .case_button
-      background-color: rgba(255, 255, 255, .1)
-      color: rgba(255, 255, 255, .5)
-      &:hover
-        color: rgba(255, 255, 255, .9)
-    .case_cover img
-      height 100%
 //Mobie
 @media only screen and (max-width: 750px)
   .case_title
@@ -723,12 +696,13 @@ html
   &:hover:after
     transform: scale3d(1, 1, 1)
 
-.develop
+.bloglist
   .blog_info
     display: flex
   .blog_cover
-    width: 290px
-    border-radius: 2px
+    width: 240px
+    height 180px
+    border-radius: 12px
     margin-right: 40px
     @extend $Transition-Normal
     &:hover
@@ -775,81 +749,169 @@ html
       font-size: $h4
       margin-bottom: 0
 
-/* Instagram */
-#instafeed-gallery-feed
-  margin: 0 auto
-  .grid-sizer,
-  .grid-item
-    width: 33%
-    padding: 30px
-  &:after
-    content: ''
-    display: block
-    clear: both
-  img
-    @extend $Transition-Normal
-    width: 100%
-    height: auto
-    &:hover
-      opacity: .9
-      @extend $LargeShadow
-
-@media screen and (max-width: 1120px)
-  #instafeed-gallery-feed .grid-sizer,
-  #instafeed-gallery-feed .grid-item
-    width: 50%
-@media screen and (max-width: 750px)
-  #instafeed-gallery-feed .grid-sizer,
-  #instafeed-gallery-feed .grid-item
-    width: 100%
-
-
-/* Dribbble */
-#dribbble-shots
-  display: grid
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: auto
-  grid-gap: 40px
-  a
-    border-radius: 2px
-    &:hover img
-      opacity: .9
-      @extend $LargeShadow
-    img
-      opacity: 1
-      transition: all .3s
-      border-radius: 2px
-      width: 100%
-
-@media only screen and (max-width: 750px)
-  #dribbble-shots
-    grid-template-columns: 1fr
-  #dribbble-shots a img
-    width: 100%
 
 // new about
 .about_desc
   position: relative
-  .desc_title
+  .about_info
+    position: relative
+    height 420px
+    display: flex
+    align-items: center
+    overflow hidden
+    margin-bottom: 60px
+    border-radius: 12px
+    img
+      display: block
+      width: 100%
+      right: 0
+      @extend $LargeShadow
+  .desc
+    padding: 0 60px
+
+  .h1
     font-size: 45px;
     font-weight: 700;
     line-height: 70px;
     color: $gray-lightest
     margin-bottom: 24px
     display: inline-block
-  p
+  .h2
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff
+    margin-bottom: 36px
+  .h3
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff
+    margin-bottom: 12px
+  .p1
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
-    color: $gray
-    margin-bottom: 14px
-    i
-      font-weight: 700;
-      color rgba(0,0,0,.7)
+    color: rgba(#ffffff,.9)
+    margin-bottom: 36px
+  .p2
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 36px;
+    color: rgba(#ffffff,.6)
+    margin-bottom: 36px
+  .p3
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(#ffffff,.6)
+    margin-bottom: 36px
+  
   p.last
     margin-bottom: 0
   .skill
     line-height: 50px;
+
+  .timeline
+    padding: 60px 0
+  
+    ol
+      padding-left: 0;
+      list-style: none;
+      counter-reset: steps;
+      display: table;
+      width: 100%;
+
+    li 
+      counter-increment: steps; 
+      display:table-cell;
+      vertical-align:top;
+      text-align:center;
+      position: relative;
+      font-weight: 700
+
+    li:not(:last-child):before
+      content: '';
+      margin: 0 auto 18px;
+      display:block;
+      width: 9px;
+      height: 9px;
+      text-align:center;
+      line-height: 9px;
+      border: 2px solid #161616;
+      border-radius: 100%;
+      background: #FFC42C;
+      position: relative;
+      z-index 2
+
+    li:after
+      content: '';
+      border-top: 1px solid #FFC42C;
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 6px;
+      z-index: 0;
+      
+    li:first-of-type:after
+      left: 50%;
+
+    li:last-of-type:after
+      right: 50%;
+
+.grid-2
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-column-gap: 60px
+  grid-row-gap: 0
+
+.sonar-motion
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform: scale(.3);
+  top: -69px;
+  left: -3px;
+  z-index: 3;
+
+@keyframes waves {
+  0% {
+    transform: scale(0.22);
+    opacity: 0.5;
+    stroke-opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+    stroke-opacity: 0;
+  }
+}
+
+.sonar-motion > .sonar-waves:nth-of-type(1) {
+  position: absolute;
+  animation-name: waves;
+  animation-duration: 4s; 
+  animation-timing-function: ease-out; 
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-delay: 0s;
+  opacity: 0;
+}
+
+.sonar-motion > .sonar-waves:nth-of-type(2) {
+  position: absolute;
+  animation-name: waves;
+  animation-duration: 4s; 
+  animation-timing-function: ease-out; 
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
 
 //Mobie
 @media only screen and (max-width: 750px)
@@ -863,3 +925,6 @@ html
     font-size: 24px
   .blog_excerpt
     font-size: 15px
+
+.medium-zoom-overlay
+  background-color: #161616 !important

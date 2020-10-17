@@ -1,6 +1,6 @@
 .post
   .content
-    padding 200px 120px 60px 120px
+    padding 90px 120px 60px 120px
   .post_top
     // font-family: $family-post
     max-width: 790px
@@ -19,7 +19,6 @@
   padding-left: 25px
   padding-right: 25px
   .blog_title
-    margin-top: 14px
     margin-left: -2px
     margin-bottom: 10px
     font-size: 40px
@@ -38,16 +37,17 @@
   margin-left: auto
   margin-right: auto
   font-size: 18px
-  color: rgba(255,255,255,.6)
+  color: rgba(255,255,255,.7)
   line-height: 36px
   overflow-x: hidden
   // font-family: $family-post
   max-width: 900px
+  :first-child
+    margin-top: 0
 .blog_tips
   display: block
-  font-family: AcuminR
-  font-size: 17px
-  color: #999999
+  font-size: 18px
+  color: rgba(#ffffff,0.3)
   letter-spacing: .5px
   -webkit-transition: all 0.5s
   transition: all 0.5s
@@ -122,35 +122,62 @@
     padding-left: 0
     padding-right: 0
 .post-wrapper
+  a
+    padding: 0 10px
+    margin: 0 3px
+    border-radius: 6px
+    font-weight: 500
+    position relative
+    color: inherit
+    @extend $Transition-Normal
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      transform: translateY(-50%)
+      right 0
+      top: 50%
+      width: 100%
+      height calc(100% - 4px)
+      border-radius: 6px
+      z-index: 0
+      @extend $Transition-Normal
+    &:after
+      content: ''
+      position: absolute
+      right 0
+      top: 15%
+      width: 5px
+      height 5px
+      border 1px solid $sunglow
+      border-radius: 50%
+    &:hover
+      &:before
+        background: rgba($sunglow,0.12)
+      color: $sunglow
+  h1
+    font-size: 30px
+    margin: 60px 0 30px
+  h2
+    font-size: 24px
+    margin: 45px 0 20px
+  h3
+    font-size: 20px
+    margin: 40px 0 20px
+  h4
+    font-size: 18px
+    margin: 30px 0 15px
+  h5
+    font-size: 16px
+    margin: 30px 0 15px
+  h6
+    text-align: center
+    font-size: 15px
+    font-weight: 400
+    margin-top: -20px
+    color: $gray-light
     a
-      color: #FFCD00
-      transition: 0.3s all
-      &:hover {
-        color: #fff
-        }
-    h1
-      font-size: 30px
-      margin: 60px 0 30px
-    h2
-      font-size: 24px
-      margin: 45px 0 20px
-    h3
-      font-size: 20px
-      margin: 40px 0 20px
-    h4
-      font-size: 18px
-      margin: 30px 0 15px
-    h5
-      font-size: 16px
-      margin: 30px 0 15px
-    h6
-      text-align: center
-      font-size: 14px
-      font-weight: 400
-      margin-top: -20px
-      color: $gray-light
-      a
-        color: #707070
+      color: #707070
 h1 a,
 h2 a,
 h3 a,
@@ -165,7 +192,16 @@ h4,
 h5,
 h6
   font-weight: 600
-  color: rgba(255,255,255,.9)
+  color: rgba(255,255,255,1)
+h1,
+h2,
+h3,
+h4,
+h5
+  a:first-child
+    margin-left: -10px !important
+h6
+  text-align: center
 .post-wrapper h5+p
   margin-top: 5px
 .post-wrapper h6+p
@@ -180,17 +216,20 @@ h6
 .post-wrapper ol li:not(:last-child),
 .post-wrapper ul li:not(:last-child)
   padding-bottom: 10px
-.post-wrapper ol li,
+.post-wrapper ol li
+  padding-left: 4px
+  list-style-type: decimal
 .post-wrapper ul li
   padding-left: 4px
+  list-style-type: circle
 .post-wrapper ol li *,
 .post-wrapper ul li *
   padding-left: 0 !important
 .post-wrapper ol li,
 .post-wrapper ul li
   line-height: 34px
-.post-wrapper p *
-  padding-left: 0 !important
+// .post-wrapper p *
+//   padding-left: 0 !important
 .post-wrapper ul
   list-style: disc
 .post-wrapper ol
@@ -282,7 +321,8 @@ blockquote p
   font-size: 20px
   font-weight: 500 !important
   line-height: 38px
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(#FFFFFF,1)
+  font-style: italic
   padding-right: 0 !important
   padding-left: 30px !important
 blockquote
