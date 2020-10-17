@@ -1,11 +1,10 @@
 ---
 layout:     "post"
 title:      "未知是无法想象的"
-subtitle:   "unknown is unimaginable"
-date:       "2018-07-14"
-cover:      "https://i.loli.net/2019/04/12/5cb077055b1e9.jpg"
-time:       "12"
 excerpt:    "我们处在这个多维世界当中，没有任何事物是独立存在的，当我们解决问题时，如果我们能调用其所涉及到的各学科知识综合起来分析问题..."
+date:       "2018-07-14"
+time:       "12"
+cover:      "https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017172910.jpg"
 ---
 
 如果有人在你面前描述出四维物体的样子，你能够在脑海中想象出它吗？

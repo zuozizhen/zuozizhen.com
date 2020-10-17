@@ -3,7 +3,7 @@ layout:     "post"
 title:      "2019 UI & UX 设计趋势 [译]"
 subtitle:   "2019 trend"
 date:       "2018-12-24"
-cover:      "https://i.loli.net/2019/04/12/5cb077278b6c8.jpg"
+cover:      "https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017173655.jpeg"
 time:       "12"
 excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色的色彩表现，甚至必须通过新的..."
 ---
@@ -30,7 +30,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 > 现代浏览器已经有能力来缩小概念与现实之间的差距
 
-![](https://i.loli.net/2018/12/14/5c13288b57d7f.jpg)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017173756.jpeg)
 
 ###### 可惜 evolutionoftheweb.com 在 2012年就停止运营了，图表并不是最新的
 
@@ -50,7 +50,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 > 现在你可以在两个页面之间肆意发挥你的创意想法
 
-![](https://i.loli.net/2018/12/17/5c1772b912e24.gif)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017173915.gif)
 
 ###### Cocoladas Creative Blog Artist Preview Page By [Zhenya Rynzhuk](https://dribbble.com/Zhenya_Artem)
 
@@ -58,7 +58,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 动效设计也不仅仅是单纯的展示和填补空白，现在它已经成为品牌的一部分。尽管如此，我们也要充分利用我们的经验和想象力去确保它方向的正确。
 
-![](https://i.loli.net/2018/12/16/5c164d216abf6.gif)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017173848.gif)
 
 ###### by [Eduard Mykhailov](https://dribbble.com/eduard_ov)
 
@@ -66,7 +66,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 动效比光影、形状和材质更有说服力的原因是动效会讲故事。如果你能通过一些有趣的想法，让 logo 成为你故事的一部分，那马上去做吧！
 
-![](https://i.loli.net/2018/12/16/5c164af744f9a.gif)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017174306.gif)
 
 ###### Lakko – Logo animation by [Zlatko Kelemenić](https://dribbble.com/StudioMagus)
 
@@ -84,7 +84,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 这一趋势将特别适用于具有流程复杂且不太直观的产品。利用 3D 界面，可以使用户对产品的理解更加直观和深入。
 
-![](https://i.loli.net/2018/12/16/5c164d02261ec.jpg)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017174326.jpeg)
 
 ###### Baker Hughes Digital by [Sanu Sagar](https://www.behance.net/Rockletdesign)
 
@@ -94,11 +94,11 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 扁平化的 UI 设计趋势已经存在 5 年多了，并且一直没有发生真正的变化。但最近我们感觉到了一个明显的转变，那就是在不改变扁平化本质的情况下，向它增加深度和其它纬度。为什么深度是必要的呢？这也是扁平化出现的原因——我们需要象征主义来理解一切。扁平化是最核心的象征。
 
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fyaxwyree1g30m80gonpi.gif)
+<iframe width="750px" height="500px" src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175216.mp4" frameborder="0"></iframe>
 
 ###### Cards 3D transition by [Gleb Kuznetsov](https://dribbble.com/glebich)
 
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fyaxx0uumbg30m80gou11.gif)
+<iframe width="750px" height="500px" src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175547.mp4" frameborder="0"></iframe>
 
 ###### 3D flip menu by [Minh Pham ✪](https://dribbble.com/phamduyminh)
 
@@ -106,13 +106,13 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 3D 和 CG 技术让我们知道了用户对他们能与之互动的东西会有更好的反应。扁平化也能够以某种独特且尚未被探索的方式实现 3D 效果。这种方式被称之为伪 3D，我们可以在平面上使用光影、叠加等方式来模拟 3D 的效果。
 
-![](https://i.loli.net/2018/12/16/5c165c78c2cf4.jpg)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175615.jpeg)
 
 ###### ARTA / Art Gallery by [Mike](https://dribbble.com/creativemints) | [Creative Mints](https://dribbble.com/creativemints)
 
 还有一个虚拟的 3D 趋势正在兴起，它的原理是用 After Effects 等传统的设计工具来模拟 3D 的运动模式。
 
-![](https://i.loli.net/2018/12/16/5c165464278c6.gif)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175659.gif)
 
 ###### Astronaut by [Markus Magnusson](https://dribbble.com/MarkusM)
 
@@ -132,11 +132,11 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 一些重大的 redesign 和相关的插画因为这个原因变得有趣起来：
 
-![](https://i.loli.net/2018/12/16/5c16550c6231b.gif)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175717.gif)
 
 ###### How to stay scrappy by [Justin Tran](https://dribbble.com/justintran) for [Dropbox Design](https://dribbble.com/dropbox)
 
-![](https://i.loli.net/2018/12/16/5c16548b20397.png)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175734.jpeg)
 
 ###### Shop Small by [Joe Montefusco](https://dribbble.com/montefusco) for [Mailchimp](https://dribbble.com/Mailchimp)
 
@@ -154,7 +154,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 > 渐变本身不再受到关注，但它们现在为界面带来了深度和空间感
 
-![](https://i.loli.net/2018/12/17/5c17a56d1280f.jpg)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175900.jpeg)
 
 ###### Grabient 2.0 by [Eddie Lobanovskiy](https://dribbble.com/lobanovskiy)
 
@@ -162,13 +162,13 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 鲜艳的色彩不会随处可见，我们将会看到更多层次颜色的组合。事实上，即使是单色系也会通过深度和空间感呈现不一样的视觉美感。
 
-![](https://i.loli.net/2018/12/16/5c1657017ab5f.png)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175913.jpeg)
 
 ###### Valley Illustration by [J.HUA](https://dribbble.com/weiming) for [Tunan](https://dribbble.com/Tunan_studio)
 
 > 当我们我们缺乏信任感和乐观的状态时，鲜艳的颜色能促进积极性。你会信任这样的加密应用程序吗?
 
-![](https://i.loli.net/2018/12/16/5c165b10da8ad.png)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175928.jpeg)
 
 ###### crypto app by [uixNinja](https://dribbble.com/uixninja)
 
@@ -176,7 +176,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 > 带有深度的扁平化、鲜艳的颜色和 3D 效果在深色主题中的表现
 
-![](https://i.loli.net/2018/12/16/5c165b3c57741.png)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017175944.jpeg)
 
 ###### Dashboard by [uixNinja](https://dribbble.com/uixninja)
 
@@ -194,13 +194,13 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 
 
-![](https://i.loli.net/2018/12/16/5c165a2d375fd.png)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017180001.jpeg)
 
 ###### [Marvin Visions](https://www.readvisions.com/marvin)
 
 可变字体在响应式设计和本地化设计中有很广泛的使用前景，在一些地方，设计师不得不绞尽脑汁把文字压缩到更小的屏幕上并且还要保留字体特征，或者为了使用另一种字符较少的语言而拉长文字。
 
-![](https://i.loli.net/2018/12/16/5c16570427f73.gif)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017180018.gif)
 
 ###### VOTE by [Josh Rinard](https://dribbble.com/joshuarinard)
 
@@ -208,7 +208,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 > 但这仅仅是个开始，可变字体的应用在 2019 年还有待探索
 
-![](https://i.loli.net/2018/12/16/5c1652e7a78bc.gif)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017180111.gif)
 
 ###### [Typography.Guru](https://typography.guru/discover/6/)
 
@@ -230,7 +230,7 @@ excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色�
 
 实现这一目标的另一种方法是推广和使用更强大的设计工具， Figma 是其中之一。在此之前，设计师在工作过程中必须考虑许多与设计本身无关的东西，比如操作系统、插件、存储、同步、协作等，我们需要同时解决这些所有的问题，但我们希望减少压力。
 
-![](https://i.loli.net/2018/12/16/5c165289d564d.png)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017180125.jpeg)
 
 Figma 是一个为我们考虑的设计工具，它有着很多前瞻性的功能。
 
@@ -250,7 +250,7 @@ Figma 完成了 Sketch 和 Adobe XD 所做的一切，而且做的更好。更�
 
 语音交互界面最大限度地实现了无界面的概念。整个交互过程是内部的，它只与语言、环境和数据有关，而与界面设计无关。即便如此，设计师们仍痴迷于寻找展示语音交互界面的方法，目前已经有一些让我们印象深刻的界面和动画。
 
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fyaxv1s8i6g30m80gox6v.gif)
+<iframe width="750px" height="500px" src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017180143.mp4" frameborder="0"></iframe>
 
 ###### Organic Artificial Intelligence design by [Gleb Kuznetsov](https://dribbble.com/glebich)
 
@@ -280,7 +280,7 @@ UX 写作有两个简单的原则：礼貌、有用，其它一切都是源自�
 
 在 2018 年，我们看到大公司的的发声开始有了变化。他们不再追求独创性，而是关注用户的价值。在 2019 年，我们希望 UX 写作发展成为一门设计学科。
 
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fyaxvtwdkeg30gy08q1kz.gif)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017180234.gif)
 
 UX 写作和 UX 编辑之间的区别在于宽泛性。UX 作家写的文章是面向用户的。UX 编辑是通过分析、整理、重组，使文字变得简单易读。UX 编辑并没有速成班，这需要你的经验、观察，最重要的是有一颗善良的心
 
@@ -306,7 +306,7 @@ UX 设计是一个非常广泛的术语，它是跨行业服务设计的一部�
 
 产品设计师有能力专注于与产品相关的所有细节。与大多数服务设计人员不得不面对的假设数据相比，他们对所设计产品的用户群体有深入的了解，并有真实的数据可供参考。
 
-![](https://i.loli.net/2018/12/16/5c164fb5a03d4.png)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017180254.jpeg)
 
 😑
 

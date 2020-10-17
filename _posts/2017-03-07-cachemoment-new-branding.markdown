@@ -27,21 +27,21 @@ time:       "5"
 
 随着理解和讨论的逐渐的深入，我们基于魔门云产品特性，定义了产品的三个关键词：
 
-![img](https://i.loli.net/2018/07/09/5b438582e4517.jpg)
+![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171259.png)
 
 # 图
 
 设计师通过对关键词进行发散性的想象，来探索设计具象化的方向：
 
-![img](https://i.loli.net/2018/07/09/5b4385d7440ce.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171314.png)
 
 在不断的努力和头脑风暴下，我们设计出了很多的版本（虐心的过程，手动流汗）：
 
-![img](https://i.loli.net/2018/07/09/5b43863e7d294.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171335.png)
 
 同时在不断的设计和迭代中我们逐渐找到了更精准的定位，从而提炼出了我们想要在标识中体现的最重要的三点：
 
-![img](https://i.loli.net/2018/07/09/5b43865dea77b.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171513.png)
 
 * M：来自于公司英文名中的“Moment”和中文音译名“魔”的首字母，和公司建立强联系感。
 * 某种秩序：体现魔门云专业性和稳定性，也能让人感觉如外星人般的科技感，传递出了公司独特的气质。
@@ -51,7 +51,7 @@ time:       "5"
 
 确定了方向之后，我们得出了一个初步的方案：
 
-![img](https://i.loli.net/2018/07/09/5b43866f94fee.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171533.png)
 
 这是一个由很简单图形组成的简洁的标识。
 
@@ -67,17 +67,17 @@ time:       "5"
 
 如果把它想象成是立体图形，我们以一种俯视的角度去看，它就变成了平面上立起来的五扇门，以一种独特而规律的方式排列着，就像复活节岛上的摩艾石像一样，神秘而又未知，像是在等待着什么…
 
-![img](https://i.loli.net/2018/07/09/5b43867e42f3c.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171555.png)
 
 # 色
 
 在色彩上我们的方向定位到了紫色，一方面能和同类型公司区分开，另一方面可以更好的体现我们的特点：变化，也加强了神秘感。
 
-![img](https://i.loli.net/2018/07/10/5b4386897d331.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171612.png)
 
 在对比了不同的色彩，甚至在不同色域显示终端上的显示效果后，我们选用了一个最合适品牌色。
 
-![img](https://i.loli.net/2018/07/10/5b43869bc4c13.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171622.png)
 
 # 字
 
@@ -87,28 +87,28 @@ time:       "5"
 门字的设计上我们使用了 Logo 的特征元素来替换原有的点，使它更加灵动和具有趣味性。
 云字的笔画也要保证与其余文字以及标识的统一性。
 
-![img](https://i.loli.net/2018/07/10/5b4386ab403ae.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171635.png)
 
 英文字体同样要保证设计的统一性。
 
-![img](https://i.loli.net/2018/07/10/5b4386bd70fe4.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171647.png)
 
 # 打磨
 
 将笔画的角度和间距进一步的完善，经过不断的调整，在美学上保持整体的一致与协调，按照黄金分割进行视觉调整，从而达到一种完美融洽与平衡的效果。
 
-![img](https://i.loli.net/2018/07/10/5b4386c9b9a13.jpg)
-![img](https://i.loli.net/2018/07/10/5b4386d4a57e7.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171702.png)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171722.png)
 
 最后，我们很高兴的推出了新的品牌 Logo。
 
-![img](https://i.loli.net/2018/07/10/5b4386df0dcc1.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171736.png)
 
 ## 品牌应用系统
 
-![img](https://i.loli.net/2018/07/10/5b4386e8c02fc.jpg)
-![img](https://i.loli.net/2018/07/10/5b4386f0dfc1f.jpg)
-![img](https://i.loli.net/2018/07/10/5b4386fcadbbc.jpg)
-![img](https://i.loli.net/2018/07/10/5b43870520eee.jpg)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171746.png)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171756.png)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171808.png)
+![](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017171815.png)
 
 **这就是魔门云新品牌设计的诞生过程。**
