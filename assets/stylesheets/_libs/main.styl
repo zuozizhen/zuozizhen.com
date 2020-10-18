@@ -7,12 +7,11 @@ html
   -moz-osx-font-smoothing: antialiased
   font-family: $family-main
 
-ul, li
-  list-style-type: none
 a
   font-weight: 600
   color: #ffffff
   display: inline-block
+
 a.link
   padding: 0 10px
   margin: 0 3px
@@ -131,6 +130,7 @@ a.link, a.title_link_h1, a.title_link_book
   display: grid
   grid-template-columns: 420px 1fr
 
+
 .left_wrap
   position: sticky
   width: 100%
@@ -147,6 +147,16 @@ a.link, a.title_link_h1, a.title_link_book
     height 520px
     width: 1px
     border-right: 1px dashed rgba(255, 255, 255, 0.12);
+  .hello
+    display: inline-block
+    cursor: default
+    &:hover
+      animation-name: upAnimation;
+      transform-origin: center bottom;
+      animation-duration: 3s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-delay: .2s;
   .info
     .avatar
       margin-bottom: 42px
@@ -195,6 +205,52 @@ a.link, a.title_link_h1, a.title_link_book
     font-size: 14px
     color: rgba(255, 255, 255, 0.3)
 
+@keyframes upAnimation {
+    0% {
+        transform: rotate(0deg);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+
+    10% {
+        transform: rotate(-12deg);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+
+    20% {
+        transform: rotate(12deg);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+
+    25% {
+        transform: rotate(-8deg);
+        transition-timing-function: cubic-bezier(0.755, .5, .855, .06)
+    }
+
+    30% {
+        transform: rotate(8deg);
+        transition-timing-function: cubic-bezier(0.755, .5, .855, .06)
+    }
+
+    35% {
+        transform: rotate(-4deg);
+        transition-timing-function: cubic-bezier(0.755, .5, .855, .06)
+    }
+
+    40% {
+        transform: rotate(4deg);
+        transition-timing-function: cubic-bezier(0.755, .5, .855, .06)
+    }
+
+    50% {
+        transform: rotate(0deg);
+        transition-timing-function: cubic-bezier(0.755, .5, .855, .06)
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+}
 
 .right_wrap
   padding: 90px 60px
@@ -469,41 +525,10 @@ a.link, a.title_link_h1, a.title_link_book
     padding: 90px 110px
 
 
-.home_top_title
-  @extend $Y-Center
-  position: absolute
-  z-index: 100
-  left: 180px
-  .main_title
-    font-weight: 700
-    font-size: 60px
-    color: $gray-lightest
-    text-align: left
-    line-height: 1.5em
-  .sub_title
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 35px;
-    color: $gray
-    margin-top: 24px
-
 //Mobie
-@media only screen and (max-width: 1220px)
-  .home_top_title
-    left 100px
-    .main_title
-      font-size: 45px
-    .sub_title
-      font-size: 20px;
-      line-height: 36px;
-      margin-bottom: 16px;
 @media only screen and (max-width: 750px)
   .about_info
     display: none
-@media only screen and (max-width: 750px)
-  .home_top_title
-    left 30px
-    width: 90%
 
 .bloglist
   .blog_item
@@ -512,6 +537,7 @@ a.link, a.title_link_h1, a.title_link_book
     position: relative
     @extend $Transition-Normal
     border-radius: 18px
+    cursor pointer
     a
       display: block
     &:not(:first-child)
@@ -577,73 +603,7 @@ a.link, a.title_link_h1, a.title_link_book
   margin-bottom: 10px
 
 
-.develop
-  .content
-    padding: 200px 120px;
-    .blog_list_item
-      max-width: 1100px
-      margin-left: auto
-      margin-right: auto
-
-.readinglists
-  .blog_list_book
-    display: grid
-    grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: auto
-    grid-gap: 80px
-    .blog_title
-      font-size 20px
-      padding: 0 6px
-    .blog_cover
-      width: 100%
-
 //Mobie
-@media only screen and (max-width: 1140px)
-  .section_full
-    &.home_about
-      .content
-        padding: 90px 60px
-
-@media only screen and (max-width: 750px)
-  .case_right
-    display: none
-  .case_left
-    position: relative
-    z-index 10
-  .section_full.title_split
-    .content
-      padding: 120px 60px
-  .section_full.about4
-    .content .title_item .desc_title
-      position relative
-  .section_full.home_about
-  .section_full.about2
-  .section_full.about3
-  .section_full.about4
-  .section_full.bloglist
-    .content
-      width: 100%
-      display: grid
-      grid-template-columns: 1fr
-      grid-gap: 30px
-      padding: 60px 30px
-      margin: 0 auto
-      .section_pic
-        display: none
-      .about_desc
-        .desc
-          padding: 60px 10px
-        p
-          font-size: 20px
-          line-height: 36px
-          margin-bottom: 16px
-
-
-
-//Mobie
-@media only screen and (max-width: 750px)
-  .case_title
-    font-size: $h4
 
 .view_more
   padding-top: 30px
@@ -720,34 +680,6 @@ a.link, a.title_link_h1, a.title_link_book
       display: block
     .blog_cover
       width: 100%
-
-// Contact
-.contact_item
-  a
-    padding-bottom: 2px
-    position: relative
-  .item_desc
-    color: $gray-lightest
-    display: block
-    width: fit-content
-    font-size: 20px
-    line-height: 36px
-    margin-bottom: 10px
-    padding-top: 24px
-    position: relative
-    @extend $Transition-Normal
-  .item_icon
-    width: 30px
-    position: absolute
-    left -45px
-
-//Mobie
-@media only screen and (max-width: 750px)
-  .contact_item
-    .item_desc
-      font-size: $h4
-      margin-bottom: 0
-
 
 // new about
 .about_desc
@@ -826,6 +758,12 @@ a.link, a.title_link_h1, a.title_link_book
       text-align:center;
       position: relative;
       font-weight: 700
+      span
+        font-size: 14px;
+        font-weight: 700;
+        opacity: .5;
+        margin-top: 3px
+        display: inline-block
 
     li:not(:last-child):before
       content: '';
@@ -864,12 +802,10 @@ a.link, a.title_link_h1, a.title_link_book
   grid-row-gap: 0
 
 .sonar-motion
-  width: 150px;
-  height: 150px;
   position: absolute;
   transform: scale(.3);
   top: -69px;
-  left: -3px;
+  left: 40px;
   z-index: 3;
 
 @keyframes waves {
