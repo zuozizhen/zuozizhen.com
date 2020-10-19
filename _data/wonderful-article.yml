@@ -1,20 +1,20 @@
 article_list:
 
 
-- title: 你当像鸟飞往你的山
-  desc: 这片难以捉摸的孤独之地，揭穿了隐藏多年的漩涡与秘密。来到阿拉斯加后，14岁的蕾妮突然看清了周围世界的真实模样，明白了父母一直隐瞒的真相。
-  site: doubanio.com
-  time: 4
-  url: https://img9.doubanio.com/view/subject/l/public/s33715384.jpg
+- title: 设计工具正在阻碍我们
+  desc: 我们需要更好的方法来设计真正产品，而不是漂亮的模型。
+  site: uxdesign.cc
+  time: 15
+  url: https://uxdesign.cc/design-tools-are-holding-us-back-1aca266b333e
 
-- title: 你当像鸟飞往你的山
-  desc: 这片难以捉摸的孤独之地，揭穿了隐藏多年的漩涡与秘密。来到阿拉斯加后，14岁的蕾妮突然看清了周围世界的真实模样，明白了父母一直隐瞒的真相。
-  site: doubanio.com
-  time: 8
-  url: https://img9.doubanio.com/view/subject/l/public/s33715384.jpg
-
-- title: 你当像鸟飞往你的山
-  desc: 这片难以捉摸的孤独之地，揭穿了隐藏多年的漩涡与秘密。来到阿拉斯加后，14岁的蕾妮突然看清了周围世界的真实模样，明白了父母一直隐瞒的真相。
-  site: doubanio.com
+- title: 图标设计完全指南
+  desc: 图标是一个好的设计系统的基本组成部分，它们是构建插图和内容的基础模块,但它们也是有很高的技术性的。
+  site: designsystems.com 
   time: 10
-  url: https://img9.doubanio.com/view/subject/l/public/s33715384.jpg
+  url: https://www.designsystems.com/iconography-guide/?utm_source=figma&utm_medium=email&utm_campaign=figma_monthly&utm_content=ds_iconography
+
+- title: 什么是 Figma
+  desc: 关于设计软件的思考以及为什么我们将 Unsplash 设计库迁移到 Figma
+  site: medium.com
+  time: 10
+  url: https://medium.com/unsplash-design/what-the-figma-dcff20c9662b

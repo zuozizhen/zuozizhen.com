@@ -1,15 +1,13 @@
 other_list:
 
-- title: Master
-  desc: 为 OS 7.0 搭建基于 Figma 的大型设计系统，提高设计效率和可维护性
-  year: 2017
-  duty: 设计和产品负责人
-  cover: ../assets/images/project/master.jpg
-  url: https://mstergo.com
+- title: ELIFE
+  desc: ELIFE 是我整理的在线工具集，首页的生命倒计时器提醒自己生命短暂
+  year: 2018
+  duty: 独立设计开发
+  url: https://startelife.com/
 
-- title: FigmaChina
-  desc: 为 OS 7.0 搭建基于 Figma 的大型设计系统，提高设计效率和可维护性
+- title: DesignerAndStudio
+  desc: 这里是我自己收集的设计师和工作室个人网站的集合，给需要的设计师带来灵感
   year: 2017
-  duty: 设计和产品负责人
-  cover: ../assets/images/project/master.jpg
-  url: https://mstergo.com
+  duty: 独立设计开发
+  url: https://designerandstudio.com/
