@@ -7,7 +7,6 @@ sections:
 - type: document
   path: ''
   label: 文档
-  match: "**/*"
 - type: heading
   label: 博客
 - type: jekyll-pages
