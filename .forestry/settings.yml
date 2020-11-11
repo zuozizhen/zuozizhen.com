@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: ''
+  path: _data/nav.yml
   label: 文档
 - type: heading
   label: 博客
