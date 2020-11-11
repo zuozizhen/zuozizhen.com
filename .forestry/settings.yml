@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: ''
+  label: 文档
+  match: "**/*"
 - type: heading
   label: 博客
 - type: jekyll-pages
