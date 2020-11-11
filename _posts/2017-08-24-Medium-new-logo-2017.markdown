@@ -3,7 +3,7 @@ layout:     "post"
 title:      "Medium 为什么又换了 Logo"
 excerpt:    "这个在 2015 年为 Medium 创造的 Logo 无疑是成功的，那为什么 Medium 将近2年后选择换掉它呢？让我们先来回顾下 Medium 上一次 Logo 改版的原因..."
 date:       "2017-08-24"
-time:       "6"
+time:       "4"
 ---
 
 最近 Medium 悄悄的换上了新的 Logo，它长这样：

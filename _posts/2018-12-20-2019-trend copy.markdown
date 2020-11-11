@@ -1,11 +1,10 @@
 ---
 layout:     "post"
 title:      "2019 UI & UX 设计趋势 [译]"
-subtitle:   "2019 trend"
-date:       "2018-12-24"
-cover:      "https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017173655.jpeg"
-time:       "12"
 excerpt:    "伴随着技术的发展，我们的电脑屏幕具有更加出色的色彩表现，甚至必须通过新的..."
+date:       "2018-12-20"
+time:       "18"
+cover:      "https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017173655.jpeg"
 ---
 
 对于不断发展的设计行业来说，年底是一个分界线，你可以有一周多的时间放下工作去享受假期。
