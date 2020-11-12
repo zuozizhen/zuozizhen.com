@@ -46,25 +46,3 @@ kramdown:
 # Analytics settings
 
 ga_track_id: 'UA-139603337-1'
-
-
-airtable_data:
-  api_key: [keyDVZOll3imZIlKm] # Airtable API key available in the API documentation for your base
-  app_id: [appD1SuztrNriM2Uj] # Airtable app ID found in the API documentation for your base
-  tables:
-    - [Table 1]
-    - [Table 2]
-    - [Table 3]
-
-airtable:
-  api_key: keyDVZOll3imZIlKm
-  tables:
-    - name: Book List
-      app_id: appD1SuztrNriM2Uj
-      sheets: 
-        - name: Table 1
-          view: grid view
-        - name: Table 2
-          view: grid view
-        - name: Table 3
-          view: grid view

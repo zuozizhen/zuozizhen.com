@@ -1,5 +1,5 @@
 nav.top_nav
-  | {% for item in site.data.nav.nav_list %}
+  | {% for item in site.data.menus.header %}
   |   <a class="nav_link {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
   | {% endfor %}
   .logo_z(href='/')

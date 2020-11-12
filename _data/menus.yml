@@ -1,0 +1,17 @@
+header:
+
+  - title: ✏️ 文章
+    url: /
+    identifier: blog
+
+  - title: 📦 项目
+    url: /project/
+    identifier: project
+
+  - title: 🎈 精妙推荐
+    url: /wonderful/
+    identifier: wonderful
+
+  - title: 👤 关于我
+    url: /about/
+    identifier: about
