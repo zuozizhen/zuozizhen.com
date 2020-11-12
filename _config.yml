@@ -31,7 +31,9 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","READM
 anchorjs: true
 
 # plugins
-plugins: [jekyll-paginate]
+plugins: 
+  - jekyll-paginate
+  - jekyll-menus
 
 stylus:
   compress: true
