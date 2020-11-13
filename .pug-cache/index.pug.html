@@ -1,0 +1,35 @@
+<div class="main_layout">
+  <div class="left_wrap">
+    <section class="left_bar">
+      <div class="content">
+        <div class="info">
+          <div class="avatar"><img class="img_qr" src="../assets/images/home/top-pic.jpg" alt=""/></div>
+          <div class="title">你好，我是左子祯 <span class="hello">👋</span></div>
+          <div class="desc">我曾在锤子科技和字节跳动就职，目前是<a class="link" href="#" target="_blank">Master</a>的设计和产品负责人，持续专注于整合设计、产品和编程技能以解决问题。</div>
+        </div>
+        <div class="contact">
+          <div class="item_desc wechat"><img class="item_icon" src="../assets/images/social-icon/wechat.png" alt=""/><img class="img_qr" src="../assets/images/main/qrcode.png" alt=""/></div><a class="item_desc" href="https://zhihu.com/people/ZiJen" target="_blank"><img class="item_icon" src="../assets/images/social-icon/zhihu.png" alt=""/></a><a class="item_desc" href="https://www.linkedin.com/in/zuozizhen" target="_blank"><img class="item_icon" src="../assets/images/social-icon/linkedin.png" alt=""/></a><a class="item_desc" href="https://github.com/zuozizhen" target="_blank"><img class="item_icon" src="../assets/images/social-icon/github.png" alt=""/></a>
+        </div>
+        <div class="copyright">&copy; 2020 By Zizhen</div>
+      </div>
+    </section>
+  </div>
+  <div class="right_wrap">
+    <nav class="top_nav">
+      {% for item in site.data.menus.header %}
+        <a class="nav_link {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+      {% endfor %}
+      <div class="logo_z" href="/"><i></i></div>
+    </nav>
+    <section class="bloglist">
+      <div class="content">
+        <div class="blog_list_item">{% for post in site.posts limit:100 %}
+          <div class="blog_item">
+            <div class="blog_info"><a href="{{ post.url }}"><span class="blog_title">{{ post.title }}</span>
+                <div class="blog_excerpt">{{ post.excerpt }}</div><span class="blog_tag">{{ post.date | date: ' %Y-%m-%d' }} · <span>读完大概需要 {{ post.time }} 分钟</span></span></a></div>
+          </div>{% endfor %}
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

@@ -182,14 +182,15 @@ a.link, a.title_link_h1, a.title_link_book
     .wechat
       .img_qr
         position: absolute
-        opacity 0
+        display: none
         width: 120px
         height 120px
         bottom: 42px
         left 0
+        border-radius: 6px
       &:hover
         .img_qr
-          opacity 1
+          display: block
     .item_desc
       position relative
       @extend $Transition-Normal
