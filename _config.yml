@@ -31,7 +31,9 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","READM
 anchorjs: true
 
 # plugins
-plugins: [jekyll-paginate]
+plugins: 
+- jekyll-paginate
+- jekyll-pug
 
 stylus:
   compress: true
@@ -46,3 +48,7 @@ kramdown:
 # Analytics settings
 
 ga_track_id: 'UA-139603337-1'
+
+
+jekyll-pug:
+  shipped_version: 2.0.0-beta10
