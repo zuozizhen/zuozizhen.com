@@ -49,5 +49,5 @@ kramdown:
 
 ga_track_id: 'UA-139603337-1'
 
-#fixbug
-exclude: vendor
+# #fixbug
+# exclude: vendor
