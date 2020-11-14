@@ -51,3 +51,6 @@ ga_track_id: 'UA-139603337-1'
 
 # #fixbug
 # exclude: vendor
+
+# jekyll-pug:
+#   shipped_version: 2.0.0-beta10
