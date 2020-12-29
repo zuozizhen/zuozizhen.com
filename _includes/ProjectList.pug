@@ -1,28 +1,35 @@
 section.projectlist
   .content
-    .project_other_list_item
+    .project_best_list_item
       | {% for item in site.data.project-best.best_list %}
       .item
-        .info_wrap
-          .title_wrap
-            a.title(href="{{ item.url }}") {{ item.title }}
-            .info {{ item.duty }} · {{ item.year }}
-          .desc_wrap
-            .desc {{ item.desc }}
-        .link_wrap
-          a(href="{{ item.url }}") 访问网站
+        .title_wrap
+          a.title.title_link_h2(href="{{ item.url }}") {{ item.title }}
+          .info {{ item.duty }}
+          .info {{ item.year }}s
+        .cover_wrap
+          img(src="{{ item.cover }}", alt="")
       | {% endfor %}
 
     .h2 其它项目
     .project_other_list_item
       | {% for item in site.data.project-other.other_list %}
-      .item
-        .info_wrap
-          .title_wrap
-            .title {{ item.title }}
-            .info {{ item.duty }} · {{ item.year }}
-          .desc_wrap
-            .desc {{ item.desc }}
-        .link_wrap
-          a(href="{{ item.url }}") 访问网站
+      a.item(href="{{ item.url }}") 
+        .info
+          .title {{ item.title }}
+          .desc {{ item.desc }}
+        img(src="{{ item.cover }}", alt="")
       | {% endfor %}
+
+      //- .project_other_list_item
+      //- | {% for item in site.data.project-other.other_list %}
+      //- .item
+      //-   .info_wrap
+      //-     .title_wrap
+      //-       .title {{ item.title }}
+      //-       .info {{ item.duty }} · {{ item.year }}
+      //-     .desc_wrap
+      //-       .desc {{ item.desc }}
+      //-   .link_wrap
+      //-     a(href="{{ item.url }}") 访问网站
+      //- | {% endfor %}

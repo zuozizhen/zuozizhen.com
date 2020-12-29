@@ -1,13 +1,58 @@
 other_list:
 
+- title: DesignerAndStudio
+  desc: 收集优秀设计师的个人网站和工作室网站
+  year: 2018
+  duty: 独立设计开发
+  url: https://designandstudio.com/
+  cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201127005709.jpg
+
+- title: 坚果商城设计组件库
+  desc: 早期为坚果商城搭建的基于 Sketch 的组件库
+  year: 2018
+  duty: 独立设计开发
+  url: https://www.smartisan.com/
+  cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201127004244.jpg
+
 - title: ELIFE
   desc: ELIFE 是我整理的在线工具集，首页的生命倒计时器提醒自己生命短暂
   year: 2018
   duty: 独立设计开发
   url: https://startelife.com/
+  cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201127005005.jpg
 
-- title: DesignerAndStudio
-  desc: 这里是我自己收集的设计师和工作室个人网站的集合，给需要的设计师带来灵感
+- title: 坚果 Pro 2S “足迹系列”手机背壳 - 本初子午线
+  desc: 灵感来源于本初子午线，背壳上面刻有真实的时区信息
   year: 2017
   duty: 独立设计开发
-  url: https://designerandstudio.com/
+  url: https://item.jd.com/8713088.html
+  cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201127010205.jpg
+
+
+- title: 蓝湖官网
+  desc: 为蓝湖设计的一版官网
+  year: 2017
+  duty: 独立设计开发
+  url: https://lanhuapp.com/
+  cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201127010041.jpg
+
+- title: CacheMoment Dashboard
+  desc: CacheMoment 的产品主站展示图
+  year: 2017
+  duty: 独立设计开发
+  url: https://www.cachemoment.com
+  cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201127004955.jpg
+
+- title: CacheMoment Website
+  desc: CacheMoment 的官网
+  year: 2017
+  duty: 独立设计开发
+  url: https://www.cachemoment.com
+  cover: https://cdn.dribbble.com/users/882023/screenshots/3938857/attachments/898676/moment-website_2x.png
+
+- title: Dark Moment
+  desc: 后台类产品暗色模式的概念图
+  year: 2017
+  duty: 独立设计开发
+  url: https://dribbble.com/shots/4105247-Dark-Moment
+  cover: https://cdn.dribbble.com/users/882023/screenshots/4105247/attachments/940401/dark-moment_retina.png

@@ -1,12 +1,14 @@
+#
+
 product_list_1:
 
 - title: Figma
-  desc: 我的忠诚在于 Philly-roasted La Colombe，我的日常果酱美式咖啡
-  url: https://img9.doubanio.com/view/subject/l/public/s33715384.jpg
+  desc: 我使用 Figma 完成大部分设计工作
+  url: https://www.figma.com/
 
-- title: Figma
-  desc: 我的忠诚在于 Philly-roasted La Colombe，我的日常果酱美式咖啡
-  url: https://img9.doubanio.com/view/subject/l/public/s33715384.jpg
+- title: VS Code
+  desc: 我使用 VS Code 完成
+  url: https://code.visualstudio.com/
 
 
 product_list_2:

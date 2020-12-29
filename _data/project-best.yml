@@ -1,15 +1,21 @@
 best_list:
 
 - title: Master
-  desc: 为 OS 7.0 搭建基于 Figma 的大型设计系统，提高设计效率和可维护性
-  year: 2019
-  duty: 设计和产品负责人
+  desc: Master 是为团队协作而生的一站式产品设计工具
+  year: 2020
+  duty: 产品设计负责人
   cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017183618.jpg
-  url: https://mstergo.com
 
 - title: FigmaChina
-  desc: 为 OS 7.0 搭建基于 Figma 的大型设计系统，提高设计效率和可维护性
+  desc: FigmaChina 是一个以中文介绍 Figma 的网站，这里有最新的中文用户手册、原创教程和在线社区。
   year: 2019
-  duty: 设计和产品负责人
+  duty: 独立设计开发
   cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017183233.jpg
   url: https://figmachina.com
+
+- title: Smartisan OS
+  desc: 为 OS 7.0 搭建基于 Figma 的大型设计系统，提高设计效率和可维护性
+  year: 2019
+  duty: UI 设计师
+  cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201126235252.jpg
+  url: https://www.smartisan.com/jianguopro3/os
