@@ -30,8 +30,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
-    jekyll-menus (0.6.1)
-      jekyll (>= 3.6, < 5.0)
     jekyll-paginate (1.1.0)
     jekyll-pug (1.5.6)
       jekyll (>= 3.6, < 5.0)
@@ -81,7 +79,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-menus
   jekyll-paginate
   jekyll-pug
   stylus

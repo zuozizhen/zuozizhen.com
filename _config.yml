@@ -33,7 +33,6 @@ anchorjs: true
 # plugins
 plugins: 
   - jekyll-paginate
-  - jekyll-menus
 
 stylus:
   compress: true
