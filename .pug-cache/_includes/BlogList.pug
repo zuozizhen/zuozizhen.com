@@ -1,0 +1,17 @@
+section.bloglist
+  .content
+    .blog_list_item
+      | {% for post in site.posts limit:100 %}
+      .blog_item
+        .blog_info
+          //- | {% if post.cover %}
+          //- a.blog_cover_link(href='{{ post.url }}')
+          //-   img.blog_cover(src='{{ post.cover }}', alt='')
+          //- | {% endif %}
+          a(href='{{ post.url }}')
+            span.blog_title {{ post.title }}
+            .blog_excerpt {{ post.excerpt }}
+            span.blog_tag
+              | {{ post.date | date: ' %Y-%m-%d' }} · 
+              span 读完大概需要 {{ post.time }} 分钟
+      | {% endfor %}

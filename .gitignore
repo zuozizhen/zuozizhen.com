@@ -4,3 +4,5 @@ _build/*
 .sass-cache/*
 node_modules/
 vendor/
+.vscode/
+.env
