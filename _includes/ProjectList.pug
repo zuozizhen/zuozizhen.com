@@ -2,11 +2,11 @@ section.projectlist
   .content
     .project_best_list_item
       | {% for item in site.data.project-best.best_list %}
-      .item
-        .title_wrap
-          a.title.title_link_h2(href="{{ item.url }}") {{ item.title }}
-          .info {{ item.duty }}
-          .info {{ item.year }}s
+      a.item(href="{{ item.url }}")
+        .info
+          .title {{ item.title }}
+          .desc {{ item.desc }}
+          .duty {{ item.year }} · {{ item.duty }}
         .cover_wrap
           img(src="{{ item.cover }}", alt="")
       | {% endfor %}

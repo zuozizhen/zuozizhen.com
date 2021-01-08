@@ -8,9 +8,9 @@ header:
     url: /project/
     identifier: project
 
-  - title: 🎈 分享
-    url: /wonderful/
-    identifier: wonderful
+  # - title: 🎈 分享
+  #   url: /wonderful/
+  #   identifier: wonderful
 
   - title: 👤 关于我
     url: /about/

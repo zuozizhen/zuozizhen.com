@@ -278,6 +278,7 @@ a.link, a.title_link_h1, a.title_link_book,.title_link_h2
     left 60px
     font-size: 14px
     color: rgba(255, 255, 255, 0.3)
+    user-select: none
 
 @keyframes upAnimation {
     0% {
@@ -330,13 +331,17 @@ a.link, a.title_link_h1, a.title_link_book,.title_link_h2
   padding: 90px 60px
 
 .post_nav
-  max-width: 1040px
-  display: flex
-  align-items: center
-  justify-content: space-between
   margin: 90px auto 0 auto
   position relative
-  padding: 90px 120px 60px 120px;
+  padding-left: 60px
+  padding-right: 60px
+  .content
+    max-width: 900px
+    margin-left: auto
+    margin-right: auto
+  .item
+    padding-left: 80px
+    padding-right: 80px
   .back_link
     font-size: 17px
     font-weight: 600
@@ -347,7 +352,6 @@ a.link, a.title_link_h1, a.title_link_book,.title_link_h2
     display: flex
     align-items: center
     @extend $Transition-Normal
-    margin-left: 25px
     svg
       width: 21px
       height: 21px
@@ -364,7 +368,14 @@ a.link, a.title_link_h1, a.title_link_book,.title_link_h2
     &.active
       color: $gray-lightest
       
-
+@media only screen and (max-width: 750px)
+  .post_nav
+    margin: 60px auto 0 auto
+    position relative
+    padding-left: 30px
+    padding-right: 30px
+  .post_nav .item
+    padding: 0
 // Nav
 .top_nav
   width: 100%
@@ -424,30 +435,43 @@ a.link, a.title_link_h1, a.title_link_book,.title_link_h2
   display: grid
   gap: 72px
   .item
-    display: grid
-    gap: 30px
-    grid-template-columns: 1fr 3fr
+    position relative
+    border 1px solid rgba(#ffffff, .06)
+    border-radius: 12px
     .title
       font-size: 26px
       font-weight: 700
-      margin-bottom: 18px
+      margin-bottom: 12px
       margin-top: 12px
     .info
-      font-size: 17px
-      font-weight: 400
-      color: rgba(#ffffff,.5)
-      margin-bottom: 12px
+      position: absolute
+      opacity 0
+      @extend $Transition-Normal
+      padding: 42px
+      background: #161616
+      height 100%
+      width: 100%
+      border-radius: 12px
+    &:hover
+      .info
+        opacity 1
     .desc
       font-size: 17px
       font-weight: 400
       width: 300px
       line-height: 30px
       color: rgba(#ffffff,.5)
+    .duty
+      font-size: 15px
+      color: rgba(#ffffff,.3)
+      margin-top: 24px
+    
     .cover_wrap
       img
         width: 100%
+        object-fit: cover
+        display: block
         border-radius: 12px
-        border 1px solid rgba(#ffffff, .06)
 
 .projectlist
   .h2
@@ -490,7 +514,6 @@ a.link, a.title_link_h1, a.title_link_book,.title_link_h2
     border 1px solid rgba(#ffffff, .06)
     @extend $Transition-Normal
     &:hover
-      // box-shadow: 0 0 0 6px rgba(#ffffff,.06)
       .info
         opacity 1
     .info_wrap
@@ -1048,5 +1071,9 @@ iframe .txp_tipbar
     grid-template-columns 1fr
     .left_wrap
       display: none
+
+@media only screen and (max-height: 750px)
+  .copyright
+    display: none
     
   
