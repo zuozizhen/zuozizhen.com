@@ -4,8 +4,8 @@
       a(href='javascript:void(0)') 我读过的 · 好书
     li
       a(href='javascript:void(0)') 我看过的 · 好文
-    li
-      a(href='javascript:void(0)') 我正在用的 · 产品
+    //- li
+    //-   a(href='javascript:void(0)') 我正在用的 · 产品
   #wrap.wrap
     .wonderful_content.active
       .wonderful_book_list_item
@@ -30,7 +30,7 @@
           .desc_wrap
             .desc {{ item.desc }}
           .site_wrap
-            .site {{ item.site }} · {{ item.time }} 分钟读完
+            .site {{ item.site }}
         | {% endfor %}
     .wonderful_content
       .wonderful_product_list_item

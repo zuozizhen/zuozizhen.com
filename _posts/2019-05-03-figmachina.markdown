@@ -2,7 +2,7 @@
 layout:     "post"
 title:      "FigmaChina.com ：不止是中文用户手册"
 excerpt:    "FigmaChina 正式上线"
-date:       "2019-06-14"
+date:       "2019-06-15"
 time:       "5"
 ---
 
