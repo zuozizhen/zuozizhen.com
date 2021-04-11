@@ -1,7 +1,7 @@
 ---
 layout:     "post"
-title:      "深入了解 Figma —— 下一代设计神器"
-excerpt:    "Figma 越来越受到 UI 设计师的青睐，很多设计团队也陆续投入了 Figma 的怀抱，我们来聊聊为什么应该选择 Figma 而不是 Sketch。"
+title:      "深入了解 Figma — 下一代设计神器（字节跳动内部分享文字版）"
+excerpt:    "受邀在字节跳动内部为今日头条 UED 所做的线下分享"
 date:       "2019-06-14"
 time:       "5"
 ---

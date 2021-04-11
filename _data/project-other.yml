@@ -1,12 +1,5 @@
 other_list:
 
-- title: DesignerAndStudio
-  desc: 收集优秀设计师的个人网站和工作室网站
-  year: 2018
-  duty: 独立设计开发
-  url: https://designandstudio.com/
-  cover: https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201127005709.jpg
-
 - title: 坚果商城设计组件库
   desc: 早期为坚果商城搭建的基于 Sketch 的组件库
   year: 2018

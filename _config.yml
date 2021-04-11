@@ -42,7 +42,8 @@ stylus:
 # Markdown settings
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM
+  syntax_highlighter: rouge                          # use Github Flavored Markdown !important
 
 
 # Analytics settings
