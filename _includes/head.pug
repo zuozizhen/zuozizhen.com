@@ -23,12 +23,15 @@ head
   //-   hljs.highlightAll();
 
   //- Global site tag (gtag.js) - Google Analytics
-  script(async='', src='https://www.googletagmanager.com/gtag/js?id={{site.ga_track_id}}')
-  script.
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KJVC1L4S7"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '{{site.ga_track_id}}');
+
+    gtag('config', 'G-0KJVC1L4S7');
+  </script>
  
   script.
     $(document).ready(function() {
