@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import ArrowMotion from '@/components/ArrowMotion';
+
 const Card = ({ title, description, imgSrc, href }) => (
   <Link href={href} className="rounded-xl h-full block">
     <a className="flex gap-6 items-center">
@@ -16,9 +18,12 @@ const Card = ({ title, description, imgSrc, href }) => (
       ) : null}
 
       <div>
-        <h2 className="font-medium text-gray-900 dark:text-gray-100 mb-1">
-          {title}
-        </h2>
+        <div className="flex relative arrow-motion items-center mb-1">
+          <h4 className="font-medium text-gray-900 dark:text-gray-100">
+            {title}
+          </h4>
+          <ArrowMotion />
+        </div>
         <p className="prose text-gray-500 dark:text-gray-500">{description}</p>
       </div>
     </a>

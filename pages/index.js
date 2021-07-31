@@ -98,7 +98,7 @@ export default function Home({ posts }) {
           </div>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          最近更新
+          精选项目
         </h3>
         <div className="space-y-8 mb-20">
           {projects.map((d) => (

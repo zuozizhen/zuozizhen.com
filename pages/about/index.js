@@ -46,9 +46,9 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              MasterGo&nbsp;
+              MasterGo
             </a>
-            担任产品设计负责人。
+            &nbsp;担任产品设计负责人。
           </p>
           <p>
             日常工作主要是关于产品策划、界面设计、设计系统和团队管理，偶尔也写一些文章和为初创公司提供建议。业余时间会投入在学习
@@ -80,9 +80,9 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Smartisan OS 7.0&nbsp;
+              Smartisan OS 7.0
             </a>
-            搭建了基于 Figma
+            &nbsp;搭建了基于 Figma
             的大型设计系统，也同时推动改变了整个团队的工作方式。
           </p>
           <p>

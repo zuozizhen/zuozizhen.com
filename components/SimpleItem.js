@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import ExternalLink from '@/components/ExternalLink';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 const SimpleItem = ({
@@ -37,12 +38,9 @@ const SimpleItem = ({
     <div className="space-y-1">
       <div className="space-y-1 mb-2">
         <h2 className="font-medium text-gray-900 dark:text-gray-100">
-          <Link href={href}>
-            <a className="flex items-center space-x-1">
-              <span>{title}</span>
-              <ArrowTopRightIcon />
-            </a>
-          </Link>
+          <ExternalLink href="https://zhihu.com/people/ZiJen">
+            {title}
+          </ExternalLink>
         </h2>
         <div className="prose text-gray-500 max-w-none dark:text-gray-500">
           {description}

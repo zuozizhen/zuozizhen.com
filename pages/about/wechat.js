@@ -1,10 +1,8 @@
-import Link from 'next/link';
-
 import Container from '@/components/Container';
 import Image from 'next/image';
-export default function NotFound() {
+export default function WeChat() {
   return (
-    <Container title="wechat">
+    <Container title="微信公众号">
       <div className="flex flex-col items-center">
         <div className="w-60 h-60 relative border-4 border-gray-300 overflow-hidden rounded-3xl mx-auto">
           <Image

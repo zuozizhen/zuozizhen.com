@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ExternalLink from '@/components/ExternalLink';
 import NowPlaying from '@/components/NowPlaying';
+import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 export default function Footer() {
   return (
@@ -8,36 +9,58 @@ export default function Footer() {
       <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
       <NowPlaying />
       <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4 items-start">
           <Link href="/">
-            <a className="text-gray-500 hover:text-gray-600 transition">首页</a>
+            <a className="text-gray-500 hover:text-gray-600 transition block">
+              首页
+            </a>
           </Link>
           <Link href="/blog">
-            <a className="text-gray-500 hover:text-gray-600 transition">文章</a>
+            <a className="text-gray-500 hover:text-gray-600 transition block">
+              文章
+            </a>
           </Link>
           <Link href="/about">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-500 hover:text-gray-600 transition block">
               关于我
             </a>
           </Link>
         </div>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4 items-start">
           <Link href="/about/wechat">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-500 hover:text-gray-600 transition block">
               微信公众号
             </a>
           </Link>
-          <ExternalLink href="https://zhihu.com/people/ZiJen">
+          <a
+            className="text-gray-500 transition hover:text-gray-900"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://zhihu.com/people/ZiJen"
+          >
             知乎
-          </ExternalLink>
-          <ExternalLink href="https://www.linkedin.com/in/zuozizhen">
+            <ArrowTopRightIcon className="ml-1 inline-block" />
+          </a>
+          <a
+            className="text-gray-500 transition hover:text-gray-900"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/zuozizhen"
+          >
             领英
-          </ExternalLink>
-          <ExternalLink href="https://github.com/zuozizhen">
+            <ArrowTopRightIcon className="ml-1 inline-block" />
+          </a>
+          <a
+            className="text-gray-500 transition hover:text-gray-900"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/zuozizhen"
+          >
             GitHub
-          </ExternalLink>
+            <ArrowTopRightIcon className="ml-1 inline-block" />
+          </a>
         </div>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4 items-start">
           <Link href="/uses">
             <a className="text-gray-500 hover:text-gray-600 transition">
               我的工具栈
