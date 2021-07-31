@@ -50,24 +50,15 @@ export default function Footer() {
             知乎
             <ArrowTopRightIcon className="ml-1 inline-block" />
           </a>
-          <UseAnimations
-            animation={mail}
-            size={24}
-            strokeColor="currentColor"
-            render={(eventProps, animationProps) => (
-              <a
-                {...eventProps}
-                className="flex items-center text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯"
-              >
-                <div {...animationProps} className="mr-1" />
-                邮箱
-                <ArrowTopRightIcon className="ml-1 inline-block" />
-              </a>
-            )}
-          />
+          <a
+            className="text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯"
+          >
+            邮箱
+            <ArrowTopRightIcon className="ml-1 inline-block" />
+          </a>
           <UseAnimations
             animation={linkedin}
             size={24}
