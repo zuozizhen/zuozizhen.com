@@ -9,5 +9,11 @@ export default function GitHub() {
   const stars = new Number(data?.stars);
   const link = 'https://github.com/zuozizhen';
 
-  return <MetricCard header="GitHub Stars" link={link} metric={stars} />;
+  return (
+    <MetricCard
+      header="GitHub Stars"
+      link={link}
+      metric={stars}
+    />
+  );
 }

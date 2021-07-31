@@ -2,6 +2,9 @@ import Link from 'next/link';
 import ExternalLink from '@/components/ExternalLink';
 import NowPlaying from '@/components/NowPlaying';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
+import UseAnimations from 'react-useanimations';
+import github from 'react-useanimations/lib/github';
+import linkedin from 'react-useanimations/lib/linkedin';
 
 export default function Footer() {
   return (
@@ -51,24 +54,45 @@ export default function Footer() {
             知乎
             <ArrowTopRightIcon className="ml-1 inline-block" />
           </a>
-          <a
-            className="text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/zuozizhen"
-          >
-            领英
-            <ArrowTopRightIcon className="ml-1 inline-block" />
-          </a>
-          <a
-            className="text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/zuozizhen"
-          >
-            GitHub
-            <ArrowTopRightIcon className="ml-1 inline-block" />
-          </a>
+          <UseAnimations
+            animation={linkedin}
+            size={24}
+            loop={true}
+            strokeColor="currentColor"
+            render={(eventProps, animationProps) => (
+              <a
+                {...eventProps}
+                className="flex items-center text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/zuozizhen"
+              >
+                <div {...animationProps} className="mr-1 -mt-0.5" />
+                领英
+                <ArrowTopRightIcon className="ml-1 inline-block" />
+              </a>
+            )}
+          />
+
+          <UseAnimations
+            animation={github}
+            size={24}
+            loop={true}
+            strokeColor="currentColor"
+            render={(eventProps, animationProps) => (
+              <a
+                {...eventProps}
+                className="flex items-center text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/zuozizhen"
+              >
+                <div {...animationProps} className="mr-1 -mt-0.5" />
+                Github
+                <ArrowTopRightIcon className="ml-1 inline-block" />
+              </a>
+            )}
+          />
         </div>
         <div className="flex flex-col space-y-4 items-start">
           <Link href="/uses">

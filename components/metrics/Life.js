@@ -6,7 +6,7 @@ export default function Life() {
   const link = 'https://zuozizhen.com';
 
   return (
-    <MetricCard header="生命在流逝">
+    <MetricCard header="逝去的时间" animation="activity">
       <LifeClock />
     </MetricCard>
   );

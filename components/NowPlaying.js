@@ -1,6 +1,9 @@
 import useSWR from 'swr';
-
 import fetcher from '@/lib/fetcher';
+
+import UseAnimations from 'react-useanimations';
+import activity from 'react-useanimations/lib/activity';
+
 
 export default function NowPlaying() {
   const { data } = useSWR('/api/now-playing', fetcher);
@@ -16,7 +19,7 @@ export default function NowPlaying() {
       <div className="inline-flex flex-col sm:flex-row w-full max-w-full truncate">
         {data?.songUrl ? (
           <a
-            className="text-gray-800 dark:text-gray-300 dark:hover:text-gray-100 font-semibold  max-w-max truncate"
+            className="text-gray-800 dark:text-gray-300 dark:hover:text-gray-100 font-semibold  max-w-max truncate flex items-center"
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"

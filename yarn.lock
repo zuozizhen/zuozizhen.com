@@ -4620,6 +4620,11 @@ loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lottie-web@^5.5.7:
+  version "5.7.12"
+  resolved "https://registry.nlark.com/lottie-web/download/lottie-web-5.7.12.tgz#59771aeec72e6748e6009d0384fce19e07943243"
+  integrity sha1-WXca7scuZ0jmAJ0DhPzhngeUMkM=
+
 lru-cache@^4.1.3:
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.5.tgz#8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd"
@@ -5766,6 +5771,13 @@ react-timeago@^6.2.1:
   version "6.2.1"
   resolved "https://registry.nlark.com/react-timeago/download/react-timeago-6.2.1.tgz#f19716811156617ceb9c9f9a44315d85197c7fba"
   integrity sha1-8ZcWgRFWYXzrnJ+aRDFdhRl8f7o=
+
+react-useanimations@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.nlark.com/react-useanimations/download/react-useanimations-2.0.6.tgz#bb102da248363190ab7c629526237ae9dcdbc90b"
+  integrity sha1-uxAtokg2MZCrfGKVJiN66dzbyQs=
+  dependencies:
+    lottie-web "^5.5.7"
 
 react@17.0.2:
   version "17.0.2"
