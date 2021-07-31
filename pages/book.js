@@ -30,7 +30,7 @@ export default class App extends Component {
         <Container title="书单 – 左子祯">
           <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
             <PageTitle title="书单" />
-            <div className="space-y-6">
+            <div className="space-y-8">
               {this.state.books.map(
                 (book) => (
                   // <SimpleItem {...book.fields} />

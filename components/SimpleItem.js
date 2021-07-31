@@ -11,6 +11,7 @@ const SimpleItem = ({
   imgSrc,
   score,
   tag,
+  site,
   type,
   className
 }) => (
@@ -38,9 +39,7 @@ const SimpleItem = ({
     <div className="space-y-1">
       <div className="space-y-1 mb-2">
         <h2 className="font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
-          <ExternalLink href={href}>
-            {title}
-          </ExternalLink>
+          <ExternalLink href={href}>{title}</ExternalLink>
         </h2>
         <div className="prose text-gray-500 max-w-none dark:text-gray-500">
           {description}
@@ -49,6 +48,11 @@ const SimpleItem = ({
       {score ? (
         <span className="prose font-mono rounded px-3 py-0.5 text-sm font-semibold leading-5 tracking-wide dark:text-green-400 dark:border-green-400 text-green-600 bg-green-500 bg-opacity-5 dark:bg-opacity-20">
           {score}
+        </span>
+      ) : null}
+      {site ? (
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-semibold leading-5 tracking-wide dark:text-blue-500 dark:border-blue-400 text-blue-600 bg-blue-500 bg-opacity-5 dark:bg-opacity-20">
+          {site}
         </span>
       ) : null}
       {tag ? (

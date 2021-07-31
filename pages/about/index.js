@@ -101,7 +101,7 @@ export default function About() {
         <h2 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           工作经历
         </h2>
-        <div className="space-y-6">
+        <div className="space-y-8">
           {workHistoryData.map((d) => (
             <SimpleItem
               key={d.company}

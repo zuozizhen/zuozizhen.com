@@ -18,7 +18,7 @@ export default function UsesLayout({ children }) {
         {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           最近更新
         </h3>
-        <div className="space-y-6">
+        <div className="space-y-8">
           {toolData.map((d) => (
             <SimpleItem
               key={d.title}

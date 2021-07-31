@@ -27,26 +27,23 @@ export default class App extends Component {
   }
   render() {
     return (
-        <Container title="书签 – 左子祯">
-          <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-            <PageTitle title="书签" />
-            <div className="space-y-6">
-              {this.state.articles.map(
-                (article) => (
-                  // <SimpleItem {...article.fields} />
-                  (
-                    <SimpleItem
-                      key={article.fields.title}
-                      title={`《${article.fields.title}》`}
-                      description={article.fields.description}
-                      href={article.fields.href}
-                    />
-                  )
-                )
-              )}
-            </div>
+      <Container title="书签 – 左子祯">
+        <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+          <PageTitle title="书签" />
+          <div className="space-y-8">
+            {this.state.articles.map((article) => (
+              // <SimpleItem {...article.fields} />
+              <SimpleItem
+                key={article.fields.title}
+                title={`《${article.fields.title}》`}
+                description={article.fields.description}
+                href={article.fields.href}
+                site={article.fields.site}
+              />
+            ))}
           </div>
-        </Container>
+        </div>
+      </Container>
     );
   }
 }
