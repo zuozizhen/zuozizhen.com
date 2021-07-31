@@ -5,6 +5,7 @@ import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 import UseAnimations from 'react-useanimations';
 import github from 'react-useanimations/lib/github';
 import linkedin from 'react-useanimations/lib/linkedin';
+import mail from 'react-useanimations/lib/mail';
 
 export default function Footer() {
   return (
@@ -40,11 +41,6 @@ export default function Footer() {
               微信公众号
             </a>
           </Link>
-          <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
-            <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
-              邮箱
-            </a>
-          </Link>
           <a
             className="text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
             target="_blank"
@@ -54,6 +50,24 @@ export default function Footer() {
             知乎
             <ArrowTopRightIcon className="ml-1 inline-block" />
           </a>
+          <UseAnimations
+            animation={mail}
+            size={24}
+            strokeColor="currentColor"
+            render={(eventProps, animationProps) => (
+              <a
+                {...eventProps}
+                className="flex items-center text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯"
+              >
+                <div {...animationProps} className="mr-1" />
+                邮箱
+                <ArrowTopRightIcon className="ml-1 inline-block" />
+              </a>
+            )}
+          />
           <UseAnimations
             animation={linkedin}
             size={24}
@@ -67,7 +81,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/zuozizhen"
               >
-                <div {...animationProps} className="mr-1 -mt-0.5" />
+                <div {...animationProps} className="mr-1" />
                 领英
                 <ArrowTopRightIcon className="ml-1 inline-block" />
               </a>
@@ -87,7 +101,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 href="https://github.com/zuozizhen"
               >
-                <div {...animationProps} className="mr-1 -mt-0.5" />
+                <div {...animationProps} className="mr-1" />
                 Github
                 <ArrowTopRightIcon className="ml-1 inline-block" />
               </a>
