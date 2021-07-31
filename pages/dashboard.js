@@ -30,10 +30,10 @@ export default function Dashboard() {
           <Mark />
         </div>
         <h2 className="mt-16 font-bold text-lg sm:text-xl mb-3 text-gray-900 dark:text-gray-100">
-          我喜欢听的歌
+          我最近喜欢听的歌
         </h2>
         <p className="text-gray-500 dark:text-gray-500 mb-4">
-          这里是我平时听的最多的音乐，在底部还能看到我正在听的歌曲。
+          这里是我最近听的比较多的各各歌曲，在底部还能看到我当前正在听什么。
         </p>
         <TopTracks />
       </div>
