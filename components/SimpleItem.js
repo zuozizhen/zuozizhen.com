@@ -37,7 +37,7 @@ const SimpleItem = ({
 
     <div className="space-y-1">
       <div className="space-y-1 mb-2">
-        <h2 className="font-medium text-gray-900 dark:text-gray-100">
+        <h2 className="font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
           <ExternalLink href="https://zhihu.com/people/ZiJen">
             {title}
           </ExternalLink>

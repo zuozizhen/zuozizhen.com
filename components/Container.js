@@ -63,35 +63,35 @@ export default function Container(props) {
           </Link>
           <div className="sm:space-x-10 space-x-4 flex items-center">
             <Link href="/">
-              <a className="sm:hidden block text-sm sm:text-base text-gray-700 font-medium dark:text-gray-100">
+              <a className="sm:hidden block text-sm sm:text-base text-gray-700 font-medium dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
                 首页
               </a>
             </Link>
             <Link href="/blog">
-              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300">
+              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
                 文章
               </a>
             </Link>
             <Link href="/project">
-              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300">
+              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
                 项目
               </a>
             </Link>
             <Link href="/dashboard">
-              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300">
+              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
                 仪表盘
               </a>
             </Link>
 
             <Link href="/about">
-              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300">
+              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
                 关于我
               </a>
             </Link>
           </div>
           <div
             aria-label="Toggle Dark Mode"
-            className="w-10 h-10 flex items-center justify-center"
+            className="w-10 h-10 flex items-center justify-center cursor-pointer"
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }

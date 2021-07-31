@@ -29,7 +29,7 @@ function timeRun(date) {
   var s = (years - 1970) * 365 * 24 * 60 * 60 * 1000;
   var f = t - (years - 1970);
   var r = Math.floor(f * 1000000000);
-  ageRun = y + '.' + r;
+  ageRun = (y - 1)  + '.' + r;
   return ageRun;
 }
 

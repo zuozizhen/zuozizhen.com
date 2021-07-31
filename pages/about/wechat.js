@@ -4,7 +4,7 @@ export default function WeChat() {
   return (
     <Container title="微信公众号">
       <div className="flex flex-col items-center">
-        <div className="w-60 h-60 relative border-4 border-gray-300 overflow-hidden rounded-3xl mx-auto">
+        <div className="w-60 h-60 relative border-4 border-gray-300 dark:border-gray-600 overflow-hidden rounded-3xl mx-auto">
           <Image
             src="/look-z-qr.png"
             alt="avatar"

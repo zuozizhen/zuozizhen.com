@@ -55,24 +55,30 @@ export default function Home({ posts }) {
         <div className="space-y-4 mb-20">
           <p className="font-bold text-lg sm:text-xl text-gray-800 dark:text-gray-100 sm:leading-9">
             Hey，我是左子祯。我是一名&nbsp;
-            <a href="/project" className="text-gray-500 hover:text-gray-800 hover:border-b-2 border-gray-800">
+            <a
+              href="/project"
+              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:border-b-2 dark:border-gray-200 border-gray-800"
+            >
               产品设计师
             </a>
             、
             <a
               href="https://github.com/zuozizhen"
-              className="text-gray-500 hover:text-gray-800 hover:border-b-2 border-gray-800"
+              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:border-b-2 dark:border-gray-200 border-gray-800"
             >
               独立开发者
             </a>
             ，我喜欢&nbsp;
-            <a href="/blog" className="text-gray-500 hover:text-gray-800 hover:border-b-2 border-gray-800">
+            <a
+              href="/blog"
+              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:border-b-2 dark:border-gray-200 border-gray-800"
+            >
               写文章
             </a>
             ，目前是&nbsp;
             <a
               href="https://mastergo.com/"
-              className="text-gray-500 hover:text-gray-800 hover:border-b-2 border-gray-800"
+              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:border-b-2 dark:border-gray-200 border-gray-800"
             >
               Master 的产品设计负责人
             </a>

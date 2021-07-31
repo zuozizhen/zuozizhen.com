@@ -19,7 +19,7 @@ const Card = ({ title, description, imgSrc, href }) => (
 
       <div>
         <div className="flex relative arrow-motion items-center mb-1">
-          <h4 className="font-medium text-gray-900 dark:text-gray-100">
+          <h4 className="font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
             {title}
           </h4>
           <ArrowMotion />

@@ -33,7 +33,7 @@ const Step = ({ title, children }) => {
             <path d="M22 4L12 14.01l-3-3" />
           </g>
         </svg>
-        <p className="font-medium text-gray-900 dark:text-gray-100">{title}</p>
+        <p className="font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">{title}</p>
       </div>
       <p className="text-gray-700 dark:text-gray-400 ml-7">{children}</p>
     </li>
@@ -228,7 +228,7 @@ export default function Timeline() {
       ) : (
         <button
           type="button"
-          className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
+          className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
           onClick={() => showFullTimeline(true)}
         >
           See More
