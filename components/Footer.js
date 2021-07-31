@@ -20,6 +20,11 @@ export default function Footer() {
               文章
             </a>
           </Link>
+          <Link href="/project">
+            <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
+              项目
+            </a>
+          </Link>
           <Link href="/about">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
               关于我
@@ -30,6 +35,11 @@ export default function Footer() {
           <Link href="/about/wechat">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
               微信公众号
+            </a>
+          </Link>
+          <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
+            <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
+              邮箱
             </a>
           </Link>
           <a
@@ -66,11 +76,7 @@ export default function Footer() {
               我的工具栈
             </a>
           </Link>
-          <Link href="/project">
-            <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
-              项目
-            </a>
-          </Link>
+
           <Link href="/book">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
               书单
