@@ -21,7 +21,7 @@ export default function Dashboard() {
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <PageTitle
           title="仪表盘"
-          description="这是我的个人仪表盘，我使用此仪表盘来跟踪我的各方面（如我的生命流逝、GitHub Stars、读了多少本书等）的各种指标。"
+          description="这是我的个人仪表盘，我使用此仪表盘来跟踪我的各方面状态（如我的年龄、GitHub Stars、读了多少本书等）的指标。"
         />
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
           <Life />
