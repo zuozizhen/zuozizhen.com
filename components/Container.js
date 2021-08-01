@@ -50,7 +50,7 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="w-full py-8 px-8 my-0 text-gray-900 bg-white sticky-nav md:my-8 dark:bg-black bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-black">
+      <nav className="w-full py-8 px-6 my-4 text-gray-900 bg-white sticky-nav sm:px-8 md:my-8 dark:bg-black bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-black">
         <div className="flex items-center justify-between max-w-2xl mx-auto">
           <a href="#skip" className="skip-nav">
             Skip to content
@@ -126,7 +126,7 @@ export default function Container(props) {
       </nav>
       <main
         id="skip"
-        className="flex flex-col justify-center px-8 bg-white dark:bg-black"
+        className="flex flex-col justify-center px-6 bg-white dark:bg-black sm:px-8"
       >
         {children}
         <Footer />

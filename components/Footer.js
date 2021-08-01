@@ -111,7 +111,7 @@ export default function Footer() {
               书单
             </a>
           </Link>
-          <Link href="/bookmark">
+          <Link href="/bookmarks">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
               书签
             </a>

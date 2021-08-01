@@ -2,13 +2,13 @@ import MetricCard from '@/components/metrics/Card';
 import React, { Component } from 'react';
 
 const AIRTABLE_KEY = process.env.NEXT_PUBLIC_AIRTABLE_KEY;
-const TABLE_NAME = 'articles';
-const TABLE_VIEW = 'default';
+const TABLE_NAME = 'bookmarks';
+const TABLE_VIEW = 'all';
 export default class Analytics extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      articles: []
+      database: []
     };
   }
   componentDidMount() {
@@ -17,7 +17,7 @@ export default class Analytics extends Component {
     )
       .then((resp) => resp.json())
       .then((data) => {
-        this.setState({ articles: data.records });
+        this.setState({ database: data.records });
       })
       .catch((err) => {
         // Error :(
@@ -28,7 +28,7 @@ export default class Analytics extends Component {
       <MetricCard
         header="书签"
         link={`/bookmark`}
-        metric={this.state.articles.length}
+        metric={this.state.database.length}
       />
     );
   }

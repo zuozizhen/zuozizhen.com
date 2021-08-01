@@ -52,8 +52,8 @@ export default function Home({ posts }) {
   return (
     <Container>
       <div className="max-w-2xl mx-auto">
-        <div className="space-y-4 mb-20">
-          <p className="font-bold text-lg sm:text-xl text-gray-800 dark:text-gray-100 sm:leading-9">
+        <div className="space-y-4 mb-16">
+          <p className="font-bold text-xl leading-9 text-gray-800 dark:text-gray-100">
             Hey，我是左子祯。我是一名&nbsp;
             <a
               href="/project"
@@ -83,7 +83,7 @@ export default function Home({ posts }) {
               Master 的产品设计负责人
             </a>
           </p>
-          <p className="font-bold text-lg sm:text-xl text-gray-800 dark:text-gray-100 sm:leading-9">
+          <p className="font-bold text-xl leading-9 text-gray-800 dark:text-gray-100">
             之前我曾在锤子科技和字节跳动就职，专注协作工具类产品的竞争力提升与极致的用户体验。
             &nbsp;
           </p>
