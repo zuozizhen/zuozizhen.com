@@ -15,15 +15,16 @@ const SimpleItem = ({
   tagPink,
   tagPurple,
   tagYellow,
+  thumbnailsUrl,
   site,
   type,
   className
 }) => (
   <div className="flex gap-8 items-center">
-    {score ? (
+    {thumbnailsUrl ? (
       <div className="w-24 h-36 relative flex-shrink-0">
         <Image
-          src={imgSrc}
+          src={thumbnailsUrl}
           alt="avatar"
           layout="fill"
           className="rounded-xl object-cover"

@@ -37,7 +37,7 @@ export default class App extends Component {
                 key={book.fields.title}
                 title={`《${book.fields.title}》`}
                 description={book.fields.description}
-                imgSrc={book.fields.imgSrc[0].thumbnails.large.url}
+                thumbnailsUrl={book.fields.imgSrc[0].thumbnails.large.url}
                 href={book.fields.href}
                 tagGreen={book.fields.score}
               />
