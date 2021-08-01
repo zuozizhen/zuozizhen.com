@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 import { init } from 'utils/ga';
 
 export default function App({ Component, pageProps }) {
-  // useAnalytics();
+  useAnalytics();
   useEffect(() => {
     init(process.env.NEXT_PUBLIC_G);
   }, []);
