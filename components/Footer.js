@@ -102,6 +102,11 @@ export default function Footer() {
         <div className="flex flex-col space-y-4 items-start">
           <Link href="/uses">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
+              我的装备
+            </a>
+          </Link>
+          <Link href="/stack">
+            <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
               我的工具栈
             </a>
           </Link>
