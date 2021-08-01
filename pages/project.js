@@ -18,7 +18,7 @@ export default function NotFound() {
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
             精选项目
           </h3>
-          <div className="space-y-8 mb-20">
+          <div className="space-y-8 mb-16">
             {projects.map((d) => (
               <Card
                 key={d.title}
@@ -31,7 +31,7 @@ export default function NotFound() {
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
             开源项目
           </h3>
-          <div className="space-y-8 mb-20">
+          <div className="space-y-8 mb-16">
             {openSource.map((d) => (
               <Card
                 key={d.title}
@@ -44,7 +44,7 @@ export default function NotFound() {
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
             其它
           </h3>
-          <div className="space-y-8 mb-20">
+          <div className="space-y-8 mb-16">
             {otherProjects.map((d) => (
               <Card
                 key={d.title}
