@@ -5,6 +5,7 @@ import workHistoryData from '@/data/workHistoryData';
 import SimpleItem from '@/components/SimpleItem';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
+import { motion } from 'framer-motion';
 
 const Talk = ({ title, link, children }) => (
   <>
@@ -29,14 +30,20 @@ export default function About() {
   return (
     <Container title="关于我 – 左子祯">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <div className="w-full h-48 sm:h-96 relative mb-6">
-          <Image
-            src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406230547.jpg"
-            alt="avatar"
-            layout="fill"
-            className="rounded-2xl object-cover"
-          />
-        </div>
+        <motion.div
+          animate={{ opacity: 1 }}
+          transition={{ type: 'ease-out', duration: 0.6 }}
+          className="opacity-0 w-full"
+        >
+          <div className="w-full h-48 sm:h-96 relative mb-6">
+            <Image
+              src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406230547.jpg"
+              alt="avatar"
+              layout="fill"
+              className="rounded-2xl object-cover"
+            />
+          </div>
+        </motion.div>
         <div className="mb-16 prose text-gray-700 dark:text-gray-400">
           <p>
             嗨,

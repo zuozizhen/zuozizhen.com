@@ -13,6 +13,10 @@ html {
   font-size: 17px;
 }
 
+a {
+  @apply transition;
+}
+
 #__next {
   display: flex;
   flex-direction: column;

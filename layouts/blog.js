@@ -5,6 +5,8 @@ import Container from '@/components/Container';
 // import Subscribe from '@/components/Subscribe';
 import ViewCounter from '@/components/ViewCounter';
 
+import { motion } from 'framer-motion';
+
 const editUrl = (slug) =>
   `https://github.com/zuozizhen.com/edit/main/data/blog/${slug}.mdx`;
 const discussUrl = (slug) =>
@@ -22,44 +24,51 @@ export default function BlogLayout({ children, frontMatter }) {
       type="article"
     >
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
-        <h1 className="font-bold text-2xl md:text-3xl mb-4 text-gray-900 dark:text-gray-100">
-          {frontMatter.title}
-        </h1>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
-          <div className="flex items-center">
-            <Image
-              alt="左子祯"
-              height={24}
-              width={24}
-              src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210706205657.jpg"
-              className="rounded-full"
-            />
-            <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
-              {frontMatter.by}
-              {'左子祯 / '}
-              {format(parseISO(frontMatter.publishedAt), 'yyyy.MM.dd')}
-            </p>
-          </div>
-          {/* <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
+          <h1 className="font-bold text-2xl md:text-3xl mb-4 text-gray-900 dark:text-gray-100">
+            {frontMatter.title}
+          </h1>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
+            <div className="flex items-center">
+              <Image
+                alt="左子祯"
+                height={24}
+                width={24}
+                src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210706205657.jpg"
+                className="rounded-full"
+              />
+              <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
+                {frontMatter.by}
+                {'左子祯 / '}
+                {format(parseISO(frontMatter.publishedAt), 'yyyy.MM.dd')}
+              </p>
+            </div>
+            {/* <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
             {frontMatter.readingTime.text}
             {` • `}
             <ViewCounter slug={frontMatter.slug} />
           </p> */}
-        </div>
-        <div className="prose dark:prose-dark max-w-none w-full pt-12">
-          {frontMatter.image ? (
-            <Image
-              alt={`Norway`}
-              src={frontMatter.image}
-              width={1501 / 2}
-              height={712 / 2}
-              className=""
-              priority
-            />
-          ) : null}
+          </div>
+        <motion.div
+          animate={{ y: -20, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 80, duration: 0.6 }}
+          className="opacity-0"
+        >
+          <div className="prose dark:prose-dark max-w-none w-full pt-20">
+            {frontMatter.image ? (
+              <Image
+                alt={`Norway`}
+                src={frontMatter.image}
+                width={1501 / 2}
+                height={712 / 2}
+                className=""
+                priority
+              />
+            ) : null}
 
-          {children}
-        </div>
+            {children}
+          </div>
+        </motion.div>
+
         {/* <div className="text-sm text-gray-700 dark:text-gray-300">
           <a
             href={discussUrl(frontMatter.slug)}

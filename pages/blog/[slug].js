@@ -6,6 +6,8 @@ import BlogLayout from '@/layouts/blog';
 import Tweet from '@/components/Tweet';
 import MDXComponents from '@/components/MDXComponents';
 
+
+
 export default function Blog({ mdxSource, frontMatter }) {
   // const StaticTweet = ({ id }) => {
   //   const tweet = tweets.find((tweet) => tweet.id === id);
@@ -14,13 +16,13 @@ export default function Blog({ mdxSource, frontMatter }) {
 
   return (
     <BlogLayout frontMatter={frontMatter}>
-      <MDXRemote
-        {...mdxSource}
-        components={{
-          ...MDXComponents,
-          // StaticTweet
-        }}
-      />
+        <MDXRemote
+          {...mdxSource}
+          components={{
+            ...MDXComponents
+            // StaticTweet
+          }}
+        />
     </BlogLayout>
   );
 }
