@@ -39,7 +39,7 @@ export default class App extends Component {
                 description={book.fields.description}
                 imgSrc={book.fields.imgSrc[0].thumbnails.large.url}
                 href={book.fields.href}
-                score={book.fields.score}
+                tagGreen={book.fields.score}
               />
             ))}
           </div>

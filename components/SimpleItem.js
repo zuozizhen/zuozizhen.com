@@ -10,7 +10,11 @@ const SimpleItem = ({
   description,
   imgSrc,
   score,
-  tag,
+  tagGreen,
+  tagBlue,
+  tagPink,
+  tagPurple,
+  tagYellow,
   site,
   type,
   className
@@ -45,25 +49,30 @@ const SimpleItem = ({
           {description}
         </div>
       </div>
-      {score ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-semibold leading-5 tracking-wide dark:text-green-400 dark:border-green-400 text-green-600 bg-green-500 bg-opacity-5 dark:bg-opacity-20">
-          {score}
+      {tagGreen ? (
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-green-500 dark:border-green-400 text-green-600 bg-green-500 bg-opacity-5 dark:bg-opacity-20">
+          {tagGreen}
         </span>
       ) : null}
-      {site ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-semibold leading-5 tracking-wide dark:text-blue-500 dark:border-blue-400 text-blue-600 bg-blue-500 bg-opacity-5 dark:bg-opacity-20">
-          {site}
+      {tagBlue ? (
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-blue-400 dark:border-blue-400 text-blue-600 bg-blue-500 bg-opacity-5 dark:bg-opacity-20">
+          {tagBlue}
         </span>
       ) : null}
-      {tag ? (
-        <div className="flex gap-2">
-          <div className="self-start rounded px-3 py-0.5 text-sm font-semibold leading-5 tracking-wide dark:text-purple-400 dark:border-purple-400 text-purple-600 bg-purple-500 bg-opacity-5 dark:bg-opacity-20">
-            独立开发
-          </div>
-          <div className="self-start rounded px-3 py-0.5 text-sm font-semibold leading-5 tracking-wide dark:text-green-400 dark:border-green-400 text-green-600 bg-green-500 bg-opacity-5 dark:bg-opacity-20">
-            开源
-          </div>
-        </div>
+      {tagPurple ? (
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-purple-400 dark:border-purple-400 text-purple-600 bg-purple-500 bg-opacity-5 dark:bg-opacity-20">
+          {tagPurple}
+        </span>
+      ) : null}
+      {tagPink ? (
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-pink-400 dark:border-pink-400 text-pink-600 bg-pink-500 bg-opacity-5 dark:bg-opacity-20">
+          {tagPink}
+        </span>
+      ) : null}
+      {tagYellow ? (
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-yellow-500 dark:border-yellow-400 text-yellow-600 bg-yellow-500 bg-opacity-5 dark:bg-opacity-20">
+          {tagYellow}
+        </span>
       ) : null}
     </div>
   </div>
