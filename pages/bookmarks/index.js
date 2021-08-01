@@ -32,36 +32,36 @@ export default class App extends Component {
       <Container title="书签 – 左子祯">
         <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
           <PageTitle title="书签" />
-          <div class="hidden grid-cols-4 gap-2 overflow-x-auto md:grid tabbed-navigation md:justify-center md:-ml-0 md:-mr-0 flex-nowrap mb-8 w-full">
+          <div className="hidden grid-cols-4 gap-2 overflow-x-auto md:grid tabbed-navigation md:justify-center md:-ml-0 md:-mr-0 flex-nowrap mb-8 w-full">
             <a
-              class="font-medium flex flex-none rounded-lg text-gray-900 dark:text-gray-100 items-center justify-center space-x-3 bg-gray-100 dark:bg-gray-800"
+              className="font-medium flex flex-none rounded-lg text-gray-900 dark:text-gray-100 items-center justify-center space-x-3 bg-gray-100 dark:bg-gray-800"
               href="/bookmarks"
             >
-              <span class="flex items-center px-4 py-2 space-x-2">
+              <span className="flex items-center px-4 py-2 space-x-2">
                 <span>全部</span>
               </span>
             </a>
             <a
-              class="font-medium flex flex-none rounded-lg text-gray-500 items-center justify-center space-x-3 hover:bg-gray-100 filter-saturate  dark:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300 text-tertiary"
+              className="font-medium flex flex-none rounded-lg text-gray-500 items-center justify-center space-x-3 hover:bg-gray-100 filter-saturate  dark:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300 text-tertiary"
               href="/bookmarks/reading"
             >
-              <span class="flex items-center px-4 py-2 space-x-2">
+              <span className="flex items-center px-4 py-2 space-x-2">
                 <span>好文</span>
               </span>
             </a>
             <a
-              class="font-medium flex flex-none rounded-lg text-gray-500 items-center justify-center space-x-3 hover:bg-gray-100 filter-saturate  dark:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300 text-tertiary"
+              className="font-medium flex flex-none rounded-lg text-gray-500 items-center justify-center space-x-3 hover:bg-gray-100 filter-saturate  dark:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300 text-tertiary"
               href="/bookmarks/personal-site"
             >
-              <span class="flex items-center px-4 py-2 space-x-2">
+              <span className="flex items-center px-4 py-2 space-x-2">
                 <span>个人网站</span>
               </span>
             </a>
             <a
-              class="font-medium flex flex-none rounded-lg text-gray-500 items-center justify-center space-x-3 hover:bg-gray-100 filter-saturate  dark:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300 text-tertiary"
+              className="font-medium flex flex-none rounded-lg text-gray-500 items-center justify-center space-x-3 hover:bg-gray-100 filter-saturate  dark:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300 text-tertiary"
               href="/bookmarks/tool"
             >
-              <span class="flex items-center px-4 py-2 space-x-2">
+              <span className="flex items-center px-4 py-2 space-x-2">
                 <span>工具</span>
               </span>
             </a>

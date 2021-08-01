@@ -91,7 +91,7 @@ export default function Container(props) {
           </div>
           <div
             aria-label="Toggle Dark Mode"
-            className="w-10 h-10 flex items-center justify-center cursor-pointer"
+            className="w-10 h-10 flex items-center justify-center cursor-pointer rounded-2xl"
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
