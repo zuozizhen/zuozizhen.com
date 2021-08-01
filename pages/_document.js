@@ -1,4 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-0KJVC1L4S7');
+ReactGA.send('pageview');
 
 class MyDocument extends Document {
   render() {
