@@ -20,7 +20,7 @@ const SimpleItem = ({
   type,
   className
 }) => (
-  <div className="flex gap-8 items-center">
+  <div className="flex gap-6 items-center">
     {thumbnailsUrl ? (
       <div className="w-24 h-36 relative flex-shrink-0">
         <Image
@@ -31,7 +31,7 @@ const SimpleItem = ({
         />
       </div>
     ) : imgSrc ? (
-      <div className="w-16 h-16 relative flex-shrink-0">
+      <div className="w-14 h-14 relative flex-shrink-0">
         <Image
           src={imgSrc}
           alt="avatar"
@@ -41,8 +41,8 @@ const SimpleItem = ({
       </div>
     ) : null}
 
-    <div className="space-y-1">
-      <div className="space-y-1 mb-2">
+    <div className="space-y-2">
+      <div className="space-y-1">
         <h2 className="font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
           <ExternalLink href={href}>{title}</ExternalLink>
         </h2>
@@ -51,7 +51,7 @@ const SimpleItem = ({
         </div>
       </div>
       {tagGreen ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-green-500 dark:border-green-400 text-green-600 bg-green-500 bg-opacity-5 dark:bg-opacity-20">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-green-500 dark:border-green-400 text-green-600 bg-green-500 bg-opacity-5 dark:bg-opacity-20 mt-2 inline-block">
           {tagGreen}
         </span>
       ) : null}

@@ -29,9 +29,9 @@ export default class App extends Component {
   }
   render() {
     return (
-      <Container title="书签 – 左子祯">
+      <Container title="我的工具栈 – 左子祯">
         <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
-          <PageTitle title="书签" />
+          <PageTitle title="我的工具栈" />
           <div className="space-y-8">
             {this.state.database.map((data) => (
               // <SimpleItem {...data.fields} />
