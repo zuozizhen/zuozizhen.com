@@ -8,7 +8,7 @@ export default function Tabs({ tabs }) {
     <div className="hidden grid-cols-5 gap-2 overflow-x-auto md:grid tabbed-navigation md:justify-center md:-ml-0 md:-mr-0 flex-nowrap mb-8 w-full">
       {tabs.map((tab) => (
         // <SimpleItem {...data.fields} />
-        <Link href={tab.href}>
+        <Link href={tab.href} key={tab.title}>
           <a
             className={clsx(
               'font-medium flex flex-none rounded-lg items-center justify-center space-x-3',
@@ -21,7 +21,9 @@ export default function Tabs({ tabs }) {
               }
             )}
           >
-            <span className="flex items-center px-4 py-2 space-x-2">{tab.title}</span>
+            <span className="flex items-center px-4 py-2 space-x-2">
+              {tab.title}
+            </span>
           </a>
         </Link>
       ))}
