@@ -24,9 +24,10 @@ const tabs = [
   }
 ];
 
+
 const AIRTABLE_KEY = process.env.NEXT_PUBLIC_AIRTABLE_KEY;
 const TABLE_NAME = 'bookmarks';
-const TABLE_VIEW = 'personal-site';
+const TABLE_VIEW = 'tool';
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -60,7 +61,7 @@ export default class App extends Component {
                 title={`${data.fields.title}`}
                 description={data.fields.description}
                 href={data.fields.href}
-                tagYellow={data.fields.type}
+                tagGreen={data.fields.toolTag}
               />
             ))}
           </div>

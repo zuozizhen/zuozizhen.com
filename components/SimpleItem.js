@@ -41,7 +41,7 @@ const SimpleItem = ({
       </div>
     ) : null}
 
-    <div className="space-y-2">
+    <div className="space-y-1">
       <div className="space-y-1">
         <h2 className="font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
           <ExternalLink href={href}>{title}</ExternalLink>
@@ -56,22 +56,22 @@ const SimpleItem = ({
         </span>
       ) : null}
       {tagBlue ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-blue-400 dark:border-blue-400 text-blue-600 bg-blue-500 bg-opacity-5 dark:bg-opacity-20">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-blue-400 dark:border-blue-400 text-blue-600 bg-blue-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
           {tagBlue}
         </span>
       ) : null}
       {tagPurple ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-purple-400 dark:border-purple-400 text-purple-600 bg-purple-500 bg-opacity-5 dark:bg-opacity-20">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-purple-400 dark:border-purple-400 text-purple-600 bg-purple-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
           {tagPurple}
         </span>
       ) : null}
       {tagPink ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-pink-400 dark:border-pink-400 text-pink-600 bg-pink-500 bg-opacity-5 dark:bg-opacity-20">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-pink-400 dark:border-pink-400 text-pink-600 bg-pink-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
           {tagPink}
         </span>
       ) : null}
       {tagYellow ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-yellow-500 dark:border-yellow-400 text-yellow-600 bg-yellow-500 bg-opacity-5 dark:bg-opacity-20">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-yellow-500 dark:border-yellow-400 text-yellow-600 bg-yellow-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
           {tagYellow}
         </span>
       ) : null}

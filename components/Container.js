@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import LogoBlack from '../public/logo-black.svg';
 import LogoWhite from '../public/logo-white.svg';
+import clsx from 'clsx';
 
 import Footer from '@/components/Footer';
 
@@ -61,30 +62,65 @@ export default function Container(props) {
               <LogoWhite className="mr-3 hidden dark:block w-6 h-6" />
             </a>
           </Link>
-          <div className="sm:space-x-10 space-x-4 flex items-center">
+          <div className="sm:space-x-10 space-x-4 flex items-center text-gray-500 font-medium">
             <Link href="/">
-              <a className="sm:hidden block text-sm sm:text-base text-gray-700 font-medium dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+              <a
+                className={clsx(
+                  'sm:hidden block text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
+                  {
+                    'text-gray-700': router.pathname === '/'
+                  }
+                )}
+              >
                 首页
               </a>
             </Link>
             <Link href="/blog">
-              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+              <a
+                className={clsx(
+                  'text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
+                  {
+                    'text-gray-700': router.pathname === '/blog'
+                  }
+                )}
+              >
                 文章
               </a>
             </Link>
             <Link href="/project">
-              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+              <a
+                className={clsx(
+                  'text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
+                  {
+                    'text-gray-700': router.pathname === '/project'
+                  }
+                )}
+              >
                 项目
               </a>
             </Link>
             <Link href="/dashboard">
-              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+              <a
+                className={clsx(
+                  'text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
+                  {
+                    'text-gray-700': router.pathname === '/dashboard'
+                  }
+                )}
+              >
                 仪表盘
               </a>
             </Link>
 
             <Link href="/about">
-              <a className="text-gray-700 font-medium text-sm sm:text-base dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+              <a
+                className={clsx(
+                  'text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
+                  {
+                    'text-gray-700': router.pathname === '/about'
+                  }
+                )}
+              >
                 关于我
               </a>
             </Link>
