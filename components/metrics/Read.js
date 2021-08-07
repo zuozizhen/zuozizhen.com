@@ -8,7 +8,7 @@ export default class Analytics extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      books: []
+      database: []
     };
   }
   componentDidMount() {
@@ -17,7 +17,7 @@ export default class Analytics extends Component {
     )
       .then((resp) => resp.json())
       .then((data) => {
-        this.setState({ books: data.records });
+        this.setState({ database: data.records });
       })
       .catch((err) => {
         // Error :(
@@ -28,7 +28,7 @@ export default class Analytics extends Component {
       <MetricCard
         header="读了多少本书"
         link={`/book`}
-        metric={this.state.books.length}
+        metric={this.state.database.length}
       />
     );
   }
