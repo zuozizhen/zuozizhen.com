@@ -100,25 +100,24 @@ export default function Footer() {
           />
         </div>
         <div className="flex flex-col space-y-4 items-start">
-          <Link href="/uses">
+          <Link href="/bookmarks">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
-              我的装备
+              书签
             </a>
           </Link>
-          <Link href="/stack">
-            <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
-              我的工具栈
-            </a>
-          </Link>
-
           <Link href="/book">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
               书单
             </a>
           </Link>
-          <Link href="/bookmarks">
+          <Link href="/stack">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
-              书签
+              工具栈
+            </a>
+          </Link>
+          <Link href="/uses">
+            <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
+              装备
             </a>
           </Link>
           {/* <ExternalLink href="https://app.mailbrew.com/zuozizhen/daily-brew-P7rk2fDL93SA">

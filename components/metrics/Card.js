@@ -15,8 +15,6 @@ export default function MetricCard({ header, link, metric, isCurrency, animation
         href={link}
       >
         <div className="flex items-center text-gray-700 dark:text-gray-300 space-x-1">
-          <span>{header}</span>
-          {link ? <ArrowTopRightIcon /> : null}
           {animation == 'activity' ? (
             <UseAnimations
               animation={activity}
@@ -26,6 +24,17 @@ export default function MetricCard({ header, link, metric, isCurrency, animation
               className="mr-1 -mt-0.5"
             />
           ) : null}
+          {animation == 'github' ? (
+            <UseAnimations
+              animation={github}
+              size={20}
+              loop={true}
+              strokeColor="currentColor"
+              className="mr-1 -mt-0.5"
+            />
+          ) : null}
+          <span>{header}</span>
+          {/* {link ? <ArrowTopRightIcon /> : null} */}
         </div>
       </a>
       <p className="mt-2 text-2xl font-bold spacing-sm text-gray-900 dark:text-gray-100">

@@ -14,6 +14,7 @@ export default function GitHub() {
       header="GitHub Stars"
       link={link}
       metric={stars}
+      animation="github"
     />
   );
 }
