@@ -1,5 +1,4 @@
-import projects from '@/data/projects';
-import openSource from '@/data/openSource';
+import design from '@/data/design';
 import otherProjects from '@/data/otherProjects';
 ;
 import Container from '@/components/Container';
@@ -16,10 +15,10 @@ export default function NotFound() {
         />
         <div className="container">
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-            精选项目
+            工作
           </h3>
           <div className="space-y-8 mb-16">
-            {projects.map((d) => (
+            {design.map((d) => (
               <Card
                 key={d.title}
                 title={d.title}
@@ -29,10 +28,10 @@ export default function NotFound() {
             ))}
           </div>
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-            开源项目
+            其它
           </h3>
           <div className="space-y-8 mb-16">
-            {openSource.map((d) => (
+            {otherProjects.map((d) => (
               <Card
                 key={d.title}
                 title={d.title}

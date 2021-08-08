@@ -1,6 +1,4 @@
 import Container from '@/components/Container';
-import toolData from '@/data/toolData';
-import SimpleItem from '@/components/SimpleItem';
 import PageTitle from '@/components/PageTitle';
 
 export default function UsesLayout({ children }) {
@@ -15,21 +13,6 @@ export default function UsesLayout({ children }) {
           description="这是我目前用于设计、Coding、音乐的装备。其中大部分是在近几年积累的。"
         />
         <div className="prose dark:prose-dark w-full mb-16">{children}</div>
-        {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          最近更新
-        </h3>
-        <div className="space-y-8">
-          {toolData.map((d) => (
-            <SimpleItem
-              key={d.title}
-              title={`《${d.title}》`}
-              description={d.description}
-              imgSrc={d.imgSrc}
-              href={d.href}
-              score={d.score}
-            />
-          ))}
-        </div> */}
       </article>
     </Container>
   );
