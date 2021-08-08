@@ -1,10 +1,11 @@
 import projects from '@/data/projects';
 import openSource from '@/data/openSource';
-import otherProjects from '@/data/otherProjects';
-;
+import workHistoryData from '@/data/workHistoryData';
 import Container from '@/components/Container';
 import Card from '@/components/Card';
 import PageTitle from '@/components/PageTitle';
+import SimpleItem from '@/components/SimpleItem';
+
 
 export default function NotFound() {
   return (
@@ -37,6 +38,19 @@ export default function NotFound() {
                 key={d.title}
                 title={d.title}
                 description={d.description}
+                href={d.href}
+              />
+            ))}
+          </div>
+          <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+            工作经历
+          </h3>
+          <div className="space-y-8 mb-16">
+            {workHistoryData.map((d) => (
+              <SimpleItem
+                key={d.company}
+                title={`${d.company} · ${d.position}`}
+                description={d.time}
                 href={d.href}
               />
             ))}

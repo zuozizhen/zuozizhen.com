@@ -29,7 +29,7 @@ const Talk = ({ title, link, children }) => (
 export default function About() {
   return (
     <Container title="关于我 – 左子祯">
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 space-y-6">
         <motion.div
           animate={{ opacity: 1 }}
           transition={{ type: 'ease-out', duration: 0.6 }}
@@ -44,7 +44,7 @@ export default function About() {
             />
           </div>
         </motion.div>
-        <div className="mb-16 prose text-gray-700 dark:text-gray-400">
+        <div className="prose text-gray-700 dark:text-gray-400">
           <p>
             嗨,
             我是左子祯。我是一名产品设计师，独立开发者，同时爱好写作，目前在&nbsp;
@@ -103,20 +103,6 @@ export default function About() {
             </a>
             的产品设计负责人，打造下一代设计工具，专注产品的设计品质与竞争力提升。
           </p>
-        </div>
-
-        <h2 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          工作经历
-        </h2>
-        <div className="space-y-8">
-          {workHistoryData.map((d) => (
-            <SimpleItem
-              key={d.company}
-              title={`${d.company} · ${d.position}`}
-              description={d.time}
-              href={d.href}
-            />
-          ))}
         </div>
 
         {/* <h2 className="font-bold text-3xl mb-4 text-gray-900 dark:text-gray-100">
