@@ -24,6 +24,7 @@ export default function NotFound() {
                 title={d.title}
                 description={d.description}
                 href={d.href}
+                coverSrc={d.coverSrc}
               />
             ))}
           </div>
@@ -37,6 +38,7 @@ export default function NotFound() {
                 title={d.title}
                 description={d.description}
                 href={d.href}
+                coverSrc={d.coverSrc}
               />
             ))}
           </div>

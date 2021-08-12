@@ -3,9 +3,19 @@ import Image from 'next/image';
 
 import ArrowMotion from '@/components/ArrowMotion';
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, coverSrc, href }) => (
   <Link href={href} className="rounded-xl h-full block">
     <a className="flex gap-6 items-center">
+      {coverSrc ? (
+        <div className="w-52 h-36 relative flex-shrink-0">
+          <Image
+            src={coverSrc}
+            alt="avatar"
+            layout="fill"
+            className="rounded-xl object-cover"
+          />
+        </div>
+      ) : null}
       {imgSrc ? (
         <div className="w-16 h-16 relative flex-shrink-0">
           <Image
