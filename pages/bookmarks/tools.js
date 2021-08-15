@@ -62,6 +62,7 @@ export default class App extends Component {
                 description={data.fields.description}
                 href={data.fields.href}
                 tagGreen={data.fields.toolTag}
+                site={data.fields.site}
               />
             ))}
           </div>

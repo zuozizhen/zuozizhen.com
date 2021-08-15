@@ -43,7 +43,12 @@ const SimpleItem = ({
 
     <div className="space-y-1">
       <div className="space-y-1">
-        <h2 className="font-bold text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+        <h2 className="flex items-center gap-2 font-bold text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+          {site?<img
+            src={`https://api.faviconkit.com/${site}/72`}
+            className="w-5 h-5 rounded"
+          ></img>:null}
+
           <ExternalLink href={href}>{title}</ExternalLink>
         </h2>
         <div className="prose text-gray-500 max-w-none dark:text-gray-500">

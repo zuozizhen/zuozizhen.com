@@ -11,6 +11,7 @@ html {
   min-width: 360px;
   scroll-behavior: smooth;
   font-size: 17px;
+  overflow-y: overlay;
 }
 
 a {

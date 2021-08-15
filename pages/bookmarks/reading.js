@@ -61,7 +61,8 @@ export default class App extends Component {
                 title={`${data.fields.title}`}
                 description={data.fields.description}
                 href={data.fields.href}
-                tagBlue={data.fields.readingTag}
+                tagBlue={data.fields.site}
+                site={data.fields.site}
               />
             ))}
             {/* {console.log(this.state.database)} */}
