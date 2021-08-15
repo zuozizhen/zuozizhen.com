@@ -13,7 +13,7 @@ const BlogPost = ({ title, summary, slug }) => {
       <a className="w-full">
         <div className="mb-8 w-full">
           <div className="flex relative arrow-motion items-center mb-1">
-            <h4 className="font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+            <h4 className="font-bold">
               {title}
             </h4>
             <ArrowMotion/>
@@ -21,7 +21,7 @@ const BlogPost = ({ title, summary, slug }) => {
               {`${views ? new Number(views).toLocaleString() : '–––'} views`}
             </p> */}
           </div>
-          <p className="prose text-gray-500 dark:text-gray-500">{summary}</p>
+          <p className="prose text-gray-600 dark:text-gray-500">{summary}</p>
         </div>
       </a>
     </Link>

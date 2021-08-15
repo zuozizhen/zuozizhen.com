@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8">
       <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
       <NowPlaying />
-      <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
+      {/* <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
         <div className="flex flex-col space-y-4 items-start">
           <Link href="/">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
@@ -120,13 +120,13 @@ export default function Footer() {
               装备
             </a>
           </Link>
-          {/* <ExternalLink href="https://app.mailbrew.com/zuozizhen/daily-brew-P7rk2fDL93SA">
+          <ExternalLink href="https://app.mailbrew.com/zuozizhen/daily-brew-P7rk2fDL93SA">
             <a className="text-gray-500 hover:text-gray-900 transition dark:hover:text-gray-300">
               我的信息源
             </a>
-          </ExternalLink> */}
+          </ExternalLink>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }

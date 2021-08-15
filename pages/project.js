@@ -5,16 +5,20 @@ import Container from '@/components/Container';
 import Card from '@/components/Card';
 import PageTitle from '@/components/PageTitle';
 import SimpleItem from '@/components/SimpleItem';
+import Link from 'next/link';
 
 
 export default function NotFound() {
   return (
-    <Container title="Project">
+    <Container title="Project" key="project">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
         <PageTitle
           title="项目"
-          description="这里是我独立开发的项目和一些工作项目"
-        />
+          textColor="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+        >
+          这里展示了我到一些独立开发项目和一些&nbsp;
+          <Link href="/design">工作项目</Link>
+        </PageTitle>
         <div className="container">
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
             精选项目

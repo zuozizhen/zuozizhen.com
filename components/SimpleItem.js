@@ -43,7 +43,7 @@ const SimpleItem = ({
 
     <div className="space-y-1">
       <div className="space-y-1">
-        <h2 className="font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+        <h2 className="font-bold text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
           <ExternalLink href={href}>{title}</ExternalLink>
         </h2>
         <div className="prose text-gray-500 max-w-none dark:text-gray-500">
@@ -51,27 +51,27 @@ const SimpleItem = ({
         </div>
       </div>
       {tagGreen ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-green-500 dark:border-green-400 text-green-600 bg-green-500 bg-opacity-5 dark:bg-opacity-20 mt-2 inline-block">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-bold leading-5 tracking-wide dark:text-emerald-400 text-emerald-600 bg-emerald-500 bg-opacity-5 dark:bg-opacity-20 mt-2 inline-block">
           {tagGreen}
         </span>
       ) : null}
       {tagBlue ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-blue-400 dark:border-blue-400 text-blue-600 bg-blue-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-bold leading-5 tracking-wide dark:text-blue-400 dark:border-blue-400 text-blue-600 bg-blue-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
           {tagBlue}
         </span>
       ) : null}
       {tagPurple ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-purple-400 dark:border-purple-400 text-purple-600 bg-purple-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-bold leading-5 tracking-wide dark:text-purple-400 dark:border-purple-400 text-purple-600 bg-purple-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
           {tagPurple}
         </span>
       ) : null}
       {tagPink ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-pink-400 dark:border-pink-400 text-pink-600 bg-pink-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-bold leading-5 tracking-wide dark:text-pink-400 dark:border-pink-400 text-pink-600 bg-pink-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
           {tagPink}
         </span>
       ) : null}
       {tagYellow ? (
-        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-medium leading-5 tracking-wide dark:text-yellow-500 dark:border-yellow-400 text-yellow-600 bg-yellow-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
+        <span className="prose font-mono rounded px-3 py-0.5 text-sm font-bold leading-5 tracking-wide dark:text-yellow-500 dark:border-yellow-400 text-yellow-600 bg-yellow-500 bg-opacity-5 dark:bg-opacity-20 inline-block">
           {tagYellow}
         </span>
       ) : null}

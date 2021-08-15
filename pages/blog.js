@@ -23,9 +23,13 @@ export default function Blog({ posts }) {
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <PageTitle
-          title="文章"
-          description={`自 2017 年以来，我一直在网上写作，主要是关于产品设计和我感兴趣的一些方面。我总共在这个网站上写了 ${posts.length} 篇文章。可以使用下面的搜索按标题过滤。`}
-        />
+          title="写作"
+          textColor="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-emerald-400"
+        >
+          自 2017
+          年以来，我一直在网上写作，主要是关于产品设计和我感兴趣的一些方面。我总共在这个网站上写了
+          {posts.length} 篇文章。可以使用下面的搜索按标题过滤。
+        </PageTitle>
         <div className="relative w-full mb-4">
           <input
             aria-label="Search articles"

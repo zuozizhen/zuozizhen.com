@@ -53,39 +53,58 @@ export default function Home({ posts }) {
     <Container>
       <div className="max-w-2xl mx-auto">
         <div className="space-y-4 mb-16">
-          <p className="font-bold text-xl leading-9 text-gray-800 dark:text-gray-100">
-            Hey，我是左子祯。我是一名&nbsp;
-            <a
-              href="/project"
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:border-b-2 dark:border-gray-200 border-gray-800"
-            >
-              产品设计师
-            </a>
+          <h1 className="font-bold text-2xl md:text-3xl leading-9">
+            Hey，我是左子祯
+          </h1>
+          <p className="leading-9">
+            我是一名&nbsp;
+            <Link href="/project">
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-b border-dotted no-underline border-pink-500 hover:opacity-50">
+                产品设计师
+              </a>
+            </Link>
             、
-            <a
-              href="https://github.com/zuozizhen"
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:border-b-2 dark:border-gray-200 border-gray-800"
-            >
-              独立开发者
-            </a>
-            ，我喜欢&nbsp;
-            <a
-              href="/blog"
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:border-b-2 dark:border-gray-200 border-gray-800"
-            >
-              写文章
-            </a>
+            <Link href="https://github.com/zuozizhen">
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400  to-blue-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-50">
+                独立开发者
+              </a>
+            </Link>
+            ，偶尔会&nbsp;
+            <Link href="/blog">
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-emerald-400 border-b border-dotted no-underline border-lime-500 hover:opacity-50">
+                写一点东西
+              </a>
+            </Link>
             ，目前是&nbsp;
-            <a
-              href="https://mastergo.com/"
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:border-b-2 dark:border-gray-200 border-gray-800"
-            >
-              Master 的产品设计负责人
-            </a>
-          </p>
-          <p className="font-bold text-xl leading-9 text-gray-800 dark:text-gray-100">
-            之前我曾在锤子科技和字节跳动就职，专注协作工具类产品的竞争力提升与极致的用户体验。
-            &nbsp;
+            <Link href="https://mastergo.com/">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+                Master
+              </a>
+            </Link>
+            &nbsp;的产品设计负责人，曾在锤子科技和字节跳动就职，你可以在&nbsp;
+            <Link href="https://zhihu.com/people/ZiJen">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+                知乎
+              </a>
+            </Link>
+            &nbsp;或&nbsp;
+            <Link href="https://www.linkedin.com/in/zuozizhen">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+                领英
+              </a>
+            </Link>
+            &nbsp;上找到我，或者关注我的&nbsp;
+            <Link href="/about/wechat">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+                个人公众号
+              </a>
+            </Link>
+            &nbsp;，想要随便聊一聊？通过邮箱联系我：
+            <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+                hjsfzzz@gmail.com
+              </a>
+            </Link>
           </p>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">

@@ -8,7 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.trueGray
+        gray: colors.trueGray,
+        orange: colors.orange,
+        violet: colors.violet,
+        rose: colors.rose,
+        cyan: colors.cyan,
+        fuchsia: colors.fuchsia,
+        lime: colors.lime,
+        emerald: colors.emerald
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
@@ -17,11 +24,11 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.gray.900'),
             a: {
-              color: theme('colors.blue.500'),
+              color: theme('colors.gray.900'),
               '&:hover': {
-                color: theme('colors.blue.600')
+                color: theme('colors.gray.900')
               },
               code: { color: theme('colors.blue.400') }
             },
@@ -35,11 +42,11 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.gray.400'),
+            color: theme('colors.gray.100'),
             a: {
-              color: theme('colors.blue.400'),
+              color: theme('colors.gray.100'),
               '&:hover': {
-                color: theme('colors.blue.600')
+                color: theme('colors.gray.100')
               },
               code: { color: theme('colors.blue.400') }
             },
@@ -77,7 +84,9 @@ module.exports = {
     }
   },
   variants: {
-    typography: ['dark']
+    extend: {
+      typography: ['dark']
+    }
   },
   plugins: [require('@tailwindcss/typography')]
 };

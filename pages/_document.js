@@ -59,7 +59,7 @@ class MyDocument extends Document {
             name="google-site-verification"
           />
         </Head>
-        <body className="bg-white dark:bg-black text-gray-100 dark:text-gray-900">
+        <body className="bg-white dark:bg-black text-gray-900 dark:text-gray-50 antialiased">
           <Main />
           <NextScript />
         </body>

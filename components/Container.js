@@ -6,10 +6,18 @@ import Link from 'next/link';
 import LogoBlack from '../public/logo-black.svg';
 import LogoWhite from '../public/logo-white.svg';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
+
 
 import Footer from '@/components/Footer';
 
 export default function Container(props) {
+  const variants = {
+    hidden: { opacity: 0, x: 0, y: -10 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -10 }
+  };
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 
@@ -20,7 +28,7 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: '左子祯 - 产品设计师，独立开发者',
-    description: `我是一名 产品设计师、独立开发者，我喜欢 写文章，目前是 Master 的产品设计负责人`,
+    description: `我是一名产品设计师、独立开发者，目前是 Master 的产品设计负责人`,
     image: 'https://zuozizhen.com/static/images/banner.png',
     type: 'website',
     ...customMeta
@@ -53,77 +61,74 @@ export default function Container(props) {
       </Head>
       <nav className="w-full py-8 px-6 my-4 text-gray-900 bg-white sticky-nav sm:px-8 md:my-8 dark:bg-black bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-black">
         <div className="flex items-center justify-between max-w-2xl mx-auto">
-          <a href="#skip" className="skip-nav">
-            Skip to content
-          </a>
-          <Link href="/">
-            <a className="sm:block hidden font-medium dark:text-gray-100">
-              <LogoBlack className="mr-3 dark:hidden w-6 h-6" />
-              <LogoWhite className="mr-3 hidden dark:block w-6 h-6" />
-            </a>
-          </Link>
-          <div className="sm:space-x-10 space-x-4 flex items-center text-gray-500 font-medium">
+          <div className="flex items-center">
             <Link href="/">
-              <a
-                className={clsx(
-                  'sm:hidden block text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
-                  {
-                    'text-gray-700': router.pathname === '/'
-                  }
-                )}
-              >
-                首页
+              <a className="sm:block hidden font-medium dark:text-gray-100">
+                <LogoBlack className="mr-3 dark:hidden w-6 h-6" />
+                <LogoWhite className="mr-3 hidden dark:block w-6 h-6" />
               </a>
             </Link>
-            <Link href="/blog">
-              <a
-                className={clsx(
-                  'text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
-                  {
-                    'text-gray-700': router.pathname === '/blog'
-                  }
-                )}
+            {router.pathname != '/' ? (
+              <div
+                className="font-medium sm:space-x-10 space-x-4 flex items-center text-gray-600 dark:text-gray-500"
+                initial={{ opacity: 0, x: -10, y: 0 }}
+                animate={{ opacity: 1, x: 0, y: 0 }}
+                exit={{ opacity: 0, x: -10, y: 0 }}
+                transition={{ duration: 0.2, type: 'easeOut' }}
               >
-                文章
-              </a>
-            </Link>
-            <Link href="/project">
-              <a
-                className={clsx(
-                  'text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
-                  {
-                    'text-gray-700': router.pathname === '/project'
-                  }
-                )}
-              >
-                项目
-              </a>
-            </Link>
-            <Link href="/dashboard">
-              <a
-                className={clsx(
-                  'text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
-                  {
-                    'text-gray-700': router.pathname === '/dashboard'
-                  }
-                )}
-              >
-                仪表盘
-              </a>
-            </Link>
+                <Link href="/">
+                  <a
+                    className={clsx('sm:hidden block text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/'
+                    })}
+                  >
+                    首页
+                  </a>
+                </Link>
+                <Link href="/blog">
+                  <a
+                    className={clsx('text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/blog'
+                    })}
+                  >
+                    写作
+                  </a>
+                </Link>
+                <Link href="/project">
+                  <a
+                    className={clsx('text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/project'
+                    })}
+                  >
+                    项目
+                  </a>
+                </Link>
+                <Link href="/dashboard">
+                  <a
+                    className={clsx('text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/dashboard'
+                    })}
+                  >
+                    仪表盘
+                  </a>
+                </Link>
 
-            <Link href="/about">
-              <a
-                className={clsx(
-                  'text-sm sm:text-base dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100',
-                  {
-                    'text-gray-700': router.pathname === '/about'
-                  }
-                )}
-              >
-                关于我
-              </a>
-            </Link>
+                <Link href="/about">
+                  <a
+                    className={clsx('text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/about'
+                    })}
+                  >
+                    关于我
+                  </a>
+                </Link>
+              </div>
+            ) : null}
           </div>
           <div
             aria-label="Toggle Dark Mode"
@@ -160,13 +165,19 @@ export default function Container(props) {
           </div>
         </div>
       </nav>
-      <main
+      <motion.main
         id="skip"
         className="flex flex-col justify-center px-6 bg-white dark:bg-black sm:px-8"
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants}
+        transition={{ duration: 0.2, type: 'easeOut' }}
       >
         {children}
+
         <Footer />
-      </main>
+      </motion.main>
     </div>
   );
 }

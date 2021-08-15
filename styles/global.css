@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #3b82f6;
+  @apply bg-blue-500;
   color: #fefefe;
 }
 
@@ -15,6 +15,10 @@ html {
 
 a {
   @apply transition;
+}
+
+.prose a {
+  @apply font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50;
 }
 
 #__next {
@@ -235,10 +239,6 @@ iframe {
   font-weight: 600;
 }
 
-.prose a strong {
-  @apply text-blue-500;
-}
-
 #cta {
   @apply transition;
   width: 14px;
@@ -305,4 +305,16 @@ iframe {
   animation-delay: 0.3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+#design-card-title {
+  transition: all 0.3s;
+}
+
+#design-card:hover #design-card-title {
+  @apply bottom-7 opacity-100;
+}
+
+#design-card:hover img {
+  filter: brightness(70%);
 }

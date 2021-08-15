@@ -28,7 +28,7 @@ const Talk = ({ title, link, children }) => (
 
 export default function About() {
   return (
-    <Container title="关于我 – 左子祯">
+    <Container title="关于我 – 左子祯" key="about">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 space-y-6">
         <motion.div
           animate={{ opacity: 1 }}
@@ -44,10 +44,9 @@ export default function About() {
             />
           </div>
         </motion.div>
-        <div className="prose text-gray-700 dark:text-gray-400">
+        <div className="prose dark:prose-dark">
           <p>
-            嗨,
-            我是左子祯。我是一名产品设计师，独立开发者，同时爱好写作，目前在&nbsp;
+            嗨, 我是左子祯。我是一名产品设计师，独立开发者，偶尔会写一点东西，目前在&nbsp;
             <a
               href="https://mastergo.com"
               target="_blank"
@@ -104,32 +103,6 @@ export default function About() {
             的产品设计负责人，打造下一代设计工具，专注产品的设计品质与竞争力提升。
           </p>
         </div>
-
-        {/* <h2 className="font-bold text-3xl mb-4 text-gray-900 dark:text-gray-100">
-          公共演讲
-        </h2>
-
-        <Talk
-          title="How Core Web Vitals Will Impact Google Rankings in 2021"
-          link="https://vercel.com/blog/core-web-vitals"
-        >
-          Landing a top spot on Google can have a multi-million dollar impact on
-          your business. Starting in June 2021, the performance of your site
-          (determined by Core Web Vitals) will be critical to your search
-          ranking. Learn how Next.js can help you optimize your site’s
-          performance, user experience, and SEO.
-        </Talk>
-        <Talk
-          title="Data Fetching with Next.js"
-          link="https://www.youtube.com/watch?v=f1rF9YKm1Ms"
-        >
-          Next.js is a hybrid React framework allowing you to choose your data
-          fetching strategy on a per-page basis. In this talk, you’ll learn more
-          about CSR (Client-Side Rendering), SSR (Server-Side Rendering), SSG
-          (Static-Site Generation), ISR (Incremental Static Regeneration), and
-          when to use each one. I’ll also give a quick introduction to Next.js
-          and share some of the main features of the framework.
-        </Talk> */}
       </div>
     </Container>
   );
