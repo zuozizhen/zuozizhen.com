@@ -12,11 +12,9 @@ const BlogPost = ({ title, summary, slug }) => {
     <Link href={`/blog/${slug}`}>
       <a className="w-full">
         <div className="mb-8 w-full">
-          <div className="flex relative arrow-motion items-center mb-1">
-            <h4 className="font-bold">
-              {title}
-            </h4>
-            <ArrowMotion/>
+          <div className="flex relative arrow-motion items-center mb-1 hover:text-gray-600 dark:hover:text-gray-500 transition">
+            <h4 className="font-bold">{title}</h4>
+            <ArrowMotion />
             {/* <p className="text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
               {`${views ? new Number(views).toLocaleString() : '–––'} views`}
             </p> */}

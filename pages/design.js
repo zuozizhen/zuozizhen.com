@@ -1,10 +1,8 @@
 import design from '@/data/design';
 import otherProjects from '@/data/otherProjects';
-;
 import Container from '@/components/Container';
 import Card from '@/components/Card';
 import DesignCard from '@/components/DesignCard';
-
 import PageTitle from '@/components/PageTitle';
 
 export default function NotFound() {
@@ -26,6 +24,7 @@ export default function NotFound() {
                 description={d.description}
                 href={d.href}
                 coverSrc={d.coverSrc}
+                duty={d.duty}
               />
             ))}
           </div>
