@@ -22,7 +22,7 @@ const SimpleItem = ({
 }) => (
   <div className="flex gap-6 items-center">
     {thumbnailsUrl ? (
-      <div className="w-24 h-36 relative flex-shrink-0 rounded-lg shadow-lg">
+      <div className="w-24 h-36 relative flex-shrink-0 rounded-lg shadow-xl">
         <Image
           src={thumbnailsUrl}
           alt="avatar"
