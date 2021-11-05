@@ -29,7 +29,7 @@ const Talk = ({ title, link, children }) => (
 export default function About() {
   return (
     <Container title="关于我 – 左子祯" key="about">
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 space-y-6">
+      <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto mb-16 space-y-6">
         <motion.div
           animate={{ opacity: 1 }}
           transition={{ type: 'ease-out', duration: 0.6 }}
@@ -40,11 +40,11 @@ export default function About() {
               src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406230547.jpg"
               alt="avatar"
               layout="fill"
-              className="rounded-2xl object-cover"
+              className="rounded-xl object-cover"
             />
           </div>
         </motion.div>
-        <div className="prose dark:prose-dark">
+        <div className="prose dark:prose-dark mx-auto">
           <p>
             嗨, 我是左子祯。我是一名产品设计师，独立开发者，偶尔会写一点东西，目前在&nbsp;
             <a

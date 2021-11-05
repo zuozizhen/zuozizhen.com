@@ -66,13 +66,17 @@ a {
   content: '#';
 }
 
+.prose > * {
+  @apply max-w-screen-sm mx-auto;
+}
+
 .prose *:hover > .anchor {
   @apply visible no-underline;
 }
 
 .prose p {
+  @apply my-6;
   word-wrap:break-word;
-  word-break:break-all;
 }
 
 .prose pre {
@@ -85,7 +89,7 @@ a {
 
 .prose img {
   /* Don't apply styles to next/image */
-  @apply my-0 mx-auto rounded-md ;
+  @apply my-8 rounded-xl max-w-2xl relative transform left-1/2 -translate-x-2/4;
 
 }
 
