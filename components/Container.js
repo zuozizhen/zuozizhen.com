@@ -35,7 +35,7 @@ export default function Container(props) {
   };
 
   return (
-    <div className="bg-white dark:bg-black">
+    <div>
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -59,7 +59,7 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="w-full py-8 px-6 my-4 text-gray-900 bg-white sticky-nav sm:px-8 md:my-8 dark:bg-black bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-black">
+      <nav className="w-full py-8 px-6 my-4 text-gray-900 sticky-nav sm:px-8 md:my-8 bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-gray-900 bg-white dark:bg-gray-900">
         <div className="flex items-center justify-between max-w-2xl mx-auto">
           <div className="flex items-center">
             <Link href="/">
@@ -167,7 +167,7 @@ export default function Container(props) {
       </nav>
       <motion.main
         id="skip"
-        className="flex flex-col justify-center px-6 bg-white dark:bg-black sm:px-8"
+        className="flex flex-col justify-center px-6 sm:px-8"
         initial="hidden"
         animate="enter"
         exit="exit"
