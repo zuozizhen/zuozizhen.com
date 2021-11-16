@@ -7,8 +7,6 @@ My portfolio has transformed over the years - from a static HTML site, to Jekyll
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/leerob/leerob.io.git
-$ cd leerob.io
 $ yarn
 $ yarn dev
 ```
