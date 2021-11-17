@@ -1,7 +1,7 @@
 export default [
   {
-    title: '用户界面设计',
-    description: '我在工作中和业务关于用户界面设计的项目',
+    title: '产品设计案例',
+    description: '产品设计的实际案例',
     imgSrc:
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406212645.jpg',
     href: '/design'

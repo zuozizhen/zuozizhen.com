@@ -108,7 +108,7 @@ export default function Home({ posts }) {
           </p>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          最近更新
+          文章
         </h3>
         <div className="mb-20">
           <div className="mb-4 mt-4">
@@ -123,7 +123,7 @@ export default function Home({ posts }) {
           </div>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          精选项目
+          项目
         </h3>
         <div className="space-y-8 mb-16">
           {projects.map((d) => (
