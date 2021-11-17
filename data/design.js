@@ -1,13 +1,13 @@
 export default [
-  // {
-  //   title: 'Master Design System',
-  //   time: '2021',
-  //   description: '完整健壮的设计系统，追求设计细节的品质感、可复用性和工程统一',
-  //   duty: '产品设计负责人',
-  //   coverSrc:
-  //     'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406215327.jpg',
-  //   href: 'https://zuozizhen.com/project-item/mds/'
-  // },
+  {
+    title: 'MasterGo Design System',
+    time: '2021',
+    description: '健壮的设计系统，追求设计细节的品质感、可复用性和工程统一',
+    duty: '产品设计负责人',
+    coverSrc:
+      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406215327.jpg',
+    href: 'https://zuozizhen.com/blog/mastergo-design-system'
+  },
   {
     title: 'MasterGo',
     time: '2020',
@@ -20,8 +20,7 @@ export default [
   {
     title: 'FigmaChina',
     year: '2019',
-    description:
-      '一个以中文内容介绍 Figma 的网站',
+    description: '一个以中文内容介绍 Figma 的网站',
     duty: '创始人',
     coverSrc:
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210816223221.jpg',
@@ -30,8 +29,7 @@ export default [
   {
     title: 'Smartisan OS Design System',
     year: '2019',
-    description:
-      '为 7.0 搭建的基于 Figma 的大型设计系统',
+    description: '为 7.0 搭建的基于 Figma 的大型设计系统',
     duty: 'UI 设计师',
     coverSrc:
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210816223222.jpg',
