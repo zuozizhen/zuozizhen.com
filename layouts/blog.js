@@ -6,6 +6,7 @@ import Container from '@/components/Container';
 import ViewCounter from '@/components/ViewCounter';
 
 import { motion } from 'framer-motion';
+import { Separator } from '@/components/Separator';
 
 const editUrl = (slug) =>
   `https://github.com/zuozizhen.com/edit/main/data/blog/${slug}.mdx`;
@@ -24,10 +25,10 @@ export default function BlogLayout({ children, frontMatter }) {
       type="article"
     >
       <article className="flex flex-col justify-center items-start mx-auto mb-16">
-        <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 max-w-xl md:leading-snug">
+        <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full max-w-screen-sm mx-auto">
           {frontMatter.title}
         </h1>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full max-w-screen-sm mx-auto">
           <div className="flex items-center">
             <Image
               alt="左子祯"

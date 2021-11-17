@@ -9,6 +9,10 @@ import Analytics from '@/components/metrics/Analytics';
 import YouTube from '@/components/metrics/Youtube';
 import Step from '@/components/Step';
 import ImageWithTheme from '@/components/ImageWithTheme';
+import Separator from '@/components/Separator';
+import WithSubTitle from '@/components/WithSubTitle';
+import FullWidthImage from '@/components/FullWidthImage';
+
 
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -31,6 +35,9 @@ const CustomLink = (props) => {
 const MDXComponents = {
   Image,
   ImageWithTheme,
+  Separator,
+  WithSubTitle,
+  FullWidthImage,
   a: CustomLink,
   Analytics,
   ConsCard,
@@ -39,7 +46,7 @@ const MDXComponents = {
   Step,
   Unsplash,
   YouTube,
-  AwesomeSlider,
+  AwesomeSlider
 };
 
 export default MDXComponents;

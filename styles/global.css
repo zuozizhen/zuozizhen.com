@@ -19,7 +19,7 @@ a {
 }
 
 .prose a:not(.anchor) {
-  @apply font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50;
+  @apply font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50 !important;
 }
 
 #__next {
@@ -49,7 +49,6 @@ a {
 
 .prose .anchor {
   @apply absolute invisible;
-
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
@@ -70,12 +69,20 @@ a {
   @apply max-w-screen-sm mx-auto;
 }
 
+.prose .full-image {
+  @apply max-w-max -ml-6;
+}
+
+.prose .full-image img {
+  @apply rounded-none;
+}
+
 .prose *:hover > .anchor {
   @apply visible no-underline;
 }
 
 .prose p {
-  @apply my-6;
+  @apply mb-7;
   word-wrap:break-word;
 }
 
@@ -89,9 +96,34 @@ a {
 
 .prose img {
   /* Don't apply styles to next/image */
-  @apply my-8 rounded-xl max-w-2xl relative transform left-1/2 -translate-x-2/4;
+  @apply my-8 rounded-lg;
 
 }
+
+.prose blockquote {
+  /* Don't apply styles to next/image */
+  @apply text-lg font-normal text-gray-500 dark:text-gray-600 border-none my-auto pl-6;
+}
+
+.prose em {
+  /* Don't apply styles to next/image */
+  @apply not-italic text-pink-500;
+}
+
+.prose img + em {
+  /* Don't apply styles to next/image */
+  @apply block -mt-5 text-xs text-gray-500 dark:text-gray-400;
+
+}
+
+.prose h3 {
+  @apply text-lg mt-10;
+}
+
+.prose h4 {
+  @apply mt-10;
+}
+
 
 /* .prose > :first-child {
   margin-top: 1.25em !important;
