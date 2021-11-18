@@ -64,8 +64,8 @@ export default function Container(props) {
           <div className="flex items-center">
             <Link href="/">
               <a className="sm:block hidden font-medium dark:text-gray-100">
-                <LogoBlack className="mr-3 dark:hidden w-6 h-6" />
-                <LogoWhite className="mr-3 hidden dark:block w-6 h-6" />
+                <LogoBlack className="mr-1 dark:hidden w-6 h-6" />
+                <LogoWhite className="mr-1 hidden dark:block w-6 h-6" />
               </a>
             </Link>
             {router.pathname != '/' ? (
@@ -167,7 +167,7 @@ export default function Container(props) {
       </nav>
       <motion.main
         id="skip"
-        className="flex flex-col justify-center px-6 sm:px-8"
+        className="flex flex-col justify-center px-6"
         initial="hidden"
         animate="enter"
         exit="exit"

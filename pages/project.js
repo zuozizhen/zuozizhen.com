@@ -21,7 +21,7 @@ export default function NotFound() {
         </PageTitle>
         <div className="container">
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-            精选项目
+            项目
           </h3>
           <div className="space-y-8 mb-16">
             {projects.map((d) => (

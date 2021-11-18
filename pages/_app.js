@@ -1,4 +1,5 @@
 import '@/styles/global.css';
+import 'remixicon/fonts/remixicon.css';
 
 import { ThemeProvider } from 'next-themes';
 import { MDXProvider } from '@mdx-js/react';
