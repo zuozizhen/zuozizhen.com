@@ -5,7 +5,7 @@ export default [
     description: '健壮的设计系统，追求设计细节的品质感、可复用性和工程统一',
     duty: '产品设计负责人',
     coverSrc:
-      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406215327.jpg',
+      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/202111181330830.png',
     href: 'https://zuozizhen.com/blog/mastergo-design-system'
   },
   {
@@ -14,7 +14,7 @@ export default [
     description: '一款在线设计工具',
     duty: '产品设计负责人',
     coverSrc:
-      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210816223220.jpg',
+      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/202111181327216.png',
     href: 'https://mastergo.com'
   },
   {
