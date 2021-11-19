@@ -4,7 +4,7 @@ export default [
     description: '产品设计的实际案例',
     imgSrc:
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406212645.jpg',
-    href: '/design'
+    href: '/projects'
   },
   {
     title: '书签',
