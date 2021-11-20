@@ -1,11 +1,13 @@
-import design from '@/data/design';
-import otherProjects from '@/data/otherProjects';
 import Container from '@/components/Container';
-import Card from '@/components/Card';
-import DesignCard from '@/components/DesignCard';
+import FunctionCard from '@/components/FunctionCard';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
 import PageTitle from '@/components/PageTitle';
 
-export default function NotFound() {
+import otherProjects from '@/data/otherProjects';
+import Card from '@/components/Card';
+import DesignCard from '@/components/DesignCard';
+
+export default function projects({ projects }) {
   return (
     <Container title="Project">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
@@ -17,14 +19,14 @@ export default function NotFound() {
         </PageTitle>
         <div className="container">
           <div className="space-y-8 mb-16">
-            {design.map((d) => (
+            {projects.map((project) => (
               <DesignCard
-                key={d.title}
-                title={d.title}
-                description={d.description}
-                href={d.href}
-                coverSrc={d.coverSrc}
-                duty={d.duty}
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                href={project.href}
+                coverSrc={project.coverSrc}
+                duty={project.duty}
               />
             ))}
           </div>
@@ -46,4 +48,10 @@ export default function NotFound() {
       </div>
     </Container>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await getAllFilesFrontMatter('projects');
+
+  return { props: { projects } };
 }
