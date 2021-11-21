@@ -24,7 +24,7 @@ export default function projects({ projects }) {
                 key={project.title}
                 title={project.title}
                 description={project.description}
-                href={project.href}
+                href={`/projects/${project.slug}`}
                 coverSrc={project.coverSrc}
                 duty={project.duty}
               />

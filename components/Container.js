@@ -28,7 +28,7 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: '左子祯 - 产品设计师，独立开发者',
-    description: `我是一名产品设计师、独立开发者，目前是 Master 的产品设计负责人`,
+    description: `我是一名产品设计师、独立开发者，目前是 MasterGo 的产品设计负责人`,
     image: 'https://zuozizhen.com/static/images/banner.png',
     type: 'website',
     ...customMeta

@@ -78,7 +78,7 @@ export default function Home({ posts }) {
             ，目前是&nbsp;
             <Link href="https://mastergo.com/">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
-                Master
+                MasterGo
               </a>
             </Link>
             &nbsp;的产品设计负责人，曾在锤子科技和字节跳动就职，你可以在&nbsp;

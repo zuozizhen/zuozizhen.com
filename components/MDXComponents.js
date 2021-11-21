@@ -12,6 +12,7 @@ import ImageWithTheme from '@/components/ImageWithTheme';
 import Separator from '@/components/Separator';
 import WithSubTitle from '@/components/WithSubTitle';
 import FullWidthImage from '@/components/FullWidthImage';
+import BleedImage from '@/components/BleedImage';
 
 
 import AwesomeSlider from 'react-awesome-slider';
@@ -38,6 +39,7 @@ const MDXComponents = {
   Separator,
   WithSubTitle,
   FullWidthImage,
+  BleedImage,
   a: CustomLink,
   Analytics,
   ConsCard,
