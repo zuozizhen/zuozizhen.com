@@ -1,4 +1,5 @@
 import projects from '@/data/projects';
+import design from '@/data/design';
 import openSource from '@/data/openSource';
 import workHistoryData from '@/data/workHistoryData';
 import Container from '@/components/Container';
@@ -17,7 +18,7 @@ export default function NotFound() {
           textColor="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
         >
           这里展示了我到一些独立开发项目和一些&nbsp;
-          <Link href="/design">工作项目</Link>
+          <Link href="/projects">工作项目</Link>
         </PageTitle>
         <div className="container">
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
