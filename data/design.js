@@ -8,15 +8,15 @@ export default [
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/202111181330830.png',
     href: 'https://zuozizhen.com/blog/mastergo-design-system'
   },
-  {
-    title: 'MasterGo',
-    time: '2020',
-    description: '一站式在线协同设计工具',
-    duty: '产品设计负责人',
-    coverSrc:
-      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/202111181327216.png',
-    href: 'https://zuozizhen.com/projects/mastergo'
-  },
+//   {
+//     title: 'MasterGo',
+//     time: '2020',
+//     description: '一站式在线协同设计工具',
+//     duty: '产品设计负责人',
+//     coverSrc:
+//       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/202111181327216.png',
+//     href: 'https://zuozizhen.com/projects/mastergo'
+//   },
   {
     title: 'FigmaChina',
     year: '2019',
