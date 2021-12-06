@@ -8,6 +8,8 @@ import ViewCounter from '@/components/ViewCounter';
 import { motion } from 'framer-motion';
 import { Separator } from '@/components/Separator';
 
+import { Giscus } from '@giscus/react';
+
 const editUrl = (slug) =>
   `https://github.com/zuozizhen.com/edit/main/data/blog/${slug}.mdx`;
 const discussUrl = (slug) =>
@@ -87,6 +89,17 @@ export default function BlogLayout({ children, frontMatter }) {
             {'Edit on GitHub'}
           </a>
         </div> */}
+
+        <Giscus
+          repo="zuozizhen/zuozizhen.com"
+          repoId="MDEwOlJlcG9zaXRvcnk4ODk3MDIyMA=="
+          category="Announcements"
+          categoryId="DIC_kwDOBU2T7M4CAK-c"
+          mapping="pathname"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          theme="light"
+        />
       </article>
     </Container>
   );
