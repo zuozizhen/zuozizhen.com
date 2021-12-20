@@ -14,8 +14,6 @@ module.exports = {
       'img2.doubanio.com', // 豆瓣图片
       'img3.doubanio.com', // 豆瓣图片
       'img9.doubanio.com', // 豆瓣图片
-      'i.loli.net', //旧图床
-      '*.sinaimg.cn', //旧图床
       'cdn.dribbble.com' // 引用 dribbble 图片
     ]
   },
