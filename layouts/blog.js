@@ -98,7 +98,7 @@ export default function BlogLayout({ children, frontMatter }) {
           mapping="pathname"
           reactionsEnabled="1"
           emitMetadata="0"
-          theme="light"
+          theme="dark"
         />
       </article>
     </Container>
