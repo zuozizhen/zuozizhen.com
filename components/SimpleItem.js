@@ -5,11 +5,10 @@ import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 const SimpleItem = ({
   href,
-  date,
   title,
-  description,
+  author,
   imgSrc,
-  score,
+  star,
   tagGreen,
   tagBlue,
   tagPink,
@@ -17,8 +16,6 @@ const SimpleItem = ({
   tagYellow,
   thumbnailsUrl,
   site,
-  type,
-  className
 }) => (
   <div className="flex gap-6 items-center">
     {thumbnailsUrl ? (
@@ -53,7 +50,7 @@ const SimpleItem = ({
           <ExternalLink href={href}>{title}</ExternalLink>
         </h2>
         <div className="prose text-gray-600 max-w-none dark:text-gray-500">
-          {description}
+          {author}
         </div>
       </div>
       {tagGreen ? (
@@ -81,6 +78,7 @@ const SimpleItem = ({
           {tagYellow}
         </span>
       ) : null}
+
     </div>
   </div>
 );
