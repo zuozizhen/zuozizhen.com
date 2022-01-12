@@ -7,17 +7,10 @@ export const getMediaCtx = (value) => {
 
 const NotionImage = ({ value }) => {
   const { src: imageSrc, caption: imageCaption } = getMediaCtx(value)
-  const {
-    dim: { width, height },
-  } = value || {}
 
   return (
     <figure className="my-2">
-      {width && height ? (
-        <img src={imageSrc} alt={imageCaption} width={width} height={height} />
-      ) : (
-        <img src={imageSrc} alt={imageCaption} />
-      )}
+      <img src={imageSrc} alt={imageCaption} />
       {imageCaption && (
         <figcaption>
           <p className="my-2 text-center opacity-80">{imageCaption}</p>

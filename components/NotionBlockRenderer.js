@@ -8,7 +8,7 @@ import Bookmark from '@/components/blocks/NotionBookmark'
 import { slugify } from 'transliteration'
 import NotionImage, { getMediaCtx } from '@/components/blocks/NotionImage'
 
-export function renderNotionBlock(block) {
+export default function renderNotionBlock(block) {
   const { type, id } = block
   const value = block[type]
 

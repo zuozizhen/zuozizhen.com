@@ -72,6 +72,8 @@
     "swr": "0.5.6",
     "tailwindcss": "^2.2.4",
     "transliteration": "^2.2.0",
+    "unfurl": "^0.1.0",
+    "unfurl.js": "^5.6.2",
     "unsplash-js": "6.3.0"
   },
   "devDependencies": {
