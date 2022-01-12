@@ -5,7 +5,7 @@ import Container from '@/components/Container';
 // import BlogPost from '@/components/BlogPost';
 import PageTitle from '@/components/PageTitle';
 
-export const databaseId = process.env.NOTION_DATABASE_ID;
+export const databaseId = process.env.NOTION_BLOG_ID;
 
 export default function Home({ posts }) {
   return (
