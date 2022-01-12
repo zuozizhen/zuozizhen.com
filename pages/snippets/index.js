@@ -9,7 +9,7 @@ export default function Snippets({ snippets }) {
       title="Code Snippets – 左子祯"
       description="A collection of code snippets – including serverless functions, Node.js scripts, and CSS tricks."
     >
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+      <div className="flex flex-col justify-center items-start max-w-xl mx-auto mb-16">
         <PageTitle
           title="Code Snippets"
           description="These are a collection of code snippets I've used in the past and

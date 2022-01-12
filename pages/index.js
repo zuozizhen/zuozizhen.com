@@ -51,7 +51,7 @@ export default function Home({ posts }) {
     );
   return (
     <Container>
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-xl mx-auto">
         <div className="space-y-4 mb-16">
           <h1 className="font-bold text-2xl md:text-3xl leading-9">
             Hey，我是左子祯

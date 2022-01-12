@@ -12,7 +12,7 @@ import Link from 'next/link';
 export default function NotFound() {
   return (
     <Container title="Project" key="project">
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
+      <div className="flex flex-col justify-center items-start max-w-xl mx-auto w-full">
         <PageTitle
           title="项目"
           textColor="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"

@@ -49,7 +49,7 @@ export default class App extends Component {
   render() {
     return (
       <Container title="书签 – 左子祯">
-        <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+        <div className="flex flex-col justify-center items-start max-w-xl mx-auto mb-16 w-full">
           <PageTitle title="书签" />
           <Tabs tabs={tabs} />
           <div className="space-y-8">

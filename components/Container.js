@@ -11,6 +11,8 @@ import { AnimatePresence } from 'framer-motion';
 
 
 import Footer from '@/components/Footer';
+import NavLink from '@/components/NavLink';
+
 
 export default function Container(props) {
   const variants = {
@@ -60,7 +62,7 @@ export default function Container(props) {
         )}
       </Head>
       <nav className="w-full py-8 px-6 my-4 text-gray-900 sticky-nav sm:px-8 md:my-8 bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-gray-900 bg-white dark:bg-gray-900">
-        <div className="flex items-center justify-between max-w-2xl mx-auto">
+        <div className="flex items-center justify-between max-w-xl mx-auto">
           <div className="flex items-center">
             <Link href="/">
               <a className="sm:block hidden font-medium dark:text-gray-100">
@@ -68,67 +70,30 @@ export default function Container(props) {
                 <LogoWhite className="mr-1 hidden dark:block w-6 h-6" />
               </a>
             </Link>
-            {router.pathname != '/' ? (
               <div
                 className="font-medium sm:space-x-10 space-x-4 flex items-center text-gray-600 dark:text-gray-500"
-                initial={{ opacity: 0, x: -10, y: 0 }}
-                animate={{ opacity: 1, x: 0, y: 0 }}
-                exit={{ opacity: 0, x: -10, y: 0 }}
-                transition={{ duration: 0.2, type: 'easeOut' }}
-              >
-                <Link href="/">
-                  <a
-                    className={clsx('sm:hidden block text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/'
-                    })}
-                  >
-                    首页
-                  </a>
-                </Link>
-                <Link href="/blog">
-                  <a
-                    className={clsx('text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/blog'
-                    })}
-                  >
-                    写作
-                  </a>
-                </Link>
-                <Link href="/project">
-                  <a
-                    className={clsx('text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/project'
-                    })}
-                  >
-                    项目
-                  </a>
-                </Link>
-                <Link href="/dashboard">
-                  <a
-                    className={clsx('text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/dashboard'
-                    })}
-                  >
-                    仪表盘
-                  </a>
-                </Link>
-
-                <Link href="/about">
-                  <a
-                    className={clsx('text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/about'
-                    })}
-                  >
-                    关于我
-                  </a>
-                </Link>
+            >
+              <NavLink
+                title="文章"
+                pathUrl="/blog"
+              />
+               <NavLink
+                title="项目"
+                pathUrl="/project"
+              />
+               <NavLink
+                title="仪表盘"
+                pathUrl="/dashboard"
+              />
+               <NavLink
+                title="遗愿清单"
+                pathUrl="/bucket-list"
+              />
+               <NavLink
+                title="关于我"
+                pathUrl="/about"
+              />
               </div>
-            ) : null}
           </div>
           <div
             aria-label="Toggle Dark Mode"
