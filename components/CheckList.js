@@ -1,3 +1,5 @@
+//遗愿清单的 list
+
 import { CheckIcon } from '@radix-ui/react-icons';
 
 export default function CheckList(props) {
@@ -15,5 +17,4 @@ export default function CheckList(props) {
       </div>
     </div >
   )
-
 }

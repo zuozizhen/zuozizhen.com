@@ -7,6 +7,7 @@ import Container from '../components/Container';
 import projects from '@/data/projects';
 import Card from '@/components/Card';
 import BlogPost from '../components/BlogPost';
+import { getPublishedArticles } from "@/lib/notion";
 // import Subscribe from '../components/Subscribe';
 import ProjectCard from '../components/ProjectCard';
 import Countdown from 'react-countdown';
@@ -14,7 +15,7 @@ import TimeAgo from 'react-timeago';
 import frenchStrings from 'react-timeago/lib/language-strings/fr';
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 
-import { getAllFilesFrontMatter } from '@/lib/mdx';
+// import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 // const formatter = buildFormatter(frenchStrings);
 
@@ -42,13 +43,9 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 //   };
 // }
 
+export const databaseId = process.env.BLOG_DATABASE_ID;
 
 export default function Home({ posts }) {
-  const filteredBlogPosts = posts
-    .sort(
-      (a, b) =>
-        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
-    );
   return (
     <Container>
       <div className="max-w-xl mx-auto">
@@ -112,13 +109,13 @@ export default function Home({ posts }) {
         </h3>
         <div className="mb-20">
           <div className="mb-4 mt-4">
-            {!filteredBlogPosts.length && (
+            {!posts.length && (
               <p className="text-gray-500 dark:text-gray-500 mb-4">
                 没有找到文章
               </p>
             )}
-            {filteredBlogPosts.slice(0, 4).map((frontMatter) => (
-              <BlogPost key={frontMatter.title} {...frontMatter} />
+            {posts.slice(0, 4).map((post) => (
+              <BlogPost key={post.id} {...post} />
             ))}
           </div>
         </div>
@@ -148,8 +145,13 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog');
+export const getStaticProps = async () => {
+  const database = await getPublishedArticles(databaseId);
 
-  return { props: { posts } };
-}
+  return {
+    props: {
+      posts: database,
+    },
+    revalidate: 1,
+  };
+};

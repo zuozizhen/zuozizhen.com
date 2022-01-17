@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 
 import Link from "next/link";
-import { getDatabase } from "@/lib/notion.js";
+import { getBooksData } from "@/lib/notion";
 
 import Container from '@/components/Container';
-// import BlogPost from '@/components/BlogPost';
 import PageTitle from '@/components/PageTitle';
 
 import BookItem from '@/components/BookItem';
 
-export const booksId = process.env.NOTION_BOOKS_ID;
+export const booksId = process.env.BOOKS_DATABASE_ID;
 
 export default function Home({ books }) {
   return (
@@ -37,7 +36,7 @@ export default function Home({ books }) {
 }
 
 export const getStaticProps = async () => {
-  const database = await getDatabase(booksId);
+  const database = await getBooksData(booksId);
 
   return {
     props: {

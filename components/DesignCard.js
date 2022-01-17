@@ -8,7 +8,7 @@ const Card = ({ title, description, imgSrc, coverSrc, href, duty }) => (
   <Link href={href}>
     <a id="design-card" className="flex gap-6 items-center rounded-xl h-full">
       {coverSrc ? (
-        <div className="w-full h-80 relative flex-shrink-0">
+        <div className="w-full h-80 relative shrink-0">
           <Image
             src={coverSrc}
             alt="avatar"

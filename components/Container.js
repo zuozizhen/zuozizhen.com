@@ -9,6 +9,7 @@ import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 
+import siteMetadata from '@/data/siteMetadata';
 
 import Footer from '@/components/Footer';
 import NavLink from '@/components/NavLink';
@@ -29,10 +30,14 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: '左子祯 - 产品设计师，独立开发者',
-    description: `我是一名产品设计师、独立开发者，目前是 MasterGo 的产品设计负责人`,
-    image: 'https://zuozizhen.com/static/images/banner.png',
-    type: 'website',
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    imageUrl: siteMetadata.socialBanner,
+    twitterHandle: siteMetadata.twitterHandle,
+    canonicalUrl: customMeta.sponsoredArticle
+      ? customMeta.sponsoredUrl
+      : `${siteMetadata.siteUrl}${router.asPath}`,
+    date: null,
     ...customMeta
   };
 
@@ -44,19 +49,19 @@ export default function Container(props) {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://zuozizhen.com${router.asPath}`}
+          content={`${siteMetadata.siteUrl}${router.asPath}`}
         />
-        <link rel="canonical" href={`https://zuozizhen.com${router.asPath}`} />
+        <link rel="canonical" href={meta.canonicalUrl} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="左子祯" />
+        <meta property="og:site_name" content="Braydon Coyer" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
+        <meta property="og:image" content={meta.imageUrl} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@zuozizhen" />
+        <meta name="twitter:site" content={meta.twitterHandle} />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
+        <meta name="twitter:image" content={meta.imageUrl} />
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}

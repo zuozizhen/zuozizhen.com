@@ -28,15 +28,15 @@ const Bookmark = ({ value }) => {
           window.open(url)
         }}
       >
-        <div className="flex flex-col flex-shrink space-y-2 flex-1 p-2">
+        <div className="flex flex-col shrink space-y-2 flex-1 p-2">
           <div className="rounded bg-gray-200 h-5 max-w-40 animate-pulse dark:bg-dark-400" />
           <div className="rounded bg-gray-200 flex-1 animate-pulse dark:bg-dark-400" />
           <p className="flex space-x-2 text-sm opacity-70 overflow-hidden">
             <Link size={16} />
-            <span className="flex-shrink-0">{url}</span>
+            <span className="shrink-0">{url}</span>
           </p>
         </div>
-        <div className="bg-gray-200 flex-shrink-0 h-30 animate-pulse w-60 overflow-hidden hidden sm:block dark:bg-dark-400" />
+        <div className="bg-gray-200 shrink-0 h-30 animate-pulse w-60 overflow-hidden hidden sm:block dark:bg-dark-400" />
       </div>
     )
 
@@ -50,16 +50,16 @@ const Bookmark = ({ value }) => {
         window.open(url)
       }}
     >
-      <div className="flex flex-col flex-shrink p-2 overflow-hidden">
+      <div className="flex flex-col shrink p-2 overflow-hidden">
         <p className="font-bold h-6 text-sm mb-1 leading-6 truncate">{title}</p>
         <p className="h-10 text-sm text-ellipsis mb-1 opacity-80 leading-5 overflow-hidden">{description}</p>
         <p className="flex space-x-2 h-6 text-sm opacity-70 items-center truncate overflow-hidden">
           {favicon ? <img src={favicon} className="h-4 w-4" alt="favicon" /> : <Link size={17} />}
-          <span className="transform leading-6 translate-y-0.5 truncate overflow-hidden">{url}</span>
+          <span className="leading-6 translate-y-0.5 truncate overflow-hidden">{url}</span>
         </p>
       </div>
       {images && images.length > 0 && (
-        <div className="flex-shrink-0 h-28 max-w-60 border-l overflow-hidden hidden sm:block">
+        <div className="border-l overflow-hidden hidden sm:block">
           <img src={images[0].url} alt={title} className="rounded object-cover border-gray-400/50 h-27.5" />
         </div>
       )}

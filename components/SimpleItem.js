@@ -19,7 +19,7 @@ const SimpleItem = ({
 }) => (
   <div className="flex gap-6 items-center">
     {thumbnailsUrl ? (
-      <div className="w-24 h-36 relative flex-shrink-0 rounded-lg shadow-xl">
+      <div className="w-24 h-36 relative shrink-0 rounded-lg shadow-xl">
         <Image
           src={thumbnailsUrl}
           alt="avatar"
@@ -28,7 +28,7 @@ const SimpleItem = ({
         />
       </div>
     ) : imgSrc ? (
-      <div className="w-14 h-14 relative flex-shrink-0 rounded-xl">
+      <div className="w-14 h-14 relative shrink-0 rounded-xl">
         <Image
           src={imgSrc}
           alt="avatar"

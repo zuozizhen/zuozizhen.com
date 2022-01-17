@@ -14,7 +14,7 @@ const BookItem = ({
   site,
 }) => (
   <div className="space-y-3 items-center">
-    <div className="w-44 h-64 relative flex-shrink-0 rounded-lg shadow-xl">
+    <div className="w-44 h-64 relative shrink-0 rounded-lg shadow-xl">
       <Image
         src={thumbnailsUrl}
         alt="avatar"

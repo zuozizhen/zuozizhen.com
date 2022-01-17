@@ -19,13 +19,7 @@ const discussUrl = (slug) =>
 
 export default function BlogLayout({ children, frontMatter }) {
   return (
-    <Container
-      title={`${frontMatter.title} – 左子祯`}
-      description={frontMatter.summary}
-      image={`https://zuozizhen.com${frontMatter.image}`}
-      date={new Date(frontMatter.publishedAt).toISOString()}
-      type="article"
-    >
+    <Container>
       <article className="flex flex-col justify-center items-start mx-auto mb-16">
         <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full max-w-screen-sm mx-auto">
           {frontMatter.title}
@@ -71,25 +65,6 @@ export default function BlogLayout({ children, frontMatter }) {
             {children}
           </div>
         </motion.div>
-
-        {/* <div className="text-sm text-gray-700 dark:text-gray-300">
-          <a
-            href={discussUrl(frontMatter.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Discuss on Twitter'}
-          </a>
-          {` • `}
-          <a
-            href={editUrl(frontMatter.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Edit on GitHub'}
-          </a>
-        </div> */}
-
         <Giscus
           repo="zuozizhen/zuozizhen.com"
           repoId="MDEwOlJlcG9zaXRvcnk4ODk3MDIyMA=="
