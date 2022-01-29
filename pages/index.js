@@ -75,7 +75,7 @@ export default function Home({ posts }) {
                 写一点东西
               </a>
             </Link>
-            ，目前是&nbsp;
+            ，前&nbsp;
             <Link href="https://mastergo.com/">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 MasterGo
