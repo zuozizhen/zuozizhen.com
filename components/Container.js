@@ -67,8 +67,8 @@ export default function Container(props) {
         )}
       </Head>
       <nav className="w-full py-8 px-6 my-4 text-gray-900 sticky-nav sm:px-8 md:my-8 bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-gray-900 bg-white dark:bg-gray-900">
-        <div className="flex items-center justify-between max-w-xl mx-auto">
-          <div className="flex items-center">
+        <div className="flex items-center justify-between max-w-2xl mx-auto">
+          <div className="flex items-center space-x-8">
             <Link href="/">
               <a className="sm:block hidden font-medium dark:text-gray-100">
                 <LogoBlack className="mr-1 dark:hidden w-6 h-6" />
@@ -84,7 +84,7 @@ export default function Container(props) {
               />
                <NavLink
                 title="项目"
-                pathUrl="/project"
+                pathUrl="/projects"
               />
                <NavLink
                 title="仪表盘"

@@ -6,7 +6,7 @@ import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 const SimpleItem = ({
   href,
   title,
-  author,
+  summary,
   imgSrc,
   star,
   tagGreen,
@@ -16,6 +16,7 @@ const SimpleItem = ({
   tagYellow,
   thumbnailsUrl,
   site,
+  favicon
 }) => (
   <div className="flex gap-6 items-center">
     {thumbnailsUrl ? (
@@ -41,16 +42,17 @@ const SimpleItem = ({
     <div className="space-y-1">
       <div className="space-y-1">
         <h2 className="flex items-center gap-2 font-bold text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
-          {site ? (
+          {/* <pre>{favicon.domain}</pre> */}
+          {favicon ? (
             <img
-              src={`https://www.google.com/s2/favicons?sz=128&domain_url=${site}`}
+              src={`https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${href}&size=64`}
               className="w-5 h-5 rounded"
             ></img>
           ) : null}
           <ExternalLink href={href}>{title}</ExternalLink>
         </h2>
         <div className="prose text-gray-600 max-w-none dark:text-gray-500">
-          {author}
+          {summary}
         </div>
       </div>
       {tagGreen ? (
@@ -82,5 +84,15 @@ const SimpleItem = ({
     </div>
   </div>
 );
+
+export async function getStaticProps() {
+  const favicon = await fetch('https://favicongrabber.com/api/grab/github.com')
+  console.log(await favicon.json())
+  return {
+    props: {
+      favicon
+    },
+  }
+};
 
 export default SimpleItem;

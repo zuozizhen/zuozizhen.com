@@ -24,8 +24,6 @@ import siteMetadata from '@/data/siteMetadata';
 import slugify from 'slugify';
 import { renderBlocks } from '@/lib/renderBlocks';
 
-import Comments from '@/components/Comments';
-
 import { useRouter } from 'next/router';
 
 const ArticlePage = ({
@@ -40,30 +38,13 @@ const ArticlePage = ({
   moreArticles
 }) => {
   const { push } = useRouter();
-  const publishedOn = new Date(publishedDate).toLocaleDateString(
-    siteMetadata.locale,
-    {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }
-  );
 
-  const modifiedDate = new Date(lastEditedAt).toLocaleDateString(
-    siteMetadata.locale,
-    {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }
-  );
-
-  const socialImageConf = generateSocialImage({
-    title,
-    underlayImage: coverImage.slice(coverImage.lastIndexOf('/') + 1),
-    cloudName: 'braydoncoyer',
-    imagePublicID: 'og_social_large.png'
-  });
+  // const socialImageConf = generateSocialImage({
+  //   title,
+  //   underlayImage: coverImage.slice(coverImage.lastIndexOf('/') + 1),
+  //   cloudName: 'zuozizhen',
+  //   imagePublicID: 'og_social_large.png'
+  // });
 
   useEffect(() => {
     fetch(`/api/views/${slug}`, {
@@ -75,7 +56,7 @@ const ArticlePage = ({
      <Container
       title={`${title} - Braydon Coyer`}
       description={summary}
-      imageUrl={socialImageConf}
+      // imageUrl={socialImageConf}
       date={new Date(publishedDate).toISOString()}
       sponsoredArticle={sponsoredArticleUrl !== null}
       sponsoredUrl={sponsoredArticleUrl}
@@ -95,16 +76,8 @@ const ArticlePage = ({
             />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {'左子祯 / '}
-              {/* {format(parseISO(frontMatter.publishedAt), 'yyyy.MM.dd')} */}
               {format(parseISO(publishedDate), 'yyyy.MM.dd')}
             </p>
-            <PageViews slug={slug} />
-
-            {/* {publishedDate !== lastEditedAt && (
-                  <p className="mt-0 text-sm text-slate-500 md:text-base dark:text-slate-500">
-                Updated on {format(parseISO(lastEditedAt), 'yyyy.MM.dd')}
-                  </p>
-            )} */}
           </div>
 
             <div className="md:hidden">
@@ -117,24 +90,22 @@ const ArticlePage = ({
                 <span>📣</span>
                 <div>
                   <span>
-                    This article was originally published{' '}
+                    此文章由{' '}
                     <a
                       target="_blank"
                       href={sponsoredArticleUrl}
                       rel="noreferrer"
                     >
-                      here
+                      赞助
                     </a>
                     .
                   </span>
                 </div>
               </Callout>
             )}
-            <div className="flex items-center justify-between space-x-4">
-              <div className="md:hidden">
+            {/* <div className="flex items-center justify-between space-x-4">
                 <ShareArticle title={title} slug={slug} />
-              </div>
-            </div>
+            </div> */}
         </div>
         <motion.div
           animate={{ y: -20, opacity: 1 }}
@@ -156,10 +127,9 @@ const ArticlePage = ({
             {content.map((block) => (
               <Fragment key={block.id}>{renderBlocks(block)}</Fragment>
             ))}
-            <pre>{JSON.stringify(content,null,2)}</pre>
+            {/* <pre>{JSON.stringify(content,null,2)}</pre> */}
           </div>
         </motion.div>
-        <Comments/>
       </article>
     </Container>
   );
@@ -212,9 +182,9 @@ export const getStaticProps = async ({ params: { slug } }) => {
   sponsoredArticleUrl = page.properties.canonicalUrl?.url;
   summary = page.properties.Summary?.rich_text[0]?.plain_text;
   coverImage =
-    page.properties?.coverImage?.files[0]?.file?.url ||
-    page.properties.coverImage?.files[0]?.external?.url ||
-    'https://via.placeholder.com/600x400.png';
+    page.properties.Cover?.files[0]?.file?.url ||
+    page.properties.Cover?.files[0]?.external?.url ||
+    null;
 
   const moreArticles = await getMoreArticlesToSuggest(
     process.env.BLOG_DATABASE_ID,

@@ -6,7 +6,7 @@ import PageTitle from '@/components/PageTitle';
 export default function NotFound() {
   return (
     <Container title="404">
-      <div className="flex flex-col justify-center items-start max-w-xl mx-auto mb-16">
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <PageTitle
           title="抱歉，页面没有找到"
           description="你似乎找到了一些曾经存在的东西。"

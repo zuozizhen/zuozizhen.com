@@ -13,7 +13,7 @@ export default function NewsletterLayout({ children, frontMatter }) {
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >
-      <article className="flex flex-col justify-center items-start max-w-xl mx-auto mb-16 w-full">
+      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <PageTitle
           title={frontMatter.title}
         />

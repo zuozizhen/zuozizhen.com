@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import ArrowMotion from '@/components/ArrowMotion';
 
-const Card = ({ title, description, imgSrc, coverSrc, href }) => (
+const Card = ({ title, summary, imgSrc, coverSrc, href }) => (
   <Link href={href} className="h-full block">
     <a className="flex gap-6 items-center">
       {coverSrc ? (
@@ -32,7 +32,7 @@ const Card = ({ title, description, imgSrc, coverSrc, href }) => (
           <h4 className="font-bold">{title}</h4>
           <ArrowMotion/>
         </div>
-        <p className="prose text-gray-600 dark:text-gray-500">{description}</p>
+        <p className="prose text-gray-600 dark:text-gray-500">{summary}</p>
       </div>
     </a>
   </Link>

@@ -2,12 +2,31 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
 
-export default function Tabs({ tabs }) {
+export default function Tabs() {
+
+  const tabs = [
+    {
+      title: '未分类',
+      href: '/bookmarks'
+    },
+    {
+      title: '好文',
+      href: '/bookmarks/reading'
+    },
+    {
+      title: '个人网站',
+      href: '/bookmarks/personal-site'
+    },
+    {
+      title: '小工具',
+      href: '/bookmarks/tools'
+    }
+  ];
+
   const router = useRouter();
   return (
     <div className="hidden grid-cols-5 gap-2 overflow-x-auto md:grid tabbed-navigation md:justify-center md:-ml-0 md:-mr-0 flex-nowrap mb-8 w-full">
       {tabs.map((tab) => (
-        // <SimpleItem {...data.fields} />
         <Link href={tab.href} key={tab.title}>
           <a
             className={clsx(

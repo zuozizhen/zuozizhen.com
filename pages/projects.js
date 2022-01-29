@@ -1,6 +1,4 @@
 import projects from '@/data/projects';
-import design from '@/data/design';
-import openSource from '@/data/openSource';
 import workHistoryData from '@/data/workHistoryData';
 import Container from '@/components/Container';
 import Card from '@/components/Card';
@@ -12,7 +10,7 @@ import Link from 'next/link';
 export default function NotFound() {
   return (
     <Container title="Project" key="project">
-      <div className="flex flex-col justify-center items-start max-w-xl mx-auto w-full">
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
         <PageTitle
           title="项目"
           textColor="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
@@ -29,7 +27,7 @@ export default function NotFound() {
               <Card
                 key={d.title}
                 title={d.title}
-                description={d.description}
+                summary={d.description}
                 href={d.href}
               />
             ))}
@@ -38,14 +36,14 @@ export default function NotFound() {
             开源项目
           </h3>
           <div className="space-y-8 mb-16">
-            {openSource.map((d) => (
+            {/* {openSource.map((d) => (
               <Card
                 key={d.title}
                 title={d.title}
-                description={d.description}
+                summary={d.description}
                 href={d.href}
               />
-            ))}
+            ))} */}
           </div>
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
             工作经历
@@ -55,7 +53,7 @@ export default function NotFound() {
               <SimpleItem
                 key={d.company}
                 title={`${d.company} · ${d.position}`}
-                description={d.time}
+                summary={d.time}
                 href={d.href}
               />
             ))}

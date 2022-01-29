@@ -18,7 +18,7 @@ export default function Dashboard() {
       title="仪表盘 – 左子祯"
       description="My personal dashboard, built with Next.js API routes deployed as serverless functions."
     >
-      <div className="flex flex-col justify-center items-start max-w-xl mx-auto mb-16 w-full">
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <PageTitle
           title="仪表盘"
           description="这是我的个人仪表盘，我使用此仪表盘来跟踪我的各方面状态（如我的年龄、GitHub Stars、读了多少本书等）的指标。"
