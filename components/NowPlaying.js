@@ -1,9 +1,5 @@
 import useSWR from 'swr';
-import fetcher from '@/lib/fetcher';
-
-import UseAnimations from 'react-useanimations';
-import activity from 'react-useanimations/lib/activity';
-
+import { fetcher } from '@/lib/fetcher';
 
 export default function NowPlaying() {
   const { data } = useSWR('/api/now-playing', fetcher);
