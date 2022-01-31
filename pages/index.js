@@ -55,7 +55,7 @@ export default function Home({ posts }) {
           </h1>
           <p className="leading-9">
             我是一名&nbsp;
-            <Link href="/project">
+            <Link href="/works">
               <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-b border-dotted no-underline border-pink-500 hover:opacity-50">
                 产品设计师
               </a>

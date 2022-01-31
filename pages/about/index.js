@@ -1,5 +1,8 @@
 import React, { Fragment } from 'react';
 import Container from '@/components/Container';
+import workHistoryData from '@/data/workHistoryData';
+import SimpleItem from '@/components/SimpleItem';
+
 import { getPage } from '@/lib/notion';
 import { renderBlocks } from '@/lib/renderBlocks';
 

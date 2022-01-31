@@ -1,15 +1,11 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import Container from '@/components/Container';
-import workHistoryData from '@/data/workHistoryData';
-import SimpleItem from '@/components/SimpleItem';
 import CheckList from '@/components/CheckList';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
+import PageTitle from '@/components/PageTitle';
+import Link from 'next/link';
+
 
 import { getBucketListData } from "@/lib/notion";
-
-
-import bucketList from '@/data/bucketList';
 
 import { motion } from 'framer-motion';
 
@@ -19,6 +15,12 @@ export default function About({ bucketList }) {
   return (
     <Container title="遗愿清单 – 左子祯" key="about">
       <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto mb-16 space-y-6">
+        <PageTitle
+          title="遗愿清单"
+          textColor="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
+        >
+          你对于生命是什么态度，生命就会还给你什么。
+        </PageTitle>
         <div className="prose dark:prose-dark mx-auto w-full">
           <div className="space-y-6 mb-16">
             {/* <pre>{JSON.stringify(bucketList,null, 2) }</pre> */}

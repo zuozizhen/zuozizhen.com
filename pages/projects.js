@@ -1,9 +1,7 @@
 import projects from '@/data/projects';
-import workHistoryData from '@/data/workHistoryData';
 import Container from '@/components/Container';
 import Card from '@/components/Card';
 import PageTitle from '@/components/PageTitle';
-import SimpleItem from '@/components/SimpleItem';
 import Link from 'next/link';
 
 
@@ -15,8 +13,8 @@ export default function NotFound() {
           title="项目"
           textColor="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
         >
-          这里展示了我到一些独立开发项目和一些&nbsp;
-          <Link href="/projects">工作项目</Link>
+          这里是我的一些&nbsp;
+          <Link href="/projects">工作案例</Link>、独立开发作品和一些有意思的个人项目
         </PageTitle>
         <div className="container">
           <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
@@ -44,19 +42,6 @@ export default function NotFound() {
                 href={d.href}
               />
             ))} */}
-          </div>
-          <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-            工作经历
-          </h3>
-          <div className="space-y-8 mb-16">
-            {workHistoryData.map((d) => (
-              <SimpleItem
-                key={d.company}
-                title={`${d.company} · ${d.position}`}
-                summary={d.time}
-                href={d.href}
-              />
-            ))}
           </div>
         </div>
       </div>

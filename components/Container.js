@@ -90,10 +90,10 @@ export default function Container(props) {
                 title="仪表盘"
                 pathUrl="/dashboard"
               />
-               <NavLink
+               {/* <NavLink
                 title="遗愿清单"
                 pathUrl="/bucket-list"
-              />
+              /> */}
                <NavLink
                 title="关于我"
                 pathUrl="/about"
