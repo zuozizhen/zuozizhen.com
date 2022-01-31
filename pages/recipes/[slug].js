@@ -1,86 +1,86 @@
-import { Client } from "@notionhq/client"
-import slugify from "slugify";
+// import { Client } from "@notionhq/client"
+// import slugify from "slugify";
 
-const Recipe = ({ recipe }) => {
-  return <pre>{JSON.stringify(recipe, null, 2)}</pre>;
-}
+// const Recipe = ({ recipe }) => {
+//   return <pre>{JSON.stringify(recipe, null, 2)}</pre>;
+// }
 
-export const getStaticPaths = async () => {
-  const notion = new Client({
-    auth: process.env.NOTION_SECRET,
-  });
+// export const getStaticPaths = async () => {
+//   const notion = new Client({
+//     auth: process.env.NOTION_SECRET,
+//   });
 
-  const data = await notion.blocks.children.list({
-    block_id: process.env.PAGE_ID,
-  });
+//   const data = await notion.blocks.children.list({
+//     block_id: process.env.PAGE_ID,
+//   });
 
-  const paths = []
+//   const paths = []
 
-  data.results.forEach(result => {
-    if (result.type === 'child_page') {
-      paths.push({
-        params: {
-          slug: slugify(result.child_page.title),
-        }
-      })
-    }
-  });
+//   data.results.forEach(result => {
+//     if (result.type === 'child_page') {
+//       paths.push({
+//         params: {
+//           slug: slugify(result.child_page.title),
+//         }
+//       })
+//     }
+//   });
 
-  console.log("paths");
+//   console.log("paths");
 
-  return {
-    paths,
-    fallback: false,
-  };
-};
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
 
 
-export const getStaticProps = async ({ params: { slug } }) => {
-  const notion = new Client({
-    auth: process.env.NOTION_SECRET,
-  })
+// export const getStaticProps = async ({ params: { slug } }) => {
+//   const notion = new Client({
+//     auth: process.env.NOTION_SECRET,
+//   })
 
-  const data = await notion.blocks.children.list({
-    block_id: process.env.PAGE_ID,
-  })
+//   const data = await notion.blocks.children.list({
+//     block_id: process.env.PAGE_ID,
+//   })
 
-  const page = data.results.find((result) => {
-    if (result.type === "child_page") {
-      const { title } = result.child_page
-      const resultSlug = slugify(title).toLowerCase()
-      return resultSlug === slug;
-    }
-    return false;
-  });
+//   const page = data.results.find((result) => {
+//     if (result.type === "child_page") {
+//       const { title } = result.child_page
+//       const resultSlug = slugify(title).toLowerCase()
+//       return resultSlug === slug;
+//     }
+//     return false;
+//   });
 
-  const blocks = await notion.blocks.children.list({
-    block_id: page.id,
-  })
+//   const blocks = await notion.blocks.children.list({
+//     block_id: page.id,
+//   })
 
-  const title = page.child_page.title;
-  const ingredients = [];
-  const method = [];
+//   const title = page.child_page.title;
+//   const ingredients = [];
+//   const method = [];
 
-  blocks.results.forEach(block => {
-    if (block.type === 'bulleted_list_item') {
-      ingredients.push(block.bulleted_list_item.text[0].plain_text)
-    }
-    if (block.type === 'numbered_list_item') {
-      method.push(block.numbered_list_item.text[0].plain_text)
-    }
-  })
+//   blocks.results.forEach(block => {
+//     if (block.type === 'bulleted_list_item') {
+//       ingredients.push(block.bulleted_list_item.text[0].plain_text)
+//     }
+//     if (block.type === 'numbered_list_item') {
+//       method.push(block.numbered_list_item.text[0].plain_text)
+//     }
+//   })
 
-  return {
-    props: {
-      recipe: {
-        title,
-        ingredients,
-        method,
-      }
-    },
-  };
+//   return {
+//     props: {
+//       recipe: {
+//         title,
+//         ingredients,
+//         method,
+//       }
+//     },
+//   };
 
-};
+// };
 
-export default Recipe;
+// export default Recipe;
