@@ -5,11 +5,10 @@ import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 const SimpleItem = ({
   href,
-  date,
   title,
-  description,
+  summary,
   imgSrc,
-  score,
+  star,
   tagGreen,
   tagBlue,
   tagPink,
@@ -17,12 +16,11 @@ const SimpleItem = ({
   tagYellow,
   thumbnailsUrl,
   site,
-  type,
-  className
+  favicon
 }) => (
   <div className="flex gap-6 items-center">
     {thumbnailsUrl ? (
-      <div className="w-24 h-36 relative flex-shrink-0 rounded-lg shadow-xl">
+      <div className="w-24 h-36 relative shrink-0 rounded-lg shadow-xl">
         <Image
           src={thumbnailsUrl}
           alt="avatar"
@@ -31,7 +29,7 @@ const SimpleItem = ({
         />
       </div>
     ) : imgSrc ? (
-      <div className="w-14 h-14 relative flex-shrink-0 rounded-xl">
+      <div className="w-14 h-14 relative shrink-0 rounded-xl">
         <Image
           src={imgSrc}
           alt="avatar"
@@ -44,16 +42,17 @@ const SimpleItem = ({
     <div className="space-y-1">
       <div className="space-y-1">
         <h2 className="flex items-center gap-2 font-bold text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
-          {site ? (
+          {/* <pre>{favicon.domain}</pre> */}
+          {favicon ? (
             <img
-              src={`https://www.google.com/s2/favicons?sz=128&domain_url=${site}`}
+              src={`https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${href}&size=64`}
               className="w-5 h-5 rounded"
             ></img>
           ) : null}
           <ExternalLink href={href}>{title}</ExternalLink>
         </h2>
         <div className="prose text-gray-600 max-w-none dark:text-gray-500">
-          {description}
+          {summary}
         </div>
       </div>
       {tagGreen ? (
@@ -81,8 +80,19 @@ const SimpleItem = ({
           {tagYellow}
         </span>
       ) : null}
+
     </div>
   </div>
 );
+
+export async function getStaticProps() {
+  const favicon = await fetch('https://favicongrabber.com/api/grab/github.com')
+  console.log(await favicon.json())
+  return {
+    props: {
+      favicon
+    },
+  }
+};
 
 export default SimpleItem;

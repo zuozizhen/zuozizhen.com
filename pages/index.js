@@ -7,6 +7,7 @@ import Container from '../components/Container';
 import projects from '@/data/projects';
 import Card from '@/components/Card';
 import BlogPost from '../components/BlogPost';
+import { getPublishedArticles } from "@/lib/notion";
 // import Subscribe from '../components/Subscribe';
 import ProjectCard from '../components/ProjectCard';
 import Countdown from 'react-countdown';
@@ -14,7 +15,7 @@ import TimeAgo from 'react-timeago';
 import frenchStrings from 'react-timeago/lib/language-strings/fr';
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 
-import { getAllFilesFrontMatter } from '@/lib/mdx';
+// import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 // const formatter = buildFormatter(frenchStrings);
 
@@ -42,34 +43,30 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 //   };
 // }
 
+export const databaseId = process.env.BLOG_DATABASE_ID;
 
 export default function Home({ posts }) {
-  const filteredBlogPosts = posts
-    .sort(
-      (a, b) =>
-        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
-    );
   return (
     <Container>
       <div className="max-w-2xl mx-auto">
         <div className="space-y-4 mb-16">
           <h1 className="font-bold text-2xl md:text-3xl leading-9">
-            Hey，我是左子祯
+            嗨，我是左子祯
           </h1>
           <p className="leading-9">
             我是一名&nbsp;
-            <Link href="/project">
+            <Link href="/works">
               <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-b border-dotted no-underline border-pink-500 hover:opacity-50">
                 产品设计师
               </a>
             </Link>
-            、
+            &nbsp;和&nbsp;
             <Link href="https://github.com/zuozizhen">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400  to-blue-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-50">
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-50">
                 独立开发者
               </a>
             </Link>
-            ，偶尔会&nbsp;
+            ，也乐于分享和 &nbsp;
             <Link href="/blog">
               <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-emerald-400 border-b border-dotted no-underline border-lime-500 hover:opacity-50">
                 写一点东西
@@ -81,7 +78,7 @@ export default function Home({ posts }) {
                 MasterGo
               </a>
             </Link>
-            &nbsp;的产品设计负责人，曾在锤子科技和字节跳动就职，你可以在&nbsp;
+            &nbsp;产品设计负责人，也曾在锤子科技和字节跳动就职，你可以在&nbsp;
             <Link href="https://zhihu.com/people/ZiJen">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 知乎
@@ -99,7 +96,7 @@ export default function Home({ posts }) {
                 个人公众号
               </a>
             </Link>
-            &nbsp;，想要随便聊一聊？通过邮箱联系我：
+            &nbsp;，想要随便聊一聊？欢迎通过邮箱联系我：
             <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 hjsfzzz@gmail.com
@@ -108,17 +105,17 @@ export default function Home({ posts }) {
           </p>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          文章
+          最近文章
         </h3>
         <div className="mb-20">
           <div className="mb-4 mt-4">
-            {!filteredBlogPosts.length && (
+            {!posts.length && (
               <p className="text-gray-500 dark:text-gray-500 mb-4">
                 没有找到文章
               </p>
             )}
-            {filteredBlogPosts.slice(0, 4).map((frontMatter) => (
-              <BlogPost key={frontMatter.title} {...frontMatter} />
+            {posts.slice(0, 4).map((post) => (
+              <BlogPost key={post.id} {...post} />
             ))}
           </div>
         </div>
@@ -130,7 +127,7 @@ export default function Home({ posts }) {
             <Card
               key={d.title}
               title={d.title}
-              description={d.description}
+              summary={d.description}
               href={d.href}
             />
           ))}
@@ -148,8 +145,13 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog');
+export const getStaticProps = async () => {
+  const database = await getPublishedArticles(databaseId);
 
-  return { props: { posts } };
-}
+  return {
+    props: {
+      posts: database,
+    },
+    revalidate: 1,
+  };
+};

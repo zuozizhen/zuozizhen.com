@@ -1,10 +1,10 @@
 export default [
   {
-    title: '产品设计案例',
-    description: '一些工作项目和业务项目的案例',
+    title: '案例',
+    description: '工作案例、独立开发作品和开源项目',
     imgSrc:
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406212645.jpg',
-    href: '/projects'
+    href: '/works'
   },
   {
     title: '书签',
@@ -19,7 +19,7 @@ export default [
       '记录我读过书',
     imgSrc:
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406215629.jpg',
-    href: '/book'
+    href: '/books'
   },
   {
     title: '装备',

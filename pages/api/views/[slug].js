@@ -1,48 +1,35 @@
-import db from '@/lib/planetscale';
+import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async function handler(req, res) {
-  try {
-    const [rows] = await db.query(
-      `
-      SELECT * FROM views
-      WHERE slug = ?;
-    `,
-      [req.query.slug]
-    );
+import { SupabaseAdmin } from '@/lib/supabase';
 
-    if (req.method === 'POST') {
-      if (rows.length == 0) {
-        await db.query(
-          `
-          INSERT INTO views (slug)
-          VALUES (?);
-        `,
-          [req.query.slug]
-        );
-
-        return res.status(200).json({
-          total: 1
-        });
-      } else {
-        await db.query(
-          `
-          UPDATE views
-          SET count = count + 1
-          WHERE slug = ?;
-        `,
-          [req.query.slug]
-        );
-
-        return res.status(200).json({
-          total: rows[0].count + 1
-        });
-      }
-    }
-
-    if (req.method === 'GET') {
-      return res.status(200).json({ total: rows[0].count });
-    }
-  } catch (e) {
-    return res.status(500).json({ message: e.message });
+export default async function handler(
+  req,
+  res
+) {
+  if (req.method === 'POST') {
+    // Call our stored procedure with the page_slug set by the request params slug
+    await SupabaseAdmin.rpc('increment_page_view', {
+      page_slug: req.query.slug
+    });
+    return res.status(200).json({
+      message: `Successfully incremented page: ${req.query.slug}`
+    });
   }
+
+  if (req.method === 'GET') {
+    // Query the pages table in the database where slug equals the request params slug.
+    const { data } = await SupabaseAdmin.from('pages')
+      .select('view_count')
+      .filter('slug', 'eq', req.query.slug);
+
+    if (data) {
+      return res.status(200).json({
+        total: data[0]?.view_count || null
+      });
+    }
+  }
+
+  return res.status(400).json({
+    message: 'Unsupported Request'
+  });
 }

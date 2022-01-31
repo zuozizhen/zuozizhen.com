@@ -1,8 +1,8 @@
 module.exports = {
-  target: 'serverless',
   future: {
     strictPostcssConfiguration: true
   },
+  swcMinify: true,
   reactStrictMode: true,
   images: {
     domains: [
@@ -14,7 +14,10 @@ module.exports = {
       'img2.doubanio.com', // 豆瓣图片
       'img3.doubanio.com', // 豆瓣图片
       'img9.doubanio.com', // 豆瓣图片
-      'cdn.dribbble.com' // 引用 dribbble 图片
+      'cdn.dribbble.com', // 引用 dribbble 图片
+      's3.us-west-2.amazonaws.com', // notion 图片
+      'via.placeholder.com', //占位服务
+      'images.unsplash.com' // notion 图片
     ]
   },
   async headers() {
@@ -34,7 +37,7 @@ module.exports = {
 
     if (isServer) {
       require('./scripts/generate-sitemap');
-      require('./scripts/generate-rss');
+      // require('./scripts/generate-rss');
     }
 
     // Replace React with Preact only in client production build

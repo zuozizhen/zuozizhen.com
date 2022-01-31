@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import ProsCard from '@/components/ProsCard';
-import ConsCard from '@/components/ConsCard';
+// import ProsCard from '@/components/ProsCard';
+// import ConsCard from '@/components/ConsCard';
 import Gumroad from '@/components/metrics/Gumroad';
 import Unsplash from '@/components/metrics/Unsplash';
 import Analytics from '@/components/metrics/Analytics';
@@ -42,9 +42,9 @@ const MDXComponents = {
   BleedImage,
   a: CustomLink,
   Analytics,
-  ConsCard,
+  // ConsCard,
   Gumroad,
-  ProsCard,
+  // ProsCard,
   Step,
   Unsplash,
   YouTube,
