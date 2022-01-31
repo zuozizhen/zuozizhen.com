@@ -13,7 +13,7 @@ export default function CheckList(props) {
       }
       <div>
         <div className="font-semibold text-sm">{props.title}</div>
-        <div className="text-xs text-gray-500">{props.summary}</div>
+        <div className="text-xs text-gray-500">{props.description}</div>
       </div>
     </div >
   )

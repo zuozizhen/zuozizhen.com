@@ -14,7 +14,7 @@ const BookItem = ({
   site,
 }) => (
   <div className="space-y-3 items-center">
-    <div className="aspect-[7/10] relative rounded-lg shadow-xl">
+    <div className="w-44 h-64 relative shrink-0 rounded-lg shadow-xl">
       <Image
         src={thumbnailsUrl}
         alt="avatar"
@@ -23,11 +23,19 @@ const BookItem = ({
       />
     </div>
     <div className="space-y-1">
-      <h2 className="font-bold text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
-        <Link href={href} passHref>{title}</Link>
-      </h2>
-      <div className="text-xs font-semibold text-gray-600 max-w-none dark:text-gray-500">
-        {author}
+      <div className="space-y-1">
+        <h2 className="flex items-center gap-2 font-bold text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+          {site ? (
+            <img
+              src={`https://www.google.com/s2/favicons?sz=128&domain_url=${site}`}
+              className="w-5 h-5 rounded"
+            ></img>
+          ) : null}
+          <ExternalLink href={href}>{title}</ExternalLink>
+        </h2>
+        <div className="prose text-gray-600 max-w-none dark:text-gray-500">
+          {author}
+        </div>
       </div>
       <div>
         {

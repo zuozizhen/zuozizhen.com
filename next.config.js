@@ -1,8 +1,8 @@
 module.exports = {
+  target: 'serverless',
   future: {
     strictPostcssConfiguration: true
   },
-  swcMinify: true,
   reactStrictMode: true,
   images: {
     domains: [
@@ -37,7 +37,7 @@ module.exports = {
 
     if (isServer) {
       require('./scripts/generate-sitemap');
-      // require('./scripts/generate-rss');
+      require('./scripts/generate-rss');
     }
 
     // Replace React with Preact only in client production build

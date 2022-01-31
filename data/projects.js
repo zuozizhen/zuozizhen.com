@@ -1,10 +1,10 @@
 export default [
   {
-    title: '工作案例',
-    description: '工作项目和业务项目的案例',
+    title: '产品设计案例',
+    description: '一些工作项目和业务项目的案例',
     imgSrc:
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406212645.jpg',
-    href: '/works'
+    href: '/projects'
   },
   {
     title: '书签',

@@ -14,7 +14,7 @@ export default function Home({ posts }) {
       title="文章 – 左子祯"
       description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
     >
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+      <div className="flex flex-col justify-center items-start max-w-xl mx-auto mb-16 w-full">
         <PageTitle
           title="写作"
           textColor="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-emerald-400"
