@@ -33,7 +33,8 @@ export default function Home({ books }) {
               title={book.properties.Name.title[0].text.content}
               author={book.properties.Author.rich_text[0].text.content}
               thumbnailsUrl={book.properties.Cover.files[0].file.url}
-              href={`/books/${slugify(book.id)}`}
+              // href={`/books/${slugify(book.id)}`}
+              href={book.properties.Link.url}
               star={book.properties.Star.number}
             />
           ))}

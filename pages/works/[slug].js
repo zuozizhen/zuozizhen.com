@@ -22,10 +22,10 @@ export default function BooksPage({
       title={title}
      >
       <article className="flex flex-col justify-center items-start mx-auto mb-16">
-        <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full max-w-screen-sm mx-auto">
+        <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full mx-auto">
           {title}
         </h1>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full max-w-screen-sm mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full mx-auto">
           <div className="flex gap-8 dark:bg-gray-800 p-6 rounded-xl w-full items-start">
             <div className="w-48 aspect-[7/10] relative rounded-lg shadow-xl">
               <Image

@@ -1,7 +1,7 @@
 export default [
   {
-    title: '工作案例',
-    description: '工作项目和业务项目的案例',
+    title: '案例',
+    description: '工作案例、独立开发作品和开源项目',
     imgSrc:
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406212645.jpg',
     href: '/works'

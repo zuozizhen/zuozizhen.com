@@ -43,7 +43,8 @@ export default function Home({ featuredProject, otherProject, openSourceProject 
               <DesignCard
                 key={project.properties.Name.title[0].text.content}
                 title={project.properties.Name.title[0].text.content}
-                href={`/projects/${slugify(project.id)}`}
+                // href={`/projects/${slugify(project.id)}`}
+                href={project.properties.Link.url}
                 summary={project.properties.Summary.rich_text[0].text.content}
                 coverSrc={project.properties?.Cover?.files[0]?.file?.url ||
                   project.properties.Cover?.files[0]?.external?.url}
@@ -60,7 +61,25 @@ export default function Home({ featuredProject, otherProject, openSourceProject 
               <Card
                 key={project.properties.Name.title[0].text.content}
                 title={project.properties.Name.title[0].text.content}
-                href={`/projects/${slugify(project.id)}`}
+                // href={`/projects/${slugify(project.id)}`}
+                href={project.properties.Link.url}
+                summary={project.properties.Summary.rich_text[0].text.content}
+                coverSrc={project.properties?.Cover?.files[0]?.file?.url ||
+                  project.properties.Cover?.files[0]?.external?.url}
+              />
+            ))}
+          </div>
+
+          <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+            开源
+          </h3>
+          <div className="space-y-8 mb-16">
+            {openSourceProject.map((project) => (
+              <Card
+                key={project.properties.Name.title[0].text.content}
+                title={project.properties.Name.title[0].text.content}
+                // href={`/projects/${slugify(project.id)}`}
+                href={project.properties.Link.url}
                 summary={project.properties.Summary.rich_text[0].text.content}
                 coverSrc={project.properties?.Cover?.files[0]?.file?.url ||
                   project.properties.Cover?.files[0]?.external?.url}
