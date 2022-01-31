@@ -61,7 +61,7 @@ const ArticlePage = ({
       sponsoredArticle={sponsoredArticleUrl !== null}
       sponsoredUrl={sponsoredArticleUrl}
      >
-      <article className="flex flex-col justify-center items-start mx-auto mb-16">
+      <article className="flex flex-col justify-center items-start mx-auto mb-16 max-w-2xl">
         <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full mx-auto">
           {title}
         </h1>
