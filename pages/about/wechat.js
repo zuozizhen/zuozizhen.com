@@ -13,7 +13,7 @@ export default function WeChat() {
           />
         </div>
         <div className="my-8 prose font-medium text-gray-600 dark:text-gray-400">
-          <p>关注我的个人公众号 👉 向左看</p>
+          <p>👉 关注我的个人公众号</p>
         </div>
       </div>
     </Container>
