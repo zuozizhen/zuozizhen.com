@@ -72,13 +72,20 @@ export default function Home({ posts }) {
                 写一点东西
               </a>
             </Link>
-            ，前&nbsp;
-            <Link href="https://mastergo.com/">
+            。我曾在锤子科技和字节跳动就职，独立开发了&nbsp;
+            <Link href="https://figmachina.com">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
-                MasterGo
+                FigmaChina
               </a>
             </Link>
-            &nbsp;产品设计负责人，也曾在锤子科技和字节跳动就职，你可以在&nbsp;
+            ，日常会在&nbsp;
+            <Link href="https://figmachina.com">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+                小红书
+              </a>
+            </Link>
+            &nbsp;上分享我的关于产品设计和个人成长相关的经验，你也可以关注我的
+            {/* ，你可以在&nbsp;
             <Link href="https://zhihu.com/people/ZiJen">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 知乎
@@ -90,13 +97,13 @@ export default function Home({ posts }) {
                 领英
               </a>
             </Link>
-            &nbsp;上找到我，或者关注我的&nbsp;
+            &nbsp;上找到我，或者关注我的&nbsp; */}
             <Link href="/about/wechat">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 个人公众号
               </a>
             </Link>
-            &nbsp;，想要随便聊一聊？欢迎通过邮箱联系我：
+            &nbsp;。想要随便聊一聊？欢迎通过邮箱联系我：
             <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 hjsfzzz@gmail.com
