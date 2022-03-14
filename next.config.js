@@ -2,7 +2,7 @@ module.exports = {
   future: {
     strictPostcssConfiguration: true
   },
-  swcMinify: false,
+  swcMinify: true,
   reactStrictMode: true,
   images: {
     domains: [
