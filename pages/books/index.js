@@ -26,7 +26,7 @@ export default function Home({ books }) {
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <PageTitle title="书单" description="这里记录了我曾经看过的书" />
         {/* <pre>{ JSON.stringify(books, null, 2) }</pre> */}
-        {/* <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-3 gap-10">
           {books.map((book) => (
             <BookItem
               key={book.properties.Name.title[0].text.content}
@@ -38,7 +38,7 @@ export default function Home({ books }) {
               star={book.properties.Star.number}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </Container>
   );

@@ -51,7 +51,7 @@ export default function Home({ posts }) {
       <div className="max-w-2xl mx-auto">
         <div className="space-y-4 mb-16">
           <h1 className="font-bold text-2xl md:text-3xl leading-9">
-            嗨，我是左子祯
+            Hi，我是左子祯
           </h1>
           <p className="leading-9">
             我是一名&nbsp;
@@ -85,19 +85,6 @@ export default function Home({ posts }) {
               </a>
             </Link>
             &nbsp;上分享我的关于产品设计和个人成长相关的经验，你也可以关注我的
-            {/* ，你可以在&nbsp;
-            <Link href="https://zhihu.com/people/ZiJen">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
-                知乎
-              </a>
-            </Link>
-            &nbsp;或&nbsp;
-            <Link href="https://www.linkedin.com/in/zuozizhen">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
-                领英
-              </a>
-            </Link>
-            &nbsp;上找到我，或者关注我的&nbsp; */}
             <Link href="/about/wechat">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 个人公众号

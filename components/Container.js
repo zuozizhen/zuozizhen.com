@@ -13,6 +13,7 @@ import siteMetadata from '@/data/siteMetadata';
 
 import Footer from '@/components/Footer';
 import NavLink from '@/components/NavLink';
+import navData from '@/data/navData';
 
 
 export default function Container(props) {
@@ -76,28 +77,15 @@ export default function Container(props) {
               </a>
             </Link>
               <div
-                className="font-medium sm:space-x-10 space-x-4 flex items-center text-gray-600 dark:text-gray-500"
+                className="font-medium sm:space-x-10 space-x-3 flex items-center text-gray-600 dark:text-gray-500"
             >
-              <NavLink
-                title="文章"
-                pathUrl="/blog"
-              />
-               <NavLink
-                title="项目"
-                pathUrl="/projects"
-              />
-               <NavLink
-                title="仪表盘"
-                pathUrl="/dashboard"
-              />
-               {/* <NavLink
-                title="遗愿清单"
-                pathUrl="/bucket-list"
-              /> */}
-               <NavLink
-                title="关于我"
-                pathUrl="/about"
-              />
+              {navData.map((d) => (
+                <NavLink
+                  title={d.title}
+                  pathUrl={d.route}
+                />
+              ))}
+
               </div>
           </div>
           <div
