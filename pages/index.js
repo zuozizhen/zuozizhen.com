@@ -78,19 +78,19 @@ export default function Home({ posts }) {
                 FigmaChina
               </a>
             </Link>
-            ，日常会在&nbsp;
-            <Link href="https://figmachina.com">
+            。日常会在&nbsp;
+            <Link href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 小红书
               </a>
             </Link>
-            &nbsp;上分享我的关于产品设计和个人成长相关的经验，你也可以关注我的
+            &nbsp;上分享我关于产品设计积累的技巧和经验，你也可以关注我的&nbsp;
             <Link href="/about/wechat">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 个人公众号
               </a>
             </Link>
-            &nbsp;。想要随便聊一聊？欢迎通过邮箱联系我：
+            &nbsp;，了解我更泛领域的经验分享。想要随便聊一聊？随时通过邮箱联系我：
             <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 hjsfzzz@gmail.com
