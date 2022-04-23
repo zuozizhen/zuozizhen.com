@@ -28,7 +28,7 @@ export default class Analytics extends Component {
       <MetricCard
         header="书签"
         link={`/bookmark`}
-        metric={this.state.database.length}
+        metric={this.state.database?.length}
       />
     );
   }
