@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Container from '@/components/Container';
 import Link from 'next/link';
 import { Client } from '@notionhq/client';
-import { getBooksData, getSlugPage } from "@/lib/notion";
+import { getFeaturedProjectData, getArticlePage } from "@/lib/notion";
 
 import Image from 'next/image';
 import slugify from 'slugify';
@@ -12,6 +12,7 @@ import { renderBlocks } from '@/lib/renderBlocks';
 export default function BooksPage({
   content,
   title,
+  blocks,
   thumbnailsUrl,
   href,
   author,
@@ -25,39 +26,6 @@ export default function BooksPage({
         <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full mx-auto">
           {title}
         </h1>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full mx-auto">
-          <div className="flex gap-8 dark:bg-gray-800 p-6 rounded-xl w-full items-start">
-            <div className="w-48 aspect-[7/10] relative rounded-lg shadow-xl">
-              <Image
-                src={thumbnailsUrl}
-                alt="avatar"
-                layout="fill"
-                className="rounded-lg object-cover"
-              />
-            </div>
-            <div className="space-y-1">
-              <h2 className="mt-4 mb-2 text-2xl font-bold text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
-                <Link href={href} passHref>{title}</Link>
-              </h2>
-              <div className="text-sm font-semibold text-gray-600 max-w-none dark:text-gray-500">
-                {author}
-              </div>
-              <div>
-                {
-                  Array(star).fill('0').map((index) => (
-                    <i key={index} className="ri-star-s-fill text-yellow-400"></i>
-                  ))}
-                {
-                  Array(5 - star).fill('0').map((index) => (
-                    <i key={index} className="ri-star-s-fill text-gray-700"></i>
-                  ))}
-              </div>
-              <div className="text-sm font-semibold text-gray-600 max-w-none dark:text-gray-500">
-                {author}
-              </div>
-            </div>
-          </div>
-        </div>
         <motion.div
           animate={{ y: -20, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 80, duration: 0.6 }}
@@ -67,6 +35,7 @@ export default function BooksPage({
             {content.map((block) => (
               <Fragment key={block.id}>{renderBlocks(block)}</Fragment>
             ))}
+            {console.log(blocks) }
             {/* <pre>{JSON.stringify(content,null,2)}</pre> */}
           </div>
         </motion.div>
@@ -77,13 +46,13 @@ export default function BooksPage({
 
 export const getStaticPaths = async () => {
   const paths = [];
-  const data = await getBooksData(process.env.BOOKS_DATABASE_ID);
+  const data = await getFeaturedProjectData(process.env.PROJECT_DATABASE_ID);
 
   data.forEach((result) => {
     if (result.object === 'page') {
       paths.push({
         params: {
-          slug: slugify(result.id)
+          slug: slugify(result.properties.Slug.rich_text[0].text.content).toLowerCase()
         }
       });
     }
@@ -95,43 +64,50 @@ export const getStaticPaths = async () => {
   };
 };
 
+
 export const getStaticProps = async ({ params: { slug } }) => {
   let content = [];
   let title = '';
-  let thumbnailsUrl = null;
-  let href = '';
-  let author = '';
-  let star = null;
+  // let thumbnailsUrl = null;
+  let url = '';
 
   const notion = new Client({
     auth: process.env.NOTION_SECRET
   });
 
-  const data = await getBooksData(process.env.BOOKS_DATABASE_ID);
+  const data = await getFeaturedProjectData(process.env.PROJECT_DATABASE_ID);
 
-  const page = getSlugPage(data, slug);
+  const page = getArticlePage(data, slug);
 
   title = page.properties.Name.title[0].plain_text;
-  thumbnailsUrl = page.properties.Cover.files[0].file.url;
-  href = page.properties.Link.url;
-  author = page.properties.Author.rich_text[0].text.content;
-  star = page.properties.Star.number;
+  // thumbnailsUrl = page.properties.Cover.files[0].file.url;
+  url = page.properties.Link.url;
+
 
   let blocks = await notion.blocks.children.list({
     block_id: page.id
   });
 
+
   content = [...blocks.results];
+
+  while (blocks.has_more) {
+    blocks = await notion.blocks.children.list({
+      block_id: page.id,
+      start_cursor: blocks.next_cursor
+    });
+
+    content = [...content, ...blocks.results];
+  }
 
   return {
     props: {
       content,
       title,
       slug,
-      thumbnailsUrl,
-      href,
-      author,
-      star
+      blocks,
+      // thumbnailsUrl,
+      url,
     }
   };
 };

@@ -32,11 +32,10 @@ export default function Home({ featuredProject, otherProject, openSourceProject 
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
         {/* <pre>{JSON.stringify(projects, null, 2) }</pre> */}
         <PageTitle
-          title="工作项目"
+          title="设计案例"
           textColor="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500"
-        >
-          这里主要是展示了我的一些工作项目和一些业余项目
-        </PageTitle>
+          description="我过往在工作上和业余的设计相关案例"
+        />
         <div className="container">
           <div className="space-y-8 mb-16">
             {featuredProject.map((project) => (
@@ -44,7 +43,8 @@ export default function Home({ featuredProject, otherProject, openSourceProject 
                 key={project.properties.Name.title[0].text.content}
                 title={project.properties.Name.title[0].text.content}
                 // href={`/projects/${slugify(project.id)}`}
-                href={project.properties.Link.url}
+                href={`/works/${slugify(project.properties.Slug.rich_text[0].text.content)}`}
+                // href={project.properties.Link.url}
                 summary={project.properties.Summary.rich_text[0].text.content}
                 coverSrc={project.properties?.Cover?.files[0]?.file?.url ||
                   project.properties.Cover?.files[0]?.external?.url}
@@ -70,7 +70,7 @@ export default function Home({ featuredProject, otherProject, openSourceProject 
             ))}
           </div>
 
-          <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+          {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
             开源
           </h3>
           <div className="space-y-8 mb-16">
@@ -85,7 +85,7 @@ export default function Home({ featuredProject, otherProject, openSourceProject 
                   project.properties.Cover?.files[0]?.external?.url}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </Container>

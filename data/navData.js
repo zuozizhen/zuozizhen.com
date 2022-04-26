@@ -12,11 +12,11 @@ export default [
   //   route: '/projects',
   // },
   {
-    title: '分享',
+    title: '项目',
     route: '/projects',
   },
   {
-    title: '文章',
+    title: '写作',
     route: '/blog',
   },
   {
@@ -27,7 +27,6 @@ export default [
     title: '关于',
     route: '/about',
   },
-
   // {
   //   title: '遗愿清单',
   //   route: '/bucket-list',

@@ -54,7 +54,7 @@ const ArticlePage = ({
 
   return (
      <Container
-      title={`${title} - Braydon Coyer`}
+      title={`${title} - 左子祯`}
       description={summary}
       // imageUrl={socialImageConf}
       date={new Date(publishedDate).toISOString()}
@@ -178,8 +178,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
   articleTitle = page.properties.Name.title[0].plain_text;
   publishedDate = page.properties.Published.date.start;
-  lastEditedAt = page.properties.LastEdited.last_edited_time;
-  sponsoredArticleUrl = page.properties.canonicalUrl?.url;
+  // lastEditedAt = page.properties.LastEdited.last_edited_time;
+  // sponsoredArticleUrl = page.properties.canonicalUrl?.url;
   summary = page.properties.Summary?.rich_text[0]?.plain_text;
   coverImage =
     page.properties.Cover?.files[0]?.file?.url ||
@@ -211,13 +211,13 @@ export const getStaticProps = async ({ params: { slug } }) => {
       content,
       title: articleTitle,
       publishedDate,
-      lastEditedAt,
+      // lastEditedAt,
       slug,
       // profilePicture,last_edited_time
       coverImage,
       summary,
       moreArticles,
-      sponsoredArticleUrl
+      // sponsoredArticleUrl
     },
     revalidate: 30
   };

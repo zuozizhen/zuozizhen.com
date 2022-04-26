@@ -90,7 +90,7 @@ export default function Home({ posts }) {
                 个人公众号
               </a>
             </Link>
-            &nbsp;，了解我更泛领域的经验分享。想要随便聊一聊？随时通过邮箱联系我：
+            &nbsp;，会有一些更系统的经验分享。想要随便聊一聊？随时通过邮箱联系我：
             <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
               <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
                 hjsfzzz@gmail.com
