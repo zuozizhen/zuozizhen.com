@@ -4,6 +4,7 @@ module.exports = {
   },
   // swcMinify: true,
   reactStrictMode: true,
+  target: 'serverless',
   images: {
     domains: [
       'i.scdn.co', // Spotify Album Art
