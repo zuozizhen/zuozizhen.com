@@ -81,6 +81,7 @@ export default function Container(props) {
             >
               {navData.map((d) => (
                 <NavLink
+                  key={d.title}
                   title={d.title}
                   pathUrl={d.route}
                 />
