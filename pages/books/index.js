@@ -29,7 +29,7 @@ export default function Home({ books }) {
         <div className="grid grid-cols-3 gap-10">
           {books.map((book) => (
             <BookItem
-              key={book.properties.Name.title[0].text.content}
+              key={book.id}
               title={book.properties.Name.title[0].text.content}
               author={book.properties.Author.rich_text[0]?.text.content}
               thumbnailsUrl={book.properties.Cover.files[0].file.url}

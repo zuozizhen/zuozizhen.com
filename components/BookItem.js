@@ -17,9 +17,9 @@ const BookItem = ({
     <div className="aspect-[7/10] relative rounded-lg shadow-xl">
       <Image
         src={thumbnailsUrl}
-        alt="avatar"
+        alt="cover"
         layout="fill"
-        className="rounded-lg object-cover"
+        className="rounded-lg object-cover z-30"
       />
     </div>
     <div className="space-y-1">
