@@ -34,7 +34,6 @@
     "big.js": "6.1.1",
     "clsx": "^1.1.1",
     "date-fns": "2.22.1",
-    "fathom-client": "^3.1.0",
     "firebase-admin": "^9.11.0",
     "framer-motion": "^4.1.17",
     "ga-4-react": "^0.1.281",

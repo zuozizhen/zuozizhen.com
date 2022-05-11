@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 import useSWR from 'swr';
-import { trackGoal } from 'fathom-client';
 
 import { fetcher } from '@/lib/fetcher';
 import SuccessMessage from '@/components/SuccessMessage';

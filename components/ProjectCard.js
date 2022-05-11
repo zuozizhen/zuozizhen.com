@@ -1,5 +1,3 @@
-import * as Fathom from 'fathom-client';
-
 const trackGoal = (title) => {
   const goalCodes = {
     'React 2025': '5WGDOKV0',
