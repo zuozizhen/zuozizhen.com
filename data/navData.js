@@ -16,8 +16,12 @@ export default [
     route: '/projects',
   },
   {
-    title: '写作',
+    title: '文章',
     route: '/blog',
+  },
+  {
+    title: '书签',
+    route: '/bookmarks',
   },
   {
     title: '阅读',
