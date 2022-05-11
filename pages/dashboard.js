@@ -1,6 +1,3 @@
-import Link from 'next/link';
-
-import Analytics from '@/components/metrics/Analytics';
 import Life from '@/components/metrics/Life';
 import NowPlaying from '@/components/NowPlaying';
 // import Buttondown from '@/components/metrics/Buttondown';
@@ -10,8 +7,8 @@ import GitHub from '@/components/metrics/Github';
 import YouTube from '@/components/metrics/Youtube';
 import TopTracks from '@/components/TopTracks';
 import PageTitle from '@/components/PageTitle';
-// import Read from '@/components/metrics/Read';
-// import Mark from '@/components/metrics/Mark';
+import Read from '@/components/metrics/Read';
+import Mark from '@/components/metrics/Mark';
 
 export default function Dashboard() {
   return (
@@ -27,8 +24,8 @@ export default function Dashboard() {
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
           <Life />
           {/* <GitHub /> */}
-          {/* <Read /> */}
-          {/* <Mark /> */}
+          <Read />
+          <Mark />
         </div>
         <h2 className="mt-16 font-bold text-lg sm:text-xl mb-3 text-gray-900 dark:text-gray-100">
           正在听什么：

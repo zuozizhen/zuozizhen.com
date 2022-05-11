@@ -1,8 +1,8 @@
 export default [
-  {
-    title: '此刻',
-    route: '/dashboard',
-  },
+  // {
+  //   title: '此刻',
+  //   route: '/dashboard',
+  // },
   // {
   //   title: '过去',
   //   route: '/projects',
