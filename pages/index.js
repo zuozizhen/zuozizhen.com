@@ -9,11 +9,6 @@ import Card from '@/components/Card';
 import BlogPost from '../components/BlogPost';
 import { getPublishedArticles } from "@/lib/notion";
 // import Subscribe from '../components/Subscribe';
-import ProjectCard from '../components/ProjectCard';
-import Countdown from 'react-countdown';
-import TimeAgo from 'react-timeago';
-import frenchStrings from 'react-timeago/lib/language-strings/fr';
-import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 
 // import { getAllFilesFrontMatter } from '@/lib/mdx';
 
