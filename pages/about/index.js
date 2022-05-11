@@ -14,7 +14,7 @@ export default function About({ content }) {
           {content.map((block) => (
             <Fragment key={block.id}>{renderBlocks(block)}</Fragment>
           ))}
-          <pre>{JSON.stringify(content,null,2)}</pre>
+          {/* <pre>{JSON.stringify(content,null,2)}</pre> */}
         </div>
       </div>
     </Container>

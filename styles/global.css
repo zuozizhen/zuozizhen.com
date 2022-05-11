@@ -100,7 +100,7 @@ a {
 
 .prose img {
   /* Don't apply styles to next/image */
-  @apply my-8 rounded-lg;
+  @apply my-8 rounded-md;
 
 }
 
