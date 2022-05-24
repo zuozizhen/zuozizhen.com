@@ -51,43 +51,49 @@ export default function Home({ posts }) {
           <p className="leading-9">
             我是一名&nbsp;
             <Link href="/works">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-b border-dotted no-underline border-pink-500 hover:opacity-50">
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-pink-500 border-b border-dotted no-underline hover:opacity-50">
                 产品设计师
               </a>
             </Link>
             &nbsp;和&nbsp;
             <Link href="https://github.com/zuozizhen">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-50">
-                独立开发者
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-50">
+                成长中的独立开发者
               </a>
             </Link>
-            ，也乐于分享和 &nbsp;
-            <Link href="/blog">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-emerald-400 border-b border-dotted no-underline border-lime-500 hover:opacity-50">
-                写一点东西
+            ，日常工作主要是与产品、设计和用户体验相关，也会为初创公司提供专业的设计咨询和建议。我曾在锤子科技和字节跳动负责设计系统的搭建维护，也曾是&nbsp;
+            <Link href="https://mastergo.com">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-500 border-indigo-500 hover:opacity-50">
+                MasterGo
               </a>
             </Link>
-            。我曾在锤子科技和字节跳动就职，独立开发了&nbsp;
+            &nbsp; 0-1 的产品设计负责人。业余曾独立开发了&nbsp;
             <Link href="https://figmachina.com">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 border-yellow-500 hover:opacity-50">
                 FigmaChina
               </a>
             </Link>
-            。日常会在&nbsp;
+            &nbsp;，是国内最早推广 Figma 的中文网之一。我会在&nbsp;
             <Link href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 border-rose-500 hover:opacity-50">
                 小红书
               </a>
             </Link>
-            &nbsp;上分享我关于产品设计积累的技巧和经验，你也可以关注我的&nbsp;
+            &nbsp;上分享一些产品设计的技巧和经验，也欢迎关注我的&nbsp;
+            <Link href="https://twitter.com/zuozizhen">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 border-blue-500 hover:opacity-50">
+                Twitter
+              </a>
+            </Link>
+            &nbsp;或&nbsp;
             <Link href="/about/wechat">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-50">
                 个人公众号
               </a>
             </Link>
-            &nbsp;，会有一些更系统的经验分享。想要随便聊一聊？随时通过邮箱联系我：
+            &nbsp;了解最近我在做什么。通过邮箱可随时联系我：
             <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50 text-gray-500">
                 hjsfzzz@gmail.com
               </a>
             </Link>
