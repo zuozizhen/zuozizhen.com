@@ -26,11 +26,11 @@ export default function About({ bucketList }) {
             {/* <pre>{JSON.stringify(bucketList,null, 2) }</pre> */}
             {bucketList.map((item, index) => (
               <CheckList
-                key={item.properties.Name.title[0].text.content}
-                title={item.properties.Name.title[0].text.content}
+                key={item.properties.Name.title[0]?.text.content}
+                title={item.properties.Name.title[0]?.text.content}
                 summary={item.properties.Summary?.rich_text[0]?.plain_text}
                 index={index + 1}
-                checked={item.properties.Done.checkbox}
+                status={item.properties.Status.status?.name}
               />
             ))}
           </div>

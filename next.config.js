@@ -57,7 +57,7 @@ module.exports = {
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
-  child-src *.youtube.com *.google.com *.twitter.com *.giscus.app;
+  child-src *.youtube.com *.google.com *.twitter.com *.giscus.app *.notion.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
   img-src * blob: data:;
   media-src 'none';

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 // import { google } from 'googleapis';
 
 // import googleAuth from '@/lib/google/auth';
@@ -8,6 +9,10 @@ import projects from '@/data/projects';
 import Card from '@/components/Card';
 import BlogPost from '../components/BlogPost';
 import { getPublishedArticles } from "@/lib/notion";
+import { getFeaturedProjectData } from "@/lib/notion";
+import DesignCard from '@/components/DesignCard';
+import slugify from 'slugify';
+
 // import Subscribe from '../components/Subscribe';
 
 // import { getAllFilesFrontMatter } from '@/lib/mdx';
@@ -17,6 +22,23 @@ import { getPublishedArticles } from "@/lib/notion";
 
 
 // import VideoCard from '../components/VideoCard';
+
+export const databaseId = process.env.BLOG_DATABASE_ID;
+export const projectId = process.env.PROJECT_DATABASE_ID;
+
+
+export const getStaticProps = async () => {
+  const database = await getPublishedArticles(databaseId);
+  const featuredProject = await getFeaturedProjectData(projectId);
+
+  return {
+    props: {
+      posts: database,
+      featuredProject
+    },
+    revalidate: 1,
+  };
+};
 
 // export async function getStaticProps() {
 //   const auth = await googleAuth.getClient();
@@ -38,9 +60,8 @@ import { getPublishedArticles } from "@/lib/notion";
 //   };
 // }
 
-export const databaseId = process.env.BLOG_DATABASE_ID;
 
-export default function Home({ posts }) {
+export default function Home({ featuredProject, posts }) {
   return (
     <Container>
       <div className="max-w-2xl mx-auto">
@@ -51,57 +72,78 @@ export default function Home({ posts }) {
           <p className="leading-9">
             我是一名&nbsp;
             <Link href="/works">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-pink-500 border-b border-dotted no-underline hover:opacity-50">
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-pink-500 border-b border-dotted no-underline hover:opacity-70">
                 产品设计师
               </a>
             </Link>
-            &nbsp;和&nbsp;
+            &nbsp;、&nbsp;
             <Link href="https://github.com/zuozizhen">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-50">
-                成长中的独立开发者
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-70">
+                独立开发者
               </a>
             </Link>
-            ，日常工作主要是与产品、设计和用户体验相关，也会为初创公司提供专业的设计咨询和建议。我曾在锤子科技和字节跳动负责设计系统的搭建维护，也曾是&nbsp;
+            ，曾负责&nbsp;
             <Link href="https://mastergo.com">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-500 border-indigo-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500">
                 MasterGo
               </a>
             </Link>
-            &nbsp; 0-1 的产品设计负责人。业余曾独立开发了&nbsp;
+            &nbsp; 0-1、
+            <Link href="https://www.smartisan.com/jianguopro3/os">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500">
+                Smartisan 7.0
+              </a>
+            </Link>
+            &nbsp;设计系统搭建。独立创办了&nbsp;
             <Link href="https://figmachina.com">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 border-yellow-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500">
                 FigmaChina
               </a>
             </Link>
-            &nbsp;，是国内最早推广 Figma 的中文网之一。我会在&nbsp;
+            &nbsp;。你可以在&nbsp;
             <Link href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 border-rose-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 border-rose-500 hover:opacity-70">
                 小红书
               </a>
             </Link>
-            &nbsp;上分享一些产品设计的技巧和经验，也欢迎关注我的&nbsp;
+            &nbsp;、
             <Link href="https://twitter.com/zuozizhen">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 border-blue-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 border-blue-500 hover:opacity-70">
                 Twitter
               </a>
             </Link>
-            &nbsp;或&nbsp;
+            &nbsp;、&nbsp;
             <Link href="/about/wechat">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-70">
                 个人公众号
               </a>
             </Link>
-            &nbsp;了解最近我在做什么。通过邮箱可随时联系我：
-            <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50 text-gray-500">
-                hjsfzzz@gmail.com
+            &nbsp;这些平台关注我。或者了解我现在&nbsp;
+            <Link href="/about/wechat">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-500 border-indigo-500 hover:opacity-70">
+                正在做的事情
               </a>
             </Link>
+            &nbsp;和&nbsp;
+            <Link href="/about">
+              <a className='font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 border-yellow-500 hover:opacity-70'>
+                关于我
+              </a>
+            </Link>
+            &nbsp; 的更多信息。
           </p>
+
         </div>
-        <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          最近文章
-        </h3>
+        <div className='flex items-center justify-between mb-8'>
+          <h3 className="font-bold text-lg sm:text-xl text-gray-900 dark:text-gray-100">
+            最新文章
+          </h3>
+          <Link href="/blog">
+            <a className='font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
+              查看全部
+            </a>
+          </Link>
+        </div>
         <div className="mb-20">
           <div className="mb-4 mt-4">
             {!posts.length && (
@@ -113,6 +155,31 @@ export default function Home({ posts }) {
               <BlogPost key={post.id} {...post} />
             ))}
           </div>
+        </div>
+        <div className='flex items-center justify-between mb-8'>
+          <h3 className="font-bold text-lg sm:text-xl text-gray-900 dark:text-gray-100">
+            作品
+          </h3>
+          <Link href="/blog">
+            <a className='font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
+              查看全部
+            </a>
+          </Link>
+        </div>
+        <div className="mb-16 flex gap-4">
+          {featuredProject.slice(0, 2).map((project) => (
+            <DesignCard
+              key={project.properties.Name.title[0].text.content}
+              title={project.properties.Name.title[0].text.content}
+              // href={`/projects/${slugify(project.id)}`}
+              href={`/works/${slugify(project.properties.Slug.rich_text[0].text.content)}`}
+              // href={project.properties.Link.url}
+              summary={project.properties.Summary.rich_text[0].text.content}
+              coverSrc={project.properties?.Cover?.files[0]?.file?.url ||
+                project.properties.Cover?.files[0]?.external?.url}
+              duty={project.properties.Duty.rich_text[0].text.content}
+            />
+          ))}
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           项目
@@ -139,14 +206,3 @@ export default function Home({ posts }) {
     </Container>
   );
 }
-
-export const getStaticProps = async () => {
-  const database = await getPublishedArticles(databaseId);
-
-  return {
-    props: {
-      posts: database,
-    },
-    revalidate: 1,
-  };
-};

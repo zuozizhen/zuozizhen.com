@@ -1,11 +1,13 @@
 import MetricCard from '@/components/metrics/Card';
-import React, { Component } from 'react';
-import BookItem from '@/components/BookItem';
+import React from 'react';
+import { getBooksData } from "@/lib/notion";
 
 export const booksId = process.env.BOOKS_DATABASE_ID;
 
 export const getStaticProps = async () => {
   const database = await getBooksData(booksId);
+
+  console.log(Object.keys(database));
 
   return {
     props: {
@@ -13,6 +15,7 @@ export const getStaticProps = async () => {
     }
   };
 };
+
 
 export default function Read({ books }) {
   return (

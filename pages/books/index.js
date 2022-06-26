@@ -24,9 +24,9 @@ export default function Home({ books }) {
   return (
     <Container title="书单 – 左子祯">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
-        <PageTitle title="书单" description="这里记录了我曾经看过的书" />
+        <PageTitle title="我读过的书" description="这里会不断更新我新阅读的内容和我的笔记。" />
         {/* <pre>{ JSON.stringify(books, null, 2) }</pre> */}
-        <div className="grid grid-cols-3 gap-10">
+        <div className="space-y-12">
           {books.map((book) => (
             <BookItem
               key={book.id}
@@ -36,6 +36,8 @@ export default function Home({ books }) {
               // href={`/books/${slugify(book.id)}`}
               href={book.properties.Link.url}
               star={book.properties.Star.number}
+              introduction={book.properties.Introduction.rich_text[0]?.text.content}
+              slug={book.properties.Slug.rich_text[0]?.text.content}
             />
           ))}
         </div>

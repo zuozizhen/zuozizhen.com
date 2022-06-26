@@ -19,7 +19,7 @@ a {
 }
 
 .prose a:not(.anchor) {
-  @apply font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50 !important;
+  @apply font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 !important;
 }
 
 #__next {
@@ -120,13 +120,13 @@ a {
 
 }
 
-.prose h3 {
+/* .prose h3 {
   @apply text-lg mt-10;
 }
 
 .prose h4 {
   @apply mt-10;
-}
+} */
 
 
 /* .prose > :first-child {
@@ -357,5 +357,5 @@ iframe {
 }
 
 #design-card:hover img {
-  filter: brightness(70%);
+  filter: brightness(90%);
 }
