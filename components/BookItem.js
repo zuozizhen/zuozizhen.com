@@ -60,14 +60,14 @@ const BookItem = ({
         </div>
       </div>
       <div className='flex gap-6'>
-        <Link href={`/books/${slugify(slug)}`} passHref>
+        {/* <Link href={`/books/${slugify(slug)}`} passHref>
           <a className='text-sm font-bold text-gray-600 dark:text-gray-500'>
             阅读我的笔记
           </a>
-        </Link>
+        </Link> */}
         <Link href={href} passHref>
-          <a className='text-sm font-bold text-gray-600 dark:text-gray-500'>
-            前往豆瓣查看更多
+          <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500' target="_blank" >
+            豆瓣链接
           </a>
         </Link>
       </div>

@@ -19,7 +19,8 @@ module.exports = {
       'cdn.dribbble.com', // 引用 dribbble 图片
       'us-west-2.amazonaws.com', // notion 图片
       'via.placeholder.com', //占位服务
-      'images.unsplash.com' // notion 图片
+      'images.unsplash.com', // notion 图片
+      'zuozizhen.com'
     ]
   },
   async headers() {

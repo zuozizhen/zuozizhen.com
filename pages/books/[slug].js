@@ -62,6 +62,11 @@ export default function BooksPage({
                 {introduction}
               </div>
             </div>
+            <Link href={href} passHref>
+              <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500' target="_blank" >
+                豆瓣链接
+              </a>
+            </Link>
           </div>
         </div>
         <motion.div
