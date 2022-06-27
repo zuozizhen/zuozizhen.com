@@ -119,7 +119,7 @@ export default function Home({ featuredProject, posts }) {
               </a>
             </Link>
             &nbsp;这些平台关注我。或者了解我现在&nbsp;
-            <Link href="/about/wechat">
+            <Link href="/now">
               <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-500 border-indigo-500 hover:opacity-70">
                 正在做的事情
               </a>

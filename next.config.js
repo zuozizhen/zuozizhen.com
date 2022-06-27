@@ -17,8 +17,7 @@ module.exports = {
       'img3.doubanio.com', // 豆瓣图片
       'img9.doubanio.com', // 豆瓣图片
       'cdn.dribbble.com', // 引用 dribbble 图片
-      's3.us-west-2.amazonaws.com', // notion 图片
-      'us-west-2.amazonaws.com', // notion 图片
+      '*.amazonaws.com', // notion 图片
       'via.placeholder.com', //占位服务
       'images.unsplash.com' // notion 图片
     ]
