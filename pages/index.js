@@ -130,7 +130,7 @@ export default function Home({ featuredProject, posts }) {
                 关于我
               </a>
             </Link>
-            &nbsp; 的更多信息。
+            &nbsp;的更多信息。
           </p>
 
         </div>
