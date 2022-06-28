@@ -21,7 +21,8 @@ export const getStaticProps = async () => {
       featuredProject,
       otherProject,
       openSourceProject
-    }
+    },
+    revalidate: 1,
   };
 };
 

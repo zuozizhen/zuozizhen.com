@@ -12,7 +12,8 @@ export const getStaticProps = async () => {
   return {
     props: {
       books: Object.keys(database).length,
-    }
+    },
+    revalidate: 1,
   };
 };
 

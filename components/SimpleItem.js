@@ -92,6 +92,7 @@ export async function getStaticProps() {
     props: {
       favicon
     },
+    revalidate: 1,
   }
 };
 
