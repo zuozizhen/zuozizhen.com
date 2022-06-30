@@ -6,14 +6,14 @@ export default [
       'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406212645.jpg',
     href: '/bookmarks'
   },
-  // {
-  //   title: '读书笔记',
-  //   description:
-  //     '记录我读过书',
-  //   imgSrc:
-  //     'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406215629.jpg',
-  //   href: '/books'
-  // },
+  {
+    title: '读过的书',
+    description:
+      '记录我读过的好书',
+    imgSrc:
+      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406215629.jpg',
+    href: '/books'
+  },
   // {
   //   title: '遗愿清单',
   //   description:
