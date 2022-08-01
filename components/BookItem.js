@@ -20,12 +20,7 @@ const BookItem = ({
     <div className="h-56 aspect-[7/10] relative rounded-lg shadow-xl">
       <Link href={`/books/${slugify(slug)}`} passHref>
         <a>
-          <Image
-            src={thumbnailsUrl}
-            alt="cover"
-            layout="fill"
-            className="rounded-lg object-cover"
-          />
+          <img src={thumbnailsUrl} className="rounded-lg object-cover" />
         </a>
       </Link>
     </div>

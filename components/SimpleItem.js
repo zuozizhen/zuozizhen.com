@@ -21,21 +21,11 @@ const SimpleItem = ({
   <div className="flex gap-6 items-center">
     {thumbnailsUrl ? (
       <div className="w-24 h-36 relative shrink-0 rounded-lg shadow-xl">
-        <Image
-          src={thumbnailsUrl}
-          alt="avatar"
-          layout="fill"
-          className="rounded-lg object-cover"
-        />
+        <img src={thumbnailsUrl} alt="" className="rounded-lg object-cover" />
       </div>
     ) : imgSrc ? (
       <div className="w-14 h-14 relative shrink-0 rounded-xl">
-        <Image
-          src={imgSrc}
-          alt="avatar"
-          layout="fill"
-          className="rounded-xl object-cover"
-        />
+        <img src={imgSrc} alt="" className="rounded-xl object-cover" />
       </div>
     ) : null}
 

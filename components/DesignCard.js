@@ -8,12 +8,7 @@ const Card = ({ title, summary, imgSrc, coverSrc, href, duty }) => (
   <Link href={href}>
     <a id="design-card" className="flex gap-6 items-center rounded-xl w-full">
       <div className="w-full aspect-[1.64/1] relative">
-        <Image
-          src={coverSrc}
-          alt="avatar"
-          layout="fill"
-          className="rounded-xl object-cover transition w-full"
-        />
+        <img src={coverSrc} alt="avatar" className="rounded-xl object-cover transition w-full" />
       </div>
     </a>
   </Link>
