@@ -71,7 +71,7 @@ const ArticlePage = ({
               alt="左子祯"
               height={24}
               width={24}
-              src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210706205657.jpg"
+              src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b84f94b6-f181-46a3-14ea-105697359800/public"
               className="rounded-full"
             />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
