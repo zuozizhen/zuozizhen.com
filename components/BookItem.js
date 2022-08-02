@@ -21,6 +21,7 @@ const BookItem = ({
       <Link href={`/books/${slugify(slug)}`} passHref>
         <a>
           <Image
+            unoptimized={true}
             src={thumbnailsUrl}
             alt="cover"
             layout="fill"

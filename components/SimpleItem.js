@@ -22,6 +22,7 @@ const SimpleItem = ({
     {thumbnailsUrl ? (
       <div className="w-24 h-36 relative shrink-0 rounded-lg shadow-xl">
         <Image
+          unoptimized={true}
           src={thumbnailsUrl}
           alt="avatar"
           layout="fill"
@@ -30,7 +31,8 @@ const SimpleItem = ({
       </div>
     ) : imgSrc ? (
       <div className="w-14 h-14 relative shrink-0 rounded-xl">
-        <Image
+          <Image
+          unoptimized={true}
           src={imgSrc}
           alt="avatar"
           layout="fill"

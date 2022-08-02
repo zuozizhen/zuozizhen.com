@@ -37,6 +37,7 @@ export default function Tweet({
           rel="noopener noreferrer"
         >
           <Image
+            unoptimized={true}
             alt={author.username}
             height={48}
             width={48}
@@ -103,6 +104,7 @@ export default function Tweet({
         >
           {media.map((m) => (
             <Image
+              unoptimized={true}
               key={m.media_key}
               alt={text}
               height={m.height}

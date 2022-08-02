@@ -9,6 +9,7 @@ const Card = ({ title, summary, imgSrc, coverSrc, href }) => (
       {coverSrc ? (
         <div className="w-72 h-48 relative shrink-0">
           <Image
+            unoptimized={true}
             src={coverSrc}
             alt="avatar"
             layout="fill"
@@ -19,6 +20,7 @@ const Card = ({ title, summary, imgSrc, coverSrc, href }) => (
       {imgSrc ? (
         <div className="w-16 h-16 relative shrink-0">
           <Image
+            unoptimized={true}
             src={imgSrc}
             alt="avatar"
             layout="fill"

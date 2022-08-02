@@ -6,6 +6,7 @@ export default function ImageWithTheme(props) {
 
   return (
     <Image
+      unoptimized={true}
       alt={props.alt}
       src={theme === 'light' ? props.light : props.dark}
       {...props}

@@ -20,6 +20,7 @@ export default function NewsletterLayout({ children, frontMatter }) {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
           <div className="flex items-center">
             <Image
+              unoptimized={true}
               alt="左子祯"
               height={24}
               width={24}
