@@ -8,12 +8,22 @@ const Card = ({ title, summary, imgSrc, coverSrc, href }) => (
     <a className="flex gap-6 items-center">
       {coverSrc ? (
         <div className="w-72 h-48 relative shrink-0">
-          <img src={coverSrc} className="rounded-lg object-cover" />
+          <Image
+            src={coverSrc}
+            alt="avatar"
+            layout="fill"
+            className="rounded-lg object-cover"
+          />
         </div>
       ) : null}
       {imgSrc ? (
         <div className="w-16 h-16 relative shrink-0">
-          <img src={imgSrc} className="rounded-xl object-cover" />
+          <Image
+            src={imgSrc}
+            alt="avatar"
+            layout="fill"
+            className="rounded-xl object-cover"
+          />
         </div>
       ) : null}
 

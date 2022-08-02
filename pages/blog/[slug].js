@@ -67,7 +67,13 @@ const ArticlePage = ({
         </h1>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full mx-auto">
           <div className="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210706205657.jpg" className="rounded-full h-[24px] w-[24px]" alt="" />
+            <Image
+              alt="左子祯"
+              height={24}
+              width={24}
+              src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210706205657.jpg"
+              className="rounded-full"
+            />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {'左子祯 / '}
               {format(parseISO(publishedDate), 'yyyy.MM.dd')}
