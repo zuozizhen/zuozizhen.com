@@ -68,7 +68,6 @@ const ArticlePage = ({
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full mx-auto">
           <div className="flex items-center">
             <Image
-              unoptimized={true}
               alt="左子祯"
               height={24}
               width={24}
@@ -116,7 +115,6 @@ const ArticlePage = ({
           <div className="prose dark:prose-dark max-w-none w-full pt-16">
             {coverImage ? (
               <Image
-                unoptimized={true}
                 alt={'article cover'}
                 src={coverImage}
                 width={1501 / 2}

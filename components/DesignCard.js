@@ -9,7 +9,6 @@ const Card = ({ title, summary, imgSrc, coverSrc, href, duty }) => (
     <a id="design-card" className="flex gap-6 items-center rounded-xl w-full">
       <div className="w-full aspect-[1.64/1] relative">
         <Image
-          unoptimized={true}
           src={coverSrc}
           alt="avatar"
           layout="fill"

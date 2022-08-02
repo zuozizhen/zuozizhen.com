@@ -26,7 +26,6 @@ export default function BooksPage({
         <div className="flex gap-8 dark:bg-gray-800 p-6 rounded-xl w-full items-start max-w-2xl">
           <div className="h-56 aspect-[7/10] relative rounded-lg shadow-xl">
             <Image
-              unoptimized={true}
               src={thumbnailsUrl}
               alt="cover"
               layout="fill"

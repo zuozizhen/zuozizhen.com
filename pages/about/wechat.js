@@ -6,7 +6,6 @@ export default function WeChat() {
       <div className="flex flex-col items-center">
         <div className="w-60 h-60 relative border-8 border-gray-300 dark:border-gray-600 overflow-hidden rounded-3xl mx-auto">
           <Image
-            unoptimized={true}
             src="/look-z-qr.jpg"
             alt="avatar"
             layout="fill"

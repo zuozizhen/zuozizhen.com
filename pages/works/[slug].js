@@ -1,9 +1,11 @@
 import { Fragment } from 'react';
 import { motion } from 'framer-motion';
 import Container from '@/components/Container';
+import Link from 'next/link';
 import { Client } from '@notionhq/client';
 import { getFeaturedProjectData, getArticlePage } from "@/lib/notion";
 
+import Image from 'next/image';
 import slugify from 'slugify';
 import { renderBlocks } from '@/lib/renderBlocks';
 
