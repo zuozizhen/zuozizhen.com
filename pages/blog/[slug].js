@@ -115,6 +115,7 @@ const ArticlePage = ({
         >
           <div className="prose dark:prose-dark max-w-none w-full pt-16">
             {coverImage ? (
+              <div></div>
               //  <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b84f94b6-f181-46a3-14ea-105697359800/public" alt="左子祯" className="rounded-full h-6 w-6" />
               // <Image
               //   alt={'article cover'}
