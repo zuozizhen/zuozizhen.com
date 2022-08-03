@@ -13,7 +13,7 @@ import Container from '@/components/Container';
 import { Callout } from '@/components/blocks/Callout';
 import { Client } from '@notionhq/client';
 import { CodeBlock } from '@/components/blocks/Codeblock';
-import Image from 'next/image';
+// import Image from 'next/image';
 import PageViews from '@/components/PageViews';
 import Reactions from '@/components/Reactions';
 import { ShareArticle } from '@/components/ShareArticle';
@@ -67,13 +67,14 @@ const ArticlePage = ({
         </h1>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full mx-auto">
           <div className="flex items-center">
-            <Image
+            <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b84f94b6-f181-46a3-14ea-105697359800/public" alt="左子祯" className="rounded-full h-6 w-6" />
+            {/* <Image
               alt="左子祯"
               height={24}
               width={24}
               src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b84f94b6-f181-46a3-14ea-105697359800/public"
               className="rounded-full"
-            />
+            /> */}
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {'左子祯 / '}
               {format(parseISO(publishedDate), 'yyyy.MM.dd')}
@@ -114,14 +115,15 @@ const ArticlePage = ({
         >
           <div className="prose dark:prose-dark max-w-none w-full pt-16">
             {coverImage ? (
-              <Image
-                alt={'article cover'}
-                src={coverImage}
-                width={1501 / 2}
-                height={712 / 2}
-                className=""
-                priority
-              />
+              //  <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b84f94b6-f181-46a3-14ea-105697359800/public" alt="左子祯" className="rounded-full h-6 w-6" />
+              // <Image
+              //   alt={'article cover'}
+              //   src={coverImage}
+              //   width={1501 / 2}
+              //   height={712 / 2}
+              //   className=""
+              //   priority
+              // />
             ) : null}
 
             {content.map((block) => (
