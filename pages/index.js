@@ -175,7 +175,7 @@ export default function Home({ featuredProject, posts }) {
             />
           ))}
         </div>
-        <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+        {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           项目
         </h3>
         <div className="space-y-8 mb-16">
@@ -187,7 +187,7 @@ export default function Home({ featuredProject, posts }) {
               href={d.href}
             />
           ))}
-        </div>
+        </div> */}
 
         {/* <h3 className="font-bold text-2xl md:text-4xl mb-4 mt-12 text-gray-900 dark:text-gray-100">
           Recent Videos
