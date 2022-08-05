@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Client } from '@notionhq/client';
 import { getFeaturedProjectData, getArticlePage } from "@/lib/notion";
 
-// import Image from 'next/image';
+import Image from 'next/image';
 import slugify from 'slugify';
 import { renderBlocks } from '@/lib/renderBlocks';
 

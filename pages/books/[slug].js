@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Client } from '@notionhq/client';
 import { getBooksData, getArticlePage } from "@/lib/notion";
 
-// import Image from 'next/image';
+import Image from 'next/image';
 import slugify from 'slugify';
 import { renderBlocks } from '@/lib/renderBlocks';
 
@@ -25,13 +25,12 @@ export default function BooksPage({
       <article className="flex flex-col justify-center items-start mx-auto mb-16">
         <div className="flex gap-8 dark:bg-gray-800 p-6 rounded-xl w-full items-start max-w-2xl">
           <div className="h-56 aspect-[7/10] relative rounded-lg shadow-xl">
-            <img src={thumbnailsUrl} alt="cover" className="rounded-lg object-cover" />
-            {/* <Image
+            <Image
               src={thumbnailsUrl}
               alt="cover"
               layout="fill"
               className="rounded-lg object-cover"
-            /> */}
+            />
           </div>
           <div className="flex flex-col justify-between py-1">
             <div className='space-y-1 mb-3'>

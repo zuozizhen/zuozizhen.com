@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import { format } from 'date-fns';
 
 /**
@@ -36,13 +36,13 @@ export default function Tweet({
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* <Image
+          <Image
             alt={author.username}
             height={48}
             width={48}
             src={author.profile_image_url}
             className="rounded-full"
-          /> */}
+          />
         </a>
         <a
           href={authorUrl}
@@ -102,14 +102,14 @@ export default function Tweet({
           }
         >
           {media.map((m) => (
-            // <Image
-            //   key={m.media_key}
-            //   alt={text}
-            //   height={m.height}
-            //   width={m.width}
-            //   src={m.url}
-            //   className="rounded"
-            // />
+            <Image
+              key={m.media_key}
+              alt={text}
+              height={m.height}
+              width={m.width}
+              src={m.url}
+              className="rounded"
+            />
           ))}
         </div>
       ) : null}

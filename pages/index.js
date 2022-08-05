@@ -94,7 +94,13 @@ export default function Home({ featuredProject, posts }) {
                 Smartisan 7.0
               </a>
             </Link>
-            &nbsp;设计系统搭建。你可以在&nbsp;
+            &nbsp;设计系统搭建。独立创办了&nbsp;
+            <Link href="https://figmachina.com">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500">
+                FigmaChina
+              </a>
+            </Link>
+            &nbsp;。你可以在&nbsp;
             <Link href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442">
               <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 border-rose-500 hover:opacity-70">
                 小红书
@@ -150,7 +156,7 @@ export default function Home({ featuredProject, posts }) {
             ))}
           </div>
         </div>
-        {/* <div className='flex items-center justify-between mb-8'>
+        <div className='flex items-center justify-between mb-8'>
           <h3 className="font-bold text-lg sm:text-xl text-gray-900 dark:text-gray-100">
             作品
           </h3>
@@ -174,7 +180,7 @@ export default function Home({ featuredProject, posts }) {
               duty={project.properties.Duty.rich_text[0].text.content}
             />
           ))}
-        </div> */}
+        </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           项目
         </h3>

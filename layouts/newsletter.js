@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
 
 import Container from '@/components/Container';
@@ -19,13 +19,13 @@ export default function NewsletterLayout({ children, frontMatter }) {
         />
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
           <div className="flex items-center">
-            {/* <Image
+            <Image
               alt="左子祯"
               height={24}
               width={24}
               src="/avatar.jpg"
               className="rounded-full"
-            /> */}
+            />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {frontMatter.by}
               {'左子祯 / '}

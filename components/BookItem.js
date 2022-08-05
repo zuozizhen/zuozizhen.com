@@ -1,5 +1,5 @@
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from 'next/image';
 import ExternalLink from '@/components/ExternalLink';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 import slugify from 'slugify';
@@ -20,13 +20,12 @@ const BookItem = ({
     <div className="h-56 aspect-[7/10] relative rounded-lg shadow-xl">
       <Link href={`/books/${slugify(slug)}`} passHref>
         <a>
-          <img src={thumbnailsUrl} alt="cover" className="rounded-lg object-cover" />
-          {/* <Image
+          <Image
             src={thumbnailsUrl}
             alt="cover"
             layout="fill"
             className="rounded-lg object-cover"
-          /> */}
+          />
         </a>
       </Link>
     </div>
