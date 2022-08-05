@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  // useAnalytics();
+  useAnalytics();
   // useEffect(() => {
   //   init(process.env.NEXT_PUBLIC_G);
   // }, []);
