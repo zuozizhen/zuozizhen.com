@@ -12,9 +12,9 @@ export const Text = ({ text }) => {
         key={index}
         className={[
           bold ? 'font-bold' : null,
-          italic ? 'italic' : null,
+          italic ? 'italic text-amber-500' : null,
           code
-            ? 'bg-indigo-200 dark:bg-indigo-900 dark:bg-opacity-50 text-indigo-500 dark:text-indigo-200 py-0.5 px-2 rounded mx-1 inline-block align-middle tracking-tight text-base'
+            ? 'bg-indigo-200 dark:bg-indigo-900 dark:bg-opacity-50 text-indigo-500 dark:text-indigo-200 py-0.5 px-2 rounded mx-1 inline-block align-middle tracking-tight text-base font-mono'
             : null,
           strikethrough ? 'line-through' : null,
           underline ? 'underline' : null

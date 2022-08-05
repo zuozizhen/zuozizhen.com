@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 // import { google } from 'googleapis';
 
 // import googleAuth from '@/lib/google/auth';
@@ -8,12 +9,11 @@ import projects from '@/data/projects';
 import Card from '@/components/Card';
 import BlogPost from '../components/BlogPost';
 import { getPublishedArticles } from "@/lib/notion";
+import { getFeaturedProjectData } from "@/lib/notion";
+import DesignCard from '@/components/DesignCard';
+import slugify from 'slugify';
+
 // import Subscribe from '../components/Subscribe';
-import ProjectCard from '../components/ProjectCard';
-import Countdown from 'react-countdown';
-import TimeAgo from 'react-timeago';
-import frenchStrings from 'react-timeago/lib/language-strings/fr';
-import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 
 // import { getAllFilesFrontMatter } from '@/lib/mdx';
 
@@ -22,6 +22,23 @@ import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 
 
 // import VideoCard from '../components/VideoCard';
+
+export const databaseId = process.env.BLOG_DATABASE_ID;
+export const projectId = process.env.PROJECT_DATABASE_ID;
+
+
+export const getStaticProps = async () => {
+  const database = await getPublishedArticles(databaseId);
+  const featuredProject = await getFeaturedProjectData(projectId);
+
+  return {
+    props: {
+      posts: database,
+      featuredProject
+    },
+    revalidate: 1,
+  };
+};
 
 // export async function getStaticProps() {
 //   const auth = await googleAuth.getClient();
@@ -43,70 +60,84 @@ import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 //   };
 // }
 
-export const databaseId = process.env.BLOG_DATABASE_ID;
 
-export default function Home({ posts }) {
+export default function Home({ featuredProject, posts }) {
   return (
     <Container>
       <div className="max-w-2xl mx-auto">
         <div className="space-y-4 mb-16">
           <h1 className="font-bold text-2xl md:text-3xl leading-9">
-            嗨，我是左子祯
+            Hi，我是左子祯
           </h1>
           <p className="leading-9">
             我是一名&nbsp;
             <Link href="/works">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-b border-dotted no-underline border-pink-500 hover:opacity-50">
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-pink-500 border-b border-dotted no-underline hover:opacity-70">
                 产品设计师
               </a>
             </Link>
-            &nbsp;和&nbsp;
+            &nbsp;、&nbsp;
             <Link href="https://github.com/zuozizhen">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-50">
+              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-70">
                 独立开发者
               </a>
             </Link>
-            ，也乐于分享和 &nbsp;
-            <Link href="/blog">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-emerald-400 border-b border-dotted no-underline border-lime-500 hover:opacity-50">
-                写一点东西
-              </a>
-            </Link>
-            ，前&nbsp;
-            <Link href="https://mastergo.com/">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+            ，曾负责&nbsp;
+            <Link href="https://mastergo.com">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500">
                 MasterGo
               </a>
             </Link>
-            &nbsp;产品设计负责人，也曾在锤子科技和字节跳动就职，你可以在&nbsp;
-            <Link href="https://zhihu.com/people/ZiJen">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
-                知乎
+            &nbsp; 0-1、
+            <Link href="https://www.smartisan.com/jianguopro3/os">
+              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500">
+                Smartisan 7.0
               </a>
             </Link>
-            &nbsp;或&nbsp;
-            <Link href="https://www.linkedin.com/in/zuozizhen">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
-                领英
+            &nbsp;设计系统搭建。你可以在&nbsp;
+            <Link href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 border-rose-500 hover:opacity-70">
+                小红书
               </a>
             </Link>
-            &nbsp;上找到我，或者关注我的&nbsp;
+            &nbsp;、
+            <Link href="https://twitter.com/zuozizhen">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 border-blue-500 hover:opacity-70">
+                Twitter
+              </a>
+            </Link>
+            &nbsp;、&nbsp;
             <Link href="/about/wechat">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-70">
                 个人公众号
               </a>
             </Link>
-            &nbsp;，想要随便聊一聊？欢迎通过邮箱联系我：
-            <Link href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-50">
-                hjsfzzz@gmail.com
+            &nbsp;这些平台关注我。或者了解我现在&nbsp;
+            <Link href="/now">
+              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-500 border-indigo-500 hover:opacity-70">
+                正在做的事情
               </a>
             </Link>
+            &nbsp;和&nbsp;
+            <Link href="/about">
+              <a className='font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 border-yellow-500 hover:opacity-70'>
+                关于我
+              </a>
+            </Link>
+            &nbsp;的更多信息。
           </p>
+
         </div>
-        <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          最近文章
-        </h3>
+        <div className='flex items-center justify-between mb-8'>
+          <h3 className="font-bold text-lg sm:text-xl text-gray-900 dark:text-gray-100">
+            最新文章
+          </h3>
+          <Link href="/blog">
+            <a className='font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
+              查看全部
+            </a>
+          </Link>
+        </div>
         <div className="mb-20">
           <div className="mb-4 mt-4">
             {!posts.length && (
@@ -119,6 +150,31 @@ export default function Home({ posts }) {
             ))}
           </div>
         </div>
+        {/* <div className='flex items-center justify-between mb-8'>
+          <h3 className="font-bold text-lg sm:text-xl text-gray-900 dark:text-gray-100">
+            作品
+          </h3>
+          <Link href="/blog">
+            <a className='font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
+              查看全部
+            </a>
+          </Link>
+        </div>
+        <div className="mb-16 flex gap-4">
+          {featuredProject.slice(0, 2).map((project) => (
+            <DesignCard
+              key={project.properties.Name.title[0].text.content}
+              title={project.properties.Name.title[0].text.content}
+              // href={`/projects/${slugify(project.id)}`}
+              href={`/works/${slugify(project.properties.Slug.rich_text[0].text.content)}`}
+              // href={project.properties.Link.url}
+              summary={project.properties.Summary.rich_text[0].text.content}
+              coverSrc={project.properties?.Cover?.files[0]?.file?.url ||
+                project.properties.Cover?.files[0]?.external?.url}
+              duty={project.properties.Duty.rich_text[0].text.content}
+            />
+          ))}
+        </div> */}
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           项目
         </h3>
@@ -144,14 +200,3 @@ export default function Home({ posts }) {
     </Container>
   );
 }
-
-export const getStaticProps = async () => {
-  const database = await getPublishedArticles(databaseId);
-
-  return {
-    props: {
-      posts: database,
-    },
-    revalidate: 1,
-  };
-};

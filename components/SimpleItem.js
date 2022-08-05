@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import ExternalLink from '@/components/ExternalLink';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
@@ -21,21 +21,23 @@ const SimpleItem = ({
   <div className="flex gap-6 items-center">
     {thumbnailsUrl ? (
       <div className="w-24 h-36 relative shrink-0 rounded-lg shadow-xl">
-        <Image
+        <img src={thumbnailsUrl} alt="cover" className="rounded-lg object-cover" />
+        {/* <Image
           src={thumbnailsUrl}
           alt="avatar"
           layout="fill"
           className="rounded-lg object-cover"
-        />
+        /> */}
       </div>
     ) : imgSrc ? (
-      <div className="w-14 h-14 relative shrink-0 rounded-xl">
-        <Image
+        <div className="w-14 h-14 relative shrink-0 rounded-xl">
+          <img src={imgSrc} alt="avatar" className="rounded-xl object-cover" />
+        {/* <Image
           src={imgSrc}
           alt="avatar"
           layout="fill"
           className="rounded-xl object-cover"
-        />
+        /> */}
       </div>
     ) : null}
 
@@ -92,6 +94,7 @@ export async function getStaticProps() {
     props: {
       favicon
     },
+    revalidate: 1,
   }
 };
 

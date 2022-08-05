@@ -1,9 +1,5 @@
 import useSWR from 'swr';
-import fetcher from '@/lib/fetcher';
-
-import UseAnimations from 'react-useanimations';
-import activity from 'react-useanimations/lib/activity';
-
+import { fetcher } from '@/lib/fetcher';
 
 export default function NowPlaying() {
   const { data } = useSWR('/api/now-playing', fetcher);
@@ -28,7 +24,7 @@ export default function NowPlaying() {
           </a>
         ) : (
           <p className="text-gray-800 dark:text-gray-200 font-semibold">
-            这里会显示我正在听的歌
+            没有在听音乐
           </p>
         )}
         <span className="mx-2 text-gray-500 dark:text-gray-300 hidden sm:block">

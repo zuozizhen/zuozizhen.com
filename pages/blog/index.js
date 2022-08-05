@@ -1,10 +1,8 @@
-import Link from "next/link";
 import { getPublishedArticles } from "@/lib/notion";
 
 import Container from '@/components/Container';
 import BlogPost from '@/components/BlogPost';
 import PageTitle from '@/components/PageTitle';
-import slugify from 'slugify';
 
 export const databaseId = process.env.BLOG_DATABASE_ID;
 
@@ -19,8 +17,7 @@ export default function Home({ posts }) {
           title="写作"
           textColor="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-emerald-400"
         >
-          自 2017
-          年以来，我一直在网上写作，主要是关于产品设计和我感兴趣的一些方面。我总共在这个网站上写了
+          自 2017 年以来，我一直在网上写作，主要是关于产品设计和我感兴趣的一些方面。我总共在这个网站上写了
           {posts.length} 篇文章。可以使用下面的搜索按标题过滤。
         </PageTitle>
 
