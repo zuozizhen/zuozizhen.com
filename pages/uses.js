@@ -5,7 +5,7 @@ import { renderBlocks } from '@/lib/renderBlocks';
 
 export default function Uses({ content }) {
   return (
-    <Container title="装备 – 左子祯" key="about">
+    <Container title="装备 – 左子祯" key="">
       <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto mb-16 space-y-6">
         <div className="prose dark:prose-dark mx-auto">
           {content.map((block) => (
