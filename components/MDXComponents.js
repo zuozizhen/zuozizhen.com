@@ -1,6 +1,8 @@
 import Link from 'next/link';
-// import Image from 'next/Image';
+import Image from 'next/image';
 
+// import ProsCard from '@/components/ProsCard';
+// import ConsCard from '@/components/ConsCard';
 import Gumroad from '@/components/metrics/Gumroad';
 import Unsplash from '@/components/metrics/Unsplash';
 import Analytics from '@/components/metrics/Analytics';
@@ -32,7 +34,7 @@ const CustomLink = (props) => {
 };
 
 const MDXComponents = {
-  // Image,
+  Image,
   ImageWithTheme,
   Separator,
   WithSubTitle,

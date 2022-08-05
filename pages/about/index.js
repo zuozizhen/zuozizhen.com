@@ -2,9 +2,6 @@ import React, { Fragment } from 'react';
 import Container from '@/components/Container';
 import workHistoryData from '@/data/workHistoryData';
 import SimpleItem from '@/components/SimpleItem';
-import Life from '@/components/metrics/Life';
-import Read from '@/components/metrics/Read';
-import Mark from '@/components/metrics/Mark';
 
 import { getPage } from '@/lib/notion';
 import { renderBlocks } from '@/lib/renderBlocks';
@@ -13,17 +10,10 @@ export default function About({ content }) {
   return (
     <Container title="关于我 – 左子祯" key="about">
       <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto mb-16 space-y-6">
-        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
-          <Life />
-          {/* <GitHub /> */}
-          {/* <Read /> */}
-          {/* <Mark /> */}
-        </div>
-        <div className="prose dark:prose-dark mx-auto w-full">
+        <div className="prose dark:prose-dark mx-auto">
           {content.map((block) => (
             <Fragment key={block.id}>{renderBlocks(block)}</Fragment>
           ))}
-          {/* <pre>{JSON.stringify(content,null,2)}</pre> */}
         </div>
       </div>
     </Container>
@@ -37,6 +27,6 @@ export const getStaticProps = async () => {
     props: {
       content: data
     },
-    revalidate: 1
+    revalidate: 1800
   };
 };

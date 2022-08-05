@@ -115,7 +115,7 @@ export const CodeBlock = ({ code, language, metastring }) => {
 
                 return (
                   <div key={i} {...lineProps}>
-                    <span className="inline-block w-8 ml-4 select-none opacity-30">
+                    <span className="inline-block w-8 py-2 ml-4 select-none opacity-30">
                       {i + 1}
                     </span>
                     {line.map((token, key) => (

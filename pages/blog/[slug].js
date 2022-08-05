@@ -13,7 +13,7 @@ import Container from '@/components/Container';
 import { Callout } from '@/components/blocks/Callout';
 import { Client } from '@notionhq/client';
 import { CodeBlock } from '@/components/blocks/Codeblock';
-// import Image from 'next/image';
+import Image from 'next/image';
 import PageViews from '@/components/PageViews';
 import Reactions from '@/components/Reactions';
 import { ShareArticle } from '@/components/ShareArticle';
@@ -54,27 +54,26 @@ const ArticlePage = ({
 
   return (
      <Container
-      title={`${title} - 左子祯`}
+      title={`${title} - Braydon Coyer`}
       description={summary}
       // imageUrl={socialImageConf}
       date={new Date(publishedDate).toISOString()}
       sponsoredArticle={sponsoredArticleUrl !== null}
       sponsoredUrl={sponsoredArticleUrl}
      >
-      <article className="flex flex-col justify-center items-start mx-auto mb-16 max-w-2xl">
+      <article className="flex flex-col justify-center items-start mx-auto mb-16">
         <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full mx-auto">
           {title}
         </h1>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full mx-auto">
           <div className="flex items-center">
-            <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b84f94b6-f181-46a3-14ea-105697359800/public" alt="左子祯" className="rounded-full h-6 w-6" />
-            {/* <Image
+            <Image
               alt="左子祯"
               height={24}
               width={24}
-              src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b84f94b6-f181-46a3-14ea-105697359800/public"
+              src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210706205657.jpg"
               className="rounded-full"
-            /> */}
+            />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {'左子祯 / '}
               {format(parseISO(publishedDate), 'yyyy.MM.dd')}
@@ -115,16 +114,14 @@ const ArticlePage = ({
         >
           <div className="prose dark:prose-dark max-w-none w-full pt-16">
             {coverImage ? (
-              <div></div>
-              //  <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b84f94b6-f181-46a3-14ea-105697359800/public" alt="左子祯" className="rounded-full h-6 w-6" />
-              // <Image
-              //   alt={'article cover'}
-              //   src={coverImage}
-              //   width={1501 / 2}
-              //   height={712 / 2}
-              //   className=""
-              //   priority
-              // />
+              <Image
+                alt={'article cover'}
+                src={coverImage}
+                width={1501 / 2}
+                height={712 / 2}
+                className=""
+                priority
+              />
             ) : null}
 
             {content.map((block) => (
@@ -181,8 +178,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
   articleTitle = page.properties.Name.title[0].plain_text;
   publishedDate = page.properties.Published.date.start;
-  // lastEditedAt = page.properties.LastEdited.last_edited_time;
-  // sponsoredArticleUrl = page.properties.canonicalUrl?.url;
+  lastEditedAt = page.properties.LastEdited.last_edited_time;
+  sponsoredArticleUrl = page.properties.canonicalUrl?.url;
   summary = page.properties.Summary?.rich_text[0]?.plain_text;
   coverImage =
     page.properties.Cover?.files[0]?.file?.url ||
@@ -214,13 +211,13 @@ export const getStaticProps = async ({ params: { slug } }) => {
       content,
       title: articleTitle,
       publishedDate,
-      // lastEditedAt,
+      lastEditedAt,
       slug,
       // profilePicture,last_edited_time
       coverImage,
       summary,
       moreArticles,
-      // sponsoredArticleUrl
+      sponsoredArticleUrl
     },
     revalidate: 30
   };

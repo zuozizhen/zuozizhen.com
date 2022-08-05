@@ -1,16 +1,30 @@
 const siteMetadata = {
-  title: '左子祯 – 热爱创造和探索',
-  author: '左子祯',
+  title: 'Braydon Coyer – full-stack engineer, writer, creative developer.',
+  author: 'Braydon Coyer',
+  headerTitle: "Braydon's Portfolio",
   description:
-    "我是左子祯，前 MasterGo 产品设计负责人，曾在锤子科技和字节跳动就职，一名产品设计师和独立开发者",
-  language: 'zh-cn',
+    "I'm Braydon. I'm a senior full stack engineer specializing in the front-end. Welcome to my corner of the internet. I'm glad you're here!",
+  language: 'en-us',
   siteUrl: 'https://zuozizhen.com',
   siteRepo: 'https://github.com/zuozizhen/zuozizhen.com',
-  email: 'mailto:hjsfzzz@gmail.com',
-  github: 'https://github.com/zuozizhen',
-  twitter: 'https://twitter.com/zuozizhen',
-  twitterHandle: '@zuozizhen',
-  locale: 'zh-cn',
+  //   siteLogo: "/static/images/bundle_logo.svg",
+  avatarImage:
+    'https://res.cloudinary.com/braydoncoyer/image/upload/v1636553710/avatar.jpg',
+  socialBanner:
+    'https://res.cloudinary.com/braydoncoyer/image/upload/v1638884997/default-social-image.png',
+  email: 'mailto:braydon@coyer.net',
+  github: 'https://github.com/braydoncoyer',
+  twitter: 'https://twitter.com/BraydonCoyer',
+  twitterHandle: '@BraydonCoyer',
+  codepen: 'https://codepen.io/braydoncoyer',
+  linkedin: 'https://www.linkedin.com/in/braydon-coyer/',
+  newsletter: 'https://www.getrevue.co/profile/braydoncoyer',
+  resume: '/static/braydoncoyer_resume.pdf',
+  snippets:
+    'https://www.notion.so/9f35162787e0448094188b66304cf9f6?v=1b9c4e146edf46148fe7b1c5346cbea4',
+  carbonCode: 'CESDE27N',
+  carbonPlacement: 'braydoncoyerdev',
+  locale: 'en-US',
   analytics: {
     plausibleDataDomain: 'zuozizhen.com'
   }

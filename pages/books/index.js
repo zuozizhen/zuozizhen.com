@@ -16,8 +16,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       books: database,
-    },
-    revalidate: 1,
+    }
   };
 };
 
@@ -25,20 +24,18 @@ export default function Home({ books }) {
   return (
     <Container title="书单 – 左子祯">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
-        <PageTitle title="我读过的书" description="这里会不定时更新我的阅读书单。" />
+        <PageTitle title="书单" description="这里记录了我曾经看过的书" />
         {/* <pre>{ JSON.stringify(books, null, 2) }</pre> */}
-        <div className="space-y-12">
+        <div className="grid grid-cols-3 gap-10">
           {books.map((book) => (
             <BookItem
-              key={book.id}
+              key={book.properties.Name.title[0].text.content}
               title={book.properties.Name.title[0].text.content}
-              author={book.properties.Author.rich_text[0]?.text.content}
+              author={book.properties.Author.rich_text[0].text.content}
               thumbnailsUrl={book.properties.Cover.files[0].file.url}
               // href={`/books/${slugify(book.id)}`}
               href={book.properties.Link.url}
               star={book.properties.Star.number}
-              introduction={book.properties.Introduction.rich_text[0]?.text.content}
-              slug={book.properties.Slug.rich_text[0]?.text.content}
             />
           ))}
         </div>
