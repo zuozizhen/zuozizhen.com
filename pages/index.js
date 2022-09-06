@@ -140,13 +140,13 @@ export default function Home({ featuredProject, posts }) {
         </div>
         <div className="mb-20">
           <div className="mb-4 mt-4">
-            {!posts.length && (
+            {!filteredBlogPosts.length && (
               <p className="text-gray-500 dark:text-gray-500 mb-4">
                 没有找到文章
               </p>
             )}
-            {posts.slice(0, 4).map((post) => (
-              <BlogPost key={post.id} {...post} />
+            {filteredBlogPosts.slice(0, 4).map((frontMatter) => (
+              <BlogPost key={frontMatter.title} {...frontMatter} />
             ))}
           </div>
         </div>
