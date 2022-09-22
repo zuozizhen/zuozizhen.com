@@ -52,16 +52,9 @@ class MyDocument extends Document {
             name="google-site-verification"
           />
           <script src="https://cdn.usefathom.com/script.js" data-site="VEGAJXXX" defer></script>
-          <script type="text/javascript">
-            function loadScript(url, apikey) { var script =
-            document.createElement("script"); script.type = "text/javascript";
-            script.src = url; script.setAttribute("uploadmethod","grpc");
-            script.setAttribute("batchmax","20"); script.setAttribute("sendovertime",
-            "20000"); script.setAttribute("storesize","100");
-            script.setAttribute("id", "eaRecordScript");
-            script.setAttribute("projectKey", apikey);
-            document.head.appendChild(script); }
-            loadScript('https://edge.userview.net/uv/1.1.6/record.js', '48f6b58917654801bb2b23dad61867f6')
+
+          <script type="text/javascript" src="https://edge.userview.net/uv/1.1.6/record.js" projectKey="48f6b58917654801bb2b23dad61867f6">
+
           </script>
         </Head>
         <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 antialiased">
