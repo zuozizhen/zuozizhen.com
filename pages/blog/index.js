@@ -5,6 +5,7 @@ import BlogPost from '@/components/BlogPost';
 import PageTitle from '@/components/PageTitle';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
+
 export const databaseId = process.env.BLOG_DATABASE_ID;
 
 export default function Home({ posts }) {
@@ -28,7 +29,7 @@ export default function Home({ posts }) {
         </PageTitle>
 
         <div className="mb-4 mt-4">
-          {!posts.length && (
+          {!filteredBlogPosts.length && (
             <p className="text-gray-500 dark:text-gray-500 mb-4">
               没有找到文章
             </p>
