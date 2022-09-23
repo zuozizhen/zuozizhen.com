@@ -54,7 +54,7 @@ module.exports = {
               color: theme('colors.gray.300')
             },
             'h2,h3,h4': {
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
               'scroll-margin-top': spacing[32]
             },
             hr: { borderColor: theme('colors.gray.700') },

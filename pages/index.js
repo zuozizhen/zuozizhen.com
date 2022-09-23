@@ -12,6 +12,7 @@ import { getPublishedArticles } from "@/lib/notion";
 import { getFeaturedProjectData } from "@/lib/notion";
 import DesignCard from '@/components/DesignCard';
 import slugify from 'slugify';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 // import Subscribe from '../components/Subscribe';
 
@@ -27,18 +28,18 @@ export const databaseId = process.env.BLOG_DATABASE_ID;
 export const projectId = process.env.PROJECT_DATABASE_ID;
 
 
-export const getStaticProps = async () => {
-  const database = await getPublishedArticles(databaseId);
-  const featuredProject = await getFeaturedProjectData(projectId);
+// export const getStaticProps = async () => {
+//   const database = await getPublishedArticles(databaseId);
+//   const featuredProject = await getFeaturedProjectData(projectId);
 
-  return {
-    props: {
-      posts: database,
-      featuredProject
-    },
-    revalidate: 1,
-  };
-};
+//   return {
+//     props: {
+//       posts: database,
+//       featuredProject
+//     },
+//     revalidate: 1,
+//   };
+// };
 
 // export async function getStaticProps() {
 //   const auth = await googleAuth.getClient();
@@ -61,7 +62,12 @@ export const getStaticProps = async () => {
 // }
 
 
-export default function Home({ featuredProject, posts }) {
+export default function Home({ posts }) {
+  const filteredBlogPosts = posts
+    .sort(
+      (a, b) =>
+        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+    );
   return (
     <Container>
       <div className="max-w-2xl mx-auto">
@@ -160,7 +166,7 @@ export default function Home({ featuredProject, posts }) {
             </a>
           </Link>
         </div>
-        <div className="mb-16 flex gap-4">
+        {/* <div className="mb-16 flex gap-4">
           {featuredProject.slice(0, 2).map((project) => (
             <DesignCard
               key={project.properties.Name.title[0].text.content}
@@ -174,7 +180,7 @@ export default function Home({ featuredProject, posts }) {
               duty={project.properties.Duty.rich_text[0].text.content}
             />
           ))}
-        </div>
+        </div> */}
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           项目
         </h3>
@@ -199,4 +205,10 @@ export default function Home({ featuredProject, posts }) {
       </div>
     </Container>
   );
+}
+
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter('blog');
+
+  return { props: { posts } };
 }

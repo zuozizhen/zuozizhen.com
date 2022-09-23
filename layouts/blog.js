@@ -27,22 +27,14 @@ export default function BlogLayout({ children, frontMatter }) {
       type="article"
     >
       <article className="flex flex-col justify-center items-start mx-auto mb-16">
-        <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full max-w-screen-sm mx-auto">
+        <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full max-w-[42rem] mx-auto">
           {frontMatter.title}
         </h1>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full max-w-screen-sm mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full max-w-[42rem] mx-auto">
           <div className="flex items-center">
-            <Image
-              alt="左子祯"
-              height={24}
-              width={24}
-              src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210706205657.jpg"
-              className="rounded-full"
-            />
-            <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
-              {frontMatter.by}
-              {'左子祯 / '}
-              {format(parseISO(frontMatter.publishedAt), 'yyyy.MM.dd')}
+            <p className="text-sm text-gray-700 dark:text-gray-300">
+              {/* {frontMatter.readingTime} */}
+              {format(parseISO(frontMatter.publishedAt), 'yyyy 年 MM 月 dd 日')}
             </p>
           </div>
           {/* <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
