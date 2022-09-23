@@ -30,7 +30,7 @@ export default function About({ bucketList }) {
                 title={item.properties.Name.title[0]?.text.content}
                 summary={item.properties.Summary?.rich_text[0]?.plain_text}
                 index={index + 1}
-                status={item.properties.Status.status?.name}
+                status={item.properties.Done.checkbox}
               />
             ))}
           </div>
