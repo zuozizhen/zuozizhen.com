@@ -1,36 +1,5 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.data.files": [
-  {
-    "id": "SiteMetaData",
-    "title": "SiteMetaData",
-    "file": "[[workspace]]/data/siteMetadata.json",
-    "fileType": "json",
-    "labelField": "name",
-    "schema": {
-      "title": "SiteMetaData",
-      "type": "object",
-      "required": [
-        "title",
-        "url"
-      ],
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Name"
-        },
-        "url": {
-          "type": "string",
-          "title": "URL"
-        },
-        "description": {
-          "type": "string",
-          "title": "Description"
-        }
-      }
-    }
-  }
-],
   "frontMatter.framework.id": "next",
   "frontMatter.content.publicFolder": "public",
   "frontMatter.content.pageFolders": [
