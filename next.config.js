@@ -1,8 +1,5 @@
 module.exports = {
-  future: {
-    strictPostcssConfiguration: true
-  },
-  // swcMinify: true,
+  swcMinify: true,
   reactStrictMode: true,
   // target: 'serverless',
   pageExtensions: ['js', 'jsx'],

@@ -3,10 +3,16 @@ import { getPublishedArticles } from "@/lib/notion";
 import Container from '@/components/Container';
 import BlogPost from '@/components/BlogPost';
 import PageTitle from '@/components/PageTitle';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 export const databaseId = process.env.BLOG_DATABASE_ID;
 
 export default function Home({ posts }) {
+  const filteredBlogPosts = posts
+    .sort(
+      (a, b) =>
+        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+    );
   return (
     <Container
       title="文章 – 左子祯"
@@ -27,8 +33,8 @@ export default function Home({ posts }) {
               没有找到文章
             </p>
           )}
-          {posts.map((post) => (
-            <BlogPost key={post.id} {...post} />
+          {filteredBlogPosts.map((frontMatter) => (
+            <BlogPost key={frontMatter.title} {...frontMatter} />
           ))}
         </div>
       </div>
@@ -37,13 +43,8 @@ export default function Home({ posts }) {
 
 }
 
-export const getStaticProps = async () => {
-  const database = await getPublishedArticles(databaseId);
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter('blog');
 
-  return {
-    props: {
-      posts: database,
-    },
-    revalidate: 1,
-  };
-};
+  return { props: { posts } };
+}
