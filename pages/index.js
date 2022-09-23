@@ -12,11 +12,10 @@ import { getPublishedArticles } from "@/lib/notion";
 import { getFeaturedProjectData } from "@/lib/notion";
 import DesignCard from '@/components/DesignCard';
 import slugify from 'slugify';
-import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 // import Subscribe from '../components/Subscribe';
 
-// import { getAllFilesFrontMatter } from '@/lib/mdx';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 // const formatter = buildFormatter(frenchStrings);
 
@@ -166,8 +165,8 @@ export default function Home({ posts }) {
             </a>
           </Link>
         </div>
-        {/* <div className="mb-16 flex gap-4">
-          {featuredProject.slice(0, 2).map((project) => (
+        <div className="mb-16 flex gap-4">
+          {/* {featuredProject.slice(0, 2).map((project) => (
             <DesignCard
               key={project.properties.Name.title[0].text.content}
               title={project.properties.Name.title[0].text.content}
@@ -179,8 +178,8 @@ export default function Home({ posts }) {
                 project.properties.Cover?.files[0]?.external?.url}
               duty={project.properties.Duty.rich_text[0].text.content}
             />
-          ))}
-        </div> */}
+          ))} */}
+        </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           项目
         </h3>
