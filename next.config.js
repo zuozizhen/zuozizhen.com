@@ -1,7 +1,10 @@
 module.exports = {
-  swcMinify: true,
+  future: {
+    strictPostcssConfiguration: true
+  },
+  // swcMinify: true,
   reactStrictMode: true,
-  // target: 'serverless',
+  target: 'serverless',
   pageExtensions: ['js', 'jsx'],
   images: {
     domains: [
@@ -55,7 +58,7 @@ module.exports = {
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
-  child-src *.youtube.com *.google.com *.twitter.com *.giscus.app;
+  child-src *.youtube.com *.google.com *.twitter.com *.giscus.app *.notion.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
   img-src * blob: data:;
   media-src 'none';
@@ -93,10 +96,4 @@ const securityHeaders = [
     key: 'Strict-Transport-Security',
     value: 'max-age=31536000; includeSubDomains; preload'
   },
-  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
-  // Opt-out of Google FLoC: https://amifloced.org/
-  {
-    key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
-  }
 ];
