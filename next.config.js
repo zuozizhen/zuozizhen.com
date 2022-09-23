@@ -1,10 +1,10 @@
 module.exports = {
-  future: {
-    strictPostcssConfiguration: true
-  },
+  // target: 'serverless',
+  // future: {
+  //   strictPostcssConfiguration: true
+  // },
   // swcMinify: true,
   reactStrictMode: true,
-  target: 'serverless',
   pageExtensions: ['js', 'jsx'],
   images: {
     domains: [
@@ -51,7 +51,15 @@ module.exports = {
         'react-dom': 'preact/compat'
       });
     }
-
+    // config.resolve = {
+    //   ...config.resolve,
+    //   fallback: {
+    //     "fs": false,
+    //     "child_process": false,
+    //     "path": false,
+    //     "os": false,
+    //   }
+    // }
     return config;
   }
 };

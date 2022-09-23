@@ -9,5 +9,7 @@
     }
   ],
   "frontMatter.taxonomy.tags": [],
-  "frontMatter.taxonomy.categories": []
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.framework.startCommand": "yarn dev",
+  "frontMatter.preview.host": "http://localhost:3000"
 }

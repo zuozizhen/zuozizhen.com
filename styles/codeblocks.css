@@ -49,7 +49,7 @@ pre[class*='language-'] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  @apply text-teal-400 dark:text-emerald-400;
+  @apply text-emerald-400 dark:text-emerald-400;
 }
 
 .token.selector,

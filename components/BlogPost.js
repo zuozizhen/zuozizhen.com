@@ -3,7 +3,6 @@ import useSWR from 'swr';
 import fetcher from '@/lib/fetcher';
 
 import ArrowMotion from '@/components/ArrowMotion';
-import slugify from 'slugify';
 import PageViews from '@/components/PageViews';
 
 const BlogPost = ({ title, summary, slug }) => {
