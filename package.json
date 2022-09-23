@@ -34,6 +34,7 @@
     "big.js": "6.1.1",
     "caniuse-lite": "^1.0.30001409",
     "clsx": "^1.1.1",
+    "copy-to-clipboard": "^3.3.2",
     "date-fns": "2.22.1",
     "framer-motion": "^4.1.17",
     "ga-4-react": "^0.1.281",
