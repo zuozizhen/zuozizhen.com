@@ -9,12 +9,8 @@ import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 
-import siteMetadata from '@/data/siteMetadata';
 
 import Footer from '@/components/Footer';
-import NavLink from '@/components/NavLink';
-import navData from '@/data/navData';
-
 
 export default function Container(props) {
   const variants = {
@@ -31,14 +27,10 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: siteMetadata.title,
-    description: siteMetadata.description,
-    imageUrl: siteMetadata.socialBanner,
-    twitterHandle: siteMetadata.twitterHandle,
-    canonicalUrl: customMeta.sponsoredArticle
-      ? customMeta.sponsoredUrl
-      : `${siteMetadata.siteUrl}${router.asPath}`,
-    date: null,
+    title: '左子祯 - 产品设计师，独立开发者',
+    description: `我是一名产品设计师、独立开发者，目前是 MasterGo 的产品设计负责人`,
+    image: 'https://zuozizhen.com/static/images/banner.png',
+    type: 'website',
     ...customMeta
   };
 
@@ -50,43 +42,93 @@ export default function Container(props) {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`${siteMetadata.siteUrl}${router.asPath}`}
+          content={`https://zuozizhen.com${router.asPath}`}
         />
-        <link rel="canonical" href={meta.canonicalUrl} />
+        <link rel="canonical" href={`https://zuozizhen.com${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Zizhen" />
+        <meta property="og:site_name" content="左子祯" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.imageUrl} />
+        <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content={meta.twitterHandle} />
+        <meta name="twitter:site" content="@zuozizhen" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.imageUrl} />
+        <meta name="twitter:image" content={meta.image} />
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
       <nav className="w-full py-8 px-6 my-4 text-gray-900 sticky-nav sm:px-8 md:my-8 bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-gray-900 bg-white dark:bg-gray-900">
         <div className="flex items-center justify-between max-w-2xl mx-auto">
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center">
             <Link href="/">
               <a className="sm:block hidden font-medium dark:text-gray-100">
                 <LogoBlack className="mr-1 dark:hidden w-6 h-6" />
                 <LogoWhite className="mr-1 hidden dark:block w-6 h-6" />
               </a>
             </Link>
-              <div
-                className="font-medium sm:space-x-10 space-x-3 flex items-center text-gray-600 dark:text-gray-500"
-            >
-              {navData.map((d) => (
-                <NavLink
-                  key={d.title}
-                  title={d.title}
-                  pathUrl={d.route}
-                />
-              ))}
-              </div>
+            {router.pathname != '/' ? (
+              <motion.div
+                className="font-medium sm:space-x-10 space-x-4 flex items-center text-gray-600 dark:text-gray-500"
+                initial={{ opacity: 0, x: -10, y: 0 }}
+                animate={{ opacity: 1, x: 0, y: 0 }}
+                exit={{ opacity: 0, x: -10, y: 0 }}
+                transition={{ duration: 0.2, type: 'easeOut' }}
+              >
+                <Link href="/">
+                  <a
+                    className={clsx('sm:hidden block text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/'
+                    })}
+                  >
+                    首页
+                  </a>
+                </Link>
+                <Link href="/blog">
+                  <a
+                    className={clsx('text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/blog'
+                    })}
+                  >
+                    写作
+                  </a>
+                </Link>
+                <Link href="/project">
+                  <a
+                    className={clsx('text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/project'
+                    })}
+                  >
+                    项目
+                  </a>
+                </Link>
+                <Link href="/dashboard">
+                  <a
+                    className={clsx('text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/dashboard'
+                    })}
+                  >
+                    仪表盘
+                  </a>
+                </Link>
+
+                <Link href="/about">
+                  <a
+                    className={clsx('text-sm', {
+                      'font-bold text-gray-900 dark:text-gray-50':
+                        router.pathname === '/about'
+                    })}
+                  >
+                    关于我
+                  </a>
+                </Link>
+              </motion.div>
+            ) : null}
           </div>
           <div
             aria-label="Toggle Dark Mode"

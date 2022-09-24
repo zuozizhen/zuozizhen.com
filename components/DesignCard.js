@@ -4,17 +4,28 @@ import { motion } from 'framer-motion';
 
 import ArrowMotion from '@/components/ArrowMotion';
 
-const Card = ({ title, summary, imgSrc, coverSrc, href, duty }) => (
+const Card = ({ title, description, imgSrc, coverSrc, href, duty }) => (
   <Link href={href}>
-    <a id="design-card" className="flex gap-6 items-center rounded-xl w-full">
-      <div className="w-full aspect-[1.64/1] relative">
-        <Image
-          src={coverSrc}
-          alt="avatar"
-          layout="fill"
-          className="rounded-xl object-cover transition w-full"
-        />
-      </div>
+    <a id="design-card" className="flex gap-6 items-center rounded-xl h-full">
+      {coverSrc ? (
+        <div className="w-full h-80 relative flex-shrink-0">
+          <Image
+            src={coverSrc}
+            alt="avatar"
+            layout="fill"
+            className="rounded-xl object-cover transition"
+          />
+          <div
+            id="design-card-title"
+            className="absolute left-9 bottom-0 opacity-0"
+          >
+            <p className="font-bold text-2xl leading-9 text-gray-50">{title}</p>
+            <p className="leading-9 text-gray-100">
+             {description}
+            </p>
+          </div>
+        </div>
+      ) : null}
     </a>
   </Link>
 );

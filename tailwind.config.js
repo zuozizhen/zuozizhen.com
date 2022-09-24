@@ -2,21 +2,20 @@ const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js' ],
+  mode: 'jit',
+  purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        gray: colors.neutral,
+        gray: colors.trueGray,
         orange: colors.orange,
         violet: colors.violet,
         rose: colors.rose,
         cyan: colors.cyan,
         fuchsia: colors.fuchsia,
         lime: colors.lime,
-        emerald: colors.emerald,
-        amber: colors.amber,
-        sky: colors.sky,
+        emerald: colors.emerald
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
@@ -56,7 +55,7 @@ module.exports = {
               color: theme('colors.gray.300')
             },
             'h2,h3,h4': {
-              color: theme('colors.white'),
+              color: theme('colors.gray.100'),
               'scroll-margin-top': spacing[32]
             },
             hr: { borderColor: theme('colors.gray.700') },
@@ -84,10 +83,10 @@ module.exports = {
       })
     }
   },
-  // variants: {
-  //   extend: {
-  //     typography: ['dark']
-  //   }
-  // },
-  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')]
+  variants: {
+    extend: {
+      typography: ['dark']
+    }
+  },
+  plugins: [require('@tailwindcss/typography')]
 };

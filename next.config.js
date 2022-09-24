@@ -1,11 +1,9 @@
 module.exports = {
-  // target: 'serverless',
-  // future: {
-  //   strictPostcssConfiguration: true
-  // },
-  // swcMinify: true,
+  target: 'serverless',
+  future: {
+    strictPostcssConfiguration: true
+  },
   reactStrictMode: true,
-  pageExtensions: ['js', 'jsx'],
   images: {
     domains: [
       'i.scdn.co', // Spotify Album Art
@@ -16,11 +14,7 @@ module.exports = {
       'img2.doubanio.com', // 豆瓣图片
       'img3.doubanio.com', // 豆瓣图片
       'img9.doubanio.com', // 豆瓣图片
-      'cdn.dribbble.com', // 引用 dribbble 图片
-      's3.us-west-2.amazonaws.com', // notion 图片
-      'via.placeholder.com', //占位服务
-      'images.unsplash.com', // notion 图片
-      'zuozizhen.com'
+      'cdn.dribbble.com' // 引用 dribbble 图片
     ]
   },
   async headers() {
@@ -40,7 +34,7 @@ module.exports = {
 
     if (isServer) {
       require('./scripts/generate-sitemap');
-      // require('./scripts/generate-rss');
+      require('./scripts/generate-rss');
     }
 
     // Replace React with Preact only in client production build
@@ -51,22 +45,14 @@ module.exports = {
         'react-dom': 'preact/compat'
       });
     }
-    // config.resolve = {
-    //   ...config.resolve,
-    //   fallback: {
-    //     "fs": false,
-    //     "child_process": false,
-    //     "path": false,
-    //     "os": false,
-    //   }
-    // }
+
     return config;
   }
 };
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
-  child-src *.youtube.com *.google.com *.twitter.com *.giscus.app *.notion.com;
+  child-src *.youtube.com *.google.com *.twitter.com *.giscus.app;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
   img-src * blob: data:;
   media-src 'none';
@@ -104,4 +90,10 @@ const securityHeaders = [
     key: 'Strict-Transport-Security',
     value: 'max-age=31536000; includeSubDomains; preload'
   },
+  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
+  // Opt-out of Google FLoC: https://amifloced.org/
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
+  }
 ];

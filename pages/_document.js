@@ -5,12 +5,14 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
+            rel="preload"
             href="/fonts/inter-var-latin.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
+            rel="preload"
             href="/fonts/JetBrainsMono-Medium.woff2"
             as="font"
             type="font/woff2"
@@ -18,6 +20,11 @@ class MyDocument extends Document {
           />
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
+          <link
+            rel="preconnect"
+            href="https://cdn.usefathom.com"
+            crossOrigin=""
+          />
           <link
             href="/static/favicons/apple-touch-icon.png"
             rel="apple-touch-icon"
@@ -51,8 +58,6 @@ class MyDocument extends Document {
             content="eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw"
             name="google-site-verification"
           />
-          <script src="https://cdn.usefathom.com/script.js" data-site="VEGAJXXX" defer></script>
-
         </Head>
         <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 antialiased">
           <Main />
