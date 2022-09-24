@@ -1,8 +1,9 @@
 module.exports = {
-  target: 'serverless',
-  future: {
-    strictPostcssConfiguration: true
-  },
+  // target: 'serverless',
+  swcMinify: true,
+  // future: {
+  //   strictPostcssConfiguration: true
+  // },
   reactStrictMode: true,
   images: {
     domains: [
