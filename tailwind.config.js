@@ -15,7 +15,8 @@ module.exports = {
         cyan: colors.cyan,
         fuchsia: colors.fuchsia,
         lime: colors.lime,
-        emerald: colors.emerald
+        emerald: colors.emerald,
+        sky: colors.sky
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
