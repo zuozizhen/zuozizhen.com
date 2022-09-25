@@ -27,10 +27,10 @@ export default function BlogLayout({ children, frontMatter }) {
       type="article"
     >
       <article className="flex flex-col justify-center items-start mx-auto mb-16">
-        <h1 className="font-bold text-2xl md:text-4xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full max-w-screen-sm mx-auto">
+        <h1 className="font-bold text-2xl md:text-3xl mb-4 text-gray-900 dark:text-gray-100 md:leading-snug w-full max-w-2xl mx-auto">
           {frontMatter.title}
         </h1>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full max-w-screen-sm mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center  mt-2 w-full max-w-2xl mx-auto">
           <div className="flex items-center">
             <Image
               alt="左子祯"
@@ -56,7 +56,7 @@ export default function BlogLayout({ children, frontMatter }) {
           transition={{ type: 'spring', stiffness: 80, duration: 0.6 }}
           className="opacity-0"
         >
-          <div className="prose dark:prose-dark max-w-none w-full pt-16">
+          <div className="prose dark:prose-dark  max-w-2xl pt-16">
             {frontMatter.image ? (
               <Image
                 alt={`Norway`}
