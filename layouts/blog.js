@@ -36,7 +36,7 @@ export default function BlogLayout({ children, frontMatter }) {
               alt="左子祯"
               height={24}
               width={24}
-              src="https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210706205657.jpg"
+              src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/263b0b5b-fb86-4494-2233-4ef2d431a800/public"
               className="rounded-full"
             />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
