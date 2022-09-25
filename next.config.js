@@ -15,7 +15,9 @@ module.exports = {
       'img2.doubanio.com', // 豆瓣图片
       'img3.doubanio.com', // 豆瓣图片
       'img9.doubanio.com', // 豆瓣图片
-      'cdn.dribbble.com' // 引用 dribbble 图片
+      'cdn.dribbble.com', // 引用 dribbble 图片
+      'imagedelivery.net',
+      's3.us-west-2.amazonaws.com'
     ]
   },
   async headers() {

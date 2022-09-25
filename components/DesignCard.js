@@ -4,28 +4,24 @@ import { motion } from 'framer-motion';
 
 import ArrowMotion from '@/components/ArrowMotion';
 
-const Card = ({ title, description, imgSrc, coverSrc, href, duty }) => (
-  <Link href={href}>
+const Card = ({ title, description, imgSrc, coverSrc, href, slug }) => (
+  <Link href={`/project/${slug}`}>
     <a id="design-card" className="flex gap-6 items-center rounded-xl h-full">
-      {coverSrc ? (
-        <div className="w-full h-80 relative flex-shrink-0">
-          <Image
-            src={coverSrc}
-            alt="avatar"
-            layout="fill"
-            className="rounded-xl object-cover transition"
-          />
-          <div
-            id="design-card-title"
-            className="absolute left-9 bottom-0 opacity-0"
-          >
-            <p className="font-bold text-2xl leading-9 text-gray-50">{title}</p>
-            <p className="leading-9 text-gray-100">
-             {description}
-            </p>
-          </div>
+      <div className="w-72 h-48 relative flex-shrink-0">
+        <Image
+          src={coverSrc}
+          alt="avatar"
+          layout="fill"
+          className="rounded-lg object-cover"
+        />
+      </div>
+      <div>
+        <div className="flex relative arrow-motion items-center mb-1 hover:text-gray-600 dark:hover:text-gray-500 transition">
+          <h4 className="font-bold">{title}</h4>
+          <ArrowMotion />
         </div>
-      ) : null}
+        <p className="prose text-gray-600 dark:text-gray-500">{description}</p>
+      </div>
     </a>
   </Link>
 );

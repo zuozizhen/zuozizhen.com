@@ -4,8 +4,9 @@ import Link from 'next/link';
 // import googleAuth from '@/lib/google/auth';
 import Timeline from '../components/Timeline';
 import Container from '../components/Container';
-import projects from '@/data/projects';
+// import projects from '@/data/projects';
 import Card from '@/components/Card';
+import DesignCard from '@/components/DesignCard';
 import BlogPost from '../components/BlogPost';
 // import Subscribe from '../components/Subscribe';
 import ProjectCard from '../components/ProjectCard';
@@ -43,8 +44,13 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 // }
 
 
-export default function Home({ posts }) {
+export default function Home({ posts, projects }) {
   const filteredBlogPosts = posts
+    .sort(
+      (a, b) =>
+        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+  );
+  const filteredProjectPosts = projects
     .sort(
       (a, b) =>
         Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
@@ -139,15 +145,27 @@ export default function Home({ posts }) {
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           项目
         </h3>
+        <div className="mb-20">
+          <div className="mb-4 mt-4">
+            {!filteredProjectPosts.length && (
+              <p className="text-gray-500 dark:text-gray-500 mb-4">
+                没有找到文章
+              </p>
+            )}
+            {filteredProjectPosts.slice(0, 4).map((frontMatter) => (
+              <DesignCard key={frontMatter.title} {...frontMatter} />
+            ))}
+          </div>
+        </div>
         <div className="space-y-8 mb-16">
-          {projects.map((d) => (
+          {/* {projects.map((d) => (
             <Card
               key={d.title}
               title={d.title}
               description={d.description}
               href={d.href}
             />
-          ))}
+          ))} */}
         </div>
 
         {/* <h3 className="font-bold text-2xl md:text-4xl mb-4 mt-12 text-gray-900 dark:text-gray-100">
@@ -164,6 +182,7 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog');
+  const projects = await getAllFilesFrontMatter('projects');
 
-  return { props: { posts } };
+  return { props: { posts, projects } };
 }
