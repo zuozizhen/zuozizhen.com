@@ -90,7 +90,7 @@ export default function BlogLayout({ children, frontMatter }) {
           </a>
         </div> */}
 
-        <Giscus
+        {/* <Giscus
           repo="zuozizhen/zuozizhen.com"
           repoId="MDEwOlJlcG9zaXRvcnk4ODk3MDIyMA=="
           category="Announcements"
@@ -99,7 +99,7 @@ export default function BlogLayout({ children, frontMatter }) {
           reactionsEnabled="1"
           emitMetadata="0"
           theme="dark"
-        />
+        /> */}
       </article>
     </Container>
   );

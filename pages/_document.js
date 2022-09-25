@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
         <Head>
           <link
             rel="preload"

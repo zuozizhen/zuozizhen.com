@@ -4,7 +4,7 @@ import Link from 'next/link';
 // import googleAuth from '@/lib/google/auth';
 import Timeline from '../components/Timeline';
 import Container from '../components/Container';
-// import projects from '@/data/projects';
+import itemprojects from '@/data/projects';
 import Card from '@/components/Card';
 import DesignCard from '@/components/DesignCard';
 import BlogPost from '../components/BlogPost';
@@ -14,8 +14,13 @@ import Countdown from 'react-countdown';
 import TimeAgo from 'react-timeago';
 import frenchStrings from 'react-timeago/lib/language-strings/fr';
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
+import BookItem from '@/components/BookItem';
+import { getBooksData } from "@/lib/notion";
+
 
 import { getAllFilesFrontMatter } from '@/lib/mdx';
+
+export const booksId = process.env.BOOKS_DATABASE_ID;
 
 // const formatter = buildFormatter(frenchStrings);
 
@@ -44,7 +49,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 // }
 
 
-export default function Home({ posts, projects }) {
+export default function Home({ posts, projects, books }) {
   const filteredBlogPosts = posts
     .sort(
       (a, b) =>
@@ -120,16 +125,9 @@ export default function Home({ posts, projects }) {
             &nbsp;的更多信息。
           </p>
         </div>
-        <div className='flex items-center justify-between mb-8'>
-          <h3 className="font-bold text-lg sm:text-xl text-gray-900 dark:text-gray-100">
-            最新文章
-          </h3>
-          <Link href="/blog">
-            <a className='font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
-              查看全部
-            </a>
-          </Link>
-        </div>
+        <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+          最新文章
+        </h3>
         <div className="mb-20">
           <div className="mb-4 mt-4">
             {!filteredBlogPosts.length && (
@@ -137,36 +135,76 @@ export default function Home({ posts, projects }) {
                 没有找到文章
               </p>
             )}
-            {filteredBlogPosts.slice(0, 4).map((frontMatter) => (
+            {filteredBlogPosts.slice(0, 3).map((frontMatter) => (
               <BlogPost key={frontMatter.title} {...frontMatter} />
             ))}
           </div>
+          <Link href="/blog">
+            <a className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'>
+              查看全部
+              <i className="ri-arrow-right-line"></i>
+            </a>
+          </Link>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           项目
         </h3>
         <div className="mb-20">
-          <div className="mb-4 mt-4">
+          <div className="mb-8 mt-4 gap-8 grid grid-cols-2">
             {!filteredProjectPosts.length && (
               <p className="text-gray-500 dark:text-gray-500 mb-4">
-                没有找到文章
+                没有找到项目
               </p>
             )}
-            {filteredProjectPosts.slice(0, 4).map((frontMatter) => (
+            {filteredProjectPosts.slice(0, 2).map((frontMatter) => (
               <DesignCard key={frontMatter.title} {...frontMatter} />
             ))}
           </div>
+          <Link href="/projects">
+            <a className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'>
+              查看全部
+              <i className="ri-arrow-right-line"></i>
+            </a>
+          </Link>
         </div>
+        <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+          最近读的书
+        </h3>
         <div className="space-y-8 mb-16">
-          {/* {projects.map((d) => (
+          {books.slice(0, 3).map((book) => (
+            <BookItem
+              key={book.id}
+              title={book.properties.Name.title[0].text.content}
+              author={book.properties.Author.rich_text[0]?.text.content}
+              thumbnailsUrl={book.properties.Cover.files[0].file.url}
+              // href={`/books/${slugify(book.id)}`}
+              href={book.properties.Link.url}
+              star={book.properties.Star.number}
+              introduction={book.properties.Introduction.rich_text[0]?.text.content}
+              slug={book.properties.Slug.rich_text[0]?.text.content}
+            />
+          ))}
+          <Link href="/books">
+            <a className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'>
+              查看全部
+              <i className="ri-arrow-right-line"></i>
+            </a>
+          </Link>
+        </div>
+        {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+          更多
+        </h3>
+        <div className="mb-8 mt-4 space-y-8">
+          {itemprojects.map((d) => (
             <Card
               key={d.title}
               title={d.title}
               description={d.description}
               href={d.href}
             />
-          ))} */}
-        </div>
+          ))}
+        </div> */}
+
 
         {/* <h3 className="font-bold text-2xl md:text-4xl mb-4 mt-12 text-gray-900 dark:text-gray-100">
           Recent Videos
@@ -183,6 +221,12 @@ export default function Home({ posts, projects }) {
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog');
   const projects = await getAllFilesFrontMatter('projects');
+  const database = await getBooksData(booksId);
 
-  return { props: { posts, projects } };
+  return {
+    props: {
+      posts, projects, books: database
+    },
+    revalidate: 1,
+  };
 }

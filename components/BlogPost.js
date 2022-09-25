@@ -1,12 +1,9 @@
 import Link from 'next/link';
-import useSWR from 'swr';
-import fetcher from '@/lib/fetcher';
 
 import ArrowMotion from '@/components/ArrowMotion';
 import PageViews from '@/components/PageViews';
 
 const BlogPost = ({ title, summary, slug }) => {
-  // const { data } = useSWR(`/api/views/${slug}`, fetcher);
 
   return (
     <Link href={`/blog/${slug}`} passHref>

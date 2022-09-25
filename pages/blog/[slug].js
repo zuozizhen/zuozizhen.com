@@ -1,7 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote';
 
 import { getFiles, getFileBySlug } from '@/lib/mdx';
-// import { getTweets } from '@/lib/twitter';
+import { getTweets } from '@/lib/twitter';
 import BlogLayout from '@/layouts/blog';
 import MDXComponents from '@/components/MDXComponents';
 

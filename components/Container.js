@@ -96,27 +96,26 @@ export default function Container(props) {
                     写作
                   </a>
                 </Link>
-                <Link href="/project">
+                <Link href="/projects">
                   <a
                     className={clsx('text-sm', {
                       'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/project'
+                        router.pathname === '/projects'
                     })}
                   >
                     项目
                   </a>
                 </Link>
-                <Link href="/dashboard">
+                <Link href="/now">
                   <a
                     className={clsx('text-sm', {
                       'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/dashboard'
+                        router.pathname === '/now'
                     })}
                   >
-                    仪表盘
+                    正在做什么
                   </a>
                 </Link>
-
                 <Link href="/about">
                   <a
                     className={clsx('text-sm', {

@@ -12,6 +12,7 @@ import ImageWithTheme from '@/components/ImageWithTheme';
 import Separator from '@/components/Separator';
 import WithSubTitle from '@/components/WithSubTitle';
 import FullWidthImage from '@/components/FullWidthImage';
+import Timeline from '@/components/Timeline';
 import BleedImage from '@/components/BleedImage';
 
 
@@ -48,6 +49,7 @@ const MDXComponents = {
   Step,
   Unsplash,
   YouTube,
+  Timeline,
   AwesomeSlider
 };
 

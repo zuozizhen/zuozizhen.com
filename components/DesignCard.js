@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import ArrowMotion from '@/components/ArrowMotion';
 
 const Card = ({ title, description, imgSrc, coverSrc, href, slug }) => (
-  <Link href={`/project/${slug}`}>
-    <a id="design-card" className="flex gap-6 items-center rounded-xl h-full">
-      <div className="w-72 h-48 relative flex-shrink-0">
+  <Link href={`/projects/${slug}`}>
+    <a id="design-card" className="space-y-4 items-center rounded-xl h-full">
+      <div className="w-full h-48 relative flex-shrink-0">
         <Image
           src={coverSrc}
           alt="avatar"
@@ -22,6 +22,7 @@ const Card = ({ title, description, imgSrc, coverSrc, href, slug }) => (
         </div>
         <p className="prose text-gray-600 dark:text-gray-500">{description}</p>
       </div>
+
     </a>
   </Link>
 );

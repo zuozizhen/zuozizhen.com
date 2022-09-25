@@ -58,7 +58,6 @@ const ContentSecurityPolicy = `
   child-src *.youtube.com *.google.com *.twitter.com *.giscus.app;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
   img-src * blob: data:;
-  media-src 'none';
   connect-src *;
 `;
 

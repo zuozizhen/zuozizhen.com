@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ExternalLink from '@/components/ExternalLink';
-import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 import slugify from 'slugify';
 import 'remixicon/fonts/remixicon.css'
 
@@ -17,7 +15,7 @@ const BookItem = ({
   slug
 }) => (
   <div className="flex gap-6">
-    <div className="h-56 w-full aspect-[7/10] relative rounded-lg shadow-xl">
+    <div className="h-40 aspect-[7/10] relative rounded-lg shadow-xl">
       <Link href={`/books/${slugify(slug)}`} passHref>
         <a>
           <Image
@@ -30,8 +28,9 @@ const BookItem = ({
       </Link>
     </div>
     <div className="flex flex-col justify-between py-1">
+
       <div className='space-y-1 mb-3'>
-        <h2 className="text-lg font-bold text-gray-900 dark:text-white dark:hover:text-gray-300">
+        <h2 className="font-bold text-gray-900 dark:text-white dark:hover:text-gray-300">
           <Link href={`/books/${slugify(slug)}`} passHref>{title}</Link>
         </h2>
         <div className='flex gap-2 items-center text-gray-600 dark:text-gray-500'>
@@ -45,12 +44,12 @@ const BookItem = ({
                 {
                 Array(star).fill('0').map((index) => (
                 // <SimpleItem {...book.fields} />
-                  <i key={index} className="ri-star-s-fill text-yellow-400"></i>
+                  <i key={Math.random()} className="ri-star-s-fill text-yellow-400"></i>
               ))}
               {
                 Array(5 - star).fill('0').map((index) => (
                   // <SimpleItem {...book.fields} />
-                  <i key={index} className="ri-star-s-fill text-gray-700"></i>
+                  <i key={Math.random()} className="ri-star-s-fill text-gray-700"></i>
               ))}
             </div>
           </div>
@@ -61,8 +60,8 @@ const BookItem = ({
       </div>
       <div className='flex gap-6'>
         {/* <Link href={`/books/${slugify(slug)}`} passHref>
-          <a className='text-sm font-bold text-gray-600 dark:text-gray-500'>
-            阅读我的笔记
+          <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
+            读书笔记
           </a>
         </Link> */}
         <Link href={href} passHref>
@@ -71,10 +70,8 @@ const BookItem = ({
           </a>
         </Link>
       </div>
-
-
-
     </div>
+
   </div>
 );
 
