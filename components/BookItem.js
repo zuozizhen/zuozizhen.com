@@ -17,7 +17,7 @@ const BookItem = ({
   slug
 }) => (
   <div className="flex gap-6">
-    <div className="h-56 aspect-[7/10] relative rounded-lg shadow-xl">
+    <div className="h-56 w-full aspect-[7/10] relative rounded-lg shadow-xl">
       <Link href={`/books/${slugify(slug)}`} passHref>
         <a>
           <Image

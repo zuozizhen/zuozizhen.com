@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.trueGray,
+        gray: colors.neutral,
         orange: colors.orange,
         violet: colors.violet,
         rose: colors.rose,
@@ -52,14 +52,14 @@ module.exports = {
               code: { color: theme('colors.blue.400') }
             },
             blockquote: {
-              borderLeftColor: theme('colors.gray.700'),
+              borderLeftColor: theme('colors.gray.600'),
               color: theme('colors.gray.300')
             },
             'h2,h3,h4': {
               color: theme('colors.gray.100'),
               'scroll-margin-top': spacing[32]
             },
-            hr: { borderColor: theme('colors.gray.700') },
+            hr: { borderColor: theme('colors.gray.600') },
             ol: {
               li: {
                 '&:before': { color: theme('colors.gray.500') }
@@ -76,7 +76,7 @@ module.exports = {
             },
             tbody: {
               tr: {
-                borderBottomColor: theme('colors.gray.700')
+                borderBottomColor: theme('colors.gray.600')
               }
             }
           }

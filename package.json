@@ -29,7 +29,7 @@
     "@radix-ui/react-icons": "^1.0.3",
     "@supabase/supabase-js": "^1.35.7",
     "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/typography": "^0.4.1",
+    "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.2.6",
     "big.js": "6.1.1",
     "clsx": "^1.1.1",
@@ -68,7 +68,7 @@
     "remixicon": "^2.5.0",
     "slugify": "^1.6.5",
     "swr": "0.5.6",
-    "tailwindcss": "^2.2.4",
+    "tailwindcss": "^3.1.8",
     "unsplash-js": "6.3.0"
   },
   "devDependencies": {
