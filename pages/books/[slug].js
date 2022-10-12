@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Container from '@/components/Container';
 import Link from 'next/link';
 import { Client } from '@notionhq/client';
-import { getBooksData, getArticlePage } from "@/lib/notion";
+import { getBooksData, getArticlePageByID } from "@/lib/notion";
 
 import Image from 'next/image';
 import slugify from 'slugify';
@@ -95,7 +95,7 @@ export const getStaticPaths = async () => {
       paths.push({
         params: {
           slug: slugify(
-            result.properties.Slug.rich_text[0].text.content
+            result.id
           ).toLowerCase()
         }
       });
@@ -123,7 +123,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
   const data = await getBooksData(process.env.BOOKS_DATABASE_ID);
 
-  const page = getArticlePage(data, slug);
+  const page = getArticlePageByID(data, slug);
 
   title = page.properties.Name.title[0].plain_text;
   thumbnailsUrl = page.properties.Cover.files[0].file.url;

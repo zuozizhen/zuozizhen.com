@@ -6,6 +6,7 @@ import Timeline from '../components/Timeline';
 import Container from '../components/Container';
 import itemprojects from '@/data/projects';
 import Card from '@/components/Card';
+import MovieCard from '@/components/MovieCard';
 import DesignCard from '@/components/DesignCard';
 import BlogPost from '../components/BlogPost';
 // import Subscribe from '../components/Subscribe';
@@ -21,6 +22,7 @@ import { getBooksData } from "@/lib/notion";
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 export const booksId = process.env.BOOKS_DATABASE_ID;
+export const moviesId = process.env.MOVIE_DATABASE_ID;
 
 // const formatter = buildFormatter(frenchStrings);
 
@@ -49,7 +51,7 @@ export const booksId = process.env.BOOKS_DATABASE_ID;
 // }
 
 
-export default function Home({ posts, projects, books }) {
+export default function Home({ posts, projects, books, movies }) {
   const filteredBlogPosts = posts
     .sort(
       (a, b) =>
@@ -181,7 +183,7 @@ export default function Home({ posts, projects, books }) {
               href={book.properties.Link.url}
               star={book.properties.Star.number}
               introduction={book.properties.Introduction.rich_text[0]?.text.content}
-              slug={book.properties.Slug.rich_text[0]?.text.content}
+              slug={book.id}
             />
           ))}
           <Link href="/books">
@@ -191,6 +193,28 @@ export default function Home({ posts, projects, books }) {
             </a>
           </Link>
         </div>
+
+        <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+          最近看的影视
+        </h3>
+        <div className="mb-16 grid grid-cols-3">
+          {movies.slice(0, 3).map((movie) => (
+            <MovieCard
+              key={movie.id}
+              title={movie.properties.Name.title[0].text.content}
+              introduction={movie.properties.Introduction.rich_text[0]?.text.content}
+              author={movie.properties.Author.rich_text[0]?.text.content}
+              star={movie.properties.Star.number}
+              thumbnailsUrl={movie.properties.Cover.files[0].file.url}
+            />
+          ))}
+        </div>
+        <Link href="/books">
+          <a className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'>
+            查看全部
+            <i className="ri-arrow-right-line"></i>
+          </a>
+        </Link>
         {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           更多
         </h3>
@@ -222,10 +246,11 @@ export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog');
   const projects = await getAllFilesFrontMatter('projects');
   const database = await getBooksData(booksId);
+  const moviedatabase = await getBooksData(moviesId);
 
   return {
     props: {
-      posts, projects, books: database
+      posts, projects, books: database, movies: moviedatabase
     },
     revalidate: 1,
   };

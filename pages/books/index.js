@@ -38,7 +38,7 @@ export default function Home({ books }) {
               href={book.properties.Link.url}
               star={book.properties.Star.number}
               introduction={book.properties.Introduction.rich_text[0]?.text.content}
-              slug={book.properties.Slug.rich_text[0]?.text.content}
+              slug={book.id}
             />
           ))}
         </div>
