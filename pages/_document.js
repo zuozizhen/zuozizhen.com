@@ -58,6 +58,12 @@ class MyDocument extends Document {
             content="eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw"
             name="google-site-verification"
           />
+
+        <script src="https://cdn.usefathom.com/script.js" data-site="VEGAJXXX" defer></script>
+
+        <script type="text/javascript" src="https://edge.userview.net/uv/1.1.6/record.js" projectKey="48f6b58917654801bb2b23dad61867f6">
+
+        </script>
         </Head>
         <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 antialiased">
           <Main />
