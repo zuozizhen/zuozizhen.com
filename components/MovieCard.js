@@ -7,7 +7,7 @@ import ArrowMotion from '@/components/ArrowMotion';
 const Card = ({ title, star, author, thumbnailsUrl, href, slug }) => (
   <Link href={`/`}>
     <a id="design-card" className="space-y-4 items-center rounded-xl h-full">
-      <div className="w-48 h-72 relative flex-shrink-0">
+      <div className="w-full h-72 relative flex-shrink-0">
         <Image
           src={thumbnailsUrl}
           alt="avatar"
