@@ -128,9 +128,9 @@ export const getStaticProps = async ({ params: { slug } }) => {
   title = page.properties.Name.title[0].plain_text;
   thumbnailsUrl = page.properties.Cover.files[0].file.url;
   href = page.properties.Link.url;
-  author = page.properties.Author.rich_text[0].text.content;
+  author = page.properties.Author.rich_text[0]?.text.content;
   star = page.properties.Star.number;
-  introduction = page.properties.Introduction.rich_text[0].text.content;
+  introduction = page.properties.Introduction.rich_text[0?.text.content;
 
   let blocks = await notion.blocks.children.list({
     block_id: page.id
