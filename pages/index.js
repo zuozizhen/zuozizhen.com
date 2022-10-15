@@ -152,7 +152,7 @@ export default function Home({ posts, projects, books, movies }) {
           项目
         </h3>
         <div className="mb-20">
-          <div className="mb-8 mt-4 gap-8 grid grid-cols-2">
+          <div className="mb-8 mt-4 gap-8 grid grid-cols-1 sm:grid-cols-2">
             {!filteredProjectPosts.length && (
               <p className="text-gray-500 dark:text-gray-500 mb-4">
                 没有找到项目
@@ -198,7 +198,7 @@ export default function Home({ posts, projects, books, movies }) {
           最近看的影视
         </h3>
         <div className='mb-16'>
-          <div className="mb-8 grid grid-cols-3 gap-8">
+          <div className="mb-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
             {movies.slice(0, 3).map((movie) => (
               <MovieCard
                 key={movie.id}

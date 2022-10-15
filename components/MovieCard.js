@@ -7,7 +7,7 @@ import ArrowMotion from '@/components/ArrowMotion';
 const Card = ({ title, star, author, thumbnailsUrl, href, slug }) => (
   <Link href={`/`}>
     <a id="design-card" className="space-y-4 items-center rounded-xl h-full">
-      <div className="w-full h-72 relative flex-shrink-0">
+      <div className="w-full aspect-[11/16] relative flex-shrink-0">
         <Image
           src={thumbnailsUrl}
           alt="avatar"
@@ -21,7 +21,7 @@ const Card = ({ title, star, author, thumbnailsUrl, href, slug }) => (
           <ArrowMotion />
         </div>
         <div className='flex text-xs font-semibold  max-w-none text-gray-600 dark:text-gray-500'>
-          我的推荐程度：
+          推荐程度：
           <div className='flex items-center'>
             {
               Array(star).fill('0').map((index) => (

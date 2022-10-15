@@ -39,7 +39,7 @@ const BookItem = ({
             </div>
             ·
             <div className='flex text-xs font-semibold  max-w-none'>
-              我的推荐程度：
+              推荐程度：
               <div className='flex items-center'>
                 {
                 Array(star).fill('0').map((index) => (
