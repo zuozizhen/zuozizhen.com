@@ -154,7 +154,7 @@ export default function Timeline() {
   return (
     <>
       <h3 className="font-bold text-xl mb-8 text-gray-900 dark:text-gray-100">
-        Timeline
+        遗愿清单
       </h3>
       <Year>2021</Year>
       <ul>

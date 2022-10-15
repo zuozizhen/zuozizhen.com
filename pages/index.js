@@ -238,7 +238,7 @@ export default function Home({ posts, projects, books, movies }) {
         {videos.map((video) => (
           <VideoCard key={video.id} {...video} />
         ))} */}
-        {/* <Timeline /> */}
+        <Timeline />
       </div>
     </Container>
   );
