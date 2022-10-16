@@ -37,6 +37,33 @@ export default function NowPlaying() {
         <p className="text-gray-500 dark:text-gray-500 max-w-max truncate">
           {data?.artist ?? 'Spotify'}
         </p>
+        {data?.songUrl ? (
+          <div className="text-gray-200 transform rotate-180 w-4 h-4 ml-2" title="3">
+            <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 24 24">
+              <rect x="0" y="0" width="3" height="3" fill="currentColor">
+                <animateTransform attributeType="xml"
+                  attributeName="transform" type="scale"
+                  values="1,1; 1,3; 1,1"
+                  begin="0s" dur="0.6s" repeatCount="indefinite" />
+              </rect>
+
+              <rect x="10" y="0" width="3" height="3" fill="currentColor">
+                <animateTransform attributeType="xml"
+                  attributeName="transform" type="scale"
+                  values="1,1; 1,3; 1,1"
+                  begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+              </rect>
+              <rect x="20" y="0" width="3" height="3" fill="currentColor">
+                <animateTransform attributeType="xml"
+                  attributeName="transform" type="scale"
+                  values="1,1; 1,3; 1,1"
+                  begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+              </rect>
+            </svg>
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
     </div>
   );
