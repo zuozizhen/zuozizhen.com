@@ -55,7 +55,7 @@ export default function About({ databaseChecked, databaseUnCheck }) {
 }
 
 export const getStaticProps = async () => {
-  const databaseChecked = await getBucketListDataChecked(bucketListId,'2019');
+  const databaseChecked = await getBucketListDataChecked(bucketListId);
   const databaseUnCheck = await getBucketListDataUnCheck(bucketListId);
 
   return {
