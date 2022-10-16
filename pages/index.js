@@ -173,6 +173,7 @@ export default function Home({ posts, projects, books, movies }) {
           最近读的书
         </h3>
         <div className="space-y-8 mb-16">
+          {/* <pre>{JSON.stringify(books,null, 2) }</pre> */}
           {books.slice(0, 3).map((book) => (
             <BookItem
               key={book.id}
@@ -238,7 +239,7 @@ export default function Home({ posts, projects, books, movies }) {
         {videos.map((video) => (
           <VideoCard key={video.id} {...video} />
         ))} */}
-        <Timeline />
+        {/* <Timeline /> */}
       </div>
     </Container>
   );
@@ -254,6 +255,6 @@ export async function getStaticProps() {
     props: {
       posts, projects, books: database, movies: moviedatabase
     },
-    revalidate: 1,
+    revalidate: 60,
   };
 }
