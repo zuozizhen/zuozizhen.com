@@ -200,7 +200,7 @@ export default function Home({ posts, projects, books, movies }) {
         </h3>
         <div className='mb-16'>
           <div className="mb-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {/* <pre>{JSON.stringify(movies, null, 2)}</pre> */}
+            <pre>{JSON.stringify(movies, null, 2)}</pre>
             {movies.slice(0, 3).map((movie) => (
               <MovieCard
                 key={movie.id}
