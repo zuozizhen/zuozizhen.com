@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
     props: {
       books: database,
     },
-    revalidate: 1,
+    revalidate: 30,
   };
 };
 
@@ -27,7 +27,7 @@ export default function Home({ books }) {
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <PageTitle title="我读过的书" description="这里会不断更新我新阅读的内容和我的笔记。" />
         {/* <pre>{ JSON.stringify(books, null, 2) }</pre> */}
-        <div className="space-y-12">
+        <div className="space-y-8">
           {books.map((book) => (
             <BookItem
               key={book.id}

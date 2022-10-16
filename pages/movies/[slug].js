@@ -19,9 +19,9 @@ export default function BooksPage({
   introduction
 }) {
   return (
-     <Container
+    <Container
       title={title}
-     >
+    >
       <article className="flex flex-col justify-center items-start mx-auto mb-16">
         <div className="flex gap-8 dark:bg-gray-800 p-6 rounded-xl w-full items-start max-w-2xl">
           <div className="h-56 aspect-[7/10] relative rounded-lg shadow-xl">
@@ -88,7 +88,7 @@ export default function BooksPage({
 
 export const getStaticPaths = async () => {
   const paths = [];
-  const data = await getBooksData(process.env.BOOKS_DATABASE_ID);
+  const data = await getBooksData(process.env.MOVIE_DATABASE_ID);
 
   data.forEach((result) => {
     if (result.object === 'page') {
@@ -121,12 +121,12 @@ export const getStaticProps = async ({ params: { slug } }) => {
     auth: process.env.NOTION_SECRET
   });
 
-  const data = await getBooksData(process.env.BOOKS_DATABASE_ID);
+  const data = await getBooksData(process.env.MOVIE_DATABASE_ID);
 
   const page = getArticlePageByID(data, slug);
 
   title = page.properties.Name.title[0].plain_text;
-  thumbnailsUrl = page.properties.Cover.files[0].file.url;
+  thumbnailsUrl = page.properties.Cover.files[0]?.external.url;
   href = page.properties.Link.url;
   author = page.properties.Author.rich_text[0]?.text.content;
   star = page.properties.Star.number;

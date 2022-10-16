@@ -1,26 +1,49 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import slugify from 'slugify';
 
 import ArrowMotion from '@/components/ArrowMotion';
 
-const Card = ({ title, star, author, thumbnailsUrl, href, slug }) => (
-  <Link href={`/`}>
-    <a id="design-card" className="space-y-4 items-center rounded-xl h-full">
-      <div className="w-full aspect-[11/16] relative flex-shrink-0">
+const Card = ({ title, star, author, thumbnailsUrl, href, slug, introduction }) => (
+  <div className="flex gap-6">
+    <div className="h-44 aspect-[7/10] relative rounded-lg shadow-xl">
+      <a href={href} passHref>
         <Image
           src={thumbnailsUrl}
-          alt="avatar"
+          alt="cover"
           layout="fill"
           className="rounded-lg object-cover"
         />
-      </div>
-      <div className='items-center space-y-2'>
-        <div className="flex relative arrow-motion items-center hover:text-gray-600 dark:hover:text-gray-500 transition">
-          <h4 className="font-bold">{title}</h4>
-          <ArrowMotion />
+      </a>
+    </div>
+    <div className="flex flex-col justify-between py-1">
+
+      <div className='space-y-1 mb-3'>
+        <h2 className="font-bold text-gray-900 dark:text-white dark:hover:text-gray-300">
+          <a href={href} passHref>{title}</a>
+        </h2>
+        <div className='flex gap-2 items-center text-gray-600 dark:text-gray-500'>
+          <div className="text-xs font-semibold  max-w-none ">
+            {author}
+          </div>
         </div>
-        <div className='flex text-xs font-semibold  max-w-none text-gray-600 dark:text-gray-500'>
+        <div className='text-sm text-gray-900 dark:text-gray-200 leading-6 pt-1'>
+          {introduction}
+        </div>
+      </div>
+      <div className='flex gap-6'>
+        {/* <Link href={`/books/${slugify(slug)}`} passHref>
+          <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
+            读书笔记
+          </a>
+        </Link> */}
+        {/* <Link href={href} passHref>
+          <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500' target="_blank" >
+            豆瓣链接
+          </a>
+        </Link> */}
+        <div className='flex text-xs font-semibold  max-w-none'>
           推荐程度：
           <div className='flex items-center'>
             {
@@ -36,8 +59,9 @@ const Card = ({ title, star, author, thumbnailsUrl, href, slug }) => (
           </div>
         </div>
       </div>
-    </a>
-  </Link>
+    </div>
+
+  </div>
 );
 
 export default Card;

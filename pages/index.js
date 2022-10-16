@@ -199,7 +199,7 @@ export default function Home({ posts, projects, books, movies }) {
           最近看的影视
         </h3>
         <div className='mb-16'>
-          <div className="mb-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mb-8 grid grid-cols-1 gap-8">
             {/* <pre>{JSON.stringify(movies, null, 2)}</pre> */}
             {movies.slice(0, 3).map((movie) => (
               <MovieCard
@@ -209,6 +209,7 @@ export default function Home({ posts, projects, books, movies }) {
                 author={movie.properties.Author.rich_text[0]?.text.content}
                 star={movie.properties.Star.number}
                 thumbnailsUrl={movie.properties.Cover.files[0]?.external.url}
+                slug={movie.id}
               />
             ))}
           </div>
