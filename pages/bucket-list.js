@@ -25,19 +25,14 @@ export default function About({ databaseChecked, databaseUnCheck }) {
           <div className="space-y-6 mb-16">
             {/* <pre>{JSON.stringify(bucketList,null, 2) }</pre> */}
             {databaseChecked.map((item, index) => (
-              <div className="font-bold text-xl mb-8 text-gray-900 dark:text-gray-100">
-                2019
-                {databaseChecked.map((item, index) => (
-                  <CheckList
-                    key={item.properties.Name.title[0].text.content}
-                    title={item.properties.Name.title[0].text.content}
-                    summary={item.properties.Summary?.rich_text[0]?.plain_text}
-                    index={index + 1}
-                    checked={item.properties.Done.checkbox}
-                    time={item.properties.CompleteTime?.date?.start}
-                  />
-                ))}
-              </div>
+              <CheckList
+                key={item.properties.Name.title[0].text.content}
+                title={item.properties.Name.title[0].text.content}
+                summary={item.properties.Summary?.rich_text[0]?.plain_text}
+                index={index + 1}
+                checked={item.properties.Done.checkbox}
+                time={item.properties.CompleteTime?.date?.start}
+              />
             ))}
           </div>
           <div className="space-y-6 mb-16">
