@@ -28,14 +28,14 @@ export default function BooksPage({
             <Image
               src={thumbnailsUrl}
               alt="cover"
-              layout="fill"
+              fill
               className="rounded-lg object-cover"
             />
           </div>
           <div className="flex flex-col justify-between py-1">
             <div className='space-y-1 mb-3'>
               <h2 className="text-lg font-bold text-gray-900 dark:text-white dark:hover:text-gray-300">
-                <Link href={href} passHref>{title}</Link>
+                <Link href={href}>{title}</Link>
               </h2>
               <div className='flex gap-2 items-center text-gray-600 dark:text-gray-500'>
                 <div className="text-xs font-semibold  max-w-none ">
@@ -62,7 +62,7 @@ export default function BooksPage({
                 {introduction}
               </div>
             </div>
-            <Link href={href} passHref>
+            <Link href={href}>
               <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500' target="_blank" >
                 豆瓣链接
               </a>

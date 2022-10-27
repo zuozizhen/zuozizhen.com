@@ -7,6 +7,7 @@ import { useAnalytics } from '@/lib/analytics';
 import MDXComponents from '@/components/MDXComponents';
 import { AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
+import Script from 'next/script'
 
 import { useEffect } from 'react';
 
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <ThemeProvider attribute="class">
+      <Script src="https://cdn.usefathom.com/script.js" data-site="VEGAJXXX" defer />
       <MDXProvider components={MDXComponents}>
         <AnimatePresence
           exitBeforeEnter

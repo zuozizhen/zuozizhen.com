@@ -71,64 +71,47 @@ export default function Home({ posts, projects, books, movies }) {
           </h1>
           <p className="leading-9">
             我是一名&nbsp;
-            <Link href="/works">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-pink-500 border-b border-dotted no-underline hover:opacity-70">
+            <Link className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 border-pink-500 border-b border-dotted no-underline hover:opacity-70" href="/projects">
                 产品设计师
-              </a>
             </Link>
             &nbsp;、&nbsp;
-            <Link href="https://github.com/zuozizhen">
-              <a className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-70">
+            <Link className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 border-b border-dotted no-underline border-cyan-500 hover:opacity-70" href="https://github.com/zuozizhen">
                 独立开发者
-              </a>
             </Link>
-            ，曾负责&nbsp;
-            <Link href="https://mastergo.com">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500">
-                MasterGo
-              </a>
-            </Link>
-            &nbsp; 0-1、
-            <Link href="https://www.smartisan.com/jianguopro3/os">
-              <a className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500">
+            ，曾在锤子科技、字节跳动负责&nbsp;
+            <Link className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500" href="https://www.smartisan.com/jianguopro3/os">
                 Smartisan 7.0
-              </a>
             </Link>
-            &nbsp;设计系统搭建。你可以在&nbsp;
-            <Link href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 border-rose-500 hover:opacity-70">
+            &nbsp;设计系统搭建。也曾在蓝湖负责&nbsp;
+            <Link className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500" href="https://mastergo.com">
+                MasterGo
+            </Link>
+            &nbsp; 0-1 的产品和设计。
+            你可以在&nbsp;
+            <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 border-rose-500 hover:opacity-70" href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442">
                 小红书
-              </a>
             </Link>
             &nbsp;、
-            <Link href="https://twitter.com/zuozizhen">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 border-blue-500 hover:opacity-70">
+            <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 border-blue-500 hover:opacity-70" href="https://twitter.com/zuozizhen">
                 Twitter
-              </a>
             </Link>
             &nbsp;、&nbsp;
-            <Link href="/about/wechat">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-70">
+            <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-70" href="/about/wechat">
                 个人公众号
-              </a>
             </Link>
-            &nbsp;这些平台关注我。或者了解我现在&nbsp;
-            <Link href="/now">
-              <a className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-500 border-indigo-500 hover:opacity-70">
+            &nbsp;这些平台关注我，或者了解我现在&nbsp;
+            <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-500 border-indigo-500 hover:opacity-70"  href="/now">
                 正在做的事情
-              </a>
             </Link>
-            &nbsp;和&nbsp;
-            <Link href="/about">
-              <a className='font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 border-yellow-500 hover:opacity-70'>
+            &nbsp;和更多&nbsp;
+            <Link className='font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 border-yellow-500 hover:opacity-70' href="/about">
                 关于我
-              </a>
             </Link>
-            &nbsp;的更多信息。
+            &nbsp;的信息。
           </p>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          最新文章
+          博客
         </h3>
         <div className="mb-20">
           <div className="mb-4 mt-4">
@@ -141,11 +124,9 @@ export default function Home({ posts, projects, books, movies }) {
               <BlogPost key={frontMatter.title} {...frontMatter} />
             ))}
           </div>
-          <Link href="/blog">
-            <a className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'>
+          <Link className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500' href="/blog">
               查看全部
               <i className="ri-arrow-right-line"></i>
-            </a>
           </Link>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
@@ -162,15 +143,13 @@ export default function Home({ posts, projects, books, movies }) {
               <DesignCard key={frontMatter.title} {...frontMatter} />
             ))}
           </div>
-          <Link href="/projects">
-            <a className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'>
+          <Link className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'  href="/projects">
               查看全部
               <i className="ri-arrow-right-line"></i>
-            </a>
           </Link>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          最近读的书
+          书单
         </h3>
         <div className="space-y-8 mb-16">
           {/* <pre>{JSON.stringify(books,null, 2) }</pre> */}
@@ -187,16 +166,14 @@ export default function Home({ posts, projects, books, movies }) {
               slug={book.id}
             />
           ))}
-          <Link href="/books">
-            <a className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'>
+          <Link className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500' href="/books">
               查看全部
               <i className="ri-arrow-right-line"></i>
-            </a>
           </Link>
         </div>
 
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          最近看的影视
+          影单
         </h3>
         <div className='mb-16'>
           <div className="mb-8 grid grid-cols-1 gap-8">
@@ -213,11 +190,9 @@ export default function Home({ posts, projects, books, movies }) {
               />
             ))}
           </div>
-          <Link href="/movies">
-            <a className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500'>
-              查看全部
-              <i className="ri-arrow-right-line"></i>
-            </a>
+          <Link className='flex gap-1 items-center w-fit font-bold no-underline hover:opacity-70 text-gray-500' href="/movies">
+            查看全部
+            <i className="ri-arrow-right-line"></i>
           </Link>
         </div>
         {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">

@@ -9,11 +9,8 @@ export default function FunctionCard({
   ...rest
 }) {
   return (
-    <Link href={`/snippets/${slug}`}>
-      <a
-        className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full"
-        {...rest}
-      >
+    <Link className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full"
+      {...rest} href={`/snippets/${slug}`}>
         <Image
           alt={title}
           height={32}
@@ -25,7 +22,6 @@ export default function FunctionCard({
           {title}
         </h3>
         <p className="mt-1 text-gray-700 dark:text-gray-400">{description}</p>
-      </a>
     </Link>
   );
 }

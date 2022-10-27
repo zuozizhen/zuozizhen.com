@@ -26,7 +26,7 @@ const SimpleItem = ({
         <Image
           src={thumbnailsUrl}
           alt="avatar"
-          layout="fill"
+          fill
           className="rounded-lg object-cover"
         />
       </div>
@@ -35,7 +35,7 @@ const SimpleItem = ({
         <Image
           src={imgSrc}
           alt="avatar"
-          layout="fill"
+          fill
           className="rounded-xl object-cover"
         />
       </div>

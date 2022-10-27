@@ -16,12 +16,12 @@ const BookItem = ({
 }) => (
   <div className="flex gap-6">
     <div className="h-44 aspect-[7/10] relative rounded-lg shadow-xl">
-      {/* <Link href={`/books/${slugify(slug)}`} passHref> */}
-      <a href={href} passHref>
+      {/* <Link href={`/books/${slugify(slug)}`}> */}
+      <a href={href}>
         <Image
           src={thumbnailsUrl}
           alt="cover"
-          layout="fill"
+          fill
           className="rounded-lg object-cover"
         />
       </a>
@@ -30,7 +30,7 @@ const BookItem = ({
 
       <div className='space-y-1 mb-3'>
         <h2 className="font-bold text-gray-900 dark:text-white dark:hover:text-gray-300">
-          <a href={href} target="_blank" className='flex items-center gap-1' passHref>
+          <a href={href} target="_blank" className='flex items-center gap-1'>
             {title}
             {/* <i class="ri-external-link-line text-gray-300 dark:text-gray-700 font-normal"></i> */}
           </a>
@@ -45,12 +45,12 @@ const BookItem = ({
         </div>
       </div>
       <div className='flex gap-6'>
-        {/* <Link href={`/books/${slugify(slug)}`} passHref>
+        {/* <Link href={`/books/${slugify(slug)}`}>
           <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
             读书笔记
           </a>
         </Link> */}
-        {/* <Link href={href} passHref>
+        {/* <Link href={href}>
           <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500' target="_blank" >
             豆瓣链接
           </a>

@@ -8,11 +8,11 @@ import ArrowMotion from '@/components/ArrowMotion';
 const Card = ({ title, star, author, thumbnailsUrl, href, slug, introduction }) => (
   <div className="flex gap-6">
     <div className="h-44 aspect-[7/10] relative rounded-lg shadow-xl">
-      <a href={href} passHref>
+      <a href={href}>
         <Image
           src={thumbnailsUrl}
           alt="cover"
-          layout="fill"
+          fill
           className="rounded-lg object-cover"
         />
       </a>
@@ -21,7 +21,7 @@ const Card = ({ title, star, author, thumbnailsUrl, href, slug, introduction }) 
 
       <div className='space-y-1 mb-3'>
         <h2 className="font-bold text-gray-900 dark:text-white dark:hover:text-gray-300">
-          <a href={href} passHref>{title}</a>
+          <a href={href}>{title}</a>
         </h2>
         <div className='flex gap-2 items-center text-gray-600 dark:text-gray-500'>
           <div className="text-xs font-semibold  max-w-none ">
@@ -33,12 +33,12 @@ const Card = ({ title, star, author, thumbnailsUrl, href, slug, introduction }) 
         </div>
       </div>
       <div className='flex gap-6'>
-        {/* <Link href={`/books/${slugify(slug)}`} passHref>
+        {/* <Link href={`/books/${slugify(slug)}`}>
           <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500'>
             读书笔记
           </a>
         </Link> */}
-        {/* <Link href={href} passHref>
+        {/* <Link href={href}>
           <a className='text-sm font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500' target="_blank" >
             豆瓣链接
           </a>

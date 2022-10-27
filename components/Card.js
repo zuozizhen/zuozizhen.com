@@ -4,14 +4,13 @@ import Image from 'next/image';
 import ArrowMotion from '@/components/ArrowMotion';
 
 const Card = ({ title, description, imgSrc, coverSrc, href }) => (
-  <Link href={href} className="h-full block">
-    <a className="flex gap-6 items-center">
+  <Link href={href} className="h-full block flex gap-6 items-center">
       {coverSrc ? (
         <div className="w-72 h-48 relative flex-shrink-0">
           <Image
             src={coverSrc}
             alt="avatar"
-            layout="fill"
+            fill
             className="rounded-lg object-cover"
           />
         </div>
@@ -21,7 +20,7 @@ const Card = ({ title, description, imgSrc, coverSrc, href }) => (
           <Image
             src={imgSrc}
             alt="avatar"
-            layout="fill"
+            fill
             className="rounded-xl object-cover"
           />
         </div>
@@ -34,7 +33,6 @@ const Card = ({ title, description, imgSrc, coverSrc, href }) => (
         </div>
         <p className="prose text-gray-600 dark:text-gray-500">{description}</p>
       </div>
-    </a>
   </Link>
 );
 

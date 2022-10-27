@@ -28,7 +28,7 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: '左子祯 - 产品设计师，独立开发者',
-    description: `我是一名产品设计师、独立开发者，目前是 MasterGo 的产品设计负责人`,
+    description: `我是一名产品设计师、独立开发者`,
     image: 'https://zuozizhen.com/static/images/banner.png',
     type: 'website',
     ...customMeta
@@ -62,11 +62,9 @@ export default function Container(props) {
       <nav className="w-full py-8 px-6 my-4 text-gray-900 sticky-nav sm:px-8 md:my-8 bg-opacity-70 dark:bg-opacity-80 dark:text-gray-100 border-b border-white dark:border-gray-900 bg-white dark:bg-gray-900">
         <div className="flex items-center justify-between max-w-2xl mx-auto">
           <div className="flex items-center">
-            <Link href="/">
-              <a className="sm:block hidden font-medium dark:text-gray-100">
-                <LogoBlack className="mr-1 dark:hidden w-6 h-6" />
-                <LogoWhite className="mr-1 hidden dark:block w-6 h-6" />
-              </a>
+            <Link className="sm:block hidden font-medium dark:text-gray-100"  href="/">
+              <LogoBlack className="mr-1 dark:hidden w-6 h-6" />
+              <LogoWhite className="mr-1 hidden dark:block w-6 h-6" />
             </Link>
             {router.pathname != '/' ? (
               <motion.div
@@ -76,55 +74,35 @@ export default function Container(props) {
                 exit={{ opacity: 0, x: -10, y: 0 }}
                 transition={{ duration: 0.2, type: 'easeOut' }}
               >
-                <Link href="/">
-                  <a
-                    className={clsx('sm:hidden block text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/'
-                    })}
-                  >
+                <Link className={clsx('sm:hidden block text-sm', {
+                  'font-bold text-gray-900 dark:text-gray-50':
+                    router.pathname === '/'
+                })} href="/">
                     首页
-                  </a>
                 </Link>
-                <Link href="/blog">
-                  <a
-                    className={clsx('text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/blog'
-                    })}
-                  >
+                <Link className={clsx('text-sm', {
+                  'font-bold text-gray-900 dark:text-gray-50':
+                    router.pathname === '/blog'
+                })} href="/blog">
                     写作
-                  </a>
                 </Link>
-                <Link href="/projects">
-                  <a
-                    className={clsx('text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/projects'
-                    })}
-                  >
+                <Link className={clsx('text-sm', {
+                  'font-bold text-gray-900 dark:text-gray-50':
+                    router.pathname === '/projects'
+                })} href="/projects">
                     项目
-                  </a>
                 </Link>
-                <Link href="/now">
-                  <a
-                    className={clsx('text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/now'
-                    })}
-                  >
+                <Link className={clsx('text-sm', {
+                  'font-bold text-gray-900 dark:text-gray-50':
+                    router.pathname === '/now'
+                })} href="/now">
                     正在做什么
-                  </a>
                 </Link>
-                <Link href="/about">
-                  <a
-                    className={clsx('text-sm', {
-                      'font-bold text-gray-900 dark:text-gray-50':
-                        router.pathname === '/about'
-                    })}
-                  >
+                <Link className={clsx('text-sm', {
+                  'font-bold text-gray-900 dark:text-gray-50':
+                    router.pathname === '/about'
+                })} href="/about">
                     关于我
-                  </a>
                 </Link>
               </motion.div>
             ) : null}
