@@ -6,6 +6,7 @@ module.exports = {
   // },
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     domains: [
       'i.scdn.co', // Spotify Album Art
       'dl.airtable.com',
