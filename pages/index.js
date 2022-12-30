@@ -17,6 +17,7 @@ import frenchStrings from 'react-timeago/lib/language-strings/fr';
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 import BookItem from '@/components/BookItem';
 import { getBooksData } from "@/lib/notion";
+import { getMoviesData } from "@/lib/notion";
 
 
 import { getAllFilesFrontMatter } from '@/lib/mdx';
@@ -158,7 +159,7 @@ export default function Home({ posts, projects, books, movies }) {
               key={book.id}
               title={book.properties.Name.title[0].text.content}
               author={book.properties.Author.rich_text[0]?.text.content}
-              thumbnailsUrl={book.properties.Cover.files[0]?.external.url}
+              thumbnailsUrl={book.properties.Cover.files[0]?.file?.url}
               // href={`/books/${slugify(book.id)}`}
               href={book.properties.Link.url}
               star={book.properties.Star.number}
@@ -185,7 +186,7 @@ export default function Home({ posts, projects, books, movies }) {
                 introduction={movie.properties.Introduction.rich_text[0]?.text.content}
                 author={movie.properties.Author.rich_text[0]?.text.content}
                 star={movie.properties.Star.number}
-                thumbnailsUrl={movie.properties.Cover.files[0]?.external.url}
+                thumbnailsUrl={movie.properties.Cover.files[0]?.file?.url}
                 slug={movie.id}
               />
             ))}
@@ -226,7 +227,7 @@ export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog');
   const projects = await getAllFilesFrontMatter('projects');
   const database = await getBooksData(booksId);
-  const moviedatabase = await getBooksData(moviesId);
+  const moviedatabase = await getMoviesData(moviesId);
 
   return {
     props: {
