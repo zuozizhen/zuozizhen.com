@@ -19,11 +19,13 @@ module.exports = {
         fuchsia: colors.fuchsia,
         lime: colors.lime,
         emerald: colors.emerald,
-        sky: colors.sky
+        sky: colors.sky,
+        gray: {
+          900: '#0f0f0f',
+        }
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
-        mono: ['"JetBrains Mono"', ...fontFamily.mono]
       },
       typography: (theme) => ({
         DEFAULT: {

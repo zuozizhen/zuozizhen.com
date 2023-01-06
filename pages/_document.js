@@ -1,23 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+
 class MyDocument extends Document {
   render() {
     return (
       <Html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
         <Head>
-          <link
-            rel="preload"
-            href="/fonts/inter-var-latin.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/JetBrainsMono-Medium.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
           <link
