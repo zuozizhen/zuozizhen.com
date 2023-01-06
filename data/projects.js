@@ -3,7 +3,7 @@ export default [
     title: '书签',
     description: '收藏有用的网站，包括小工具、个人网站和一些有用的服务',
     imgSrc:
-      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406212645.jpg',
+      '',
     href: '/bookmarks'
   },
   {
@@ -11,7 +11,7 @@ export default [
     description:
       '目前我的硬件装备',
     imgSrc:
-      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406215629.jpg',
+      '',
     href: '/uses'
   },
   {
@@ -19,7 +19,7 @@ export default [
     description:
       '我正在使用的工具和服务',
     imgSrc:
-      'https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20210406215629.jpg',
+      '',
     href: '/stack'
   }
 ];
