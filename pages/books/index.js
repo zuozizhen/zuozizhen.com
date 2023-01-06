@@ -21,6 +21,7 @@ export const getStaticProps = async () => {
   };
 };
 
+
 export default function Home({ books }) {
   return (
     <Container title="书单 – 左子祯">

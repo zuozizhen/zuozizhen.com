@@ -87,8 +87,15 @@ export default function Home({ posts, projects, books, movies }) {
             <Link className="font-bold border-b border-dotted no-underline border-gray-500 hover:opacity-70 text-gray-500" href="https://mastergo.com">
                 MasterGo
             </Link>
-            &nbsp; 0-1 的产品和设计。
-            你可以在&nbsp;
+            &nbsp; 0-1 的所有产品和设计工作。我曾独立创建了&nbsp;
+            <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-70" href="https://figmachina.com">
+              FigmaChina
+            </Link>
+            &nbsp;，是国内最早推广 Figma 的中文站点之一，后面也做了&nbsp;
+            <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 border-yellow-500 hover:opacity-70" href="https://notionchina.co">
+              NotionChina
+            </Link>
+            &nbsp;帮助大家学习使用 Notion。你可以在&nbsp;
             <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 border-rose-500 hover:opacity-70" href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442">
                 小红书
             </Link>
@@ -112,7 +119,7 @@ export default function Home({ posts, projects, books, movies }) {
           </p>
         </div>
         <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
-          博客
+          写作
         </h3>
         <div className="mb-20">
           <div className="mb-4 mt-4">
@@ -149,11 +156,11 @@ export default function Home({ posts, projects, books, movies }) {
               <i className="ri-arrow-right-line"></i>
           </Link>
         </div>
-        <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+        {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           书单
         </h3>
         <div className="space-y-8 mb-16">
-          {/* <pre>{JSON.stringify(books,null, 2) }</pre> */}
+          <pre>{JSON.stringify(books,null, 2) }</pre>
           {books.slice(0, 3).map((book) => (
             <BookItem
               key={book.id}
@@ -171,14 +178,14 @@ export default function Home({ posts, projects, books, movies }) {
               查看全部
               <i className="ri-arrow-right-line"></i>
           </Link>
-        </div>
+        </div> */}
 
-        <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
+        {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           影单
         </h3>
         <div className='mb-16'>
           <div className="mb-8 grid grid-cols-1 gap-8">
-            {/* <pre>{JSON.stringify(movies, null, 2)}</pre> */}
+            <pre>{JSON.stringify(movies, null, 2)}</pre>
             {movies.slice(0, 3).map((movie) => (
               <MovieCard
                 key={movie.id}
@@ -195,7 +202,7 @@ export default function Home({ posts, projects, books, movies }) {
             查看全部
             <i className="ri-arrow-right-line"></i>
           </Link>
-        </div>
+        </div> */}
         {/* <h3 className="font-bold text-lg sm:text-xl mb-8 text-gray-900 dark:text-gray-100">
           更多
         </h3>
