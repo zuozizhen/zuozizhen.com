@@ -126,7 +126,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
   const page = getArticlePageByID(data, slug);
 
   title = page.properties.Name.title[0].plain_text;
-  thumbnailsUrl = page.properties.Cover.files[0]?.external.url;
+  thumbnailsUrl = page.properties.Cover.files[0]?.file?.url;
   href = page.properties.Link.url;
   author = page.properties.Author.rich_text[0]?.text.content;
   star = page.properties.Star.number;

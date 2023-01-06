@@ -23,7 +23,7 @@ summary: '我们正处在多维世界当中'
 
 各种因素通过或多或少的影响来决定这最终我们得到的结果。
 
-![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201017172613.jpg)
+![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/0c553ae8-6fef-47e7-5dce-c3f625c7fb00/public)
 
 所以我们不能一直局限在自己的小片天地里，社会的不断发展和变革促使我们一定要学会多元化思维去解决问题，不仅是设计，其他行业亦是如此。
 

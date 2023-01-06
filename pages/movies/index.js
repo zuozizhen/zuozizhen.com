@@ -35,7 +35,7 @@ export default function Home({ movies }) {
               introduction={movie.properties.Introduction.rich_text[0]?.text.content}
               author={movie.properties.Author.rich_text[0]?.text.content}
               star={movie.properties.Star.number}
-              thumbnailsUrl={movie.properties.Cover.files[0]?.external.url}
+              thumbnailsUrl={movie.properties.Cover.files[0]?.file?.url}
               href={movie.properties.Link.url}
             />
           ))}

@@ -8,7 +8,7 @@ summary: '这个系列会按类型推荐我看过的小众佳片'
 
 ## 1.《许三观 허삼관》
 
-![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201020233831.webp)
+![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/64c3e52c-1a0b-4dda-50f3-bb7e36b98500/public)
 
 本片根据余华的小说《许三观卖血记》改编。
 
@@ -22,7 +22,7 @@ summary: '这个系列会按类型推荐我看过的小众佳片'
 
 ## 2.《春夏秋冬又一春 봄 여름 가을 겨울 그리고 봄》
 
-![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201020233919.webp)
+![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/027d6003-7dee-466a-e6f7-7ed9e4febf00/public)
 
 提到韩国电影，就不能不提到导演金基德，虽然他的电影因为经常充斥着暴力和色情而充满争议，电影质量也是良莠不齐，但他在韩国电影界的地位是无可否认的，这部《春夏秋冬又一春》绝对属于金基德最好的几部电影之一
 
@@ -32,7 +32,7 @@ summary: '这个系列会按类型推荐我看过的小众佳片'
 
 ## 3.《金氏漂流记 김씨 표류기》
 
-![img](https://cdn.jsdelivr.net/gh/zuozizhen/oss@master/img/20201020233947.webp)
+![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/c70de799-b131-4e41-f0fe-3c41f4326100/public)
 
 一个失败的中年男人自杀失败，被冲到了一个河中废弃的浅滩上，想着外面的世界自己一事无成，也就不求救了，于是神奇的成为了身处城市中却与世隔绝的“鲁滨逊”。
 

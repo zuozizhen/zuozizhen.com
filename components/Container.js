@@ -28,7 +28,7 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: '左子祯 - 产品设计师，独立开发者',
-    description: `我是一名产品设计师、独立开发者`,
+    description: `专注设计，独立开发，工具和生产力`,
     image: 'https://zuozizhen.com/static/images/banner.png',
     type: 'website',
     ...customMeta
@@ -66,7 +66,47 @@ export default function Container(props) {
               <LogoBlack className="mr-1 dark:hidden w-6 h-6" />
               <LogoWhite className="mr-1 hidden dark:block w-6 h-6" />
             </Link>
-            {router.pathname != '/' ? (
+
+            <motion.div
+              className="font-medium sm:space-x-10 space-x-4 flex items-center text-gray-600 dark:text-gray-500"
+              initial={{ opacity: 0, x: -10, y: 0 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              exit={{ opacity: 0, x: -10, y: 0 }}
+              transition={{ duration: 0.2, type: 'easeOut' }}
+            >
+              <Link className={clsx('sm:hidden block text-sm', {
+                'font-bold text-gray-900 dark:text-gray-50':
+                  router.pathname === '/'
+              })} href="/">
+                首页
+              </Link>
+              <Link className={clsx('text-sm', {
+                'font-bold text-gray-900 dark:text-gray-50':
+                  router.pathname === '/blog'
+              })} href="/blog">
+                写作
+              </Link>
+              <Link className={clsx('text-sm', {
+                'font-bold text-gray-900 dark:text-gray-50':
+                  router.pathname === '/projects'
+              })} href="/projects">
+                项目
+              </Link>
+              <Link className={clsx('text-sm', {
+                'font-bold text-gray-900 dark:text-gray-50':
+                  router.pathname === '/now'
+              })} href="/now">
+                正在做什么
+              </Link>
+              <Link className={clsx('text-sm', {
+                'font-bold text-gray-900 dark:text-gray-50':
+                  router.pathname === '/about'
+              })} href="/about">
+                关于我
+              </Link>
+            </motion.div>
+
+            {/* {router.pathname != '/' ? (
               <motion.div
                 className="font-medium sm:space-x-10 space-x-4 flex items-center text-gray-600 dark:text-gray-500"
                 initial={{ opacity: 0, x: -10, y: 0 }}
@@ -105,7 +145,8 @@ export default function Container(props) {
                     关于我
                 </Link>
               </motion.div>
-            ) : null}
+            ) : null} */}
+
           </div>
           <div
             aria-label="Toggle Dark Mode"
