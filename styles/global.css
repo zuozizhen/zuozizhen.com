@@ -97,13 +97,13 @@ a {
 
 .prose img {
   /* Don't apply styles to next/image */
-  @apply my-8 rounded-lg;
+  @apply my-8 rounded-lg mx-auto;
 
 }
 
 .prose blockquote {
   /* Don't apply styles to next/image */
-  @apply text-lg font-normal text-gray-500 dark:text-gray-600 border-none my-auto pl-6;
+  @apply text-lg font-bold text-gray-500 dark:text-gray-100 border-none my-auto pl-0;
 }
 
 .prose em {

@@ -20,9 +20,6 @@ module.exports = {
         lime: colors.lime,
         emerald: colors.emerald,
         sky: colors.sky,
-        gray: {
-          900: '#0f0f0f',
-        }
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
