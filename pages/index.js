@@ -104,7 +104,7 @@ export default function Home({ posts, projects, books, movies }) {
                 Twitter
             </Link>
             &nbsp;、&nbsp;
-            <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-70" href="/about/wechat">
+            <Link className="font-bold border-b border-dotted no-underline text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 border-emerald-500 hover:opacity-70" href="/wechat">
                 个人公众号
             </Link>
             &nbsp;这些平台关注我，或者了解我现在&nbsp;

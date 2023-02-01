@@ -7,7 +7,7 @@ import { renderBlocks } from '@/lib/renderBlocks';
 
 import Container from '@/components/Container';
 import GitHub from '@/components/metrics/Github';
-import YouTube from '@/components/metrics/Youtube';
+// import YouTube from '@/components/metrics/Youtube';
 import TopTracks from '@/components/TopTracks';
 import PageTitle from '@/components/PageTitle';
 import { getPage } from '@/lib/notion';
