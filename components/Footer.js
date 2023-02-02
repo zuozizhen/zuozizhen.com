@@ -54,7 +54,7 @@ export default function Footer() {
             className="text-gray-500 transition hover:text-gray-900 dark:hover:text-gray-300"
             target="_blank"
             rel="noopener noreferrer"
-            href="mailto:hjsfzzz@gmail.com?subject=你好，左子祯"
+            href="mailto:me@zuozizhen.com?subject=你好，左子祯"
           >
             邮箱
             <ArrowTopRightIcon className="ml-1 inline-block" />
