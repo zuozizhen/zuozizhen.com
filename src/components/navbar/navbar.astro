@@ -1,0 +1,56 @@
+---
+import Container from "@components/container.astro";
+import Link from "@components/ui/link.astro";
+import Dropdown from "./dropdown.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Icon } from 'astro-icon';
+
+const menuitems = [
+  // {
+  //   title: "Features",
+  //   path: "#",
+  //   children: [
+  //     { title: "Action", path: "#" },
+  //     { title: "Another action", path: "#" },
+  //     { title: "Dropdown Submenu", path: "#" },
+  //   ],
+  // },
+  {
+    title: "了解更多",
+    path: "/pricing",
+  },
+];
+---
+
+<Container>
+  <header class="flex justify-between items-center py-6 max-w-screen-lg mx-auto px-10 lg:px-0 border-b border-neutral-100">
+    <Astronav>
+      <div class="flex w-full items-center justify-between">
+        <a href="/" class="text-xl font-black flex gap-3">
+          <Icon name="logo" alt="website logo" class="w-[4rem]"/>
+        </a>
+      </div>
+      <div class="flex gap-12 flex-shrink-0">
+        <a href="/blog" class="font-bold text-neutral-500" target="_blank">
+          关于我
+      </a>
+       <a href="/blog" class="font-bold text-neutral-500" target="_blank">
+          博客
+      </a>
+       <a href="/blog" class="font-bold text-neutral-500" target="_blank">
+          资源
+      </a>
+      <a href="/blog" class="font-bold text-neutral-500" target="_blank">
+          服务
+      </a>
+      </div>
+
+
+      <!-- <div class="lg:flex items-center gap-4">
+        <a href="https://twitter.com/zuozizhen" target="_blank" class="social-button bg-neutral-800 hover:bg-neutral-700 transition rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="mdi:twitter" alt="" class=""/></a>
+        <a href="mailto:me@zuozizhen.com" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="ic:round-mail" alt="" class=""/></a>
+        <a href="" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="official-accounts" alt="" class=""/></a>
+      </div> -->
+    </Astronav>
+  </header>
+</Container>
