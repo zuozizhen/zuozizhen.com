@@ -19,7 +19,7 @@ publishedBlogEntries.sort(function (a, b) {
 <main
   class="flex flex-col max-w-screen-lg mx-auto pt-40 px-10 lg:px-0">
   <div class="flex flex-col">
-    <h1 class="text-3xl font-bold max-w-3xl">
+    <h1 class="text-3xl font-semibold max-w-3xl">
       我是左子祯 — 设计师和创造者。
     </h1>
     <p class="text-xl mt-3 text-neutral-500 max-w-[52rem] leading-9">
@@ -27,11 +27,11 @@ publishedBlogEntries.sort(function (a, b) {
     </p>
 
     <div class="space-y-2 mt-40">
-      <a href="https://zuozizhen.substack.com" class="font-bold text-white leading-7 text-lg bg-neutral-800 w-fit px-7 py-2.5 rounded-md block" target="_blank">订阅会员通讯</a>
+      <a href="https://zuozizhen.substack.com" class="font-semibold text-white leading-7 text-lg bg-neutral-800 w-fit px-7 py-2.5 rounded-md block" target="_blank">订阅会员通讯</a>
       <div class="text-neutral-500">预计每月 1-2 封邮件。</div>
     </div>
   </div>
-  <ul class="flex gap-6 w-full mt-10">
+  <ul class="flex gap-10 w-full mt-10">
         {
           publishedBlogEntries.slice(0, 2).map((blogPostEntry, index) => (
             <li>
@@ -51,7 +51,7 @@ publishedBlogEntries.sort(function (a, b) {
                     class="w-full rounded-md"
                   />
                   <div>
-                    <h2 class="text-lg font-bold leading-snug tracking-tight mt-4 text-neutral-800">
+                    <h2 class="text-lg font-semibold leading-snug tracking-tight mt-4 text-neutral-800">
                       {blogPostEntry.data.title}
                     </h2>
 
@@ -69,7 +69,7 @@ publishedBlogEntries.sort(function (a, b) {
           ))
         }
       </ul>
-      <div class="font-bold mt-6">
+      <div class="font-semibold mt-6">
         更多文章 ->
       </div>
 </main>
