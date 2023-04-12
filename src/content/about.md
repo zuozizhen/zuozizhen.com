@@ -1,7 +1,7 @@
 ---
 draft: false
-title: "《黑镜：潘达斯奈基》：一次关于自由意志的探讨"
-snippet: "为保证观影体验，全篇无剧透，请放心阅读"
+title: "关于我"
+snippet: "关于我的说明"
 image: {
     src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
     alt: ""
@@ -9,86 +9,48 @@ image: {
 publishDate: "2018-12-30"
 ---
 
-> 为保证观影体验，全篇无剧透，请放心阅读
+## 了解我
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/nxnyWx9ZJiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+嗨, 我是左子祯。一名产品设计师和独立开发者，曾在锤子科技和字节跳动就职。
 
-> 故事发生 1984 年，一名年轻的程序员想要将一部黑暗奇幻小说《Bandersnatch》制作成电子游戏，在他试图将这部作品改编为游戏的过程中，逐渐开始质疑现实的存在，这个令人费解的故事有着多种结局
+日常工作主要是与产品、设计和用户体验相关，也会为初创公司提供专业的设计咨询和建议，业余时间投入在学习 Coding 和独立开发中。
 
-为什么这个故事有着多种结局呢？在 Netflix 官方预告片的片尾写着：
+**作为产品设计师**，我热衷于通过结合对产品的研究，极致的设计和对技术的理解来平衡的解决问题。
 
-> change your mind, change your life, change your past, your present, your future.
+2018 年，我创立了 **[FigmaChina](https://figmachina.com/)**，成为国内最早以中文内容介绍 Figma 的网站之一，我希望可以帮助中国设计师了解学习好的工具来提升生产力。
 
-## 互动型电影
+同一时期，我在锤子科技时为 **[Smartisan OS 7.0](https://www.smartisan.com/jianguopro3/os)** 搭建了基于 Figma 的大型设计系统，也同时推动改变了整个团队的工作方式。
 
-没错，这的确就是传说中的互动型电影。
+2019 年，我加入了蓝湖，作为 [MasterGo](https://mastergo.com) 的一号员工负责从零到一打造这款产品，在两年中我领导了所有的品牌定义、产品规划、项目管理、界面设计和设计系统搭建等设计和产品相关的工作。
 
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/ada4d8b4-322b-46c8-bef1-8050a505ea00/public)
+我热爱世界的缤纷多彩，更喜欢自己无尽的可能性，除了设计优秀的产品，我也在学习如何创造一款优秀的产品。
 
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/152f245b-ef40-4003-2801-7d78cd084400/public)
+**作为独立开发者**，我热爱技术的无限可能性和纯粹性，也致力于创造优秀的数字产品，解放数字时代下更多的生产力。
 
-这部电影在 Netflix 显示的时长虽然只有 90 分钟，但是为了可供观众选择剧情，电影的内容实际上有 312 分钟。
+2016 年，我接触了编程，从简单的 HTML、CSS 和 WordPress 入门，搭建了自己的第一个个人网站。
 
-实际上这并不是历史上第一部互动电影，1967 年来自捷克的《Clovek a jeho dum》就允许观众通过手中的红绿按钮，来投票决定后面的剧情走向。
+通过对个人网站的不断改版，我大概熟练的掌握了最基础的网页前端知识和网站部署相关的知识，开始搭建了一些简单的网站，个人网站也从 WordPress 改为了 Jekyll。
 
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/0605cd86-3e4d-4020-69a4-9a403c20f400/public)
+逐渐的我认为这些简单的知识满足不了我创造更复杂产品的需求，所以我在 2021 年开始系统的学习一些技术知识，目前我在专注于前端领域的学习和创造中，这些是我已掌握、正在学习和学习了一部分被搁浅的领域：
 
-## 潘达斯奈基
+- Javascript → React.js → Next.js（学习ing）
+- Ruby → Ruby on Rails（学习ing）
+- Jekyll
+- Vuepress
+- Swift
 
-但《黑镜：潘达斯奈基》更加有趣的地方是，影片中的小说《潘达斯奈基》就是一本“选择自己的冒险”的书，读者可以通过选择决定角色经历的剧情。
+除了设计和技术，我也非常愿意和希望能够将知识分享给需要的人。
 
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/29cb4997-2227-4a9d-e7f8-493b51299f00/public)
+作为个人，我平时会在[小红书](https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442)上分享我的经验和知识，也会在 [微信公众号](https://zuozizhen.com/about/wechat) 会不定期的分享我的一些其它方面的思考。
 
-而在制作出的游戏里面，玩家同样需要进行二选一，才可以让游戏发展下去。这和我们通过点击选项让剧情向后发展是一样的，这就意味着内容与形式产生了联系。
+### 如何联系我
 
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/02b44fb2-907b-4200-8871-dee0912d1900/public)
+小红书：[左子祯](https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442)
 
-我们需要做的就是在观看的过程中不断的为主人公做出选择。
+微信公众号：[左子祯](https://zuozizhen.com/about/wechat)
 
-在公交车上听什么歌：
+Github: [zuozizhen](https://github.com/zuozizhen)
 
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/56c62e10-c86a-431f-2539-59ede1271000/public)
+Twitter: [@zuozizhen](https://twitter.com/zuozizhen)
 
-甚至是否杀人：
-
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/e8802381-49a1-4498-1d3b-fb1ec4067200/public)
-
-但电影最精彩的地方并不是单纯的不同剧情分支延伸出来的结局，甚至结局本身并不重要，而是在 形式和内容强结合 的情况下产生的全新观影体验和引发观众的思考。
-
-这是一部形式大于内容的电影，亦或是说形式是为内容所服务的。
-
-观看过程中，《潘达斯奈基》将会引出电影的核心，即对自由意志的探讨：
-
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/082cc130-4180-4168-e9e2-14fc5ac5e200/public)
-
-## 人是否有自由意志？还是只是后知后觉？
-
-科学家曾经做过一些有趣的研究：
-
-柏林计算神经科学伯恩斯坦中心的海恩斯（Haynes），旧金山加州大学的本杰明·里比特（Benjamin Libet），以及洛杉矶加州大学和以色列特拉维夫医学中心的神经学家和外科医生伊扎克·弗雷德（Itzhak Fried）等人，都通过脑部扫描观测发现，早在参与者产生选择的意识之前，大脑就有了活动。也就是说，事物的运行在他们进入人的意识之前就已经被决定了。决定的意识是在决定产生之后才产生的。
-
-已故美国生理学家利贝特（Benjamin Libet）在一批“什么时候想按就可按下按钮”的受试者脑电图中发现，在这些人意识到他们做出决定前的半秒钟，脑中运动皮质就已经兴奋起来。后续的研究将皮质下脑区的兴奋，与出现知觉意识之间的时间，拉长到整整7~10秒钟。新的研究发现，根据一群256个神经元的活性，能让科学家在受试者自己晓得要做什么选择之前，就能得出预测，准确度达80%。例如在意识到自己会点什么菜之前，脑中某些部位很有可能已经做了决定。
-
-![img](https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/6ec0c315-460d-437f-a3e1-610ead1e8500/public)
-
-感兴趣的小伙伴可以去 维基百科 查看相关资料。
-
-回到电影本身，《黑镜》本身的魅力：对科技和伦理的思考也一直贯穿其中，这在《潘达斯奈基》其中一个结局中会有体现。
-
-当科技发展到一定程度的时候，是否会影响到人类的自由意志？
-
-仔细想下，在现在这个娱乐至死的时代，我们获取的信息正在被越来越精准的算法逐渐趋同：
-
-> 我们是在选择，还是被控制？
-
-## 观影姿势
-
-想要拥有 完美的观影体验 需要三个条件：
-
-- Netflix 账号（新用户提供 1 个月免费试用，且 Netflix 完美支持中文字幕）
-
-- 除中国大陆地区外且未被 Netflix 封锁的代理（Netflix 不支持中国大陆 IP，且会封锁部分代理地址）
-
-- 未被剧透
-
-选择权在你的手上，但结局又是谁来决定的呢？
+Email: [me@zuozizhen.com](mailto:me@zuozizhen.com)
