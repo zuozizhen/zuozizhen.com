@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
+import ArrowMotion from "@components/ArrowMotion.astro";
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedProjectEntries = await getCollection("project", ({ data }) => {
@@ -38,10 +39,13 @@ publishedProjectEntries.sort(function (a, b) {
                     class="w-full rounded-md"
                   />
                   <div>
-
-                    <h2 class="arrow-motion text-lg font-semibold leading-snug tracking-tight mt-4 text-neutral-800">
+                    <div class="arrow-motion mt-4">
+                      <h2 class=" text-lg font-semibold leading-snug tracking-tight text-neutral-800">
                       {projectPostEntry.data.title}
-                    </h2>
+                      </h2>
+                      <ArrowMotion/>
+                    </div>
+
 
                     <div class="flex gap-1 mt-1 text-sm">
                       <time
