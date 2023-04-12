@@ -1,0 +1,58 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+
+// Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const projectEntries = await getCollection("project");
+  return projectEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+// Get the entry directly from the prop on render
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <Container>
+    <div class="flex max-w-screen-lg mx-auto gap-20">
+      <div class="w-full mb-40">
+        <div class="mt-14">
+          <h1 class="text-4xl font-semibold mt-1 mb-3 text-neutral-800 leading-snug">
+            {entry.data.title}
+          </h1>
+          <time
+            class="text-gray-400"
+            datetime={entry.data.publishDate.toISOString()}>
+            {entry.data.publishDate.toDateString()}
+          </time>
+          <img
+            class="w-full rounded-lg mt-8"
+            src={entry.data.image.src}
+            class="personal_photo rounded-xl flex-none w-[20rem] h-[24rem]"
+          />
+        </div>
+
+        <div class="prose prose-lg mt-6">
+          <Content />
+        </div>
+      </div>
+      <div class="flex-shrink-0 mt-14">
+        <div class="w-60">
+          <img
+            class="rounded-md"
+            src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/c479d4d5-ea7c-48da-df9b-d034eed9da00/public"
+            class="personal_photo rounded-xl flex-none w-[20rem] h-[24rem]"
+          />
+          <div class="text-neutral-500 mt-6">
+            设计师和独奏者。我对独自创业充满热情，使我们的收入，UI/UX设计和生产力多样化。目前正在建立我的第八个收入流，并分享一路上的经验教训。
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Layout>

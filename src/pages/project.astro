@@ -1,0 +1,73 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "@astrojs/image/components";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+
+// Filter blog entries with 'draft: false' & date before current date
+const publishedProjectEntries = await getCollection("project", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
+// Sort content entries by publication date
+publishedProjectEntries.sort(function (a, b) {
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+});
+---
+
+<Layout title="Blog">
+  <Container>
+    <section class="introduction relative">
+      <div class="pt-16 max-w-screen-lg mx-auto text-center px-10 lg:px-0">
+        <div class="bg-neutral-50 py-16 px-20 flex flex-col items-center w-full rounded-xl border border-neutral-200">
+          <h2 class="text-2xl font-semibold z-0 text-neutral-800">订阅每月通讯</h2>
+          <p class="mt-2 text-neutral-500 max-w-4xl leading-7">
+            加入 The Croissant Club 的 3,000 多人，获取有关 Solopreneurship 和 UI/UX 设计的实用技巧。预计每月 1-2 封信。
+          </p>
+          <a href="https://zuozizhen.substack.com" class="font-semibold text-white leading-7 text-lg mt-6 bg-neutral-800 w-fit px-7 py-2.5 rounded-md block" target="_blank">订阅邮件列表</a>
+        </div>
+      </div>
+    </section>
+    <main class="mt-16">
+      <ul class="grid grid-cols-2 gap-10 max-w-screen-lg mx-auto">
+        {
+          publishedProjectEntries.map((projectPostEntry, index) => (
+            <li>
+              <a href={`/project/${projectPostEntry.slug}`}>
+                <div class="">
+                  <Picture
+                    src={projectPostEntry.data.image.src}
+                    alt={projectPostEntry.data.image.alt}
+                    sizes="(max-width: 800px) 100vw, 800px"
+                    widths={[200, 400, 800]}
+                    aspectRatio="16:9"
+                    background="#ffffff"
+                    fit="cover"
+                    position="center"
+                    loading={index <= 2 ? "eager" : "lazy"}
+                    decoding={index <= 2 ? "sync" : "async"}
+                    class="w-full rounded-md"
+                  />
+                  <div>
+
+                    <h2 class="text-lg font-semibold leading-snug tracking-tight mt-4 text-neutral-800">
+                      {projectPostEntry.data.title}
+                    </h2>
+
+                    <div class="flex gap-1 mt-1 text-sm">
+                      <time
+                        class="text-gray-500"
+                        datetime={projectPostEntry.data.publishDate.toISOString()}>
+                        {projectPostEntry.data.publishDate.toDateString()}
+                      </time>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+  </Container>
+</Layout>

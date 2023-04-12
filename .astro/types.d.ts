@@ -273,6 +273,29 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] },
 },
+"project": {
+"mastergo-design-system.mdx": {
+  id: "mastergo-design-system.mdx",
+  slug: "mastergo-design-system",
+  body: string,
+  collection: "project",
+  data: InferEntrySchema<"project">
+} & { render(): Render[".mdx"] },
+"mastergo.mdx": {
+  id: "mastergo.mdx",
+  slug: "mastergo",
+  body: string,
+  collection: "project",
+  data: InferEntrySchema<"project">
+} & { render(): Render[".mdx"] },
+"smartisan.mdx": {
+  id: "smartisan.mdx",
+  slug: "smartisan",
+  body: string,
+  collection: "project",
+  data: InferEntrySchema<"project">
+} & { render(): Render[".mdx"] },
+},
 "team": {
 "janette-lynch.md": {
   id: "janette-lynch.md",
