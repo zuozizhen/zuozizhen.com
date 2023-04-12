@@ -398,6 +398,35 @@ section {
 }
 
 // link 箭头动效
+#cta {
+  @apply transition;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+
+
+#cta .arrow {
+  left: 50%;
+}
+
+.arrow {
+  @apply text-gray-600 dark:text-gray-500;
+  position: absolute;
+  bottom: 0;
+  margin-left: 0px;
+  width: 14px;
+  height: 14px;
+  transform-origin: 50% 50% 0;
+  display: flex;
+}
+
+.segunda {
+  margin-left: 8px
+}
 .arrow-motion:hover #cta {
   opacity: 1;
 }
