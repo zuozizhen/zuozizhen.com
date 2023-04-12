@@ -3425,6 +3425,11 @@ remark-smartypants@^2.0.0:
     retext-smartypants "^5.1.0"
     unist-util-visit "^4.1.0"
 
+remixicon@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npmmirror.com/remixicon/-/remixicon-3.1.1.tgz#968dbc8245505428c3da2748d05849f4a031eebb"
+  integrity sha512-LOlsnVeZwLWB7iePs8pICJcEQ7iSVAOYsahqYTCIQsfZMnxB6Meu867EZxGLO2c3ZG9Xpp7fGU+2icLwyWHbcw==
+
 resolve-from@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmmirror.com/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
