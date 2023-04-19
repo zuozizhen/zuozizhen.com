@@ -390,11 +390,20 @@ section {
 	background: linear-gradient(135deg, rgba(255,255,255,.25) 0%,rgba(255,255,255,0) 60%);
 }
 
-.card-cv {
-  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/87244fd5-9a04-45b3-d972-cfab24b60900/public);
-  background-size: 100%;
-  background-repeat: no-repeat;
+.card-resource {
   aspect-ratio: 322 / 362;
+  &.cv {
+    background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/1bd8c797-f7ef-40ea-5bb5-c78f9e2c6600/public) no-repeat 100% / cover;
+  }
+  &.cv-figma-free {
+    background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/acca6db3-5fe6-4b3e-81bf-172cbc202d00/public) no-repeat 100% / cover;
+  }
+  &.cv-notion {
+    background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/c4fc8e3e-d325-4878-55fb-8fac8b29d400/public) no-repeat 100% / cover;
+  }
+  &.year-end-notion {
+    background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/69d59800-9888-40fb-633b-48d7504d5600/public) no-repeat 100% / cover;
+  }
 }
 
 // link 箭头动效

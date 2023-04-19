@@ -1,63 +1,7 @@
 declare module 'astro:content' {
-	interface Render {
-		'.mdx': Promise<{
-			Content: import('astro').MarkdownInstance<{}>['Content'];
-			headings: import('astro').MarkdownHeading[];
-			remarkPluginFrontmatter: Record<string, any>;
-		}>;
-	}
-}
-declare module 'astro:content' {
-	interface Render {
-		'.md': Promise<{
-			Content: import('astro').MarkdownInstance<{}>['Content'];
-			headings: import('astro').MarkdownHeading[];
-			remarkPluginFrontmatter: Record<string, any>;
-		}>;
-	}
-}
-
-declare module 'astro:content' {
 	export { z } from 'astro/zod';
 	export type CollectionEntry<C extends keyof typeof entryMap> =
-		(typeof entryMap)[C][keyof (typeof entryMap)[C]];
-
-	// TODO: Remove this when having this fallback is no longer relevant. 2.3? 3.0? - erika, 2023-04-04
-	/**
-	 * @deprecated
-	 * `astro:content` no longer provide `image()`.
-	 *
-	 * Please use it through `schema`, like such:
-	 * ```ts
-	 * import { defineCollection, z } from "astro:content";
-	 *
-	 * defineCollection({
-	 *   schema: ({ image }) =>
-	 *     z.object({
-	 *       image: image(),
-	 *     }),
-	 * });
-	 * ```
-	 */
-	export const image: never;
-
-	// This needs to be in sync with ImageMetadata
-	export type ImageFunction = () => import('astro/zod').ZodObject<{
-		src: import('astro/zod').ZodString;
-		width: import('astro/zod').ZodNumber;
-		height: import('astro/zod').ZodNumber;
-		format: import('astro/zod').ZodUnion<
-			[
-				import('astro/zod').ZodLiteral<'png'>,
-				import('astro/zod').ZodLiteral<'jpg'>,
-				import('astro/zod').ZodLiteral<'jpeg'>,
-				import('astro/zod').ZodLiteral<'tiff'>,
-				import('astro/zod').ZodLiteral<'webp'>,
-				import('astro/zod').ZodLiteral<'gif'>,
-				import('astro/zod').ZodLiteral<'svg'>
-			]
-		>;
-	}>;
+		(typeof entryMap)[C][keyof (typeof entryMap)[C]] & Render;
 
 	type BaseSchemaWithoutEffects =
 		| import('astro/zod').AnyZodObject
@@ -72,10 +16,15 @@ declare module 'astro:content' {
 		| BaseSchemaWithoutEffects
 		| import('astro/zod').ZodEffects<BaseSchemaWithoutEffects>;
 
-	export type SchemaContext = { image: ImageFunction };
-
 	type BaseCollectionConfig<S extends BaseSchema> = {
-		schema?: S | ((context: SchemaContext) => S);
+		schema?: S;
+		slug?: (entry: {
+			id: CollectionEntry<keyof typeof entryMap>['id'];
+			defaultSlug: string;
+			collection: string;
+			body: string;
+			data: import('astro/zod').infer<S>;
+		}) => string | Promise<string>;
 	};
 	export function defineCollection<S extends BaseSchema>(
 		input: BaseCollectionConfig<S>
@@ -104,10 +53,17 @@ declare module 'astro:content' {
 		filter?: (entry: CollectionEntry<C>) => unknown
 	): Promise<CollectionEntry<C>[]>;
 
-	type ReturnTypeOrOriginal<T> = T extends (...args: any[]) => infer R ? R : T;
 	type InferEntrySchema<C extends keyof typeof entryMap> = import('astro/zod').infer<
-		ReturnTypeOrOriginal<Required<ContentConfig['collections'][C]>['schema']>
+		Required<ContentConfig['collections'][C]>['schema']
 	>;
+
+	type Render = {
+		render(): Promise<{
+			Content: import('astro').MarkdownInstance<{}>['Content'];
+			headings: import('astro').MarkdownHeading[];
+			remarkPluginFrontmatter: Record<string, any>;
+		}>;
+	};
 
 	const entryMap: {
 		"blog": {
@@ -117,161 +73,161 @@ declare module 'astro:content' {
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "cachemoment-new-branding.mdx": {
   id: "cachemoment-new-branding.mdx",
   slug: "cachemoment-new-branding",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "chatgpt-signup.mdx": {
   id: "chatgpt-signup.mdx",
   slug: "chatgpt-signup",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "cron-design.mdx": {
   id: "cron-design.mdx",
   slug: "cron-design",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "css-standard.mdx": {
   id: "css-standard.mdx",
   slug: "css-standard",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "design-trend-2019.mdx": {
   id: "design-trend-2019.mdx",
   slug: "design-trend-2019",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "draw-1.mdx": {
   id: "draw-1.mdx",
   slug: "draw-1",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "figma-bytedance.mdx": {
   id: "figma-bytedance.mdx",
   slug: "figma-bytedance",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "figmachina.mdx": {
   id: "figmachina.mdx",
   slug: "figmachina",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "flatland.mdx": {
   id: "flatland.mdx",
   slug: "flatland",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "life-in-a-day-2020.mdx": {
   id: "life-in-a-day-2020.mdx",
   slug: "life-in-a-day-2020",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "luowang.mdx": {
   id: "luowang.mdx",
   slug: "luowang",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "master-principle.mdx": {
   id: "master-principle.mdx",
   slug: "master-principle",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "mastergo-principle-case.mdx": {
   id: "mastergo-principle-case.mdx",
   slug: "mastergo-principle-case",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "medium-new-logo.mdx": {
   id: "medium-new-logo.mdx",
   slug: "medium-new-logo",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "meetup-ziru.mdx": {
   id: "meetup-ziru.mdx",
   slug: "meetup-ziru",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "personal-website.mdx": {
   id: "personal-website.mdx",
   slug: "personal-website",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "share-movie-korea.mdx": {
   id: "share-movie-korea.mdx",
   slug: "share-movie-korea",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "share-movie-science.mdx": {
   id: "share-movie-science.mdx",
   slug: "share-movie-science",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "think-plus.mdx": {
   id: "think-plus.mdx",
   slug: "think-plus",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "website-for-designer-1.mdx": {
   id: "website-for-designer-1.mdx",
   slug: "website-for-designer-1",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "website-for-designer-2.mdx": {
   id: "website-for-designer-2.mdx",
   slug: "website-for-designer-2",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 "zuibishe.mdx": {
   id: "zuibishe.mdx",
   slug: "zuibishe",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+},
 },
 "project": {
 "mastergo-design-system.mdx": {
@@ -280,21 +236,21 @@ declare module 'astro:content' {
   body: string,
   collection: "project",
   data: InferEntrySchema<"project">
-} & { render(): Render[".mdx"] },
+},
 "mastergo.mdx": {
   id: "mastergo.mdx",
   slug: "mastergo",
   body: string,
   collection: "project",
   data: InferEntrySchema<"project">
-} & { render(): Render[".mdx"] },
+},
 "smartisan.mdx": {
   id: "smartisan.mdx",
   slug: "smartisan",
   body: string,
   collection: "project",
   data: InferEntrySchema<"project">
-} & { render(): Render[".mdx"] },
+},
 },
 "team": {
 "janette-lynch.md": {
@@ -303,21 +259,21 @@ declare module 'astro:content' {
   body: string,
   collection: "team",
   data: InferEntrySchema<"team">
-} & { render(): Render[".md"] },
+},
 "marcell-ziemann.md": {
   id: "marcell-ziemann.md",
   slug: "marcell-ziemann",
   body: string,
   collection: "team",
   data: InferEntrySchema<"team">
-} & { render(): Render[".md"] },
+},
 "robert-palmer.md": {
   id: "robert-palmer.md",
   slug: "robert-palmer",
   body: string,
   collection: "team",
   data: InferEntrySchema<"team">
-} & { render(): Render[".md"] },
+},
 },
 
 	};
