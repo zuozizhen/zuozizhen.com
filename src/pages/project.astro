@@ -4,7 +4,6 @@ import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import ArrowMotion from "@components/ArrowMotion.astro";
-import otherproject from "../content/otherproject.json";
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedProjectEntries = await getCollection("project", ({ data }) => {
@@ -19,7 +18,13 @@ publishedProjectEntries.sort(function (a, b) {
 
 <Layout title="Blog">
   <Container>
-    <main class="mt-16">
+    <main class="max-w-screen-lg mx-auto px-10 lg:px-0 my-16">
+      <div class="space-y-2 mb-7">
+        <h2 class="text-2xl font-semibold ">
+          作品集
+        </h2>
+        <div class="text-neutral-500 text-lg">工作中的设计项目</div>
+      </div>
       <ul class="grid grid-cols-2 gap-10 max-w-screen-lg mx-auto">
         {
           publishedProjectEntries.map((projectPostEntry, index) => (
@@ -48,12 +53,8 @@ publishedProjectEntries.sort(function (a, b) {
                     </div>
 
 
-                    <div class="flex gap-1 mt-1 text-sm">
-                      <time
-                        class="text-gray-500"
-                        datetime={projectPostEntry.data.publishDate.toISOString()}>
-                        {projectPostEntry.data.publishDate.toDateString()}
-                      </time>
+                    <div class="flex gap-1 mt-1 text-sm text-gray-500">
+                     {projectPostEntry.data.snippet}
                     </div>
                   </div>
                 </div>
@@ -62,37 +63,6 @@ publishedProjectEntries.sort(function (a, b) {
           ))
         }
       </ul>
-      {
-          otherproject.map((projectPostEntry, index) => (
-            <li>
-              <a href={`/project/${projectPostEntry.slug}`}>
-                <div class="">
-                  <Picture
-                    src={projectPostEntry.coverSrc}
-                    alt=""
-                    sizes="(max-width: 800px) 100vw, 800px"
-                    widths={[200, 400, 800]}
-                    aspectRatio="16:9"
-                    background="#ffffff"
-                    fit="cover"
-                    position="center"
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md"
-                  />
-                  <div>
-                    <div class="arrow-motion mt-4 flex items-center">
-                      <h2 class=" text-lg font-semibold leading-snug tracking-tight text-neutral-800">
-                      {projectPostEntry.title}
-                      </h2>
-                      <ArrowMotion/>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          ))
-        }
     </main>
   </Container>
 </Layout>

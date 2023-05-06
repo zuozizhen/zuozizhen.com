@@ -392,6 +392,7 @@ section {
 
 .card-resource {
   aspect-ratio: 322 / 362;
+  transition: all 0.2s ease-out;
   &.cv {
     background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/1bd8c797-f7ef-40ea-5bb5-c78f9e2c6600/public) no-repeat 100% / cover;
   }

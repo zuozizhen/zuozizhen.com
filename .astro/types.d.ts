@@ -230,6 +230,20 @@ declare module 'astro:content' {
 },
 },
 "project": {
+"cachemoment.mdx": {
+  id: "cachemoment.mdx",
+  slug: "cachemoment",
+  body: string,
+  collection: "project",
+  data: InferEntrySchema<"project">
+},
+"lanhu-website.mdx": {
+  id: "lanhu-website.mdx",
+  slug: "lanhu-website",
+  body: string,
+  collection: "project",
+  data: InferEntrySchema<"project">
+},
 "mastergo-design-system.mdx": {
   id: "mastergo-design-system.mdx",
   slug: "mastergo-design-system",
@@ -240,6 +254,13 @@ declare module 'astro:content' {
 "mastergo.mdx": {
   id: "mastergo.mdx",
   slug: "mastergo",
+  body: string,
+  collection: "project",
+  data: InferEntrySchema<"project">
+},
+"smartisan-web-sketch-library.1.mdx": {
+  id: "smartisan-web-sketch-library.1.mdx",
+  slug: "smartisan-web-sketch-library1",
   body: string,
   collection: "project",
   data: InferEntrySchema<"project">

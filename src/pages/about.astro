@@ -4,6 +4,7 @@ import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import { Icon } from 'astro-icon';
 
 import { Content as About } from '../content/about.md';
 
@@ -11,8 +12,29 @@ import { Content as About } from '../content/about.md';
 
 <Layout title="About">
   <Container>
-    <div  class="prose prose-lg my-12 mx-auto">
-      <About />
+    <div class="flex max-w-screen-lg mx-auto gap-20">
+      <div class="w-full mb-40">
+        <div class="prose prose-lg mt-12">
+          <About />
+        </div>
+      </div>
+      <div class="flex-shrink-0 mt-12">
+        <div class="w-60">
+          <img
+            class="rounded-md"
+            src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/c479d4d5-ea7c-48da-df9b-d034eed9da00/public"
+            class="personal_photo rounded-xl flex-none w-[20rem] h-[24rem]"
+          />
+          <div class="text-neutral-500 mt-6 leading-7">
+            设计师和独奏者。我对独自创业充满热情，使我们的收入，UI/UX设计和生产力多样化。目前正在建立我的第八个收入流，并分享一路上的经验教训。
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://twitter.com/zuozizhen" target="_blank" class="social-button bg-neutral-100 hover:bg-neutral-200 transition rounded-xl w-[2.6rem] h-[2.6rem] p-3"><Icon name="mdi:twitter" alt="" class="text-neutral-700"/></a>
+            <a href="mailto:me@zuozizhen.com" class="social-button bg-neutral-100 hover:bg-neutral-200 rounded-xl w-[2.6rem] h-[2.6rem] p-3"><Icon name="ic:round-mail" alt="" class="text-neutral-700"/></a>
+            <a href="" class="social-button bg-neutral-100 hover:bg-neutral-200 rounded-xl w-[2.6rem] h-[2.6rem] p-3"><Icon name="official-accounts" alt="" class="text-neutral-700"/></a>
+          </div>
+        </div>
+      </div>
     </div>
   </Container>
 </Layout>
