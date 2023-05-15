@@ -3,21 +3,10 @@ import { Picture } from "@astrojs/image/components";
 import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
-import { getCollection } from "astro:content";
-
-// Filter blog entries with 'draft: false' & date before current date
-const publishedBlogEntries = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
-
-// Sort content entries by publication date
-publishedBlogEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-});
 ---
 
 <main
-  class="flex flex-col max-w-screen-lg mx-auto pt-40 px-10 lg:px-0">
+  class="flex flex-col max-w-screen-lg mx-auto pt-36 px-10 lg:px-0">
   <div class="flex flex-col">
     <h1 class="text-3xl font-semibold max-w-3xl">
       我是左子祯 — 设计师和创造者。
@@ -25,51 +14,5 @@ publishedBlogEntries.sort(function (a, b) {
     <p class="text-xl mt-3 text-neutral-500 max-w-[52rem] leading-9">
       我专注创造 UI/UX 设计、生产力、效率相关的东西，你可以在 <a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=Copya&appuid=5c5f7e25000000001000fc79&apptime=1648820442">小红书</a> 、<a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://twitter.com/zuozizhen">Twitter</a> 关注我，订阅我的 <a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://zuozizhen.substack.com">会员通讯</a>，或了解更多 <a class='font-medium hover:opacity-70 border-neutral-500 text-neutral-800' href="/about">关于我</a> 的信息。
     </p>
-
-    <div class="space-y-2 mt-40">
-      <a href="https://zuozizhen.substack.com" class="font-semibold text-white leading-7 text-lg bg-neutral-800 w-fit px-7 py-2.5 rounded-md block hover:bg-neutral-900 transition" target="_blank">订阅我的 Newsletter</a>
-      <div class="text-neutral-500">估计每个月 1-2 封邮件，分享我正在做的事情。</div>
-    </div>
   </div>
-  <ul class="flex gap-10 w-full mt-10">
-        {
-          publishedBlogEntries.slice(0, 2).map((blogPostEntry, index) => (
-            <li>
-              <a href={`/blog/${blogPostEntry.slug}`}>
-                <div class="">
-                  <Picture
-                    src={blogPostEntry.data.image.src}
-                    alt={blogPostEntry.data.image.alt}
-                    sizes="(max-width: 800px) 100vw, 800px"
-                    widths={[200, 400, 800]}
-                    aspectRatio="16:9"
-                    background="#ffffff"
-                    fit="cover"
-                    position="center"
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md"
-                  />
-                  <div>
-                    <h2 class="text-lg font-semibold leading-snug tracking-tight mt-4 text-neutral-800">
-                      {blogPostEntry.data.title}
-                    </h2>
-
-                    <div class="flex gap-1 mt-1 text-sm">
-                      <time
-                        class="text-gray-500"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}>
-                        {blogPostEntry.data.publishDate.toDateString()}
-                      </time>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-      <a href="/blog" class="font-semibold mt-6 hover:opacity-70 transition">
-        更多文章 ->
-      </a>
 </main>
