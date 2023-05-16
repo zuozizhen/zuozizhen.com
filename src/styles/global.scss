@@ -407,6 +407,24 @@ section {
   }
 }
 
+.card-indie {
+  aspect-ratio: 160 / 112;
+  transition: all 0.2s ease-out;
+
+  &.figmachina {
+    background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/82d806a8-96b5-4425-4067-7a10e8946900/public) no-repeat 100% / cover;
+  }
+
+  &.notionchina {
+    background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/6bf9fca9-3968-41d6-7eb3-9ed121bc3200/public) no-repeat 100% / cover;
+  }
+
+  &.elife {
+    background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/71184dba-26a3-46fa-5309-8bedbb851700/public) no-repeat 100% / cover;
+  }
+
+}
+
 // link 箭头动效
 #cta {
   @apply transition;

@@ -13,15 +13,15 @@ publishedBlogEntries.sort(function (a, b) {
 });
 ---
 <section class="introduction relative py-12">
-  <div class="max-w-screen-lg mx-auto px-10 lg:px-0">
-    <div class="space-y-2 mb-7">
+  <div class="max-w-screen-lg mx-auto px-10 lg:px-0 space-y-7">
+    <div class="space-y-2">
       <h2 class="text-2xl font-semibold">
         实时通讯
       </h2>
       <div class="text-neutral-500 text-lg">我的一些工作项目和一些业余项目</div>
      </div>
 
-     <ul class="flex gap-10 w-full mt-7">
+     <ul class="flex gap-10 w-full">
         {
           publishedBlogEntries.slice(0, 2).map((blogPostEntry, index) => (
             <li>
@@ -59,7 +59,7 @@ publishedBlogEntries.sort(function (a, b) {
           ))
         }
       </ul>
-      <a href="/blog" class="font-semibold mt-6 hover:opacity-70 transition">
+      <a href="/blog" class="block font-semibold mt-6 hover:opacity-70 transition">
         更多文章 ->
       </a>
   </div>
