@@ -1,87 +1,83 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from 'astro:assets';
 ---
 
 <section class="introduction relative py-12">
   <div class="max-w-screen-lg mx-auto px-10 lg:px-0">
     <div class="space-y-2 mb-7">
       <h2 class="text-2xl font-semibold">
-        独立开发
+        建造
       </h2>
       <div class="text-neutral-500 text-lg">我喜欢建造有用和有趣的产品</div>
      </div>
 
-     <div class="grid grid-cols-2 gap-6">
-      <a href="https://figmachina.com">
-        <Picture
-          src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/82d806a8-96b5-4425-4067-7a10e8946900/public"
-          alt=""
-          sizes="(max-width: 800px) 100vw, 800px"
-          widths={[200, 400, 800]}
-          aspectRatio="16:9"
-          background="#ffffff"
-          fit="cover"
-          position="center"
-          class="w-full rounded-md"
-        />
-        <div>
-          <div class="arrow-motion mt-4 flex items-center">
-            <h2 class=" text-lg font-semibold leading-snug tracking-tight text-neutral-800">
-            FigmaChina
-            </h2>
-          </div>
-          <div class="flex gap-1 mt-1 text-sm text-gray-500">
-          Figma 中文站，帮助国内用户学习和使用 Figma
+     <div class="grid grid-cols-1">
+      <a href="https://figmachina.com" class="flex justify-between items-center w-full py-6">
+        <div class="flex gap-4 items-center">
+          <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/8018af44-21ef-468e-ca1b-fce21075c400/public" class="w-24 h-24 rounded-md"></img>
+          <div class="space-y-2">
+            <div class="space-y-1">
+              <h2 class="text-lg font-semibold leading-snug tracking-tight text-neutral-800">
+              FigmaChina
+              </h2>
+              <div class="text-gray-500">
+                Figma 中文站，帮助国内用户学习和使用 Figma
+              </div>
+            </div>
+            <div class="flex gap-3 text-sm text-gray-500">
+              <span>#开发中</span>
+              <span>#设计工具</span>
+            </div>
           </div>
         </div>
-      </a>
-      <a href="https://notionchina.co">
-        <Picture
-          src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/6bf9fca9-3968-41d6-7eb3-9ed121bc3200/public"
-          alt=""
-          sizes="(max-width: 800px) 100vw, 800px"
-          widths={[200, 400, 800]}
-          aspectRatio="16:9"
-          background="#ffffff"
-          fit="cover"
-          position="center"
-          class="w-full rounded-md"
-        />
-        <div>
-          <div class="arrow-motion mt-4 flex items-center">
-            <h2 class=" text-lg font-semibold leading-snug tracking-tight text-neutral-800">
-            NotionChina
-            </h2>
-          </div>
-          <div class="flex gap-1 mt-1 text-sm text-gray-500">
-          Notion 中文站，帮助国内用户学习和使用 Figma
-          </div>
+        <div class="text-sm font-medium">
+          访问网站 ->
         </div>
       </a>
-      <a href="https://startelife.com">
-        <Picture
-          src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/71184dba-26a3-46fa-5309-8bedbb851700/public"
-          alt=""
-          sizes="(max-width: 800px) 100vw, 800px"
-          widths={[200, 400, 800]}
-          aspectRatio="16:9"
-          background="#ffffff"
-          fit="cover"
-          position="center"
-          class="w-full rounded-md"
-        />
-        <div>
-          <div class="arrow-motion mt-4 flex items-center">
-            <h2 class=" text-lg font-semibold leading-snug tracking-tight text-neutral-800">
-            Elife
-            </h2>
-          </div>
-          <div class="flex gap-1 mt-1 text-sm text-gray-500">
-          自己常用的在线工具合集，主页的生命倒计时器用于告诫自己要珍惜时间
+      <a href="https://notionchina.co" class="flex justify-between items-center w-full py-6">
+        <div class="flex gap-4 items-center">
+          <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/eca705b1-3ab5-41dd-6a80-05ae86457700/public" class="w-24 h-24 rounded-md"></img>
+          <div class="space-y-2">
+            <div class="space-y-1">
+              <h2 class="text-lg font-semibold leading-snug tracking-tight text-neutral-800">
+              NotionChina
+              </h2>
+              <div class="text-gray-500">
+                Notion 中文站，帮助国内用户学习和使用 Notion
+              </div>
+            </div>
+            <div class="flex gap-3 text-sm text-gray-500">
+              <span>#开发中</span>
+              <span>#设计工具</span>
+            </div>
           </div>
         </div>
+        <div class="text-sm font-medium">
+          访问网站 ->
+        </div>
       </a>
-
+      <a href="https://startelife.com" class="flex justify-between items-center w-full py-6">
+        <div class="flex gap-4 items-center">
+          <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/638083e9-e724-4661-024e-2a7d65aeb500/public" class="w-24 h-24 rounded-md"></img>
+          <div class="space-y-2">
+            <div class="space-y-1">
+              <h2 class="text-lg font-semibold leading-snug tracking-tight text-neutral-800">
+              Elife
+              </h2>
+              <div class="text-gray-500">
+               自己常用的在线工具合集，主页的生命倒计时器用于告诫自己要珍惜时间
+              </div>
+            </div>
+            <div class="flex gap-3 text-sm text-gray-500">
+              <span>#开发中</span>
+              <span>#设计工具</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-sm font-medium">
+          访问网站 ->
+        </div>
+      </a>
     </div>
 
 

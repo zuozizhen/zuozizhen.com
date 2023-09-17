@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'HarmonyOS';
-  src: url('/HarmonyOS_Sans_SC_Medium.woff2') format('woff2');
+  src: url('/fonts/HarmonyOS_Sans_SC_Medium.woff2') format('woff2');
   font-weight: 500;
   font-display: swap;
 }
@@ -52,7 +52,6 @@ html {
 
 body {
   background: #ffffff;
-  background-image: url(background_noise.png);
   background-repeat: repeat;
   background-size: 300px 300px;
   min-height: 100vh;

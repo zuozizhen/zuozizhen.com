@@ -30,10 +30,7 @@ const projectCollection = defineCollection({
     title: z.string(),
     snippet: z.string(),
     duty: z.string(),
-    image: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }),
+    image: z.string(),
     publishDate: z.string().transform(str => new Date(str)),
   }),
 });

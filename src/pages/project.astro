@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import ArrowMotion from "@components/ArrowMotion.astro";
@@ -25,35 +24,36 @@ publishedProjectEntries.sort(function (a, b) {
         </h2>
         <div class="text-neutral-500 text-lg">工作中的设计项目</div>
       </div>
-      <ul class="grid grid-cols-2 gap-10 max-w-screen-lg mx-auto">
+      <ul class="grid grid-cols-1 gap-10 max-w-screen-lg mx-auto">
         {
           publishedProjectEntries.map((projectPostEntry, index) => (
             <li>
               <a href={`/project/${projectPostEntry.slug}`}>
-                <div class="">
-                  <Picture
-                    src={projectPostEntry.data.image.src}
-                    alt={projectPostEntry.data.image.alt}
-                    sizes="(max-width: 800px) 100vw, 800px"
-                    widths={[200, 400, 800]}
-                    aspectRatio="16:9"
-                    background="#ffffff"
-                    fit="cover"
-                    position="center"
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md"
-                  />
-                  <div>
-                    <div class="arrow-motion mt-4 flex items-center">
-                      <h2 class=" text-lg font-semibold leading-snug tracking-tight text-neutral-800">
+                <div class="w-full aspect-[1480/830] flex relative items-center pl-16 overflow-hidden  rounded-xl">
+                   <div class="w-2/5">
+                    <div class="flex items-center">
+                      <h2 class="text-3xl font-semibold leading-snug tracking-tight text-neutral-100">
                       {projectPostEntry.data.title}
                       </h2>
                     </div>
-                    <div class="flex gap-1 mt-1 text-sm text-gray-500">
+                    <div class="flex gap-1 mt-1 text-neutral-400">
                      {projectPostEntry.data.snippet}
                     </div>
+                    <div class="flex gap-6 mt-6">
+                      <div class="flex gap-1 mt-1 text-neutral-400">
+                     了解详情 ->
+                      </div>
+                      <div class="flex gap-1 mt-1 text-neutral-400">
+                      访问网站 ->
+                      </div>
+                    </div>
+
                   </div>
+                  <img
+                    src={projectPostEntry.data.image}
+                    class="w-full object-cover absolute right-0 top-0 -z-10"
+                  />
+
                 </div>
               </a>
             </li>

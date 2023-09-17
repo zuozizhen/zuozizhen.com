@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { Picture } from "@astrojs/image/components";
+import { Image } from 'astro:assets'
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
@@ -41,18 +41,12 @@ const formatDate = (date) => {
             <li>
               <a href={`/blog/${blogPostEntry.slug}`}>
                 <div class="">
-                  <Picture
+                  <img
                     src={blogPostEntry.data.image.src}
                     alt={blogPostEntry.data.image.alt}
-                    sizes="(max-width: 800px) 100vw, 800px"
-                    widths={[200, 400, 800]}
-                    aspectRatio="16:9"
-                    background="#ffffff"
-                    fit="cover"
-                    position="center"
                     loading={index <= 2 ? "eager" : "lazy"}
                     decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md border border-black/5"
+                    class="w-full rounded-md border border-black/5 aspect-[16/9] object-cover"
                   />
                   <div>
 
