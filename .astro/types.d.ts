@@ -178,7 +178,16 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
+		"about": {
+"about.md": {
+	id: "about.md";
+  slug: "about";
+  body: string;
+  collection: "about";
+  data: any
+} & { render(): Render[".md"] };
+};
+"blog": {
 "black-mirro-bandersnatch.mdx": {
 	id: "black-mirro-bandersnatch.mdx";
   slug: "black-mirro-bandersnatch";
@@ -405,9 +414,7 @@ declare module 'astro:content' {
 	};
 
 	type DataEntryMap = {
-		"about": {
-};
-
+		
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
