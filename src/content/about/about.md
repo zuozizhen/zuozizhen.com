@@ -41,13 +41,11 @@ publishDate: "2018-12-30"
 
 除了设计和技术，我也非常愿意和希望能够将知识分享给需要的人。
 
-作为个人，我平时会在[小红书](https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442)上分享我的经验和知识，也会在 [微信公众号](https://zuozizhen.com/about/wechat) 会不定期的分享我的一些其它方面的思考。
+作为个人，我平时会在[小红书](https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79)上分享我的经验和知识，也创办了周刊[堆栈 Stack](https://zuozizhen.substack.com)分享关于设计、技术、创作等话题相关的独家经验。
 
 ### 如何联系我
 
-小红书：[左子祯](https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79?xhsshare=CopyLink&appuid=5c5f7e25000000001000fc79&apptime=1648820442)
-
-微信公众号：[左子祯](https://zuozizhen.com/about/wechat)
+小红书：[左子祯](https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79)
 
 Github: [zuozizhen](https://github.com/zuozizhen)
 

@@ -193,198 +193,198 @@ declare module 'astro:content' {
   slug: "black-mirro-bandersnatch";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "cachemoment-new-branding.mdx": {
 	id: "cachemoment-new-branding.mdx";
   slug: "cachemoment-new-branding";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "chatgpt-signup.mdx": {
 	id: "chatgpt-signup.mdx";
   slug: "chatgpt-signup";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "cron-design.mdx": {
 	id: "cron-design.mdx";
   slug: "cron-design";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "css-standard.mdx": {
 	id: "css-standard.mdx";
   slug: "css-standard";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "design-trend-2019.mdx": {
 	id: "design-trend-2019.mdx";
   slug: "design-trend-2019";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "draw-1.mdx": {
 	id: "draw-1.mdx";
   slug: "draw-1";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "figma-bytedance.mdx": {
 	id: "figma-bytedance.mdx";
   slug: "figma-bytedance";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "figmachina.mdx": {
 	id: "figmachina.mdx";
   slug: "figmachina";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "flatland.mdx": {
 	id: "flatland.mdx";
   slug: "flatland";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "life-in-a-day-2020.mdx": {
 	id: "life-in-a-day-2020.mdx";
   slug: "life-in-a-day-2020";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "luowang.mdx": {
 	id: "luowang.mdx";
   slug: "luowang";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "master-principle.mdx": {
 	id: "master-principle.mdx";
   slug: "master-principle";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "mastergo-principle-case.mdx": {
 	id: "mastergo-principle-case.mdx";
   slug: "mastergo-principle-case";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "medium-new-logo.mdx": {
 	id: "medium-new-logo.mdx";
   slug: "medium-new-logo";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "meetup-ziru.mdx": {
 	id: "meetup-ziru.mdx";
   slug: "meetup-ziru";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "personal-website.mdx": {
 	id: "personal-website.mdx";
   slug: "personal-website";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "share-movie-korea.mdx": {
 	id: "share-movie-korea.mdx";
   slug: "share-movie-korea";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "share-movie-science.mdx": {
 	id: "share-movie-science.mdx";
   slug: "share-movie-science";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "think-plus.mdx": {
 	id: "think-plus.mdx";
   slug: "think-plus";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "website-for-designer-1.mdx": {
 	id: "website-for-designer-1.mdx";
   slug: "website-for-designer-1";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "website-for-designer-2.mdx": {
 	id: "website-for-designer-2.mdx";
   slug: "website-for-designer-2";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "zuibishe.mdx": {
 	id: "zuibishe.mdx";
   slug: "zuibishe";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 };
 "project": {
+".mastergo-design-system.mdx": {
+	id: ".mastergo-design-system.mdx";
+  slug: "mastergo-design-system";
+  body: string;
+  collection: "project";
+  data: any
+} & { render(): Render[".mdx"] };
 "cachemoment.mdx": {
 	id: "cachemoment.mdx";
   slug: "cachemoment";
   body: string;
   collection: "project";
-  data: InferEntrySchema<"project">
+  data: any
 } & { render(): Render[".mdx"] };
 "lanhu-website.mdx": {
 	id: "lanhu-website.mdx";
   slug: "lanhu-website";
   body: string;
   collection: "project";
-  data: InferEntrySchema<"project">
-} & { render(): Render[".mdx"] };
-"mastergo-design-system.mdx": {
-	id: "mastergo-design-system.mdx";
-  slug: "mastergo-design-system";
-  body: string;
-  collection: "project";
-  data: InferEntrySchema<"project">
+  data: any
 } & { render(): Render[".mdx"] };
 "mastergo.mdx": {
 	id: "mastergo.mdx";
   slug: "mastergo";
   body: string;
   collection: "project";
-  data: InferEntrySchema<"project">
+  data: any
 } & { render(): Render[".mdx"] };
 "smartisan.mdx": {
 	id: "smartisan.mdx";
   slug: "smartisan";
   body: string;
   collection: "project";
-  data: InferEntrySchema<"project">
+  data: any
 } & { render(): Render[".mdx"] };
 };
 "team": {
@@ -393,21 +393,21 @@ declare module 'astro:content' {
   slug: "janette-lynch";
   body: string;
   collection: "team";
-  data: InferEntrySchema<"team">
+  data: any
 } & { render(): Render[".md"] };
 "marcell-ziemann.md": {
 	id: "marcell-ziemann.md";
   slug: "marcell-ziemann";
   body: string;
   collection: "team";
-  data: InferEntrySchema<"team">
+  data: any
 } & { render(): Render[".md"] };
 "robert-palmer.md": {
 	id: "robert-palmer.md";
   slug: "robert-palmer";
   body: string;
   collection: "team";
-  data: InferEntrySchema<"team">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -419,5 +419,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = typeof import("../src/content/config");
+	type ContentConfig = never;
 }
