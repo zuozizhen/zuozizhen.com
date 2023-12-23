@@ -299,21 +299,6 @@ section {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  &:after{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 300%;
-      height: 100%;
-      background: linear-gradient(120deg, #e4e4e4 0%, #a8a8a8 20%, #c2c2c2 30%, #ffffff 40%, #c2c2c2 50%, #dbdbdb 60%,#a8a8a8 75%, #ffffff 100%);
-      animation: colorCycle 3s infinite ease-out;
-      z-index: 1;
-      opacity: 1;
-      mix-blend-mode: darken;
-      border-radius: 0.5rem;
-      opacity: 0.5;
-  }
 }
 
 .cover {
@@ -496,5 +481,81 @@ section {
     border: 1px solid rgba($color: #000000, $alpha: 0.06);
     border-radius: 0.5rem;
     margin: 0 auto;
+  }
+}
+
+.project-img-wrap {
+  img {
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, #fff 94%, #0000) top/3px 3px no-repeat,
+    conic-gradient(#0000 30%, #fff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 3px), #000 0);
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  /* 禁止点击 */
+  // opacity: 0.6; /* 可选：更改样式以指示按钮不可用 */
+}
+
+.error-message {
+  font-size: 14px;
+  color: #d45145;
+  margin-bottom: 12px;
+  margin-top: 6px;
+}
+
+.subscription-form {
+  display: flex;
+  gap: 12px;
+
+  .button_fail {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    width: 200px;
+  }
+
+  .button-icon {
+    margin-left: 6px;
+  }
+
+  input {
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    padding-left: 14px;
+    height: 48px;
+    width: 100%;
+    font-weight: 500;
+
+    &::placeholder {
+      color: #828282;
+    }
+
+    &:focus {
+      border: 1px solid #7e7e7e;
+      /* 蓝色边框 */
+      outline: none;
+      /* 移除默认的轮廓 */
+    }
   }
 }

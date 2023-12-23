@@ -12,9 +12,37 @@ import { Icon } from "astro-icon";
     <p class="text-xl mt-3 text-neutral-500 max-w-[52rem] leading-9">
       我是一名产品设计师，乐于创造和分享，对一人事业充满热情，你可以关注我的 <a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://twitter.com/zuozizhen">Twitter</a>、<a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79">小红书</a> ，订阅我的 <a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://zuozizhen.substack.com">Newsletter</a>，或了解更多 <a class='font-medium hover:opacity-70 border-neutral-500 text-neutral-800' href="/about">关于我的经历</a>。
     </p>
-    <div class="space-y-2 mt-12">
+    <!-- <div class="space-y-2 mt-12">
       <a href="https://zuozizhen.substack.com" class="font-semibold text-white leading-7 text-lg bg-neutral-800 w-fit px-6 py-2.5 rounded-md block hover:bg-neutral-900 transition" target="_blank">订阅堆栈 Stack -></a>
       <div class="text-neutral-500 text-sm">订阅我的月刊，获得关于设计、技术、创作等话题相关的独家经验和分享</div>
-    </div>
+    </div> -->
   </div>
+  <div class="mt-12 grid grid-cols-[500px_20px_300px] gap-8 items-center">
+      <div class="h-fit">
+        <form id="subscription-form" class="subscription-form">
+            <input type="email" id="email-input" required placeholder="输入邮箱">
+            <div
+              id="submit-button"
+              class="button_fail flex-none font-semibold text-white leading-7 text-lg bg-neutral-800 w-fit px-6 py-2.5 rounded-md block hover:bg-neutral-900 transition"
+            >
+              <span id="loader" class="loader" style="display: none;"></span>
+              <span id="button-text">订阅堆栈 Stack<span class="button-icon">→</span></span>
+            </div>
+        </form>
+        <div id="error-message" class="error-message" style="display: none;">
+            请输入有效的邮箱地址。
+        </div>
+        <div class="text-neutral-500 text-sm mt-2 block">
+          关于设计、技术、创作等话题的独家经验和分享，<a class="font-medium text-neutral-700 hover:text-neutral-100 transition" href="https://zuozizhen.substack.com/archive" target="_blank">查看往期内容</a>
+        </div>
+      </div>
+      <div class="h-full flex flex-col items-center gap-1">
+        <div class="h-full w-[1px] bg-neutral-200"></div>
+        <div class="text-xs font-semibold text-neutral-400">OR</div>
+        <div class="h-full w-[1px] bg-neutral-200"></div>
+      </div>
+      <div class="flex items-center gap-6 flex-col md:flex-row text-center md:text-left">
+        <div id="qr" class="qr w-24 h-24 rounded-md flex-none border border-neutral-200"></div>
+      </div>
+    </div>
 </main>

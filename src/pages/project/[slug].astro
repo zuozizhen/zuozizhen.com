@@ -30,27 +30,10 @@ const { Content } = await entry.render();
             datetime={entry.data.publishDate.toISOString()}>
             {entry.data.publishDate.toDateString()}
           </time>
-          <img
-            class="w-full rounded-lg mt-8"
-            src={entry.data.image.src}
-            class="personal_photo rounded-xl flex-none w-[20rem] h-[24rem]"
-          />
         </div>
 
-        <div class="prose prose-lg mt-6">
+        <div class="prose prose-lg mt-6 w-full max-w-none">
           <Content />
-        </div>
-      </div>
-      <div class="flex-shrink-0 mt-12">
-        <div class="w-60">
-          <img
-            class="rounded-md"
-            src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/c479d4d5-ea7c-48da-df9b-d034eed9da00/public"
-            class="personal_photo rounded-xl flex-none w-[20rem] h-[24rem]"
-          />
-          <div class="text-neutral-500 mt-6">
-            我是一名产品设计师，喜欢创造和分享，对一人事业充满热情，目前正在建立我的 Newsletter，分享一路上的经验教训。
-          </div>
         </div>
       </div>
     </div>
