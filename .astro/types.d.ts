@@ -365,13 +365,6 @@ declare module 'astro:content' {
   collection: "project";
   data: InferEntrySchema<"project">
 } & { render(): Render[".mdx"] };
-"mastergo-first-post.mdx": {
-	id: "mastergo-first-post.mdx";
-  slug: "mastergo-first-post";
-  body: string;
-  collection: "project";
-  data: InferEntrySchema<"project">
-} & { render(): Render[".mdx"] };
 "mastergo-logo.mdx": {
 	id: "mastergo-logo.mdx";
   slug: "mastergo-logo";
