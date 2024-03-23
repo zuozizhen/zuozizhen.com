@@ -4,103 +4,132 @@ import { Icon } from "astro-icon";
 ---
 
 <main
-  class="flex flex-col max-w-screen-lg mx-auto pt-40 pb-8 px-10 lg:px-0">
+  class="flex flex-col max-w-screen-lg mx-auto pt-20 pb-8 sm:pt-40 px-0">
   <div class="flex flex-col">
     <h1 class="text-3xl font-semibold max-w-3xl">
       我是左子祯 — 设计师, 创作者。
     </h1>
     <p class="text-xl mt-3 text-neutral-500 max-w-[52rem] leading-9">
-      我是一名产品设计师，乐于创造和分享，对一人事业充满热情，你可以关注我的 <a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://twitter.com/zuozizhen">Twitter</a>、<a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79">小红书</a> ，订阅我的 <a class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800" href="https://zuozizhen.substack.com">Newsletter</a>，或了解更多 <a class='font-medium hover:opacity-70 border-neutral-500 text-neutral-800' href="/about">关于我的经历</a>。
+      我是一名产品设计师，乐于创造和分享，对一人事业充满热情，你可以关注我的 <a
+        class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800"
+        href="https://twitter.com/zuozizhen">Twitter</a
+      >、<a
+        class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800"
+        href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79"
+        >小红书</a
+      > ，订阅我的 <a
+        class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800"
+        href="https://zuozizhen.substack.com">Newsletter</a
+      >，或了解更多 <a
+        class="font-medium hover:opacity-70 border-neutral-500 text-neutral-800"
+        href="/about">关于我的经历</a
+      >。
     </p>
     <!-- <div class="space-y-2 mt-12">
       <a href="https://zuozizhen.substack.com" class="font-semibold text-white leading-7 text-lg bg-neutral-800 w-fit px-6 py-2.5 rounded-md block hover:bg-neutral-900 transition" target="_blank">订阅堆栈 Stack -></a>
       <div class="text-neutral-500 text-sm">订阅我的月刊，获得关于设计、技术、创作等话题相关的独家经验和分享</div>
     </div> -->
   </div>
-  <div class="mt-12 grid grid-cols-[500px_20px_300px] gap-8 items-center">
-      <div class="h-fit">
-        <form id="subscription-form" class="subscription-form">
-            <input type="email" id="email-input" required placeholder="输入邮箱">
-            <div
-              id="submit-button"
-              class="button_fail flex-none font-semibold text-white leading-7 text-lg bg-neutral-800 w-fit px-6 py-2.5 rounded-md block hover:bg-neutral-900 transition"
-            >
-              <span id="loader" class="loader" style="display: none;"></span>
-              <span id="button-text">订阅堆栈 Stack<span class="button-icon">→</span></span>
-            </div>
-        </form>
-        <div id="error-message" class="error-message" style="display: none;">
-            请输入有效的邮箱地址。
+  <div
+    class="mt-12 grid grid-cols-1 gap-8 items-center md:grid-cols-[500px_20px_300px]">
+    <div class="h-fit">
+      <form
+        id="subscription-form"
+        class="subscription-form sm:flex-row flex-col">
+        <input type="email" id="email-input" required placeholder="输入邮箱" />
+        <div
+          id="submit-button"
+          class="button_fail flex-none font-semibold text-white leading-7 text-lg bg-neutral-800 px-6 py-2.5 rounded-md block hover:bg-neutral-900 transition sm:w-[200px] w-full">
+          <span id="loader" class="loader" style="display: none;"></span>
+          <span id="button-text"
+            >订阅堆栈 Stack<span class="button-icon">→</span></span
+          >
         </div>
-        <div class="text-neutral-500 text-sm mt-2 block">
-          关于设计、技术、创作等话题的独家经验和分享，<a class="font-medium text-neutral-700 hover:text-neutral-900 transition" href="https://zuozizhen.substack.com/archive" target="_blank">查看往期内容</a>
-        </div>
+      </form>
+      <div id="error-message" class="error-message" style="display: none;">
+        请输入有效的邮箱地址。
       </div>
-      <div class="h-full flex flex-col items-center gap-1">
-        <div class="h-full w-[1px] bg-neutral-200"></div>
-        <div class="text-xs font-semibold text-neutral-400">OR</div>
-        <div class="h-full w-[1px] bg-neutral-200"></div>
-      </div>
-      <div class="flex items-center gap-6 flex-col md:flex-row text-center md:text-left">
-        <div id="qr" class="qr w-24 h-24 rounded-md flex-none border border-neutral-200"></div>
+      <div class="text-neutral-500 text-sm mt-2 block">
+        关于设计、技术、创作等话题的独家经验和分享，<a
+          class="font-medium text-neutral-700 hover:text-neutral-900 transition"
+          href="https://zuozizhen.substack.com/archive"
+          target="_blank">查看往期内容</a
+        >
       </div>
     </div>
+    <div class="sm:h-full w-full flex sm:flex-col flex-row items-center gap-1">
+      <div class="sm:h-full w-full sm:w-[1px] h-[1px] bg-neutral-200"></div>
+      <div class="text-xs font-semibold text-neutral-400">OR</div>
+      <div class="sm:h-full w-full sm:w-[1px] h-[1px] bg-neutral-200"></div>
+    </div>
+    <div
+      class="flex items-center gap-6 flex-col md:flex-row text-center md:text-left">
+      <div
+        id="qr"
+        class="qr sm:w-24 sm:h-24 w-36 h-36 rounded-md flex-none border border-neutral-200">
+      </div>
+    </div>
+  </div>
 </main>
 
 <script>
-    const form = document.getElementById('subscription-form');
-    const emailInput = document.getElementById('email-input');
-    const submitButton = document.getElementById('submit-button');
-    const loader = document.getElementById('loader');
-    const buttonText = document.getElementById('button-text');
-    const errorMessage = document.getElementById('error-message');
-    const website = 'zuozizhen.com'
-    let isSubmitting = false;
+  const form = document.getElementById("subscription-form");
+  const emailInput = document.getElementById("email-input");
+  const submitButton = document.getElementById("submit-button");
+  const loader = document.getElementById("loader");
+  const buttonText = document.getElementById("button-text");
+  const errorMessage = document.getElementById("error-message");
+  const website = "zuozizhen.com";
+  let isSubmitting = false;
 
-    function validateEmail(email) {
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
+  function validateEmail(email) {
+    const re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  async function submitForm() {
+    errorMessage.style.display = "none"; // 每次提交前重置错误信息
+    if (!validateEmail(emailInput.value)) {
+      errorMessage.style.display = "block"; // 显示错误信息
+      return;
     }
 
-    async function submitForm() {
-        errorMessage.style.display = 'none'; // 每次提交前重置错误信息
-        if (!validateEmail(emailInput.value)) {
-            errorMessage.style.display = 'block'; // 显示错误信息
-            return;
-        }
+    if (isSubmitting) return; // 如果正在提交，则直接返回
+    isSubmitting = true; // 开始提交
+    loader.style.display = "block";
+    buttonText.style.display = "none";
 
-        if (isSubmitting) return; // 如果正在提交，则直接返回
-        isSubmitting = true; // 开始提交
-        loader.style.display = 'block';
-        buttonText.style.display = 'none';
+    try {
+      const response = await fetch(
+        "https://subscribers-email-to-notion.jingmiaofenxiang.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email: emailInput.value, website }), // 将网站 URL 添加到请求体
+        },
+      );
 
-        try {
-            const response = await fetch('https://subscribers-email-to-notion.jingmiaofenxiang.com', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email: emailInput.value, website }) // 将网站 URL 添加到请求体
-            });
-
-            if (response.ok) {
-                window.location.href = '/subscribed/';
-            } else {
-                alert('订阅失败，错误代码：' + response.status);
-            }
-        } catch (error) {
-            console.error('订阅请求出错：', error);
-            alert('订阅请求出错，请稍后再试。');
-        } finally {
-            isSubmitting = false; // 请求完成，无论成功或失败
-            loader.style.display = 'none';
-            buttonText.style.display = 'block';
-        }
+      if (response.ok) {
+        window.location.href = "/subscribed/";
+      } else {
+        alert("订阅失败，错误代码：" + response.status);
+      }
+    } catch (error) {
+      console.error("订阅请求出错：", error);
+      alert("订阅请求出错，请稍后再试。");
+    } finally {
+      isSubmitting = false; // 请求完成，无论成功或失败
+      loader.style.display = "none";
+      buttonText.style.display = "block";
     }
+  }
 
-    submitButton.addEventListener('click', submitForm);
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        submitForm();
-    });
+  submitButton.addEventListener("click", submitForm);
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    submitForm();
+  });
 </script>

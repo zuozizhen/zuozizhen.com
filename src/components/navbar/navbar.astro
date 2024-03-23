@@ -3,7 +3,8 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-import { Icon } from 'astro-icon';
+import { Icon } from "astro-icon";
+import { Menu } from "astro-feather-icons";
 
 const menuitems = [
   // {
@@ -23,37 +24,84 @@ const menuitems = [
 ---
 
 <Container>
-  <header class="flex justify-between items-center py-6 max-w-screen-lg mx-auto px-10 lg:px-0 border-b border-neutral-100">
-    <Astronav>
-      <div class="flex w-full items-center justify-between">
-        <a href="/" class="text-xl font-black flex gap-3">
-          <Icon name="logo" alt="website logo" class="w-[4rem]"/>
-        </a>
-      </div>
-      <div class="flex gap-12 flex-shrink-0">
-        <a href="/about" class="font-semibold text-neutral-500">
-          关于我
-        </a>
-        <a href="/blog" class="font-semibold text-neutral-500">
-          文章
-        </a>
-        <a href="/resource" class="font-semibold text-neutral-500">
-          资源
-        </a>
-        <a href="/project" class="font-semibold text-neutral-500">
-          作品集
-        </a>
-        <a href="https://zuozizhen.substack.com" class="font-semibold text-neutral-500" target="_blank">
+  <header
+    class="flex justify-between items-center py-6 max-w-screen-lg mx-auto sm:py-10 border-b border-neutral-100">
+    <div class="flex w-full items-center justify-between">
+      <a href="/" class="text-xl font-black flex gap-3">
+        <Icon name="logo" alt="website logo" class="w-[4rem]" />
+      </a>
+      <!-- 汉堡菜单图标，小屏幕时显示 -->
+      <button
+        id="hamburger"
+        class="lg:hidden w-10 h-10 flex items-center justify-center">
+        <Menu class="w-6 h-6" />
+      </button>
+      <!-- 原有导航，大屏幕时显示 -->
+      <div class="hidden lg:flex gap-12 flex-shrink-0">
+        <a href="/about" class="font-semibold text-neutral-500"> 关于我 </a>
+        <a href="/blog" class="font-semibold text-neutral-500"> 文章 </a>
+        <a href="/resource" class="font-semibold text-neutral-500"> 资源 </a>
+        <a href="/project" class="font-semibold text-neutral-500"> 作品集 </a>
+        <a
+          href="https://zuozizhen.substack.com"
+          class="font-semibold text-neutral-500"
+          target="_blank">
           Newsletter
         </a>
       </div>
-
-
-      <!-- <div class="lg:flex items-center gap-4">
-        <a href="https://twitter.com/zuozizhen" target="_blank" class="social-button bg-neutral-800 hover:bg-neutral-700 transition rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="mdi:twitter" alt="" class=""/></a>
-        <a href="mailto:me@zuozizhen.com" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="ic:round-mail" alt="" class=""/></a>
-        <a href="" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="official-accounts" alt="" class=""/></a>
-      </div> -->
-    </Astronav>
+    </div>
+    <!-- 全屏菜单容器，初始隐藏 -->
+    <div
+      id="fullscreen-menu"
+      class="fixed h-screen inset-0 bg-white opacity-0 invisible flex flex-col items-center justify-center space-y-12 lg:hidden z-20">
+      <a href="/about" class="font-semibold text-neutral-900 text-4xl">
+        关于我
+      </a>
+      <a href="/blog" class="font-semibold text-neutral-900 text-4xl"> 文章 </a>
+      <a href="/resource" class="font-semibold text-neutral-900 text-4xl">
+        资源
+      </a>
+      <a href="/project" class="font-semibold text-neutral-900 text-4xl">
+        作品集
+      </a>
+      <a
+        href="https://zuozizhen.substack.com"
+        class="font-semibold text-neutral-900 text-4xl"
+        target="_blank">
+        Newsletter
+      </a>
+    </div>
   </header>
 </Container>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const fullscreenMenu = document.getElementById("fullscreen-menu");
+  const body = document.body;
+
+  hamburger?.addEventListener("click", function () {
+    if (fullscreenMenu) {
+      fullscreenMenu.classList.remove("invisible"); // 显示全屏菜单
+      setTimeout(() => {
+        fullscreenMenu.style.opacity = "1";
+        body.style.overflow = "hidden"; // 禁止滚动
+      }, 10);
+    }
+  });
+
+  fullscreenMenu?.addEventListener("click", function (e) {
+    if (e.target && (e.target as HTMLElement).id === "fullscreen-menu") {
+      fullscreenMenu.style.opacity = "0"; // 开始淡出动画
+      setTimeout(() => {
+        fullscreenMenu.classList.add("invisible"); // 隐藏全屏菜单
+        body.style.overflow = ""; // 恢复滚动
+      }, 300);
+    }
+  });
+</script>
+
+<style>
+  #fullscreen-menu {
+    transition: opacity 0.3s ease;
+  }
+</style>

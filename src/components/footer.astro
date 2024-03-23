@@ -1,30 +1,57 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from "astro-icon";
 ---
 
-<footer class="flex justify-between items-center gap-4 py-6 max-w-screen-lg mx-auto px-10 lg:px-0 border-t border-neutral-100">
+<footer
+  class="flex justify-between items-center gap-4 py-6 max-w-screen-lg mx-auto px-0 border-t border-neutral-100 sm:flex-row flex-col">
   <div class="flex flex-col items-center md:items-start">
     <!-- <Icon name="logo" alt="website logo" class="w-[4rem] mb-1"/> -->
     <div class="flex gap-8 flex-shrink-0">
       <a href="/about" class="flex-none text-neutral-500" target="_blank">
         关于我
       </a>
-      <a href="https://wenjuan.feishu.cn/m?t=s3xoMp7dsiLi-j1k8" class="flex-none text-neutral-500" target="_blank">
+      <a
+        href="https://wenjuan.feishu.cn/m?t=s3xoMp7dsiLi-j1k8"
+        class="flex-none text-neutral-500"
+        target="_blank">
         邮箱联系
       </a>
-      </div>
-      <p class="text-sm text-neutral-500 mt-2">
-        Copyright © {new Date().getFullYear()} zuozizhen. All rights reserved.
-      </p>
     </div>
+    <p class="text-sm text-neutral-500 mt-2">
+      Copyright © {new Date().getFullYear()} zuozizhen. All rights reserved.
+    </p>
+  </div>
   <div class="flex gap-4">
-    <a href="https://twitter.com/zuozizhen" target="_blank" class="social-button bg-neutral-800 hover:bg-neutral-700 transition rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="mdi:twitter" alt="" class="text-white"/></a>
-    <a href="mailto:me@zuozizhen.com" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="ic:round-mail" alt="" class="text-white"/></a>
-    <a href="/wechat" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="official-accounts" alt="" class="text-white"/></a>
-    <a href="https://zuozizhen.substack.com" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3.5"><Icon name="simple-icons:substack" alt="" class="text-white"/></a>
-    <a href="https://www.youtube.com/channel/UCuN8sX4okv8FmlhKVhqviRA" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"><Icon name="akar-icons:youtube-fill" alt="" class="text-white"/></a>
-    <a href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79" class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-1 flex justify-center">
-      <img class="h-full w-7 " src="../src/assets/redbook.svg" alt="">
+    <a
+      href="https://twitter.com/zuozizhen"
+      target="_blank"
+      class="social-button bg-neutral-800 hover:bg-neutral-700 transition rounded-xl w-[2.8rem] h-[2.8rem] p-3"
+      ><Icon name="mdi:twitter" alt="" class="text-white" /></a
+    >
+    <a
+      href="mailto:me@zuozizhen.com"
+      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"
+      ><Icon name="ic:round-mail" alt="" class="text-white" /></a
+    >
+    <a
+      href="/wechat"
+      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"
+      ><Icon name="official-accounts" alt="" class="text-white" /></a
+    >
+    <a
+      href="https://zuozizhen.substack.com"
+      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3.5"
+      ><Icon name="simple-icons:substack" alt="" class="text-white" /></a
+    >
+    <a
+      href="https://www.youtube.com/channel/UCuN8sX4okv8FmlhKVhqviRA"
+      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"
+      ><Icon name="akar-icons:youtube-fill" alt="" class="text-white" /></a
+    >
+    <a
+      href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79"
+      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-1 flex justify-center">
+      <img class="h-full w-7" src="../src/assets/redbook.svg" alt="" />
     </a>
   </div>
 </footer>
