@@ -13,17 +13,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
   "/opengraph.jpg",
-  Astro.site
+  Astro.site,
 ).toString();
 
 const { title } = Astro.props;
 
-const makeTitle = title
-  ? title + " | " + "左子祯"
-  : "左子祯 — 设计师和创造者";
+const makeTitle = title ? title + " | " + "左子祯" : "左子祯 — 设计师和创造者";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
@@ -45,7 +43,7 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `左子祯 — 设计师和创造者`,
           image: resolvedImageWithDomain,
         },
         image: {
@@ -53,15 +51,14 @@ const makeTitle = title
         },
       }}
     />
-    <script src="https://cdn.usefathom.com/script.js" data-site="VEGAJXXX" defer></script>
+    <script src="https://cdn.usefathom.com/script.js" data-site="VEGAJXXX" defer
+    ></script>
   </head>
   <body class="antialiased text-neutral-800">
     <Navbar />
     <slot />
     <Footer />
     <style is:global>
-      /* Improve Page speed */
-      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
         content-visibility: auto;
       }
