@@ -1,78 +1,73 @@
 ---
-import Container from "@components/container.astro";
-import Link from "@components/ui/link.astro";
-import Dropdown from "./dropdown.astro";
-import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-import { Icon } from "astro-icon";
-import { Menu } from "astro-feather-icons";
+import Container from "@components/Section.astro";
+import { Icon } from "astro-icon/components";
 
 const menuitems = [
-  // {
-  //   title: "Features",
-  //   path: "#",
-  //   children: [
-  //     { title: "Action", path: "#" },
-  //     { title: "Another action", path: "#" },
-  //     { title: "Dropdown Submenu", path: "#" },
-  //   ],
-  // },
   {
-    title: "了解更多",
-    path: "/pricing",
+    title: "关于我",
+    path: "/about",
+  },
+  {
+    title: "文章",
+    path: "/blog",
+  },
+  {
+    title: "资源",
+    path: "/resource",
+  },
+  {
+    title: "作品集",
+    path: "/project",
+  },
+  {
+    title: "Newsletter",
+    path: "https://zuozizhen.substack.com",
+    external: true, // 添加额外字段标记外部链接
   },
 ];
 ---
-
-<Container>
   <header
-    class="flex justify-between items-center py-6 max-w-screen-lg mx-auto sm:py-10 border-b border-neutral-100">
-    <div class="flex w-full items-center justify-between">
+    class="flex justify-between items-center py-6 mx-auto sm:py-10 border-b border-neutral-100 px-5">
+    <div class="flex w-full items-center justify-between max-w-screen-lg mx-auto">
       <a href="/" class="text-xl font-black flex gap-3">
-        <Icon name="logo" alt="website logo" class="w-[4rem]" />
+        <Icon name="logo" class="w-[4rem]" />
       </a>
       <!-- 汉堡菜单图标，小屏幕时显示 -->
       <button
         id="hamburger"
         class="lg:hidden w-10 h-10 flex items-center justify-center">
-        <Menu class="w-6 h-6" />
+        <Icon class="w-6 h-6" name="mdi:menu" />
       </button>
       <!-- 原有导航，大屏幕时显示 -->
       <div class="hidden lg:flex gap-12 flex-shrink-0">
-        <a href="/about" class="font-semibold text-neutral-500"> 关于我 </a>
-        <a href="/blog" class="font-semibold text-neutral-500"> 文章 </a>
-        <a href="/resource" class="font-semibold text-neutral-500"> 资源 </a>
-        <a href="/project" class="font-semibold text-neutral-500"> 作品集 </a>
-        <a
-          href="https://zuozizhen.substack.com"
-          class="font-semibold text-neutral-500"
-          target="_blank">
-          Newsletter
-        </a>
+        {
+          menuitems.map((item) => (
+            <a
+              href={item.path}
+              class="font-semibold text-neutral-500"
+              target={item.external ? "_blank" : "_self"}>
+              {item.title}
+            </a>
+          ))
+        }
       </div>
     </div>
     <!-- 全屏菜单容器，初始隐藏 -->
     <div
       id="fullscreen-menu"
       class="fixed h-screen inset-0 bg-white opacity-0 invisible flex flex-col items-center justify-center space-y-12 lg:hidden z-20">
-      <a href="/about" class="font-semibold text-neutral-900 text-4xl">
-        关于我
-      </a>
-      <a href="/blog" class="font-semibold text-neutral-900 text-4xl"> 文章 </a>
-      <a href="/resource" class="font-semibold text-neutral-900 text-4xl">
-        资源
-      </a>
-      <a href="/project" class="font-semibold text-neutral-900 text-4xl">
-        作品集
-      </a>
-      <a
-        href="https://zuozizhen.substack.com"
-        class="font-semibold text-neutral-900 text-4xl"
-        target="_blank">
-        Newsletter
-      </a>
+      {
+        menuitems.map((item) => (
+          <a
+            href={item.path}
+            class="font-semibold text-neutral-900 text-4xl"
+            target={item.external ? "_blank" : "_self"}>
+            {item.title}
+          </a>
+        ))
+      }
     </div>
   </header>
-</Container>
 
 <script>
   const hamburger = document.getElementById("hamburger");

@@ -1,11 +1,37 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
+
+const sociaLitems = [
+  {
+    name: "mdi:twitter",
+    link: "https://twitter.com/zuozizhen",
+  },
+  {
+    name: "ic:round-mail",
+    link: "mailto:me@zuozizhen.com",
+  },
+  {
+    name: "official-accounts",
+    link: "/wechat",
+  },
+  {
+    name: "simple-icons:substack",
+    link: "https://zuozizhen.substack.com",
+  },
+  {
+    name: "akar-icons:youtube-fill",
+    link: "https://www.youtube.com/channel/UCuN8sX4okv8FmlhKVhqviRA",
+  },
+  {
+    name: "redbook",
+    link: "https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79",
+  },
+];
 ---
 
 <footer
   class="flex justify-between items-center gap-4 py-6 max-w-screen-lg mx-auto px-0 border-t border-neutral-100 sm:flex-row flex-col">
   <div class="flex flex-col items-center md:items-start">
-    <!-- <Icon name="logo" alt="website logo" class="w-[4rem] mb-1"/> -->
     <div class="flex gap-8 flex-shrink-0">
       <a href="/about" class="flex-none text-neutral-500" target="_blank">
         关于我
@@ -22,36 +48,15 @@ import { Icon } from "astro-icon";
     </p>
   </div>
   <div class="flex gap-4">
-    <a
-      href="https://twitter.com/zuozizhen"
-      target="_blank"
-      class="social-button bg-neutral-800 hover:bg-neutral-700 transition rounded-xl w-[2.8rem] h-[2.8rem] p-3"
-      ><Icon name="mdi:twitter" alt="" class="text-white" /></a
-    >
-    <a
-      href="mailto:me@zuozizhen.com"
-      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"
-      ><Icon name="ic:round-mail" alt="" class="text-white" /></a
-    >
-    <a
-      href="/wechat"
-      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"
-      ><Icon name="official-accounts" alt="" class="text-white" /></a
-    >
-    <a
-      href="https://zuozizhen.substack.com"
-      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3.5"
-      ><Icon name="simple-icons:substack" alt="" class="text-white" /></a
-    >
-    <a
-      href="https://www.youtube.com/channel/UCuN8sX4okv8FmlhKVhqviRA"
-      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-3"
-      ><Icon name="akar-icons:youtube-fill" alt="" class="text-white" /></a
-    >
-    <a
-      href="https://www.xiaohongshu.com/user/profile/5c5f7e25000000001000fc79"
-      class="social-button bg-neutral-800 hover:bg-neutral-700 rounded-xl w-[2.8rem] h-[2.8rem] p-1 flex justify-center">
-      <img class="h-full w-7" src="../src/assets/redbook.svg" alt="" />
-    </a>
+    {
+      sociaLitems.slice(1).map((item) => (
+        <a
+          href={item.link}
+          target="_blank"
+          class="bg-neutral-800 hover:bg-neutral-700 transition rounded-xl w-[2.8rem] h-[2.8rem] p-2 flex items-center justify-center">
+          <Icon name={item.name} class="text-white h-5" />
+        </a>
+      ))
+    }
   </div>
 </footer>

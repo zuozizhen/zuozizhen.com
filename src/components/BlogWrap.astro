@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+
+// 获取并排序博客条目
+const allPublishedBlogEntries = (
+  await getCollection(
+    "blog",
+    ({ data }) => !data.draft && data.publishDate < new Date(),
+  )
+).sort((a, b) => b.data.publishDate - a.data.publishDate);
+
+// 从props中获取maxDisplay和showMoreLink
+const { maxDisplay, showMoreLink } = Astro.props;
+
+// 根据maxDisplay确定显示的条目数
+const publishedBlogEntries = maxDisplay
+  ? allPublishedBlogEntries.slice(0, maxDisplay)
+  : allPublishedBlogEntries;
+
+const formatDate = (date) => {
+  const formatter = new Intl.DateTimeFormat("zh-CN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  return formatter.format(date);
+};
+---
+
+    <ul class="grid sm:grid-cols-2 grid-cols-1 gap-10 w-full">
+      {
+        publishedBlogEntries.map((blogPostEntry, index) => (
+          <li key={index}>
+            <a href={`/blog/${blogPostEntry.slug}`}>
+              <img
+                src={blogPostEntry.data.image.src}
+                alt={blogPostEntry.data.image.alt}
+                loading="lazy"
+                decoding="async"
+                class="w-full rounded-md aspect-[16/9] object-cover"
+              />
+              <div>
+                <h2 class="text-lg font-semibold leading-snug tracking-tight mt-4 text-neutral-800">
+                  {blogPostEntry.data.title}
+                </h2>
+                <div class="flex gap-1 mt-1 text-sm">
+                  <time
+                    class="text-gray-500"
+                    datetime={blogPostEntry.data.publishDate.toISOString()}>
+                    {formatDate(blogPostEntry.data.publishDate)}
+                  </time>
+                </div>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    {
+      showMoreLink && (
+        <a
+          href="/blog"
+          class="block font-semibold mt-6 hover:opacity-70 transition">
+          更多文章 ->
+        </a>
+      )
+    }

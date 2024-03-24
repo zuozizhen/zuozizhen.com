@@ -1,23 +1,37 @@
 ---
-import Container from "@components/container.astro";
 import Cta from "@components/cta.astro";
 import Features from "@components/features.astro";
 import Indie from "@components/indie.astro";
-import Lessoncontent from "@components/lessoncontent.astro";
-import Hero from "@components/hero.astro";
-import Blog from "@components/blog.astro";
+import Hero from "@components/Hero.astro";
+import BlogWrap from "@components/BlogWrap.astro";
 import Layout from "@layouts/Layout.astro";
+import WrapTitle from "../components/WrapTitle.astro";
+import Section from "@components/Section.astro";
 ---
 
 <Layout title="">
-  <Container>
-    <div class="sm:space-y-20 space-y-3">
-      <Hero />
-      <Blog />
+  <div class="sm:space-y-20 space-y-3 mb-24">
+
+    <Hero />
+
+    <Section>
+      <WrapTitle title="文章" description="我会写关于我感兴趣方向的文章" />
+      <BlogWrap maxDisplay={2} showMoreLink={true} />
+    </Section>
+
+    <Section>
+      <WrapTitle title="资源" description="我为设计师或创造者提供有用的资源" />
       <Features />
-      <!-- <Lessoncontent /> -->
+    </Section>
+
+    <Section>
+      <WrapTitle title="建造" description="我乐于建造有用和有趣的产品" />
       <Indie />
-    </div>
-    <Cta />
-  </Container>
+    </Section>
+
+    <Section>
+      <Cta />
+    </Section>
+
+  </div>
 </Layout>

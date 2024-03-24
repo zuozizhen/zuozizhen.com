@@ -1,20 +1,19 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
+import Section from "@components/Section.astro";
 import Features from "@components/features.astro";
+import WrapTitle from "../components/WrapTitle.astro";
 import Tool from "@components/tool.astro";
 import Uses from "@components/uses.astro";
 import Book from "@components/book.astro";
-
 ---
 
 <Layout title="Blog">
-  <Container>
-    <main>
-      <Features />
-      <!-- <Tool />
-      <Uses />
-      <Book /> -->
-    </main>
-  </Container>
+  <Section>
+    <WrapTitle title="资源" description="我为设计师或创造者提供有用的资源" />
+    <Features />
+    <!-- <Tool />
+    <Uses />
+    <Book /> -->
+  </Section>
 </Layout>

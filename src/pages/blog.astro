@@ -1,70 +1,13 @@
 ---
-import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
-
-// Filter blog entries with 'draft: false' & date before current date
-const publishedBlogEntries = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
-
-// Sort content entries by publication date
-publishedBlogEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-});
-
-const formatDate = (date) => {
-  const formatter = new Intl.DateTimeFormat("zh-CN", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-
-  return formatter.format(date);
-};
+import Section from "@components/Section.astro";
+import BlogWrap from "@components/BlogWrap.astro";
+import WrapTitle from "../components/WrapTitle.astro";
 ---
 
 <Layout title="Blog">
-  <Container>
-    <main class="max-w-screen-lg mx-auto my-16">
-      <div class="space-y-2 mb-7">
-        <h2 class="text-2xl font-semibold">文章</h2>
-        <div class="text-neutral-500 text-lg">我会写关于我感兴趣方向的文章</div>
-      </div>
-      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-10 mx-auto">
-        {
-          publishedBlogEntries.map((blogPostEntry, index) => (
-            <li>
-              <a href={`/blog/${blogPostEntry.slug}`}>
-                <div class="">
-                  <img
-                    src={blogPostEntry.data.image.src}
-                    alt={blogPostEntry.data.image.alt}
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md border border-black/5 aspect-[16/9] object-cover"
-                  />
-                  <div>
-                    <h2 class="text-lg font-semibold leading-snug tracking-tight mt-4 text-neutral-800">
-                      {blogPostEntry.data.title}
-                    </h2>
-
-                    <div class="flex gap-1 mt-1 text-sm">
-                      <time
-                        class="text-gray-500"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}>
-                        {formatDate(blogPostEntry.data.publishDate)}
-                      </time>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </main>
-  </Container>
+  <Section>
+      <WrapTitle title="文章" description="我会写关于我感兴趣方向的文章" />
+      <BlogWrap maxDisplay={9999} showMoreLink={false} />
+  </Section>
 </Layout>

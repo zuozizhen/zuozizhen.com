@@ -1,93 +1,55 @@
 ---
-import { Image } from 'astro:assets';
+const projects = [
+  {
+    title: "NotionChina",
+    description: "Notion 中文站,帮助国内用户学习和使用 Notion",
+    year: "2021",
+    url: "https://notionchina.co",
+    imageUrl:
+      "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/eca705b1-3ab5-41dd-6a80-05ae86457700/public",
+  },
+  {
+    title: "FigmaChina",
+    description: "Figma 中文站,帮助国内用户学习和使用 Figma",
+    year: "2019",
+    url: "https://figmachina.com",
+    imageUrl:
+      "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/8018af44-21ef-468e-ca1b-fce21075c400/public",
+  },
+  {
+    title: "Elife",
+    description:
+      "自己常用的在线工具合集,主页的生命倒计时器用于告诫自己要珍惜时间",
+    year: "2017",
+    url: "https://startelife.com",
+    imageUrl:
+      "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/638083e9-e724-4661-024e-2a7d65aeb500/public",
+  },
+];
 ---
 
-<section class="introduction relative py-12">
-  <div class="max-w-screen-lg mx-auto px-0">
-    <div class="space-y-2 mb-7">
-      <h2 class="text-2xl font-semibold">
-        建造
-      </h2>
-      <div class="text-neutral-500 text-lg">我喜欢建造有用和有趣的产品</div>
-     </div>
-
-     <div class="space-y-6">
-      <a href="https://notionchina.co" class="flex justify-between items-center w-full py-3  border border-neutral-200 rounded-xl px-6">
+<div class="space-y-6">
+  {
+    projects.map(({ title, description, year, url, imageUrl }) => (
+      <a
+        href={url}
+        class="flex justify-between items-center w-full py-3 border border-neutral-200 rounded-xl px-6">
         <div class="flex gap-4 items-center">
-          <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/eca705b1-3ab5-41dd-6a80-05ae86457700/public" class="w-20 h-20 rounded-md"></img>
+          <img src={imageUrl} class="w-20 h-20 rounded-md" />
           <div class="space-y-2">
             <div class="space-y-1">
               <h2 class="text-lg font-semibold leading-snug tracking-tight text-neutral-800">
-              NotionChina
+                {title}
               </h2>
               <div class="text-gray-500 text-sm">
-                <span class="">2021 · </span>
-                Notion 中文站，帮助国内用户学习和使用 Notion
+                <span class="">{year} · </span>
+                {description}
               </div>
             </div>
           </div>
         </div>
-        <div class="text-sm font-medium">
-          访问网站 ->
-        </div>
+        <div class="text-sm font-medium">访问网站 -></div>
       </a>
-      <a href="https://figmachina.com" class="flex justify-between items-center w-full py-3 border border-neutral-200 rounded-xl px-6">
-        <div class="flex gap-4 items-center">
-          <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/8018af44-21ef-468e-ca1b-fce21075c400/public" class="w-20 h-20 rounded-md"></img>
-          <div class="space-y-2">
-            <div class="space-y-1">
-              <h2 class="flex items-center gap-2 text-lg font-semibold leading-snug tracking-tight text-neutral-800">
-              FigmaChina
-              </h2>
-              <div class="text-gray-500 text-sm">
-                <span class="">2019 · </span>
-                Figma 中文站，帮助国内用户学习和使用 Figma
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-sm font-medium">
-          访问网站 ->
-        </div>
-      </a>
-
-      <a href="https://startelife.com" class="flex justify-between items-center w-full py-3  border border-neutral-200 rounded-xl px-6">
-        <div class="flex gap-4 items-center">
-          <img src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/638083e9-e724-4661-024e-2a7d65aeb500/public" class="w-20 h-20 rounded-md"></img>
-          <div class="space-y-2">
-            <div class="space-y-1">
-              <h2 class="text-lg font-semibold leading-snug tracking-tight text-neutral-800">
-              Elife
-              </h2>
-              <div class="text-gray-500 text-sm">
-                <span class="">2017 · </span>
-                自己常用的在线工具合集，主页的生命倒计时器用于告诫自己要珍惜时间
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-sm font-medium">
-          访问网站 ->
-        </div>
-      </a>
-    </div>
-
-
-  <!-- <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-    {
-      features.map((item) => (
-        <div class="flex gap-4 items-start">
-          <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-            <Icon class="text-white" name={item.icon} />
-          </div>
-          <div>
-            <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-            <p class="text-neutral-500 mt-2 leading-relaxed">{item.description}</p>
-          </div>
-        </div>
-      ))
-    }
-  </div> -->
-
-  </div>
-</section>
+    ))
+  }
+</div>

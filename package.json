@@ -12,21 +12,23 @@
     "sync": "astro sync"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.0.3",
+    "@astrojs/mdx": "^2.2.1",
     "@astrojs/sitemap": "^1.0.1",
-    "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/tailwind": "^5.1.0",
     "@fontsource/inter": "^4.5.15",
-    "astro": "^3.0.12",
-    "astro-feather-icons": "^1.0.2",
+    "astro": "^4.5.9",
     "astro-icon": "^1.1.0",
     "astro-navbar": "^1.1.5",
     "astro-seo": "^0.8.0",
-    "remixicon": "^3.1.1",
     "sass": "^1.61.0",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
+    "@iconify-json/akar-icons": "^1.1.24",
+    "@iconify-json/ic": "^1.1.17",
+    "@iconify-json/mdi": "^1.1.64",
+    "@iconify-json/simple-icons": "^1.1.96",
+    "@tailwindcss/typography": "^0.5.10",
     "sharp": "^0.31.3"
   }
 }
