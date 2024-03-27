@@ -6,7 +6,8 @@ const projects = [
     year: "2021",
     url: "https://notionchina.co",
     imageUrl:
-      "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/eca705b1-3ab5-41dd-6a80-05ae86457700/public",
+      "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/687dc2f2-6725-481c-89f5-59b191ef8f00/public",
+    cover: "",
   },
   {
     title: "FigmaChina",
@@ -14,7 +15,8 @@ const projects = [
     year: "2019",
     url: "https://figmachina.com",
     imageUrl:
-      "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/8018af44-21ef-468e-ca1b-fce21075c400/public",
+      "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/3eb5dcf2-ac9e-430b-1bf8-119a378c3a00/public",
+    cover: "",
   },
   {
     title: "Elife",
@@ -24,31 +26,33 @@ const projects = [
     url: "https://startelife.com",
     imageUrl:
       "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/638083e9-e724-4661-024e-2a7d65aeb500/public",
+    cover: "",
   },
 ];
 ---
 
-<div class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
   {
     projects.map(({ title, description, year, url, imageUrl }) => (
       <a
         href={url}
-        class="flex justify-between items-center w-full py-3 border border-neutral-200 rounded-xl px-6">
-        <div class="flex gap-4 items-center">
-          <img src={imageUrl} class="w-20 h-20 rounded-md" />
+        class="flex justify-between items-center w-full py-4 border border-neutral-200 rounded-xl px-6">
+        <div class="relative space-y-8 mb-4 w-full">
           <div class="space-y-2">
-            <div class="space-y-1">
-              <h2 class="text-lg font-semibold leading-snug tracking-tight text-neutral-800">
-                {title}
-              </h2>
-              <div class="text-gray-500 text-sm">
-                <span class="">{year} · </span>
-                {description}
-              </div>
+            <img
+              src={imageUrl}
+              class="w-[52px] h-[52px] rounded-md absolute right-0"
+            />
+            <h2 class="text-xl font-semibold leading-snug tracking-tight text-neutral-800">
+              {title}
+            </h2>
+            <div class="text-gray-500 text-sm">
+              <span class="">{year} · 独立开发</span>
             </div>
+            <div class="leading-6">{description}</div>
           </div>
+          <div class="text-sm font-medium">访问网站 -></div>
         </div>
-        <div class="text-sm font-medium">访问网站 -></div>
       </a>
     ))
   }

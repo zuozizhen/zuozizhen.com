@@ -11,17 +11,16 @@ import Section from "@components/Section.astro";
 
 <Layout title="">
   <div class="sm:space-y-20 space-y-3 mb-24">
-
     <Hero />
 
     <Section>
-      <WrapTitle title="文章" description="我会写关于我感兴趣方向的文章" />
-      <BlogWrap maxDisplay={2} showMoreLink={true} />
+      <WrapTitle title="资源" description="为设计师或创作者提供有用的资源" />
+      <Features />
     </Section>
 
     <Section>
-      <WrapTitle title="资源" description="我为设计师或创造者提供有用的资源" />
-      <Features />
+      <WrapTitle title="文章" description="和设计、开发、创作有关的分享" />
+      <BlogWrap maxDisplay={2} showMoreLink={true} />
     </Section>
 
     <Section>
@@ -32,6 +31,5 @@ import Section from "@components/Section.astro";
     <Section>
       <Cta />
     </Section>
-
   </div>
 </Layout>
