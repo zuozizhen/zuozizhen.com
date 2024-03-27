@@ -3,54 +3,12 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Section from "@components/Section.astro";
 import WrapTitle from "../components/WrapTitle.astro";
-
-// Filter blog entries with 'draft: false' & date before current date
-const publishedProjectEntries = await getCollection("project", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
-
-// Sort content entries by publication date
-publishedProjectEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-});
+import ProjectList from "../components/ProjectList.astro";
 ---
 
 <Layout title="Blog">
   <Section>
-    <WrapTitle title="作品集" description="工作中的设计项目" />
-      <ul class="grid grid-cols-1 gap-10 max-w-screen-lg mx-auto">
-        {
-          publishedProjectEntries.map((projectPostEntry, index) => (
-            <li>
-              <a href={`/project/${projectPostEntry.slug}`}>
-                <div class="w-full aspect-[1480/830] flex relative items-center sm:pl-16 pl-6 overflow-hidden rounded-xl">
-                  <div class="w-2/5">
-                    <div class="flex items-center">
-                      <h2 class="sm:text-3xl text-xl font-semibold leading-snug tracking-tight text-neutral-100">
-                        {projectPostEntry.data.title}
-                      </h2>
-                    </div>
-                    <div class="flex gap-1 mt-1 text-neutral-400 sm:text-base text-sm">
-                      {projectPostEntry.data.snippet}
-                    </div>
-                    <div class="flex sm:gap-6 gap-2 mt-6">
-                      <div class="flex gap-1 mt-1 text-neutral-400 sm:text-base text-xs">
-                        了解详情 ->
-                      </div>
-                      <div class="flex gap-1 mt-1 text-neutral-400 sm:text-base text-xs">
-                        访问网站 ->
-                      </div>
-                    </div>
-                  </div>
-                  <img
-                    src={projectPostEntry.data.image}
-                    class="w-full object-cover absolute right-0 top-0 -z-10"
-                  />
-                </div>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+    <WrapTitle title="工作项目" description="我的一些工作项目" />
+    <ProjectList count={9999} />
   </Section>
 </Layout>
