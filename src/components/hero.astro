@@ -73,29 +73,34 @@
 </section>
 
 <script>
-  const form = document.getElementById("subscription-form");
-  const emailInput = document.getElementById("email-input");
-  const submitButton = document.getElementById("submit-button");
-  const loader = document.getElementById("loader");
-  const buttonText = document.getElementById("button-text");
-  const errorMessage = document.getElementById("error-message");
+  const form = document.getElementById("subscription-form") as HTMLFormElement;
+  const emailInput = document.getElementById("email-input") as HTMLInputElement;
+  const submitButton = document.getElementById(
+    "submit-button",
+  ) as HTMLButtonElement;
+  const loader = document.getElementById("loader") as HTMLElement;
+  const buttonText = document.getElementById("button-text") as HTMLElement;
+  const errorMessage = document.getElementById("error-message") as HTMLElement;
+
   const website = "zuozizhen.com";
   let isSubmitting = false;
 
-  function validateEmail(email) {
+  function validateEmail(email: string): boolean {
     const re =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
   }
 
-  async function submitForm() {
+  async function submitForm(): Promise<void> {
     errorMessage.style.display = "none"; // 每次提交前重置错误信息
+
     if (!validateEmail(emailInput.value)) {
       errorMessage.style.display = "block"; // 显示错误信息
       return;
     }
 
     if (isSubmitting) return; // 如果正在提交，则直接返回
+
     isSubmitting = true; // 开始提交
     loader.style.display = "block";
     buttonText.style.display = "none";
@@ -128,7 +133,7 @@
   }
 
   submitButton.addEventListener("click", submitForm);
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", function (event: Event) {
     event.preventDefault();
     submitForm();
   });
