@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
 
 // 获取并排序博客条目
 const allPublishedBlogEntries = (
@@ -29,37 +28,39 @@ const formatDate = (date) => {
 };
 ---
 
-<ul class="grid sm:grid-cols-2 grid-cols-1 gap-y-14 gap-x-10 w-full">
-  {
-    publishedBlogEntries.map((blogPostEntry, index) => (
-      <li key={index}>
-        <a href={`/blog/${blogPostEntry.slug}`}>
-          <Image
-            src={blogPostEntry.data.image.src}
-            alt={blogPostEntry.data.image.alt}
-            class="w-full rounded-md aspect-[16/9] object-cover"
-            inferSize
-            alt="公众号二维码"
-          />
-          <div>
-            <h2 class="text-xl font-semibold leading-snug tracking-tight mt-4 text-neutral-800">
-              {blogPostEntry.data.title}
-            </h2>
-            <div class="flex gap-1 mt-2">
-              <div class="text-gray-500">{blogPostEntry.data.snippet}</div>
-            </div>
-          </div>
+    <ul class="grid sm:grid-cols-2 grid-cols-1 gap-y-14 gap-x-10 w-full">
+      {
+        publishedBlogEntries.map((blogPostEntry, index) => (
+          <li key={index}>
+            <a href={`/blog/${blogPostEntry.slug}`}>
+              <img
+                src={blogPostEntry.data.image.src}
+                alt={blogPostEntry.data.image.alt}
+                loading="lazy"
+                decoding="async"
+                class="w-full rounded-md aspect-[16/9] object-cover"
+              />
+              <div>
+                <h2 class="text-xl font-semibold leading-snug tracking-tight mt-4 text-neutral-800">
+                  {blogPostEntry.data.title}
+                </h2>
+                <div class="flex gap-1 mt-2">
+                  <div class="text-gray-500">
+                    {blogPostEntry.data.snippet}
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    {
+      showMoreLink && (
+        <a
+          href="/blog"
+          class="block font-semibold mt-6 hover:opacity-70 transition">
+          更多文章 ->
         </a>
-      </li>
-    ))
-  }
-</ul>
-{
-  showMoreLink && (
-    <a
-      href="/blog"
-      class="block font-semibold mt-6 hover:opacity-70 transition">
-      更多文章 ->
-    </a>
-  )
-}
+      )
+    }
