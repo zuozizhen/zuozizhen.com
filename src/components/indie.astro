@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 const projects = [
   {
     title: "NotionChina",
@@ -39,9 +41,11 @@ const projects = [
         class="flex justify-between items-center w-full py-4 border border-neutral-200 rounded-xl px-6">
         <div class="relative space-y-8 mb-4 w-full">
           <div class="space-y-2">
-            <img
+            <Image
               src={imageUrl}
               class="w-[52px] h-[52px] rounded-md absolute right-0"
+              inferSize
+              alt="logo"
             />
             <h2 class="text-xl font-semibold leading-snug tracking-tight text-neutral-800">
               {title}

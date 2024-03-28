@@ -1,0 +1,46 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Section from "@components/Section.astro";
+import PersonalCard from "@components/PersonalCard.astro";
+import { Image } from "astro:assets";
+
+const { frontmatter } = Astro.props;
+
+const publishDate = new Date(frontmatter.publishDate);
+
+const formatDate = (date) => {
+  const formatter = new Intl.DateTimeFormat("zh-CN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  return formatter.format(date);
+};
+---
+
+<Layout title={frontmatter.title}>
+  <Section>
+    <div class="flex mx-auto gap-20">
+      <div class="w-full sm:mb-20 mb-10">
+        <div class="mt-12">
+          <h1 class="text-4xl font-semibold mb-3 text-neutral-800 leading-snug">
+            {frontmatter.title}
+          </h1>
+          <time class="text-gray-400" datetime={publishDate.toISOString()}>
+            {formatDate(publishDate)}
+          </time>
+          <Image
+            src={frontmatter.image.src}
+            class="rounded-xl flex-none w-full"
+            inferSize
+            alt="个人图片"
+          />
+        </div>
+        <div class="prose prose-lg mt-6">
+          <slot />
+        </div>
+      </div>
+      <PersonalCard />
+    </div>
+  </Section>
+</Layout>

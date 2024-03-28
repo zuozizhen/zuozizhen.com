@@ -1,14 +1,16 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Section from "@components/Section.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="About">
   <Section class="py-32">
-    <img
-      class="mx-auto w-56 border border-neutral-200 rounded-xl"
+    <Image
       src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/7ea8e596-ee1f-42cd-2c3e-60748825b500/public"
-      alt="公众号二维码"
-    />
+      class="mx-auto w-56 border border-neutral-200 rounded-xl"
+      inferSize
+      alt="公众号二维码">
+    </Image>
   </Section>
 </Layout>

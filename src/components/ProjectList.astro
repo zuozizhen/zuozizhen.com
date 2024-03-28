@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 
 export interface Props {
   count?: number;
@@ -45,9 +46,11 @@ const displayedProjectEntries = publishedProjectEntries.slice(0, count);
                 </div>
               </div>
             </div>
-            <img
+            <Image
               src={projectPostEntry.data.image}
               class="w-full object-cover absolute right-0 top-0 -z-10"
+              inferSize
+              alt="项目图片"
             />
           </div>
         </a>

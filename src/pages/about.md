@@ -1,15 +1,14 @@
 ---
+layout: '../layouts/ArticleLayout.astro'
 draft: false
 title: "关于我"
-snippet: "关于我的说明"
+snippet: "我做过什么，现在在做什么"
 image: {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
+    src: "",
     alt: ""
 }
 publishDate: "2018-12-30"
 ---
-
-## 了解我
 
 嗨, 我是左子祯。一名产品设计师和独立开发者，曾在锤子科技和字节跳动就职。
 

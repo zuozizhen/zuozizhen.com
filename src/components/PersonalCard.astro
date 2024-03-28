@@ -1,13 +1,15 @@
 ---
-import { Icon } from "astro-icon/components"
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 ---
 
 <div class="flex-shrink-0 mt-12 sm:flex hidden">
   <div class="w-60">
-    <img
-      class="rounded-md"
+    <Image
       src="https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/c479d4d5-ea7c-48da-df9b-d034eed9da00/public"
-      class="personal_photo rounded-xl flex-none w-[20rem] h-[24rem]"
+      class="rounded-xl flex-none w-[20rem] h-[24rem]"
+      inferSize
+      alt="个人图片"
     />
     <div class="text-neutral-500 mt-6 leading-7">
       我是一名产品设计师，喜欢创造和分享，对一人事业充满热情，目前正在建立我的
@@ -25,7 +27,11 @@ import { Icon } from "astro-icon/components"
         class="social-button bg-neutral-100 hover:bg-neutral-200 rounded-xl w-[2.6rem] h-[2.6rem] p-3"
         ><Icon name="ic:round-mail" class="text-neutral-700" /></a
       >
-      <a href="" class="social-button bg-neutral-100 hover:bg-neutral-200 rounded-xl w-[2.6rem] h-[2.6rem] p-3"><Icon name="official-accounts" class="text-neutral-700"/></a>
+      <a
+        href=""
+        class="social-button bg-neutral-100 hover:bg-neutral-200 rounded-xl w-[2.6rem] h-[2.6rem] p-3"
+        ><Icon name="official-accounts" class="text-neutral-700" /></a
+      >
     </div>
   </div>
 </div>

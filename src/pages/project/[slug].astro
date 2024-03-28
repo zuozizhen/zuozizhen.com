@@ -1,9 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Container from "@components/Section.astro";
+import ArticleLayout from "@layouts/ArticleLayout.astro";
 
-// Generate a new path for every collection entry
 export async function getStaticPaths() {
   const projectEntries = await getCollection("project");
   return projectEntries.map((entry) => ({
@@ -17,25 +15,6 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title}>
-  <Container>
-    <div class="flex max-w-screen-lg mx-auto gap-20">
-      <div class="w-full sm:mb-40 mb-20">
-        <div class="mt-12">
-          <h1 class="text-4xl font-semibold mb-3 text-neutral-800 leading-snug">
-            {entry.data.title}
-          </h1>
-          <time
-            class="text-gray-400"
-            datetime={entry.data.publishDate.toISOString()}>
-            {entry.data.publishDate.toDateString()}
-          </time>
-        </div>
-
-        <div class="prose prose-lg mt-6 w-full max-w-none">
-          <Content />
-        </div>
-      </div>
-    </div>
-  </Container>
-</Layout>
+<ArticleLayout frontmatter={entry.data}>
+  <Content />
+</ArticleLayout>

@@ -1,10 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Section from "@components/Section.astro";
-import PersonalCard from "@components/PersonalCard.astro";
+import ArticleLayout from "@layouts/ArticleLayout.astro";
 
-// Generate a new path for every collection entry
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
   return blogEntries.map((entry) => ({
@@ -13,45 +10,10 @@ export async function getStaticPaths() {
   }));
 }
 
-const formatDate = (date) => {
-  const formatter = new Intl.DateTimeFormat("zh-CN", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-
-  return formatter.format(date);
-};
-
-// Get the entry directly from the prop on render
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title}>
-  <Section>
-    <div class="flex mx-auto gap-20">
-      <div class="w-full sm:mb-20 mb-10">
-        <div class="mt-12">
-          <h1 class="text-4xl font-semibold mb-3 text-neutral-800 leading-snug">
-            {entry.data.title}
-          </h1>
-          <time
-            class="text-gray-400"
-            datetime={entry.data.publishDate.toISOString()}>
-            {formatDate(entry.data.publishDate)}
-          </time>
-          <img
-            class="w-full rounded-lg mt-8"
-            src={entry.data.image.src}
-            class="personal_photo rounded-xl flex-none w-[20rem] h-[24rem]"
-          />
-        </div>
-        <div class="prose prose-lg mt-6">
-          <Content />
-        </div>
-      </div>
-      <PersonalCard />
-    </div>
-  </Section>
-</Layout>
+<ArticleLayout frontmatter={entry.data}>
+  <Content />
+</ArticleLayout>

@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from "astro:transitions";
+
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
@@ -22,7 +24,7 @@ const makeTitle = title ? title + " | " + "左子祯" : "左子祯 — 设计师
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" transition:animate="none">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -53,6 +55,8 @@ const makeTitle = title ? title + " | " + "左子祯" : "左子祯 — 设计师
     />
     <script src="https://cdn.usefathom.com/script.js" data-site="VEGAJXXX" defer
     ></script>
+    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+    <ViewTransitions />
   </head>
   <body class="antialiased text-neutral-800">
     <Navbar />
