@@ -30,12 +30,13 @@ const formatDate = (date) => {
             {formatDate(publishDate)}
           </time>
           {
-            frontmatter.image && (
+            // 这里检查 frontmatter.image 是否存在，并且 frontmatter.image.src 是否有值且不为空字符串
+            frontmatter.image && frontmatter.image.src && (
               <Image
                 src={frontmatter.image.src}
                 class="rounded-xl flex-none w-full"
                 inferSize
-                alt="个人图片"
+                alt={frontmatter.image.alt || '图片描述'}
               />
             )
           }
