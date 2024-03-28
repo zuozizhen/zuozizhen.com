@@ -29,12 +29,16 @@ const formatDate = (date) => {
           <time class="text-gray-400" datetime={publishDate.toISOString()}>
             {formatDate(publishDate)}
           </time>
-          <Image
-            src={frontmatter.image.src}
-            class="rounded-xl flex-none w-full"
-            inferSize
-            alt="个人图片"
-          />
+          {
+            frontmatter.image && (
+              <Image
+                src={frontmatter.image.src}
+                class="rounded-xl flex-none w-full"
+                inferSize
+                alt="个人图片"
+              />
+            )
+          }
         </div>
         <div class="prose prose-lg mt-6">
           <slot />
