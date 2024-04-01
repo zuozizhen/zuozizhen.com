@@ -26,7 +26,7 @@ const formatDate = (date) => {
           <h1 class="text-4xl font-semibold mb-3 text-neutral-800 leading-snug">
             {frontmatter.title}
           </h1>
-          <time class="text-gray-400" datetime={publishDate.toISOString()}>
+          <time class="block text-gray-400 mb-3" datetime={publishDate.toISOString()}>
             {formatDate(publishDate)}
           </time>
           {
@@ -36,7 +36,7 @@ const formatDate = (date) => {
                 src={frontmatter.image.src}
                 class="rounded-xl flex-none w-full"
                 inferSize
-                alt={frontmatter.image.alt || '图片描述'}
+                alt={frontmatter.image.alt || "图片描述"}
               />
             )
           }
