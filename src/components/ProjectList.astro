@@ -28,20 +28,18 @@ const displayedProjectEntries = publishedProjectEntries.slice(0, count);
         <a href={`/project/${projectPostEntry.slug}`}>
           <div class="w-full aspect-[1480/830] flex relative items-center sm:pl-16 pl-6 overflow-hidden rounded-xl">
             <div class="w-2/5">
+              <div class="flex gap-1 mb-2 text-white text-opacity-50 sm:text-base text-sm font-medium mix-blend-hard-light">
+                {projectPostEntry.data.publishDate.getFullYear()} ·
+                {projectPostEntry.data.duty}
+              </div>
               <div class="flex items-center">
                 <h2 class="sm:text-3xl text-xl font-semibold leading-snug tracking-tight text-neutral-100">
                   {projectPostEntry.data.title}
                 </h2>
               </div>
-              <div class="flex gap-1 mt-1 text-neutral-400 sm:text-base text-sm">
-                {projectPostEntry.data.snippet}
-              </div>
-              <div class="flex sm:gap-6 gap-2 mt-6">
-                <div class="flex gap-1 mt-1 text-neutral-400 sm:text-base text-xs">
-                  了解详情 ->
-                </div>
-                <div class="flex gap-1 mt-1 text-neutral-400 sm:text-base text-xs">
-                  访问网站 ->
+              <div class="flex sm:gap-6 gap-2 mt-8">
+                <div class="flex gap-1 mt-1 text-white text-opacity-50 sm:text-base text-xs mix-blend-hard-light">
+                  查看项目 ->
                 </div>
               </div>
             </div>

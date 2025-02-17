@@ -21,7 +21,7 @@ const formatDate = (date) => {
 <Layout title={frontmatter.title}>
   <Section>
     <div class="flex mx-auto gap-20">
-      <div class={`${frontmatter.type === 'portfolio' ? 'w-full' : 'w-2/3'} sm:mb-20 mb-10`}>
+      <div class="w-full sm:mb-20 mb-10">
         <div class="mt-12">
           <h1 class="text-4xl font-semibold mb-3 text-neutral-800 leading-snug">
             {frontmatter.title}
@@ -43,27 +43,10 @@ const formatDate = (date) => {
             )
           }
         </div>
-        <div class="prose prose-lg mt-6">
+        <div class="prose prose-lg mt-6 max-w-full">
           <slot />
         </div>
-        <script
-          src="https://giscus.app/client.js"
-          data-repo="zuozizhen/zuozizhen.com"
-          data-repo-id="MDEwOlJlcG9zaXRvcnk4ODk3MDIyMA=="
-          data-category="Announcements"
-          data-category-id="DIC_kwDOBU2T7M4CAK-c"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="light"
-          data-lang="zh-CN"
-          crossorigin="anonymous"
-          async
-        ></script>
       </div>
-      {frontmatter.type !== 'portfolio' && <PersonalCard />}
     </div>
   </Section>
 </Layout>
