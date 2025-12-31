@@ -8,3 +8,6 @@ public/sitemap.xml
 public/feed.xml
 .vercel
 .astro
+.vscode
+.zed
+.github
