@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "zuozizhen-next",
+  "account_id": "cf74c1afd7491c3e2179c479bca147a7",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-03-22",
   "compatibility_flags": ["nodejs_compat"],
