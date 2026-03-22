@@ -1,0 +1,36 @@
+{
+  "name": "zuozizhen-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "content:build": "node scripts/build-content.mjs",
+    "dev": "npm run content:build && next dev",
+    "build": "npm run content:build && next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "cf:build": "npm run content:build && opennextjs-cloudflare build",
+    "cf:preview": "npm run cf:build && wrangler dev",
+    "cf:deploy": "npm run cf:build && opennextjs-cloudflare deploy"
+  },
+  "dependencies": {
+    "next": "16.2.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "@hotwired/stimulus": "3.2.2"
+  },
+  "devDependencies": {
+    "@opennextjs/cloudflare": "1.17.1",
+    "@tailwindcss/postcss": "4.1.17",
+    "@tailwindcss/typography": "0.5.19",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.2.1",
+    "gray-matter": "4.0.3",
+    "marked": "17.0.1",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "wrangler": "4.76.0"
+  }
+}
