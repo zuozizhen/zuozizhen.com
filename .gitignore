@@ -1,6 +1,6 @@
 node_modules
-.next
-.open-next
 .wrangler
-out
+.tanstack
+dist
+tsconfig.tsbuildinfo
 .env*
