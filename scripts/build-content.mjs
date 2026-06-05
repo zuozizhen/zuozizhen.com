@@ -4,12 +4,12 @@ import matter from "gray-matter";
 import { marked } from "marked";
 
 const root = process.cwd();
-const outputDir = path.join(root, "data");
+const outputDir = path.join(root, "src", "data");
 const outputFile = path.join(outputDir, "content.json");
 
 marked.setOptions({
   gfm: true,
-  breaks: true
+  breaks: true,
 });
 
 function parseDate(value) {
@@ -52,7 +52,7 @@ function readEntries(type) {
       formattedDate: publishedAtDate ? formatDateCN(publishedAtDate) : "",
       year: publishedAtDate ? publishedAtDate.getUTCFullYear() : null,
       content,
-      renderedContent: marked.parse(content)
+      renderedContent: marked.parse(content),
     };
   });
 }
@@ -71,7 +71,7 @@ const projects = sortByPublishedAtDesc(readEntries("project"));
 const payload = {
   generatedAt: new Date().toISOString(),
   blogs,
-  projects
+  projects,
 };
 
 fs.mkdirSync(outputDir, { recursive: true });

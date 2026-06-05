@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("/fonts/HarmonyOS_Sans_SC_Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("/fonts/HarmonyOS_Sans_SC_Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("/fonts/HarmonyOS_Sans_SC_Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("/fonts/HarmonyOS_Sans_SC_Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src:
+    url("/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("/fonts/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/fonts/inter-var-latin.woff2") format("woff2 supports variations"),
+    url("/fonts/inter-var-latin.woff2") format("woff2-variations");
+  font-display: swap;
+  font-weight: 100 900;
+  font-stretch: 100% 100%;
+}
+
+html {
+  font-family:
+    Inter, "HarmonyOS", "Helvetica Neue", "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
+}
+
+body {
+  background: #ffffff;
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  min-height: 100vh;
+}
+
+img {
+  content-visibility: auto;
+}
+
+.qr {
+  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/5a37b821-cd16-4fdc-b85b-d6763a7e9500/public);
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-resource {
+  aspect-ratio: 322 / 362;
+  transition: all 0.2s ease-out;
+}
+
+.card-resource.cv {
+  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/1bd8c797-f7ef-40ea-5bb5-c78f9e2c6600/public)
+    no-repeat 100% / cover;
+}
+
+.card-resource.cv-figma-free {
+  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/acca6db3-5fe6-4b3e-81bf-172cbc202d00/public)
+    no-repeat 100% / cover;
+}
+
+.card-resource.cv-notion {
+  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/c4fc8e3e-d325-4878-55fb-8fac8b29d400/public)
+    no-repeat 100% / cover;
+}
+
+.card-resource.year-end-notion {
+  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/69d59800-9888-40fb-633b-48d7504d5600/public)
+    no-repeat 100% / cover;
+}
+
+.card-indie {
+  aspect-ratio: 160 / 112;
+  transition: all 0.2s ease-out;
+}
+
+.card-indie.figmachina {
+  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/82d806a8-96b5-4425-4067-7a10e8946900/public)
+    no-repeat 100% / cover;
+}
+
+.card-indie.notionchina {
+  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/6bf9fca9-3968-41d6-7eb3-9ed121bc3200/public)
+    no-repeat 100% / cover;
+}
+
+.card-indie.elife {
+  background: url(https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/71184dba-26a3-46fa-5309-8bedbb851700/public)
+    no-repeat 100% / cover;
+}
+
+.prose img {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+.prose a {
+  color: #262626;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  opacity: 0.7;
+}
+
+.project-img-wrap img {
+  border-radius: 0;
+  border: none;
+}
+
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, #fff 94%, #0000) top/3px 3px no-repeat,
+    conic-gradient(#0000 30%, #fff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 3px), #000 0);
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.error-message {
+  font-size: 14px;
+  color: #d45145;
+  margin-bottom: 12px;
+  margin-top: 6px;
+}
+
+.subscription-form {
+  display: flex;
+  gap: 12px;
+}
+
+.subscription-form .button_fail {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.subscription-form .button-icon {
+  margin-left: 6px;
+}
+
+.subscription-form input {
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  padding-left: 14px;
+  height: 48px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.subscription-form input::placeholder {
+  color: #828282;
+}
+
+.subscription-form input:focus {
+  border: 1px solid #7e7e7e;
+  outline: none;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

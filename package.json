@@ -1,38 +1,53 @@
 {
-  "name": "zuozizhen-next",
+  "name": "zuozizhen-tanstack-start",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "content:build": "node scripts/build-content.mjs",
-    "dev": "npm run content:build && next dev",
-    "build": "npm run content:build && next build",
-    "start": "next start",
-    "lint": "eslint .",
-    "cf:build": "npm run patch:opennext && npm run content:build && opennextjs-cloudflare build",
-    "cf:preview": "npm run cf:build && wrangler dev",
-    "cf:deploy": "npm run cf:build && opennextjs-cloudflare deploy",
-    "patch:opennext": "node scripts/patch-opennext-load-manifest.mjs",
-    "postinstall": "npm run patch:opennext"
+    "dev": "npm run content:build && vite dev",
+    "build": "npm run content:build && vite build",
+    "start": "vite preview",
+    "deploy": "npm run build && wrangler deploy",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 migrations apply zuozizhen --local",
+    "db:migrate": "wrangler d1 migrations apply zuozizhen --remote",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "next": "16.2.1",
+    "@hotwired/stimulus": "3.2.2",
+    "drizzle-orm": "0.45.2",
+    "isbot": "5.1.32",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "@hotwired/stimulus": "3.2.2"
+    "@tanstack/react-router": "1.170.11",
+    "@tanstack/react-start": "1.168.20"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "1.17.1",
-    "@tailwindcss/postcss": "4.1.17",
+    "@cloudflare/vite-plugin": "1.40.0",
+    "@cloudflare/workers-types": "4.20260605.1",
+    "@eslint/js": "9.39.1",
     "@tailwindcss/typography": "0.5.19",
+    "@tailwindcss/vite": "4.3.0",
+    "@tanstack/router-plugin": "1.168.14",
     "@types/node": "24.10.1",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
+    "drizzle-kit": "0.31.10",
     "eslint": "9.39.1",
-    "eslint-config-next": "16.2.1",
     "gray-matter": "4.0.3",
     "marked": "17.0.1",
+    "node-addon-api": "8.5.0",
+    "node-gyp": "12.1.0",
     "tailwindcss": "4.1.17",
     "typescript": "5.9.3",
-    "wrangler": "4.76.0"
+    "typescript-eslint": "^8.60.1",
+    "@vitejs/plugin-react": "6.0.2",
+    "vite": "8.0.16",
+    "wrangler": "4.98.0"
+  },
+  "optionalDependencies": {
+    "@img/sharp-darwin-arm64": "0.34.5",
+    "@img/sharp-libvips-darwin-arm64": "1.2.4"
   }
 }

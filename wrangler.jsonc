@@ -1,15 +1,22 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "zuozizhen-next",
-  "account_id": "cf74c1afd7491c3e2179c479bca147a7",
-  "main": ".open-next/worker.js",
-  "compatibility_date": "2026-03-22",
+  "name": "zuozizhen",
+  "compatibility_date": "2025-12-01",
+  "main": "@tanstack/react-start/server-entry",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": ".open-next/assets",
-    "binding": "ASSETS"
+    "directory": "./dist/client"
   },
-  "observability": {
-    "enabled": true
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "zuozizhen",
+      "database_id": "replace-with-d1-database-id",
+      "migrations_dir": "drizzle/migrations"
+    }
+  ],
+  "vars": {
+    "AI_API_ENDPOINT": "",
+    "AI_MODEL": ""
   }
 }
