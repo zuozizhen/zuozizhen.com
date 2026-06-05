@@ -13,7 +13,7 @@
     {
       "binding": "DB",
       "database_name": "zuozizhen",
-      "database_id": "replace-with-d1-database-id",
+      "database_id": "f8bd85c5-6337-4191-8999-8ea2824d0087",
       "migrations_dir": "drizzle/migrations"
     }
   ],

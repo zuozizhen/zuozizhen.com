@@ -43,4 +43,4 @@ npm run build
 npm run deploy
 ```
 
-D1 需要先在 `wrangler.jsonc` 中替换真实的 `database_id`。
+D1 的 `database_id` 已配置在 `wrangler.jsonc` 中。需要覆盖时可设置 `CLOUDFLARE_DATABASE_ID`。
