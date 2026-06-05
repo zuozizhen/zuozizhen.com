@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "zuozizhen",
+  "name": "zuozizhen-next",
   "compatibility_date": "2025-12-01",
   "main": "@tanstack/react-start/server-entry",
   "compatibility_flags": [
