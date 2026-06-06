@@ -47,10 +47,18 @@ vp run test
 vp build
 ```
 
+Cloudflare 控制台的构建命令填：
+
+```bash
+npm run build
+```
+
+不要在 Cloudflare 构建命令里直接填 `vp build`，云端环境不会默认安装全局 `vp`。
+
 ## 部署
 
 ```bash
-vp run deploy
+npm run deploy
 ```
 
 D1 的 `database_id` 已配置在 `wrangler.jsonc` 中。需要覆盖时可设置 `CLOUDFLARE_DATABASE_ID`。
