@@ -1,7 +1,7 @@
-import type { Blog } from "@/lib/content";
+import type { BlogListEntry } from "@/lib/content-list";
 
 type Props = {
-  blogs: Blog[];
+  blogs: BlogListEntry[];
   variant?: "home";
 };
 

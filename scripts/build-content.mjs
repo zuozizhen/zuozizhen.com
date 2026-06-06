@@ -6,7 +6,8 @@ import { marked } from "marked";
 
 const root = process.cwd();
 const outputDir = path.join(root, "src", "data");
-const outputFile = path.join(outputDir, "content.json");
+const detailOutputFile = path.join(outputDir, "content.json");
+const listOutputFile = path.join(outputDir, "content-list.json");
 
 marked.setOptions({
   gfm: true,
@@ -70,12 +71,34 @@ const blogs = sortByPublishedAtDesc(readEntries("blog"));
 const projects = sortByPublishedAtDesc(readEntries("project"));
 const contentHash = createHash("sha256").update(JSON.stringify({ blogs, projects })).digest("hex");
 
-const payload = {
+function toListEntry(entry) {
+  return {
+    slug: entry.slug,
+    title: entry.title,
+    snippet: entry.snippet,
+    image: entry.image,
+    duty: entry.duty,
+    draft: entry.draft,
+    publishedAt: entry.publishedAt,
+    formattedDate: entry.formattedDate,
+    year: entry.year,
+  };
+}
+
+const detailPayload = {
   contentHash,
   blogs,
   projects,
 };
 
+const listPayload = {
+  contentHash,
+  blogs: blogs.map(toListEntry),
+  projects: projects.map(toListEntry),
+};
+
 fs.mkdirSync(outputDir, { recursive: true });
-fs.writeFileSync(outputFile, JSON.stringify(payload, null, 2));
-console.log(`Generated ${outputFile}`);
+fs.writeFileSync(detailOutputFile, JSON.stringify(detailPayload, null, 2));
+fs.writeFileSync(listOutputFile, JSON.stringify(listPayload, null, 2));
+console.log(`Generated ${detailOutputFile}`);
+console.log(`Generated ${listOutputFile}`);

@@ -40,6 +40,7 @@ export default defineConfig({
       "node_modules/**",
       "public/*.html",
       "src/data/content.json",
+      "src/data/content-list.json",
       "src/routeTree.gen.ts",
     ],
   },
@@ -58,6 +59,7 @@ export default defineConfig({
       ".output/**",
       "node_modules/**",
       "src/data/content.json",
+      "src/data/content-list.json",
       "src/routeTree.gen.ts",
     ],
     rules: {
@@ -104,6 +106,19 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+  },
+  build: {
+    rolldownOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules/react")) return "react";
+          if (id.includes("node_modules/@tanstack")) return "tanstack";
+          if (id.includes("src/data/content-list.json")) return "content-list";
+          if (id.includes("src/data/content.json")) return "content-detail";
+          if (id.includes("terminal-controller")) return "terminal-controller";
+        },
+      },
+    },
   },
   resolve: {
     alias: {

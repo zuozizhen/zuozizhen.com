@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FormEvent, useState } from "react";
 import BlogList from "@/components/BlogList";
 import ResourcesGrid from "@/components/ResourcesGrid";
-import { getRecentBlogs } from "@/lib/content";
+import { getRecentBlogList } from "@/lib/content-list";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const blogs = getRecentBlogs(2);
+  const blogs = getRecentBlogList(2);
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
   const [submitting, setSubmitting] = useState(false);

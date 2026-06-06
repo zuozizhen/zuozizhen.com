@@ -1,13 +1,13 @@
-import { getRecentBlogs, getRecentProjects } from "./content";
+import { getRecentBlogList, getRecentProjectList } from "./content-list";
 
 export function buildSystemPrompt() {
-  const blogsJson = getRecentBlogs().map((blog) => ({
+  const blogsJson = getRecentBlogList().map((blog) => ({
     title: blog.title,
     slug: blog.slug,
     date: blog.formattedDate,
   }));
 
-  const projectsJson = getRecentProjects().map((project) => ({
+  const projectsJson = getRecentProjectList().map((project) => ({
     title: project.title,
     duty: project.duty,
     snippet: project.snippet,

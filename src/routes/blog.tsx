@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import BlogList from "@/components/BlogList";
-import { getRecentBlogs } from "@/lib/content";
+import { getRecentBlogList } from "@/lib/content-list";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({ meta: [{ title: "文章 | 左子祯" }] }),
@@ -8,7 +8,7 @@ export const Route = createFileRoute("/blog")({
 });
 
 function BlogIndexPage() {
-  const blogs = getRecentBlogs();
+  const blogs = getRecentBlogList();
   return (
     <section className="max-w-screen-lg mx-auto w-full px-5 py-12">
       <div className="mb-8 mt-12">

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { getRecentProjects } from "@/lib/content";
+import { getRecentProjectList } from "@/lib/content-list";
 
 export const Route = createFileRoute("/project")({
   head: () => ({ meta: [{ title: "工作项目 | 左子祯" }] }),
@@ -7,7 +7,7 @@ export const Route = createFileRoute("/project")({
 });
 
 function ProjectIndexPage() {
-  const projects = getRecentProjects();
+  const projects = getRecentProjectList();
   return (
     <section className="max-w-screen-lg mx-auto w-full px-5 py-12">
       <div className="mb-8 mt-12">

@@ -1,0 +1,370 @@
+{
+  "contentHash": "8266e07c978179b09afd27825e068d4a03cfffbbff9cde646ce7d63290b04fae",
+  "blogs": [
+    {
+      "slug": "chatgpt-signup",
+      "title": "ChatGPT 国内注册及第三方客户端使用方法",
+      "snippet": "我自己 ChatGPT 注册的方式和使用的第三方客户端",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/a59ac6ac-e9f4-4841-4eb5-66d409025200/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2023-03-23T00:00:00.000Z",
+      "formattedDate": "2023年03月23日",
+      "year": 2023
+    },
+    {
+      "slug": "cron-design",
+      "title": "被 Notion 收购的 Cron 有哪些值得学习的设计细节",
+      "snippet": "关于 Cron 的设计细节分享",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/1dcb870a-1511-451e-3fb8-1a1221462600/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2022-06-15T00:00:00.000Z",
+      "formattedDate": "2022年06月15日",
+      "year": 2022
+    },
+    {
+      "slug": "mastergo-principle-case",
+      "title": "在 MasterGo 中设计原则的实际应用",
+      "snippet": "设计原则应用的一些案例",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/8b580ee0-7850-44b1-b970-369f9a79e300/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2021-06-19T00:00:00.000Z",
+      "formattedDate": "2021年06月19日",
+      "year": 2021
+    },
+    {
+      "slug": "css-standard",
+      "title": "如何提升 CSS 的编写效率",
+      "snippet": "关于 Cron 的设计细节分享",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/775a837a-e025-490a-b693-05f2cc460e00/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2021-05-06T00:00:00.000Z",
+      "formattedDate": "2021年05月06日",
+      "year": 2021
+    },
+    {
+      "slug": "website-for-designer-2",
+      "title": "写给设计师的个人网站搭建指南（二）：代码学习大纲",
+      "snippet": "对于设计师我推荐的代码学习大纲",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/1e696fac-4ad7-470d-e9ac-97e10b7ee500/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2021-04-18T00:00:00.000Z",
+      "formattedDate": "2021年04月18日",
+      "year": 2021
+    },
+    {
+      "slug": "website-for-designer-1",
+      "title": "写给设计师的个人网站搭建指南（一）：从域名到网站",
+      "snippet": "用最浅显易懂的方式教大家选择适合的方式从头搭建一个属于自己的网站",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/5479e68d-b9bc-44c4-5c0f-34ad33615f00/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2021-04-11T00:00:00.000Z",
+      "formattedDate": "2021年04月11日",
+      "year": 2021
+    },
+    {
+      "slug": "master-principle",
+      "title": "MasterGo 的产品设计原则",
+      "snippet": "遵循原则，能帮助我们给用户提供越来越好的用户体验",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/7b01db70-1070-48cf-3bbf-ac1fd7417200/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2020-12-10T00:00:00.000Z",
+      "formattedDate": "2020年12月10日",
+      "year": 2020
+    },
+    {
+      "slug": "zuibishe",
+      "title": "为什么未来设计师一定需要多元化思维（最毕设分享文字整理版）",
+      "snippet": "受最毕设邀请，举办的线上分享文字整理版",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/838bfd2a-29b2-4ebe-1726-14f925db5e00/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2020-09-08T00:00:00.000Z",
+      "formattedDate": "2020年09月08日",
+      "year": 2020
+    },
+    {
+      "slug": "meetup-ziru",
+      "title": "Figma 与设计系统（自如线下分享）",
+      "snippet": "受自如邀请，线下分享关于 Figma 和设计系统",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/3165f378-f54d-4e2c-6ffd-607500a1db00/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2019-09-23T00:00:00.000Z",
+      "formattedDate": "2019年09月23日",
+      "year": 2019
+    },
+    {
+      "slug": "figmachina",
+      "title": "FigmaChina.com ：不止是中文用户手册",
+      "snippet": "FigmaChina 正式上线",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/459edafc-35e1-48bc-80b4-c0440e674400/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2019-06-15T00:00:00.000Z",
+      "formattedDate": "2019年06月15日",
+      "year": 2019
+    },
+    {
+      "slug": "figma-bytedance",
+      "title": "深入了解 Figma — 下一代设计神器（字节跳动内部分享文字版）",
+      "snippet": "受邀在字节跳动内部为今日头条 UED 所做的线下分享",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/7280e3d5-8e39-47a5-d1a9-fa71e6594900/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2019-06-14T00:00:00.000Z",
+      "formattedDate": "2019年06月14日",
+      "year": 2019
+    },
+    {
+      "slug": "draw-1",
+      "title": "《画》第一章 初到敦煌",
+      "snippet": "这是一个去深入了解设计行业未来发展方向的好机会",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/2b07c6f3-79b2-410b-438d-b3499b9ed200/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2019-05-02T00:00:00.000Z",
+      "formattedDate": "2019年05月02日",
+      "year": 2019
+    },
+    {
+      "slug": "share-movie-korea",
+      "title": "冷门佳片推荐（二）：韩国篇",
+      "snippet": "这个系列会按类型推荐我看过的小众佳片",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/6d763517-362f-4946-9507-68b73e1d4a00/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2019-02-26T00:00:00.000Z",
+      "formattedDate": "2019年02月26日",
+      "year": 2019
+    },
+    {
+      "slug": "share-movie-science",
+      "title": "冷门佳片推荐（一）：烧脑科幻篇",
+      "snippet": "这个系列会按类型推荐我看过的小众佳片",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/37dcc242-9593-40b9-7d83-cd2cc6f68300/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2019-01-10T00:00:00.000Z",
+      "formattedDate": "2019年01月10日",
+      "year": 2019
+    },
+    {
+      "slug": "black-mirro-bandersnatch",
+      "title": "《黑镜：潘达斯奈基》：一次关于自由意志的探讨",
+      "snippet": "为保证观影体验，全篇无剧透，请放心阅读",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/6a0b97a0-2eb1-433a-c522-c55a327f6400/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2018-12-30T00:00:00.000Z",
+      "formattedDate": "2018年12月30日",
+      "year": 2018
+    },
+    {
+      "slug": "flatland",
+      "title": "《平面国》：未知是无法想象的",
+      "snippet": "如果有人在你面前描述出四维物体的样子，你能够在脑海中想象出它吗？",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/5bccf015-65a2-4ebc-e6ce-9c15800e7e00/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2018-12-26T00:00:00.000Z",
+      "formattedDate": "2018年12月26日",
+      "year": 2018
+    },
+    {
+      "slug": "design-trend-2019",
+      "title": "2019 UI 和 UX 设计趋势 [译]",
+      "snippet": "这是一个去深入了解设计行业未来发展方向的好机会",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/8ec22d91-68e8-43ff-6aaa-793571bde300/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2018-12-20T00:00:00.000Z",
+      "formattedDate": "2018年12月20日",
+      "year": 2018
+    },
+    {
+      "slug": "think-plus",
+      "title": "为什么我们需要多元化思维",
+      "snippet": "我们正处在多维世界当中",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/0e4e2cd6-a5b9-487a-1d87-125ccaa0a800/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2017-12-01T00:00:00.000Z",
+      "formattedDate": "2017年12月01日",
+      "year": 2017
+    },
+    {
+      "slug": "medium-new-logo",
+      "title": "Medium 为什么又换了 Logo",
+      "snippet": "2015 Medium 创造的 Logo 无疑是成功的，那为什么 Medium 将近 2 年后选择换掉它呢？",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/ff5220a6-253b-4ef2-5a5b-5ff3b020e900/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2017-08-24T00:00:00.000Z",
+      "formattedDate": "2017年08月24日",
+      "year": 2017
+    },
+    {
+      "slug": "personal-website",
+      "title": "创意十足的个人网站推荐",
+      "snippet": "一些设计、排版以及创意非常棒的个人网站,为正在制作自己个人网站的你提供灵感",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/d66e2638-4307-4b60-381b-bc5d2e10bb00/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2017-07-05T00:00:00.000Z",
+      "formattedDate": "2017年07月05日",
+      "year": 2017
+    },
+    {
+      "slug": "luowang",
+      "title": "让耳朵放个假 - 「落网」",
+      "snippet": "落网上的歌不是普通的流行音乐，而是将小众的独立音乐做成了一个个期刊，每一个都是独具特色",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/23c7725f-5690-4d91-2df2-1e43cdd4e200/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2017-07-02T00:00:00.000Z",
+      "formattedDate": "2017年07月02日",
+      "year": 2017
+    },
+    {
+      "slug": "life-in-a-day-2020",
+      "title": "只有此刻才能感觉到存在",
+      "snippet": "爱和恐惧是生命中永恒存在的两个主题",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/b720b7f2-4aee-4ad2-b344-89a585c5e800/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2017-07-01T00:00:00.000Z",
+      "formattedDate": "2017年07月01日",
+      "year": 2017
+    },
+    {
+      "slug": "cachemoment-new-branding",
+      "title": "魔门云启用全新品牌形象",
+      "snippet": "我们希望通过建立一套完整的品牌来体现我们的商业愿景",
+      "image": "https://imagedelivery.net/8B08sdLvw783CQcaKhUoYw/36b0b0d5-2a78-4d01-e40f-4cc49a3f6600/public",
+      "duty": "",
+      "draft": false,
+      "publishedAt": "2017-03-01T00:00:00.000Z",
+      "formattedDate": "2017年03月01日",
+      "year": 2017
+    }
+  ],
+  "projects": [
+    {
+      "slug": "creatie-logo",
+      "title": "Creatie 品牌 VI",
+      "snippet": "",
+      "image": "/creatie-logo.jpg",
+      "duty": "设计中心负责人",
+      "draft": false,
+      "publishedAt": "2024-03-01T00:00:00.000Z",
+      "formattedDate": "2024年03月01日",
+      "year": 2024
+    },
+    {
+      "slug": "mastergo-logo",
+      "title": "莫高设计品牌升级",
+      "snippet": "",
+      "image": "/mastergo-logo.jpg",
+      "duty": "设计中心负责人",
+      "draft": false,
+      "publishedAt": "2023-05-30T00:00:00.000Z",
+      "formattedDate": "2023年05月30日",
+      "year": 2023
+    },
+    {
+      "slug": "vision",
+      "title": "部分视觉 & 活动设计",
+      "snippet": "",
+      "image": "/vision.jpg",
+      "duty": "团队 Leader",
+      "draft": false,
+      "publishedAt": "2022-05-30T00:00:00.000Z",
+      "formattedDate": "2022年05月30日",
+      "year": 2022
+    },
+    {
+      "slug": "mastergo-logo-old",
+      "title": "MasterGo 1.0 品牌 VI",
+      "snippet": "",
+      "image": "/mastergo-old-logo.jpg",
+      "duty": "产品设计负责人",
+      "draft": false,
+      "publishedAt": "2022-02-02T00:00:00.000Z",
+      "formattedDate": "2022年02月02日",
+      "year": 2022
+    },
+    {
+      "slug": "mastergo-design-system",
+      "title": "MasterGo Design System",
+      "snippet": "健壮的设计系统，追求设计细节的品质感、可复用性和工程统一",
+      "image": "/mastergo-ds.jpg",
+      "duty": "产品设计负责人",
+      "draft": false,
+      "publishedAt": "2021-11-30T00:00:00.000Z",
+      "formattedDate": "2021年11月30日",
+      "year": 2021
+    },
+    {
+      "slug": "mastergo",
+      "title": "MasterGo",
+      "snippet": "一站式在线设计协同工具",
+      "image": "/mastergo.jpg",
+      "duty": "产品设计负责人",
+      "draft": false,
+      "publishedAt": "2021-10-30T00:00:00.000Z",
+      "formattedDate": "2021年10月30日",
+      "year": 2021
+    },
+    {
+      "slug": "lanhu-website",
+      "title": "蓝湖新版官网",
+      "snippet": "为蓝湖设计的新版官网",
+      "image": "/lanhu-website.jpg",
+      "duty": "UI 设计师",
+      "draft": false,
+      "publishedAt": "2021-05-30T00:00:00.000Z",
+      "formattedDate": "2021年05月30日",
+      "year": 2021
+    },
+    {
+      "slug": "smartisan",
+      "title": "Smartisan OS Design System",
+      "snippet": "为 OS 7.0 搭建的基于 Figma 的大型设计系统",
+      "image": "/smartisan-ds.jpg",
+      "duty": "UI 设计师",
+      "draft": false,
+      "publishedAt": "2018-08-30T00:00:00.000Z",
+      "formattedDate": "2018年08月30日",
+      "year": 2018
+    },
+    {
+      "slug": "smartisan-web",
+      "title": "Smartisan Web Sketch Library",
+      "snippet": "为 Smartisan 搭建的基于 Figma 的大型设计系统",
+      "image": "/smartisan-web.jpg",
+      "duty": "UI 设计师",
+      "draft": false,
+      "publishedAt": "2018-05-30T00:00:00.000Z",
+      "formattedDate": "2018年05月30日",
+      "year": 2018
+    },
+    {
+      "slug": "cachemoment",
+      "title": "魔门云 CacheMoment",
+      "snippet": "CacheMoment 的 0-1 产品设计",
+      "image": "/moment.jpg",
+      "duty": "产品设计师",
+      "draft": false,
+      "publishedAt": "2017-05-30T00:00:00.000Z",
+      "formattedDate": "2017年05月30日",
+      "year": 2017
+    }
+  ]
+}
