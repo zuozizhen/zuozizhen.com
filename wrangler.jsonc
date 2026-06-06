@@ -3,20 +3,22 @@
   "name": "zuozizhen",
   "compatibility_date": "2025-12-01",
   "main": "@tanstack/react-start/server-entry",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "assets": {
-    "directory": "./dist/client",
+    "directory": "./dist/client"
   },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "zuozizhen",
       "database_id": "f8bd85c5-6337-4191-8999-8ea2824d0087",
-      "migrations_dir": "drizzle/migrations",
-    },
+      "migrations_dir": "drizzle/migrations"
+    }
   ],
   "vars": {
     "AI_API_ENDPOINT": "",
-    "AI_MODEL": "",
-  },
+    "AI_MODEL": ""
+  }
 }

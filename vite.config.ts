@@ -42,6 +42,7 @@ export default defineConfig({
       "src/data/content.json",
       "src/data/content-list.json",
       "src/routeTree.gen.ts",
+      "wrangler.jsonc",
     ],
   },
   lint: {
