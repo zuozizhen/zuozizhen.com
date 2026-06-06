@@ -23,10 +23,22 @@ function ProjectIndexPage() {
                   <div className="flex gap-1 mb-2 text-white text-opacity-50 sm:text-base text-sm font-medium mix-blend-hard-light">
                     {project.year} · {project.duty}
                   </div>
-                  <h2 className="sm:text-3xl text-xl font-semibold leading-snug tracking-tight text-neutral-100">{project.title}</h2>
-                  <div className="flex gap-1 mt-8 text-white text-opacity-50 sm:text-base text-xs mix-blend-hard-light">查看项目 -&gt;</div>
+                  <h2 className="sm:text-3xl text-xl font-semibold leading-snug tracking-tight text-neutral-100">
+                    {project.title}
+                  </h2>
+                  <div className="flex gap-1 mt-8 text-white text-opacity-50 sm:text-base text-xs mix-blend-hard-light">
+                    查看项目 -&gt;
+                  </div>
                 </div>
-                {project.image ? <img src={project.image} className="w-full object-cover absolute right-0 top-0 -z-0" alt={project.title} /> : <div className="w-full h-full absolute right-0 top-0 -z-0 bg-neutral-800" />}
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    className="w-full object-cover absolute right-0 top-0 -z-0"
+                    alt={project.title}
+                  />
+                ) : (
+                  <div className="w-full h-full absolute right-0 top-0 -z-0 bg-neutral-800" />
+                )}
               </div>
             </a>
           </li>

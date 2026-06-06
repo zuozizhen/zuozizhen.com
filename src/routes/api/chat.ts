@@ -29,11 +29,21 @@ function sseEvent(name: string, payload: unknown) {
   return encoder.encode(`event: ${name}\ndata: ${JSON.stringify(payload)}\n\n`);
 }
 
+function textValue(value: unknown) {
+  return typeof value === "string" ? value : "";
+}
+
 function extractText(payload: UpstreamPayload) {
-  if (payload.text) return String(payload.text);
+  const text = textValue(payload.text);
+  if (text) return text;
+
   const choice = payload.choices?.[0] ?? {};
-  if (choice?.delta?.content) return String(choice.delta.content);
-  if (choice?.message?.content) return String(choice.message.content);
+  const deltaContent = textValue(choice?.delta?.content);
+  if (deltaContent) return deltaContent;
+
+  const messageContent = textValue(choice?.message?.content);
+  if (messageContent) return messageContent;
+
   return "";
 }
 
@@ -88,7 +98,7 @@ async function handleChat(request: Request) {
     },
   });
 
-  (async () => {
+  void (async () => {
     try {
       const body = (await request.json().catch(() => ({}))) as ChatRequestBody;
       const messages = body?.messages;
@@ -102,12 +112,19 @@ async function handleChat(request: Request) {
       const apiKey = workerEnv.AI_API_KEY ?? process.env.AI_API_KEY ?? "";
 
       if (!endpoint || !model || !apiKey) {
-        await writer.write(sseEvent("error", { message: "AI 配置缺失，请设置 AI_API_ENDPOINT / AI_API_KEY / AI_MODEL" }));
+        await writer.write(
+          sseEvent("error", {
+            message: "AI 配置缺失，请设置 AI_API_ENDPOINT / AI_API_KEY / AI_MODEL",
+          }),
+        );
         return;
       }
 
       const userMessages: ChatMessage[] = messages
-        .map((m: ChatMessage) => ({ role: String(m?.role || ""), content: String(m?.content || "") }))
+        .map((m: ChatMessage) => ({
+          role: String(m?.role || ""),
+          content: String(m?.content || ""),
+        }))
         .filter((m: ChatMessage) => m.role === "user" || m.role === "assistant");
 
       const upstream = await fetch(endpoint, {

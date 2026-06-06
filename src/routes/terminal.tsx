@@ -31,5 +31,14 @@ function TerminalPage() {
     { name: "FigmaChina", url: "https://figmachina.com", year: 2019, desc: "Figma 中文站" },
   ];
 
-  return <TerminalClient blogs={blogs} allBlogs={allBlogs} projects={projects} aboutPath="/about" homePath="/" chatPath="/api/chat" />;
+  return (
+    <TerminalClient
+      blogs={blogs}
+      allBlogs={allBlogs}
+      projects={projects}
+      aboutPath="/about"
+      homePath="/"
+      chatPath="/api/chat"
+    />
+  );
 }

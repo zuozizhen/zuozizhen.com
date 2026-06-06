@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-empty-object-type, @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars */
+/* oxlint-disable @typescript-eslint/no-empty-object-type, @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars */
 import type { AnyContext, AnyRoute } from "@tanstack/router-core";
 
 type RouteMethodHandlerCtx<TParams = Record<string, string>> = {
@@ -9,7 +9,9 @@ type RouteMethodHandlerCtx<TParams = Record<string, string>> = {
   next: (options?: { context?: unknown }) => { isNext: true; context: unknown };
 };
 
-type RouteMethodHandler = (ctx: RouteMethodHandlerCtx) => Response | undefined | Promise<Response | undefined>;
+type RouteMethodHandler = (
+  ctx: RouteMethodHandlerCtx,
+) => Response | undefined | Promise<Response | undefined>;
 
 declare module "@tanstack/router-core" {
   interface FilebaseRouteOptionsInterface<
@@ -30,7 +32,12 @@ declare module "@tanstack/router-core" {
     THandlers = undefined,
   > {
     server?: {
-      handlers?: Partial<Record<"ANY" | "GET" | "POST" | "PUT" | "PATCH" | "DELETE" | "OPTIONS" | "HEAD", RouteMethodHandler>>;
+      handlers?: Partial<
+        Record<
+          "ANY" | "GET" | "POST" | "PUT" | "PATCH" | "DELETE" | "OPTIONS" | "HEAD",
+          RouteMethodHandler
+        >
+      >;
     };
   }
 }

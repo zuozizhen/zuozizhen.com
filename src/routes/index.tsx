@@ -59,7 +59,10 @@ function HomePage() {
           <h1 className="text-3xl font-semibold max-w-3xl">我是左子祯 — 设计师, 创作者。</h1>
           <p className="text-xl mt-3 text-neutral-500 max-w-[52rem] leading-9">
             我是一名产品设计师，乐于创作和分享，对创造充满热情，你可以关注我的{" "}
-            <a className="font-medium hover:opacity-70 text-neutral-800 underline underline-offset-2" href="https://twitter.com/zuozizhen">
+            <a
+              className="font-medium hover:opacity-70 text-neutral-800 underline underline-offset-2"
+              href="https://twitter.com/zuozizhen"
+            >
               Twitter
             </a>
             、
@@ -70,11 +73,17 @@ function HomePage() {
               小红书
             </a>
             ，订阅我的{" "}
-            <a className="font-medium hover:opacity-70 text-neutral-800 underline underline-offset-2" href="https://zuozizhen.substack.com">
+            <a
+              className="font-medium hover:opacity-70 text-neutral-800 underline underline-offset-2"
+              href="https://zuozizhen.substack.com"
+            >
               Newsletter
             </a>
             ，或者了解关于我的{" "}
-            <a className="font-medium hover:opacity-70 text-neutral-800 underline underline-offset-2" href="/about">
+            <a
+              className="font-medium hover:opacity-70 text-neutral-800 underline underline-offset-2"
+              href="/about"
+            >
               更多
             </a>
             。
@@ -82,20 +91,37 @@ function HomePage() {
           <div className="mt-12 grid grid-cols-1 gap-8 items-center md:grid-cols-[500px_20px_300px]">
             <div className="h-fit">
               <form className="subscription-form sm:flex-row flex-col" onSubmit={submitForm}>
-                <input type="email" required placeholder="输入邮箱" value={email} onChange={(event) => setEmail(event.target.value)} />
+                <input
+                  type="email"
+                  required
+                  placeholder="输入邮箱"
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                />
                 <button
                   type="submit"
                   className={`button_fail flex-none font-semibold text-white leading-7 text-lg bg-neutral-800 px-6 py-2.5 rounded-md block hover:bg-neutral-900 transition sm:w-[200px] w-full ${
                     submitting ? "disabled" : ""
                   }`}
                 >
-                  {submitting ? <span className="loader" /> : <span>订阅堆栈 Stack<span className="button-icon">→</span></span>}
+                  {submitting ? (
+                    <span className="loader" />
+                  ) : (
+                    <span>
+                      订阅堆栈 Stack<span className="button-icon">→</span>
+                    </span>
+                  )}
                 </button>
               </form>
               {error ? <div className="error-message">请输入有效的邮箱地址。</div> : null}
               <div className="text-neutral-500 text-sm mt-2 block">
                 关于设计、技术、创作等话题的独家经验和分享，
-                <a className="font-medium text-neutral-700 hover:text-neutral-900 transition" href="https://zuozizhen.substack.com/archive" target="_blank" rel="noreferrer">
+                <a
+                  className="font-medium text-neutral-700 hover:text-neutral-900 transition"
+                  href="https://zuozizhen.substack.com/archive"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   查看往期内容
                 </a>
               </div>
@@ -118,13 +144,23 @@ function HomePage() {
 
       <Section title="文章" description="和设计、开发、创作有关的分享">
         <BlogList blogs={blogs} />
-        <a href="/blog" className="block font-semibold mt-6 hover:opacity-70 transition">更多文章 -&gt;</a>
+        <a href="/blog" className="block font-semibold mt-6 hover:opacity-70 transition">
+          更多文章 -&gt;
+        </a>
       </Section>
     </div>
   );
 }
 
-function Section({ title, description, children }: { title: string; description: string; children: React.ReactNode }) {
+function Section({
+  title,
+  description,
+  children,
+}: {
+  title: string;
+  description: string;
+  children: React.ReactNode;
+}) {
   return (
     <section className="relative py-12 px-5">
       <div className="max-w-screen-lg mx-auto space-y-7">

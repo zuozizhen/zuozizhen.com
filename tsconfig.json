@@ -13,11 +13,18 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "types": ["@cloudflare/workers-types", "vite/client"],
+    "types": ["@cloudflare/workers-types", "vite-plus/client"],
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "drizzle.config.ts", "vite.config.ts", "worker-configuration.d.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "drizzle.config.ts",
+    "vite.config.ts",
+    "vite.test.config.ts",
+    "worker-configuration.d.ts"
+  ],
   "exclude": ["node_modules"]
 }

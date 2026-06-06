@@ -140,7 +140,7 @@ export default class extends Controller {
       this.executeCommandBlock(input);
       return;
     }
-    this.executeChat(input);
+    void this.executeChat(input);
   }
 
   executeCommandBlock(raw) {

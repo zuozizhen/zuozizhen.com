@@ -22,7 +22,9 @@ if (databaseId) {
 }
 
 if (!db.database_id || db.database_id === "replace-with-d1-database-id") {
-  throw new Error("A valid D1 database_id is required. Set CLOUDFLARE_DATABASE_ID or update wrangler.jsonc.");
+  throw new Error(
+    "A valid D1 database_id is required. Set CLOUDFLARE_DATABASE_ID or update wrangler.jsonc.",
+  );
 }
 
 fs.writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);

@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import matter from "gray-matter";
 import { marked } from "marked";
 
@@ -67,9 +68,10 @@ function sortByPublishedAtDesc(entries) {
 
 const blogs = sortByPublishedAtDesc(readEntries("blog"));
 const projects = sortByPublishedAtDesc(readEntries("project"));
+const contentHash = createHash("sha256").update(JSON.stringify({ blogs, projects })).digest("hex");
 
 const payload = {
-  generatedAt: new Date().toISOString(),
+  contentHash,
   blogs,
   projects,
 };
